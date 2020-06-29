@@ -1,24 +1,27 @@
-import React, { memo } from 'react'
+import React, { useState, useMemo } from 'react';
 
-const a = 1
-const b = 1
+const UseMemoComponent = () => {
+  const [text, setText] = useState('Hello!');
 
-const testHelloworldCalling = (a,b) =>{
-  console.log("helloworld calling with", a, b)
-  return 1
+  const ChildComponent = ({ text }) => {
+    console.log('rendered again!');
+    return (
+      <div>
+        { text }
+     </div>
+     );
+  }
+
+   // Solo se renderiza cuando el valor indicado en [] cambie
+   const MemoizedComponent = useMemo(() => <ChildComponent text={ text } />, [text]);
+
+   return (
+     <div>
+       <button onClick={() => setText('Hello!')}>Hello! </button>
+       <button onClick={() => setText('Hola!')}>Hola!</button>
+       { MemoizedComponent }
+     </div>
+   )
 }
 
-function TestBox(){
-  const [testC, setTestC] = React.useState(0)
-  const memoizedValue = React.useMemo(() => testHelloworldCalling(a, b), [a, b, testC]);
-
-  return(
-    <>
-      not finish yet
-      <div>{memoizedValue}</div>
-      <button onClick={(e)=>{setTestC(testC+1)}}>+</button>
-    </>
-  )
-}
-
-export default TestBox
+export default UseMemoComponent;
