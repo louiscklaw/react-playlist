@@ -1,0 +1,11 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: gold;
+  width: 80vw;
+  margin: auto;
+}
+
+.test {
+  background-color: red;
+}
