@@ -6,7 +6,10 @@ function App() {
   let mycar = new Car('toyota')
   let myAnotherCar = new Model("Ford","Mustang")
 
+  // Methods
   console.log(mycar.present('hello'))
+
+  // Static Methods
   console.log(Car.hello(mycar))
 
   // Inheritance
