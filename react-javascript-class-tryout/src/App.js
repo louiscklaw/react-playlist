@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import {Car, Model} from './support-class'
 
 function App() {
+  let mycar = new Car('toyota')
+  let myAnotherCar = new Model("Ford","Mustang")
+
+  console.log(mycar.present('hello'))
+  console.log(Car.hello(mycar))
+
+  // Inheritance
+  console.log(myAnotherCar.show())
+  console.log(myAnotherCar.present("blablabla"))
+
+  // getters and setters
+  console.log(mycar.cnam)
+  mycar.cnam = 'new toyota'
+  console.log(mycar.carname)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      helloworld
+
     </div>
   );
 }
