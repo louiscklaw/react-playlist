@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "../gatsbyjs-playlist"
+		},
+		{
+			"path": "../nextjs-playlist"
+		},
+		{
+			"path": "../preactjs-playlist"
 		}
 	],
 	"settings": {
