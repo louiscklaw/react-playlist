@@ -6,29 +6,59 @@ import MessageData from './message-data'
 import './App.css';
 
 function App() {
-  const iframeRef = useRef(null)
+  const iframeRefLowestElement = useRef(null)
+  const iframeRefHeightCalculationMethod = useRef(null)
+  const iframeRefStyleMinHeight = useRef(null)
   const [messageData, setMessageData] = useState()
   const onResized = data => setMessageData(data)
 
   const onMessage = data => {
     setMessageData(data)
-    iframeRef.current.sendMessage('Hello back from the parent page')
+    iframeRefLowestElement.current.sendMessage('Hello back from the parent page')
   }
 
   return (
     <div className="App">
-      helloworld
+      <div>helloworld</div>
+
+      <h3>heightCalculationMethod="lowestElement"</h3>
       <IframeResizer
-        forwardRef={iframeRef}
+        forwardRef={iframeRefLowestElement}
         heightCalculationMethod="lowestElement"
         inPageLinks
         log
         onMessage={onMessage}
         onResized={onResized}
         src="http://example.com"
-        style={{ width: '1px', minWidth: '95%'}}
+        style={{ width: '1px', minWidth: '33%'}}
       />
+
+
+      <h3>heightCalculationMethod="300px"</h3>
+      <IframeResizer
+        forwardRef={iframeRefHeightCalculationMethod}
+        heightCalculationMethod="300px"
+        inPageLinks
+        log
+        onMessage={onMessage}
+        onResized={onResized}
+        src="http://example.com"
+        style={{ width: '1px', minWidth: '33%'}}
+      />
+
+      <h3>style->minHeight->"300px"</h3>
+      <IframeResizer
+        forwardRef={iframeRefStyleMinHeight}
+        inPageLinks
+        log
+        onMessage={onMessage}
+        onResized={onResized}
+        src="http://example.com"
+        style={{ width: '1px', minWidth: '33%', minHeight:"300px"}}
+      />
+
       <MessageData data={messageData} />
+
     </div>
   );
 }
