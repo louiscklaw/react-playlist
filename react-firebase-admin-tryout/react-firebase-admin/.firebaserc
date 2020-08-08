@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "production": "fir-tryout-f4e7a",
+    "staging": "fir-tryout-f4e7a",
+    "default": "fir-tryout-f4e7a"
+  }
+}
