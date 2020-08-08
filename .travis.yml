@@ -18,5 +18,20 @@ import:
   - credentials.yml
   - .travis-merger.yml
 
+stages:
+  - name: Unit_test
+  - name: Test
+  - name: Build
+  - name: Deploy
+
+  - name: Integration_to_other_repo
+    if: branch = develop
+
+  - name: Publish_dashboard
+    if: branch = master
+
+  - name: Merge
+  - name: Cron
+
 script:
   - hostname
