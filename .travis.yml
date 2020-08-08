@@ -11,16 +11,6 @@ node_js:
   - 10
 cache: yarn
 
-stages:
-  - Unit_test
-  - Test
-  - Build
-  - Deploy
-  - Integration_to_other_repo
-  - Publish_dashboard
-  - Merge
-  - Cron
-
 install:
   - yarn
 
@@ -30,4 +20,5 @@ script:
 import:
   - credentials.yml
   - .travis-merger.yml
+  - .travis-stages.yml
   - react-helloworld-tryout/.travis.yml
