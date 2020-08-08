@@ -11,10 +11,6 @@ node_js:
   - 10
 cache: yarn
 
-import:
-  - credentials.yml
-  - .travis-merger.yml
-
 stages:
   - Unit_test
   - Test
@@ -30,3 +26,8 @@ install:
 
 script:
   - hostname
+
+import:
+  - credentials.yml
+  - .travis-merger.yml
+  - react-helloworld-tryout/.travis.yml
