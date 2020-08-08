@@ -11,9 +11,6 @@ node_js:
   - 10
 cache: yarn
 
-install:
-  - yarn
-
 import:
   - credentials.yml
   - .travis-merger.yml
@@ -32,6 +29,9 @@ stages:
 
   - name: Merge
   - name: Cron
+
+install:
+  - yarn
 
 script:
   - hostname
