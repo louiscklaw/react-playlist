@@ -1,0 +1,10 @@
+
+jobs:
+  include:
+    - stage: Unit_test
+      name: test (react-vis-tryout)
+      script:
+        - cd react-vis-tryout
+        -   yarn
+        -   yarn build
+        - cd -
