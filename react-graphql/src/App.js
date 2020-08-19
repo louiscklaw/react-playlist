@@ -1,24 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
+
 import './App.css';
 
+const client = new ApolloClient({
+  uri: 'https://48p1r2roz4.sse.codesandbox.io',
+  cache: new InMemoryCache()
+});
+
 function App() {
+  let [result ,setResult] = React.useState('')
+
+  React.useEffect(()=>{
+    client
+    .query({
+      query: gql`
+        query GetRates {
+          rates(currency: "USD") {
+            currency
+          }
+        }
+      `
+    })
+    .then(query_result => setResult(query_result));
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      helloworld
+      {
+        JSON.stringify(result)
+      }
     </div>
   );
 }
