@@ -7,7 +7,7 @@ import { ApolloClient, InMemoryCache } from '@apollo/client';
 import './App.css';
 
 const client = new ApolloClient({
-  uri: 'https://48p1r2roz4.sse.codesandbox.io',
+  uri: 'https://api.graph.cool/simple/v1/movies',
   cache: new InMemoryCache()
 });
 
@@ -17,13 +17,14 @@ function App() {
   React.useEffect(()=>{
     client
     .query({
-      query: gql`
-        query GetRates {
-          rates(currency: "USD") {
-            currency
+      query: gql`{
+        Movie(title: "Inception") {
+          releaseDate
+          actors {
+            name
           }
         }
-      `
+      }`
     })
     .then(query_result => setResult(query_result));
   },[])
