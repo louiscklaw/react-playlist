@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
 import useSWR from 'swr'
-import graphql from graphql
-import { request } from 'graphql-request'
+import { request, gql } from 'graphql-request'
 
 import './App.css';
 
 const API = 'https://api.graph.cool/simple/v1/movies'
-const fetcher = query => request(API, query)
 
+const fetcher = query => request(API, query)
 
 function App() {
   const { data, error } = useSWR(
@@ -22,12 +21,10 @@ function App() {
     fetcher
   )
 
-  if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
-
   return (
     <div className="App">
-      helloworld {data.hello}
+      helloworld
+      {JSON.stringify(data)}
     </div>
   );
 }
