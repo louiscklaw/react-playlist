@@ -26,7 +26,7 @@ export default class TestDonghnut extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{width: '300px', height: '300px'}}>
         <h2>Doughnut Example</h2>
         <Doughnut data={data} />
       </div>
