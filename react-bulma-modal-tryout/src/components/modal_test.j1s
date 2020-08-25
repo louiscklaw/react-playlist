@@ -1,0 +1,33 @@
+import React from 'react'
+
+function ModalTest(props){
+  let {open} = props
+  let [modal_class, setModalClass] = React.useState(false)
+
+  React.useEffect(()=>{
+    if (open) {
+      openModal()
+    }else{
+      closeModal()
+    }
+  },[open])
+
+  const handleCloseButtonOnClick = () => {
+    closeModal()
+  }
+
+  return(
+    <>
+      <div class={modal_class}>
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          helloworld
+        </div>
+        <button class="modal-close is-large" aria-label="close" onClick={handleCloseButtonOnClick}></button>
+      </div>
+    </>
+  )
+}
+
+
+export default ModalTest
