@@ -3,11 +3,13 @@
 set -x
 
 helloearth(){
-  echo /home/logic/_workspace/preactjs-playlist/scripts/update_shortcut.rc
+  echo /home/logic/_workspace/react-playlist/scripts/update_shortcut.rc
 }
 
 update_shortcut(){
-  cp ../.env /tmp/.env
+  OWD=$PWD
+  cd /home/logic/_workspace/kicad_workspace/react-playlist
+  cp ./.env /tmp/.env
 
 python3 << END
 import os,sys
@@ -19,8 +21,6 @@ from pprint import pprint
 new_command_template='''
 new_from_##PROJ_NAME##(){
   new_from ##PROJ_DIR_NAME##
-  pipenv run python3 main.py
-  ./run.sh
 }
 '''
 
@@ -69,8 +69,9 @@ with open('/tmp/.env','w') as fo:
 
 END
 
-  cp /tmp/.env ../.env
+  cp /tmp/.env ./.env
 
+  cd $OWD
 }
 
 new_from(){
