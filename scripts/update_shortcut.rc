@@ -8,7 +8,7 @@ helloearth(){
 
 update_shortcut(){
   OWD=$PWD
-  cd /home/logic/_workspace/kicad_workspace/react-playlist
+  cd /home/logic/_workspace/react-playlist
   cp ./.env /tmp/.env
 
 python3 << END
@@ -21,6 +21,8 @@ from pprint import pprint
 new_command_template='''
 new_from_##PROJ_NAME##(){
   new_from ##PROJ_DIR_NAME##
+  pipenv run python3 main.py
+  ./run.sh
 }
 '''
 
