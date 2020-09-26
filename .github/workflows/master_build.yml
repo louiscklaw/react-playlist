@@ -6,6 +6,18 @@ on:
 jobs:
 
   # 
+  # /home/logic/_workspace/react-playlist/react-cal-heatmap-tryout/build.yml
+  # 
+  react-cal-heatmap-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          cd react-cal-heatmap-tryout
+            yarn
+            yarn build
+  
+  # 
   # /home/logic/_workspace/react-playlist/react-heatmap-grid-tryout/build.yml
   # 
   react-heatmap-grid-tryout:
@@ -62,7 +74,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [react-heatmap-grid-tryout, react-helloworld-tryout, test_merger]
+    needs: [react-cal-heatmap-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
