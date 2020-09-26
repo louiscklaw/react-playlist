@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# set -x
-
 helloearth(){
   echo /home/logic/_workspace/react-playlist/scripts/update_shortcut.rc
 }
@@ -9,7 +7,8 @@ helloearth(){
 update_shortcut(){
   OWD=$PWD
   cd /home/logic/_workspace/react-playlist
-  cp ./.env /tmp/.env
+  TMP_DIR=$(mktemp -d)
+  cp ./.env $TMP_DIR/.env
 
 python3 << END
 import os,sys
@@ -71,7 +70,7 @@ with open('/tmp/.env','w') as fo:
 
 END
 
-  cp /tmp/.env ./.env
+  cp $TMP_DIR/.env ./.env
 
   cd $OWD
 }
@@ -79,8 +78,6 @@ END
 new_from(){
   set -x
 
-  rm -rf * &
-  rm -rf .* &
   wait
 
   TEST=`echo $PWD|rev |cut -d'/' -f1 |rev`
