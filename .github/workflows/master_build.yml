@@ -1,7 +1,6 @@
 name: master_build
 on:
   push:
-  pull_request:
 
 jobs:
 

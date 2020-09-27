@@ -21,7 +21,6 @@ MASTER_GITHUB_ACTIONS_FILEPATH='{}/.github/workflows/master_build.yml'.format(PR
 MASTER_GITHUB_ACTIONS_TEMPLATE='''name: master_build
 on:
   push:
-  pull_request:
 
 jobs:
 
