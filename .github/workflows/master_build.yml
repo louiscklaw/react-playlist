@@ -46,6 +46,18 @@ jobs:
             yarn
             yarn build
   
+  # 
+  # /home/logic/_workspace/react-playlist/react-helloworld-tryout/build.yml
+  # 
+  react-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          cd react-helloworld-tryout
+            yarn
+            yarn build
+  
   
 
   # 
@@ -79,7 +91,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [publish-orphan-tryout, react-calendar-heatmap-tryout, test_merger]
+    needs: [publish-orphan-tryout, react-calendar-heatmap-tryout, react-helloworld-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
