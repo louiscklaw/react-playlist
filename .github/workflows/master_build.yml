@@ -34,6 +34,18 @@ jobs:
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     publish_dir: ./dist
+  # 
+  # /home/logic/_workspace/react-playlist/react-calendar-heatmap-tryout/build.yml
+  # 
+  react-calendar-heatmap-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          cd react-calendar-heatmap-tryout
+            yarn
+            yarn build
+  
   
 
   # 
@@ -67,7 +79,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [publish-orphan-tryout, test_merger]
+    needs: [publish-orphan-tryout, react-calendar-heatmap-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
