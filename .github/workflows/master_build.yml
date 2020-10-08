@@ -49,7 +49,7 @@ jobs:
   # 
   # /home/logic/_workspace/react-playlist/react-chrono-tryout/build.yml
   # 
-  react-helloworld-tryout:
+  react-chrono-tryout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -115,7 +115,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [publish-orphan-tryout, react-calendar-heatmap-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, react-helloworld-tryout, test_merger]
+    needs: [publish-orphan-tryout, react-calendar-heatmap-tryout, react-chrono-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
