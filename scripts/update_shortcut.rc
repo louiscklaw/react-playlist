@@ -39,7 +39,7 @@ new_commands_content = map( lambda x: simple_replace(x), tryout_dirs)
 
 start_string = '''
 # update_by_dir_start
-#/home/logic/_workspace/preactjs-playlist/scripts/update_shortcut.rc
+# python script path scripts/update_shortcut.rc
 '''
 
 end_string = '# update_by_dir_end'
