@@ -1,4 +1,4 @@
-react-helloworld-tryout:
+react-chrono-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
