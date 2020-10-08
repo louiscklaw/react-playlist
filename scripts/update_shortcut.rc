@@ -57,13 +57,13 @@ new_commands_string='\n'.join(
 
 
 temp = ''
-with open('/tmp/.env','r') as fi:
+with open('/$TMP_DIR/.env','r') as fi:
   temp = ''.join(fi.readlines())
   temp = re.sub(r'# update_by_dir_start.+?# update_by_dir_end',
     new_commands_string,
     temp, count=1,flags=re.MULTILINE|re.DOTALL)
 
-with open('/tmp/.env','w') as fo:
+with open('/$TMP_DIR/.env','w') as fo:
   fo.writelines(temp)
 
 END
