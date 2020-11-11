@@ -10,7 +10,13 @@ catch() {
 
 TMP_DIR=$(mktemp -d)
 
-rsync -avzh --exclude "node_modules" --exclude "build"  --exclude ".cache" --progress ./ $TMP_DIR
+rsync -avzh \
+  --exclude "node_modules" \
+  --exclude "build" \
+  --exclude ".cache" \
+  --exclude ".git" \
+  --exclude "public" \
+  --progress ./ $TMP_DIR
 
 cd $TMP_DIR
   yarn
