@@ -1,7 +1,8 @@
 {
   "posts": [ {
     "id": 1,
-    "title": "hello"
+    "title": "hello",
+    "tags": [ "world" ]
   } ],
   "profile": {
     "name": "typicode"
