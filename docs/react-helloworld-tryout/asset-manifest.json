@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-playlist/react-helloworld-tryout/static/css/main.435d5fe5.chunk.css",
+    "main.js": "/react-playlist/react-helloworld-tryout/static/js/main.8b3ffdcf.chunk.js",
+    "main.js.map": "/react-playlist/react-helloworld-tryout/static/js/main.8b3ffdcf.chunk.js.map",
+    "runtime-main.js": "/react-playlist/react-helloworld-tryout/static/js/runtime-main.eff062ac.js",
+    "runtime-main.js.map": "/react-playlist/react-helloworld-tryout/static/js/runtime-main.eff062ac.js.map",
+    "static/js/2.d4dbea34.chunk.js": "/react-playlist/react-helloworld-tryout/static/js/2.d4dbea34.chunk.js",
+    "static/js/2.d4dbea34.chunk.js.map": "/react-playlist/react-helloworld-tryout/static/js/2.d4dbea34.chunk.js.map",
+    "index.html": "/react-playlist/react-helloworld-tryout/index.html",
+    "precache-manifest.db035b93520f67d86a23f1cc1a18e097.js": "/react-playlist/react-helloworld-tryout/precache-manifest.db035b93520f67d86a23f1cc1a18e097.js",
+    "service-worker.js": "/react-playlist/react-helloworld-tryout/service-worker.js",
+    "static/css/main.435d5fe5.chunk.css.map": "/react-playlist/react-helloworld-tryout/static/css/main.435d5fe5.chunk.css.map",
+    "static/js/2.d4dbea34.chunk.js.LICENSE.txt": "/react-playlist/react-helloworld-tryout/static/js/2.d4dbea34.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eff062ac.js",
+    "static/js/2.d4dbea34.chunk.js",
+    "static/css/main.435d5fe5.chunk.css",
+    "static/js/main.8b3ffdcf.chunk.js"
+  ]
+}
