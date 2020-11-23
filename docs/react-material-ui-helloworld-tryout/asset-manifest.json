@@ -1,22 +1,19 @@
 {
   "files": {
-    "main.js": "/react-playlist/react-material-dashboard/static/js/main.52ceeb49.chunk.js",
-    "main.js.map": "/react-playlist/react-material-dashboard/static/js/main.52ceeb49.chunk.js.map",
-    "runtime-main.js": "/react-playlist/react-material-dashboard/static/js/runtime-main.d38f1e55.js",
-    "runtime-main.js.map": "/react-playlist/react-material-dashboard/static/js/runtime-main.d38f1e55.js.map",
-    "static/css/2.18fb2ca0.chunk.css": "/react-playlist/react-material-dashboard/static/css/2.18fb2ca0.chunk.css",
-    "static/js/2.b6e07193.chunk.js": "/react-playlist/react-material-dashboard/static/js/2.b6e07193.chunk.js",
-    "static/js/2.b6e07193.chunk.js.map": "/react-playlist/react-material-dashboard/static/js/2.b6e07193.chunk.js.map",
-    "index.html": "/react-playlist/react-material-dashboard/index.html",
-    "precache-manifest.d04e08008efd291ecdcc5d7e6dbc565c.js": "/react-playlist/react-material-dashboard/precache-manifest.d04e08008efd291ecdcc5d7e6dbc565c.js",
-    "service-worker.js": "/react-playlist/react-material-dashboard/service-worker.js",
-    "static/css/2.18fb2ca0.chunk.css.map": "/react-playlist/react-material-dashboard/static/css/2.18fb2ca0.chunk.css.map",
-    "static/js/2.b6e07193.chunk.js.LICENSE.txt": "/react-playlist/react-material-dashboard/static/js/2.b6e07193.chunk.js.LICENSE.txt"
+    "main.js": "/react-playlist/meme-material-ui-tryout/static/js/main.46b26b25.chunk.js",
+    "main.js.map": "/react-playlist/meme-material-ui-tryout/static/js/main.46b26b25.chunk.js.map",
+    "runtime-main.js": "/react-playlist/meme-material-ui-tryout/static/js/runtime-main.edf5f3f5.js",
+    "runtime-main.js.map": "/react-playlist/meme-material-ui-tryout/static/js/runtime-main.edf5f3f5.js.map",
+    "static/js/2.0b701ed8.chunk.js": "/react-playlist/meme-material-ui-tryout/static/js/2.0b701ed8.chunk.js",
+    "static/js/2.0b701ed8.chunk.js.map": "/react-playlist/meme-material-ui-tryout/static/js/2.0b701ed8.chunk.js.map",
+    "index.html": "/react-playlist/meme-material-ui-tryout/index.html",
+    "precache-manifest.91239283d1372d8028bd5e0a1c5a865a.js": "/react-playlist/meme-material-ui-tryout/precache-manifest.91239283d1372d8028bd5e0a1c5a865a.js",
+    "service-worker.js": "/react-playlist/meme-material-ui-tryout/service-worker.js",
+    "static/js/2.0b701ed8.chunk.js.LICENSE.txt": "/react-playlist/meme-material-ui-tryout/static/js/2.0b701ed8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d38f1e55.js",
-    "static/css/2.18fb2ca0.chunk.css",
-    "static/js/2.b6e07193.chunk.js",
-    "static/js/main.52ceeb49.chunk.js"
+    "static/js/runtime-main.edf5f3f5.js",
+    "static/js/2.0b701ed8.chunk.js",
+    "static/js/main.46b26b25.chunk.js"
   ]
 }
