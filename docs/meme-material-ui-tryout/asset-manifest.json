@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/react-playlist/meme-material-ui-tryout/static/js/main.46b26b25.chunk.js",
-    "main.js.map": "/react-playlist/meme-material-ui-tryout/static/js/main.46b26b25.chunk.js.map",
+    "main.js": "/react-playlist/meme-material-ui-tryout/static/js/main.e7091eef.chunk.js",
+    "main.js.map": "/react-playlist/meme-material-ui-tryout/static/js/main.e7091eef.chunk.js.map",
     "runtime-main.js": "/react-playlist/meme-material-ui-tryout/static/js/runtime-main.edf5f3f5.js",
     "runtime-main.js.map": "/react-playlist/meme-material-ui-tryout/static/js/runtime-main.edf5f3f5.js.map",
-    "static/js/2.0b701ed8.chunk.js": "/react-playlist/meme-material-ui-tryout/static/js/2.0b701ed8.chunk.js",
-    "static/js/2.0b701ed8.chunk.js.map": "/react-playlist/meme-material-ui-tryout/static/js/2.0b701ed8.chunk.js.map",
+    "static/css/2.18fb2ca0.chunk.css": "/react-playlist/meme-material-ui-tryout/static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.4d24eb13.chunk.js": "/react-playlist/meme-material-ui-tryout/static/js/2.4d24eb13.chunk.js",
+    "static/js/2.4d24eb13.chunk.js.map": "/react-playlist/meme-material-ui-tryout/static/js/2.4d24eb13.chunk.js.map",
     "index.html": "/react-playlist/meme-material-ui-tryout/index.html",
-    "precache-manifest.91239283d1372d8028bd5e0a1c5a865a.js": "/react-playlist/meme-material-ui-tryout/precache-manifest.91239283d1372d8028bd5e0a1c5a865a.js",
+    "precache-manifest.59a5b1278d4b7349761a45a828b44680.js": "/react-playlist/meme-material-ui-tryout/precache-manifest.59a5b1278d4b7349761a45a828b44680.js",
     "service-worker.js": "/react-playlist/meme-material-ui-tryout/service-worker.js",
-    "static/js/2.0b701ed8.chunk.js.LICENSE.txt": "/react-playlist/meme-material-ui-tryout/static/js/2.0b701ed8.chunk.js.LICENSE.txt"
+    "static/css/2.18fb2ca0.chunk.css.map": "/react-playlist/meme-material-ui-tryout/static/css/2.18fb2ca0.chunk.css.map",
+    "static/js/2.4d24eb13.chunk.js.LICENSE.txt": "/react-playlist/meme-material-ui-tryout/static/js/2.4d24eb13.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.edf5f3f5.js",
-    "static/js/2.0b701ed8.chunk.js",
-    "static/js/main.46b26b25.chunk.js"
+    "static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.4d24eb13.chunk.js",
+    "static/js/main.e7091eef.chunk.js"
   ]
 }
