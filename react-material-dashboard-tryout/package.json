@@ -1,8 +1,9 @@
 {
   "name": "react-material-dashboard",
+  "version": "1.9.0",
+  "homepage": "https://louiscklaw.github.io/react-playlist/react-material-dashboard-tryout",
   "author": "DeviasIO",
   "licence": "MIT",
-  "version": "1.0.0",
   "private": false,
   "scripts": {
     "start": "react-scripts start",

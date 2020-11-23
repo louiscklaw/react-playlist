@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/react-playlist/react-material-ui-helloworld-tryout/static/js/main.f19015bc.chunk.js",
-    "main.js.map": "/react-playlist/react-material-ui-helloworld-tryout/static/js/main.f19015bc.chunk.js.map",
-    "runtime-main.js": "/react-playlist/react-material-ui-helloworld-tryout/static/js/runtime-main.693c1567.js",
-    "runtime-main.js.map": "/react-playlist/react-material-ui-helloworld-tryout/static/js/runtime-main.693c1567.js.map",
-    "static/js/2.157d308a.chunk.js": "/react-playlist/react-material-ui-helloworld-tryout/static/js/2.157d308a.chunk.js",
-    "static/js/2.157d308a.chunk.js.map": "/react-playlist/react-material-ui-helloworld-tryout/static/js/2.157d308a.chunk.js.map",
-    "index.html": "/react-playlist/react-material-ui-helloworld-tryout/index.html",
-    "precache-manifest.e633bb778fe858f2c20c8086cc5ced15.js": "/react-playlist/react-material-ui-helloworld-tryout/precache-manifest.e633bb778fe858f2c20c8086cc5ced15.js",
-    "service-worker.js": "/react-playlist/react-material-ui-helloworld-tryout/service-worker.js",
-    "static/js/2.157d308a.chunk.js.LICENSE.txt": "/react-playlist/react-material-ui-helloworld-tryout/static/js/2.157d308a.chunk.js.LICENSE.txt"
+    "main.js": "/react-playlist/react-material-dashboard/static/js/main.52ceeb49.chunk.js",
+    "main.js.map": "/react-playlist/react-material-dashboard/static/js/main.52ceeb49.chunk.js.map",
+    "runtime-main.js": "/react-playlist/react-material-dashboard/static/js/runtime-main.d38f1e55.js",
+    "runtime-main.js.map": "/react-playlist/react-material-dashboard/static/js/runtime-main.d38f1e55.js.map",
+    "static/css/2.18fb2ca0.chunk.css": "/react-playlist/react-material-dashboard/static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.b6e07193.chunk.js": "/react-playlist/react-material-dashboard/static/js/2.b6e07193.chunk.js",
+    "static/js/2.b6e07193.chunk.js.map": "/react-playlist/react-material-dashboard/static/js/2.b6e07193.chunk.js.map",
+    "index.html": "/react-playlist/react-material-dashboard/index.html",
+    "precache-manifest.d04e08008efd291ecdcc5d7e6dbc565c.js": "/react-playlist/react-material-dashboard/precache-manifest.d04e08008efd291ecdcc5d7e6dbc565c.js",
+    "service-worker.js": "/react-playlist/react-material-dashboard/service-worker.js",
+    "static/css/2.18fb2ca0.chunk.css.map": "/react-playlist/react-material-dashboard/static/css/2.18fb2ca0.chunk.css.map",
+    "static/js/2.b6e07193.chunk.js.LICENSE.txt": "/react-playlist/react-material-dashboard/static/js/2.b6e07193.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.693c1567.js",
-    "static/js/2.157d308a.chunk.js",
-    "static/js/main.f19015bc.chunk.js"
+    "static/js/runtime-main.d38f1e55.js",
+    "static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.b6e07193.chunk.js",
+    "static/js/main.52ceeb49.chunk.js"
   ]
 }
