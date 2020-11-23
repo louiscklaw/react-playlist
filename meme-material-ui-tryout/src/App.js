@@ -12,8 +12,9 @@ import { useRoutes } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';
 import GlobalStyles from 'src/components/GlobalStyles';
 // import 'src/mixins/chartjs';
-import theme from 'src/theme';
-// import routes from 'src/routes';
+// import theme from 'src/theme';
+
+import routes from 'src/routes';
 
 
 function Copyright() {
@@ -30,15 +31,12 @@ function Copyright() {
 }
 
 export default function App() {
-  // const routing = useRoutes(routes);
+  const routing = useRoutes(routes);
 
   return (
     <>
-    {/* <ThemeProvider theme={theme}> */}
-      {/* <GlobalStyles /> */}
-      {helloworld()}
-      {/* {routing} */}
-    {/* </ThemeProvider> */}
+      <GlobalStyles />
+      {routing}
     </>
   );
 }
