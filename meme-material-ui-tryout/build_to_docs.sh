@@ -2,6 +2,8 @@
 
 set -ex
 
+NOW=`date '+%F_%H:%M:%S'`
+
 yarn
 
 yarn build

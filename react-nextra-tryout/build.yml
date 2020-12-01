@@ -1,0 +1,8 @@
+react-nextra-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - run: |
+        cd react-nextra-tryout
+          yarn
+          yarn build

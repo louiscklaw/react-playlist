@@ -30,44 +30,46 @@ const user = {
   name: 'Katarina Smith'
 };
 
+const ENV_PUBLIC_URL=process.env.PUBLIC_URL;
+
 const items = [
   {
-    href: '/app/dashboard',
+    href: `${ENV_PUBLIC_URL}/app/dashboard`,
     icon: BarChartIcon,
     title: 'Dashboard'
   },
   {
-    href: '/app/customers',
+    href: `${ENV_PUBLIC_URL}/app/customers`,
     icon: UsersIcon,
     title: 'Customers'
   },
   {
-    href: '/app/products',
+    href: `${ENV_PUBLIC_URL}/app/products`,
     icon: ShoppingBagIcon,
     title: 'Products'
   },
   {
-    href: '/app/account',
+    href: `${ENV_PUBLIC_URL}/app/account`,
     icon: UserIcon,
     title: 'Account'
   },
   {
-    href: '/app/settings',
+    href: `${ENV_PUBLIC_URL}/app/settings`,
     icon: SettingsIcon,
     title: 'Settings'
   },
   {
-    href: '/login',
+    href: `${ENV_PUBLIC_URL}/login`,
     icon: LockIcon,
     title: 'Login'
   },
   {
-    href: '/register',
+    href: `${ENV_PUBLIC_URL}/register`,
     icon: UserPlusIcon,
     title: 'Register'
   },
   {
-    href: '/404',
+    href: `${ENV_PUBLIC_URL}/404`,
     icon: AlertCircleIcon,
     title: 'Error'
   }
