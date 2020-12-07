@@ -1,11 +1,12 @@
 
 const config = {
-  apiKey: "AIzaSyBCX-8OR9xl53PGNhw76YNzayFN9z399lg",
-  authDomain: "react-firebase-auth-dbb3a.firebaseapp.com",
-  databaseURL: "https://react-firebase-auth-dbb3a.firebaseio.com",
-  projectId: "react-firebase-auth-dbb3a",
-  storageBucket: "react-firebase-auth-dbb3a.appspot.com",
-  messagingSenderId: "969920095780"
+  apiKey: "AIzaSyBZ5IkKyebNRzt8dwlt8JY_41BENdakzxA",
+  authDomain: "react-tryout-e8aa2.firebaseapp.com",
+  databaseURL: "https://react-tryout-e8aa2.firebaseio.com",
+  projectId: "react-tryout-e8aa2",
+  storageBucket: "react-tryout-e8aa2.appspot.com",
+  messagingSenderId: "665011834822",
+  appId: "1:665011834822:web:7eddaca64f46f5bcc6ecc7"
 };
 
 export default config;
