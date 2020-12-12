@@ -27,17 +27,22 @@ export default function App(){
   const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
 
-  let [t_f_enabled, setFEnabled] = React.useState([true,true])
+
 
   let [id_back, setIdBack]=React.useState([
-    `id_${getRandomInt(999999)}`,`id_${getRandomInt(999999)}`
+    `id_back_1`,`id_back_2`
   ])
   let [id_front, setIdFront]=React.useState([
-    `id_${getRandomInt(999999)}`,`id_${getRandomInt(999999)}`
+    `id_front_1`,`id_front_2`
   ])
   let [id_container, setIdContainer]=React.useState([
-    `id_${getRandomInt(999999)}`,`id_${getRandomInt(999999)}`
+    `id_container_1`,`id_container_2`
   ])
+
+  let [t_f_enabled, setFEnabled] = React.useState({
+    'id_front_1': true,
+    'id_front_2': true
+  })
 
   const change_all_value = (e) => {
     console.log(e.target.id)
@@ -56,22 +61,10 @@ export default function App(){
   const pressButton = (e) => {
     // console.log(e.target.id)
     let this_id_f = e.target.id
-    id_front.map((id_f, idx) => {
-      if (this_id_f != id_f){
-        let t_a = t_f_enabled
-        t_a[idx] = false
-        // setFEnabled([false, false])
-        setFEnabled(t_a)
-        console.log(t_a)
-        console.log(t_f_enabled)
-        console.log(id_front)
-        console.log(`setting ${idx} to false`)
-        console.log(`setting ${id_f} to false`)
-        console.log( `hello ${this_id_f}`)
-      }else{
-
-      }
-    })
+    let update_t_f={}
+    update_t_f[this_id_f]=false
+    setFEnabled({ ...t_f_enabled,...update_t_f })
+    console.log(t_f_enabled)
   }
 
   return (
@@ -90,7 +83,7 @@ export default function App(){
 
                     my_id={`id_${idx}`}
                     pressButton={pressButton}
-                    flip_enabled={t_f_enabled[idx]}
+                    flip_enabled={t_f_enabled[`id_front_${idx}`]}
                     />
                 </Grid>
               )
