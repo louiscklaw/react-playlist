@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -79,38 +83,65 @@ class HelloFlip extends Component {
 }
 
 class HelloFlipGold extends Component {
+  constructor(props){
+    super(props)
+    this.flip_ref=React.createRef()
+    this.id_back=`id_${getRandomInt(999999)}`
+    this.id_front=`id_${getRandomInt(999999)}`
+    this.query_id_back=`#${this.id_back}`
+    this.query_id_front=`#${this.id_front}`
+  }
+
+  componentDidMount() {
+    function updatePos(id_b, id_f) {
+
+      var e_f=document.querySelector(id_f)
+      var e_b=document.querySelector(id_b)
+      var r_f = e_f.getBoundingClientRect();
+      console.log(`${0-r_f.top}px`)
+      e_b.style.top=`${0-r_f.top}px`
+
+      e_b.style.left=`${0-r_f.left}px`
+    }
+
+    document.addEventListener('scroll', (e)=>{
+      updatePos(`#${this.id_back}`, `#${this.id_front}`)
+    })
+
+  }
+
   render() {
     return (
       <>
-    <Flippy
-      flipOnHover={false} // default false
-      flipOnClick={true} // default false
-      flipDirection="horizontal" // horizontal or vertical
-      ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
-      // if you pass isFlipped prop component will be controlled component.
-      // and other props, which will go to div
-      style={{ width: '30vw', height: '150px' }} /// these are optional style, it is not necessary
-    >
-      <FrontSide
-        style={{
-          backgroundColor: 'gold',
-        }}
-        id={'hello-flip-front'}
-      >
-        RICK
-      </FrontSide>
-      <BackSide
-        style={{
-          backgroundColor: 'cyan',
-          width: '100vw',
-          height: '100vh',
-          zIndex: '999999'
-        }}
-        id={'hello-flip-back'}
+        <Flippy
+          flipOnHover={false} // default false
+          flipOnClick={true} // default false
+          flipDirection="horizontal" // horizontal or vertical
+          ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
+          // if you pass isFlipped prop component will be controlled component.
+          // and other props, which will go to div
+          style={{ width: '30vw', height: '150px' }} /// these are optional style, it is not necessary
         >
-        ROCKS
-      </BackSide>
-    </Flippy>
+          <FrontSide
+            style={{
+              backgroundColor: 'gold',
+            }}
+            id={this.id_front}
+          >
+            hello front
+          </FrontSide>
+          <BackSide
+            style={{
+              backgroundColor: 'cyan',
+              width: '100vw',
+              height: '100vh',
+              zIndex: '999999'
+            }}
+            id={this.id_back}
+            >
+            hello back
+          </BackSide>
+        </Flippy>
       </>
     )
   }
@@ -148,13 +179,15 @@ export default function App(){
         <Grid container justify="center" spacing={spacing}>
           {Array(3).fill(0).map((value) => (
             <Grid key={value} item>
-              <CardCluster />
+              <HelloFlipGold />
             </Grid>
           ))}
-          <HelloFlipGold />
+          <Grid item>
+            <HelloFlipGold />
+          </Grid>
           {Array(40).fill(0).map((value) => (
             <Grid key={value} item>
-              <CardCluster />
+              <HelloFlipGold />
             </Grid>
           ))}
         </Grid>
