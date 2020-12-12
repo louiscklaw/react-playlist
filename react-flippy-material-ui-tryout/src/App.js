@@ -27,9 +27,18 @@ const useStyles = makeStyles((theme) => ({
 export default function App(){
   const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
+  const n_a = [0,1]
+  const default_flip = {}
+  n_a.forEach(x => default_flip[`id_${x}`]=false)
   const [is_flipped, setIsFlipped] = React.useState({
     id_0: false,
-    id_1: false
+    id_1: false,
+    id_2: false,
+    id_3: false,
+    id_4: false,
+    id_5: false,
+    id_6: false,
+    id_7: false,
   })
   const [flipped_card, setFlippedCard] = React.useState('')
   const testHelloworld = () => {
@@ -43,7 +52,13 @@ export default function App(){
     setIsFlipped({
       id_0: false,
       id_1: false,
-       ...new_d})
+      id_2: false,
+      id_3: false,
+      id_4: false,
+      id_5: false,
+      id_6: false,
+      id_7: false,
+      ...new_d})
     // console.log('helloworld')
   }
 
@@ -66,7 +81,7 @@ export default function App(){
       <Grid item xs={12}>
         {/* <FullScreenCardCluster /> */}
         <Grid container justify="center" spacing={spacing}>
-          {Array(2).fill(0).map((value, idx) =>
+          {Array(8).fill(0).map((value, idx) =>
             {
               return (
                 <Grid key={idx} item>
