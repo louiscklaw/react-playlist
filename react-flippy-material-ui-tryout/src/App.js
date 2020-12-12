@@ -1,19 +1,10 @@
 import React, {Component} from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import ProTip from './ProTip';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
-import Paper from '@material-ui/core/Paper';
 
-import Flippy, { FrontSide, BackSide } from 'react-flippy';
+import HelloFlipGold from './HelloFlipGold'
+import HelloFlip from './HelloFlip'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,168 +19,43 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
-class HelloFlip extends Component {
-  render() {
-    return (
-      <>
-    <Flippy
-      flipOnHover={false} // default false
-      flipOnClick={true} // default false
-      flipDirection="horizontal" // horizontal or vertical
-      ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
-      // if you pass isFlipped prop component will be controlled component.
-      // and other props, which will go to div
-      style={{ width: '30vw', height: '150px' }} /// these are optional style, it is not necessary
-    >
-      <FrontSide
-        style={{
-          backgroundColor: '#41669d',
-        }}
-      >
-        RICK
-      </FrontSide>
-      <BackSide
-        style={{
-          backgroundColor: '#175852',
-          width: '100vw',
-          height: '100vh',
-          zIndex: '999999'
-        }}
-
-        >
-        ROCKS
-      </BackSide>
-    </Flippy>
-      </>
-    )
-  }
-}
-
-class HelloFlipGold extends Component {
-  constructor(props){
-    super(props)
-    this.flip_ref=React.createRef()
-    this.id_back=`id_${getRandomInt(999999)}`
-    this.id_front=`id_${getRandomInt(999999)}`
-    this.query_id_back=`#${this.id_back}`
-    this.query_id_front=`#${this.id_front}`
-  }
-
-  componentDidMount() {
-    function updatePos(id_b, id_f) {
-
-      var e_f=document.querySelector(id_f)
-      var e_b=document.querySelector(id_b)
-      var r_f = e_f.getBoundingClientRect();
-      console.log(`${0-r_f.top}px`)
-      e_b.style.top=`${0-r_f.top}px`
-
-      e_b.style.left=`${0-r_f.left}px`
-    }
-
-    document.addEventListener('scroll', (e)=>{
-      updatePos(`#${this.id_back}`, `#${this.id_front}`)
-    })
-
-  }
-
-  render() {
-    return (
-      <>
-        <Flippy
-          flipOnHover={false} // default false
-          flipOnClick={true} // default false
-          flipDirection="horizontal" // horizontal or vertical
-          ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
-          // if you pass isFlipped prop component will be controlled component.
-          // and other props, which will go to div
-          style={{ width: '30vw', height: '150px' }} /// these are optional style, it is not necessary
-        >
-          <FrontSide
-            style={{
-              backgroundColor: 'gold',
-            }}
-            id={this.id_front}
-          >
-            hello front
-          </FrontSide>
-          <BackSide
-            style={{
-              backgroundColor: 'cyan',
-              width: '100vw',
-              height: '100vh',
-              zIndex: '999999'
-            }}
-            id={this.id_back}
-            >
-            hello back
-          </BackSide>
-        </Flippy>
-      </>
-    )
-  }
-}
-
-function CardCluster() {
-  return (
-      <Box my={4} component="span">
-        <HelloFlip />
-      </Box>
-  );
-}
-
-function FullScreenCardCluster(){
-  return (
-    <Box my={4} component="span">
-      <HelloFlip />
-    </Box>
-);
-}
-
-
 export default function App(){
   const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
+  let [t_f_enabled, setFEnabled] = React.useState([true,true])
 
-  const handleChange = (event) => {
-    setSpacing(Number(event.target.value));
-  };
+  const change_all_value = (e) => {
+    console.log(e.target.id)
+    setFEnabled([false, false])
+    let this_id = e.target.parentNode.id
+
+    // t_id_array.forEach(t_ref_id => {
+    //   if (t_ref_id == this_id){
+
+    //   }else{
+    //     document.querySelector(`#${t_ref_id}`).style.visibility='hidden'
+    //   }
+    // })
+  }
 
   return (
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         {/* <FullScreenCardCluster /> */}
         <Grid container justify="center" spacing={spacing}>
-          {Array(3).fill(0).map((value) => (
-            <Grid key={value} item>
-              <HelloFlipGold />
-            </Grid>
-          ))}
-          <Grid item>
-            <HelloFlipGold />
-          </Grid>
-          {Array(40).fill(0).map((value) => (
-            <Grid key={value} item>
-              <HelloFlipGold />
-            </Grid>
-          ))}
+          {Array(2).fill(0).map((value, idx) =>
+            {
+              return (
+                <Grid key={value} item>
+                  <HelloFlipGold
+                    my_id={`id_${idx}`}
+                    pressButton={change_all_value}
+                    flip_on_click_enabled={t_f_enabled[idx]}
+                    />
+                </Grid>
+              )
+            }
+          )}
         </Grid>
       </Grid>
     </Grid>
