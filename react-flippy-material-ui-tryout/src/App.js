@@ -58,13 +58,23 @@ export default function App(){
     // })
   }
 
-  const pressButton = (e) => {
+  const pressFront = (e) => {
     // console.log(e.target.id)
     let this_id_f = e.target.id
     let update_t_f={}
     update_t_f[this_id_f]=false
     setFEnabled({ ...t_f_enabled,...update_t_f })
     console.log(t_f_enabled)
+  }
+
+  const pressBack = (e) => {
+    let this_id = e.target.id
+    let update_t_f={}
+    update_t_f[`id_front_${this_id.split('_')[2]}`]=true
+    setFEnabled({ ...t_f_enabled,...update_t_f })
+    console.log(t_f_enabled)
+    console.log('back pressed')
+
   }
 
   return (
@@ -82,7 +92,8 @@ export default function App(){
                     id_container={id_container[idx]}
 
                     my_id={`id_${idx}`}
-                    pressButton={pressButton}
+                    pressFront={pressFront}
+                    pressBack={pressBack}
                     flip_enabled={t_f_enabled[`id_front_${idx}`]}
                     />
                 </Grid>

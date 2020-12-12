@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button'
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
 
-function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressButton}){
+function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressFront, pressBack}){
   let [query_id_back, setQueryIdBack] = React.useState(`#${id_back}`)
   let [query_id_front, setQueryIdFront] = React.useState(`#${id_front}`)
   let [query_id_container, setQueryIdContainer] = React.useState(`#${id_container}`)
@@ -51,7 +51,7 @@ function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressButt
               transitionDuration: '0s'
             }}
             // onClick={(e)=> this.hideOthersFront(e)}
-            onClick={(e) => pressButton(e)}
+            onClick={(e) => pressFront(e)}
             id={id_front}
           >
             hello front
@@ -67,7 +67,7 @@ function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressButt
               width: '100vw',
               height: '100vh',
             }}
-            // onClick={(e)=> this.showOthersFront(e)}
+            onClick={(e) => pressBack(e)}
             id={id_back}
             >
             hello back
