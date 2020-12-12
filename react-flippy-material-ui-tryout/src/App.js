@@ -27,20 +27,7 @@ const useStyles = makeStyles((theme) => ({
 export default function App(){
   const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
-  const n_a = [0,1]
-  const default_flip = {}
   const flip_count = 20
-  // n_a.forEach(x => default_flip[`id_${x}`]=false)
-  // const [is_flipped, setIsFlipped] = React.useState({
-  //   id_0: false,
-  //   id_1: false,
-  //   id_2: false,
-  //   id_3: false,
-  //   id_4: false,
-  //   id_5: false,
-  //   id_6: false,
-  //   id_7: false,
-  // })
 
   const default_flipped = Array(flip_count).fill(false)
   const [is_flipped, setIsFlipped] = React.useState(default_flipped)
@@ -53,21 +40,38 @@ export default function App(){
     let this_id = e.target.id
     let new_d = {}
     new_d[this_id] = true
-    // setIsFlipped({
-    //   id_0: false,
-    //   id_1: false,
-    //   id_2: false,
-    //   id_3: false,
-    //   id_4: false,
-    //   id_5: false,
-    //   id_6: false,
-    //   id_7: false,
-    //   ...new_d})
 
     let new_is_flipped=default_flipped
     new_is_flipped[this_id.split('_')[1]]=true
 
     setIsFlipped([...new_is_flipped])
+
+    let this_back_side_id = this_id.replace('id_','id_back_side_')
+    enlargeBack(this_back_side_id)
+    hideOtherFront(this_back_side_id)
+  }
+
+  const hideOtherFront = (this_back_id) => {
+    let this_id = this_back_id.replace('id_back_','id_')
+    let num = this_id.split('_')[2]
+    console.log('hid back side id '+num)
+
+    var eles = document.querySelectorAll('.test-class')
+    for (var i=0; i< flip_count;i++){
+      if (i == num){
+
+      }else{
+        eles[i].style.zIndex='-1'
+      }
+    }
+
+  }
+
+  const showOtherFront = () =>{
+    var eles = document.querySelectorAll('.test-class')
+    for (var i=0; i< flip_count;i++){
+        eles[i].style.zIndex='unset'
+    }
 
   }
 
@@ -75,12 +79,16 @@ export default function App(){
     console.log(e.target)
     let this_back_id = e.target.id
     let this_id = this_back_id.replace('id_back_','id_')
-    // let new_d = {}
-    // new_d[this_id] = false
-    // console.log(this_id)
-    // setIsFlipped({...is_flipped, ...new_d})
-
     setIsFlipped(default_flipped)
+    showOtherFront()
+  }
+
+  const enlargeBack = (id_b) => {
+    console.log(id_b)
+    var e_b=document.querySelector(`#${id_b}`)
+    e_b.style.width="100vw"
+    e_b.style.height="100vh"
+
   }
 
   React.useEffect(()=>{
@@ -91,13 +99,14 @@ export default function App(){
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         {/* <FullScreenCardCluster /> */}
-        <Grid container justify="center" spacing={spacing}>
+        <Grid container justify="center" spacing={spacing} >
           {Array(flip_count).fill(0).map((value, idx) =>
             {
               return (
-                <Grid key={idx} item>
+                <Grid key={idx} item className="test-class">
                   <HelloFlipGold
-                    my_id={`id_${idx}`}
+                    id_front={`id_${idx}`}
+                    id_back_side={`id_back_side_${idx}`}
                     flipForward={goFlip}
                     flipBackward={goFlipBack}
                     is_flipped={is_flipped[idx]}
