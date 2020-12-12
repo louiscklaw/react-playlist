@@ -85,8 +85,9 @@ export default function App(){
           {Array(2).fill(0).map((value, idx) =>
             {
               return (
-                <Grid key={value} item>
+                <Grid key={idx} item>
                   <HelloFlipGold
+
                     id_back={id_back[idx]}
                     id_front={id_front[idx]}
                     id_container={id_container[idx]}

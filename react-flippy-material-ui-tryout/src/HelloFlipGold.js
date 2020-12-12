@@ -29,6 +29,44 @@ function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressFron
     updatePos(query_id_back, query_id_front)
   },[])
 
+  const hideOthersFront = (e) => {
+    var this_id = e.target.id
+    var eles_f_front = document.querySelectorAll('.flippy-front')
+
+    eles_f_front.forEach(ele => {
+      if (ele.id != this_id){
+        ele.style.transitionDuration='0s'
+        ele.style.visibility='hidden'
+        // ele.style.display="none"
+      }
+    })
+
+    console.log(this_id)
+
+  }
+
+  const showOthersFront = (e) =>{
+      var this_id = e.target.id
+      var eles_f_front = document.querySelectorAll('.flippy-front')
+
+      eles_f_front.forEach(ele => {
+        if (ele.id != this_id){
+          ele.style.transitionDuration='0s'
+          ele.style.visibility='visible'
+        }
+      })
+    }
+
+  const processFront = (e) => {
+    pressFront(e)
+    hideOthersFront(e)
+  }
+
+  const processBack = (e) => {
+    pressBack(e)
+    showOthersFront(e)
+  }
+
   return(
     <div >
       <Flippy
@@ -51,7 +89,7 @@ function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressFron
               transitionDuration: '0s'
             }}
             // onClick={(e)=> this.hideOthersFront(e)}
-            onClick={(e) => pressFront(e)}
+            onClick={(e) => processFront(e)}
             id={id_front}
           >
             hello front
@@ -67,7 +105,7 @@ function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressFron
               width: '100vw',
               height: '100vh',
             }}
-            onClick={(e) => pressBack(e)}
+            onClick={(e) => processBack(e)}
             id={id_back}
             >
             hello back
