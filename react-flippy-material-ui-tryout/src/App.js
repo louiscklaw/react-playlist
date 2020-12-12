@@ -65,6 +65,20 @@ export default function App(){
     update_t_f[this_id_f]=false
     setFEnabled({ ...t_f_enabled,...update_t_f })
     console.log(t_f_enabled)
+
+    var this_id = e.target.id
+    var eles_f_front = document.querySelectorAll('.flippy-front')
+
+    eles_f_front.forEach(ele => {
+      if (ele.id != this_id){
+        ele.style.transitionDuration='0s'
+        // ele.style.visibility='visible'
+        ele.parentNode.parentNode.style.zIndex='-1'
+      }else{
+
+      }
+    })
+
   }
 
   const pressBack = (e) => {
@@ -74,6 +88,17 @@ export default function App(){
     setFEnabled({ ...t_f_enabled,...update_t_f })
     console.log(t_f_enabled)
     console.log('back pressed')
+
+    var eles_f_front = document.querySelectorAll('.flippy-front')
+    eles_f_front.forEach(ele => {
+      if (ele.id != this_id){
+        ele.style.transitionDuration='0s'
+        ele.style.visibility='visible'
+        ele.parentNode.parentNode.style.zIndex='unset'
+      }else{
+
+      }
+    })
 
   }
 
