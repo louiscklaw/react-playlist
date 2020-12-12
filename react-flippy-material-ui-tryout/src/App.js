@@ -58,13 +58,21 @@ export default function App(){
     // })
   }
 
+  React.useEffect(()=>{
+    console.log(t_f_enabled)
+  },[t_f_enabled])
+
   const pressFront = (e) => {
     // console.log(e.target.id)
     let this_id_f = e.target.id
-    let update_t_f={}
-    update_t_f[this_id_f]=false
-    setFEnabled({ ...t_f_enabled,...update_t_f })
-    console.log(t_f_enabled)
+    // let update_t_f={}
+    // update_t_f[this_id_f]=false
+    // // setFEnabled({ ...t_f_enabled,...update_t_f })
+    // setFEnabled([false, false])
+    setFEnabled({
+      'id_front_1': false,
+      'id_front_2': false
+    })
 
     var this_id = e.target.id
     var eles_f_front = document.querySelectorAll('.flippy-front')
@@ -78,15 +86,20 @@ export default function App(){
 
       }
     })
-
+    console.log('front pressed')
   }
 
   const pressBack = (e) => {
-    let this_id = e.target.id
+    // let this_id = e.target.id
+    let this_id = e
+
     let update_t_f={}
     update_t_f[`id_front_${this_id.split('_')[2]}`]=true
-    setFEnabled({ ...t_f_enabled,...update_t_f })
-    console.log(t_f_enabled)
+    // setFEnabled({ ...t_f_enabled,...update_t_f })
+    setFEnabled({
+      'id_front_1': false,
+      'id_front_2': false
+    })
     console.log('back pressed')
 
     var eles_f_front = document.querySelectorAll('.flippy-front')
@@ -107,7 +120,7 @@ export default function App(){
       <Grid item xs={12}>
         {/* <FullScreenCardCluster /> */}
         <Grid container justify="center" spacing={spacing}>
-          {Array(2).fill(0).map((value, idx) =>
+          {Array(30).fill(0).map((value, idx) =>
             {
               return (
                 <Grid key={idx} item>
