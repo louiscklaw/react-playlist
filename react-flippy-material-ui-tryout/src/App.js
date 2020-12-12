@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
 export default function App(){
   const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
+
   let [t_f_enabled, setFEnabled] = React.useState([true,true])
 
   let [id_back, setIdBack]=React.useState([
@@ -53,7 +54,24 @@ export default function App(){
   }
 
   const pressButton = (e) => {
-    console.log(e.target.id)
+    // console.log(e.target.id)
+    let this_id_f = e.target.id
+    id_front.map((id_f, idx) => {
+      if (this_id_f != id_f){
+        let t_a = t_f_enabled
+        t_a[idx] = false
+        // setFEnabled([false, false])
+        setFEnabled(t_a)
+        console.log(t_a)
+        console.log(t_f_enabled)
+        console.log(id_front)
+        console.log(`setting ${idx} to false`)
+        console.log(`setting ${id_f} to false`)
+        console.log( `hello ${this_id_f}`)
+      }else{
+
+      }
+    })
   }
 
   return (

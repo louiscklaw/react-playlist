@@ -56,8 +56,8 @@ function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressButt
           >
             hello front
             <div>
-              <div>{'this.id_container'}</div>
-              <div>{'this.id_front'}</div>
+              <div>{id_container}</div>
+              <div>{id_front}</div>
 
             </div>
           </FrontSide>
@@ -72,8 +72,8 @@ function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressButt
             >
             hello back
             <div>
-              <div>{'this.id_container'}</div>
-              <div>{'this.id_front'}</div>
+              <div>{id_container}</div>
+              <div>{id_front}</div>
             </div>
             <Button onClick={(e)=>alert('helloworld')}>say helloworld</Button>
             <Button onClick={(e)=>alert('helloworld')}>say helloworld</Button>
