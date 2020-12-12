@@ -30,16 +30,17 @@ export default function App(){
   const n_a = [0,1]
   const default_flip = {}
   n_a.forEach(x => default_flip[`id_${x}`]=false)
-  const [is_flipped, setIsFlipped] = React.useState({
-    id_0: false,
-    id_1: false,
-    id_2: false,
-    id_3: false,
-    id_4: false,
-    id_5: false,
-    id_6: false,
-    id_7: false,
-  })
+  // const [is_flipped, setIsFlipped] = React.useState({
+  //   id_0: false,
+  //   id_1: false,
+  //   id_2: false,
+  //   id_3: false,
+  //   id_4: false,
+  //   id_5: false,
+  //   id_6: false,
+  //   id_7: false,
+  // })
+  const [is_flipped, setIsFlipped] = React.useState([false,false,false,false,false,false,false,false])
   const [flipped_card, setFlippedCard] = React.useState('')
   const testHelloworld = () => {
     setIsFlipped([false,false])
@@ -49,17 +50,22 @@ export default function App(){
     let this_id = e.target.id
     let new_d = {}
     new_d[this_id] = true
-    setIsFlipped({
-      id_0: false,
-      id_1: false,
-      id_2: false,
-      id_3: false,
-      id_4: false,
-      id_5: false,
-      id_6: false,
-      id_7: false,
-      ...new_d})
-    // console.log('helloworld')
+    // setIsFlipped({
+    //   id_0: false,
+    //   id_1: false,
+    //   id_2: false,
+    //   id_3: false,
+    //   id_4: false,
+    //   id_5: false,
+    //   id_6: false,
+    //   id_7: false,
+    //   ...new_d})
+
+    let new_is_flipped=[false,false,false,false,false,false,false,false]
+    new_is_flipped[this_id.split('_')[1]]=true
+
+    setIsFlipped([...new_is_flipped])
+
   }
 
   const goFlipBack = (e) => {
@@ -89,7 +95,7 @@ export default function App(){
                     my_id={`id_${idx}`}
                     flipForward={goFlip}
                     flipBackward={goFlipBack}
-                    is_flipped={is_flipped[`id_${idx}`]}
+                    is_flipped={is_flipped[idx]}
                   />
                 </Grid>
               )
