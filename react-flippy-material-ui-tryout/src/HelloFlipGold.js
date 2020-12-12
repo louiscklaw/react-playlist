@@ -3,19 +3,11 @@ import Button from '@material-ui/core/Button'
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-function HelloFlipGold(){
-  let [id_back, setIdBack]=React.useState(`id_${getRandomInt(999999)}`)
-  let [id_front, setIdFront]=React.useState(`id_${getRandomInt(999999)}`)
-  let [id_container, setIdContainer]=React.useState(`id_${getRandomInt(999999)}`)
-
+function HelloFlipGold({id_front, id_back, id_container, flip_enabled, pressButton}){
   let [query_id_back, setQueryIdBack] = React.useState(`#${id_back}`)
   let [query_id_front, setQueryIdFront] = React.useState(`#${id_front}`)
   let [query_id_container, setQueryIdContainer] = React.useState(`#${id_container}`)
-  let [flip_enabled, setFlipEnabled] = React.useState(true)
+  // let [flip_enabled, setFlipEnabled] = React.useState(true)
 
   const updatePos = (id_b, id_f) => {
     var e_f=document.querySelector(id_f)
@@ -33,7 +25,6 @@ function HelloFlipGold(){
     document.addEventListener('scroll', (e)=>{
       updatePos(query_id_back, query_id_front)
     })
-
 
     updatePos(query_id_back, query_id_front)
   },[])
@@ -60,7 +51,7 @@ function HelloFlipGold(){
               transitionDuration: '0s'
             }}
             // onClick={(e)=> this.hideOthersFront(e)}
-            // onClick={(e) => pressButton(e)}
+            onClick={(e) => pressButton(e)}
             id={id_front}
           >
             hello front
