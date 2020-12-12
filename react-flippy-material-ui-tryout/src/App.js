@@ -29,7 +29,8 @@ export default function App(){
   const classes = useStyles();
   const n_a = [0,1]
   const default_flip = {}
-  n_a.forEach(x => default_flip[`id_${x}`]=false)
+  const flip_count = 20
+  // n_a.forEach(x => default_flip[`id_${x}`]=false)
   // const [is_flipped, setIsFlipped] = React.useState({
   //   id_0: false,
   //   id_1: false,
@@ -40,7 +41,9 @@ export default function App(){
   //   id_6: false,
   //   id_7: false,
   // })
-  const [is_flipped, setIsFlipped] = React.useState([false,false,false,false,false,false,false,false])
+
+  const default_flipped = Array(flip_count).fill(false)
+  const [is_flipped, setIsFlipped] = React.useState(default_flipped)
   const [flipped_card, setFlippedCard] = React.useState('')
   const testHelloworld = () => {
     setIsFlipped([false,false])
@@ -61,7 +64,7 @@ export default function App(){
     //   id_7: false,
     //   ...new_d})
 
-    let new_is_flipped=[false,false,false,false,false,false,false,false]
+    let new_is_flipped=default_flipped
     new_is_flipped[this_id.split('_')[1]]=true
 
     setIsFlipped([...new_is_flipped])
@@ -72,10 +75,12 @@ export default function App(){
     console.log(e.target)
     let this_back_id = e.target.id
     let this_id = this_back_id.replace('id_back_','id_')
-    let new_d = {}
-    new_d[this_id] = false
-    console.log(this_id)
-    setIsFlipped({...is_flipped, ...new_d})
+    // let new_d = {}
+    // new_d[this_id] = false
+    // console.log(this_id)
+    // setIsFlipped({...is_flipped, ...new_d})
+
+    setIsFlipped(default_flipped)
   }
 
   React.useEffect(()=>{
@@ -87,7 +92,7 @@ export default function App(){
       <Grid item xs={12}>
         {/* <FullScreenCardCluster /> */}
         <Grid container justify="center" spacing={spacing}>
-          {Array(8).fill(0).map((value, idx) =>
+          {Array(flip_count).fill(0).map((value, idx) =>
             {
               return (
                 <Grid key={idx} item>
