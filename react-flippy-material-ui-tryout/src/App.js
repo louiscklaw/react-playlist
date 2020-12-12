@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button'
 
 import HelloFlipGold from './HelloFlipGold'
 import HelloFlip from './HelloFlip'
@@ -26,121 +27,62 @@ const useStyles = makeStyles((theme) => ({
 export default function App(){
   const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
-
-
-
-  let [id_back, setIdBack]=React.useState([
-    `id_back_1`,`id_back_2`
-  ])
-  let [id_front, setIdFront]=React.useState([
-    `id_front_1`,`id_front_2`
-  ])
-  let [id_container, setIdContainer]=React.useState([
-    `id_container_1`,`id_container_2`
-  ])
-
-  let [t_f_enabled, setFEnabled] = React.useState({
-    'id_front_1': true,
-    'id_front_2': true
+  const [is_flipped, setIsFlipped] = React.useState({
+    id_0: false,
+    id_1: false
   })
+  const [flipped_card, setFlippedCard] = React.useState('')
+  const testHelloworld = () => {
+    setIsFlipped([false,false])
+  }
 
-  const change_all_value = (e) => {
-    console.log(e.target.id)
-    setFEnabled([false, false])
-    let this_id = e.target.parentNode.id
+  const goFlip = (e) => {
+    let this_id = e.target.id
+    let new_d = {}
+    new_d[this_id] = true
+    setIsFlipped({
+      id_0: false,
+      id_1: false,
+       ...new_d})
+    // console.log('helloworld')
+  }
 
-    // t_id_array.forEach(t_ref_id => {
-    //   if (t_ref_id == this_id){
-
-    //   }else{
-    //     document.querySelector(`#${t_ref_id}`).style.visibility='hidden'
-    //   }
-    // })
+  const goFlipBack = (e) => {
+    console.log(e.target)
+    let this_back_id = e.target.id
+    let this_id = this_back_id.replace('id_back_','id_')
+    let new_d = {}
+    new_d[this_id] = false
+    console.log(this_id)
+    setIsFlipped({...is_flipped, ...new_d})
   }
 
   React.useEffect(()=>{
-    console.log(t_f_enabled)
-  },[t_f_enabled])
-
-  const pressFront = (e) => {
-    // console.log(e.target.id)
-    let this_id_f = e.target.id
-    // let update_t_f={}
-    // update_t_f[this_id_f]=false
-    // // setFEnabled({ ...t_f_enabled,...update_t_f })
-    // setFEnabled([false, false])
-    setFEnabled({
-      'id_front_1': false,
-      'id_front_2': false
-    })
-
-    var this_id = e.target.id
-    var eles_f_front = document.querySelectorAll('.flippy-front')
-
-    eles_f_front.forEach(ele => {
-      if (ele.id != this_id){
-        ele.style.transitionDuration='0s'
-        // ele.style.visibility='visible'
-        ele.parentNode.parentNode.style.zIndex='-1'
-      }else{
-
-      }
-    })
-    console.log('front pressed')
-  }
-
-  const pressBack = (e) => {
-    // let this_id = e.target.id
-    let this_id = e
-
-    let update_t_f={}
-    update_t_f[`id_front_${this_id.split('_')[2]}`]=true
-    // setFEnabled({ ...t_f_enabled,...update_t_f })
-    setFEnabled({
-      'id_front_1': false,
-      'id_front_2': false
-    })
-    console.log('back pressed')
-
-    var eles_f_front = document.querySelectorAll('.flippy-front')
-    eles_f_front.forEach(ele => {
-      if (ele.id != this_id){
-        ele.style.transitionDuration='0s'
-        ele.style.visibility='visible'
-        ele.parentNode.parentNode.style.zIndex='unset'
-      }else{
-
-      }
-    })
-
-  }
+    console.log(is_flipped)
+  },[is_flipped])
 
   return (
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         {/* <FullScreenCardCluster /> */}
         <Grid container justify="center" spacing={spacing}>
-          {Array(30).fill(0).map((value, idx) =>
+          {Array(2).fill(0).map((value, idx) =>
             {
               return (
                 <Grid key={idx} item>
                   <HelloFlipGold
-
-                    id_back={id_back[idx]}
-                    id_front={id_front[idx]}
-                    id_container={id_container[idx]}
-
                     my_id={`id_${idx}`}
-                    pressFront={pressFront}
-                    pressBack={pressBack}
-                    flip_enabled={t_f_enabled[`id_front_${idx}`]}
-                    />
+                    flipForward={goFlip}
+                    flipBackward={goFlipBack}
+                    is_flipped={is_flipped[`id_${idx}`]}
+                  />
                 </Grid>
               )
             }
           )}
         </Grid>
       </Grid>
+      <Button onClick={testHelloworld}>test helloworld</Button>
     </Grid>
   )
 }
