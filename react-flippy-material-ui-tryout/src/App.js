@@ -117,7 +117,6 @@ export default function App(){
           )}
         </Grid>
       </Grid>
-      <Button onClick={testHelloworld}>test helloworld</Button>
     </Grid>
   )
 }
