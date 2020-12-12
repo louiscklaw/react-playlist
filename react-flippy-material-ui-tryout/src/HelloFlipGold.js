@@ -32,6 +32,9 @@ function HelloFlipGold({
     document.addEventListener('scroll', (e)=>{
       updatePos(query_id_back, query_id_front)
     })
+    document.addEventListener('resize', (e)=>{
+      updatePos(query_id_back, query_id_front)
+    })
     updatePos(query_id_back, query_id_front)
   },[])
 
