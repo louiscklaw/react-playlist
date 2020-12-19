@@ -1,31 +1,56 @@
 import React from 'react';
-import {useDropzone} from 'react-dropzone';
+import ReactDOM from 'react-dom';
+import DropzoneComponent from 'react-dropzone-component';
 
-function Basic(props) {
-  const {acceptedFiles, getRootProps, getInputProps} = useDropzone();
+export default class Example extends React.Component {
+    constructor(props) {
+        super(props);
 
-  const files = acceptedFiles.map(file => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-    </li>
-  ));
+        // For a full list of possible configurations,
+        // please consult http://www.dropzonejs.com/#configuration
+        this.djsConfig = {
+            addRemoveLinks: true,
+            acceptedFiles: "image/jpeg,image/png,image/gif",
+            autoProcessQueue: false
+        };
 
-  return (
-    <section className="container">
-      <div {...getRootProps({className: 'dropzone'})}>
-        <input {...getInputProps()} />
-        <p>Drag 'n' drop some files here, or click to select files</p>
-      </div>
-      <aside>
-        <h4>Files</h4>
-        <ul>{files}</ul>
-      </aside>
-    </section>
-  );
-}
+        this.componentConfig = {
+            iconFiletypes: ['.jpg', '.png', '.gif'],
+            showFiletypeIcon: true,
+            postUrl: 'no-url'
+        };
+    }
 
-export default function App(){
-  return (
-    <Basic />
-  )
+    handleFileAdded(file) {
+        console.log(file);
+    }
+
+    render() {
+        const config = this.componentConfig;
+        const djsConfig = this.djsConfig;
+
+        // For a list of all possible events (there are many), see README.md!
+        const eventHandlers = {
+            addedfile: this.handleFileAdded.bind(this)
+        }
+
+        return (
+          <div style={{itemAlign:'center', textAlign:'center', padding:'3em'}} >
+
+            <div style={{
+                width:'100px',
+                height:'100px',
+                textAlign:"center",
+                padding: '5px',
+                backgroundColor: '#E1E1E1',
+                borderRadius: '5px',
+                minHeight: '60px',
+                border:"2px dashed #C7C7C7",
+                width: "80%"
+              }}>
+              <DropzoneComponent config={config} eventHandlers={eventHandlers} djsConfig={djsConfig} />
+            </div>
+          </div>
+        )
+    }
 }

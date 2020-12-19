@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Askbootstrap">
+  <meta name="author" content="Askbootstrap">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Swiggi - Online Food Ordering Website Mobile Template</title>
+
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css" />
+
+  <link href="vendor/icons/feather.css" rel="stylesheet" type="text/css">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="vendor/sidebar/demo.css" rel="stylesheet">
+</head>
+
+<body class="bg-light fixed-bottom-bar">
+  <div class="osahan-payment">
+    <div class="bg-primary border-bottom px-3 pt-3 pb-5">
+      <a class="toggle togglew toggle-2" href="payment.html#"><span></span></a>
+      <a class="text-white font-weight-bold" href="checkout.html"><i class="feather-chevron-left"></i> Back</a>
+      <h2 class="font-weight-bold m-0 text-white pt-3">Checkout</h2>
+    </div>
+
+    <div class="p-3 osahan-cart-item">
+      <div class="osahan-cart-item-profile bg-white rounded shadow p-3 mt-n5">
+        <div class="d-flex flex-column">
+          <h6 class="mb-2 font-weight-bold">DELIVERY ADDRESS</h6>
+          <div class="custom-control custom-radio mb-2 px-0">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+            <label class="custom-control-label border osahan-check p-3 w-100 rounded border-primary" for="customRadio1">
+              <b><i class="feather-home mr-2"></i> Home</b> <br>
+              <p class="small mb-0 pl-4">4904 Goldner Ranch, Jawaddi kalan, punjab, 141013</p>
+            </label>
+          </div>
+          <div class="custom-control custom-radio mb-2 px-0">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label border osahan-check p-3 w-100 rounded bg-light" for="customRadio2">
+              <b><i class="feather-briefcase mr-2"></i> Work</b> <br>
+              <p class="small mb-0 pl-4">Model Town, Ludhiana, Punjab 141002, India</p>
+            </label>
+          </div>
+          <a class="btn btn-primary" href="payment.html#" data-toggle="modal" data-target="#exampleModal"> ADD NEW
+            ADDRESS </a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion px-3 pb-3" id="accordionExample">
+      <div class="osahan-card bg-white overflow-hidden shadow rounded mb-2">
+        <div class="osahan-card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="d-flex p-3 align-items-center btn btn-link w-100" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="feather-credit-card mr-3"></i> Credit/Debit Card
+              <i class="feather-chevron-down ml-auto"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="osahan-card-body border-top p-3">
+            <h6 class="m-0">Add new card</h6>
+            <p class="small">WE ACCEPT <span class="osahan-card ml-2 font-weight-bold">( Master Card / Visa Card / Rupay
+                )</span></p>
+            <form>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <label class="form-label font-weight-bold small">Card number</label>
+                  <div class="input-group">
+                    <input placeholder="Card number" type="number" class="form-control">
+                    <div class="input-group-append"><button id="button-addon2" type="button"
+                        class="btn btn-outline-secondary"><i class="feather-credit-card"></i></button></div>
+                  </div>
+                </div>
+                <div class="col-md-8 form-group"><label class="form-label font-weight-bold small">Valid
+                    through(MM/YY)</label><input placeholder="Enter Valid through(MM/YY)" type="number"
+                    class="form-control"></div>
+                <div class="col-md-4 form-group"><label class="form-label font-weight-bold small">CVV</label><input
+                    placeholder="Enter CVV Number" type="number" class="form-control"></div>
+                <div class="col-md-12 form-group"><label class="form-label font-weight-bold small">Name on
+                    card</label><input placeholder="Enter Card number" type="text" class="form-control"></div>
+                <div class="col-md-12 form-group mb-0">
+                  <div class="custom-control custom-checkbox"><input type="checkbox" id="custom-checkbox1"
+                      class="custom-control-input"><label title="" type="checkbox" for="custom-checkbox1"
+                      class="custom-control-label small pt-1">Securely save this card for a faster checkout next
+                      time.</label></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="osahan-card bg-white overflow-hidden shadow rounded mb-2">
+        <div class="osahan-card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="d-flex p-3 align-items-center btn btn-link w-100" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="feather-globe mr-3"></i> Net Banking
+              <i class="feather-chevron-down ml-auto"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="osahan-card-body border-top p-3">
+            <form>
+              <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+                <label class="btn btn-outline-secondary active">
+                  <input type="radio" name="options" id="option1" checked> HDFC
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input type="radio" name="options" id="option2"> ICICI
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input type="radio" name="options" id="option3"> AXIS
+                </label>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col-md-12 form-group mb-0">
+                  <label class="form-label small font-weight-bold">Select Bank</label><br>
+                  <select class="custom-select form-control">
+                    <option>Bank</option>
+                    <option>KOTAK</option>
+                    <option>SBI</option>
+                    <option>UCO</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="osahan-card bg-white overflow-hidden shadow rounded">
+        <div class="osahan-card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="d-flex p-3 align-items-center btn btn-link w-100" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="feather-dollar-sign mr-3"></i> Cash on Delivery
+              <i class="feather-chevron-down ml-auto"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body border-top">
+            <h6 class="mb-3 mt-0 mb-3 font-weight-bold">Cash</h6>
+            <p class="m-0">Please keep exact change handy to help us serve you better</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom"><a class="btn btn-success btn-lg btn-block" href="profile.html">PAY $1329<i
+          class="feather-arrow-right"></i></a></div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Delivery Address</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <label class="form-label">Delivery Area</label>
+                  <div class="input-group">
+                    <input placeholder="Delivery Area" type="text" class="form-control">
+                    <div class="input-group-append"><button id="button-addon2" type="button"
+                        class="btn btn-outline-secondary"><i class="feather-map-pin"></i></button></div>
+                  </div>
+                </div>
+                <div class="col-md-12 form-group"><label class="form-label">Complete Address</label><input
+                    placeholder="Complete Address e.g. house number, street name, landmark" type="text"
+                    class="form-control"></div>
+                <div class="col-md-12 form-group"><label class="form-label">Delivery Instructions</label><input
+                    placeholder="Delivery Instructions e.g. Opposite Gold Souk Mall" type="text" class="form-control">
+                </div>
+                <div class="mb-0 col-md-12 form-group">
+                  <label class="form-label">Nickname</label>
+                  <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+                    <label class="btn btn-outline-secondary active">
+                      <input type="radio" name="options" id="option1" checked> Home
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                      <input type="radio" name="options" id="option2"> Work
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                      <input type="radio" name="options" id="option3"> Other
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer p-0 border-0">
+            <div class="col-6 m-0 p-0">
+              <button type="button" class="btn border-top btn-lg btn-block" data-dismiss="modal">Close</button>
+            </div>
+            <div class="col-6 m-0 p-0">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav id="main-nav">
+    <ul class="second-nav">
+      <li><a href="index.html"><i class="feather-grid mr-2"></i> Intro</a>
+      <li><a href="landing.html"><i class="feather-layers mr-2"></i> Landing</a>
+      <li><a href="home.html"><i class="feather-home mr-2"></i> Homepage</a></li>
+      <li>
+        <a href="payment.html#"><i class="feather-edit-2 mr-2"></i> Authentication</a>
+        <ul>
+          <li><a href="login.html">Login</a>
+          <li><a href="signup.html">Register</a>
+          <li><a href="forgot_password.html">Forgot Password</a>
+          <li><a href="verification.html">Verification</a>
+          <li><a href="location.html">Location</a>
+          <li><a href="select_country.html">Select Country</a>
+        </ul>
+      </li>
+      <li><a href="trending.html"><i class="feather-trending-up mr-2"></i> Trending</a>
+      <li><a href="most_popular.html"><i class="feather-award mr-2"></i> Most Popular</a>
+      <li><a href="restaurant.html"><i class="feather-paperclip mr-2"></i> Restaurant Detail</a>
+      <li><a href="recipe.html"><i class="feather-file-text mr-2"></i> Recipe</a>
+      <li><a href="checkout.html"><i class="feather-list mr-2"></i> Checkout</a>
+      <li><a href="map.html"><i class="feather-map-pin mr-2"></i> Live Map</a>
+      <li><a href="payment.html"><i class="feather-credit-card mr-2"></i> Payment</a>
+      <li>
+        <a href="payment.html#"><i class="feather-user mr-2"></i> Profile</a>
+        <ul>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="favorites.html">Favorites</a>
+        </ul>
+      </li>
+      <li>
+        <a href="payment.html#"><i class="feather-book mr-2"></i> Pages</a>
+        <ul>
+          <li><a href="filters.html">Filters</a>
+          <li><a href="terms.html">Terms & conditions</a>
+          <li><a href="faq.html">FAQ</a>
+          <li><a href="privacy.html">Privacy & Policy</a>
+          <li><a href="contact-us.html">Contact Us</a>
+        </ul>
+      </li>
+      <li>
+        <a href="payment.html#"><i class="feather-alert-triangle mr-2"></i> Error</a>
+        <ul>
+          <li><a href="not-found.html">Not Found</a>
+          <li><a href="maintence.html"> Maintence</a>
+          <li><a href="coming-soon.html">Coming Soon</a>
+        </ul>
+      </li>
+      <li>
+        <a href="payment.html#"><i class="feather-link mr-2"></i> Navigation Link Example</a>
+        <ul>
+          <li>
+            <a href="payment.html#">Link Example 1</a>
+            <ul>
+              <li>
+                <a href="payment.html#">Link Example 1.1</a>
+                <ul>
+                  <li><a href="payment.html#">Link</a></li>
+                  <li><a href="payment.html#">Link</a></li>
+                  <li><a href="payment.html#">Link</a></li>
+                  <li><a href="payment.html#">Link</a></li>
+                  <li><a href="payment.html#">Link</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="payment.html#">Link Example 1.2</a>
+                <ul>
+                  <li><a href="payment.html#">Link</a></li>
+                  <li><a href="payment.html#">Link</a></li>
+                  <li><a href="payment.html#">Link</a></li>
+                  <li><a href="payment.html#">Link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="payment.html#">Link Example 2</a></li>
+          <li><a href="payment.html#">Link Example 3</a></li>
+          <li><a href="payment.html#">Link Example 4</a></li>
+          <li data-nav-custom-content>
+            <div class="custom-message">
+              You can add any custom content to your navigation items. This text is just an example.
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="bottom-nav">
+      <li class="email">
+        <a class="text-danger" href="home.html">
+          <p class="h5 m-0"><i class="feather-home text-danger"></i></p>
+          Home
+        </a>
+      </li>
+      <li class="github">
+        <a href="faq.html">
+          <p class="h5 m-0"><i class="feather-message-circle"></i></p>
+          FAQ
+        </a>
+      </li>
+      <li class="ko-fi">
+        <a href="contact-us.html">
+          <p class="h5 m-0"><i class="feather-phone"></i></p>
+          Help
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="vendor/jquery/jquery.min.js" type="54e2fb65fc98c6decf1237e0-text/javascript"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" type="54e2fb65fc98c6decf1237e0-text/javascript"></script>
+
+  <script type="54e2fb65fc98c6decf1237e0-text/javascript" src="vendor/slick/slick.min.js"></script>
+
+  <script type="54e2fb65fc98c6decf1237e0-text/javascript" src="vendor/sidebar/hc-offcanvas-nav.js"></script>
+
+  <script src="js/osahan.js" type="54e2fb65fc98c6decf1237e0-text/javascript"></script>
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+    data-cf-settings="54e2fb65fc98c6decf1237e0-|49" defer=""></script>
+</body>
+
+</html>

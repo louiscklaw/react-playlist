@@ -1,4 +1,5 @@
 import React from 'react';
+import 'moment/locale/ja';
 
 import Moment from 'react-moment';
 import 'moment-timezone'
@@ -10,8 +11,8 @@ function App() {
 
   return (
     <div className="App">
-
-      <Moment>{dateToFormat}</Moment>
+        {dateToFormat}
+        <Moment locale="ja" fromNow>{dateToFormat}</Moment>
     </div>
   );
 }

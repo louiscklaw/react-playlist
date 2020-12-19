@@ -2,6 +2,13 @@ import React, {Component} from 'react'
 import Button from '@material-ui/core/Button'
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
+// import HelloworldCard from '../../../src/components/HelloworldCard'
+import HelloworldCard from './HelloworldCard'
+
+import IconButton from '@material-ui/core/IconButton';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
 function HelloFlipGold({
   id_front,
   id_back_side,
@@ -26,7 +33,6 @@ function HelloFlipGold({
     e_b.style.left=`${0-r_f.left}px`
 
   }
-
 
   React.useEffect(()=>{
     document.addEventListener('scroll', (e)=>{
@@ -61,13 +67,28 @@ function HelloFlipGold({
         </FrontSide>
         <BackSide
           id={id_back_side}
-          style={{ backgroundColor: '#175852'}}
+          style={{ backgroundColor: 'dimgray'}}
 
           >
-          <Button
+          {/*
+            <Button
             id={`${id_front.replace('id_','id_back_')}`}
             onClick={(e)=> flipBackward(e)}
             style={{color: 'white'}} >back</Button>
+          */}
+
+          <IconButton
+            id={`${id_front.replace('id_','id_back_')}`}
+            onClick={(e)=> flipBackward(e)}
+            aria-label="back"
+            style={{color: 'white'}}
+            >
+            <ArrowBackIcon />
+            Back
+          </IconButton>
+
+          <HelloworldCard />
+
 
         </BackSide>
       </Flippy>
