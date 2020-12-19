@@ -1,5 +1,5 @@
 {
-  "name": "react-helloworld-tryout",
+  "name": "react-hot-toast-tryout",
   "homepage": "https://aboutme.louislabs.com",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router": "^5.2.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
