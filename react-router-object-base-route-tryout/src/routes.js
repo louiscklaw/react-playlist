@@ -13,6 +13,7 @@ const routes=[
     element: <Layout2 />,
     children: [
       { path: 'helloworld', element: <Helloworld /> },
+      // http://localhost:3000/helloworld/1233211234567/
       { path: 'helloworld/:id/', element: <TestPageParams /> }
     ]
   }

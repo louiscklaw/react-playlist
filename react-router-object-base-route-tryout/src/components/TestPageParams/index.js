@@ -8,7 +8,17 @@ export default function TestPageParams(props){
 
   return(
     <>
-      page params 123321
+      <div>
+        TestPageParams
+      </div>
+
+      <div>
+        id:
+        <pre>
+          {id}
+        </pre>
+      </div>
+
     </>
   )
 }
