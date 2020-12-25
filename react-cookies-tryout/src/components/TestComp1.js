@@ -31,7 +31,7 @@ export default function TestComp1(){
   return(
     <>
       helloworld
-      <NameForm name={cookies[COOKIE_USERNAME]} onChange={onChange} />
+      <NameForm name={decryptText(cookies[COOKIE_USERNAME])} onChange={onChange} />
       {cookies[COOKIE_USERNAME] && <h1>Hello {decryptText(cookies[COOKIE_USERNAME])}!</h1>}
       {cookies[COOKIE_LOGIN_LOCATION] && <h1>Hello {decryptText(cookies[COOKIE_LOGIN_LOCATION])}!</h1>}
     </>
