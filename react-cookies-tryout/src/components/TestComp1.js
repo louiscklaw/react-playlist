@@ -3,7 +3,8 @@ import { useCookies } from 'react-cookie';
 
 import NameForm from './NameForm';
 
-const COOKIE_NAME = 'username'
+const COOKIE_USERNAME = 'username'
+const COOKIE_LOGIN_LOCATION ='location'
 
 const encryptText = (text_in) =>{
   if (text_in && text_in!=''){
@@ -19,18 +20,20 @@ const decryptText = (enc_text_in) => {
 }
 
 export default function TestComp1(){
-  const [cookies, setCookie] = useCookies([COOKIE_NAME]);
+  const [cookies, setCookie] = useCookies([COOKIE_USERNAME]);
 
   function onChange(newName) {
-    setCookie(COOKIE_NAME, encryptText(newName), { path: '/' });
+    setCookie(COOKIE_USERNAME, encryptText(newName), { path: '/' });
+    setCookie(COOKIE_LOGIN_LOCATION, encryptText(window.location.hostname), { path: '/' });
     // console.log('test');
   }
 
   return(
     <>
       helloworld
-      <NameForm name={cookies[COOKIE_NAME]} onChange={onChange} />
-      {cookies[COOKIE_NAME] && <h1>Hello {decryptText(cookies[COOKIE_NAME])}!</h1>}
+      <NameForm name={cookies[COOKIE_USERNAME]} onChange={onChange} />
+      {cookies[COOKIE_USERNAME] && <h1>Hello {decryptText(cookies[COOKIE_USERNAME])}!</h1>}
+      {cookies[COOKIE_LOGIN_LOCATION] && <h1>Hello {decryptText(cookies[COOKIE_LOGIN_LOCATION])}!</h1>}
     </>
   )
 }
