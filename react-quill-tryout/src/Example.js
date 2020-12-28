@@ -2,48 +2,33 @@ import React, { useState } from "react";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
-const html_string_to_test = `
-<h2><strong style=\"background-color: rgb(240, 102, 102); color: rgb(102, 185, 102);\">a</strong><sub style=\"background-color: rgb(240, 102, 102); color: rgb(102, 185, 102);\"><strong>p</strong></sub><sup style=\"background-color: rgb(240, 102, 102); color: rgb(102, 185, 102);\"><strong>p</strong></sup><strong style=\"background-color: rgb(240, 102, 102); color: rgb(102, 185, 102);\">le</strong></h2><p><br></p><p><strong style=\"color: rgb(255, 153, 0);\"><em><u>orange</u></em></strong></p><p><br></p><p>&lt;script&gt;alert('helloworld')&lt;/script&gt;</p><p><br></p><p>応9<sup>2勤常</sup>勉<sub>旋7</sub>2依</p><p><br></p><h1>レ端作67123312神フ測相りち挑坂ぶ。</h1><h2>応ハシカ向2捜せぽけリ覧郷ユヤワサ準助</h2><p>7子群メソマ直林無ノヱク総九るね法右み料生レソヱ犯2属</p><p>スタリチ海新志合のみル。落国がどゅト備初ワ成東真友ルノ多府イとレせ後</p><p>活ぱ力内せぞトん断社づけン経誓メノヨス人回ぞ</p><p>ぜど司介トの通長めドラ供警の深能か鈴</p><p>拠るより関達ツテ年撃とえふ桑夕阜じは</p><p><br></p>`
+const html_string_to_test = `<h2>宮廷雞系列</h2><p><br></p><p>採用我們多年研發配種己成的獨有的雞種.再由我們自設雞場天然飼養90天，</p><p>雞肉幼滑，雞味濃厚。每款宮廷雞餐品上都配上不同的秘製醬汁，</p><p>是我們各分店最熱賣的餐點。</p><p><br></p><p><strong><u>餐品包括:無骨海南雞飯</u></strong></p><p><br></p><p>宮廷雞除了飯類餐品之外，我們亦給客人多一個麵食配搭的選擇，</p><p>粉麵湯底每天用大量雞骨熬製十小時而成，麵食餐品不單止有我們著名的宮廷貴雞作主料，</p><p>還有其它港人喜愛的食材配料例如:雲吞、墨丸、扎肉等。而粉麵選擇客人可選米粉、河粉或手打麵。</p><p><br></p>`
 
 
 function MyComponent() {
   const [value, setValue] = useState(html_string_to_test);
 
-  var toolbarOptions = [
-    ['bold', 'italic', 'underline', 'strike'],
-    ['blockquote', 'code-block'],
-
-    [ { 'header': 1 }, { 'header': 2 } ],
-
-    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-    [{ 'script': 'sub'}, { 'script': 'super' }],
-    [{ 'indent': '-1'}, { 'indent': '+1' } ],
-    [{ 'direction': 'rtl' }],
-
-    [{ 'size': ['small', false, 'large', 'huge'] }],
-    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-
-    [{ 'color': [] }, { 'background': [] }],
-    [{ 'font': [] }],
-    [{ 'align': [] }],
-
-    ['clean']
-  ];
-
-  const modules = {
-    toolbar: toolbarOptions
+  let modules = {
+    toolbar: [
+      [{ 'header': [1, 2, false] }],
+      ['bold', 'italic', 'underline','strike', 'blockquote'],
+      [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
+      [{ 'color': [] }, { 'background': [] }],
+      ['link'],
+      ['clean']
+    ],
   }
 
   return (
     <>
-    <div className="text-editor">
+
       <ReactQuill
         theme="snow"
         value={value}
         onChange={setValue}
         modules={modules}
         />
-    </div>
+
 
       <div dangerouslySetInnerHTML={{__html: value}}>
 
