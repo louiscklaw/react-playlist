@@ -34,7 +34,7 @@ let list = [
 
 // eslint-disable-next-line react/prop-types
 const MenuItem = ({ text, selected }) => {
-  return <div className={`menu-item ${selected ? 'active' : ''}`}>{text}</div>;
+  return <div className={`menu-item ${selected ? 'active' : ''}`}>{text}123321</div>;
 };
 
 export const Menu = (list, selected) =>
@@ -79,6 +79,7 @@ class App extends Component {
     super(props);
     this.menu = null;
     this.menuItems = Menu(list.slice(0, list.length), this.state.selected);
+    console.log('this.menuItems', this.menuItems)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -180,6 +181,8 @@ class App extends Component {
       display: 'inline-block',
     };
 
+    console.log('menu',menu)
+
     return (
       <div className="App">
         <header className="App-header">
@@ -194,14 +197,14 @@ class App extends Component {
 
         {showList && (
           <ScrollMenu
-            alignCenter={alignCenter}
+            alignCenter={false}
             arrowLeft={ArrowLeft}
             arrowRight={ArrowRight}
             clickWhenDrag={clickWhenDrag}
             data={menu}
             dragging={dragging}
-            hideArrows={hideArrows}
-            hideSingleArrow={hideSingleArrow}
+            hideArrows={true}
+            hideSingleArrow={true}
             inertiaScrolling={inertiascrolling}
             inertiaScrollingSlowdown={slowdownFactor}
             onFirstItemVisible={this.onFirstItemVisible}
