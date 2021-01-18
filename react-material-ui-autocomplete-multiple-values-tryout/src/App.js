@@ -1,31 +1,34 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import ProTip from './ProTip';
+import React from "react";
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
+import Link from "@material-ui/core/Link";
+import ProTip from "./ProTip";
 
-import Chip from '@material-ui/core/Chip';
-import Autocomplete from '@material-ui/lab/Autocomplete';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
+import Chip from "@material-ui/core/Chip";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 
-import top100Films from './data.js'
+import top100Films from "./data.js";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: 500,
-    '& > * + *': {
+    "& > * + *": {
       marginTop: theme.spacing(3),
     },
   },
 }));
 
-
-
 export default function App() {
   const classes = useStyles();
+  const [hello, setHello] = React.useState([top100Films[13]]);
 
+  const handleOnClick = (e) => {
+    setHello([top100Films[14]]);
+  };
 
   return (
     <Container maxWidth="sm">
@@ -40,7 +43,7 @@ export default function App() {
             id="tags-standard"
             options={top100Films}
             getOptionLabel={(option) => option.title}
-            defaultValue={[top100Films[13]]}
+            defaultValue={hello}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -92,6 +95,7 @@ export default function App() {
           />
         </div>
       </Box>
+      <Button onClick={(e) => handleOnClick}>onclick</Button>
     </Container>
   );
 }
