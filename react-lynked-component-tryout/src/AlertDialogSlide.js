@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AlertDialogSlide() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -66,6 +66,9 @@ export default function AlertDialogSlide() {
 
   return (
     <div>
+      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+        AlertDialogSlide
+      </Button>
       <Dialog
         open={open}
         TransitionComponent={Transition}

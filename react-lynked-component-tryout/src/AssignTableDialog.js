@@ -16,6 +16,12 @@ import {
   Input,
 } from "@material-ui/core";
 
+import {
+  LYNKED_BLACK,
+  LYNKED_GREEN,
+  LYNKED_LIGHT_GREY,
+} from "src/consts/colors";
+
 const COLOR_RED = "#F14342";
 const COLOR_BLUE = "#3E51B5";
 
@@ -39,6 +45,22 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: COLOR_RED,
     borderRadius: "2px 0px 0px 2px",
   },
+  CardContentWrapper: {
+    width: "100%",
+    height: "100%",
+    display: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  CardContent: {
+    // backgroundColor: "gold",
+
+    margin: "30px 30px",
+    "& div": {
+      // backgroundColor: "blue",
+      margin: "10px 0px",
+    },
+  },
   InputTextField: {
     background: "#FFFFFF",
     border: "1px solid #B3B3B3",
@@ -47,12 +69,35 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem",
   },
 
-  searchBar: {
-    borderBottom: "0px solid rgba(0, 0, 0, 0.12)",
+  TextInput: {
+    border: "1px solid #E0E0E0",
+    font: "normal normal bold 12px/16px Roboto",
+    "& ::placeholder": {
+      color: LYNKED_LIGHT_GREY,
+      padding: "10px 20px",
+    },
+  },
+  DialogBottom: {
+    display: "flex",
+    flexFlow: "row",
+    justifyContent: "space-between",
+  },
+  Buttons: {
+    width: "172px",
+    padding: "10px",
+    color: "white",
+    font: "normal normal bold 12px/16px Roboto",
+    letterSpacing: "0.12px",
+  },
+  ButtonCancel: {
+    backgroundColor: LYNKED_BLACK,
+  },
+  ButtonOK: {
+    backgroundColor: LYNKED_GREEN,
   },
 }));
 
-export default function AlertDialogSlide() {
+export default function AssignTableDialog() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -66,6 +111,10 @@ export default function AlertDialogSlide() {
 
   return (
     <div>
+      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+        AssignTableDialog
+      </Button>
+
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -76,17 +125,34 @@ export default function AlertDialogSlide() {
       >
         <Box className={classes.AssignedTAbleDialogWrapper}>
           <Box className={classes.statusIndicator}></Box>
-          <Box className={classes.CardContent}>
-            <Box>佐藤 様　大人 2 / 子供 2</Box>
-            <Box>
-              <TextField
-                fullWidth
-                placeholder="Busque pelo nome da vaga"
-                InputProps={{
-                  disableUnderline: true,
-                  className: classes.searchInput,
-                }}
-              />
+          <Box className={classes.CardContentWrapper}>
+            <Box className={classes.CardContent}>
+              <Box>佐藤 様　大人 2 / 子供 2</Box>
+              <Box>
+                <TextField
+                  className={classes.TextInput}
+                  fullWidth
+                  placeholder="TABLE NUMBER"
+                  InputProps={{
+                    disableUnderline: true,
+                  }}
+                  // value="TABLE NUMBER"
+                />
+              </Box>
+              <Box className={classes.DialogBottom}>
+                <Box>
+                  <Button
+                    className={`${classes.Buttons} ${classes.ButtonCancel}`}
+                  >
+                    {"キャンセル"}
+                  </Button>
+                </Box>
+                <Box>
+                  <Button className={`${classes.Buttons} ${classes.ButtonOK}`}>
+                    {"確定"}
+                  </Button>
+                </Box>
+              </Box>
             </Box>
           </Box>
         </Box>
