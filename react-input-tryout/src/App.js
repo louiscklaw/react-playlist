@@ -16,6 +16,14 @@ export default function BasicTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
+      <TextField
+        fullWidth
+        placeholder="Busque pelo nome da vaga"
+        InputProps={{
+          disableUnderline: true,
+          className: classes.searchInput,
+        }}
+      />
       <TextField id="standard-basic" label="Standard" />
       <TextField id="filled-basic" label="Filled" variant="filled" />
       <TextField id="outlined-basic" label="Outlined" variant="outlined" />
