@@ -1,9 +1,23 @@
 import React from "react";
-import { LYNKED_RED, LYNKED_WHITE, LYNKED_GREEN } from "src/consts/colors";
 import { styled, Box, TextField, Button, makeStyles } from "@material-ui/core";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
-const COLOR_RED = "#F14342";
+import {
+  LYNKED_RED,
+  LYNKED_RED_HOVER,
+  LYNKED_WHITE,
+  LYNKED_BLUE,
+  LYNKED_BLUE_HOVER,
+  LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
+  LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
+  LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
+  LYNKED_BLACK,
+  LYNKED_BLACK_HOVER,
+  LYNKED_WHITE_HOVER,
+} from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
   ReceptionListCardWrapper: {
@@ -18,33 +32,44 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: "row",
 
     font: "normal normal normal 14px/18px Hiragino Sans",
+    "&:hover": {
+      backgroundColor: LYNKED_WHITE_HOVER,
+    },
   },
-  statusIncidator: {
+  statusIndicator: {
+    width: "10px",
+    height: "100%",
+    backgroundColor: LYNKED_BLUE,
     borderRadius: "2px 0px 0px 2px",
   },
   CardContent: {
+    width: "100%",
     padding: "10px",
     display: "flex",
     flexFlow: "column",
   },
   ReceptionCardHeader: {
-    height: "33%",
+    borderBottom: "1px solid #E0E0E0",
+    padding: "3px 10px",
     display: "flex",
     flexFlow: "row",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
   },
 
   ReceptionCardBody: {
-    height: "67%",
     display: "flex",
     flexFlow: "row",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
+    padding: "10px 10px",
   },
-
+  HeaderContent: {},
   ReceptionCardLeft0: {
     width: "30%",
+
+    textAlign: "left",
   },
   ReceptionCardLeft1: {
+    textAlign: "left",
     width: "60%",
   },
   ReceptionCardLeft2: {
@@ -52,17 +77,22 @@ const useStyles = makeStyles((theme) => ({
   },
 
   ReceptionCardBody0: {
-    width: "30%",
     font: "normal normal normal 10px/24px Hiragino Sans",
     color: "#525252",
+    width: "30%",
+
+    textAlign: "left",
+  },
+  Remarks: {
+    font: "normal normal normal 12px/18px Hiragino Sans",
+    paddingRight: "5px",
   },
   ReceptionCardBody1: {
     font: "normal normal normal 12px/18px Hiragino Sans",
+    textAlign: "left",
     width: "60%",
   },
-  ReceptionCardBody2: {
-    width: "10%",
-  },
+  ReceptionCardBody2: {},
 }));
 
 export default function Helloworld() {
@@ -70,35 +100,30 @@ export default function Helloworld() {
   return (
     <>
       <Box className={classes.ReceptionListCardWrapper}>
-        <Box
-          style={{
-            width: "10px",
-            height: "100%",
-            backgroundColor: COLOR_RED,
-            borderRadius: "2px 0px 0px 2px",
-          }}
-        ></Box>
-
-        <Box className={classes.CardContent}>
-          <Box className={classes.ReceptionCardHeader}>
-            <Box className={classes.ReceptionCardLeft0}>予約番号 01</Box>
-            <Box className={classes.ReceptionCardLeft1}>
-              佐藤 様　大人 2 / 子供 2
+        <Box className={classes.statusIndicator}></Box>
+        <Button style={{ width: "100%", height: "100%" }}>
+          <Box className={classes.CardContent}>
+            <Box className={classes.ReceptionCardHeader}>
+              <Box className={classes.ReceptionCardLeft0}>佐藤 様</Box>
+              <Box className={classes.ReceptionCardLeft1}>
+                佐藤 様　大人 2 / 子供 2
+              </Box>
+              <Box>
+                <MoreHorizIcon />
+              </Box>
             </Box>
-            <Box className={classes.ReceptionCardLeft2}>
-              <MoreHorizIcon />
+            <Box className={classes.ReceptionCardBody}>
+              <Box className={classes.ReceptionCardBody0}>
+                <Box>2020年12月8日 5時27分</Box>
+              </Box>
+              <Box className={classes.Remarks}>備考:</Box>
+              <Box className={classes.ReceptionCardBody1}>
+                TEST TEST TEST TEST TEST TESTTEST TEST TEST TEST TEST TEST
+              </Box>
+              <Box className={classes.ReceptionCardBody2}></Box>
             </Box>
           </Box>
-          <Box className={classes.ReceptionCardBody}>
-            <Box className={classes.ReceptionCardBody0}>
-              2020年12月8日 5時27分
-            </Box>
-            <Box className={classes.ReceptionCardBody1}>
-              備考: TEST TEST TEST TEST TEST TESTTEST TEST TEST TEST TEST TEST
-            </Box>
-            <Box className={classes.ReceptionCardBody2}></Box>
-          </Box>
-        </Box>
+        </Button>
       </Box>
     </>
   );

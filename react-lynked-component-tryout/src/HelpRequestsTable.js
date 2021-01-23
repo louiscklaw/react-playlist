@@ -11,10 +11,15 @@ import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 
 import {
-  LYNKED_LIGHT_GREY,
   LYNKED_RED,
+  LYNKED_RED_HOVER,
   LYNKED_WHITE,
   LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
+  LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
+  LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
   LYNKED_BLACK,
 } from "src/consts/colors";
 
@@ -41,6 +46,9 @@ const useStyles = makeStyles({
     borderRadius: "1px",
     backgroundColor: LYNKED_GREEN,
     font: "normal normal bold 10px/14px 'Noto Sans JP'",
+    "&:hover": {
+      backgroundColor: LYNKED_GREEN_HOVER,
+    },
   },
   tableHeadText: {
     color: LYNKED_BLACK,
@@ -74,6 +82,7 @@ export default function HelpRequestsTable() {
     <>
       <Box className={classes.line1}>Sample default 座席</Box>
       <Box className={classes.line2}>Noto Sans JP 座席</Box>
+      <Box>HelpRequestsTable</Box>
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>

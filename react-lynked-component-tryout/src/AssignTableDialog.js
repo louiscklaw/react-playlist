@@ -17,9 +17,17 @@ import {
 } from "@material-ui/core";
 
 import {
-  LYNKED_BLACK,
+  LYNKED_RED,
+  LYNKED_RED_HOVER,
+  LYNKED_WHITE,
   LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
   LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
+  LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
+  LYNKED_BLACK,
+  LYNKED_BLACK_HOVER,
 } from "src/consts/colors";
 
 const COLOR_RED = "#F14342";
@@ -43,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   statusIndicator: {
     width: "10px",
     height: "100%",
-    backgroundColor: COLOR_RED,
+    backgroundColor: LYNKED_RED,
     borderRadius: "2px 0px 0px 2px",
   },
   CardContentWrapper: {
@@ -92,9 +100,15 @@ const useStyles = makeStyles((theme) => ({
   },
   ButtonCancel: {
     backgroundColor: LYNKED_BLACK,
+    "&:hover": {
+      backgroundColor: LYNKED_BLACK_HOVER,
+    },
   },
   ButtonOK: {
     backgroundColor: LYNKED_GREEN,
+    "&:hover": {
+      backgroundColor: LYNKED_GREEN_HOVER,
+    },
   },
 }));
 

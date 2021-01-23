@@ -53,15 +53,20 @@ function App() {
         <ReservationRequestCard />
       </Box>
       <Box m="1rem">
+        <Box>ReceptionListCard</Box>
         <ReceptionListCard />
       </Box>
       <Box m="1rem">
+        <Box>AssignedTableListCard</Box>
         <AssignedTableListCard />
       </Box>
       <Box m="1rem">
         <HelpRequestCard />
       </Box>
-      <AssignTableDialog />
+      <Box m="1rem">
+        <AssignTableDialog />
+      </Box>
+
       <AlertDialogSlide />
     </div>
   );

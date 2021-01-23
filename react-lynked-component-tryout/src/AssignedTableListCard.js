@@ -1,10 +1,23 @@
 import React from "react";
-import { LYNKED_RED, LYNKED_WHITE, LYNKED_GREEN } from "src/consts/colors";
 import { styled, Box, TextField, Button, makeStyles } from "@material-ui/core";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
-const COLOR_RED = "#F14342";
-const COLOR_BLUE = "#3E51B5";
+import {
+  LYNKED_RED,
+  LYNKED_RED_HOVER,
+  LYNKED_WHITE,
+  LYNKED_BLUE,
+  LYNKED_BLUE_HOVER,
+  LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
+  LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
+  LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
+  LYNKED_BLACK,
+  LYNKED_BLACK_HOVER,
+  LYNKED_WHITE_HOVER,
+} from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
   ReceptionListCardWrapper: {
@@ -19,55 +32,62 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: "row",
 
     font: "normal normal normal 14px/18px Hiragino Sans",
+    "&:hover": {
+      backgroundColor: LYNKED_WHITE_HOVER,
+    },
   },
   statusIndicator: {
     width: "10px",
     height: "100%",
-    backgroundColor: COLOR_BLUE,
+    backgroundColor: LYNKED_RED,
     borderRadius: "2px 0px 0px 2px",
   },
   CardContent: {
+    width: "100%",
     padding: "10px",
     display: "flex",
     flexFlow: "column",
   },
   ReceptionCardHeader: {
-    height: "33%",
+    borderBottom: "1px solid #E0E0E0",
+    padding: "3px 10px",
     display: "flex",
     flexFlow: "row",
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
   },
 
   ReceptionCardBody: {
-    height: "67%",
     display: "flex",
     flexFlow: "row",
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
+    padding: "10px 10px",
   },
-
+  HeaderContent: {},
   ReceptionCardLeft0: {
-    width: "50%",
+    width: "90%",
+    textAlign: "left",
   },
   ReceptionCardLeft1: {
-    width: "40%",
-  },
-  ReceptionCardLeft2: {
     width: "10%",
   },
 
+  Remarks: {
+    font: "normal normal normal 12px/18px Hiragino Sans",
+    paddingRight: "5px",
+  },
   ReceptionCardBody0: {
-    width: "30%",
     font: "normal normal normal 10px/24px Hiragino Sans",
     color: "#525252",
     lineHeight: "150%",
+    textAlign: "left",
+    width: "30%",
   },
   ReceptionCardBody1: {
     font: "normal normal normal 12px/18px Hiragino Sans",
-    width: "60%",
+    textAlign: "left",
+    width: "50%",
   },
-  ReceptionCardBody2: {
-    width: "10%",
-  },
+  ReceptionCardBody2: {},
 }));
 
 export default function Helloworld() {
@@ -76,32 +96,34 @@ export default function Helloworld() {
     <>
       <Box className={classes.ReceptionListCardWrapper}>
         <Box className={classes.statusIndicator}></Box>
-        <Box className={classes.CardContent}>
-          <Box className={classes.ReceptionCardHeader}>
-            <Box className={classes.ReceptionCardLeft0}>
-              佐藤 様　大人 2 / 子供 2
-            </Box>
-            <Box className={classes.ReceptionCardLeft1}></Box>
-            <Box className={classes.ReceptionCardLeft2}>
-              <MoreHorizIcon />
-            </Box>
-          </Box>
-          <Box className={classes.ReceptionCardBody}>
-            <Box className={classes.ReceptionCardBody0}>
+        <Button style={{ width: "100%", height: "100%" }}>
+          <Box className={classes.CardContent}>
+            <Box className={classes.ReceptionCardHeader}>
+              <Box className={classes.ReceptionCardLeft0}>
+                佐藤 様　大人 2 / 子供 2
+              </Box>
               <Box>
-                2020年12月8日 5時27分
-                <br />
-                予約番号 01
-                <br />
-                座席番号 12
+                <MoreHorizIcon />
               </Box>
             </Box>
-            <Box className={classes.ReceptionCardBody1}>
-              備考: TEST TEST TEST TEST TEST TESTTEST TEST TEST TEST TEST TEST
+            <Box className={classes.ReceptionCardBody}>
+              <Box className={classes.ReceptionCardBody0}>
+                <Box>
+                  2020年12月8日 5時27分
+                  <br />
+                  予約番号 01
+                  <br />
+                  座席番号 12
+                </Box>
+              </Box>
+              <Box className={classes.Remarks}>備考:</Box>
+              <Box className={classes.ReceptionCardBody1}>
+                TEST TEST TEST TEST TEST TESTTEST TEST TEST TEST TEST TEST
+              </Box>
+              <Box className={classes.ReceptionCardBody2}></Box>
             </Box>
-            <Box className={classes.ReceptionCardBody2}></Box>
           </Box>
-        </Box>
+        </Button>
       </Box>
     </>
   );

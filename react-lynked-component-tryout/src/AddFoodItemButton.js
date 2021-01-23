@@ -24,6 +24,7 @@ import {
   LYNKED_LIGHT_GREY,
   LYNKED_DEEP_GREY,
   LYNKED_BLUE,
+  LYNKED_RED_HOVER,
 } from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
@@ -33,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: LYNKED_RED,
     color: LYNKED_WHITE,
     boxShadow: "0px 1px 2px #00000029",
+    "&:hover": {
+      backgroundColor: LYNKED_RED_HOVER,
+    },
   },
 }));
 

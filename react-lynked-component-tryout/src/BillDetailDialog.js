@@ -18,10 +18,16 @@ import {
 
 import {
   LYNKED_RED,
+  LYNKED_RED_HOVER,
   LYNKED_WHITE,
   LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
   LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
   LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
+  LYNKED_BLACK,
+  LYNKED_BLACK_HOVER,
 } from "src/consts/colors";
 
 const COLOR_RED = "#F14342";
@@ -135,12 +141,18 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: LYNKED_DEEP_GREY,
     color: LYNKED_WHITE,
     borderRadius: "1px",
+    "&:hover": {
+      backgroundColor: LYNKED_DEEP_GREY_HOVER,
+    },
   },
   FooterButtonFinishBill: {
     width: "100%",
     backgroundColor: LYNKED_GREEN,
     color: LYNKED_WHITE,
     borderRadius: "1px",
+    "&:hover": {
+      backgroundColor: LYNKED_GREEN_HOVER,
+    },
   },
 }));
 
