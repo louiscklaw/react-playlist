@@ -127,7 +127,7 @@ export default function FoodDetailDialog() {
       </Button>
 
       <Dialog
-        open={true}
+        open={open}
         TransitionComponent={Transition}
         keepMounted
         onClose={handleClose}
