@@ -3,21 +3,21 @@ import "./App.css";
 
 import { Box } from "@material-ui/core";
 
-import AssignTableDialog from "./AssignTableDialog";
-import AlertDialogSlide from "./AlertDialogSlide";
-import AssignedTableListCard from "./AssignedTableListCard";
-import HelpRequestCard from "./HelpRequestCard";
-import ReceptionListCard from "./ReceptionListCard";
-import ReservationRequestCard from "./ReservationRequestCard";
-import HelpRequestsTable from "./HelpRequestsTable";
-import SearchInput from "./SearchInput";
-import BillingManagementCard from "./BillingManagementCard";
-import BillDetailDialog from "./BillDetailDialog";
-import FoodDetailDialog from "./FoodDetailDialog";
-import ConfirmDeleteDialog from "./ConfirmDeleteDialog";
-import AddNewCategoryDialog from "./AddNewCategoryDialog";
-import AddCategoryButton from "./AddCategoryButton";
-import AddFoodItemButton from "./AddFoodItemButton";
+import AddCategoryButton from "./components/AddCategoryButton";
+import AddFoodItemButton from "./components/AddFoodItemButton";
+import AddNewCategoryDialog from "./components/AddNewCategoryDialog";
+import AlertDialogSlide from "./components/AlertDialogSlide";
+import AssignedTableListCard from "./components/AssignedTableListCard";
+import AssignTableDialog from "./components/AssignTableDialog";
+import BillDetailDialog from "./components/BillDetailDialog";
+import BillingManagementCard from "./components/BillingManagementCard";
+import ConfirmDeleteDialog from "./components/ConfirmDeleteDialog";
+import FoodDetailDialog from "./components/FoodDetailDialog";
+import HelpRequestCard from "./components/HelpRequestCard";
+import HelpRequestsTable from "./components/HelpRequestsTable";
+import ReceptionListCard from "./components/ReceptionListCard";
+import ReservationRequestCard from "./components/ReservationRequestCard";
+import SearchInput from "./components/SearchInput";
 
 function App() {
   return (
