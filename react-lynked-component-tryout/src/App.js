@@ -9,10 +9,14 @@ import AssignedTableListCard from "./AssignedTableListCard";
 import HelpRequestCard from "./HelpRequestCard";
 import ReceptionListCard from "./ReceptionListCard";
 import ReservationRequestCard from "./ReservationRequestCard";
+import HelpRequestsTable from "./HelpRequestsTable";
 
 function App() {
   return (
     <div className="App">
+      <Box m="1rem">
+        <HelpRequestsTable />
+      </Box>
       <Box m="1rem">
         <ReservationRequestCard />
       </Box>
