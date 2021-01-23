@@ -11,10 +11,14 @@ import ReceptionListCard from "./ReceptionListCard";
 import ReservationRequestCard from "./ReservationRequestCard";
 import HelpRequestsTable from "./HelpRequestsTable";
 import SearchInput from "./SearchInput";
+import BillingManagementCard from "./BillingManagementCard";
 
 function App() {
   return (
     <div className="App">
+      <Box m="1rem">
+        <BillingManagementCard />
+      </Box>
       <Box m="1rem">
         <SearchInput />
       </Box>
