@@ -15,10 +15,14 @@ import BillingManagementCard from "./BillingManagementCard";
 import BillDetailDialog from "./BillDetailDialog";
 import FoodDetailDialog from "./FoodDetailDialog";
 import ConfirmDeleteDialog from "./ConfirmDeleteDialog";
+import AddNewCategoryDialog from "./AddNewCategoryDialog";
 
 function App() {
   return (
     <div className="App">
+      <Box m="1rem">
+        <AddNewCategoryDialog />
+      </Box>
       <Box m="1rem">
         <ConfirmDeleteDialog />
       </Box>
@@ -49,7 +53,6 @@ function App() {
       <Box m="1rem">
         <HelpRequestCard />
       </Box>
-
       <AssignTableDialog />
       <AlertDialogSlide />
     </div>
