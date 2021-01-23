@@ -16,10 +16,18 @@ import BillDetailDialog from "./BillDetailDialog";
 import FoodDetailDialog from "./FoodDetailDialog";
 import ConfirmDeleteDialog from "./ConfirmDeleteDialog";
 import AddNewCategoryDialog from "./AddNewCategoryDialog";
+import AddCategoryButton from "./AddCategoryButton";
+import AddFoodItemButton from "./AddFoodItemButton";
 
 function App() {
   return (
     <div className="App">
+      <Box m="1rem">
+        <AddFoodItemButton />
+      </Box>
+      <Box m="1rem">
+        <AddCategoryButton />
+      </Box>
       <Box m="1rem">
         <AddNewCategoryDialog />
       </Box>
