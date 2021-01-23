@@ -14,10 +14,14 @@ import SearchInput from "./SearchInput";
 import BillingManagementCard from "./BillingManagementCard";
 import BillDetailDialog from "./BillDetailDialog";
 import FoodDetailDialog from "./FoodDetailDialog";
+import ConfirmDeleteDialog from "./ConfirmDeleteDialog";
 
 function App() {
   return (
     <div className="App">
+      <Box m="1rem">
+        <ConfirmDeleteDialog />
+      </Box>
       <Box m="1rem">
         <FoodDetailDialog />
       </Box>
