@@ -13,10 +13,14 @@ import HelpRequestsTable from "./HelpRequestsTable";
 import SearchInput from "./SearchInput";
 import BillingManagementCard from "./BillingManagementCard";
 import BillDetailDialog from "./BillDetailDialog";
+import FoodDetailDialog from "./FoodDetailDialog";
 
 function App() {
   return (
     <div className="App">
+      <Box m="1rem">
+        <FoodDetailDialog />
+      </Box>
       <Box m="1rem">
         <BillDetailDialog />
       </Box>
