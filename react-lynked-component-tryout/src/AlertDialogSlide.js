@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AlertDialogSlide() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleClickOpen = () => {
     setOpen(true);

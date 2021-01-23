@@ -1,19 +1,15 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import Link from "@material-ui/core/Link";
-import ProTip from "./ProTip";
-
-// import ReceptionListCard from "./ReceptionListCard";
+import logo from "./logo.svg";
+import "./App.css";
 import AssignTableDialog from "./AssignTableDialog";
+import AlertDialogSlide from "./AlertDialogSlide";
 
-export default function App() {
+function App() {
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <AssignTableDialog />
-      </Box>
-    </Container>
+    <div className="App">
+      <AssignTableDialog />
+      {/* <AlertDialogSlide /> */}
+    </div>
   );
 }
+
+export default App;
