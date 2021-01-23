@@ -29,6 +29,7 @@ function App() {
         <AddCategoryButton />
       </Box>
       <Box m="1rem">
+        <Box>AddNewCateogryDialog</Box>
         <AddNewCategoryDialog />
       </Box>
       <Box m="1rem">

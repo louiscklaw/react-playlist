@@ -17,11 +17,20 @@ import {
 } from "@material-ui/core";
 
 import {
-  LYNKED_BLACK,
-  LYNKED_GREEN,
-  LYNKED_LIGHT_GREY,
-  LYNKED_DEEP_GREY,
+  LYNKED_RED,
+  LYNKED_RED_HOVER,
   LYNKED_WHITE,
+  LYNKED_BLUE,
+  LYNKED_BLUE_HOVER,
+  LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
+  LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
+  LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
+  LYNKED_BLACK,
+  LYNKED_BLACK_HOVER,
+  LYNKED_WHITE_HOVER,
 } from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
@@ -50,11 +59,17 @@ const useStyles = makeStyles((theme) => ({
   ButtonCancel: {
     width: "48%",
     backgroundColor: LYNKED_DEEP_GREY,
+    "&:hover": {
+      backgroundColor: LYNKED_DEEP_GREY_HOVER,
+    },
     color: LYNKED_WHITE,
   },
   ButtonOK: {
     width: "48%",
     backgroundColor: LYNKED_GREEN,
+    "&:hover": {
+      backgroundColor: LYNKED_GREEN_HOVER,
+    },
     color: LYNKED_WHITE,
   },
   Buttons: {

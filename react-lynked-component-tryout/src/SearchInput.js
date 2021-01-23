@@ -1,16 +1,27 @@
 import React from "react";
-import {
-  LYNKED_RED,
-  LYNKED_WHITE,
-  LYNKED_GREEN,
-  LYNKED_BLUE,
-  LYNKED_LIGHT_GREY,
-} from "src/consts/colors";
+
 import { styled, Box, TextField, Button, makeStyles } from "@material-ui/core";
 import InputAdornment from "@material-ui/core/InputAdornment";
 
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import SearchIcon from "@material-ui/icons/Search";
+
+import {
+  LYNKED_RED,
+  LYNKED_RED_HOVER,
+  LYNKED_WHITE,
+  LYNKED_BLUE,
+  LYNKED_BLUE_HOVER,
+  LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
+  LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
+  LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
+  LYNKED_BLACK,
+  LYNKED_BLACK_HOVER,
+  LYNKED_WHITE_HOVER,
+} from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
   helloworld: {},
@@ -41,6 +52,9 @@ const useStyles = makeStyles((theme) => ({
 
     color: LYNKED_WHITE,
     backgroundColor: LYNKED_BLUE,
+    "&:hover": {
+      backgroundColor: LYNKED_BLUE_HOVER,
+    },
   },
 }));
 

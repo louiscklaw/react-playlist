@@ -23,11 +23,19 @@ import {
 
 import {
   LYNKED_RED,
+  LYNKED_RED_HOVER,
   LYNKED_WHITE,
+  LYNKED_BLUE,
+  LYNKED_BLUE_HOVER,
   LYNKED_GREEN,
+  LYNKED_GREEN_HOVER,
   LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
   LYNKED_DEEP_GREY,
+  LYNKED_DEEP_GREY_HOVER,
   LYNKED_BLACK,
+  LYNKED_BLACK_HOVER,
+  LYNKED_WHITE_HOVER,
 } from "src/consts/colors";
 
 const COLOR_RED = "#F14342";
@@ -42,16 +50,22 @@ const useStyles = makeStyles((theme) => ({
   TextInput: {
     border: "1px solid #E0E0E0",
     font: "normal normal bold 12px/16px Roboto",
+    padding: "3px 3px",
     "& ::placeholder": {
       color: LYNKED_LIGHT_GREY,
-      padding: "10px 20px",
     },
   },
   ButtonCancel: {
     backgroundColor: LYNKED_DEEP_GREY,
+    "&:hover": {
+      backgroundColor: LYNKED_DEEP_GREY_HOVER,
+    },
   },
   ButtonOK: {
     backgroundColor: LYNKED_GREEN,
+    "&:hover": {
+      backgroundColor: LYNKED_GREEN_HOVER,
+    },
   },
   DialogHead: {
     display: "flex",
