@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavButtonColumn() {
+export default function RestaurantNavButtonColumn() {
   const classes = useStyles();
   return (
     <>

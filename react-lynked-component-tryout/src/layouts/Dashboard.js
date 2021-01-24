@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProfilePic from "src/components/ProfilePic";
-import NavButtonColumn from "src/components/NavButtonColumn";
+import RestaurantNavButtonColumn from "src/components/RestaurantNavButtonColumn";
 
 import {
   styled,
@@ -78,7 +78,7 @@ export default function Dashboard() {
           <Box className={classes.Navbar}>
             <Box className={classes.NavbarTopPart}>
               <ProfilePic />
-              <NavButtonColumn />
+              <RestaurantNavButtonColumn />
             </Box>
             <Box className={classes.NavbarBottomPart}>
               <Box>Settings</Box>
