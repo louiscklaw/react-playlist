@@ -1,8 +1,5 @@
 import React from "react";
 
-import ProfilePic from "src/components/ProfilePic";
-import RestaurantNavButtonColumn from "src/components/RestaurantNavButtonColumn";
-
 import {
   styled,
   Box,
@@ -12,6 +9,11 @@ import {
   Input,
   Grid,
 } from "@material-ui/core";
+
+import ProfilePic from "src/components/ProfilePic";
+import RestaurantNavButtonColumn from "src/components/RestaurantNavButtonColumn";
+import SystemNavButtonColumn from "src/components/SystemNavButtonColumn";
+import HelpRequestedShortList from "src/components/HelpRequestedShortList";
 
 import {
   LYNKED_RED,
@@ -32,7 +34,7 @@ import {
 } from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
-  helloworld: { backgroundColor: "gold", height: "100vh" },
+  DashboardContainer: { height: "100vh" },
   Topbar: {
     backgroundColor: LYNKED_RED,
     minHeight: "7vh",
@@ -42,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   Navbar: {
-    backgroundColor: "tomato",
     width: "16%",
     minHeight: "93vh",
     display: "flex",
@@ -51,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   TopNavBody: { width: "100%" },
   NavbarTopPart: { backgroundColor: "white" },
-  NavbarBottomPart: { backgroundColor: "maroon" },
+  NavbarBottomPart: {},
   NavBody: { backgroundColor: "green", width: "84%" },
   DashboardBody: { display: "flex", flexFlow: "row" },
   ProfilePic: { minHeight: "22vh", backgroundColor: "cyan" },
@@ -69,7 +70,7 @@ export default function Dashboard() {
   const classes = useStyles();
   return (
     <>
-      <Box className={classes.helloworld}>
+      <Box className={classes.DashboardContainer}>
         <Box className={classes.Topbar}>
           <Box>lynked logo</Box>
           <Box>lynked nav buttons</Box>
@@ -81,17 +82,14 @@ export default function Dashboard() {
               <RestaurantNavButtonColumn />
             </Box>
             <Box className={classes.NavbarBottomPart}>
-              <Box>Settings</Box>
-              <Box>Logout</Box>
-              <Box>ChangeLog</Box>
-              <Box>Aboutme</Box>
+              <SystemNavButtonColumn />
             </Box>
           </Box>
           <Box className={classes.NavBody}>
             <Box className={classes.NavBodyHead}>
               <Grid container>
                 <Grid item lg={6}>
-                  help requested
+                  <HelpRequestedShortList />
                 </Grid>
                 <Grid item lg={6}>
                   reservation requested
