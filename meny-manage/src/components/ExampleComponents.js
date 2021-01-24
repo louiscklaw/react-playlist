@@ -24,11 +24,17 @@ import ReceptionList from "src/components/ReceptionList";
 import AssignedTablesList from "src/components/AssignedTablesList";
 import HelpRequestedShortList from "src/components/HelpRequestedShortList";
 import ReservationRequestedShortList from "src/components/ReservationRequestedShortList";
+import SimpleStats from "src/components/SimpleStats";
 
-export default function Example() {
+export default function ExampleComponents() {
   return (
     <div className="App">
-      {/* ReservationRequestedShortList */}
+      {/* SimpleStats */}
+      <Box m="1rem" style={{ width: "50vw" }}>
+        <Box>SimpleStats</Box>
+        <SimpleStats />
+      </Box>
+
       <Box m="1rem" style={{ width: "50vw" }}>
         <Box>ReservationRequestedShortList</Box>
         <ReservationRequestedShortList />

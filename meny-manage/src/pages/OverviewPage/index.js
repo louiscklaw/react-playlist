@@ -75,11 +75,13 @@ export default function OverviewPage() {
   return (
     <>
       <Grid container>
-        <Grid item lg={6}>
-          <ReceptionList />
+        <Grid item lg={12}>
+          <Box>meny usage</Box>
+          <Box>help request</Box>
+          <Box>ad impressions</Box>
         </Grid>
-        <Grid item lg={6} className={classes.NavBodyMainRight}>
-          <AssignedTablesList />
+        <Grid item lg={12}>
+          <Box> upgrade your plan to see </Box>
         </Grid>
       </Grid>
     </>

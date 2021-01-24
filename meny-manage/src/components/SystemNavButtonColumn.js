@@ -62,6 +62,13 @@ export default function SystemNavButtonColumn() {
         <Box className={classes.NavButtonGroup}>
           <Box className={classes.NavButtonContainer}>
             <NavButton
+              text={"Example Components"}
+              href={"/example_components"}
+              icon={<CodeOutlinedIcon />}
+            />
+          </Box>
+          <Box className={classes.NavButtonContainer}>
+            <NavButton
               text={"Helloworld"}
               href={"/helloworld"}
               icon={<CodeOutlinedIcon />}

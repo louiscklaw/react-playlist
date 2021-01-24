@@ -16,7 +16,7 @@ import OrdersPage from "src/pages/OrdersPage";
 import BillingManagementPage from "src/pages/BillingManagementPage";
 import MenuManagementPage from "src/pages/MenuManagementPage";
 
-import Examples from "src/components/Examples";
+import ExampleComponents from "src/components/ExampleComponents";
 
 var ENV_PUBLIC_URL = process.env.PUBLIC_URL;
 
@@ -39,8 +39,9 @@ const routes = [
     path: `${ENV_PUBLIC_URL}/`,
     element: <FullScreenLayout />,
     children: [
+      { path: "example_components", element: <ExampleComponents /> },
       { path: "helloworld", element: <HelloworldPage /> },
-      { path: "examples", element: <Examples /> },
+
       {
         path: "/",
         element: <Navigate to={`${ENV_PUBLIC_URL}/app/overview`} />,
