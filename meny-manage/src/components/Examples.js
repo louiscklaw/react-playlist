@@ -23,11 +23,17 @@ import SearchInput from "src/components/SearchInput";
 import ReceptionList from "src/components/ReceptionList";
 import AssignedTablesList from "src/components/AssignedTablesList";
 import HelpRequestedShortList from "src/components/HelpRequestedShortList";
+import ReservationRequestedShortList from "src/components/ReservationRequestedShortList";
 
 export default function Example() {
   return (
     <div className="App">
-      {/* HelpRequestedShortList */}
+      {/* ReservationRequestedShortList */}
+      <Box m="1rem" style={{ width: "50vw" }}>
+        <Box>ReservationRequestedShortList</Box>
+        <ReservationRequestedShortList />
+      </Box>
+
       <Box m="1rem" style={{ width: "50vw" }}>
         <Box>HelpRequestedShortList</Box>
         <HelpRequestedShortList />

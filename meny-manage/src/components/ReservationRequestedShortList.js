@@ -29,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
   ReservationRequestedShortList: {
     padding: "1rem",
   },
+  ListUpper: {
+    backgroundColor: "gold",
+    width: "100%",
+  },
 }));
 
 export default function ReservationRequestedShortList() {
@@ -36,58 +40,61 @@ export default function ReservationRequestedShortList() {
   return (
     <>
       <Box className={classes.ReservationRequestedShortList}>
-        <Grid container spacing={"0.5rem"}>
-          <Grid
-            item
-            lg={6}
-            spacing={"1rem"}
-            style={{ display: "flex", flexFlow: "row", alignItems: "center" }}
-          >
-            <NotificationsActiveIcon />
-            Reservation Requested
+        <Grid container>
+          <Grid item lg={12}>
+            <Grid container>
+              <Grid item lg={11}>
+                <Box
+                  style={{
+                    display: "flex",
+                    flexFlow: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "0.5rem",
+                  }}
+                >
+                  <Box>
+                    <NotificationsActiveIcon />
+                    Help requested
+                  </Box>
+                  <Box>
+                    see all
+                    <ChevronRightOutlinedIcon />
+                  </Box>
+                </Box>
+              </Grid>
+              <Grid item lg={1}></Grid>
+            </Grid>
           </Grid>
-          <Grid item lg={6}>
-            <Box
-              style={{
-                width: "100%",
-                display: "flex",
-                flexFlow: "row",
-                justifyContent: "flex-end",
-                alignItems: "center",
-                // backgroundColor: "red",
-              }}
-            >
-              <Box>see All</Box>{" "}
-              <Box>
-                <ChevronRightOutlinedIcon />
-              </Box>
-            </Box>
-          </Grid>
-
-          <Grid item lg={12} className={classes.CardList}>
-            <Box
-              style={{
-                width: "100%",
-                padding: "0.5rem",
-                display: "flex",
-                flexFlow: "row",
-                justifyContent: "flex-start",
-                alignItems: "center",
-              }}
-            >
-              <Box style={{ margin: "1rem" }}>
-                <ReservationRequestCard />
-              </Box>
-              <Box style={{ margin: "1rem" }}>
-                <ReservationRequestCard />
-              </Box>
-              <Box style={{ margin: "1rem" }}>
-                <ReservationRequestCard />
-              </Box>
-              <Button className={classes.MoreIconContainer}>
-                <ChevronRightOutlinedIcon />
-              </Button>
-            </Box>
+          <Grid item lg={12}>
+            <Grid container>
+              <Grid item lg={11}>
+                <Box
+                  style={{
+                    display: "flex",
+                    flexFlow: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "0.5rem",
+                  }}
+                >
+                  {[1, 2, 3].map((x) => {
+                    return <ReservationRequestCard />;
+                  })}
+                </Box>
+              </Grid>
+              <Grid item lg={1}>
+                <Box
+                  style={{
+                    display: "inline-flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <ChevronRightOutlinedIcon />
+                </Box>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
