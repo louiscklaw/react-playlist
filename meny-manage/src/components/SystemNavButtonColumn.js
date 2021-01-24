@@ -63,35 +63,35 @@ export default function SystemNavButtonColumn() {
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Helloworlds"}
-              link={"https://www.google.com"}
+              href={"https://www.google.com"}
               icon={<CodeOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Settings"}
-              link={"https://www.google.com"}
+              href={"https://www.google.com"}
               icon={<SettingsOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Logout"}
-              link={"https://www.google.com"}
+              href={"https://www.google.com"}
               icon={<ExitToAppOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"ChangeLog"}
-              link={"https://www.google.com"}
+              href={"https://www.google.com"}
               icon={<EventNoteOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Aboutme"}
-              link={"https://www.google.com"}
+              href={"https://www.google.com"}
               icon={<HelpOutlineOutlinedIcon />}
             />
           </Box>

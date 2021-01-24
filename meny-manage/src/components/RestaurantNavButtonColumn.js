@@ -49,6 +49,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const ENV_PUBLIC_URL = process.env.PUBLIC_URL;
+
 export default function RestaurantNavButtonColumn() {
   const classes = useStyles();
   return (
@@ -58,43 +60,42 @@ export default function RestaurantNavButtonColumn() {
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Overview"}
-              link={"https://www.google.com"}
+              href={`/app/overview`}
               icon={<DashboardOutlinedIcon />}
             />
           </Box>
-          <Box className={classes.NavButtonContainer}></Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Reception List"}
-              link={"https://www.google.com"}
+              href={`/app/reception_list`}
               icon={<FeaturedPlayListOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Help Requests"}
-              link={"https://www.google.com"}
+              href={`/app/reception_list`}
               icon={<NotificationsNoneIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Orders"}
-              link={"https://www.google.com"}
+              href={`/app/reception_list`}
               icon={<FormatListBulletedOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Billing Management"}
-              link={"https://www.google.com"}
+              href={`/app/reception_list`}
               icon={<AttachMoneyOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Menu Management"}
-              link={"https://www.google.com"}
+              href={`/app/reception_list`}
               icon={<LiveHelpOutlinedIcon />}
             />
           </Box>

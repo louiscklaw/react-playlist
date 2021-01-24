@@ -7,7 +7,9 @@ import DashboardLayout from "src/layouts/DashboardLayout";
 import FullScreenLayout from "src/layouts/FullScreenLayout";
 
 import HelloworldPage from "src/pages/helloworld";
+
 import OverviewPage from "src/pages/OverviewPage";
+import ReceptionListPage from "src/pages/ReceptionListPage";
 
 import Examples from "src/components/Examples";
 
@@ -19,7 +21,10 @@ const routes = [
   {
     path: `${ENV_PUBLIC_URL}/app`,
     element: <DashboardLayout />,
-    children: [{ path: "overview", element: <OverviewPage /> }],
+    children: [
+      { path: "overview", element: <OverviewPage /> },
+      { path: "reception_list", element: <ReceptionListPage /> },
+    ],
   },
   {
     path: `${ENV_PUBLIC_URL}/`,

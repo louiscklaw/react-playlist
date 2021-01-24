@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink as RouterLink } from "react-router-dom";
 
 import {
   styled,
@@ -51,11 +52,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavButton({ text, link, icon }) {
+export default function NavButton({ text, href, icon }) {
   const classes = useStyles();
+  console.log("href", href);
   return (
     <>
-      <Button className={classes.NavButton} fullWidth>
+      <Button
+        className={classes.NavButton}
+        fullWidth
+        component={RouterLink}
+        to={href}
+      >
         <Box className={classes.ButtonContent}>
           <Box style={{ paddingLeft: "2rem" }} component="span">
             {icon}
