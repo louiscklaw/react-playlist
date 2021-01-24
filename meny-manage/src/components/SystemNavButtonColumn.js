@@ -21,6 +21,7 @@ import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import FormatListBulletedOutlinedIcon from "@material-ui/icons/FormatListBulletedOutlined";
 import AttachMoneyOutlinedIcon from "@material-ui/icons/AttachMoneyOutlined";
 import LiveHelpOutlinedIcon from "@material-ui/icons/LiveHelpOutlined";
+import BugReportOutlinedIcon from "@material-ui/icons/BugReportOutlined";
 
 import NavButton from "src/components/NavButton";
 
@@ -64,14 +65,14 @@ export default function SystemNavButtonColumn() {
             <NavButton
               text={"Example Components"}
               href={"/example_components"}
-              icon={<CodeOutlinedIcon />}
+              icon={<BugReportOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Helloworld"}
               href={"/helloworld"}
-              icon={<CodeOutlinedIcon />}
+              icon={<BugReportOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
