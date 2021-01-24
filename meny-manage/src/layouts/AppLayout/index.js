@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 import {
   styled,
@@ -70,18 +71,43 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function OverviewPage() {
+export default function AppLayout() {
   const classes = useStyles();
+
   return (
     <>
-      <Grid container>
-        <Grid item lg={6}>
-          <ReceptionList />
-        </Grid>
-        <Grid item lg={6} className={classes.NavBodyMainRight}>
-          <AssignedTablesList />
-        </Grid>
-      </Grid>
+      <Box className={classes.DashboardContainer}>
+        <Box className={classes.Topbar}>
+          <Box>lynked logo</Box>
+          <Box>lynked nav buttons</Box>
+        </Box>
+        <Box className={classes.DashboardBody}>
+          <Box className={classes.Navbar}>
+            <Box className={classes.NavbarTopPart}>
+              <ProfilePic />
+              <RestaurantNavButtonColumn />
+            </Box>
+            <Box className={classes.NavbarBottomPart}>
+              <SystemNavButtonColumn />
+            </Box>
+          </Box>
+          <Box className={classes.NavBody}>
+            <Box className={classes.NavBodyHead}>
+              <Grid container>
+                <Grid item lg={6}>
+                  <HelpRequestedShortList />
+                </Grid>
+                <Grid item lg={6}>
+                  <ReservationRequestedShortList />
+                </Grid>
+              </Grid>
+            </Box>
+            <Box className={classes.NavBodyMain}>
+              <Outlet />
+            </Box>
+          </Box>
+        </Box>
+      </Box>
     </>
   );
 }

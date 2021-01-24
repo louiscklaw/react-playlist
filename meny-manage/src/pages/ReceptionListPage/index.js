@@ -74,45 +74,14 @@ export default function ReceptionListPage() {
   const classes = useStyles();
   return (
     <>
-      <Box className={classes.DashboardContainer}>
-        <Box className={classes.Topbar}>
-          <Box>lynked logo</Box>
-          <Box>lynked nav buttons</Box>
-        </Box>
-        <Box className={classes.DashboardBody}>
-          <Box className={classes.Navbar}>
-            <Box className={classes.NavbarTopPart}>
-              <ProfilePic />
-              <RestaurantNavButtonColumn />
-            </Box>
-            <Box className={classes.NavbarBottomPart}>
-              <SystemNavButtonColumn />
-            </Box>
-          </Box>
-          <Box className={classes.NavBody}>
-            <Box className={classes.NavBodyHead}>
-              <Grid container>
-                <Grid item lg={6}>
-                  <HelpRequestedShortList />
-                </Grid>
-                <Grid item lg={6}>
-                  <ReservationRequestedShortList />
-                </Grid>
-              </Grid>
-            </Box>
-            <Box className={classes.NavBodyMain}>
-              <Grid container>
-                <Grid item lg={6}>
-                  <ReceptionList />
-                </Grid>
-                <Grid item lg={6} className={classes.NavBodyMainRight}>
-                  <AssignedTablesList />
-                </Grid>
-              </Grid>
-            </Box>
-          </Box>
-        </Box>
-      </Box>
+      <Grid container>
+        <Grid item lg={6}>
+          <ReceptionList />
+        </Grid>
+        <Grid item lg={6} className={classes.NavBodyMainRight}>
+          <AssignedTablesList />
+        </Grid>
+      </Grid>
     </>
   );
 }

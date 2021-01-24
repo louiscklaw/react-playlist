@@ -8,7 +8,7 @@ export default function AssignedTablesList() {
     <>
       <Box>AssignedTablesList</Box>
       <Box>
-        {[1, 2, 3, 4, 5].map((x) => {
+        {[1, 2, 3].map((x) => {
           return <AssignedTableListCard />;
         })}
       </Box>

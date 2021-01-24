@@ -9,7 +9,7 @@ export default function Helloworld() {
     <>
       <Box>Reception List</Box>
       <Box>
-        {[1, 2, 3, 4, 5].map((x) => {
+        {[1, 2, 3].map((x) => {
           return <ReceptionListCard />;
         })}
       </Box>

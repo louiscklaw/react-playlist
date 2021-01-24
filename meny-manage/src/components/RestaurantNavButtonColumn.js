@@ -74,28 +74,28 @@ export default function RestaurantNavButtonColumn() {
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Help Requests"}
-              href={`/app/reception_list`}
+              href={`/app/help_requests`}
               icon={<NotificationsNoneIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Orders"}
-              href={`/app/reception_list`}
+              href={`/app/orders`}
               icon={<FormatListBulletedOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Billing Management"}
-              href={`/app/reception_list`}
+              href={`/app/billing_management`}
               icon={<AttachMoneyOutlinedIcon />}
             />
           </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Menu Management"}
-              href={`/app/reception_list`}
+              href={`/app/menu_management`}
               icon={<LiveHelpOutlinedIcon />}
             />
           </Box>
