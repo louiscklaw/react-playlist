@@ -10,8 +10,14 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "2px",
     padding: "8px",
     marginBottom: "8px",
-    backgroundColor: props.isDragging ? "lightGreen" : "white",
+    // backgroundColor: props.isDragging ? "lightGreen" : "white",
   }),
+  container_is_dragging: {
+    backgroundColor: "lightGreen",
+  },
+  container_is_stop: {
+    backgroundColor: "white",
+  },
   handle: {
     width: "20px",
     height: "20px",
@@ -28,7 +34,11 @@ function Task({ task, index }) {
       <Draggable draggableId={task.id} index={index}>
         {(provided, snapshot) => (
           <Box
-            className={classes.container}
+            className={`${classes.container} ${
+              snapshot.isDragging
+                ? classes.container_is_dragging
+                : classes.container_is_stop
+            }`}
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
