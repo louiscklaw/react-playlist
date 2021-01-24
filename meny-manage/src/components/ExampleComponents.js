@@ -27,14 +27,19 @@ import ReservationRequestedShortList from "src/components/ReservationRequestedSh
 import SimpleStats from "src/components/SimpleStats";
 import OrderTable from "src/components/OrderTable";
 import ViewHistoryButton from "src/components/ViewHistoryButton";
+import FoodMenuEdit from "src/components/FoodMenuEdit";
 
 export default function ExampleComponents() {
   return (
     <div className="App">
-      <Box m="1rem">
-        <ViewHistoryButton />
-      </Box>
       <Box style={{ padding: "0px", margin: "0px" }}>
+        <Box m="1rem">
+          <FoodMenuEdit />
+        </Box>
+
+        <Box m="1rem">
+          <ViewHistoryButton />
+        </Box>
         <Box m="1rem" style={{ width: "95vw" }}>
           <Box>OrderTable</Box>
           <OrderTable />
