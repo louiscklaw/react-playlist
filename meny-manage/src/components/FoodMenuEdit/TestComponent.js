@@ -62,10 +62,18 @@ const QuoteList = React.memo(function QuoteList({ quotes }) {
 });
 
 function App() {
-  const [state, setState] = useState({ quotes: initial });
-  const [columnOrder, setColumnOrder] = useState(initialData.columnOrder);
-  const [columns, setColumns] = useState(initialData.columns);
-  const [tasks, setTasks] = useState(initialData.tasks);
+  const [stateInitialData, setStateInitialData] = useState(initialData);
+  const [columnOrder, setColumnOrder] = useState(stateInitialData.columnOrder);
+  const [columns, setColumns] = useState(stateInitialData.columns);
+  const [tasks, setTasks] = useState(stateInitialData.tasks);
+
+  React.useEffect(() => {
+    setStateInitialData({
+      tasks: tasks,
+      columns: columns,
+      columnOrder: columnOrder,
+    });
+  }, [columnOrder, columns, tasks]);
 
   function onDragStart() {
     document.body.style.color = "orange";
@@ -83,13 +91,22 @@ function App() {
     document.body.style.color = "inherit";
     const { destination, source, draggableId, type } = result;
 
-    // NOTE: check if the position changed
-    if (
-      destination.droppableId === source.droppableId &&
-      destination.index === source.index
-    ) {
+    // dropping an item to column itself cause destination == null
+    if (!destination) {
       return;
     }
+
+    try {
+      if (
+        destination.droppableId === source.droppableId &&
+        destination.index === source.index
+      ) {
+        return;
+      }
+    } catch (error) {
+      console.log(destination);
+    }
+    // NOTE: check if the position changed
 
     console.log("type", type);
 
@@ -155,35 +172,38 @@ function App() {
   }
 
   return (
-    <DragDropContext onDragEnd={onDragEnd}>
-      <Droppable droppableId="all-columns" direction="vertical" type="column">
-        {(provided) => {
-          return (
-            <>
-              <Container {...provided.droppableProps} ref={provided.innerRef}>
-                {columnOrder.map((columnId, index) => {
-                  const column = columns[columnId];
-                  // TODO: look back here
-                  const temp_tasks = column.taskIds.map(
-                    (taskId) => tasks[taskId]
-                  );
+    <>
+      <DragDropContext onDragEnd={onDragEnd}>
+        <Droppable droppableId="all-columns" direction="vertical" type="column">
+          {(provided) => {
+            return (
+              <>
+                <Container {...provided.droppableProps} ref={provided.innerRef}>
+                  {columnOrder.map((columnId, index) => {
+                    const column = columns[columnId];
+                    // TODO: look back here
+                    const temp_tasks = column.taskIds.map(
+                      (taskId) => tasks[taskId]
+                    );
 
-                  return (
-                    <Column
-                      key={column.id}
-                      column={column}
-                      tasks={temp_tasks}
-                      index={index}
-                    />
-                  );
-                })}
-                {provided.placeholder}
-              </Container>
-            </>
-          );
-        }}
-      </Droppable>
-    </DragDropContext>
+                    return (
+                      <Column
+                        key={column.id}
+                        column={column}
+                        tasks={temp_tasks}
+                        index={index}
+                      />
+                    );
+                  })}
+                  {provided.placeholder}
+                </Container>
+              </>
+            );
+          }}
+        </Droppable>
+      </DragDropContext>
+      <pre>{JSON.stringify(stateInitialData, null, 2)}</pre>
+    </>
   );
 }
 
