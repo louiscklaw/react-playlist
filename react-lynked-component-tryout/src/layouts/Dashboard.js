@@ -1,4 +1,5 @@
 import React from "react";
+import ProfilePic from "src/components/ProfilePic";
 
 import {
   styled,
@@ -74,10 +75,7 @@ export default function Dashboard() {
         <Box className={classes.DashboardBody}>
           <Box className={classes.Navbar}>
             <Box className={classes.NavbarTopPart}>
-              <Box className={classes.ProfilePic}>
-                <Box>ProfilePic</Box>
-                <Box>email</Box>
-              </Box>
+              <ProfilePic />
               <Box className={classes.TopNavBody}>
                 <Box>Overview</Box>
                 <Box>Reception List</Box>
