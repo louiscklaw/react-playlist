@@ -1,5 +1,7 @@
 import React from "react";
+
 import ProfilePic from "src/components/ProfilePic";
+import NavButtonColumn from "src/components/NavButtonColumn";
 
 import {
   styled,
@@ -48,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
   },
   TopNavBody: { width: "100%" },
-  NavbarTopPart: { backgroundColor: "olive" },
+  NavbarTopPart: { backgroundColor: "white" },
   NavbarBottomPart: { backgroundColor: "maroon" },
   NavBody: { backgroundColor: "green", width: "84%" },
   DashboardBody: { display: "flex", flexFlow: "row" },
@@ -76,14 +78,7 @@ export default function Dashboard() {
           <Box className={classes.Navbar}>
             <Box className={classes.NavbarTopPart}>
               <ProfilePic />
-              <Box className={classes.TopNavBody}>
-                <Box>Overview</Box>
-                <Box>Reception List</Box>
-                <Box>Help Requests</Box>
-                <Box>Orders</Box>
-                <Box>Billing Management</Box>
-                <Box>Menu Management</Box>
-              </Box>
+              <NavButtonColumn />
             </Box>
             <Box className={classes.NavbarBottomPart}>
               <Box>Settings</Box>
