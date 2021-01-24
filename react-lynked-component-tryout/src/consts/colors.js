@@ -1,3 +1,5 @@
+import { ColorLuminance } from "src/consts/ColorLuminance";
+
 const LYNKED_RED = "#B71D1B";
 const LYNKED_RED_HOVER = "#EB2723";
 
@@ -19,7 +21,11 @@ const LYNKED_BLUE = "#3E51B5";
 const LYNKED_GREEN_HOVER = "#5BD461";
 const LYNKED_GREEN = "#44A048";
 
+const LYNKED_BORDER_GREY = "#F4F6F8";
+
 const LYNKED_SUCCESS = LYNKED_GREEN;
+
+const LYNKED_BACKGROUND_LIGHT_GREY = ColorLuminance(LYNKED_LIGHT_GREY, 0.4);
 
 export {
   LYNKED_RED_HOVER,
@@ -37,4 +43,6 @@ export {
   LYNKED_GREEN_HOVER,
   LYNKED_BLUE,
   LYNKED_BLUE_HOVER,
+  LYNKED_BORDER_GREY,
+  LYNKED_BACKGROUND_LIGHT_GREY,
 };
