@@ -80,21 +80,78 @@ function App() {
   }
 
   function onDragEnd(result) {
-    if (!result.destination) {
+    document.body.style.color = "inherit";
+    const { destination, source, draggableId, type } = result;
+
+    // NOTE: check if the position changed
+    if (
+      destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
       return;
     }
 
-    if (result.destination.index === result.source.index) {
+    console.log("type", type);
+
+    if (type === "column") {
+      const newColumnOrder = Array.from(columnOrder);
+      newColumnOrder.splice(source.index, 1);
+      newColumnOrder.splice(destination.index, 0, draggableId);
+
+      setColumnOrder(newColumnOrder);
       return;
     }
 
-    const quotes = reorder(
-      state.quotes,
-      result.source.index,
-      result.destination.index
-    );
+    const start = columns[source.droppableId];
+    const finish = columns[destination.droppableId];
 
-    setState({ quotes });
+    if (true) {
+      // compare the start column and the finish column
+      if (start === finish) {
+        const newTaskIds = Array.from(start.taskIds);
+
+        // NOTE: remove old item
+        newTaskIds.splice(source.index, 1);
+        // NOTE: insert into new array
+        newTaskIds.splice(destination.index, 0, draggableId);
+
+        const newColumn = {
+          ...start,
+          taskIds: newTaskIds,
+        };
+
+        setColumns({
+          ...columns,
+          [newColumn.id]: newColumn,
+        });
+
+        return;
+      }
+
+      // NOTE: consider the case, move away from start column and drop into the finish column
+      // Moving from one list to another
+      const startTaskIds = Array.from(start.taskIds);
+      // NOTE: move away from start column
+      startTaskIds.splice(source.index, 1);
+      const newStart = {
+        ...start,
+        taskIds: startTaskIds,
+      };
+
+      const finishTaskIds = Array.from(finish.taskIds);
+      // NOTE: drop into finish column
+      finishTaskIds.splice(destination.index, 0, draggableId);
+      const newFinish = {
+        ...finish,
+        taskIds: finishTaskIds,
+      };
+
+      setColumns({
+        ...columns,
+        [newStart.id]: newStart,
+        [newFinish.id]: newFinish,
+      });
+    }
   }
 
   return (
