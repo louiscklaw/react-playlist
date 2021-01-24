@@ -29,16 +29,16 @@ function Task({ task, index }) {
     <>
       <Draggable draggableId={task.id} index={index}>
         {(provided, snapshot) => (
-          <Container
+          <Box
             className={classes.container}
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
             isDragging={snapshot.isDragging}
           >
-            <Handle className={classes.handle} {...provided.dragHandleProps} />
+            <Box className={classes.handle} {...provided.dragHandleProps} />
             {task.content}
-          </Container>
+          </Box>
         )}
       </Draggable>
     </>
