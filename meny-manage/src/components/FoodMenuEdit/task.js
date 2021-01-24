@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "2px",
     padding: "8px",
     marginBottom: "8px",
-    // backgroundColor: props.isDragging ? "lightGreen" : "white",
   }),
   container_is_dragging: {
     backgroundColor: "lightGreen",
