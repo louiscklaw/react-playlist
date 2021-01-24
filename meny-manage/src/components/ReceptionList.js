@@ -4,7 +4,7 @@ import { Box } from "@material-ui/core";
 
 import ReceptionListCard from "src/components/ReceptionListCard";
 
-export default function Helloworld() {
+export default function ReceptionList() {
   return (
     <>
       <Box>Reception List</Box>

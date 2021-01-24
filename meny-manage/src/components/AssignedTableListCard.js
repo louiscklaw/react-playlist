@@ -35,12 +35,12 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       backgroundColor: LYNKED_WHITE_HOVER,
     },
-    margin: "1rem",
+    marginTop: "1rem",
   },
   statusIndicator: {
     width: "10px",
     height: "100%",
-    backgroundColor: LYNKED_RED,
+    backgroundColor: LYNKED_BLUE,
     borderRadius: "2px 0px 0px 2px",
   },
   CardContent: {

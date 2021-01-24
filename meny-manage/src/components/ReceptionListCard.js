@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       backgroundColor: LYNKED_WHITE_HOVER,
     },
-    margin: "1rem",
+    marginTop: "1rem",
   },
   statusIndicator: {
     width: "10px",
@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
   ReceptionCardBody2: {},
 }));
 
-export default function Helloworld() {
+export default function ReceptionListCard() {
   const classes = useStyles();
   return (
     <>

@@ -1,5 +1,25 @@
 import React from "react";
 
-export default function Helloworld() {
-  return <>Helloworld page</>;
+import {
+  styled,
+  Box,
+  TextField,
+  Button,
+  makeStyles,
+  Input,
+  Grid,
+} from "@material-ui/core";
+
+import HelpRequestsTable from "src/components/HelpRequestsTable";
+
+export default function HelpRequestsPage() {
+  return (
+    <>
+      <Grid container>
+        <Grid item lg={12}>
+          <HelpRequestsTable />
+        </Grid>
+      </Grid>
+    </>
+  );
 }

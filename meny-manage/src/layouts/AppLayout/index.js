@@ -65,6 +65,9 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "22vh",
     backgroundColor: LYNKED_BACKGROUND_LIGHT_GREY,
   },
+  NavBodyMain: {
+    backgroundColor: "gold",
+  },
   NavBodyMainRight: {
     backgroundColor: LYNKED_BACKGROUND_LIGHT_GREY,
     height: "71vh",

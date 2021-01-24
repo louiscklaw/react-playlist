@@ -27,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   HelpRequestedShortList: {
-    padding: "1rem",
+    // padding: "1rem",
+    backgroundColor: "gold",
   },
   ListUpper: {
     backgroundColor: "gold",
@@ -50,7 +51,6 @@ export default function HelpRequestedShortList() {
                     flexFlow: "row",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    padding: "0.5rem",
                   }}
                 >
                   <Box>
@@ -75,7 +75,6 @@ export default function HelpRequestedShortList() {
                     flexFlow: "row",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    padding: "0.5rem",
                   }}
                 >
                   {[1, 2, 3].map((x) => {

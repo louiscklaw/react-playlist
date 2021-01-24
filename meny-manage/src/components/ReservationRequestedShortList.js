@@ -26,9 +26,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-  ReservationRequestedShortList: {
-    padding: "1rem",
-  },
+  ReservationRequestedShortList: {},
   ListUpper: {
     backgroundColor: "gold",
     width: "100%",
@@ -50,7 +48,6 @@ export default function ReservationRequestedShortList() {
                     flexFlow: "row",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    padding: "0.5rem",
                   }}
                 >
                   <Box>
@@ -75,7 +72,6 @@ export default function ReservationRequestedShortList() {
                     flexFlow: "row",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    padding: "0.5rem",
                   }}
                 >
                   {[1, 2, 3].map((x) => {
