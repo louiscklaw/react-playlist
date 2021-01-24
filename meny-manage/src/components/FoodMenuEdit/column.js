@@ -7,7 +7,7 @@ import { Button, Typography, makeStyles, Box } from "@material-ui/core";
 
 import Task from "./task";
 
-import { LYNKED_LIGHT_GREY } from "src/consts/colors";
+import { LYNKED_LIGHT_GREY, LYNKED_LIGHT_GREY_HOVER } from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
   helloworld: {},
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100px",
   }),
   tasklist_is_dragging_over: {
-    backgroundColor: "skyblue",
+    backgroundColor: LYNKED_LIGHT_GREY_HOVER,
   },
   tasklist_not_dragging_over: {
     backgroundColor: "white",

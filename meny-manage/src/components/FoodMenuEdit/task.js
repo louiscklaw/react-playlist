@@ -4,6 +4,17 @@ import { Draggable } from "react-beautiful-dnd";
 import { Box, TextField, Button, makeStyles, Input } from "@material-ui/core";
 
 import DragHandleOutlinedIcon from "@material-ui/icons/DragHandleOutlined";
+import EditOutlinedIcon from "@material-ui/icons/EditOutlined";
+import DeleteOutlineOutlinedIcon from "@material-ui/icons/DeleteOutlineOutlined";
+
+import {
+  LYNKED_WHITE,
+  LYNKED_RED_DARKEN,
+  LYNKED_RED_HOVER,
+  LYNKED_RED_SUPER_LIGHT,
+  LYNKED_LIGHT_GREY,
+  LYNKED_LIGHT_GREY_HOVER,
+} from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
   helloworld: {},
@@ -12,9 +23,13 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "2px",
     padding: "8px",
     marginBottom: "8px",
+    "&:hover": {
+      backgroundColor: LYNKED_LIGHT_GREY_HOVER,
+    },
   }),
   container_is_dragging: {
-    backgroundColor: "lightGreen",
+    backgroundColor: LYNKED_RED_DARKEN,
+    color: LYNKED_WHITE,
   },
   container_is_stop: {
     backgroundColor: "white",
@@ -69,6 +84,14 @@ function Task({ task, index }) {
                 />
               </Box>
               <Box>{task.content}</Box>
+              <Box>{task.price}</Box>
+              <Box>{task.description}</Box>
+              <Box>
+                <EditOutlinedIcon />
+              </Box>
+              <Box>
+                <DeleteOutlineOutlinedIcon />
+              </Box>
             </Box>
           </Box>
         )}
