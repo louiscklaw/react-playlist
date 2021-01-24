@@ -1,9 +1,13 @@
 import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 
+import DragHandleOutlinedIcon from "@material-ui/icons/DragHandleOutlined";
+
 import { Button, Typography, makeStyles, Box } from "@material-ui/core";
 
 import Task from "./task";
+
+import { LYNKED_LIGHT_GREY } from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
   helloworld: {},
@@ -29,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
   tasklist_not_dragging_over: {
     backgroundColor: "white",
   },
-  title: {
-    padding: "8px",
+  title_row: {
+    margin: "0px",
   },
 }));
 
@@ -45,8 +49,20 @@ export default function Helloworld({ column, tasks, index }) {
             {...provided.draggableProps}
             ref={provided.innerRef}
           >
-            <Box className={classes.title} {...provided.dragHandleProps}>
-              {column.title}
+            <Box className={classes.titl_row} {...provided.dragHandleProps}>
+              <Box
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  backgroundColor: LYNKED_LIGHT_GREY,
+                  width: "100%",
+                  height: "100%",
+                  padding: "10px",
+                }}
+              >
+                <DragHandleOutlinedIcon />
+                {column.title}
+              </Box>
             </Box>
             <Droppable droppableId={column.id} type="task">
               {(provided, snapshot) => (

@@ -3,6 +3,8 @@ import { Draggable } from "react-beautiful-dnd";
 
 import { Box, TextField, Button, makeStyles, Input } from "@material-ui/core";
 
+import DragHandleOutlinedIcon from "@material-ui/icons/DragHandleOutlined";
+
 const useStyles = makeStyles((theme) => ({
   helloworld: {},
   container: (props) => ({
@@ -20,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   handle: {
     width: "20px",
     height: "20px",
-    backgroundColor: "orange",
+    // backgroundColor: "orange",
     borderRadius: "4px",
     marginRight: "8px",
   },
@@ -43,8 +45,31 @@ function Task({ task, index }) {
             {...provided.dragHandleProps}
             isDragging={snapshot.isDragging}
           >
-            <Box className={classes.handle} {...provided.dragHandleProps} />
-            {task.content}
+            <Box
+              style={{
+                display: "flex",
+                flexFlow: "row",
+                justifyContent: "flex-start",
+                alignItems: "center",
+              }}
+            >
+              <Box className={classes.handle} {...provided.dragHandleProps}>
+                <DragHandleOutlinedIcon />
+              </Box>
+              <Box>
+                <div
+                  style={{
+                    backgroundImage: `url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)`,
+                    width: "100px",
+                    height: "100px",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                  }}
+                />
+              </Box>
+              <Box>{task.content}</Box>
+            </Box>
           </Box>
         )}
       </Draggable>

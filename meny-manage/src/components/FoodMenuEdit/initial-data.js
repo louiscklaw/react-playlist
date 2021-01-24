@@ -1,6 +1,11 @@
 const initialData = {
   tasks: {
-    "food-01": { id: "food-01", content: "そば粉のガレットと魚" },
+    "food-01": {
+      id: "food-01",
+      content: "そば粉のガレットと魚",
+      img_src:
+        "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    },
     "food-02": { id: "food-02", content: "魚介マリネのサ" },
     "food-03": { id: "food-03", content: "ラダ仕立て紫芋の" },
     "food-04": { id: "food-04", content: "安納芋のフラン" },
@@ -23,24 +28,27 @@ const initialData = {
       title: "LUNCH",
       taskIds: ["food-01"],
     },
-    "cat-1": {
-      id: "cat-1",
-      title: "DINNER",
-      taskIds: ["food-11", "food-14"],
-    },
-    "cat-2": {
-      id: "cat-2",
-      title: "DRINKS",
-      taskIds: ["food-21", "food-24", "food-23"],
-    },
-    "cat-3": {
-      id: "cat-3",
-      title: "DESERT",
-      taskIds: ["food-31", "food-33", "food-34", "food-32"],
-    },
+    // "cat-1": {
+    //   id: "cat-1",
+    //   title: "DINNER",
+    //   taskIds: ["food-11", "food-14"],
+    // },
+    // "cat-2": {
+    //   id: "cat-2",
+    //   title: "DRINKS",
+    //   taskIds: ["food-21", "food-24", "food-23"],
+    // },
+    // "cat-3": {
+    //   id: "cat-3",
+    //   title: "DESERT",
+    //   taskIds: ["food-31", "food-33", "food-34", "food-32"],
+    // },
   },
   // Facilitate reordering of the columns
-  columnOrder: ["cat-0", "cat-1", "cat-2", "cat-3"],
+  columnOrder: [
+    "cat-0",
+    // , "cat-1", "cat-2", "cat-3"
+  ],
   // columnOrder: [ 'cat-1', 'cat-2']
 };
 
