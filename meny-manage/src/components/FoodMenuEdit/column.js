@@ -1,15 +1,7 @@
 import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 
-import {
-  Button,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-  makeStyles,
-  Box,
-} from "@material-ui/core";
+import { Button, Typography, makeStyles, Box } from "@material-ui/core";
 
 import Task from "./task";
 
