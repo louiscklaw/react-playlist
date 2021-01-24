@@ -176,7 +176,6 @@ export default function BillingManagementCard() {
 
   return (
     <>
-      <Box>BillingManagementCard</Box>
       <Box className={classes.BillingCardContainer}>
         <Box className={classes.CardHeader}>
           <Box className={classes.BillToTable}>{"座席番号 10"}</Box>
