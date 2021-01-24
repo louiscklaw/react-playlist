@@ -110,12 +110,6 @@ function App() {
                   const temp_tasks = column.taskIds.map(
                     (taskId) => tasks[taskId]
                   );
-                  // const tasks = [
-                  //   {
-                  //     id: "food-01",
-                  //     content: "そば粉のガレットと魚",
-                  //   },
-                  // ];
 
                   return (
                     <Column
