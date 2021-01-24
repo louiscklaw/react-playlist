@@ -22,10 +22,10 @@ const Handle = styled.div`
   margin-right: 8px;
 `;
 
-function Task({ task, index }) {
-  return (
-    <>
-      <Draggable draggableId={task.id} index={index}>
+class Task extends React.Component {
+  render() {
+    return (
+      <Draggable draggableId={this.props.task.id} index={this.props.index}>
         {(provided, snapshot) => (
           <Container
             ref={provided.innerRef}
@@ -34,11 +34,12 @@ function Task({ task, index }) {
             isDragging={snapshot.isDragging}
           >
             <Handle {...provided.dragHandleProps} />
-            {task.content}
+            {this.props.task.content}
           </Container>
         )}
       </Draggable>
-    </>
-  );
+    );
+  }
 }
+
 export default Task;

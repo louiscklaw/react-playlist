@@ -34,10 +34,10 @@ const TaskList = styled.div`
   min-height: 100px;
 `;
 
-export default function Helloworld({ column, tasks, index }) {
-  return (
-    <>
-      <Draggable draggableId={column.id} index={index}>
+export default class Column extends React.Component {
+  render() {
+    return (
+      <Draggable draggableId={this.props.column.id} index={this.props.index}>
         {(provided) => (
           <Container {...provided.draggableProps} ref={provided.innerRef}>
             <Accordion>
@@ -46,17 +46,19 @@ export default function Helloworld({ column, tasks, index }) {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Title {...provided.dragHandleProps}>{column.title}</Title>
+                <Title {...provided.dragHandleProps}>
+                  {this.props.column.title}
+                </Title>
               </AccordionSummary>
               <AccordionDetails>
-                <Droppable droppableId={column.id} type="task">
+                <Droppable droppableId={this.props.column.id} type="task">
                   {(provided, snapshot) => (
                     <TaskList
                       ref={provided.innerRef}
                       {...provided.droppableProps}
                       isDraggingOver={snapshot.isDraggingOver}
                     >
-                      {tasks.map((task, index) => (
+                      {this.props.tasks.map((task, index) => (
                         <Task key={task.id} task={task} index={index} />
                       ))}
                       {provided.placeholder}
@@ -69,6 +71,6 @@ export default function Helloworld({ column, tasks, index }) {
           </Container>
         )}
       </Draggable>
-    </>
-  );
+    );
+  }
 }

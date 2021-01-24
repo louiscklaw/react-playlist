@@ -4,15 +4,6 @@ import styled from "@emotion/styled";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import type { Quote as QuoteType } from "../types";
 
-import initialData from "./initial-data";
-
-import Column from "./column";
-
-const Container = styled.div`
-  display: flex;
-  flex-flow: column;
-`;
-
 const initial = Array.from({ length: 10 }, (v, k) => k).map((k) => {
   const custom: Quote = {
     id: `id-${k}`,
@@ -63,21 +54,6 @@ const QuoteList = React.memo(function QuoteList({ quotes }) {
 
 function App() {
   const [state, setState] = useState({ quotes: initial });
-  const [columnOrder, setColumnOrder] = useState(initialData.columnOrder);
-  const [columns, setColumns] = useState(initialData.columns);
-  const [tasks, setTasks] = useState(initialData.tasks);
-
-  function onDragStart() {
-    document.body.style.color = "orange";
-  }
-
-  function onDragUpdate(update) {
-    const { destination } = update;
-    const opacity = destination
-      ? destination.index / Object.keys(this.state.tasks).length
-      : 0;
-    document.body.style.backgroundColor = `rgba(153, 141, 217, ${opacity})`;
-  }
 
   function onDragEnd(result) {
     if (!result.destination) {
@@ -99,38 +75,13 @@ function App() {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <Droppable droppableId="all-columns" direction="vertical" type="column">
-        {(provided) => {
-          return (
-            <>
-              <Container {...provided.droppableProps} ref={provided.innerRef}>
-                {columnOrder.map((columnId, index) => {
-                  const column = columns[columnId];
-                  // TODO: look back here
-                  const temp_tasks = column.taskIds.map(
-                    (taskId) => tasks[taskId]
-                  );
-                  // const tasks = [
-                  //   {
-                  //     id: "food-01",
-                  //     content: "そば粉のガレットと魚",
-                  //   },
-                  // ];
-
-                  return (
-                    <Column
-                      key={column.id}
-                      column={column}
-                      tasks={temp_tasks}
-                      index={index}
-                    />
-                  );
-                })}
-                {provided.placeholder}
-              </Container>
-            </>
-          );
-        }}
+      <Droppable droppableId="list">
+        {(provided) => (
+          <div ref={provided.innerRef} {...provided.droppableProps}>
+            <QuoteList quotes={state.quotes} />
+            {provided.placeholder}
+          </div>
+        )}
       </Droppable>
     </DragDropContext>
   );
