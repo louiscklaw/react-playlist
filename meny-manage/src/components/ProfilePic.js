@@ -29,7 +29,7 @@ import {
 } from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
-  helloworld: { backgroundColor: "gold", height: "100vh" },
+  helloworld: { height: "100vh" },
   ProfilePicCell: {
     minHeight: "22vh",
     backgroundColor: LYNKED_WHITE,

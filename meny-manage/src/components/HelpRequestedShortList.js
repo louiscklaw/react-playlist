@@ -17,7 +17,7 @@ import HelpRequestCard from "src/components/HelpRequestCard";
 const useStyles = makeStyles((theme) => ({
   CardList: {
     height: "100%",
-    // backgroundColor: "gold",
+    //
     display: "flex",
     flexFlow: "row",
   },
@@ -28,10 +28,8 @@ const useStyles = makeStyles((theme) => ({
   },
   HelpRequestedShortList: {
     // padding: "1rem",
-    backgroundColor: "gold",
   },
   ListUpper: {
-    backgroundColor: "gold",
     width: "100%",
   },
 }));

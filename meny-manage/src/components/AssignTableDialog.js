@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   CardContent: {
-    // backgroundColor: "gold",
+    //
 
     margin: "30px 30px",
     "& div": {

@@ -66,7 +66,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: LYNKED_BACKGROUND_LIGHT_GREY,
   },
   NavBodyMain: {
-    backgroundColor: "gold",
+    height: "71vh",
+    overflowY: "auto",
   },
   NavBodyMainRight: {
     backgroundColor: LYNKED_BACKGROUND_LIGHT_GREY,

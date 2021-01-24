@@ -38,7 +38,7 @@ import {
 } from "src/consts/colors";
 
 const useStyles = makeStyles((theme) => ({
-  helloworld: { backgroundColor: "gold", height: "100vh" },
+  helloworld: { height: "100vh" },
   NavButtonGroup: { paddingTop: "1rem" },
   ButtonContent: {
     width: "100%",

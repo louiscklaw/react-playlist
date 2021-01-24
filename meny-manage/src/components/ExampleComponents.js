@@ -25,84 +25,95 @@ import AssignedTablesList from "src/components/AssignedTablesList";
 import HelpRequestedShortList from "src/components/HelpRequestedShortList";
 import ReservationRequestedShortList from "src/components/ReservationRequestedShortList";
 import SimpleStats from "src/components/SimpleStats";
+import OrderTable from "src/components/OrderTable";
+import ViewHistoryButton from "src/components/ViewHistoryButton";
 
 export default function ExampleComponents() {
   return (
     <div className="App">
-      {/* SimpleStats */}
-      <Box m="1rem" style={{ width: "50vw" }}>
-        <Box>SimpleStats</Box>
-        <SimpleStats />
+      <Box m="1rem">
+        <ViewHistoryButton />
       </Box>
+      <Box style={{ padding: "0px", margin: "0px" }}>
+        <Box m="1rem" style={{ width: "95vw" }}>
+          <Box>OrderTable</Box>
+          <OrderTable />
+        </Box>
+        <Box m="1rem" style={{ width: "50vw" }}>
+          <Box>SimpleStats</Box>
+          <SimpleStats />
+        </Box>
 
-      <Box m="1rem" style={{ width: "50vw" }}>
-        <Box>ReservationRequestedShortList</Box>
-        <ReservationRequestedShortList />
-      </Box>
+        <Box m="1rem" style={{ width: "50vw" }}>
+          <Box>ReservationRequestedShortList</Box>
+          <ReservationRequestedShortList />
+        </Box>
 
-      <Box m="1rem" style={{ width: "50vw" }}>
-        <Box>HelpRequestedShortList</Box>
-        <HelpRequestedShortList />
-      </Box>
+        <Box m="1rem" style={{ width: "50vw" }}>
+          <Box>HelpRequestedShortList</Box>
+          <HelpRequestedShortList />
+        </Box>
 
-      <Box m="1rem">
-        <Box>AssignedTablesList</Box>
-        <AssignedTablesList />
-      </Box>
+        <Box m="1rem">
+          <Box>AssignedTablesList</Box>
+          <AssignedTablesList />
+        </Box>
 
-      <Box m="1rem">
-        <Box>ReceptionList</Box>
-        <ReceptionList />
-      </Box>
+        <Box m="1rem">
+          <Box>ReceptionList</Box>
+          <ReceptionList />
+        </Box>
 
-      <Box m="1rem">
-        <AddFoodItemButton />
-      </Box>
-      <Box m="1rem">
-        <AddCategoryButton />
-      </Box>
-      <Box m="1rem">
-        <Box>AddNewCateogryDialog</Box>
-        <AddNewCategoryDialog />
-      </Box>
-      <Box m="1rem">
-        <ConfirmDeleteDialog />
-      </Box>
-      <Box m="1rem">
-        <FoodDetailDialog />
-      </Box>
-      <Box m="1rem">
-        <BillDetailDialog />
-      </Box>
-      <Box m="1rem">
-        <BillingManagementCard />
-      </Box>
-      <Box m="1rem">
-        <SearchInput />
-      </Box>
-      <Box m="1rem">
-        <HelpRequestsTable />
-      </Box>
-      <Box m="1rem">
-        <ReservationRequestCard />
-      </Box>
+        <Box m="1rem">
+          <AddFoodItemButton />
+        </Box>
+        <Box m="1rem">
+          <AddCategoryButton />
+        </Box>
+        <Box m="1rem">
+          <Box>AddNewCateogryDialog</Box>
+          <AddNewCategoryDialog />
+        </Box>
+        <Box m="1rem">
+          <ConfirmDeleteDialog />
+        </Box>
+        <Box m="1rem">
+          <FoodDetailDialog />
+        </Box>
+        <Box m="1rem">
+          <BillDetailDialog />
+        </Box>
+        <Box m="1rem">
+          <BillingManagementCard />
+        </Box>
+        <Box m="1rem">
+          <Box>SearchInput</Box>
+          <SearchInput />
+        </Box>
+        <Box m="1rem">
+          <HelpRequestsTable />
+        </Box>
+        <Box m="1rem">
+          <ReservationRequestCard />
+        </Box>
 
-      <Box m="1rem">
-        <Box>ReceptionListCard</Box>
-        <ReceptionListCard />
-      </Box>
-      <Box m="1rem">
-        <Box>AssignedTableListCard</Box>
-        <AssignedTableListCard />
-      </Box>
-      <Box m="1rem">
-        <HelpRequestCard />
-      </Box>
-      <Box m="1rem">
-        <AssignTableDialog />
-      </Box>
+        <Box m="1rem">
+          <Box>ReceptionListCard</Box>
+          <ReceptionListCard />
+        </Box>
+        <Box m="1rem">
+          <Box>AssignedTableListCard</Box>
+          <AssignedTableListCard />
+        </Box>
+        <Box m="1rem">
+          <HelpRequestCard />
+        </Box>
+        <Box m="1rem">
+          <AssignTableDialog />
+        </Box>
 
-      <AlertDialogSlide />
+        <AlertDialogSlide />
+      </Box>
     </div>
   );
 }

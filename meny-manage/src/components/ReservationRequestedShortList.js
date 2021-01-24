@@ -17,7 +17,7 @@ import ReservationRequestCard from "src/components/ReservationRequestCard";
 const useStyles = makeStyles((theme) => ({
   CardList: {
     height: "100%",
-    // backgroundColor: "gold",
+    //
     display: "flex",
     flexFlow: "row",
   },
@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
   },
   ReservationRequestedShortList: {},
   ListUpper: {
-    backgroundColor: "gold",
     width: "100%",
   },
 }));

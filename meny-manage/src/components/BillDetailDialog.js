@@ -40,7 +40,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const useStyles = makeStyles((theme) => ({
   helloworld: {},
   BillingCardContainer: {
-    // backgroundColor: "gold",
+    //
     borderRadius: "2px",
     boxShadow: "0px 1px 2px #00000029",
   },

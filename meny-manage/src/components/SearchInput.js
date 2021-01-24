@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     alignItems: "center",
     boxShadow: "0px 1px 2px #00000029",
-    width: "500px",
+    width: "100%",
     height: "45px",
   },
   TextInput: {
