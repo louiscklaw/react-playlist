@@ -15,6 +15,7 @@ import HelpRequestsPage from "src/pages/HelpRequestsPage";
 import OrdersPage from "src/pages/OrdersPage";
 import BillingManagementPage from "src/pages/BillingManagementPage";
 import MenuManagementPage from "src/pages/MenuManagementPage";
+import LoginPage from "src/pages/LoginPage";
 
 import ExampleComponents from "src/components/ExampleComponents";
 
@@ -39,6 +40,7 @@ const routes = [
     path: `${ENV_PUBLIC_URL}/`,
     element: <FullScreenLayout />,
     children: [
+      { path: "login", element: <LoginPage /> },
       { path: "example_components", element: <ExampleComponents /> },
       { path: "helloworld", element: <HelloworldPage /> },
 

@@ -14,7 +14,6 @@ import {
 export default function FullScreenLayout() {
   return (
     <>
-      <Box>Helloworld FullScreenLayout</Box>
       <Outlet />
     </>
   );
