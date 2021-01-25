@@ -1,7 +1,9 @@
 import { ColorLuminance } from "src/consts/ColorLuminance";
 
 const LYNKED_RED = "#B71D1B";
-const LYNKED_RED_HOVER = "#EB2723";
+const LYNKED_RED_HOVER = ColorLuminance(LYNKED_RED, 0.2);
+const LYNKED_RED_SUPER_LIGHT = ColorLuminance(LYNKED_RED, 0.4);
+const LYNKED_RED_DARKEN = ColorLuminance(LYNKED_RED, -0.4);
 
 const LYNKED_WHITE = "#FFFFFF";
 const LYNKED_WHITE_HOVER = "#CCCCCC";
@@ -30,6 +32,8 @@ const LYNKED_BACKGROUND_LIGHT_GREY = ColorLuminance(LYNKED_LIGHT_GREY, 0.4);
 const LYNKED_NAV_HIGHLIGHT = "#E2EDFF";
 
 export {
+  LYNKED_RED_DARKEN,
+  LYNKED_RED_SUPER_LIGHT,
   LYNKED_RED_HOVER,
   LYNKED_RED,
   LYNKED_WHITE_HOVER,
