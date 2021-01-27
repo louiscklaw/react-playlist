@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
 export default function App() {
   const classes = useStyles();
   const [hello, setHello] = React.useState([top100Films[13]]);
+  const [debug, setDebug] = React.useState(null);
 
   const handleOnClick = (e) => {
     setHello([top100Films[14]]);
@@ -32,6 +33,7 @@ export default function App() {
 
   return (
     <Container maxWidth="sm">
+      <pre>{JSON.stringify(debug, null, 2)}</pre>
       <Box my={4}>
         <Typography variant="h4" component="h1" gutterBottom>
           Create React App v5-alpha example 123321
@@ -43,7 +45,8 @@ export default function App() {
             id="tags-standard"
             options={top100Films}
             getOptionLabel={(option) => option.title}
-            defaultValue={hello}
+            // defaultValue={hello}
+            onChange={(event, newValue) => setDebug(newValue)}
             renderInput={(params) => (
               <TextField
                 {...params}
