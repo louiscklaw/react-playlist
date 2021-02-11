@@ -24,11 +24,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function App() {
   const classes = useStyles();
-  const [hello, setHello] = React.useState([top100Films[13]]);
+  const [hello, setHello] = React.useState([]);
   const [debug, setDebug] = React.useState(null);
 
   const handleOnClick = (e) => {
-    setHello([top100Films[14]]);
+    setHello([top100Films[13]]);
   };
 
   return (
@@ -45,8 +45,8 @@ export default function App() {
             id="tags-standard"
             options={top100Films}
             getOptionLabel={(option) => option.title}
-            // defaultValue={hello}
-            onChange={(event, newValue) => setDebug(newValue)}
+            onChange={(event, newValue) => setHello(newValue)}
+            defaultValue={[top100Films[13]]}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -55,6 +55,9 @@ export default function App() {
                 placeholder="Favorites"
               />
             )}
+            InputProps={{
+              disableUnderline: true,
+            }}
           />
           <Autocomplete
             multiple

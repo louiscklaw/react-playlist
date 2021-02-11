@@ -3,6 +3,7 @@ import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import EventNoteOutlinedIcon from "@material-ui/icons/EventNoteOutlined";
 import ExitToAppOutlinedIcon from "@material-ui/icons/ExitToAppOutlined";
 import SettingsOutlinedIcon from "@material-ui/icons/SettingsOutlined";
+import CodeOutlinedIcon from "@material-ui/icons/CodeOutlined";
 
 import {
   styled,
@@ -59,6 +60,13 @@ export default function SystemNavButtonColumn() {
     <>
       <Box className={classes.TopNavBody}>
         <Box className={classes.NavButtonGroup}>
+          <Box className={classes.NavButtonContainer}>
+            <NavButton
+              text={"Helloworlds"}
+              link={"https://www.google.com"}
+              icon={<CodeOutlinedIcon />}
+            />
+          </Box>
           <Box className={classes.NavButtonContainer}>
             <NavButton
               text={"Settings"}

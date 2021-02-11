@@ -14,6 +14,7 @@ import ProfilePic from "src/components/ProfilePic";
 import RestaurantNavButtonColumn from "src/components/RestaurantNavButtonColumn";
 import SystemNavButtonColumn from "src/components/SystemNavButtonColumn";
 import HelpRequestedShortList from "src/components/HelpRequestedShortList";
+import ReservationRequestedShortList from "src/components/ReservationRequestedShortList";
 
 import {
   LYNKED_RED,
@@ -53,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   TopNavBody: { width: "100%" },
   NavbarTopPart: { backgroundColor: "white" },
   NavbarBottomPart: {},
-  NavBody: { backgroundColor: "green", width: "84%" },
+  NavBody: { backgroundColor: LYNKED_WHITE, width: "84%" },
   DashboardBody: { display: "flex", flexFlow: "row" },
   ProfilePic: { minHeight: "22vh", backgroundColor: "cyan" },
   NavBodyHead: {
@@ -92,7 +93,7 @@ export default function Dashboard() {
                   <HelpRequestedShortList />
                 </Grid>
                 <Grid item lg={6}>
-                  reservation requested
+                  <ReservationRequestedShortList />
                 </Grid>
               </Grid>
             </Box>
