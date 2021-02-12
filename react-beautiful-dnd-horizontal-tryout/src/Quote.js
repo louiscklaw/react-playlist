@@ -12,7 +12,7 @@ const QuoteItem = styled.div`
   padding: ${grid}px;
 `;
 
-function Quote({ quote, index }) {
+function Quote({ quote, index, test }) {
   return (
     <Draggable draggableId={quote.id} index={index}>
       {(provided) => (

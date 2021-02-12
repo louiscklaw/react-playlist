@@ -5,7 +5,6 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import type { Quote as QuoteType } from "../types";
 
 import QuoteList from "./QuoteList";
-import QuoteListContainer from "./QuoteListContainer";
 
 import "./App.css";
 
@@ -36,7 +35,7 @@ const reorder = (list, startIndex, endIndex) => {
   return result;
 };
 
-function App() {
+function QuoteListContainer() {
   const [state, setState] = useState({ quotes: initial });
   const [state1, setState1] = useState({ quotes: initial1 });
 
@@ -59,10 +58,15 @@ function App() {
   }
 
   return (
-    <DragDropContext onDragEnd={onDragEnd}>
-      <QuoteListContainer />
-    </DragDropContext>
+    <Droppable droppableId="list">
+      {(provided) => (
+        <div ref={provided.innerRef} {...provided.droppableProps}>
+          <QuoteList quotes={state.quotes} />
+          {provided.placeholder}
+        </div>
+      )}
+    </Droppable>
   );
 }
 
-export default App;
+export default QuoteListContainer;
