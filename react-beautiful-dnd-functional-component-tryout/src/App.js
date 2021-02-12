@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import type { Quote as QuoteType } from "../types";
 
+import QuoteList from "./QuoteList";
+
 import "./App.css";
 
 const initial = Array.from({ length: 10 }, (v, k) => k).map((k) => {
@@ -23,36 +25,6 @@ const reorder = (list, startIndex, endIndex) => {
 
   return result;
 };
-
-const QuoteItem = styled.div`
-  width: 200px;
-  border: 1px solid grey;
-  margin-bottom: ${grid}px;
-  background-color: lightblue;
-  padding: ${grid}px;
-`;
-
-function Quote({ quote, index }) {
-  return (
-    <Draggable draggableId={quote.id} index={index}>
-      {(provided) => (
-        <QuoteItem
-          ref={provided.innerRef}
-          {...provided.draggableProps}
-          {...provided.dragHandleProps}
-        >
-          {quote.content}
-        </QuoteItem>
-      )}
-    </Draggable>
-  );
-}
-
-const QuoteList = React.memo(function QuoteList({ quotes }) {
-  return quotes.map((quote: QuoteType, index: number) => (
-    <Quote quote={quote} index={index} key={quote.id} />
-  ));
-});
 
 function App() {
   const [state, setState] = useState({ quotes: initial });
