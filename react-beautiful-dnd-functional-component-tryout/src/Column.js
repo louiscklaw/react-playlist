@@ -25,6 +25,7 @@ export default function Helloworld({ column, tasks }) {
             {tasks.map((task, index) => (
               <Task key={task.id} task={task} index={index}></Task>
             ))}
+            {provided.placeholder}
           </div>
         )}
       </Droppable>
