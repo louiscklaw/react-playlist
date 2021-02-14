@@ -81,7 +81,19 @@ function QuoteApp() {
       <Droppable droppableId="list">
         {(provided: DroppableProvided) => (
           <div ref={provided.innerRef} {...provided.droppableProps}>
-            <QuoteList quotes={quotes} />
+            {quotes.map((quote: QuoteType, index: number) => (
+              <Draggable draggableId={quote.id} index={index}>
+                {(provided: DraggableProvided) => (
+                  <QuoteItem
+                    ref={provided.innerRef}
+                    {...provided.draggableProps}
+                    {...provided.dragHandleProps}
+                  >
+                    {quote.content}
+                  </QuoteItem>
+                )}
+              </Draggable>
+            ))}
             {provided.placeholder}
           </div>
         )}
