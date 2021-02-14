@@ -8,6 +8,7 @@ const container = {
   padding: "8px",
   marginBottom: "8px",
   backgroundColor: "white",
+  width: "300px",
 };
 
 export default function Helloworld({ task, index }) {
