@@ -1,4 +1,4 @@
-const initialData = {
+let initialData = {
   tasks: {
     "task-1": { id: "task-1", content: "Take out the garbage" },
     "task-2": { id: "task-2", content: "Watch my favorite show" },
@@ -11,9 +11,38 @@ const initialData = {
       title: "To do",
       taskIds: ["task-1", "task-2", "task-3", "task-4"],
     },
+    "column-2": {
+      id: "column-2",
+      title: "In progress",
+      taskIds: [],
+    },
   },
   // Facilitate reordering of the columns
-  columnOrder: ["column-1"],
+  columnOrder: ["column-1", "column-2"],
 };
+
+let array_length = Array(99).fill(null);
+
+array_length.forEach((_, idx) => {
+  initialData.tasks[`task-${idx}`] = {
+    id: `task-${idx}`,
+    content: `task-${idx}-content`,
+  };
+});
+
+array_length.forEach((_, idx) => {
+  initialData.tasks[`task-2-${idx}`] = {
+    id: `task-2-${idx}`,
+    content: `task-${idx}-content`,
+  };
+});
+
+initialData.columns["column-1"].taskIds = array_length.map(
+  (_, idx) => `task-${idx}`
+);
+
+initialData.columns["column-2"].taskIds = array_length.map(
+  (_, idx) => `task-2-${idx}`
+);
 
 export default initialData;
