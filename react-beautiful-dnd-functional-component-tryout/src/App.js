@@ -55,6 +55,31 @@ const QuoteList = React.memo(function QuoteList({ quotes }: QuoteListProps) {
   ));
 });
 
+function QuoteListContainer({ quotes }) {
+  return (
+    <Droppable droppableId="list">
+      {(provided: DroppableProvided) => (
+        <div ref={provided.innerRef} {...provided.droppableProps}>
+          {quotes.map((quote: QuoteType, index: number) => (
+            <Draggable draggableId={quote.id} index={index}>
+              {(provided: DraggableProvided) => (
+                <QuoteItem
+                  ref={provided.innerRef}
+                  {...provided.draggableProps}
+                  {...provided.dragHandleProps}
+                >
+                  {quote.content}
+                </QuoteItem>
+              )}
+            </Draggable>
+          ))}
+          {provided.placeholder}
+        </div>
+      )}
+    </Droppable>
+  );
+}
+
 function QuoteApp() {
   const [quotes, setQuotes] = useState(initial);
 
@@ -78,26 +103,7 @@ function QuoteApp() {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <Droppable droppableId="list">
-        {(provided: DroppableProvided) => (
-          <div ref={provided.innerRef} {...provided.droppableProps}>
-            {quotes.map((quote: QuoteType, index: number) => (
-              <Draggable draggableId={quote.id} index={index}>
-                {(provided: DraggableProvided) => (
-                  <QuoteItem
-                    ref={provided.innerRef}
-                    {...provided.draggableProps}
-                    {...provided.dragHandleProps}
-                  >
-                    {quote.content}
-                  </QuoteItem>
-                )}
-              </Draggable>
-            ))}
-            {provided.placeholder}
-          </div>
-        )}
-      </Droppable>
+      <QuoteListContainer quotes={quotes} />
     </DragDropContext>
   );
 }
