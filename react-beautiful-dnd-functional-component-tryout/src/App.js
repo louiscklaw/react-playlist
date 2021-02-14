@@ -1,45 +1,64 @@
+// @flow
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import styled from "@emotion/styled";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import type {
+  DropResult,
+  DraggableProvided,
+  DroppableProvided,
+} from "react-beautiful-dnd";
 import type { Quote as QuoteType } from "../types";
 
-import QuoteList from "./QuoteList";
-import Quote from "./Quote";
+import { quotes as initial } from "./data";
+import { quotes_list } from "./data";
 
-import "./App.css";
+import reorder from "./reorder";
+import { grid } from "./constants";
 
-const grid = 8;
+type QuoteProps = {|
+  quote: QuoteType,
+  index: number,
+|};
+
+type QuoteListProps = {|
+  quotes: QuoteType[],
+|};
 
 const QuoteItem = styled.div`
-  width: 50vw;
+  width: 200px;
   border: 1px solid grey;
   margin-bottom: ${grid}px;
   background-color: lightblue;
   padding: ${grid}px;
 `;
 
-const initial = Array.from({ length: 5 }, (v, k) => k).map((k) => {
-  const custom: Quote = {
-    id: `id-${k}`,
-    content: `Quote ${k}`,
-  };
+function Quote({ quote, index }: QuoteProps) {
+  return (
+    <Draggable draggableId={quote.id} index={index}>
+      {(provided: DraggableProvided) => (
+        <QuoteItem
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+        >
+          {quote.content}
+        </QuoteItem>
+      )}
+    </Draggable>
+  );
+}
 
-  return custom;
+// Ensuring the whole list does not re-render when the droppable re-renders
+const QuoteList = React.memo(function QuoteList({ quotes }: QuoteListProps) {
+  return quotes.map((quote: QuoteType, index: number) => (
+    <Quote quote={quote} index={index} key={quote.id} />
+  ));
 });
 
-const reorder = (list, startIndex, endIndex) => {
-  const result = Array.from(list);
-  const [removed] = result.splice(startIndex, 1);
-  result.splice(endIndex, 0, removed);
+function QuoteApp() {
+  const [quotes, setQuotes] = useState(initial);
 
-  return result;
-};
-
-function App() {
-  const [state, setState] = useState({ quotes: initial });
-
-  function onDragEnd(result) {
+  function onDragEnd(result: DropResult) {
     if (!result.destination) {
       return;
     }
@@ -48,57 +67,22 @@ function App() {
       return;
     }
 
-    const quotes = reorder(
-      state.quotes,
+    const newQuotes = reorder(
+      quotes,
       result.source.index,
       result.destination.index
     );
 
-    setState({ quotes });
+    setQuotes(newQuotes);
   }
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <Droppable droppableId="ml_list" direction="horizontal" type="column">
-        {(lc_provided) => (
-          <div ref={lc_provided.innerRef} {...lc_provided.droppableProps}>
-            {/* master list */}
-            <Droppable droppableId="list">
-              {(lc_provided) => (
-                <div ref={lc_provided.innerRef} {...lc_provided.droppableProps}>
-                  {/* <QuoteList quotes={state.quotes} /> */}
-                  {state.quotes.map((quote: QuoteType, index: number) => {
-                    return (
-                      <>
-                        <Draggable draggableId={quote.id} index={index}>
-                          {(provided) => (
-                            <QuoteItem
-                              ref={provided.innerRef}
-                              {...provided.draggableProps}
-                              {...provided.dragHandleProps}
-                            >
-                              {quote.content}
-                              <div
-                                style={{
-                                  backgroundImage: `url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)`,
-                                  width: "100px",
-                                  height: "100px",
-                                  backgroundSize: "contain",
-                                  backgroundRepeat: "no-repeat",
-                                  backgroundPosition: "center",
-                                }}
-                              />
-                            </QuoteItem>
-                          )}
-                        </Draggable>
-                      </>
-                    );
-                  })}
-                  {lc_provided.placeholder}
-                </div>
-              )}
-            </Droppable>
-            {lc_provided.placeholder}
+      <Droppable droppableId="list">
+        {(provided: DroppableProvided) => (
+          <div ref={provided.innerRef} {...provided.droppableProps}>
+            <QuoteList quotes={quotes} />
+            {provided.placeholder}
           </div>
         )}
       </Droppable>
@@ -106,4 +90,4 @@ function App() {
   );
 }
 
-export default App;
+export default QuoteApp;
