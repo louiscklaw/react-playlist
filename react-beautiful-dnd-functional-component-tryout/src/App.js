@@ -7,6 +7,7 @@ import { DragDropContext, Droppable } from "react-beautiful-dnd";
 const container = {
   width: "420px",
   display: "flex",
+  flexFlow: "column",
 };
 
 export default function Helloworld() {
@@ -95,7 +96,7 @@ export default function Helloworld() {
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable
           droppableId="all-columns"
-          direction="horizontal"
+          // direction="horizontal"
           type="column"
         >
           {(provided) => (
