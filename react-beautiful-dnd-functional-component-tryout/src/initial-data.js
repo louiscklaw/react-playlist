@@ -21,9 +21,19 @@ let initialData = {
       title: "In progress",
       taskIds: [],
     },
+    "column-4": {
+      id: "column-4",
+      title: "In progress",
+      taskIds: [],
+    },
+    "column-5": {
+      id: "column-5",
+      title: "In progress",
+      taskIds: [],
+    },
   },
   // Facilitate reordering of the columns
-  columnOrder: ["column-1", "column-2", "column-3"],
+  columnOrder: ["column-1", "column-2", "column-3", "column-4", "column-5"],
 };
 
 let array_length = Array(99).fill(null);

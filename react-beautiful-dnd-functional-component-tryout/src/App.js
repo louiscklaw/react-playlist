@@ -4,6 +4,8 @@ import initialData from "./initial-data";
 
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 
+import ShareContextProvider, { ShareContext } from "./context/Share";
+
 const container = {
   width: "420px",
   display: "flex",
@@ -91,40 +93,50 @@ export default function Helloworld() {
     return;
   };
 
+  const saveJson = () => {
+    alert("save json");
+  };
+
+  const reloadJson = () => {
+    alert("reload json");
+  };
+
   return (
     <>
-      <DragDropContext onDragEnd={onDragEnd}>
-        <Droppable
-          droppableId="all-columns"
-          // direction="horizontal"
-          type="column"
-        >
-          {(provided) => (
-            <div
-              ref={provided.innerRef}
-              style={container}
-              {...provided.droppableProps}
-            >
-              {state.columnOrder.map((columnId, index) => {
-                const column = state.columns[columnId];
-                const tasks = column.taskIds.map(
-                  (taskId) => state.tasks[taskId]
-                );
+      <ShareContextProvider saveJson={saveJson} reloadJson={reloadJson}>
+        <DragDropContext onDragEnd={onDragEnd}>
+          <Droppable
+            droppableId="all-columns"
+            // direction="horizontal"
+            type="column"
+          >
+            {(provided) => (
+              <div
+                ref={provided.innerRef}
+                style={container}
+                {...provided.droppableProps}
+              >
+                {state.columnOrder.map((columnId, index) => {
+                  const column = state.columns[columnId];
+                  const tasks = column.taskIds.map(
+                    (taskId) => state.tasks[taskId]
+                  );
 
-                return (
-                  <Column
-                    key={column.id}
-                    column={column}
-                    tasks={tasks}
-                    index={index}
-                  />
-                );
-              })}
-              {provided.placeholder}
-            </div>
-          )}
-        </Droppable>
-      </DragDropContext>
+                  return (
+                    <Column
+                      key={column.id}
+                      column={column}
+                      tasks={tasks}
+                      index={index}
+                    />
+                  );
+                })}
+                {provided.placeholder}
+              </div>
+            )}
+          </Droppable>
+        </DragDropContext>
+      </ShareContextProvider>
     </>
   );
 }

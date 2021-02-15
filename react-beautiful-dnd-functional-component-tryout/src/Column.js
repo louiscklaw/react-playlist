@@ -1,5 +1,6 @@
 import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
+import { ShareContext } from "./context/Share";
 import Task from "./Task";
 
 const container = {
@@ -20,6 +21,10 @@ const task_list = {
 };
 
 function Column({ column, tasks, index }) {
+  let { handleColumnEditClick, handleColumnDeleteClick } = React.useContext(
+    ShareContext
+  );
+
   return (
     <Draggable draggableId={column.id} index={index}>
       {(provided) => (
@@ -33,8 +38,8 @@ function Column({ column, tasks, index }) {
               {column.title}
             </div>
             <div>
-              <button>edit</button>
-              <button>delete</button>
+              <button onClick={handleColumnEditClick}>edit</button>
+              <button onClick={handleColumnDeleteClick}>delete</button>
             </div>
           </div>
           <Droppable droppableId={column.id}>

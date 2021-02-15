@@ -2,6 +2,8 @@ import React from "react";
 
 import { Draggable } from "react-beautiful-dnd";
 
+import { ShareContext } from "./context/Share";
+
 const container = {
   border: "1px solid lightgrey",
   borderRadius: "2px",
@@ -12,6 +14,9 @@ const container = {
 };
 
 function Task({ task, index }) {
+  let { handleItemEditClick, handleItemDeleteClick } = React.useContext(
+    ShareContext
+  );
   return (
     <>
       <Draggable draggableId={task.id} index={index}>
@@ -26,8 +31,20 @@ function Task({ task, index }) {
                 <div style={container}>
                   <div>
                     {task.content}
-                    <button>edit</button>
-                    <button>delete</button>
+                    <button
+                      onClick={(e) => {
+                        handleItemEditClick(e, task.id);
+                      }}
+                    >
+                      edit
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        handleItemDeleteClick(e, task.id);
+                      }}
+                    >
+                      delete
+                    </button>
                   </div>
                 </div>
               </div>
