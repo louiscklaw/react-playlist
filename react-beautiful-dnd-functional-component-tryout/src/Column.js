@@ -19,7 +19,7 @@ const task_list = {
   minHeight: "100px",
 };
 
-export default function Helloworld({ column, tasks, index }) {
+function Column({ column, tasks, index }) {
   return (
     <Draggable draggableId={column.id} index={index}>
       {(provided) => (
@@ -28,8 +28,14 @@ export default function Helloworld({ column, tasks, index }) {
           style={container}
           {...provided.draggableProps}
         >
-          <div style={title} {...provided.dragHandleProps}>
-            {column.title}
+          <div style={{ display: "flex", flexFlow: "row" }}>
+            <div style={title} {...provided.dragHandleProps}>
+              {column.title}
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
           </div>
           <Droppable droppableId={column.id}>
             {(provided) => (
@@ -50,3 +56,5 @@ export default function Helloworld({ column, tasks, index }) {
     </Draggable>
   );
 }
+
+export default React.memo(Column);

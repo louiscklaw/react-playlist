@@ -11,7 +11,7 @@ const container = {
   width: "300px",
 };
 
-export default function Helloworld({ task, index }) {
+function Task({ task, index }) {
   return (
     <>
       <Draggable draggableId={task.id} index={index}>
@@ -22,7 +22,15 @@ export default function Helloworld({ task, index }) {
               {...provided.draggableProps}
               {...provided.dragHandleProps}
             >
-              <div style={container}>{task.content}</div>
+              <div>
+                <div style={container}>
+                  <div>
+                    {task.content}
+                    <button>edit</button>
+                    <button>delete</button>
+                  </div>
+                </div>
+              </div>
             </div>
           );
         }}
@@ -30,3 +38,5 @@ export default function Helloworld({ task, index }) {
     </>
   );
 }
+
+export default React.memo(Task);
