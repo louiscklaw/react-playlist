@@ -1,10 +1,9 @@
 import React from "react";
 import Column from "./Column";
-import initialData from "./initial-data";
-
-import { DragDropContext, Droppable } from "react-beautiful-dnd";
 
 import ShareContextProvider, { ShareContext } from "./context/Share";
+
+import { DragDropContext, Droppable } from "react-beautiful-dnd";
 
 const container = {
   width: "420px",
@@ -13,7 +12,7 @@ const container = {
 };
 
 export default function Helloworld() {
-  let [state, setState] = React.useState(initialData);
+  let { state, setState } = React.useContext(ShareContext);
 
   const onDragEnd = (result) => {
     const { destination, source, draggableId, type } = result;
@@ -93,50 +92,40 @@ export default function Helloworld() {
     return;
   };
 
-  const saveJson = () => {
-    alert("save json");
-  };
-
-  const reloadJson = () => {
-    alert("reload json");
-  };
-
   return (
     <>
-      <ShareContextProvider saveJson={saveJson} reloadJson={reloadJson}>
-        <DragDropContext onDragEnd={onDragEnd}>
-          <Droppable
-            droppableId="all-columns"
-            // direction="horizontal"
-            type="column"
-          >
-            {(provided) => (
-              <div
-                ref={provided.innerRef}
-                style={container}
-                {...provided.droppableProps}
-              >
-                {state.columnOrder.map((columnId, index) => {
-                  const column = state.columns[columnId];
-                  const tasks = column.taskIds.map(
-                    (taskId) => state.tasks[taskId]
-                  );
+      <DragDropContext onDragEnd={onDragEnd}>
+        <Droppable
+          droppableId="all-columns"
+          // direction="horizontal"
+          type="column"
+        >
+          {(provided) => (
+            <div
+              ref={provided.innerRef}
+              style={container}
+              {...provided.droppableProps}
+            >
+              {state.columnOrder.map((columnId, index) => {
+                const column = state.columns[columnId];
+                const tasks = column.taskIds.map(
+                  (taskId) => state.tasks[taskId]
+                );
 
-                  return (
-                    <Column
-                      key={column.id}
-                      column={column}
-                      tasks={tasks}
-                      index={index}
-                    />
-                  );
-                })}
-                {provided.placeholder}
-              </div>
-            )}
-          </Droppable>
-        </DragDropContext>
-      </ShareContextProvider>
+                return (
+                  <Column
+                    key={column.id}
+                    column={column}
+                    tasks={tasks}
+                    index={index}
+                  />
+                );
+              })}
+              {provided.placeholder}
+            </div>
+          )}
+        </Droppable>
+      </DragDropContext>
     </>
   );
 }

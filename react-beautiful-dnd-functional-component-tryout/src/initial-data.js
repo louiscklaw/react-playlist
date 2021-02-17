@@ -8,27 +8,27 @@ let initialData = {
   columns: {
     "column-1": {
       id: "column-1",
-      title: "To do",
+      title: "column-1",
       taskIds: ["task-1", "task-2", "task-3", "task-4"],
     },
     "column-2": {
       id: "column-2",
-      title: "In progress",
+      title: "column-2",
       taskIds: [],
     },
     "column-3": {
       id: "column-3",
-      title: "In progress",
+      title: "column-3",
       taskIds: [],
     },
     "column-4": {
       id: "column-4",
-      title: "In progress",
+      title: "column-4",
       taskIds: [],
     },
     "column-5": {
       id: "column-5",
-      title: "In progress",
+      title: "column-5",
       taskIds: [],
     },
   },

@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+
+import ShareContextProvider, { ShareContext } from "./context/Share";
+
+const saveJson = () => {
+  alert("save json");
+};
+
+const reloadJson = () => {
+  alert("reload json");
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ShareContextProvider saveJson={saveJson} reloadJson={reloadJson}>
+      <App />
+    </ShareContextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

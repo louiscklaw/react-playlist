@@ -38,8 +38,20 @@ function Column({ column, tasks, index }) {
               {column.title}
             </div>
             <div>
-              <button onClick={handleColumnEditClick}>edit</button>
-              <button onClick={handleColumnDeleteClick}>delete</button>
+              <button
+                onClick={(e) => {
+                  handleColumnEditClick(e, column.id);
+                }}
+              >
+                edit
+              </button>
+              <button
+                onClick={(e) => {
+                  handleColumnDeleteClick(e, column.id);
+                }}
+              >
+                delete
+              </button>
             </div>
           </div>
           <Droppable droppableId={column.id}>
