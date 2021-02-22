@@ -3,34 +3,38 @@ import Sound from "react-sound";
 
 import "./App.css";
 
+import DongSoundFile from "./assets/swiftly-610.mp3";
+
 function App() {
-  let [position, setPosition] = React.useState(null);
-  let [disable_button, setDisableButton] = React.useState(false);
-  const playSound = () => {
-    setPosition(0);
-    setDisableButton(true);
+  let [play_sound, setPlaySound] = React.useState(false);
+
+  const handlePlaySound = () => {
+    setPlaySound(true);
+    setTimeout(() => {
+      setPlaySound(false);
+    }, 3000);
   };
 
-  const handleSongFinishedPlaying = () => {
-    setPosition(9000);
-
-    setDisableButton(false);
-  };
   return (
     <div className="App">
       sound test
-      <a href="assets/swiftly-610.mp3">test link</a>
-      <Sound
-        url="assets/swiftly-610.mp3"
-        playStatus={Sound.status.PLAYING}
-        position={position}
-        // playFromPosition={300 /* in milliseconds */}
-        // onLoading={this.handleSongLoading}
-        // onPlaying={this.handleSongPlaying}
-        onFinishedPlaying={handleSongFinishedPlaying}
-      />
-      <button onClick={playSound} disabled={disable_button}>
-        play
+      <a href={DongSoundFile}>test link</a>
+      {play_sound ? (
+        <>
+          hello sound
+          <Sound
+            url={DongSoundFile}
+            playStatus={Sound.status.PLAYING}
+            // playFromPosition={300 /* in milliseconds */}
+            // onLoading={this.handleSongLoading}
+            // onPlaying={this.handleSongPlaying}
+          />
+        </>
+      ) : (
+        <></>
+      )}
+      <button onClick={handlePlaySound} disabled={play_sound}>
+        handlePlaySound
       </button>
     </div>
   );
