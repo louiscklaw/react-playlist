@@ -1,6 +1,5 @@
 import React from 'react'
-import { Offline, Online, Detector } from "react-detect-offline";
-
+import {Detector} from "react-detect-offline";
 
 export const NetworkStatusContext = React.createContext();
 
