@@ -1,7 +1,7 @@
-import React from 'react';
-import { useFormik } from 'formik';
+import React from 'react'
+import { useFormik } from 'formik'
 
-import './App.css';
+import './App.css'
 
 const SignupForm = () => {
   // Pass the useFormik() hook initial form values and a submit function that will
@@ -11,9 +11,9 @@ const SignupForm = () => {
       email: '',
     },
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      alert(JSON.stringify(values, null, 2))
     },
-  });
+  })
   return (
     <form onSubmit={formik.handleSubmit}>
       <label htmlFor="email">Email Address</label>
@@ -26,8 +26,8 @@ const SignupForm = () => {
       />
       <button type="submit">Submit</button>
     </form>
-  );
-};
+  )
+}
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
       helloworld
       <SignupForm />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
