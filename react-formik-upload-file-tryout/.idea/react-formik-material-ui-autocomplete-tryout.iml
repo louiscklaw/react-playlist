@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="react-formik-material-ui-radio-button-tryout" />
+    <orderEntry type="module" module-name="react-firebase-helloworld-tryout" />
   </component>
 </module>

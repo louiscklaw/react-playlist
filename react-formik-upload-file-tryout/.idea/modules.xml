@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../react-firebase-helloworld-tryout/.idea/react-firebase-helloworld-tryout.iml" filepath="$PROJECT_DIR$/../react-firebase-helloworld-tryout/.idea/react-firebase-helloworld-tryout.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/react-formik-material-ui-autocomplete-tryout.iml" filepath="$PROJECT_DIR$/.idea/react-formik-material-ui-autocomplete-tryout.iml" />
       <module fileurl="file://$PROJECT_DIR$/../react-formik-material-ui-radio-button-tryout/.idea/react-formik-material-ui-radio-button-tryout.iml" filepath="$PROJECT_DIR$/../react-formik-material-ui-radio-button-tryout/.idea/react-formik-material-ui-radio-button-tryout.iml" />
     </modules>
