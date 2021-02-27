@@ -10,28 +10,28 @@ const SignupForm = () => {
     initialValues: {
       email: '',
     },
-    onSubmit: values => {
+    onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2))
     },
   })
   return (
     <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="email">Email Address</label>
+      <label htmlFor='email'>Email Address</label>
       <input
-        id="email"
-        name="email"
-        type="email"
+        id='email'
+        name='email'
+        type='email'
         onChange={formik.handleChange}
         value={formik.values.email}
       />
-      <button type="submit">Submit</button>
+      <button type='submit'>Submit</button>
     </form>
   )
 }
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       helloworld
       <SignupForm />
     </div>
