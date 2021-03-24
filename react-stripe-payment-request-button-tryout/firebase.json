@@ -1,0 +1,22 @@
+{
+  "emulators": {
+    "functions": {
+      "host": "192.168.88.254",
+      "port": "1234"
+    }
+  },
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

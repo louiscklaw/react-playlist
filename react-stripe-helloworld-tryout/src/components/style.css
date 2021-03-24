@@ -1,0 +1,11 @@
+#CardElementContainer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#CardElementContainer .StripeElement {
+  width: 100%;
+  padding: 15px;
+  background-color: red;
+}
