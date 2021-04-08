@@ -1,0 +1,7 @@
+# PHP composer and log files
+vendor/*
+logs/*
+composer.lock
+
+# Secret configuration variables like API keys
+settings.ini

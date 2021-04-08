@@ -24,15 +24,11 @@ const useStyles = makeStyles(theme => ({
   margin: {
     margin: theme.spacing(1),
   },
-  icon: {
-    color: '#707070',
-    marginRight: '1rem',
-  },
+
   root: {
     marginTop: '10px',
     border: '1px solid #e2e2e2',
     borderRadius: '3px',
-    // height: '31px',
     padding: '10px 26px 10px 12px',
   },
   selectLabel: {
@@ -40,6 +36,11 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 'normal',
     fontSize: '12px',
     lineHeight: '17px',
+  },
+  icon: {
+    color: '#707070',
+    marginRight: '1rem',
+    marginTop: '10px',
   },
 }))
 
