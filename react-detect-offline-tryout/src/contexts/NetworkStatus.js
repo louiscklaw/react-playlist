@@ -1,20 +1,19 @@
-import React from 'react'
-import {Detector} from "react-detect-offline";
+import React from 'react';
+import { Detector } from 'react-detect-offline';
 
 export const NetworkStatusContext = React.createContext();
 
-export const NetworkStatusContextProvider = ({children})=>{
-
-  return(
+export const NetworkStatusContextProvider = ({ url, children }) => {
+  return (
     <>
       <Detector
-        polling={{url:`${window.location.origin}/`}}
+        polling={{ url: url }}
         render={({ online }) => (
-          <NetworkStatusContext.Provider value={{online:online}}>
+          <NetworkStatusContext.Provider value={{ online: online }}>
             {children}
           </NetworkStatusContext.Provider>
         )}
       />
     </>
-  )
-}
+  );
+};
