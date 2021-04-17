@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/react-playlist/menymeny-material-dashboard-tryout/static/js/main.aca7a1c9.chunk.js",
+    "main.js.map": "/react-playlist/menymeny-material-dashboard-tryout/static/js/main.aca7a1c9.chunk.js.map",
+    "runtime-main.js": "/react-playlist/menymeny-material-dashboard-tryout/static/js/runtime-main.4db4d5a6.js",
+    "runtime-main.js.map": "/react-playlist/menymeny-material-dashboard-tryout/static/js/runtime-main.4db4d5a6.js.map",
+    "static/css/2.18fb2ca0.chunk.css": "/react-playlist/menymeny-material-dashboard-tryout/static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.610b50bc.chunk.js": "/react-playlist/menymeny-material-dashboard-tryout/static/js/2.610b50bc.chunk.js",
+    "static/js/2.610b50bc.chunk.js.map": "/react-playlist/menymeny-material-dashboard-tryout/static/js/2.610b50bc.chunk.js.map",
+    "index.html": "/react-playlist/menymeny-material-dashboard-tryout/index.html",
+    "precache-manifest.ce12e54001aaa348270bd16b393d1ddc.js": "/react-playlist/menymeny-material-dashboard-tryout/precache-manifest.ce12e54001aaa348270bd16b393d1ddc.js",
+    "service-worker.js": "/react-playlist/menymeny-material-dashboard-tryout/service-worker.js",
+    "static/css/2.18fb2ca0.chunk.css.map": "/react-playlist/menymeny-material-dashboard-tryout/static/css/2.18fb2ca0.chunk.css.map",
+    "static/js/2.610b50bc.chunk.js.LICENSE.txt": "/react-playlist/menymeny-material-dashboard-tryout/static/js/2.610b50bc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4db4d5a6.js",
+    "static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.610b50bc.chunk.js",
+    "static/js/main.aca7a1c9.chunk.js"
+  ]
+}

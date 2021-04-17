@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/react-playlist/meme-material-ui-tryout/static/js/main.c2f3bf87.chunk.js",
+    "main.js.map": "/react-playlist/meme-material-ui-tryout/static/js/main.c2f3bf87.chunk.js.map",
+    "runtime-main.js": "/react-playlist/meme-material-ui-tryout/static/js/runtime-main.edf5f3f5.js",
+    "runtime-main.js.map": "/react-playlist/meme-material-ui-tryout/static/js/runtime-main.edf5f3f5.js.map",
+    "static/css/2.18fb2ca0.chunk.css": "/react-playlist/meme-material-ui-tryout/static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.f19b4850.chunk.js": "/react-playlist/meme-material-ui-tryout/static/js/2.f19b4850.chunk.js",
+    "static/js/2.f19b4850.chunk.js.map": "/react-playlist/meme-material-ui-tryout/static/js/2.f19b4850.chunk.js.map",
+    "index.html": "/react-playlist/meme-material-ui-tryout/index.html",
+    "precache-manifest.70b6d3aa1c8840aca868801a0c3ea02e.js": "/react-playlist/meme-material-ui-tryout/precache-manifest.70b6d3aa1c8840aca868801a0c3ea02e.js",
+    "service-worker.js": "/react-playlist/meme-material-ui-tryout/service-worker.js",
+    "static/css/2.18fb2ca0.chunk.css.map": "/react-playlist/meme-material-ui-tryout/static/css/2.18fb2ca0.chunk.css.map",
+    "static/js/2.f19b4850.chunk.js.LICENSE.txt": "/react-playlist/meme-material-ui-tryout/static/js/2.f19b4850.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edf5f3f5.js",
+    "static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.f19b4850.chunk.js",
+    "static/js/main.c2f3bf87.chunk.js"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "posts": [ {
+    "id": 1,
+    "title": "hello",
+    "tags": [ "world" ]
+  } ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "lynked-demo-tryout"
+  },
+  "targets": {
+    "lynked-demo-tryout": {
+      "hosting": {
+        "meny-manage": [
+          "meny-manage"
+        ]
+      }
+    }
+  }
+}

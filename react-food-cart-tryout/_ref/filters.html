@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Askbootstrap">
+  <meta name="author" content="Askbootstrap">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Swiggi - Online Food Ordering Website Mobile Template</title>
+
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css" />
+
+  <link href="vendor/icons/feather.css" rel="stylesheet" type="text/css">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="vendor/sidebar/demo.css" rel="stylesheet">
+</head>
+
+<body class="fixed-bottom-bar">
+  <div class="osahan-filter">
+    <div class="bg-light border-bottom p-3">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <h4 class="font-weight-bold m-0">Filter</h4>
+        </div>
+        <div class="col-6 text-right">
+          <a class="text-primary font-weight-bold" href="most_popular.html">Clear</a>
+        </div>
+      </div>
+    </div>
+    <div class="filter">
+
+      <div class="p-3">
+        <h6>SORT BY</h6>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-radio">
+        <input type="radio" id="customRadio1" name="location" class="custom-control-input" checked>
+        <label class="custom-control-label py-2 w-100 px-3" for="customRadio1">Top Rated</label>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-radio">
+        <input type="radio" id="customRadio2" name="location" class="custom-control-input">
+        <label class="custom-control-label py-2 w-100 px-3" for="customRadio2">Nearest Me</label>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-radio">
+        <input type="radio" id="customRadio3" name="location" class="custom-control-input">
+        <label class="custom-control-label py-2 w-100 px-3" for="customRadio3">Cost High to Low</label>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-radio">
+        <input type="radio" id="customRadio4" name="location" class="custom-control-input">
+        <label class="custom-control-label py-2 w-100 px-3" for="customRadio4">Cost Low to High</label>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-radio">
+        <input type="radio" id="customRadio5" name="location" class="custom-control-input">
+        <label class="custom-control-label py-2 w-100 px-3" for="customRadio5">Most Popular</label>
+      </div>
+
+      <div class="p-3">
+        <h6 class="mt-4">FILTER</h6>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultCheck1" checked>
+        <label class="custom-control-label py-2 w-100 px-3" for="defaultCheck1">Open Now</label>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultCheck2">
+        <label class="custom-control-label py-2 w-100 px-3" for="defaultCheck2">Credit Cards</label>
+      </div>
+      <div class="custom-control border-bottom px-0  custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultCheck3">
+        <label class="custom-control-label py-2 w-100 px-3" for="defaultCheck3">Alcohol Served</label>
+      </div>
+
+      <div class="p-3">
+        <h6 class="mt-4">ADDITIONAL FILTERS</h6>
+      </div>
+      <div class="px-3">
+        <input type="range" class="custom-range" min="0" max="100" name="">
+        <div class="form-row">
+          <div class="form-group col-6">
+            <label>Min</label>
+            <input class="form-control" placeholder="$0" type="number">
+          </div>
+          <div class="form-group text-right col-6">
+            <label>Max</label>
+            <input class="form-control" placeholder="$1,0000" type="number">
+          </div>
+        </div>
+      </div>
+
+      <div class="apply fixed-bottom">
+        <a href="most_popular.html" class="btn btn-primary btn-block btn-lg">Apply</a>
+      </div>
+    </div>
+  </div>
+  <nav id="main-nav">
+    <ul class="second-nav">
+      <li><a href="index.html"><i class="feather-grid mr-2"></i> Intro</a>
+      <li><a href="landing.html"><i class="feather-layers mr-2"></i> Landing</a>
+      <li><a href="home.html"><i class="feather-home mr-2"></i> Homepage</a></li>
+      <li>
+        <a href="filters.html#"><i class="feather-edit-2 mr-2"></i> Authentication</a>
+        <ul>
+          <li><a href="login.html">Login</a>
+          <li><a href="signup.html">Register</a>
+          <li><a href="forgot_password.html">Forgot Password</a>
+          <li><a href="verification.html">Verification</a>
+          <li><a href="location.html">Location</a>
+          <li><a href="select_country.html">Select Country</a>
+        </ul>
+      </li>
+      <li><a href="trending.html"><i class="feather-trending-up mr-2"></i> Trending</a>
+      <li><a href="most_popular.html"><i class="feather-award mr-2"></i> Most Popular</a>
+      <li><a href="restaurant.html"><i class="feather-paperclip mr-2"></i> Restaurant Detail</a>
+      <li><a href="recipe.html"><i class="feather-file-text mr-2"></i> Recipe</a>
+      <li><a href="checkout.html"><i class="feather-list mr-2"></i> Checkout</a>
+      <li><a href="map.html"><i class="feather-map-pin mr-2"></i> Live Map</a>
+      <li><a href="payment.html"><i class="feather-credit-card mr-2"></i> Payment</a>
+      <li>
+        <a href="filters.html#"><i class="feather-user mr-2"></i> Profile</a>
+        <ul>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="favorites.html">Favorites</a>
+        </ul>
+      </li>
+      <li>
+        <a href="filters.html#"><i class="feather-book mr-2"></i> Pages</a>
+        <ul>
+          <li><a href="filters.html">Filters</a>
+          <li><a href="terms.html">Terms & conditions</a>
+          <li><a href="faq.html">FAQ</a>
+          <li><a href="privacy.html">Privacy & Policy</a>
+          <li><a href="contact-us.html">Contact Us</a>
+        </ul>
+      </li>
+      <li>
+        <a href="filters.html#"><i class="feather-alert-triangle mr-2"></i> Error</a>
+        <ul>
+          <li><a href="not-found.html">Not Found</a>
+          <li><a href="maintence.html"> Maintence</a>
+          <li><a href="coming-soon.html">Coming Soon</a>
+        </ul>
+      </li>
+      <li>
+        <a href="filters.html#"><i class="feather-link mr-2"></i> Navigation Link Example</a>
+        <ul>
+          <li>
+            <a href="filters.html#">Link Example 1</a>
+            <ul>
+              <li>
+                <a href="filters.html#">Link Example 1.1</a>
+                <ul>
+                  <li><a href="filters.html#">Link</a></li>
+                  <li><a href="filters.html#">Link</a></li>
+                  <li><a href="filters.html#">Link</a></li>
+                  <li><a href="filters.html#">Link</a></li>
+                  <li><a href="filters.html#">Link</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="filters.html#">Link Example 1.2</a>
+                <ul>
+                  <li><a href="filters.html#">Link</a></li>
+                  <li><a href="filters.html#">Link</a></li>
+                  <li><a href="filters.html#">Link</a></li>
+                  <li><a href="filters.html#">Link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="filters.html#">Link Example 2</a></li>
+          <li><a href="filters.html#">Link Example 3</a></li>
+          <li><a href="filters.html#">Link Example 4</a></li>
+          <li data-nav-custom-content>
+            <div class="custom-message">
+              You can add any custom content to your navigation items. This text is just an example.
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="bottom-nav">
+      <li class="email">
+        <a class="text-danger" href="home.html">
+          <p class="h5 m-0"><i class="feather-home text-danger"></i></p>
+          Home
+        </a>
+      </li>
+      <li class="github">
+        <a href="faq.html">
+          <p class="h5 m-0"><i class="feather-message-circle"></i></p>
+          FAQ
+        </a>
+      </li>
+      <li class="ko-fi">
+        <a href="contact-us.html">
+          <p class="h5 m-0"><i class="feather-phone"></i></p>
+          Help
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="vendor/jquery/jquery.min.js" type="36f7ccaf487f4bf13f8c9928-text/javascript"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" type="36f7ccaf487f4bf13f8c9928-text/javascript"></script>
+
+  <script type="36f7ccaf487f4bf13f8c9928-text/javascript" src="vendor/slick/slick.min.js"></script>
+
+  <script type="36f7ccaf487f4bf13f8c9928-text/javascript" src="vendor/sidebar/hc-offcanvas-nav.js"></script>
+
+  <script src="js/osahan.js" type="36f7ccaf487f4bf13f8c9928-text/javascript"></script>
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+    data-cf-settings="36f7ccaf487f4bf13f8c9928-|49" defer=""></script>
+</body>
+
+</html>

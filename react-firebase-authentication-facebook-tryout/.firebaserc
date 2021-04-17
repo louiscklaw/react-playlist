@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "react-tryout-e8aa2"
+  },
+  "targets": {
+    "react-tryout-e8aa2": {
+      "hosting": {
+        "authentication-facebook-tryout": [
+          "authentication-facebook-tryout"
+        ]
+      }
+    }
+  }
+}
