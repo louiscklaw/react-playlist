@@ -1,11 +1,11 @@
-import React from 'react';
-import { Form, Formik } from 'formik';
+import React from 'react'
+import { Form, Formik } from 'formik'
 
-import { makeStyles } from '@material-ui/core/styles';
-import { TextField } from '@material-ui/core';
-import { Autocomplete } from '@material-ui/lab';
+import { makeStyles } from '@material-ui/core/styles'
+import { TextField } from '@material-ui/core'
+import { Autocomplete } from '@material-ui/lab'
 
-import './App.css';
+import './App.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,11 +14,11 @@ const useStyles = makeStyles(theme => ({
   formControl: {
     margin: theme.spacing(3),
   },
-}));
+}))
 
 const SignupForm = () => {
-  const classes = useStyles();
-  let [new_value, setNewValue] = React.useState([top100Films[0]]);
+  const classes = useStyles()
+  let [new_value, setNewValue] = React.useState([top100Films[0]])
   return (
     <div>
       <h1>Sign Up</h1>
@@ -27,29 +27,29 @@ const SignupForm = () => {
           picked: '',
         }}
         onSubmit={async values => {
-          await new Promise(r => setTimeout(r, 500));
-          alert(JSON.stringify(values, null, 2));
+          await new Promise(r => setTimeout(r, 500))
+          alert(JSON.stringify(values, null, 2))
         }}
       >
         {({ values, setFieldValue }) => (
           <Form>
             <div>
               <Autocomplete
-                id="test_id"
-                name="test_combo_box"
+                id='test_id'
+                name='test_combo_box'
                 options={top100Films}
                 getOptionLabel={option => option.title}
                 style={{ width: 300 }}
                 renderInput={params => (
                   <TextField
                     {...params}
-                    label="Combo box"
-                    variant="outlined"
+                    label='Combo box'
+                    variant='outlined'
                   />
                 )}
                 value={values.test_combo_box}
                 onChange={(e, new_value) => {
-                  setFieldValue('test_combo_box', new_value);
+                  setFieldValue('test_combo_box', new_value)
                 }}
               />
             </div>
@@ -57,44 +57,44 @@ const SignupForm = () => {
             <div>
               <Autocomplete
                 multiple
-                name="test_multiple_values"
+                name='test_multiple_values'
                 options={top100Films}
                 getOptionLabel={option => option.title}
                 style={{ width: 300 }}
                 renderInput={params => (
                   <TextField
                     {...params}
-                    label="Combo box"
-                    variant="outlined"
+                    label='Combo box'
+                    variant='outlined'
                   />
                 )}
                 value={values.test_multiple_values}
                 onChange={(e, new_value) => {
-                  setFieldValue('test_multiple_values', new_value);
+                  setFieldValue('test_multiple_values', new_value)
                 }}
               />
 
             </div>
-            
-            <button type="submit">Submit</button>
+
+            <button type='submit'>Submit</button>
             <pre>{JSON.stringify(values, null, 2)}</pre>
           </Form>
         )}
       </Formik>
     </div>
-  );
-};
+  )
+}
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       helloworld
       <SignupForm />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 
 const top100Films = [
   { title: 'The Shawshank Redemption', year: 1994 },
@@ -102,7 +102,7 @@ const top100Films = [
   { title: 'The Godfather: Part II', year: 1974 },
   { title: 'The Dark Knight', year: 2008 },
   { title: '12 Angry Men', year: 1957 },
-  { title: "Schindler's List", year: 1993 },
+  { title: 'Schindler\'s List', year: 1993 },
   { title: 'Pulp Fiction', year: 1994 },
   { title: 'The Lord of the Rings: The Return of the King', year: 2003 },
   { title: 'The Good, the Bad and the Ugly', year: 1966 },
@@ -112,7 +112,7 @@ const top100Films = [
   { title: 'Forrest Gump', year: 1994 },
   { title: 'Inception', year: 2010 },
   { title: 'The Lord of the Rings: The Two Towers', year: 2002 },
-  { title: "One Flew Over the Cuckoo's Nest", year: 1975 },
+  { title: 'One Flew Over the Cuckoo\'s Nest', year: 1975 },
   { title: 'Goodfellas', year: 1990 },
   { title: 'The Matrix', year: 1999 },
   { title: 'Seven Samurai', year: 1954 },
@@ -120,7 +120,7 @@ const top100Films = [
   { title: 'City of God', year: 2002 },
   { title: 'Se7en', year: 1995 },
   { title: 'The Silence of the Lambs', year: 1991 },
-  { title: "It's a Wonderful Life", year: 1946 },
+  { title: 'It\'s a Wonderful Life', year: 1946 },
   { title: 'Life Is Beautiful', year: 1997 },
   { title: 'The Usual Suspects', year: 1995 },
   { title: 'Léon: The Professional', year: 1994 },
@@ -189,7 +189,7 @@ const top100Films = [
   { title: 'Dangal', year: 2016 },
   { title: 'The Sting', year: 1973 },
   { title: '2001: A Space Odyssey', year: 1968 },
-  { title: "Singin' in the Rain", year: 1952 },
+  { title: 'Singin\' in the Rain', year: 1952 },
   { title: 'Toy Story', year: 1995 },
   { title: 'Bicycle Thieves', year: 1948 },
   { title: 'The Kid', year: 1921 },
@@ -197,4 +197,4 @@ const top100Films = [
   { title: 'Snatch', year: 2000 },
   { title: '3 Idiots', year: 2009 },
   { title: 'Monty Python and the Holy Grail', year: 1975 },
-];
+]
