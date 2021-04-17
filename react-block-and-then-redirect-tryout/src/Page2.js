@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-export default function page2(){
-  return(
+export default function page2() {
+  return (
     <>
       page 2
     </>

@@ -1,35 +1,29 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-
-
-import Page1 from './Page1'
-import Page2 from './Page2'
-
-import './App.css';
-
+import './App.css'
 
 
 function App() {
-  let navigate = useNavigate();
+  useNavigate()
   let [user, setUser] = React.useState(null)
   let [confirm_loaded, setConfirmLoaded] = React.useState(false)
 
-  React.useEffect(()=>{
-    setTimeout(()=>{
+  React.useEffect(() => {
+    setTimeout(() => {
       setConfirmLoaded(true)
     }, 5000)
-    setTimeout(()=>{
+    setTimeout(() => {
       setUser({})
     }, 3000)
 
-  },[])
+  }, [])
 
-  React.useEffect(()=>{
-    if (confirm_loaded){
-      if (user != null){
+  React.useEffect(() => {
+    if (confirm_loaded) {
+      if (user != null) {
         console.log('user passed')
-      }else{
+      } else {
         console.log('user failed')
       }
     }
@@ -44,11 +38,11 @@ function App() {
   // },[user])
 
   return (
-    <div className="App">
+    <div className='App'>
       helloworld
 
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
