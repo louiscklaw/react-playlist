@@ -1,9 +1,7 @@
 name: master_build
-on:
-  push:
+on: [push, pull_request]
 
 jobs:
-
   #
   # /home/logic/_workspace/react-playlist/publish-orphan-tryout/build.yml
   #
@@ -94,8 +92,6 @@ jobs:
             yarn
             yarn build
 
-
-
   #
   # /home/logic/_workspace/react-playlist/github-build-merger/subjob.yml
   #
@@ -127,7 +123,16 @@ jobs:
           github-build-merger/test.sh
 
   merge:
-    needs: [publish-orphan-tryout, react-calendar-heatmap-tryout, react-chrono-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, react-nextra-tryout, test_merger]
+    needs:
+      [
+        publish-orphan-tryout,
+        react-calendar-heatmap-tryout,
+        react-chrono-tryout,
+        react-heatmap-grid-tryout,
+        react-helloworld-tryout,
+        react-nextra-tryout,
+        test_merger,
+      ]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
