@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import EasyEdit from 'react-easy-edit'
 
 function App() {
@@ -13,56 +13,56 @@ function App() {
     <>
       <div>
         <EasyEdit
-          type="text"
+          type='text'
           onSave={save}
           onCancel={cancel}
-          saveButtonLabel="Save Me"
-          cancelButtonLabel="Cancel Me"
+          saveButtonLabel='Save Me'
+          cancelButtonLabel='Cancel Me'
           attributes={{ name: 'awesome-input', id: 1 }}
-          instructions="Star this repo!"
+          instructions='Star this repo!'
         />
       </div>
       <div>
         <EasyEdit
-          type="radio"
-          value="one"
+          type='radio'
+          value='one'
           onSave={save}
           options={[
             { label: 'First option', value: 'one' },
             { label: 'Second option', value: 'two' },
           ]}
-          instructions="Custom instructions"
+          instructions='Custom instructions'
         />
       </div>
       <div>
-        <EasyEdit type="date" onSave={save} instructions="Select your date of birth" />
+        <EasyEdit type='date' onSave={save} instructions='Select your date of birth' />
       </div>
       <div>
         <EasyEdit
-          type="select"
+          type='select'
           options={[
             { label: 'First option', value: 'one' },
             { label: 'Second option', value: 'two' },
           ]}
           onSave={save}
-          placeholder="My Placeholder"
-          instructions="Custom instructions"
+          placeholder='My Placeholder'
+          instructions='Custom instructions'
         />
       </div>
       <div>
         <EasyEdit
-          type="datalist"
+          type='datalist'
           options={[
             { label: 'First option', value: 'one' },
             { label: 'Second option', value: 'two' },
           ]}
           onSave={save}
-          instructions="Custom instructions"
+          instructions='Custom instructions'
         />
       </div>
       <div>
         <EasyEdit
-          type="checkbox"
+          type='checkbox'
           options={[
             { label: 'First option', value: 'one' },
             { label: 'Second option', value: 'two' },
