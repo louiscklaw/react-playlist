@@ -1,17 +1,16 @@
-import "intersection-observer";
-import React, { Component } from "react";
-import { ScrollView, ScrollSection } from "@cantonjs/react-scroll-view";
-import { StickySection } from "@cantonjs/react-scroll-view";
+import 'intersection-observer'
+import React from 'react'
+import { ScrollView, StickySection } from '@cantonjs/react-scroll-view'
 
-import './App.css';
+import './App.css'
 
 function App() {
   const handleEndReached = () => {
-    console.log("load more");
-  };
+    console.log('load more')
+  }
 
   return (
-    <div className="App">
+    <div className='App'>
       <ScrollView style={{ height: '100vh' }}>
         <StickySection sticky={<h1>ランチ</h1>}>
           <ul>
@@ -37,22 +36,46 @@ function App() {
         </StickySection>
         <StickySection sticky={<h1>ディナー</h1>}>
           <ul>
-            <li><div>Menu 2.1</div></li>
-            <li><div>Menu 2.2</div></li>
-            <li><div>Menu 2.3</div></li>
-            <li><div>Menu 2.4</div></li>
-            <li><div>Menu 2.5</div></li>
-            <li><div>Menu 2.6</div></li>
+            <li>
+              <div>Menu 2.1</div>
+            </li>
+            <li>
+              <div>Menu 2.2</div>
+            </li>
+            <li>
+              <div>Menu 2.3</div>
+            </li>
+            <li>
+              <div>Menu 2.4</div>
+            </li>
+            <li>
+              <div>Menu 2.5</div>
+            </li>
+            <li>
+              <div>Menu 2.6</div>
+            </li>
           </ul>
         </StickySection>
         <StickySection sticky={<h1>ドリンク</h1>}>
           <ul>
-            <li><div>Menu 3.1</div></li>
-            <li><div>Menu 3.1</div></li>
-            <li><div>Menu 3.1</div></li>
-            <li><div>Menu 3.1</div></li>
-            <li><div>Menu 3.1</div></li>
-            <li><div>Menu 3.1</div></li>
+            <li>
+              <div>Menu 3.1</div>
+            </li>
+            <li>
+              <div>Menu 3.1</div>
+            </li>
+            <li>
+              <div>Menu 3.1</div>
+            </li>
+            <li>
+              <div>Menu 3.1</div>
+            </li>
+            <li>
+              <div>Menu 3.1</div>
+            </li>
+            <li>
+              <div>Menu 3.1</div>
+            </li>
           </ul>
         </StickySection>
         <StickySection sticky={<h1>4</h1>}>
@@ -134,7 +157,7 @@ function App() {
       </ScrollView>
 
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
