@@ -127,7 +127,6 @@ jobs:
       [
         publish-orphan-tryout,
         react-calendar-heatmap-tryout,
-        react-chrono-tryout,
         react-heatmap-grid-tryout,
         react-helloworld-tryout,
         react-nextra-tryout,
