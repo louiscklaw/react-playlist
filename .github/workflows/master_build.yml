@@ -22,9 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          cd react-chrono-tryout-working
-            yarn
-            yarn build
+          pushd react-chrono-tryout-working
+            bash ./build.sh
+          popd
 
   #
   # /home/logic/_workspace/react-playlist/react-heatmap-grid-tryout/build.yml
