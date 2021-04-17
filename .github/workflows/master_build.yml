@@ -95,7 +95,6 @@ jobs:
   merge:
     needs:
       [
-        publish-orphan-tryout,
         react-calendar-heatmap-tryout,
         react-heatmap-grid-tryout,
         react-helloworld-tryout,
