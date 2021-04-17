@@ -14,7 +14,7 @@ function App() {
       {error && <div>{error.response.data.errMsg}</div>}
       {data && (
         <>
-          <div>Hello! </div>
+          <div>Hello!</div>
           <pre>{JSON.stringify(data, null, 2)}</pre>
           <button onClick={request}>Reload</button>
         </>

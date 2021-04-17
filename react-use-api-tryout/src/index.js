@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import useApi, { ApiProvider } from 'react-use-api'
+import { ApiProvider } from 'react-use-api'
 
 import App from './App'
 
