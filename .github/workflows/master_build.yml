@@ -1,39 +1,7 @@
 name: master_build
-on:
-  push:
+on: [push, pull_request]
 
 jobs:
-
-  #
-  # /home/logic/_workspace/react-playlist/publish-orphan-tryout/build.yml
-  #
-  publish-orphan-tryout:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v2.1.0
-        with:
-          node-version: '12.x'
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      # - run: npm ci
-      # - run: npm test
-      # - run: npm run generate
-
-      # - name: deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./dist
   #
   # /home/logic/_workspace/react-playlist/react-calendar-heatmap-tryout/build.yml
   #
@@ -54,9 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          cd react-chrono-tryout-working
-            yarn
-            yarn build
+          pushd react-chrono-tryout-working
+            bash ./build.sh
+          popd
 
   #
   # /home/logic/_workspace/react-playlist/react-heatmap-grid-tryout/build.yml
@@ -94,8 +62,6 @@ jobs:
             yarn
             yarn build
 
-
-
   #
   # /home/logic/_workspace/react-playlist/github-build-merger/subjob.yml
   #
@@ -127,7 +93,15 @@ jobs:
           github-build-merger/test.sh
 
   merge:
-    needs: [publish-orphan-tryout, react-calendar-heatmap-tryout, react-chrono-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, react-nextra-tryout, test_merger]
+    needs:
+      [
+        react-calendar-heatmap-tryout,
+        react-heatmap-grid-tryout,
+        react-helloworld-tryout,
+        react-nextra-tryout,
+        test_merger,
+        react-chrono-tryout-working,
+      ]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
