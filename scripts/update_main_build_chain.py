@@ -19,8 +19,7 @@ else:
 MASTER_GITHUB_ACTIONS_FILEPATH='{}/.github/workflows/master_build.yml'.format(PROJ_HOME)
 
 MASTER_GITHUB_ACTIONS_TEMPLATE='''name: master_build
-on:
-  push:
+on: [push, pull_request]
 
 jobs:
 
@@ -84,17 +83,19 @@ def getNameFromSubJob(subjob_contents):
 
 def main():
   yml_files = list(set(listYmlFiles(PROJ_HOME)))
+  # yml_files = ['/home/logic/_workspace/react-playlist/react-helloworld-tryout/build.yml']
 
   # playlist_names = map(lambda x: x.split('/')[-1], yml_files)
   # pprint(list(yml_files))
   yml_file_contents = list(map(lambda x: getYmlFile(x), yml_files))
 
-
   with open(MASTER_GITHUB_ACTIONS_FILEPATH, 'r+') as f_yml_master:
-
     formatted_yml_contents = map(lambda x: formatSubJobYmlFile(x), yml_file_contents)
 
     all_jobs_name = map(lambda x: getNameFromSubJob(x), yml_file_contents)
+    # print([['react-helloworld-tryout']])
+    # all_jobs_name=[['react-helloworld-tryout']]
+
     subjob_needs_list = ['test_merger']
 
     for jobs_names in all_jobs_name:

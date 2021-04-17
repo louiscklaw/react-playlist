@@ -3,6 +3,7 @@ react-calendar-heatmap-tryout:
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-calendar-heatmap-tryout
+        pushd react-calendar-heatmap-tryout
           yarn
           yarn build
+        popd

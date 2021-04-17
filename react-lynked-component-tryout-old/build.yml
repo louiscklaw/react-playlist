@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-lynked-component-tryout-old:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-lynked-component-tryout-old
           yarn
           yarn build
+        popd

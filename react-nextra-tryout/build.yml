@@ -3,6 +3,7 @@ react-nextra-tryout:
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-nextra-tryout
+        pushd react-nextra-tryout
           yarn
           yarn build
+        popd

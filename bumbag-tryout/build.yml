@@ -3,6 +3,7 @@ bumbag-tryout:
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd bumbag-tryout
+        pushd bumbag-tryout
           yarn
           yarn build
+        popd

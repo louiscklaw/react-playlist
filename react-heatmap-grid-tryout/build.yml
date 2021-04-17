@@ -3,6 +3,7 @@ react-heatmap-grid-tryout:
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-heatmap-grid-tryout
+        pushd react-heatmap-grid-tryout
           yarn
           yarn build
+        popd

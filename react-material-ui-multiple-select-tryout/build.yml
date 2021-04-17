@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-material-ui-multiple-select-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-material-ui-multiple-select-tryout
           yarn
           yarn build
+        popd

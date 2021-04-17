@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-blink-text-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-blink-text-tryout
           yarn
           yarn build
+        popd

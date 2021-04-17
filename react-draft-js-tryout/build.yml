@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-draft-js-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-draft-js-tryout
           yarn
           yarn build
+        popd

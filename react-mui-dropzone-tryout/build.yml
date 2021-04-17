@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-mui-dropzone-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-mui-dropzone-tryout
           yarn
           yarn build
+        popd

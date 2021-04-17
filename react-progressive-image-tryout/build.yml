@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-progressive-image-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-progressive-image-tryout
           yarn
           yarn build
+        popd

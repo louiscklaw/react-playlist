@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-router-object-base-route-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-router-object-base-route-tryout
           yarn
           yarn build
+        popd

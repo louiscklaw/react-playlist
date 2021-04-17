@@ -4,6 +4,534 @@ on: [push, pull_request]
 jobs:
 
   # 
+  # /home/logic/_workspace/react-playlist/bumbag-tryout/build.yml
+  # 
+  bumbag-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd bumbag-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/meme-material-ui-tryout/build.yml
+  # 
+  meme-material-ui-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd meme-material-ui-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/publish-orphan-tryout/build.yml
+  # 
+  publish-orphan-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd publish-orphan-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-bcrypt-tryout/build.yml
+  # 
+  react-bcrypt-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-bcrypt-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-beautiful-dnd-drag-handle-tryout/build.yml
+  # 
+  react-beautiful-dnd-drag-handle-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-beautiful-dnd-drag-handle-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-beautiful-dnd-functional-component-tryout/build.yml
+  # 
+  react-beautiful-dnd-functional-component-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-beautiful-dnd-functional-component-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-beautiful-dnd-helloworld-tryout/build.yml
+  # 
+  react-beautiful-dnd-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-beautiful-dnd-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-beautiful-dnd-horizontal-tryout/build.yml
+  # 
+  react-beautiful-dnd-horizontal-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-beautiful-dnd-horizontal-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-beautiful-dnd-tryout/build.yml
+  # 
+  react-beautiful-dnd-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-beautiful-dnd-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-blink-text-tryout/build.yml
+  # 
+  react-blink-text-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-blink-text-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-block-and-then-redirect-tryout/build.yml
+  # 
+  react-block-and-then-redirect-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-block-and-then-redirect-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-browser-detection-tryout/build.yml
+  # 
+  react-browser-detection-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-browser-detection-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-calendar-heatmap-tryout/build.yml
+  # 
+  react-calendar-heatmap-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-calendar-heatmap-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-chrono-tryout-working/build.yml
+  # 
+  react-chrono-tryout-working:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-chrono-tryout-working
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-chrono-tryout/build.yml
+  # 
+  react-chrono-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-chrono-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-code-splitting-tryout/build.yml
+  # 
+  react-code-splitting-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-code-splitting-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-countup-tryout/build.yml
+  # 
+  react-countup-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-countup-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-daterange-picker-tryout/build.yml
+  # 
+  react-daterange-picker-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-daterange-picker-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-detect-offline-tryout/build.yml
+  # 
+  react-detect-offline-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-detect-offline-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-draft-js-tryout/build.yml
+  # 
+  react-draft-js-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-draft-js-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-dropzone-component-helloworld-tryout/build.yml
+  # 
+  react-dropzone-component-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-dropzone-component-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-dropzone-helloworld-tryout/build.yml
+  # 
+  react-dropzone-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-dropzone-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-dropzone-uploader-helloworld-tryout/build.yml
+  # 
+  react-dropzone-uploader-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-dropzone-uploader-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-easy-edit-tryout/build.yml
+  # 
+  react-easy-edit-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-easy-edit-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-favico-js-tryout/build.yml
+  # 
+  react-favico-js-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-favico-js-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-firebase-cloud-storage-helloworld-tryout/build.yml
+  # 
+  react-firebase-cloud-storage-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-firebase-cloud-storage-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-firebase-helloworld-tryout/build.yml
+  # 
+  react-firebase-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-firebase-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-flip-move-tryout/build.yml
+  # 
+  react-flip-move-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-flip-move-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-flippy-material-ui-tryout/build.yml
+  # 
+  react-flippy-material-ui-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-flippy-material-ui-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-food-cart-tryout/build.yml
+  # 
+  react-food-cart-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-food-cart-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-material-ui-autocomplete-tryout/build.yml
+  # 
+  react-formik-material-ui-autocomplete-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-material-ui-autocomplete-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-material-ui-checkbox-tryout/build.yml
+  # 
+  react-formik-material-ui-checkbox-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-material-ui-checkbox-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-material-ui-radio-button-tryout/build.yml
+  # 
+  react-formik-material-ui-radio-button-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-material-ui-radio-button-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-material-ui-select-tryout/build.yml
+  # 
+  react-formik-material-ui-select-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-material-ui-select-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-material-ui-switch-tryout/build.yml
+  # 
+  react-formik-material-ui-switch-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-material-ui-switch-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-radio-button-tryout/build.yml
+  # 
+  react-formik-radio-button-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-radio-button-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-subform-tryout/build.yml
+  # 
+  react-formik-subform-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-subform-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-tryout/build.yml
+  # 
+  react-formik-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-formik-upload-file-tryout/build.yml
+  # 
+  react-formik-upload-file-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-formik-upload-file-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-full-screen-tryout/build.yml
+  # 
+  react-full-screen-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-full-screen-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-fullpage-tryout/build.yml
+  # 
+  react-fullpage-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-fullpage-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-geolocation-call-tryout/build.yml
+  # 
+  react-geolocation-call-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-geolocation-call-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-google-maps-tryout/build.yml
+  # 
+  react-google-maps-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-google-maps-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-heatmap-grid-tryout/build.yml
+  # 
+  react-heatmap-grid-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-heatmap-grid-tryout
+            yarn
+            yarn build
+          popd
+  # 
   # /home/logic/_workspace/react-playlist/react-helloworld-tryout/build.yml
   # 
   react-helloworld-tryout:
@@ -11,10 +539,754 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          cd react-helloworld-tryout
+          pushd react-helloworld-tryout
             yarn
             yarn build
-  
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-helmet-tryout/build.yml
+  # 
+  react-helmet-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-helmet-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-hide-console-message-in-production-tryout/build.yml
+  # 
+  react-hide-console-message-in-production-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-hide-console-message-in-production-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-hot-toast-tryout/build.yml
+  # 
+  react-hot-toast-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-hot-toast-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-image-overlay-tryout/build.yml
+  # 
+  react-image-overlay-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-image-overlay-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-image-upload-organize-tryout/build.yml
+  # 
+  react-image-upload-organize-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-image-upload-organize-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-images-upload-tryout/build.yml
+  # 
+  react-images-upload-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-images-upload-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-jest-image-snapshot-tryout/build.yml
+  # 
+  react-jest-image-snapshot-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-jest-image-snapshot-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-jest-tryout/build.yml
+  # 
+  react-jest-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-jest-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-jodit-tryout/build.yml
+  # 
+  react-jodit-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-jodit-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-joyride-helloworld-tryout/build.yml
+  # 
+  react-joyride-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-joyride-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-lazy-load-image-component-tryout/build.yml
+  # 
+  react-lazy-load-image-component-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-lazy-load-image-component-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-lazy-tryout/build.yml
+  # 
+  react-lazy-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-lazy-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-leaflet-tryout/build.yml
+  # 
+  react-leaflet-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-leaflet-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-loading-spinkit-tryout/build.yml
+  # 
+  react-loading-spinkit-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-loading-spinkit-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-lynked-component-tryout-old/build.yml
+  # 
+  react-lynked-component-tryout-old:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-lynked-component-tryout-old
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-accordion-tryout/build.yml
+  # 
+  react-material-ui-accordion-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-accordion-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-autocomplete-multiple-values-tryout/build.yml
+  # 
+  react-material-ui-autocomplete-multiple-values-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-autocomplete-multiple-values-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-bottomNavigation-tryout/build.yml
+  # 
+  react-material-ui-bottomNavigation-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-bottomNavigation-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-datatables-tryout/build.yml
+  # 
+  react-material-ui-datatables-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-datatables-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-helloworld-tryout/build.yml
+  # 
+  react-material-ui-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-markdown-editor-tryout/build.yml
+  # 
+  react-material-ui-markdown-editor-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-markdown-editor-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-multiple-select-tryout/build.yml
+  # 
+  react-material-ui-multiple-select-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-multiple-select-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-notistack-tryout/build.yml
+  # 
+  react-material-ui-notistack-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-notistack-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-sortable-table-tryout/build.yml
+  # 
+  react-material-ui-sortable-table-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-sortable-table-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-materialui-daterange-picker-tryout/build.yml
+  # 
+  react-materialui-daterange-picker-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-materialui-daterange-picker-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-mobile-layout-tryout/build.yml
+  # 
+  react-mobile-layout-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-mobile-layout-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-mobile-picker-tryout/build.yml
+  # 
+  react-mobile-picker-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-mobile-picker-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-moment-timezone-tryout/build.yml
+  # 
+  react-moment-timezone-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-moment-timezone-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-mui-dropzone-tryout/build.yml
+  # 
+  react-mui-dropzone-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-mui-dropzone-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-mui-timeline-tryout/build.yml
+  # 
+  react-mui-timeline-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-mui-timeline-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-my-image-upload-tryout/build.yml
+  # 
+  react-my-image-upload-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-my-image-upload-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-nextra-tryout/build.yml
+  # 
+  react-nextra-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-nextra-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-number-format-tryout/build.yml
+  # 
+  react-number-format-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-number-format-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-pdf-renderer-tryout/build.yml
+  # 
+  react-pdf-renderer-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-pdf-renderer-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-progressive-image-tryout/build.yml
+  # 
+  react-progressive-image-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-progressive-image-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-qr-code-with-frame-tryout/build.yml
+  # 
+  react-qr-code-with-frame-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-qr-code-with-frame-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-qrcode-react-tryout/build.yml
+  # 
+  react-qrcode-react-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-qrcode-react-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-qrcode-tryout/build.yml
+  # 
+  react-qrcode-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-qrcode-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-quill-tryout/build.yml
+  # 
+  react-quill-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-quill-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-react-router-history-tryout/build.yml
+  # 
+  react-react-router-history-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-react-router-history-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-router-dom-layout-tryout/build.yml
+  # 
+  react-router-dom-layout-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-router-dom-layout-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-router-dom-tryout/build.yml
+  # 
+  react-router-dom-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-router-dom-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-router-object-base-route-tryout/build.yml
+  # 
+  react-router-object-base-route-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-router-object-base-route-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-router-switch-tryout/build.yml
+  # 
+  react-router-switch-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-router-switch-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-router-tryout/build.yml
+  # 
+  react-router-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-router-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-scrollable-view-tryout/build.yml
+  # 
+  react-scrollable-view-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-scrollable-view-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-scrolling-tryout/build.yml
+  # 
+  react-scrolling-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-scrolling-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-send-get-request-tryout/build.yml
+  # 
+  react-send-get-request-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-send-get-request-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-skeleton-tryout/build.yml
+  # 
+  react-skeleton-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-skeleton-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-slick-tryout/build.yml
+  # 
+  react-slick-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-slick-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-snap-tryout/build.yml
+  # 
+  react-snap-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-snap-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-stripe-connect-button-tryout/build.yml
+  # 
+  react-stripe-connect-button-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-stripe-connect-button-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-stripe-helloworld-tryout/build.yml
+  # 
+  react-stripe-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-stripe-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-stripe-payment-request-button-tryout/build.yml
+  # 
+  react-stripe-payment-request-button-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-stripe-payment-request-button-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-stripe-setup-payouts-tryout/build.yml
+  # 
+  react-stripe-setup-payouts-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-stripe-setup-payouts-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-test-tryout/build.yml
+  # 
+  react-test-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-test-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-toast-notifications-tryout/build.yml
+  # 
+  react-toast-notifications-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-toast-notifications-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-top-loading-bar-tryout/build.yml
+  # 
+  react-top-loading-bar-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-top-loading-bar-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-upload-and-organize-tryout/build.yml
+  # 
+  react-upload-and-organize-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-upload-and-organize-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-use-api-tryout/build.yml
+  # 
+  react-use-api-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-use-api-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-yup-tryout/build.yml
+  # 
+  react-yup-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-yup-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/reactjs-line-login-tryout/build.yml
+  # 
+  reactjs-line-login-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd reactjs-line-login-tryout
+            yarn
+            yarn build
+          popd
   
 
   # 
@@ -48,7 +1320,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [react-helloworld-tryout, test_merger]
+    needs: [bumbag-tryout, meme-material-ui-tryout, publish-orphan-tryout, react-bcrypt-tryout, react-beautiful-dnd-drag-handle-tryout, react-beautiful-dnd-functional-component-tryout, react-beautiful-dnd-helloworld-tryout, react-beautiful-dnd-horizontal-tryout, react-beautiful-dnd-tryout, react-blink-text-tryout, react-block-and-then-redirect-tryout, react-browser-detection-tryout, react-calendar-heatmap-tryout, react-chrono-tryout, react-chrono-tryout-working, react-code-splitting-tryout, react-countup-tryout, react-daterange-picker-tryout, react-detect-offline-tryout, react-draft-js-tryout, react-dropzone-component-helloworld-tryout, react-dropzone-helloworld-tryout, react-dropzone-uploader-helloworld-tryout, react-easy-edit-tryout, react-favico-js-tryout, react-firebase-cloud-storage-helloworld-tryout, react-firebase-helloworld-tryout, react-flip-move-tryout, react-flippy-material-ui-tryout, react-food-cart-tryout, react-formik-material-ui-autocomplete-tryout, react-formik-material-ui-checkbox-tryout, react-formik-material-ui-radio-button-tryout, react-formik-material-ui-select-tryout, react-formik-material-ui-switch-tryout, react-formik-radio-button-tryout, react-formik-subform-tryout, react-formik-tryout, react-formik-upload-file-tryout, react-full-screen-tryout, react-fullpage-tryout, react-geolocation-call-tryout, react-google-maps-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, react-helmet-tryout, react-hide-console-message-in-production-tryout, react-hot-toast-tryout, react-image-overlay-tryout, react-image-upload-organize-tryout, react-images-upload-tryout, react-jest-image-snapshot-tryout, react-jest-tryout, react-jodit-tryout, react-joyride-helloworld-tryout, react-lazy-load-image-component-tryout, react-lazy-tryout, react-leaflet-tryout, react-loading-spinkit-tryout, react-lynked-component-tryout-old, react-material-ui-accordion-tryout, react-material-ui-autocomplete-multiple-values-tryout, react-material-ui-bottomNavigation-tryout, react-material-ui-datatables-tryout, react-material-ui-helloworld-tryout, react-material-ui-markdown-editor-tryout, react-material-ui-multiple-select-tryout, react-material-ui-notistack-tryout, react-material-ui-sortable-table-tryout, react-materialui-daterange-picker-tryout, react-mobile-layout-tryout, react-mobile-picker-tryout, react-moment-timezone-tryout, react-mui-dropzone-tryout, react-mui-timeline-tryout, react-my-image-upload-tryout, react-nextra-tryout, react-number-format-tryout, react-pdf-renderer-tryout, react-progressive-image-tryout, react-qr-code-with-frame-tryout, react-qrcode-react-tryout, react-qrcode-tryout, react-quill-tryout, react-react-router-history-tryout, react-router-dom-layout-tryout, react-router-dom-tryout, react-router-object-base-route-tryout, react-router-switch-tryout, react-router-tryout, react-scrollable-view-tryout, react-scrolling-tryout, react-send-get-request-tryout, react-skeleton-tryout, react-slick-tryout, react-snap-tryout, react-stripe-connect-button-tryout, react-stripe-helloworld-tryout, react-stripe-payment-request-button-tryout, react-stripe-setup-payouts-tryout, react-test-tryout, react-toast-notifications-tryout, react-top-loading-bar-tryout, react-upload-and-organize-tryout, react-use-api-tryout, react-yup-tryout, reactjs-line-login-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout

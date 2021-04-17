@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-lazy-load-image-component-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-lazy-load-image-component-tryout
           yarn
           yarn build
+        popd

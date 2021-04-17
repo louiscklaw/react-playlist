@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-food-cart-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-food-cart-tryout
           yarn
           yarn build
+        popd

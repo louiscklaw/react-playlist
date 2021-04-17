@@ -3,6 +3,7 @@ react-chrono-tryout:
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-chrono-tryout
+        pushd react-chrono-tryout
           yarn
           yarn build
+        popd

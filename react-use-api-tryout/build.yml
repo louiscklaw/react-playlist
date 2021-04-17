@@ -1,8 +1,9 @@
-react-helloworld-tryout:
+react-use-api-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - run: |
-        cd react-helloworld-tryout
+        pushd react-use-api-tryout
           yarn
           yarn build
+        popd
