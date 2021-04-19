@@ -15,7 +15,7 @@ export default function App() {
 
 function Example() {
   const { isLoading, error, data, isFetching } = useQuery('repoData', () =>
-    fetch('https://api.github.com/repos/tannerlinsley/react-query').then(res => res.json()),
+    fetch('http://127.0.0.1:3001/test-get-json').then(res => res.json()),
   )
 
   if (isLoading) return 'Loading...'
