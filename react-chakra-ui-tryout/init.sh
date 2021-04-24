@@ -3,4 +3,4 @@
 set -ex
 
 yarn
-yarn add @chakra-ui/icons
+yarn add @chakra-ui/icons react-icons

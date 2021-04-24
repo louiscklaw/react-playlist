@@ -14,10 +14,22 @@ import ExampleTestSelect from 'src/example/test_select'
 import ExampleTestSlider from 'src/example/test_slider'
 import ExampleTestSwitch from 'src/example/test_switch'
 import ExampleTestTextarea from 'src/example/test_textarea'
+import ExampleTestBadge from 'src/example/test_badge'
+import ExampleTestCloseButton from 'src/example/test_close_button'
+import ExampleTestCode from 'src/example/test_code'
+import ExampleTestKbd from 'src/example/test_kbd'
+import ExampleTestList from 'src/example/test_list'
+import ExampleTestStat from 'src/example/test_stat'
 
 function App() {
   return (
     <Box textAlign="center" fontSize="xl">
+      <ExampleTestBadge />
+      <ExampleTestCloseButton />
+      <ExampleTestCode />
+      <ExampleTestStat />
+      <ExampleTestList />
+      <ExampleTestKbd />
       <ExampleTestBox />
       <ExampleTestButton />
       <ExampleTestCheckBox />
