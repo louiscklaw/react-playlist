@@ -17,7 +17,7 @@ function ExampleTestBox() {
 
   return (
     <>
-      {' '}
+      <>Box</>
       <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
         <Image src={property.imageUrl} alt={property.imageAlt} />
 
