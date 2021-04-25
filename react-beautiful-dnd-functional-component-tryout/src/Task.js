@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react'
 
-import { Draggable } from "react-beautiful-dnd";
+import { Draggable } from 'react-beautiful-dnd'
 
-import { ShareContext } from "./context/Share";
+import { ShareContext } from './context/Share'
 
 const container = {
-  border: "1px solid lightgrey",
-  borderRadius: "2px",
-  padding: "8px",
-  marginBottom: "8px",
-  backgroundColor: "white",
-  width: "300px",
-};
+  border: '1px solid lightgrey',
+  borderRadius: '2px',
+  padding: '8px',
+  marginBottom: '8px',
+  backgroundColor: 'white',
+  width: '300px',
+}
 
 function Task({ task, index }) {
   let { handleItemEditClick, handleItemDeleteClick } = React.useContext(
-    ShareContext
-  );
+    ShareContext,
+  )
   return (
     <>
       <Draggable draggableId={task.id} index={index}>
@@ -33,14 +33,14 @@ function Task({ task, index }) {
                     {task.content}
                     <button
                       onClick={(e) => {
-                        handleItemEditClick(e, task.id);
+                        handleItemEditClick(e, task.id)
                       }}
                     >
                       edit
                     </button>
                     <button
                       onClick={(e) => {
-                        handleItemDeleteClick(e, task.id);
+                        handleItemDeleteClick(e, task.id)
                       }}
                     >
                       delete
@@ -49,11 +49,11 @@ function Task({ task, index }) {
                 </div>
               </div>
             </div>
-          );
+          )
         }}
       </Draggable>
     </>
-  );
+  )
 }
 
-export default React.memo(Task);
+export default React.memo(Task)

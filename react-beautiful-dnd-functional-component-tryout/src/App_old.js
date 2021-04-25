@@ -1,28 +1,39 @@
 // @flow
-import React, { useState } from "react";
-import styled from "@emotion/styled";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import React, { useState } from 'react'
+import styled from '@emotion/styled'
+import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
+
+import { quotes as initial, quotes_list } from './data'
+
+import reorder from './reorder'
+import { grid } from './constants'
 import type {
   DropResult,
   DraggableProvided,
   DroppableProvided,
-} from "react-beautiful-dnd";
-import type { Quote as QuoteType } from "../types";
+} from 'react-beautiful-dnd'
+import type { Quote as QuoteType } from '../types'
 
-import { quotes as initial } from "./data";
-import { quotes_list } from "./data";
+type
+QuoteProps = { |
+  quote
+:
+QuoteType,
+  index
+:
+number,
+|
+}
 
-import reorder from "./reorder";
-import { grid } from "./constants";
 
-type QuoteProps = {|
-  quote: QuoteType,
-  index: number,
-|};
+type
+QuoteListProps = { |
+  quotes
+:
+QuoteType[],
+|
+}
 
-type QuoteListProps = {|
-  quotes: QuoteType[],
-|};
 
 const QuoteItem = styled.div`
   width: 200px;
@@ -30,7 +41,7 @@ const QuoteItem = styled.div`
   margin-bottom: ${grid}px;
   background-color: lightblue;
   padding: ${grid}px;
-`;
+`
 
 function Quote({ quote, index }: QuoteProps) {
   return (
@@ -45,19 +56,19 @@ function Quote({ quote, index }: QuoteProps) {
         </QuoteItem>
       )}
     </Draggable>
-  );
+  )
 }
 
 // Ensuring the whole list does not re-render when the droppable re-renders
 const QuoteList = React.memo(function QuoteList({ quotes }: QuoteListProps) {
   return quotes.map((quote: QuoteType, index: number) => (
     <Quote quote={quote} index={index} key={quote.id} />
-  ));
-});
+  ))
+})
 
 function QuoteListContainer({ quotes }) {
   return (
-    <Droppable droppableId="list" type="quotes">
+    <Droppable droppableId='list' type='quotes'>
       {(provided: DroppableProvided) => (
         <div ref={provided.innerRef} {...provided.droppableProps}>
           {quotes.map((quote: QuoteType, index: number) => (
@@ -77,33 +88,33 @@ function QuoteListContainer({ quotes }) {
         </div>
       )}
     </Droppable>
-  );
+  )
 }
 
 function QuoteApp() {
-  const [quotes, setQuotes] = useState(initial);
+  const [quotes, setQuotes] = useState(initial)
 
   function onDragEnd(result: DropResult) {
     if (!result.destination) {
-      return;
+      return
     }
 
     if (result.destination.index === result.source.index) {
-      return;
+      return
     }
 
     const newQuotes = reorder(
       quotes,
       result.source.index,
-      result.destination.index
-    );
+      result.destination.index,
+    )
 
-    setQuotes(newQuotes);
+    setQuotes(newQuotes)
   }
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <Droppable droppableId="quotes-list" type="quotes-list">
+      <Droppable droppableId='quotes-list' type='quotes-list'>
         {(provided: DroppableProvided) => (
           <div ref={provided.innerRef} {...provided.droppableProps}>
             {quotes_list.map((quotes_list, index) => (
@@ -125,7 +136,7 @@ function QuoteApp() {
         )}
       </Droppable>
     </DragDropContext>
-  );
+  )
 }
 
-export default QuoteApp;
+export default QuoteApp

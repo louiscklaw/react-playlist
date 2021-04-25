@@ -1,13 +1,7 @@
 import React from 'react'
 
-import './App.css'
-
 function App() {
-  return (
-    <div className='App'>
-      helloworld
-    </div>
-  )
+  return <div className="App">react helloworld</div>
 }
 
 export default App

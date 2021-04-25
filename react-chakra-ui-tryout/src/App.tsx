@@ -20,6 +20,7 @@ import ExampleTestCode from 'src/example/test_code'
 import ExampleTestKbd from 'src/example/test_kbd'
 import ExampleTestList from 'src/example/test_list'
 import ExampleTestStat from 'src/example/test_stat'
+import ExampleTestTable from 'src/example/test_table'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <ExampleTestBadge />
       <ExampleTestCloseButton />
       <ExampleTestCode />
+      <ExampleTestTable />
       <ExampleTestStat />
       <ExampleTestList />
       <ExampleTestKbd />
