@@ -1,9 +1,12 @@
 import React from 'react'
 
+import { Button } from 'atomize'
+
 function App() {
   return (
     <div className="App">
-      <div style={{ height: '100%', width: '100%', backgroundColor: 'gold' }}>helloworld</div>
+      <Button />
+      react helloworld
     </div>
   )
 }
