@@ -1,11 +1,9 @@
 import React from 'react'
-import initialData from '../initial-data'
+import initialData from './initial-data'
 
 let ShareContext = React.createContext()
 
-export default function ShareContextProvider({
-                                               children,
-                                             }) {
+export default function ShareContextProvider({ children }) {
   let [state, setState] = React.useState(initialData)
 
   let handleHelloworld = () => {
@@ -25,12 +23,12 @@ export default function ShareContextProvider({
     alert(`handleColumnDeleteClick ${column_id}`)
 
     let new_columns = {}
-    Object.keys(state.columns).forEach((k) => {
+    Object.keys(state.columns).forEach(k => {
       if (k !== column_id) {
         new_columns[k] = state.columns[k]
       }
     })
-    let new_column_order = state.columnOrder.filter((co) => co !== column_id)
+    let new_column_order = state.columnOrder.filter(co => co !== column_id)
 
     setState({ ...state, columns: new_columns, columnOrder: new_column_order })
 
