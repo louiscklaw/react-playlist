@@ -1,10 +1,9 @@
-
 jobs:
   include:
     - stage: Unit_test
       name: test (react-helloworld-tryout)
       script:
         - cd react-helloworld-tryout
-        -   yarn
-        -   yarn build
+        - yarn
+        - yarn build
         - cd -
