@@ -10,10 +10,7 @@ export default function ShareContextProvider({ children }) {
     alert('helloworld')
   }
 
-  const handleRefreshJson = () => {
-    // saveJson();
-    // reloadJson();
-  }
+  const handleRefreshJson = () => {}
 
   const handleColumnEditClick = (e, column_id) => {
     alert(`handleColumnEditClick ${column_id}`)
