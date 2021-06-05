@@ -30,14 +30,14 @@ function CarouselConfig({ task, index }) {
                         handleItemEditClick(e, task.id)
                       }}
                     >
-                      edit
+                      E
                     </button>
                     <button
                       onClick={e => {
                         handleItemDeleteClick(e, task.id)
                       }}
                     >
-                      delete
+                      D
                     </button>
                   </div>
                 </div>
