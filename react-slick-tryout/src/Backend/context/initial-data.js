@@ -6,14 +6,14 @@ let initialData = {
     'task-4': { id: 'task-4', content: 'Cook dinner' },
   },
   columns: {
-    'column-1': {
-      id: 'column-1',
-      title: 'column-1',
+    active: {
+      id: 'active',
+      title: 'active',
       taskIds: ['task-1', 'task-2', 'task-3', 'task-4'],
     },
-    'column-2': {
-      id: 'column-2',
-      title: 'column-2',
+    parking: {
+      id: 'parking',
+      title: 'parking',
       taskIds: [],
     },
     'column-3': {
@@ -33,7 +33,7 @@ let initialData = {
     },
   },
   // Facilitate reordering of the columns
-  columnOrder: ['column-1', 'column-2', 'column-3', 'column-4', 'column-5'],
+  columnOrder: ['active', 'parking'],
 }
 
 let array_length = Array(4).fill(null)
@@ -59,9 +59,9 @@ array_length.forEach((_, idx) => {
   }
 })
 
-initialData.columns['column-1'].taskIds = array_length.map((_, idx) => `task-${idx}`)
+initialData.columns['active'].taskIds = array_length.map((_, idx) => `task-${idx}`)
 
-initialData.columns['column-2'].taskIds = array_length.map((_, idx) => `task-2-${idx}`)
+initialData.columns['parking'].taskIds = array_length.map((_, idx) => `task-2-${idx}`)
 
 initialData.columns['column-3'].taskIds = array_length.map((_, idx) => `task-3-${idx}`)
 
