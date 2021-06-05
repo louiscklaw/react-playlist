@@ -1,52 +1,46 @@
-import React from 'react';
-import Slider from "react-slick";
+import React from 'react'
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Backend from './Backend'
+import ShareContextProvider from './context/Share'
 
+import FrontEnd from './FrontEnd'
 
-import './App.css';
-
-function SimpleSlider() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
-  return (
-    <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
-  );
+const saveJson = () => {
+  alert('save json')
 }
 
+const reloadJson = () => {
+  alert('reload json')
+}
 
 function App() {
   return (
     <div className="App">
-      helloworld
-      <SimpleSlider />
+      <div
+        style={{
+          display: 'flex',
+          flexFlow: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <div style={{ height: '100vh', width: '50vw' }}>
+          <div>frontend</div>
+          <div style={{ width: '100%', height: '50%' }}>
+            <FrontEnd />
+          </div>
+        </div>
+        <div style={{ height: '100vh', width: '50vw' }}>
+          <div>backend</div>
+          <div>
+            <ShareContextProvider saveJson={saveJson} reloadJson={reloadJson}>
+              <Backend />
+            </ShareContextProvider>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
