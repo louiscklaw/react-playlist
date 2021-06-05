@@ -1,17 +1,7 @@
 import React from 'react'
 
 import Backend from './Backend'
-import ShareContextProvider from './context/Share'
-
-import FrontEnd from './FrontEnd'
-
-const saveJson = () => {
-  alert('save json')
-}
-
-const reloadJson = () => {
-  alert('reload json')
-}
+import Frontend from './Frontend'
 
 function App() {
   return (
@@ -25,17 +15,15 @@ function App() {
         }}
       >
         <div style={{ height: '100vh', width: '50vw' }}>
-          <div>frontend</div>
+          <div>Frontend</div>
           <div style={{ width: '100%', height: '50%' }}>
-            <FrontEnd />
+            <Frontend />
           </div>
         </div>
         <div style={{ height: '100vh', width: '50vw' }}>
-          <div>backend</div>
+          <div>Backend</div>
           <div>
-            <ShareContextProvider saveJson={saveJson} reloadJson={reloadJson}>
-              <Backend />
-            </ShareContextProvider>
+            <Backend />
           </div>
         </div>
       </div>
