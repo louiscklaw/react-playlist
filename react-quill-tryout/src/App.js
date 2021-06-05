@@ -16,7 +16,7 @@ function App() {
         <div style={{ height: '100vh', width: '50vw' }}>
           <div>frontend</div>
           <div>
-            <FrontDisplay value={value} setValue={setValue} />
+            <FrontDisplay value={value} />
           </div>
         </div>
         <div style={{ height: '100vh', width: '50vw' }}>
