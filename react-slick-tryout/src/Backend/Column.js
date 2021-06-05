@@ -20,7 +20,6 @@ const task_list = {
 }
 
 function Column({ column, carousel_configs, index }) {
-  let tasks = carousel_configs
   let { handleColumnEditClick, handleColumnDeleteClick } = React.useContext(ShareContext)
 
   return (
