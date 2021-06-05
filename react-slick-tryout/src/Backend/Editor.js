@@ -106,7 +106,12 @@ export default function Editor() {
                 )
 
                 return (
-                  <Column key={column.id} column={column} tasks={carousel_configs} index={index} />
+                  <Column
+                    key={column.id}
+                    column={column}
+                    carousel_configs={carousel_configs}
+                    index={index}
+                  />
                 )
               })}
               {provided.placeholder}

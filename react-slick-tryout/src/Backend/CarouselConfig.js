@@ -13,7 +13,7 @@ const container = {
   width: '300px',
 }
 
-function Task({ task, index }) {
+function CarouselConfig({ task, index }) {
   let { handleItemEditClick, handleItemDeleteClick } = React.useContext(ShareContext)
   return (
     <>
@@ -50,4 +50,4 @@ function Task({ task, index }) {
   )
 }
 
-export default React.memo(Task)
+export default React.memo(CarouselConfig)
