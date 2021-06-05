@@ -24,7 +24,7 @@ function CarouselConfig({ task, index }) {
               <div>
                 <div style={container}>
                   <div>
-                    {task.content}
+                    <pre>{JSON.stringify(task.content)}</pre>
                     <button
                       onClick={e => {
                         handleItemEditClick(e, task.id)

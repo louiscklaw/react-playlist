@@ -119,6 +119,7 @@ export default function Editor() {
           )}
         </Droppable>
       </DragDropContext>
+      <pre>{JSON.stringify(state, null, 2)}</pre>
     </>
   )
 }
