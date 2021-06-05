@@ -1,9 +1,10 @@
 import React from 'react'
-import Column from './Column'
 
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
 import { ShareContext } from './context/Share'
+
+import Column from './Column'
 
 const container = {
   width: '420px',
@@ -12,9 +13,9 @@ const container = {
 }
 
 export default function Backend() {
-  let { state, setState } = React.useContext(ShareContext)
+  let { state } = React.useContext(ShareContext)
 
-  const onDragEnd = result => {}
+  const onDragEnd = () => {}
   return (
     <>
       <DragDropContext onDragEnd={onDragEnd}>
