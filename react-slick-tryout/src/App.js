@@ -14,13 +14,13 @@ function App() {
           alignItems: 'center',
         }}
       >
-        <div style={{ height: '100vh', width: '50vw' }}>
+        <div style={{ height: '75vh', width: '50vw' }}>
           <div>Frontend</div>
           <div style={{ width: '100%', height: '50%' }}>
             <Frontend />
           </div>
         </div>
-        <div style={{ height: '100vh', width: '50vw' }}>
+        <div style={{ height: '75vh', width: '50vw' }}>
           <div>Backend</div>
           <div>
             <Backend />

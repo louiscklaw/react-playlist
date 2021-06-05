@@ -101,9 +101,13 @@ export default function Editor() {
             <div ref={provided.innerRef} style={container} {...provided.droppableProps}>
               {state.columnOrder.map((columnId, index) => {
                 const column = state.columns[columnId]
-                const tasks = column.taskIds.map(taskId => state.tasks[taskId])
+                const carousel_configs = column.carouselConfigIds.map(
+                  carouselConfigId => state.carousel_configs[carouselConfigId],
+                )
 
-                return <Column key={column.id} column={column} tasks={tasks} index={index} />
+                return (
+                  <Column key={column.id} column={column} tasks={carousel_configs} index={index} />
+                )
               })}
               {provided.placeholder}
             </div>
