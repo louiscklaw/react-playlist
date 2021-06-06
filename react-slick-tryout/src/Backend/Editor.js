@@ -100,9 +100,19 @@ export default function Helloworld() {
             <div ref={provided.innerRef} style={container} {...provided.droppableProps}>
               {state.columnOrder.map((columnId, index) => {
                 const column = state.columns[columnId]
-                const tasks = column.carouselConfigIds.map(taskId => state.carousel_configs[taskId])
+                const carousel_configs = column.carouselConfigIds.map(
+                  taskId => state.carousel_configs[taskId],
+                )
 
-                return <Column key={column.id} column={column} tasks={tasks} index={index} />
+                return (
+                  <Column
+                    key={column.id}
+                    column={column}
+                    tasks={carousel_configs}
+                    carousel_configs={carousel_configs}
+                    index={index}
+                  />
+                )
               })}
               {provided.placeholder}
             </div>

@@ -8,23 +8,39 @@ let initialData = {
   carousel_configs: {
     'cc-1': {
       id: 'cc-1',
-      content: 'Take out the garbage',
-      meta: { id: 'cc-1', cc_description: 'cc-1-d', img_url: 'img_url1' },
+      meta: {
+        id: 'cc-1',
+        cc_description: 'Take out the garbage',
+        img_url:
+          'https://images.unsplash.com/photo-1613479205646-c0dc1ee8511f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+      },
     },
     'cc-2': {
       id: 'cc-2',
-      content: 'Watch my favorite show',
-      meta: { id: 'cc-2', cc_description: 'cc-2-d', img_url: 'img_url2' },
+      meta: {
+        id: 'cc-2',
+        cc_description: 'Watch my favorite show',
+        img_url:
+          'https://images.unsplash.com/photo-1582719201918-f1fa99cc3c1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+      },
     },
     'cc-3': {
       id: 'cc-3',
-      content: 'Charge my phone',
-      meta: { id: 'cc-3', cc_description: 'cc-3-d', img_url: 'img_url3' },
+      meta: {
+        id: 'cc-3',
+        cc_description: 'Charge my phone',
+        img_url:
+          'https://images.unsplash.com/photo-1621570168077-befe8b7eab56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+      },
     },
     'cc-4': {
       id: 'cc-4',
-      content: 'Charge my phone',
-      meta: { id: 'cc-4', cc_description: 'cc-4-d', img_url: 'img_url4' },
+      meta: {
+        id: 'cc-4',
+        cc_description: 'Charge my phone',
+        img_url:
+          'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+      },
     },
   },
   columns: {

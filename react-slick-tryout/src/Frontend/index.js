@@ -6,9 +6,7 @@ import ShareContextProvider from '../Backend/context/Share'
 function FrontEnd() {
   return (
     <>
-      <ShareContextProvider>
-        <FrontendDisplay />
-      </ShareContextProvider>
+      <FrontendDisplay />
     </>
   )
 }

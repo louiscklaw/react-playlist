@@ -11,33 +11,43 @@ const container = {
   marginBottom: '8px',
   backgroundColor: 'white',
   width: '300px',
+  overflow: 'hidden',
 }
 
-function CarouselConfig({ task, index }) {
+const gold_square = {
+  width: '30px',
+  height: '30px',
+  backgroundColor: 'pink',
+}
+
+function CarouselConfig({ carousel_config, index }) {
   let { handleItemEditClick, handleItemDeleteClick } = React.useContext(ShareContext)
   return (
     <>
-      <Draggable draggableId={task.id} index={index}>
+      <Draggable draggableId={carousel_config.id} index={index}>
         {provided => {
           return (
-            <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+            <div ref={provided.innerRef} {...provided.draggableProps}>
+              <div style={gold_square} {...provided.dragHandleProps}>
+                H
+              </div>
               <div>
                 <div style={container}>
                   <div>
-                    {task.content}
+                    <pre>{JSON.stringify(carousel_config.meta, null, 2)}</pre>
                     <button
                       onClick={e => {
-                        handleItemEditClick(e, task.id)
+                        handleItemEditClick(e, carousel_config.id)
                       }}
                     >
-                      edit
+                      E
                     </button>
                     <button
                       onClick={e => {
-                        handleItemDeleteClick(e, task.id)
+                        handleItemDeleteClick(e, carousel_config.id)
                       }}
                     >
-                      delete
+                      D
                     </button>
                   </div>
                 </div>

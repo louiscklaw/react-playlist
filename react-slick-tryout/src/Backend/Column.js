@@ -8,7 +8,6 @@ const container = {
   border: '1px solid lightgrey',
   borderRadius: '2px',
   width: '420px',
-
   display: 'flex',
   flexDirection: 'column',
 }
@@ -20,7 +19,7 @@ const task_list = {
   minHeight: '100px',
 }
 
-function Column({ column, tasks, index }) {
+function Column({ column, carousel_configs, index }) {
   let { handleColumnEditClick, handleColumnDeleteClick } = React.useContext(ShareContext)
 
   return (
@@ -51,8 +50,13 @@ function Column({ column, tasks, index }) {
           <Droppable droppableId={column.id}>
             {provided => (
               <div ref={provided.innerRef} style={task_list} {...provided.droppableProps}>
-                {tasks.map((task, index) => (
-                  <CarouselConfig key={task.id} task={task} index={index}></CarouselConfig>
+                {carousel_configs.map((carousel_config, index) => (
+                  <CarouselConfig
+                    key={carousel_config.id}
+                    task={carousel_config}
+                    carousel_config={carousel_config}
+                    index={index}
+                  ></CarouselConfig>
                 ))}
                 {provided.placeholder}
               </div>
