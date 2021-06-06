@@ -1,7 +1,7 @@
 import React from 'react'
 import { Draggable, Droppable } from 'react-beautiful-dnd'
 import { ShareContext } from './context/Share'
-import Task from './Task'
+import CarouselConfig from './CarouselConfig'
 
 const container = {
   margin: '8px',
@@ -52,7 +52,7 @@ function Column({ column, tasks, index }) {
             {provided => (
               <div ref={provided.innerRef} style={task_list} {...provided.droppableProps}>
                 {tasks.map((task, index) => (
-                  <Task key={task.id} task={task} index={index}></Task>
+                  <CarouselConfig key={task.id} task={task} index={index}></CarouselConfig>
                 ))}
                 {provided.placeholder}
               </div>
