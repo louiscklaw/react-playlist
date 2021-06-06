@@ -6,7 +6,7 @@ import { ShareContext } from './context/Share'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
 const container = {
-  width: '420px',
+  width: '100%',
   display: 'flex',
   flexFlow: 'column',
 }
@@ -91,13 +91,9 @@ export default function Helloworld() {
   return (
     <>
       <DragDropContext onDragEnd={onDragEnd}>
-        <Droppable
-          droppableId="all-columns"
-          // direction="horizontal"
-          type="column"
-        >
+        <Droppable droppableId="all-columns" type="column">
           {provided => (
-            <div ref={provided.innerRef} style={container} {...provided.droppableProps}>
+            <div ref={provided.innerRef} {...provided.droppableProps} style={container}>
               {state.columnOrder.map((columnId, index) => {
                 const column = state.columns[columnId]
                 const carousel_configs = column.carouselConfigIds.map(

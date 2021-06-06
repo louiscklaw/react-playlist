@@ -23,7 +23,7 @@ function FrontEnd() {
   React.useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 1000)
+    }, 100)
   }, [])
 
   return (
@@ -38,7 +38,7 @@ function FrontEnd() {
             {...cc_settings}
             style={{
               width: '100%',
-              height: '100%',
+              height: '500px',
 
               display: 'flex',
               flexFlow: 'column',
@@ -49,18 +49,49 @@ function FrontEnd() {
               let { img_url, cc_description } = cc_detail.meta
               return (
                 <>
-                  <div>
+                  <div
+                    style={{
+                      width: '100%',
+                      height: '500px',
+                    }}
+                  >
                     <div
                       style={{
                         width: '100%',
-                        height: '550px',
+                        height: '100%',
                         backgroundImage: `url(${img_url})`,
                         backgroundPosition: 'center',
-                        backgroundSize: 'contain',
+                        backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
+
+                        display: 'flex',
+                        flexFlow: 'column',
+                        justifyContent: 'flex-end',
+                        alignItems: 'flex-end',
                       }}
                     >
-                      {cc_description}
+                      <div
+                        style={{
+                          width: '100%',
+                          height: '5rem',
+
+                          color: 'white',
+
+                          background: 'rgba(0, 0, 0, 0.5)',
+                          backdropFilter: 'blur(30px)',
+                          borderRadius: '5px 5px 0px 0px',
+
+                          display: 'flex',
+                          flexFlow: 'column',
+                          justifyContent: 'center',
+                          alignItems: 'flex-start',
+                        }}
+                      >
+                        <div style={{ paddingLeft: '2rem' }}>
+                          <h3>title</h3>
+                          <p>{cc_description}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </>

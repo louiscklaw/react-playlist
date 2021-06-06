@@ -13,9 +13,10 @@ const container = {
 }
 
 const title = { padding: '8px' }
+
 const task_list = {
   padding: '8px',
-  backgroundColor: 'gold',
+  // backgroundColor: 'gold',
   minHeight: '100px',
 }
 
