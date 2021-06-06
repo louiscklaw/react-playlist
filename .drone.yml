@@ -17,10 +17,10 @@ steps:
       - yarn build
       - cd -
 
-  - name: react-helloworld-tryout
+  - name: react-visual-filter-tryout
     image: node:lts
     commands:
-      - cd react-helloworld-tryout
+      - cd react-visual-filter-tryout
       - yarn
       - yarn build
       - cd -
