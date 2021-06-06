@@ -1,3 +1,5 @@
+import React from 'react'
+
 const cc_settings = {
   dots: true,
   infinite: true,
@@ -6,4 +8,6 @@ const cc_settings = {
   slidesToScroll: 1,
 }
 
-export { cc_settings }
+export default function Settings() {
+  return <>Settings</>
+}

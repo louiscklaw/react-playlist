@@ -7,12 +7,10 @@ import 'slick-carousel/slick/slick-theme.css'
 import { ShareContext } from '../Backend/context/Share'
 import IsLoading from './IsLoading'
 
-import { cc_settings } from './cc_settings'
-
 function FrontEnd() {
   let [is_loading, setIsLoading] = React.useState(true)
 
-  let { state } = React.useContext(ShareContext)
+  let { state, cc_settings } = React.useContext(ShareContext)
 
   let [active_carousel_config_id_details, setActiveCarouselConfigIdDetails] = React.useState([])
   React.useEffect(() => {
