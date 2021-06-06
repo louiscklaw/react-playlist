@@ -1,7 +1,7 @@
 import React from 'react'
 import { Draggable, Droppable } from 'react-beautiful-dnd'
 import { ShareContext } from './context/Share'
-import CarouselConfig from './CarouselConfig'
+import Task from './Task'
 
 const container = {
   margin: '8px',
@@ -16,10 +16,11 @@ const container = {
 const title = { padding: '8px' }
 const task_list = {
   padding: '8px',
+  backgroundColor: 'gold',
   minHeight: '100px',
 }
 
-function Column({ column, carousel_configs, index }) {
+function Column({ column, tasks, index }) {
   let { handleColumnEditClick, handleColumnDeleteClick } = React.useContext(ShareContext)
 
   return (
@@ -50,8 +51,8 @@ function Column({ column, carousel_configs, index }) {
           <Droppable droppableId={column.id}>
             {provided => (
               <div ref={provided.innerRef} style={task_list} {...provided.droppableProps}>
-                {carousel_configs.map((carousel_config, index) => (
-                  <CarouselConfig key={carousel_config.id} task={carousel_config} index={index} />
+                {tasks.map((task, index) => (
+                  <Task key={task.id} task={task} index={index}></Task>
                 ))}
                 {provided.placeholder}
               </div>

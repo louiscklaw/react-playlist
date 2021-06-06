@@ -1,10 +1,9 @@
 import React from 'react'
-
-import { DragDropContext, Droppable } from 'react-beautiful-dnd'
+import Column from './Column'
 
 import { ShareContext } from './context/Share'
 
-import Column from './Column'
+import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
 const container = {
   width: '420px',
@@ -12,7 +11,7 @@ const container = {
   flexFlow: 'column',
 }
 
-export default function Editor() {
+export default function Helloworld() {
   let { state, setState } = React.useContext(ShareContext)
 
   const onDragEnd = result => {
@@ -40,13 +39,13 @@ export default function Editor() {
     const finish = state.columns[destination.droppableId]
 
     if (start === finish) {
-      let newTaskIds = Array.from(start.taskIds)
+      let newTaskIds = Array.from(start.carouselConfigIds)
       newTaskIds.splice(source.index, 1)
       newTaskIds.splice(destination.index, 0, draggableId)
 
       let newColumn = {
         ...start,
-        taskIds: newTaskIds,
+        carouselConfigIds: newTaskIds,
       }
 
       let newState = {
@@ -64,18 +63,18 @@ export default function Editor() {
     }
 
     // Moving from one list to another
-    const startTaskIds = Array.from(start.taskIds)
+    const startTaskIds = Array.from(start.carouselConfigIds)
     startTaskIds.splice(source.index, 1)
     const newStart = {
       ...start,
-      taskIds: startTaskIds,
+      carouselConfigIds: startTaskIds,
     }
 
-    const finishTaskIds = Array.from(finish.taskIds)
+    const finishTaskIds = Array.from(finish.carouselConfigIds)
     finishTaskIds.splice(destination.index, 0, draggableId)
     const newFinish = {
       ...finish,
-      taskIds: finishTaskIds,
+      carouselConfigIds: finishTaskIds,
     }
 
     const newState = {
@@ -101,25 +100,15 @@ export default function Editor() {
             <div ref={provided.innerRef} style={container} {...provided.droppableProps}>
               {state.columnOrder.map((columnId, index) => {
                 const column = state.columns[columnId]
-                const carousel_configs = column.carouselConfigIds.map(
-                  carouselConfigId => state.carousel_configs[carouselConfigId],
-                )
+                const tasks = column.carouselConfigIds.map(taskId => state.carousel_configs[taskId])
 
-                return (
-                  <Column
-                    key={column.id}
-                    column={column}
-                    carousel_configs={carousel_configs}
-                    index={index}
-                  />
-                )
+                return <Column key={column.id} column={column} tasks={tasks} index={index} />
               })}
               {provided.placeholder}
             </div>
           )}
         </Droppable>
       </DragDropContext>
-      <pre>{JSON.stringify(state, null, 2)}</pre>
     </>
   )
 }

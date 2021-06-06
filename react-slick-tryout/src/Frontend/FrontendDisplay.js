@@ -30,7 +30,7 @@ function FrontEnd() {
         }}
       >
         {active_carousel_config_id_details.map(cc_detail => {
-          let { img_url, cc_description } = cc_detail.content
+          let { img_url, cc_description } = cc_detail.meta
           return (
             <>
               <div>
