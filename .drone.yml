@@ -11,8 +11,8 @@ steps:
       - echo hello
       - echo world
       - echo $DRONE_BRANCH
-      - pushd react-helloworld-tryout
+      - cd react-helloworld-tryout
       - yarn
       - yarn test
       - yarn build
-      - popd
+      - cd -
