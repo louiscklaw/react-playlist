@@ -16,3 +16,11 @@ steps:
       - yarn test
       - yarn build
       - cd -
+
+  - name: react-helloworld-tryout
+    image: node:lts
+    commands:
+      - cd react-helloworld-tryout
+      - yarn
+      - yarn build
+      - cd -
