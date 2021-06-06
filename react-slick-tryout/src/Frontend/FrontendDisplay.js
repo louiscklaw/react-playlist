@@ -11,6 +11,7 @@ function FrontEnd() {
   let [is_loading, setIsLoading] = React.useState(true)
 
   let { state, cc_settings } = React.useContext(ShareContext)
+  let { cc_statistics, setCcStatistics } = React.useContext(ShareContext)
 
   let [active_carousel_config_id_details, setActiveCarouselConfigIdDetails] = React.useState([])
   React.useEffect(() => {
@@ -19,6 +20,25 @@ function FrontEnd() {
       active_carousel_config_ids.map(cc_id => state.carousel_configs[cc_id]),
     )
   }, [state])
+
+  const account_cc_show = cc_idx => {
+    setCcStatistics({
+      ...cc_statistics,
+      show: { ...cc_statistics.show, [cc_idx]: cc_statistics.show[cc_idx] + 1 },
+    })
+  }
+
+  const account_cc_click = cc_idx => {
+    console.log('click', 'cc_idx', cc_idx)
+    console.log('click', 'cc_statistics.click[cc_idx]', cc_statistics.click[cc_idx])
+    setCcStatistics({
+      ...cc_statistics,
+      click: {
+        ...cc_statistics.click,
+        [cc_idx]: cc_statistics.click[cc_idx] + 1,
+      },
+    })
+  }
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -34,26 +54,29 @@ function FrontEnd() {
         </>
       ) : (
         <>
-          <Slider
-            {...cc_settings}
-            style={{
-              width: '100%',
-              height: '500px',
+          <div style={{ paddingBottom: '3rem' }}>
+            <Slider
+              {...cc_settings}
+              style={{
+                width: '100%',
+                height: '500px',
 
-              display: 'flex',
-              flexFlow: 'column',
-              justifyContent: 'center',
-            }}
-          >
-            {active_carousel_config_id_details.map(cc_detail => {
-              let { img_url, cc_description } = cc_detail.meta
-              return (
-                <>
+                display: 'flex',
+                flexFlow: 'column',
+                justifyContent: 'center',
+              }}
+              afterChange={idx => account_cc_show(idx)}
+            >
+              {active_carousel_config_id_details.map((cc_detail, idx) => {
+                let { img_url, cc_description } = cc_detail.meta
+                return (
                   <div
+                    key={`cc_idx_${idx}`}
                     style={{
                       width: '100%',
                       height: '500px',
                     }}
+                    onClick={e => account_cc_click(idx)}
                   >
                     <div
                       style={{
@@ -94,10 +117,10 @@ function FrontEnd() {
                       </div>
                     </div>
                   </div>
-                </>
-              )
-            })}
-          </Slider>
+                )
+              })}
+            </Slider>
+          </div>
         </>
       )}
     </>
