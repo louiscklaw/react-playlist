@@ -6,4 +6,4 @@ npx browserslist@latest --update-db
 
 yarn
 
-yarn start
+yarn build
