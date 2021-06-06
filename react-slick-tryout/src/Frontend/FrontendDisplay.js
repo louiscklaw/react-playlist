@@ -81,7 +81,7 @@ function FrontEnd() {
                     <div
                       style={{
                         width: '100%',
-                        height: '100%',
+                        height: '500px',
                         backgroundImage: `url(${img_url})`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
