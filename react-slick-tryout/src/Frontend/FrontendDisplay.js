@@ -7,6 +7,28 @@ import 'slick-carousel/slick/slick-theme.css'
 import { ShareContext } from '../Backend/context/Share'
 import IsLoading from './IsLoading'
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', paddingRight: '3rem', zIndex: 1 }}
+      onClick={onClick}
+    />
+  )
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', paddingLeft: '3rem', zIndex: 1 }}
+      onClick={onClick}
+    />
+  )
+}
+
 function FrontEnd() {
   let [is_loading, setIsLoading] = React.useState(true)
 
@@ -65,6 +87,8 @@ function FrontEnd() {
                 flexFlow: 'column',
                 justifyContent: 'center',
               }}
+              nextArrow={<SampleNextArrow />}
+              prevArrow={<SamplePrevArrow />}
               afterChange={idx => account_cc_show(idx)}
             >
               {active_carousel_config_id_details.map((cc_detail, idx) => {

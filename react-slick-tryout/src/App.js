@@ -16,9 +16,9 @@ function App() {
             alignItems: 'center',
           }}
         >
-          <div style={{ height: '75vh', width: '50vw', overflow: 'hidden' }}>
+          <div style={{ height: '75vh', width: '50vw' }}>
             <div>Frontend</div>
-            <div style={{ width: '100%', height: '50%' }}>
+            <div style={{ width: '100%', height: '50%', backgroundColor: 'gold' }}>
               <Frontend />
             </div>
           </div>
