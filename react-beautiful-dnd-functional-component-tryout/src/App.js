@@ -14,16 +14,13 @@ const container = {
 export default function Helloworld() {
   let { state, setState } = React.useContext(ShareContext)
 
-  const onDragEnd = (result) => {
+  const onDragEnd = result => {
     const { destination, source, draggableId, type } = result
     if (!destination) {
       return
     }
 
-    if (
-      destination.droppableId === source.droppableId &&
-      destination.index === source.index
-    ) {
+    if (destination.droppableId === source.droppableId && destination.index === source.index) {
       return
     }
 
@@ -89,37 +86,23 @@ export default function Helloworld() {
       },
     }
     setState(newState)
-
   }
 
   return (
     <>
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable
-          droppableId='all-columns'
+          droppableId="all-columns"
           // direction="horizontal"
-          type='column'
+          type="column"
         >
-          {(provided) => (
-            <div
-              ref={provided.innerRef}
-              style={container}
-              {...provided.droppableProps}
-            >
+          {provided => (
+            <div ref={provided.innerRef} style={container} {...provided.droppableProps}>
               {state.columnOrder.map((columnId, index) => {
                 const column = state.columns[columnId]
-                const tasks = column.taskIds.map(
-                  (taskId) => state.tasks[taskId],
-                )
+                const tasks = column.taskIds.map(taskId => state.tasks[taskId])
 
-                return (
-                  <Column
-                    key={column.id}
-                    column={column}
-                    tasks={tasks}
-                    index={index}
-                  />
-                )
+                return <Column key={column.id} column={column} tasks={tasks} index={index} />
               })}
               {provided.placeholder}
             </div>

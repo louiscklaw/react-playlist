@@ -1,17 +1,17 @@
-import React, { useContext } from "react";
-import "../App.css";
-import firebase from "firebase";
-import { FirebaseAuth } from "react-firebaseui";
-import { AuthContext } from "../Firebase/context";
-import { Redirect } from "react-router-dom";
+import React, { useContext } from 'react'
+import '../App.css'
+import firebase from 'firebase'
+import { FirebaseAuth } from 'react-firebaseui'
+import { AuthContext } from '../Firebase/context'
+import { Redirect } from 'react-router-dom'
 
 export default function SignIn() {
   //get the user state from the context
-  const { user } = useContext(AuthContext);
+  const { user } = useContext(AuthContext)
 
   //this is our config for FirebaseAuth
   const uiConfig = {
-    signInFlow: "popup",
+    signInFlow: 'popup',
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       firebase.auth.FacebookAuthProvider.PROVIDER_ID,
@@ -20,13 +20,13 @@ export default function SignIn() {
     callbacks: {
       signInSuccess: () => false,
     },
-  };
+  }
 
-//if user exists or signed in, we redirect the page to home, else display the sign in methods with FirebaseAuth
+  //if user exists or signed in, we redirect the page to home, else display the sign in methods with FirebaseAuth
   return (
     <div>
       {!!user ? (
-        <Redirect to={{ pathname: "/" }} />
+        <Redirect to={{ pathname: '/' }} />
       ) : (
         <div>
           <p>Please Sign In</p>
@@ -34,5 +34,5 @@ export default function SignIn() {
         </div>
       )}
     </div>
-  );
+  )
 }

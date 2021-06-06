@@ -1,16 +1,16 @@
-import firebase from "firebase";
-import "firebase/auth";
+import firebase from 'firebase'
+import 'firebase/auth'
 
 const fb_config = {
-  apiKey: "AIzaSyBZ5IkKyebNRzt8dwlt8JY_41BENdakzxA",
-  authDomain: "react-tryout-e8aa2.firebaseapp.com",
-  databaseURL: "https://react-tryout-e8aa2.firebaseio.com",
-  projectId: "react-tryout-e8aa2",
-  storageBucket: "react-tryout-e8aa2.appspot.com",
-  messagingSenderId: "665011834822",
-  appId: "1:665011834822:web:7eddaca64f46f5bcc6ecc7"
-};
+  apiKey: 'AIzaSyDK21LG5IV2ajFzVa1V0jZhAxR4ar37mrk',
+  appId: '1:335675372584:web:ab02b5849ff52bb5f1711d',
+  authDomain: 'lynked-demo-tryout.firebaseapp.com',
+  measurementId: 'G-E4KY2LRKDF',
+  messagingSenderId: '335675372584',
+  projectId: 'lynked-demo-tryout',
+  storageBucket: 'lynked-demo-tryout.appspot.com',
+}
 
 const app = firebase.initializeApp(fb_config)
 
-export default app;
+export default app

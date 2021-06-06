@@ -6,13 +6,16 @@ import { debounce } from 'lodash-es'
 export default function App() {
   let [test_height, setTestHeight] = React.useState(window.innerHeight)
 
+  const debouncedSetHeight = debounce(() => {
+    setTestHeight(window.innerHeight)
+  }, 100)
+
   React.useEffect(() => {
-    window.addEventListener(
-      'resize',
-      debounce(() => {
-        setTestHeight(window.innerHeight)
-      }, 100),
-    )
+    window.addEventListener('resize', debouncedSetHeight)
+
+    return () => {
+      window.removeEventListener('resize', debouncedSetHeight)
+    }
   }, [])
 
   return (
