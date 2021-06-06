@@ -6,13 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import { ShareContext } from '../Backend/context/Share'
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-}
+import { cc_settings } from './cc_settings'
 
 function FrontEnd() {
   let { state } = React.useContext(ShareContext)
@@ -25,7 +19,7 @@ function FrontEnd() {
   return (
     <>
       <Slider
-        {...settings}
+        {...cc_settings}
         style={{
           width: '100%',
           height: '100%',
