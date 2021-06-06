@@ -37,14 +37,14 @@ function Column({ column, carousel_configs, index }) {
                   handleColumnEditClick(e, column.id)
                 }}
               >
-                edit
+                E
               </button>
               <button
                 onClick={e => {
                   handleColumnDeleteClick(e, column.id)
                 }}
               >
-                delete
+                D
               </button>
             </div>
           </div>
@@ -52,6 +52,7 @@ function Column({ column, carousel_configs, index }) {
             {provided => (
               <div ref={provided.innerRef} style={task_list} {...provided.droppableProps}>
                 {carousel_configs.map((carousel_config, index) => (
+                  // TaskList
                   <CarouselConfig
                     key={carousel_config.id}
                     task={carousel_config}
