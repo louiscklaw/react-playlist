@@ -40,6 +40,19 @@ jobs:
             yarn build
           popd
   # 
+  # /home/logic/_workspace/react-playlist/react-atomize-helloworld-tryout/build.yml
+  # 
+  react-atomize-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-atomize-helloworld-tryout
+            yarn
+            yarn build
+          popd
+  
+  # 
   # /home/logic/_workspace/react-playlist/react-bcrypt-tryout/build.yml
   # 
   react-bcrypt-tryout:
@@ -160,18 +173,6 @@ jobs:
             yarn build
           popd
   # 
-  # /home/logic/_workspace/react-playlist/react-chrono-tryout-working/build.yml
-  # 
-  react-chrono-tryout-working:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: |
-          pushd react-chrono-tryout-working
-            yarn
-            yarn build
-          popd
-  # 
   # /home/logic/_workspace/react-playlist/react-chrono-tryout/build.yml
   # 
   react-chrono-tryout:
@@ -231,6 +232,19 @@ jobs:
             yarn
             yarn build
           popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-dotenv-tryout/build.yml
+  # 
+  react-dotenv-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-dotenv-tryout
+            yarn
+            yarn build
+          popd
+  
   # 
   # /home/logic/_workspace/react-playlist/react-draft-js-tryout/build.yml
   # 
@@ -472,6 +486,19 @@ jobs:
             yarn build
           popd
   # 
+  # /home/logic/_workspace/react-playlist/react-frontend-backend-tryout/build.yml
+  # 
+  react-frontend-backend-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-frontend-backend-tryout
+            yarn
+            yarn build
+          popd
+  
+  # 
   # /home/logic/_workspace/react-playlist/react-full-screen-tryout/build.yml
   # 
   react-full-screen-tryout:
@@ -664,6 +691,19 @@ jobs:
             yarn build
           popd
   # 
+  # /home/logic/_workspace/react-playlist/react-kawaii-tryout/build.yml
+  # 
+  react-kawaii-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-kawaii-tryout
+            yarn
+            yarn build
+          popd
+  
+  # 
   # /home/logic/_workspace/react-playlist/react-lazy-load-image-component-tryout/build.yml
   # 
   react-lazy-load-image-component-tryout:
@@ -712,14 +752,27 @@ jobs:
             yarn build
           popd
   # 
-  # /home/logic/_workspace/react-playlist/react-lynked-component-tryout-old/build.yml
+  # /home/logic/_workspace/react-playlist/react-localStorage-tryout/build.yml
   # 
-  react-lynked-component-tryout-old:
+  react-localStorage-tryout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: |
-          pushd react-lynked-component-tryout-old
+          pushd react-localStorage-tryout
+            yarn
+            yarn build
+          popd
+  
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-CssBaseline-tryout/build.yml
+  # 
+  react-material-ui-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-helloworld-tryout
             yarn
             yarn build
           popd
@@ -756,6 +809,18 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           pushd react-material-ui-bottomNavigation-tryout
+            yarn
+            yarn build
+          popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-material-ui-data-grid-helloworld-tryout/build.yml
+  # 
+  react-material-ui-helloworld-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-material-ui-helloworld-tryout
             yarn
             yarn build
           popd
@@ -939,6 +1004,19 @@ jobs:
             yarn
             yarn build
           popd
+  # 
+  # /home/logic/_workspace/react-playlist/react-numpad-tryout/build.yml
+  # 
+  react-numpad-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-numpad-tryout
+            yarn
+            yarn build
+          popd
+  
   # 
   # /home/logic/_workspace/react-playlist/react-pdf-renderer-tryout/build.yml
   # 
@@ -1204,6 +1282,19 @@ jobs:
             yarn build
           popd
   # 
+  # /home/logic/_workspace/react-playlist/react-test-ads-show-tryout/build.yml
+  # 
+  react-test-ads-show-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-test-ads-show-tryout
+            yarn
+            yarn build
+          popd
+  
+  # 
   # /home/logic/_workspace/react-playlist/react-test-tryout/build.yml
   # 
   react-test-tryout:
@@ -1264,6 +1355,19 @@ jobs:
             yarn build
           popd
   # 
+  # /home/logic/_workspace/react-playlist/react-use-clipboard-copy-tryout/build.yml
+  # 
+  react-use-clipboard-copy-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-use-clipboard-copy-tryout
+            yarn
+            yarn build
+          popd
+  
+  # 
   # /home/logic/_workspace/react-playlist/react-yup-tryout/build.yml
   # 
   react-yup-tryout:
@@ -1320,7 +1424,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [bumbag-tryout, meme-material-ui-tryout, publish-orphan-tryout, react-bcrypt-tryout, react-beautiful-dnd-drag-handle-tryout, react-beautiful-dnd-functional-component-tryout, react-beautiful-dnd-helloworld-tryout, react-beautiful-dnd-horizontal-tryout, react-beautiful-dnd-tryout, react-blink-text-tryout, react-block-and-then-redirect-tryout, react-browser-detection-tryout, react-calendar-heatmap-tryout, react-chrono-tryout, react-chrono-tryout-working, react-code-splitting-tryout, react-countup-tryout, react-daterange-picker-tryout, react-detect-offline-tryout, react-draft-js-tryout, react-dropzone-component-helloworld-tryout, react-dropzone-helloworld-tryout, react-dropzone-uploader-helloworld-tryout, react-easy-edit-tryout, react-favico-js-tryout, react-firebase-cloud-storage-helloworld-tryout, react-firebase-helloworld-tryout, react-flip-move-tryout, react-flippy-material-ui-tryout, react-food-cart-tryout, react-formik-material-ui-autocomplete-tryout, react-formik-material-ui-checkbox-tryout, react-formik-material-ui-radio-button-tryout, react-formik-material-ui-select-tryout, react-formik-material-ui-switch-tryout, react-formik-radio-button-tryout, react-formik-subform-tryout, react-formik-tryout, react-formik-upload-file-tryout, react-full-screen-tryout, react-fullpage-tryout, react-geolocation-call-tryout, react-google-maps-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, react-helmet-tryout, react-hide-console-message-in-production-tryout, react-hot-toast-tryout, react-image-overlay-tryout, react-image-upload-organize-tryout, react-images-upload-tryout, react-jest-image-snapshot-tryout, react-jest-tryout, react-jodit-tryout, react-joyride-helloworld-tryout, react-lazy-load-image-component-tryout, react-lazy-tryout, react-leaflet-tryout, react-loading-spinkit-tryout, react-lynked-component-tryout-old, react-material-ui-accordion-tryout, react-material-ui-autocomplete-multiple-values-tryout, react-material-ui-bottomNavigation-tryout, react-material-ui-datatables-tryout, react-material-ui-helloworld-tryout, react-material-ui-markdown-editor-tryout, react-material-ui-multiple-select-tryout, react-material-ui-notistack-tryout, react-material-ui-sortable-table-tryout, react-materialui-daterange-picker-tryout, react-mobile-layout-tryout, react-mobile-picker-tryout, react-moment-timezone-tryout, react-mui-dropzone-tryout, react-mui-timeline-tryout, react-my-image-upload-tryout, react-nextra-tryout, react-number-format-tryout, react-pdf-renderer-tryout, react-progressive-image-tryout, react-qr-code-with-frame-tryout, react-qrcode-react-tryout, react-qrcode-tryout, react-quill-tryout, react-react-router-history-tryout, react-router-dom-layout-tryout, react-router-dom-tryout, react-router-object-base-route-tryout, react-router-switch-tryout, react-router-tryout, react-scrollable-view-tryout, react-scrolling-tryout, react-send-get-request-tryout, react-skeleton-tryout, react-slick-tryout, react-snap-tryout, react-stripe-connect-button-tryout, react-stripe-helloworld-tryout, react-stripe-payment-request-button-tryout, react-stripe-setup-payouts-tryout, react-test-tryout, react-toast-notifications-tryout, react-top-loading-bar-tryout, react-upload-and-organize-tryout, react-use-api-tryout, react-yup-tryout, reactjs-line-login-tryout, test_merger]
+    needs: [bumbag-tryout, meme-material-ui-tryout, publish-orphan-tryout, react-atomize-helloworld-tryout, react-bcrypt-tryout, react-beautiful-dnd-drag-handle-tryout, react-beautiful-dnd-functional-component-tryout, react-beautiful-dnd-helloworld-tryout, react-beautiful-dnd-horizontal-tryout, react-beautiful-dnd-tryout, react-blink-text-tryout, react-block-and-then-redirect-tryout, react-browser-detection-tryout, react-calendar-heatmap-tryout, react-chrono-tryout, react-code-splitting-tryout, react-countup-tryout, react-daterange-picker-tryout, react-detect-offline-tryout, react-dotenv-tryout, react-draft-js-tryout, react-dropzone-component-helloworld-tryout, react-dropzone-helloworld-tryout, react-dropzone-uploader-helloworld-tryout, react-easy-edit-tryout, react-favico-js-tryout, react-firebase-cloud-storage-helloworld-tryout, react-firebase-helloworld-tryout, react-flip-move-tryout, react-flippy-material-ui-tryout, react-food-cart-tryout, react-formik-material-ui-autocomplete-tryout, react-formik-material-ui-checkbox-tryout, react-formik-material-ui-radio-button-tryout, react-formik-material-ui-select-tryout, react-formik-material-ui-switch-tryout, react-formik-radio-button-tryout, react-formik-subform-tryout, react-formik-tryout, react-formik-upload-file-tryout, react-frontend-backend-tryout, react-full-screen-tryout, react-fullpage-tryout, react-geolocation-call-tryout, react-google-maps-tryout, react-heatmap-grid-tryout, react-helloworld-tryout, react-helmet-tryout, react-hide-console-message-in-production-tryout, react-hot-toast-tryout, react-image-overlay-tryout, react-image-upload-organize-tryout, react-images-upload-tryout, react-jest-image-snapshot-tryout, react-jest-tryout, react-jodit-tryout, react-joyride-helloworld-tryout, react-kawaii-tryout, react-lazy-load-image-component-tryout, react-lazy-tryout, react-leaflet-tryout, react-loading-spinkit-tryout, react-localStorage-tryout, react-material-ui-accordion-tryout, react-material-ui-autocomplete-multiple-values-tryout, react-material-ui-bottomNavigation-tryout, react-material-ui-datatables-tryout, react-material-ui-helloworld-tryout, react-material-ui-helloworld-tryout, react-material-ui-helloworld-tryout, react-material-ui-markdown-editor-tryout, react-material-ui-multiple-select-tryout, react-material-ui-notistack-tryout, react-material-ui-sortable-table-tryout, react-materialui-daterange-picker-tryout, react-mobile-layout-tryout, react-mobile-picker-tryout, react-moment-timezone-tryout, react-mui-dropzone-tryout, react-mui-timeline-tryout, react-my-image-upload-tryout, react-nextra-tryout, react-number-format-tryout, react-numpad-tryout, react-pdf-renderer-tryout, react-progressive-image-tryout, react-qr-code-with-frame-tryout, react-qrcode-react-tryout, react-qrcode-tryout, react-quill-tryout, react-react-router-history-tryout, react-router-dom-layout-tryout, react-router-dom-tryout, react-router-object-base-route-tryout, react-router-switch-tryout, react-router-tryout, react-scrollable-view-tryout, react-scrolling-tryout, react-send-get-request-tryout, react-skeleton-tryout, react-slick-tryout, react-snap-tryout, react-stripe-connect-button-tryout, react-stripe-helloworld-tryout, react-stripe-payment-request-button-tryout, react-stripe-setup-payouts-tryout, react-test-ads-show-tryout, react-test-tryout, react-toast-notifications-tryout, react-top-loading-bar-tryout, react-upload-and-organize-tryout, react-use-api-tryout, react-use-clipboard-copy-tryout, react-yup-tryout, reactjs-line-login-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
