@@ -11,6 +11,8 @@ import ExampleStarRating from 'src/components/ExampleStarRating';
 import ExampleEmoticonsRating from 'src/components/ExampleEmoticonsRating';
 import ExampleProgressSteps from 'src/components/ExampleProgressSteps';
 import ExampleNumberedProgressSteps from 'src/components/ExampleNumberedProgressSteps';
+import ExampleProgressStepsDottedUsage from 'src/components/ExampleProgressStepsDottedUsage';
+import ExampleSnackbar from 'src/components/ExampleSnackbar';
 
 import { theme } from 'src/themes/index';
 
@@ -52,6 +54,15 @@ function App() {
               </div>
               <div style={{ margin: '3rem' }}>
                 <ExampleNumberedProgressSteps />
+              </div>
+
+              <div style={{ margin: '3rem' }}>
+                <ExampleProgressStepsDottedUsage />
+              </div>
+            </Centered>
+            <Centered>
+              <div style={{ margin: '3rem' }}>
+                <ExampleSnackbar />
               </div>
             </Centered>
           </BaseProvider>
