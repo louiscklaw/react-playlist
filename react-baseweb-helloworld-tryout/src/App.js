@@ -7,6 +7,8 @@ import { StatefulInput } from 'baseui/input';
 
 import ExampleButton from 'src/components/ExampleButton';
 import ExampleOKButton from 'src/components/ExampleOKButton';
+import ExampleStarRating from 'src/components/ExampleStarRating';
+import ExampleEmoticonsRating from 'src/components/ExampleEmoticonsRating';
 
 import { theme } from 'src/themes/index';
 
@@ -34,6 +36,14 @@ function App() {
               </div>
               <div style={{ margin: '3rem' }}>
                 <ExampleOKButton />
+              </div>
+            </Centered>
+            <Centered>
+              <div style={{ margin: '3rem' }}>
+                <ExampleStarRating />
+              </div>
+              <div style={{ margin: '3rem' }}>
+                <ExampleEmoticonsRating />
               </div>
             </Centered>
           </BaseProvider>
