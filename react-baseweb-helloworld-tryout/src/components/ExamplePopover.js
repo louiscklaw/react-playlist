@@ -11,7 +11,10 @@ export default () => {
     <StatefulPopover
       content={() => (
         <Block padding={'20px'}>
-          Hello, there! 👋
+          Hello, there!{' '}
+          <span role="img" aria-label="👋">
+            👋
+          </span>
           <Input placeholder="Focusable Element" />
         </Block>
       )}
