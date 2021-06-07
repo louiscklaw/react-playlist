@@ -9,6 +9,8 @@ import ExampleButton from 'src/components/ExampleButton';
 import ExampleOKButton from 'src/components/ExampleOKButton';
 import ExampleStarRating from 'src/components/ExampleStarRating';
 import ExampleEmoticonsRating from 'src/components/ExampleEmoticonsRating';
+import ExampleProgressSteps from 'src/components/ExampleProgressSteps';
+import ExampleNumberedProgressSteps from 'src/components/ExampleNumberedProgressSteps';
 
 import { theme } from 'src/themes/index';
 
@@ -44,6 +46,12 @@ function App() {
               </div>
               <div style={{ margin: '3rem' }}>
                 <ExampleEmoticonsRating />
+              </div>
+              <div style={{ margin: '3rem' }}>
+                <ExampleProgressSteps />
+              </div>
+              <div style={{ margin: '3rem' }}>
+                <ExampleNumberedProgressSteps />
               </div>
             </Centered>
           </BaseProvider>
