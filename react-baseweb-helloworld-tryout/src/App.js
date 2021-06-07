@@ -2,10 +2,11 @@ import React from 'react';
 
 import { Client as Styletron } from 'styletron-engine-atomic';
 import { Provider as StyletronProvider } from 'styletron-react';
-import { LightTheme, DarkTheme, BaseProvider, styled } from 'baseui';
+import { BaseProvider, styled } from 'baseui';
 import { StatefulInput } from 'baseui/input';
 
 import ExampleButton from 'src/components/ExampleButton';
+import ExampleOKButton from 'src/components/ExampleOKButton';
 
 import { theme } from 'src/themes/index';
 
@@ -25,11 +26,16 @@ function App() {
         <StyletronProvider value={engine}>
           <BaseProvider theme={theme}>
             <Centered>
-              <StatefulInput />
+              <div style={{ margin: '3rem' }}>
+                <StatefulInput placeholder="StatefulInput" />
+              </div>
+              <div style={{ margin: '3rem' }}>
+                <ExampleButton />
+              </div>
+              <div style={{ margin: '3rem' }}>
+                <ExampleOKButton />
+              </div>
             </Centered>
-            <div>
-              <ExampleButton />
-            </div>
           </BaseProvider>
         </StyletronProvider>
       </div>
