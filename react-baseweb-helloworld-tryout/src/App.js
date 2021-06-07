@@ -13,6 +13,7 @@ import ExampleProgressSteps from 'src/components/ExampleProgressSteps';
 import ExampleNumberedProgressSteps from 'src/components/ExampleNumberedProgressSteps';
 import ExampleProgressStepsDottedUsage from 'src/components/ExampleProgressStepsDottedUsage';
 import ExampleSnackbar from 'src/components/ExampleSnackbar';
+import ExampleDrawer from 'src/components/ExampleDrawer';
 
 import { theme } from 'src/themes/index';
 
@@ -63,6 +64,9 @@ function App() {
             <Centered>
               <div style={{ margin: '3rem' }}>
                 <ExampleSnackbar />
+              </div>
+              <div style={{ margin: '3rem' }}>
+                <ExampleDrawer />
               </div>
             </Centered>
           </BaseProvider>
