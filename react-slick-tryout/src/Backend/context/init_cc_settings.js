@@ -4,7 +4,7 @@ const cc_settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
-}
+  autoplaySpeed: 15000,
+};
 
-export default cc_settings
+export default cc_settings;

@@ -1,72 +1,77 @@
-import React from 'react'
-import Slider from 'react-slick'
+import React from 'react';
+import Slider from 'react-slick';
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import { ShareContext } from '../Backend/context/Share'
-import IsLoading from './IsLoading'
+import { ShareContext } from '../Backend/context/Share';
+import IsLoading from './IsLoading';
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props
+  const { className, style, onClick } = props;
   return (
     <div
       className={className}
       style={{ ...style, display: 'block', paddingRight: '3rem', zIndex: 1 }}
       onClick={onClick}
     />
-  )
+  );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props
+  const { className, style, onClick } = props;
   return (
     <div
       className={className}
       style={{ ...style, display: 'block', paddingLeft: '3rem', zIndex: 1 }}
       onClick={onClick}
     />
-  )
+  );
 }
 
 function FrontEnd() {
-  let [is_loading, setIsLoading] = React.useState(true)
+  let [is_loading, setIsLoading] = React.useState(true);
 
-  let { state, cc_settings } = React.useContext(ShareContext)
-  let { cc_statistics, setCcStatistics } = React.useContext(ShareContext)
+  let { state, cc_settings } = React.useContext(ShareContext);
+  let { cc_statistics, setCcStatistics } = React.useContext(ShareContext);
 
-  let [active_carousel_config_id_details, setActiveCarouselConfigIdDetails] = React.useState([])
+  let [active_carousel_config_id_details, setActiveCarouselConfigIdDetails] =
+    React.useState([]);
   React.useEffect(() => {
-    let active_carousel_config_ids = state.columns.active.carouselConfigIds
+    let active_carousel_config_ids = state.columns.active.carouselConfigIds;
     setActiveCarouselConfigIdDetails(
-      active_carousel_config_ids.map(cc_id => state.carousel_configs[cc_id]),
-    )
-  }, [state])
+      active_carousel_config_ids.map((cc_id) => state.carousel_configs[cc_id])
+    );
+  }, [state]);
 
-  const account_cc_show = cc_idx => {
+  const account_cc_show = (cc_idx) => {
     setCcStatistics({
       ...cc_statistics,
       show: { ...cc_statistics.show, [cc_idx]: cc_statistics.show[cc_idx] + 1 },
-    })
-  }
+    });
+  };
 
-  const account_cc_click = cc_idx => {
-    console.log('click', 'cc_idx', cc_idx)
-    console.log('click', 'cc_statistics.click[cc_idx]', cc_statistics.click[cc_idx])
+  const account_cc_click = (cc_idx) => {
+    console.log('click', 'cc_idx', cc_idx);
+    console.log(
+      'click',
+      'cc_statistics.click[cc_idx]',
+      cc_statistics.click[cc_idx]
+    );
     setCcStatistics({
       ...cc_statistics,
       click: {
         ...cc_statistics.click,
         [cc_idx]: cc_statistics.click[cc_idx] + 1,
       },
-    })
-  }
+    });
+  };
 
   React.useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false)
-    }, 100)
-  }, [])
+      setIsLoading(false);
+    }, 100);
+  }, []);
 
   return (
     <>
@@ -81,7 +86,7 @@ function FrontEnd() {
               {...cc_settings}
               style={{
                 width: '100%',
-                height: '500px',
+                height: '300px',
 
                 display: 'flex',
                 flexFlow: 'column',
@@ -89,26 +94,26 @@ function FrontEnd() {
               }}
               nextArrow={<SampleNextArrow />}
               prevArrow={<SamplePrevArrow />}
-              afterChange={idx => account_cc_show(idx)}
+              afterChange={(idx) => account_cc_show(idx)}
             >
               {active_carousel_config_id_details.map((cc_detail, idx) => {
-                let { img_url, cc_description } = cc_detail.meta
+                let { cc_title, img_url, cc_description } = cc_detail.meta;
                 return (
                   <div
                     key={`cc_idx_${idx}`}
                     style={{
                       width: '100%',
-                      height: '500px',
+                      height: '300px',
                     }}
-                    onClick={e => account_cc_click(idx)}
+                    onClick={(e) => account_cc_click(idx)}
                   >
                     <div
                       style={{
                         width: '100%',
-                        height: '500px',
+                        height: '300px',
                         backgroundImage: `url(${img_url})`,
                         backgroundPosition: 'center',
-                        backgroundSize: 'cover',
+                        backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
 
                         display: 'flex',
@@ -135,20 +140,20 @@ function FrontEnd() {
                         }}
                       >
                         <div style={{ paddingLeft: '2rem' }}>
-                          <h3>title</h3>
+                          <h3>{cc_title}</h3>
                           <p>{cc_description}</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                )
+                );
               })}
             </Slider>
           </div>
         </>
       )}
     </>
-  )
+  );
 }
 
-export default FrontEnd
+export default FrontEnd;

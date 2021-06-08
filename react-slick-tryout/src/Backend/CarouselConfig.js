@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import { Draggable } from 'react-beautiful-dnd'
+import { Draggable } from 'react-beautiful-dnd';
 
-import { ShareContext } from './context/Share'
+import { ShareContext } from './context/Share';
 
 const container = {
   border: '1px solid lightgrey',
@@ -12,20 +12,21 @@ const container = {
   backgroundColor: 'white',
   width: '300px',
   overflow: 'hidden',
-}
+};
 
 const gold_square = {
   width: '30px',
   height: '30px',
   backgroundColor: 'pink',
-}
+};
 
 function CarouselConfig({ carousel_config, index }) {
-  let { handleItemEditClick, handleItemDeleteClick } = React.useContext(ShareContext)
+  let { handleItemEditClick, handleItemDeleteClick } =
+    React.useContext(ShareContext);
   return (
     <>
       <Draggable draggableId={carousel_config.id} index={index}>
-        {provided => {
+        {(provided) => {
           return (
             <div ref={provided.innerRef} {...provided.draggableProps}>
               <div style={gold_square} {...provided.dragHandleProps}>
@@ -33,31 +34,31 @@ function CarouselConfig({ carousel_config, index }) {
               </div>
               <div>
                 <div style={container}>
-                  <div>
-                    <pre>{JSON.stringify(carousel_config.meta, null, 2)}</pre>
+                  <div style={{ display: 'flex', flexFlow: 'row' }}>
                     <button
-                      onClick={e => {
-                        handleItemEditClick(e, carousel_config.id)
+                      onClick={(e) => {
+                        handleItemEditClick(e, carousel_config.id);
                       }}
                     >
                       E
                     </button>
                     <button
-                      onClick={e => {
-                        handleItemDeleteClick(e, carousel_config.id)
+                      onClick={(e) => {
+                        handleItemDeleteClick(e, carousel_config.id);
                       }}
                     >
                       D
                     </button>
+                    <pre>{JSON.stringify(carousel_config.meta)}</pre>
                   </div>
                 </div>
               </div>
             </div>
-          )
+          );
         }}
       </Draggable>
     </>
-  )
+  );
 }
 
-export default React.memo(CarouselConfig)
+export default React.memo(CarouselConfig);

@@ -1,83 +1,93 @@
-import React from 'react'
-import { ShareContext } from './context/Share'
+import React from 'react';
+import { ShareContext } from './context/Share';
 
 export default function Settings() {
-  let { cc_settings, setCcSettings } = React.useContext(ShareContext)
+  let { cc_settings, setCcSettings } = React.useContext(ShareContext);
 
-  const handleDotsChecked = e => {
-    setCcSettings({ ...cc_settings, dots: !cc_settings.dots })
-  }
+  const handleDotsChecked = (e) => {
+    setCcSettings({ ...cc_settings, dots: !cc_settings.dots });
+  };
 
-  const handleInfiniteChecked = e => {
-    setCcSettings({ ...cc_settings, infinite: !cc_settings.infinite })
-  }
+  const handleInfiniteChecked = (e) => {
+    setCcSettings({ ...cc_settings, infinite: !cc_settings.infinite });
+  };
 
-  const handleAutoplayChecked = e => {
-    setCcSettings({ ...cc_settings, autoplay: !cc_settings.autoplay })
-  }
+  const handleAutoplayChecked = (e) => {
+    setCcSettings({ ...cc_settings, autoplay: !cc_settings.autoplay });
+  };
 
-  const handleSlidesToShowChanged = e => {
+  const handleSlidesToShowChanged = (e) => {
     if (isNaN(e.target.value)) {
     } else {
-      let a = parseInt(e.target.value)
-      setCcSettings({ ...cc_settings, slidesToShow: a })
+      let a = parseInt(e.target.value);
+      setCcSettings({ ...cc_settings, slidesToShow: a });
     }
-  }
+  };
 
-  const handleSlidesToScrollChanged = e => {
+  const handleSlidesToScrollChanged = (e) => {
     if (isNaN(e.target.value)) {
     } else {
-      let a = parseInt(e.target.value)
-      setCcSettings({ ...cc_settings, slidesToScroll: a })
+      let a = parseInt(e.target.value);
+      setCcSettings({ ...cc_settings, slidesToScroll: a });
     }
-  }
+  };
 
-  const handleAutoplaySpeedChanged = e => {
+  const handleAutoplaySpeedChanged = (e) => {
     if (isNaN(e.target.value)) {
     } else {
-      let a = parseInt(e.target.value)
-      setCcSettings({ ...cc_settings, autoplaySpeed: a })
+      let a = parseInt(e.target.value);
+      setCcSettings({ ...cc_settings, autoplaySpeed: a });
     }
-  }
+  };
 
   const Dots = () => {
     return (
       <>
-        <input
-          type="checkbox"
-          id="dots"
-          name="dots"
-          onChange={handleDotsChecked}
-          checked={cc_settings.dots}
-        />
-        <label htmlFor="dots">enable dots</label>
+        <div>
+          <input
+            type="checkbox"
+            id="dots"
+            name="dots"
+            onChange={handleDotsChecked}
+            checked={cc_settings.dots}
+          />
+          <label htmlFor="dots">enable dots</label>
+        </div>
       </>
-    )
-  }
+    );
+  };
 
   const Autoplay = () => {
     return (
       <>
-        <input
-          type="checkbox"
-          id="autoplay"
-          name="autoplay"
-          onChange={handleAutoplayChecked}
-          checked={cc_settings.autoplay}
-        />
-        <label htmlFor="autoplay">enable autoplay</label>
+        <div>
+          <input
+            type="checkbox"
+            id="autoplay"
+            name="autoplay"
+            onChange={handleAutoplayChecked}
+            checked={cc_settings.autoplay}
+          />
+          <label htmlFor="autoplay">enable autoplay</label>
+        </div>
       </>
-    )
-  }
+    );
+  };
 
   const Infinite = () => {
     return (
       <>
-        <input type="checkbox" onChange={handleInfiniteChecked} checked={cc_settings.infinite} />
-        <label htmlFor="infinite">enable infinite</label>
+        <div>
+          <input
+            type="checkbox"
+            onChange={handleInfiniteChecked}
+            checked={cc_settings.infinite}
+          />
+          <label htmlFor="infinite">enable infinite</label>
+        </div>
       </>
-    )
-  }
+    );
+  };
 
   const SlidesToShow = () => {
     return (
@@ -91,8 +101,8 @@ export default function Settings() {
           />
         </div>
       </>
-    )
-  }
+    );
+  };
 
   const SlidesToScroll = () => {
     return (
@@ -106,8 +116,8 @@ export default function Settings() {
           />
         </div>
       </>
-    )
-  }
+    );
+  };
 
   const AutoplaySpeed = () => {
     return (
@@ -116,13 +126,13 @@ export default function Settings() {
           <label htmlFor="infinite">AutoplaySpeed</label>
           <input
             type="text"
-            onChange={handleAutoplaySpeedChanged}
+            onInput={handleAutoplaySpeedChanged}
             value={cc_settings.autoplaySpeed}
           />
         </div>
       </>
-    )
-  }
+    );
+  };
 
   return (
     <>
@@ -136,5 +146,5 @@ export default function Settings() {
 
       <pre>{JSON.stringify(cc_settings, null, 2)}</pre>
     </>
-  )
+  );
 }
