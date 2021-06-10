@@ -86,7 +86,7 @@ function FrontEnd() {
               {...cc_settings}
               style={{
                 width: '100%',
-                height: '300px',
+                // height: '300px',
 
                 display: 'flex',
                 flexFlow: 'column',
@@ -103,14 +103,14 @@ function FrontEnd() {
                     key={`cc_idx_${idx}`}
                     style={{
                       width: '100%',
-                      height: '300px',
+                      // height: '300px',
                     }}
                     onClick={(e) => account_cc_click(idx)}
                   >
                     <div
                       style={{
                         width: '100%',
-                        height: '300px',
+                        height: '600px',
                         backgroundImage: `url(${img_url})`,
                         backgroundPosition: 'center',
                         backgroundSize: 'contain',

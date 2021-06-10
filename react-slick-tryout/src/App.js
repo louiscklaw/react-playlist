@@ -20,14 +20,17 @@ function App() {
           <div className="row">
             <div
               className={'col-xs-12 col-xl-6'}
-              style={{ height: '500px', width: '100vw' }}
+              style={{
+                // height: '500px'
+                width: '100vw',
+              }}
             >
               <div>Frontend</div>
               <div
                 style={{
                   width: '100%',
-                  height: '300px',
-                  backgroundColor: 'gold',
+                  // height: '300px',
+                  // backgroundColor: 'gold',
                 }}
               >
                 <Frontend />
