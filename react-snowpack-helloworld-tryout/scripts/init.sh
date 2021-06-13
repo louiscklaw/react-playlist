@@ -13,6 +13,10 @@ pushd react-snowpack-helloworld-tryout
   # rsync -avzh --progress ../customize/public/ public
   rsync -avzh --progress ../customize/scripts/ scripts
 
+  rsync -avzh --progress ../customize/.env .env
+  rsync -avzh --progress ../customize/.env.production .env.production
+  rsync -avzh --progress ../customize/.env.develop .env.develop
+
   yarn --dev
 
   yarn format
