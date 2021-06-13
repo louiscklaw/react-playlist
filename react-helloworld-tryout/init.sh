@@ -3,3 +3,5 @@
 set -ex
 
 yarn
+
+npx eslint --init

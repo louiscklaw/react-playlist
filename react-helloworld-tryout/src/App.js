@@ -1,11 +1,23 @@
-import React from 'react'
+import React from 'react';
+import HelloComponent from 'src/components/HelloComponent';
+import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
-function App() {
+function App({ test_branch = false }) {
+  let helloworld = 'helloworld';
+
+  if (test_branch) {
+    console.log('find true');
+  } else {
+    console.log('find false');
+  }
+
   return (
     <div className="App">
-      <div style={{ height: '100%', width: '100%', backgroundColor: 'gold' }}>helloworld</div>
+      <GlobalContextProvider>
+        <HelloComponent />
+      </GlobalContextProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
