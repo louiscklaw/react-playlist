@@ -5,14 +5,20 @@ set -ex
 rm -rf react-snowpack-helloworld-tryout
 
 npx create-snowpack-app react-snowpack-helloworld-tryout \
-  --template @snowpack/app-template-minimal \
+  --template @snowpack/app-template-react \
   --use-yarn
 
-
 pushd react-snowpack-helloworld-tryout
-  rsync -avzh --progress ../src/ src
-  rsync -avzh --progress ../public/ public
+  # rsync -avzh --progress ../customize/src/ src
+  # rsync -avzh --progress ../customize/public/ public
+  rsync -avzh --progress ../customize/scripts/ scripts
 
-  yarn add react react-dom
+  yarn --dev
+
+  yarn format
+  yarn lint
+  yarn test
+
   yarn start
+
 popd
