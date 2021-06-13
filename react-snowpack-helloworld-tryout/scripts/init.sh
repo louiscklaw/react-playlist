@@ -18,7 +18,7 @@ pushd react-snowpack-helloworld-tryout
   yarn format
   yarn lint
   yarn test
-
+  yarn build
   yarn start
 
 popd
