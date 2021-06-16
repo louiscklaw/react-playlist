@@ -4,6 +4,7 @@ import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
 function App({ test_branch = false }) {
   let helloworld = 'helloworld';
+  let helloanotherworld = '123';
 
   if (test_branch) {
     console.log('find true');

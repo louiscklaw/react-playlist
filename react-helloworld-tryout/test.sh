@@ -2,6 +2,6 @@
 
 set -ex
 
-# yarn test
+yarn --dev
 
 yarn test -- --coverage
