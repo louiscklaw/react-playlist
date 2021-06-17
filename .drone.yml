@@ -24,3 +24,12 @@ steps:
       - yarn
       - yarn build
       - cd -
+
+  - name: react-template-tryout
+    image: node:lts
+    commands:
+      - cd react-template-tryout
+      - yarn
+      - yarn test
+      - yarn build
+      - cd -
