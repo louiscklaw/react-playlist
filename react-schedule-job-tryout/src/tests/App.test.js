@@ -18,7 +18,7 @@ it('renders test_branch false', () => {
   ReactDOM.render(<App test_branch={false} />, div);
 });
 
-describe('AddToOrder component', () => {
+describe('click button components', () => {
   it('should be handling checkboxChecked', () => {
     const wrapper = shallow(<App test_branch={false} />);
 
