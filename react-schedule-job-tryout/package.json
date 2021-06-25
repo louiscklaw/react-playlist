@@ -1,5 +1,5 @@
 {
-  "name": "test_clean_cra",
+  "name": "react-schedule-job-tryout",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-15": "^1.4.3",
+    "enzyme-adapter-react-16": "^1.15.6"
   }
 }
