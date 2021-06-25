@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-smooth-dnd": "^0.11.1"
+  }
+}
