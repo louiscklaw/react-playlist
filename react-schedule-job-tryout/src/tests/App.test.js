@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom';
 import App from 'src/App';
 
-import { shallow, mount, render } from 'enzyme';
+import { shallow, render } from 'enzyme';
 
 test('renders learn react link', () => {
   render(<App />);
