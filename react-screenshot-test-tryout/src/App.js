@@ -1,6 +1,7 @@
 import React from 'react';
 // import HelloComponent from 'src/components/HelloComponent';
-import { GlobalContextProvider } from 'src/contexts/GlobalContext';
+
+import HelloButton from 'src/components/HelloButton';
 
 function App({ test_branch = false }) {
   let helloworld = 'helloworld';
@@ -14,11 +15,10 @@ function App({ test_branch = false }) {
 
   return (
     <div className="App">
-      <GlobalContextProvider>
-        {/* <HelloComponent /> */}
-        hellocomponents
-        {helloanotherworld}
-      </GlobalContextProvider>
+      {/* <HelloComponent /> */}
+      hellocomponents
+      {helloanotherworld}
+      <HelloButton />
     </div>
   );
 }
