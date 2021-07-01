@@ -4,4 +4,4 @@ set -ex
 
 yarn --dev
 
-yarn test
+yarn start

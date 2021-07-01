@@ -17,6 +17,7 @@ pushd react-snowpack-helloworld-tryout
   sed -i '3 a "test:e2e":"jest --rootDir=tests --watch"\,' package.json
 
   yarn add --dev jest puppeteer jest-image-snapshot
+  yarn add --dev @snowpack/plugin-webpack
   yarn --dev  --check-files
 
   yarn format

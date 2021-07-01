@@ -2,6 +2,6 @@
 
 set -ex
 
-yarn --dev
+yarn
 
-yarn test
+yarn build
