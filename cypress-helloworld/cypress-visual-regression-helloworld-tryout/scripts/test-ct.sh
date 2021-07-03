@@ -3,4 +3,4 @@
 set -ex
 
 # component test
-npx cypress open
+npx cypress open-ct

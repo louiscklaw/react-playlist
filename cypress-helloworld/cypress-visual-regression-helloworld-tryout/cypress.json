@@ -5,5 +5,8 @@
     "testFiles": "**/*spec.{js,jsx,ts,tsx}"
   },
   "screenshotsFolder": "./cypress/snapshots/actual",
-  "trashAssetsBeforeRuns": true
+  "trashAssetsBeforeRuns": true,
+  "env": {
+    "failSilently": false
+  }
 }
