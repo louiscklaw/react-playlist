@@ -3,3 +3,7 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect';
+
+// added for jest-image-snapshot
+const { toMatchImageSnapshot } = require('jest-image-snapshot');
+expect.extend({ toMatchImageSnapshot });
