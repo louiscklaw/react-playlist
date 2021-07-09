@@ -1,5 +1,19 @@
 import { createMachine } from 'xstate';
 
+const openMenu = (context) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => reject('reject'), 3000);
+    setTimeout(() => resolve('resolve'), 1000);
+  });
+};
+
+const closeMenu = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => reject('reject'), 3000);
+    setTimeout(() => resolve('resolve'), 1000);
+  });
+};
+
 // This machine is completely decoupled from React
 export const toggleMachine = createMachine({
   id: 'toggle',
@@ -10,14 +24,20 @@ export const toggleMachine = createMachine({
       on: { OPEN: 'opening' },
     },
     opening: {
-      invoke: { src: 'openMenu', onDone: { target: 'open' } },
+      invoke: {
+        src: (context, event) => openMenu(context),
+        onDone: { target: 'open' },
+      },
       on: { CLOSE: 'closing' },
     },
     open: {
       on: { CLOSE: 'closing' },
     },
     closing: {
-      invoke: { src: 'closeMenu', onDone: { target: 'closed' } },
+      invoke: {
+        src: (context, event) => closeMenu(context),
+        onDone: { target: 'closed' },
+      },
       on: { OPEN: 'opening' },
     },
   },
