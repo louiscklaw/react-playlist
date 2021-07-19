@@ -20,8 +20,8 @@ export function StateMachineContextProvider({ children }) {
         value={{ helloworld, toggleMachine1, toggleMachine2 }}
       >
         <div style={{ display: 'flex' }}>
-          <Machine1 machine1={toggleMachine1} machine2={toggleMachine2} />
-          <Machine2 machine1={toggleMachine1} machine2={toggleMachine2} />
+          <Machine1 machines={{ toggleMachine1, toggleMachine2 }} />
+          <Machine2 machines={{ toggleMachine1, toggleMachine2 }} />
           {children}
         </div>
       </StateMachineContext.Provider>

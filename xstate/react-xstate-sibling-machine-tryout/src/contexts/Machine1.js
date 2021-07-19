@@ -7,9 +7,11 @@ import {
   SEND_UNSUSPEND,
 } from 'src/StateMachines/toggleMachine';
 
-export default function Machine1({ machine1, machine2 }) {
-  let [current_machine1, sendMachine1] = machine1;
-  let [current_machine2, sendMachine2] = machine2;
+export default function Machine1({ machines }) {
+  let { toggleMachine1, toggleMachine2 } = machines;
+  let [current_machine1, sendMachine1] = toggleMachine1;
+  let [current_machine2, sendMachine2] = toggleMachine2;
+
   return (
     <>
       <pre>{JSON.stringify(current_machine1, null, 2)}</pre>
