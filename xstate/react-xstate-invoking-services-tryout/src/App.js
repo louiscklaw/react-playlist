@@ -1,7 +1,6 @@
 import React from 'react';
-// import HelloComponent from 'src/components/HelloComponent';
+import HelloComponent from 'src/components/HelloComponent';
 import { AppContexts } from 'src/contexts/AppContexts';
-import Toggle from 'src/components/Toggle';
 
 function App({ test_branch = false }) {
   let helloanotherworld = '123';
@@ -14,7 +13,9 @@ function App({ test_branch = false }) {
 
   return (
     <div className="App">
-      <AppContexts>{helloanotherworld}</AppContexts>
+      <AppContexts>
+        {helloanotherworld} <HelloComponent />
+      </AppContexts>
     </div>
   );
 }

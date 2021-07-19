@@ -12,6 +12,11 @@ function App({ test_branch = false }) {
     console.log('find false');
   }
 
+  let [text_helloworld, setTextHelloworld] = React.useState('hello_1div');
+  const helloButtonClick = () => {
+    setTextHelloworld('hello hell, hello hell, hello hell');
+  };
+
   return (
     <div className="App">
       <GlobalContextProvider>
@@ -19,7 +24,11 @@ function App({ test_branch = false }) {
         <div style={{ height: '100vh', width: '100vw' }}>
           hellocomponents
           {helloanotherworld}
-          <button>helloworld</button>
+          <button name="btnK" onClick={helloButtonClick}>
+            helloworld
+          </button>
+          <div id="hello_div">{text_helloworld}</div>
+          <input type="text" onChange={() => {}} />
         </div>
       </GlobalContextProvider>
     </div>

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`file-viewer FileViewer sample usage, url 1`] = `
+<div
+  className="pg-viewer-wrapper"
+>
+  <div
+    className="pg-viewer"
+    id="pg-viewer"
+  >
+    <div
+      id="docx"
+    >
+      <div
+        className="loading-container"
+      >
+        <span
+          className="loading"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

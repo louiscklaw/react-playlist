@@ -35,6 +35,7 @@ function App() {
   // localStorage.clear()
 
   storeToLocalStorage('myData', { hello: 'world' });
+
   alert(loadFromLocalStorage('1'));
   alert(loadFromLocalStorage('myData'));
 

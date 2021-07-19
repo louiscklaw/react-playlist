@@ -5,9 +5,19 @@
 
   <testsuite name="helloworld"
     errors="0" failures="0" hostname="" id="" package="helloworld" skipped="0"
-    tests="2" time="1.995" timestamp="">
+    tests="2" time="2.077" timestamp="">
   
-    <testcase name="Demo test NightwatchJS.org" classname="helloworld" time="1.834" assertions="11">
+    <testcase name="Demo test NightwatchJS.org" classname="helloworld" time="1.969" assertions="16">
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -32,10 +42,15 @@
     
     </testcase>
   
-    <testcase name="Finished" classname="helloworld" time="0.1610" assertions="0">
+    <testcase name="Finished" classname="helloworld" time="0.1080" assertions="0">
     </testcase>
   
 
+  
+    <system-err>
+        TypeError: Cannot read property &#39;includes&#39; of null
+       at Object.Test (/home/logic/_workspace/react-playlist/nightwatch-tryout/react-nightwatch-helloworld-tryout/tests/src/hello_google.js:6:8)
+    </system-err>
   
 
     

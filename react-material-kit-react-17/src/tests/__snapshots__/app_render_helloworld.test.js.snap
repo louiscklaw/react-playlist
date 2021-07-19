@@ -1,0 +1,1744 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app_render_helloworld 1`] = `
+<div>
+  <div
+    class="css-1vihigg"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-y00m2w-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="Logo"
+            src="/static/logo.svg"
+          />
+        </a>
+        <div
+          class="css-pfbhpp"
+        />
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-15oqc37-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+          >
+            <span
+              class="MuiBadge-root css-1c32n2y-MuiBadge-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="NotificationsOutlinedIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"
+                />
+              </svg>
+              <span
+                class="MuiBadge-colorPrimary MuiBadge-badge MuiBadge-dot MuiBadge-anchorOriginTopRightRectangular MuiBadge-invisible css-13bx4kb-MuiBadge-badge"
+              />
+            </span>
+          </span>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1drqkcs-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="InputIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-d6mbve-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="MenuIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </header>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked css-143of5i-MuiDrawer-docked"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-llf1rc-MuiPaper-root-MuiDrawer-paper"
+      >
+        <div
+          class="css-18swgad"
+        >
+          <div
+            class="css-106x7b6"
+          >
+            <a
+              class="MuiAvatar-root MuiAvatar-circular css-99jfho-MuiAvatar-root"
+              href="/app/account"
+            >
+              <img
+                class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                src="/static/images/avatars/avatar_6.png"
+              />
+            </a>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-ro3fvo-MuiTypography-root"
+            >
+              Katarina Smith
+            </h5>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-ays8ay-MuiTypography-root"
+            >
+              Senior Developer
+            </p>
+          </div>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+          />
+          <div
+            class="css-yj6p2f"
+          >
+            <ul
+              class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+            >
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-current="page"
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1b2seic-MuiButtonBase-root-MuiButton-root active"
+                  href="/app/dashboard"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="20"
+                        y2="10"
+                      />
+                      <line
+                        x1="18"
+                        x2="18"
+                        y1="20"
+                        y2="4"
+                      />
+                      <line
+                        x1="6"
+                        x2="6"
+                        y1="20"
+                        y2="16"
+                      />
+                    </svg>
+                    <span>
+                      Dashboard
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1ospu1q-MuiButtonBase-root-MuiButton-root"
+                  href="/app/customers"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                      />
+                      <circle
+                        cx="9"
+                        cy="7"
+                        r="4"
+                      />
+                      <path
+                        d="M23 21v-2a4 4 0 0 0-3-3.87"
+                      />
+                      <path
+                        d="M16 3.13a4 4 0 0 1 0 7.75"
+                      />
+                    </svg>
+                    <span>
+                      Customers
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1ospu1q-MuiButtonBase-root-MuiButton-root"
+                  href="/app/products"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                      />
+                      <line
+                        x1="3"
+                        x2="21"
+                        y1="6"
+                        y2="6"
+                      />
+                      <path
+                        d="M16 10a4 4 0 0 1-8 0"
+                      />
+                    </svg>
+                    <span>
+                      Products
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1ospu1q-MuiButtonBase-root-MuiButton-root"
+                  href="/app/account"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                      />
+                      <circle
+                        cx="12"
+                        cy="7"
+                        r="4"
+                      />
+                    </svg>
+                    <span>
+                      Account
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1ospu1q-MuiButtonBase-root-MuiButton-root"
+                  href="/app/settings"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                      <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                      />
+                    </svg>
+                    <span>
+                      Settings
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1ospu1q-MuiButtonBase-root-MuiButton-root"
+                  href="/login"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        height="11"
+                        rx="2"
+                        ry="2"
+                        width="18"
+                        x="3"
+                        y="11"
+                      />
+                      <path
+                        d="M7 11V7a5 5 0 0 1 10 0v4"
+                      />
+                    </svg>
+                    <span>
+                      Login
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1ospu1q-MuiButtonBase-root-MuiButton-root"
+                  href="/register"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                      />
+                      <circle
+                        cx="8.5"
+                        cy="7"
+                        r="4"
+                      />
+                      <line
+                        x1="20"
+                        x2="20"
+                        y1="8"
+                        y2="14"
+                      />
+                      <line
+                        x1="23"
+                        x2="17"
+                        y1="11"
+                        y2="11"
+                      />
+                    </svg>
+                    <span>
+                      Register
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root css-26vcva-MuiListItem-root"
+              >
+                <a
+                  aria-disabled="false"
+                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1ospu1q-MuiButtonBase-root-MuiButton-root"
+                  href="/404"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span
+                    class="MuiButton-label css-8xplcm-MuiButton-label"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                      />
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="8"
+                        y2="12"
+                      />
+                      <line
+                        x1="12"
+                        x2="12.01"
+                        y1="16"
+                        y2="16"
+                      />
+                    </svg>
+                    <span>
+                      Error
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="css-pfbhpp"
+          />
+          <div
+            class="css-s071xo"
+          >
+            <h4
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter MuiTypography-gutterBottom css-x3i3am-MuiTypography-root"
+            >
+              Need more?
+            </h4>
+            <p
+              class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1ypfif-MuiTypography-root"
+            >
+              Upgrade to PRO version and access 20 more screens
+            </p>
+            <div
+              class="css-g6bexe"
+            >
+              <a
+                aria-disabled="false"
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-nen8n9-MuiButtonBase-root-MuiButton-root"
+                href="https://react-material-kit.devias.io"
+                tabindex="0"
+              >
+                <span
+                  class="MuiButton-label css-8xplcm-MuiButton-label"
+                >
+                  See PRO version
+                </span>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1qnf7ss"
+    >
+      <div
+        class="css-r2jef8"
+      >
+        <div
+          class="css-y12xsv"
+        >
+          <div
+            class="css-1i9b2p2"
+          >
+            <div
+              class="MuiContainer-root css-2bi4m2-MuiContainer-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-h51dfx-MuiGrid-root"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3 css-y7v9sa-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ueqth8-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                    >
+                      <div
+                        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-1p4lczb-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <h6
+                            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1oebdzv-MuiTypography-root"
+                          >
+                            BUDGET
+                          </h6>
+                          <h3
+                            class="MuiTypography-root MuiTypography-h3 css-8akur5-MuiTypography-root"
+                          >
+                            $24,000
+                          </h3>
+                        </div>
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <div
+                            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-o1d5pv-MuiAvatar-root"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="MoneyIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M5 8h2v8H5zm7 0H9c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 6h-1v-4h1v4zm7-6h-3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 6h-1v-4h1v4z"
+                              />
+                              <path
+                                d="M2 4v16h20V4H2zm2 14V6h16v12H4z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="css-jowk08"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-15ckspe-MuiSvgIcon-root"
+                          data-testid="ArrowDownwardIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                          />
+                        </svg>
+                        <p
+                          class="MuiTypography-root MuiTypography-body2 css-1nvgi2-MuiTypography-root"
+                        >
+                          12%
+                        </p>
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-usmyd8-MuiTypography-root"
+                        >
+                          Since last month
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3 css-y7v9sa-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uexerl-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                    >
+                      <div
+                        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-1p4lczb-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <h6
+                            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1oebdzv-MuiTypography-root"
+                          >
+                            TOTAL CUSTOMERS
+                          </h6>
+                          <h3
+                            class="MuiTypography-root MuiTypography-h3 css-8akur5-MuiTypography-root"
+                          >
+                            1,600
+                          </h3>
+                        </div>
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <div
+                            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2df6ep-MuiAvatar-root"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="PeopleOutlinedIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M9 13.75c-2.34 0-7 1.17-7 3.5V19h14v-1.75c0-2.33-4.66-3.5-7-3.5zM4.34 17c.84-.58 2.87-1.25 4.66-1.25s3.82.67 4.66 1.25H4.34zM9 12c1.93 0 3.5-1.57 3.5-3.5S10.93 5 9 5 5.5 6.57 5.5 8.5 7.07 12 9 12zm0-5c.83 0 1.5.67 1.5 1.5S9.83 10 9 10s-1.5-.67-1.5-1.5S8.17 7 9 7zm7.04 6.81c1.16.84 1.96 1.96 1.96 3.44V19h4v-1.75c0-2.02-3.5-3.17-5.96-3.44zM15 12c1.93 0 3.5-1.57 3.5-3.5S16.93 5 15 5c-.54 0-1.04.13-1.5.35.63.89 1 1.98 1 3.15s-.37 2.26-1 3.15c.46.22.96.35 1.5.35z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="css-1d80qii"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-12f8ttk-MuiSvgIcon-root"
+                          data-testid="ArrowUpwardIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                          />
+                        </svg>
+                        <p
+                          class="MuiTypography-root MuiTypography-body2 css-tqs4ee-MuiTypography-root"
+                        >
+                          16%
+                        </p>
+                        <span
+                          class="MuiTypography-root MuiTypography-caption css-usmyd8-MuiTypography-root"
+                        >
+                          Since last month
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3 css-y7v9sa-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ueqth8-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                    >
+                      <div
+                        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-1p4lczb-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <h6
+                            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1oebdzv-MuiTypography-root"
+                          >
+                            TASKS PROGRESS
+                          </h6>
+                          <h3
+                            class="MuiTypography-root MuiTypography-h3 css-8akur5-MuiTypography-root"
+                          >
+                            75.5%
+                          </h3>
+                        </div>
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <div
+                            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1yfbnwt-MuiAvatar-root"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="InsertChartOutlinedIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="css-19svcu9"
+                      >
+                        <span
+                          aria-valuemax="100"
+                          aria-valuemin="0"
+                          aria-valuenow="76"
+                          class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-mfxnef-MuiLinearProgress-root"
+                          role="progressbar"
+                        >
+                          <span
+                            class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1xeod2-MuiLinearProgress-bar1"
+                            style="transform: translateX(-24.5%);"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3 css-y7v9sa-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ueqth8-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                    >
+                      <div
+                        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-1p4lczb-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <h6
+                            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1oebdzv-MuiTypography-root"
+                          >
+                            TOTAL PROFIT
+                          </h6>
+                          <h3
+                            class="MuiTypography-root MuiTypography-h3 css-8akur5-MuiTypography-root"
+                          >
+                            $23,200
+                          </h3>
+                        </div>
+                        <div
+                          class="MuiGrid-root MuiGrid-item css-10texkh-MuiGrid-root"
+                        >
+                          <div
+                            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-dni0n6-MuiAvatar-root"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="AttachMoneyIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-8 MuiGrid-grid-xl-9 css-149uiy0-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uexerl-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                    >
+                      <div
+                        class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                      >
+                        <span
+                          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-10zm286-MuiTypography-root"
+                        >
+                          Latest Sales
+                        </span>
+                      </div>
+                      <div
+                        class="MuiCardHeader-action css-sgoict-MuiCardHeader-action"
+                      >
+                        <button
+                          class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root css-1l3f7ff-MuiButtonBase-root-MuiButton-root"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="MuiButton-label css-8xplcm-MuiButton-label"
+                          >
+                            Last 7 days
+                            <span
+                              class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                data-testid="ArrowDropDownIcon"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M7 10l5 5 5-5z"
+                                />
+                              </svg>
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <hr
+                      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                    />
+                    <div
+                      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                    >
+                      <div
+                        class="css-1utejrf"
+                      >
+                        <canvas
+                          height="150"
+                          width="300"
+                        />
+                      </div>
+                    </div>
+                    <hr
+                      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                    />
+                    <div
+                      class="css-19vc6sm"
+                    >
+                      <button
+                        class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root css-1l3f7ff-MuiButtonBase-root-MuiButton-root"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label css-8xplcm-MuiButton-label"
+                        >
+                          Overview
+                          <span
+                            class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="ArrowRightIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M10 17l5-5-5-5v10z"
+                              />
+                            </svg>
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-4 MuiGrid-grid-xl-3 css-1kkp7os-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ueqth8-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                    >
+                      <div
+                        class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                      >
+                        <span
+                          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-10zm286-MuiTypography-root"
+                        >
+                          Traffic by Device
+                        </span>
+                      </div>
+                    </div>
+                    <hr
+                      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                    />
+                    <div
+                      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                    >
+                      <div
+                        class="css-1reg6h5"
+                      >
+                        <canvas
+                          height="150"
+                          width="300"
+                        />
+                      </div>
+                      <div
+                        class="css-g6bexe"
+                      >
+                        <div
+                          class="css-dlnztr"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-colorAction MuiSvgIcon-fontSizeMedium css-11pbyhm-MuiSvgIcon-root"
+                            data-testid="LaptopMacIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 18c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2H0c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2h-4zM4 5h16v11H4V5zm8 14c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"
+                            />
+                          </svg>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 css-1ddobb6-MuiTypography-root"
+                          >
+                            Desktop
+                          </p>
+                          <h2
+                            class="MuiTypography-root MuiTypography-h2 css-x4ufak-MuiTypography-root"
+                            style="color: rgb(63, 81, 181);"
+                          >
+                            63
+                            %
+                          </h2>
+                        </div>
+                        <div
+                          class="css-dlnztr"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-colorAction MuiSvgIcon-fontSizeMedium css-11pbyhm-MuiSvgIcon-root"
+                            data-testid="TabletIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M21 4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 1.99-.9 1.99-2L23 6c0-1.1-.9-2-2-2zm-2 14H5V6h14v12z"
+                            />
+                          </svg>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 css-1ddobb6-MuiTypography-root"
+                          >
+                            Tablet
+                          </p>
+                          <h2
+                            class="MuiTypography-root MuiTypography-h2 css-x4ufak-MuiTypography-root"
+                            style="color: rgb(229, 57, 53);"
+                          >
+                            15
+                            %
+                          </h2>
+                        </div>
+                        <div
+                          class="css-dlnztr"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-colorAction MuiSvgIcon-fontSizeMedium css-11pbyhm-MuiSvgIcon-root"
+                            data-testid="PhoneIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                            />
+                          </svg>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 css-1ddobb6-MuiTypography-root"
+                          >
+                            Mobile
+                          </p>
+                          <h2
+                            class="MuiTypography-root MuiTypography-h2 css-x4ufak-MuiTypography-root"
+                            style="color: rgb(251, 140, 0);"
+                          >
+                            23
+                            %
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-4 MuiGrid-grid-xl-3 css-1kkp7os-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ueqth8-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                      subtitle="5 in total"
+                    >
+                      <div
+                        class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                      >
+                        <span
+                          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-10zm286-MuiTypography-root"
+                        >
+                          Latest Products
+                        </span>
+                      </div>
+                    </div>
+                    <hr
+                      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                    />
+                    <ul
+                      class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+                    >
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters MuiListItem-divider css-lhcyks-MuiListItem-root"
+                      >
+                        <div
+                          class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+                        >
+                          <img
+                            alt="Dropbox"
+                            src="/static/images/products/product_1.png"
+                            style="height: 48px; width: 48px;"
+                          />
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                          >
+                            Dropbox
+                          </span>
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-zr1hwy-MuiTypography-root"
+                          >
+                            Updated 2 hours ago
+                          </p>
+                        </div>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeSmall css-1eto09t-MuiButtonBase-root-MuiIconButton-root"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="MoreVertIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters MuiListItem-divider css-lhcyks-MuiListItem-root"
+                      >
+                        <div
+                          class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+                        >
+                          <img
+                            alt="Medium Corporation"
+                            src="/static/images/products/product_2.png"
+                            style="height: 48px; width: 48px;"
+                          />
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                          >
+                            Medium Corporation
+                          </span>
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-zr1hwy-MuiTypography-root"
+                          >
+                            Updated 2 hours ago
+                          </p>
+                        </div>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeSmall css-1eto09t-MuiButtonBase-root-MuiIconButton-root"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="MoreVertIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters MuiListItem-divider css-lhcyks-MuiListItem-root"
+                      >
+                        <div
+                          class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+                        >
+                          <img
+                            alt="Slack"
+                            src="/static/images/products/product_3.png"
+                            style="height: 48px; width: 48px;"
+                          />
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                          >
+                            Slack
+                          </span>
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-zr1hwy-MuiTypography-root"
+                          >
+                            Updated 3 hours ago
+                          </p>
+                        </div>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeSmall css-1eto09t-MuiButtonBase-root-MuiIconButton-root"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="MoreVertIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters MuiListItem-divider css-lhcyks-MuiListItem-root"
+                      >
+                        <div
+                          class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+                        >
+                          <img
+                            alt="Lyft"
+                            src="/static/images/products/product_4.png"
+                            style="height: 48px; width: 48px;"
+                          />
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                          >
+                            Lyft
+                          </span>
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-zr1hwy-MuiTypography-root"
+                          >
+                            Updated 5 hours ago
+                          </p>
+                        </div>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeSmall css-1eto09t-MuiButtonBase-root-MuiIconButton-root"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="MoreVertIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters css-1q820jy-MuiListItem-root"
+                      >
+                        <div
+                          class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
+                        >
+                          <img
+                            alt="GitHub"
+                            src="/static/images/products/product_5.png"
+                            style="height: 48px; width: 48px;"
+                          />
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                          >
+                            GitHub
+                          </span>
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-zr1hwy-MuiTypography-root"
+                          >
+                            Updated 9 hours ago
+                          </p>
+                        </div>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeSmall css-1eto09t-MuiButtonBase-root-MuiIconButton-root"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="MoreVertIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                          />
+                        </button>
+                      </li>
+                    </ul>
+                    <hr
+                      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                    />
+                    <div
+                      class="css-19vc6sm"
+                    >
+                      <button
+                        class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root css-1l3f7ff-MuiButtonBase-root-MuiButton-root"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label css-8xplcm-MuiButton-label"
+                        >
+                          View all
+                          <span
+                            class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="ArrowRightIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M10 17l5-5-5-5v10z"
+                              />
+                            </svg>
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-8 MuiGrid-grid-xl-9 css-149uiy0-MuiGrid-root"
+                >
+                  <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uexerl-MuiPaper-root-MuiCard-root"
+                  >
+                    <div
+                      class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                    >
+                      <div
+                        class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                      >
+                        <span
+                          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-10zm286-MuiTypography-root"
+                        >
+                          Latest Orders
+                        </span>
+                      </div>
+                    </div>
+                    <hr
+                      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                    />
+                    <div
+                      class="scrollbar-container ps"
+                    >
+                      <div
+                        class="css-1xbczcu"
+                      >
+                        <table
+                          class="MuiTable-root css-w613jo-MuiTable-root"
+                        >
+                          <thead
+                            class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+                          >
+                            <tr
+                              class="MuiTableRow-root MuiTableRow-head css-3pq900-MuiTableRow-root"
+                            >
+                              <th
+                                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-168k6et-MuiTableCell-root"
+                                scope="col"
+                              >
+                                Order Ref
+                              </th>
+                              <th
+                                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-168k6et-MuiTableCell-root"
+                                scope="col"
+                              >
+                                Customer
+                              </th>
+                              <th
+                                aria-sort="descending"
+                                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-168k6et-MuiTableCell-root"
+                                scope="col"
+                              >
+                                <span
+                                  aria-disabled="false"
+                                  aria-label="Sort"
+                                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active css-10d1a0h-MuiButtonBase-root"
+                                  data-mui-internal-clone-element="true"
+                                  role="button"
+                                  tabindex="0"
+                                >
+                                  Date
+                                  <svg
+                                    aria-hidden="true"
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc css-i4bv87-MuiSvgIcon-root"
+                                    data-testid="ArrowDownwardIcon"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                                    />
+                                  </svg>
+                                </span>
+                              </th>
+                              <th
+                                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-168k6et-MuiTableCell-root"
+                                scope="col"
+                              >
+                                Status
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody
+                            class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+                          >
+                            <tr
+                              class="MuiTableRow-root MuiTableRow-hover css-3pq900-MuiTableRow-root"
+                            >
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                CDD1049
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                Ekaterina Tankova
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                12/04/2019
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                <div
+                                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-1pkqnhr-MuiChip-root"
+                                >
+                                  <span
+                                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                                  >
+                                    pending
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="MuiTableRow-root MuiTableRow-hover css-3pq900-MuiTableRow-root"
+                            >
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                CDD1048
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                Cao Yu
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                12/04/2019
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                <div
+                                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-1pkqnhr-MuiChip-root"
+                                >
+                                  <span
+                                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                                  >
+                                    delivered
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="MuiTableRow-root MuiTableRow-hover css-3pq900-MuiTableRow-root"
+                            >
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                CDD1047
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                Alexa Richardson
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                11/04/2019
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                <div
+                                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-1pkqnhr-MuiChip-root"
+                                >
+                                  <span
+                                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                                  >
+                                    refunded
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="MuiTableRow-root MuiTableRow-hover css-3pq900-MuiTableRow-root"
+                            >
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                CDD1046
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                Anje Keizer
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                09/04/2019
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                <div
+                                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-1pkqnhr-MuiChip-root"
+                                >
+                                  <span
+                                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                                  >
+                                    pending
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="MuiTableRow-root MuiTableRow-hover css-3pq900-MuiTableRow-root"
+                            >
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                CDD1045
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                Clarke Gillebert
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                08/04/2019
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                <div
+                                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-1pkqnhr-MuiChip-root"
+                                >
+                                  <span
+                                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                                  >
+                                    delivered
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="MuiTableRow-root MuiTableRow-hover css-3pq900-MuiTableRow-root"
+                            >
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                CDD1044
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                Adam Denisov
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                08/04/2019
+                              </td>
+                              <td
+                                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q92sls-MuiTableCell-root"
+                              >
+                                <div
+                                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-1pkqnhr-MuiChip-root"
+                                >
+                                  <span
+                                    class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+                                  >
+                                    delivered
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div
+                        class="ps__rail-x"
+                        style="left: 0px; top: 0px;"
+                      >
+                        <div
+                          class="ps__thumb-x"
+                          style="left: 0px; width: 0px;"
+                          tabindex="0"
+                        />
+                      </div>
+                      <div
+                        class="ps__rail-y"
+                        style="top: 0px; left: 0px;"
+                      >
+                        <div
+                          class="ps__thumb-y"
+                          style="top: 0px; height: 0px;"
+                          tabindex="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="css-19vc6sm"
+                    >
+                      <button
+                        class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root css-1l3f7ff-MuiButtonBase-root-MuiButton-root"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label css-8xplcm-MuiButton-label"
+                        >
+                          View all
+                          <span
+                            class="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              data-testid="ArrowRightIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M10 17l5-5-5-5v10z"
+                              />
+                            </svg>
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

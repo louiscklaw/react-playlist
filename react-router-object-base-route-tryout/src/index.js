@@ -5,11 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import AppContext from './AppContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AppContext>
+        <App />
+      </AppContext>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

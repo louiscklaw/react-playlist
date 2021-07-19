@@ -22,10 +22,11 @@ function defaultScreenshotPath(nightwatchClient, basePath, fileName) {
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['tests'],
+  src_folders: ['tests/src'],
   output_folder: REPORTS_PATH,
   custom_assertions_path: ['node_modules/nightwatch-vrt/assertions'],
   custom_commands_path: ['node_modules/nightwatch-vrt/commands'],
+  page_objects_path: 'tests/page_objects',
 
   webdriver: {
     start_process: true,
@@ -56,6 +57,23 @@ module.exports = {
         browserName: 'chrome',
         alwaysMatch: {
           acceptInsecureCerts: true,
+        },
+        chromeOptions: {
+          args: [
+            '--headless',
+            '--verbose',
+            '--no-sandbox',
+            '--disk-cache-size=68157440 ',
+            '--disable-web-security ',
+            '--use-gl=desktop ',
+            '--enable-features=VaapiVideoDecoder ',
+            '--ignore-gpu-blacklist ',
+            '--enable-gpu-rasterization ',
+            '--enable-parallel-downloading ',
+            '--smooth-scrolling ',
+            '--enable-zero-copy',
+          ],
+          binary: '/usr/bin/google-chrome',
         },
       },
     },

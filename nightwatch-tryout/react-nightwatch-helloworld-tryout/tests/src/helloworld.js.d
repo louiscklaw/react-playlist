@@ -14,7 +14,15 @@ module.exports = {
       .resizeWindow(1024, 768)
       .assert.screenshotIdenticalToBaseline('html')
       .assert.screenshotIdenticalToBaseline('body')
-      .assert.screenshotIdenticalToBaseline('button');
+      .assert.screenshotIdenticalToBaseline('button')
+      .assert.screenshotIdenticalToBaseline('#hello_div')
+      .click('button', () => {
+        console.log('click button helloworld ');
+      })
+      .assert.screenshotIdenticalToBaseline(
+        '#hello_div',
+        'check_again_hello_div'
+      );
   },
 
   Finished: function (client) {

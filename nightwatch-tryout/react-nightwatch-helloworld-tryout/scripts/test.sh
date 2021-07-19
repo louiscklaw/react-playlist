@@ -8,4 +8,6 @@ set -ex
 
 # rm -rf vrt
 
+# yarn add chromedriver --save-dev
+
 yarn nightwatch
