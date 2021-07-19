@@ -1,6 +1,8 @@
 import React from 'react';
-// import HelloComponent from 'src/components/HelloComponent';
+
 import { AppContexts } from 'src/contexts/AppContexts';
+
+import Toggle from 'src/components/Toggle';
 
 function App({ test_branch = false }) {
   if (test_branch) {
@@ -12,9 +14,7 @@ function App({ test_branch = false }) {
   return (
     <div className="App">
       <AppContexts>
-        {/* <Toggle /> */}
-        {/* hellocomponents */}
-        {/* {helloanotherworld} */}
+        <Toggle />
       </AppContexts>
     </div>
   );

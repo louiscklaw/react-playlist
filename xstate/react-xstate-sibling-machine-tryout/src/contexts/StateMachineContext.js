@@ -12,13 +12,19 @@ export function StateMachineContextProvider({ children }) {
   const toggleMachine1 = useMachine(toggleMachine);
   const toggleMachine2 = useMachine(toggleMachine);
 
+  const helloworld = 'helloworld';
+
   return (
     <>
-      <div style={{ display: 'flex' }}>
-        <Machine1 machine1={toggleMachine1} machine2={toggleMachine2} />
-        <Machine2 machine1={toggleMachine1} machine2={toggleMachine2} />
-        {children}
-      </div>
+      <StateMachineContext.Provider
+        value={{ helloworld, toggleMachine1, toggleMachine2 }}
+      >
+        <div style={{ display: 'flex' }}>
+          <Machine1 machine1={toggleMachine1} machine2={toggleMachine2} />
+          <Machine2 machine1={toggleMachine1} machine2={toggleMachine2} />
+          {children}
+        </div>
+      </StateMachineContext.Provider>
     </>
   );
 }

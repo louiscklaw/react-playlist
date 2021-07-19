@@ -1,26 +1,26 @@
-// import { useMachine } from '../path/to/useMachine';
-import { useMachine } from '@xstate/react';
-import {
-  toggleMachine,
-  STATE_INACTIVE,
-  SEND_TOGGLE,
-  SEND_SUSPEND,
-  SEND_UNSUSPEND,
-} from 'src/StateMachines/toggleMachine';
+import React from 'react';
+
+import { STATE_INACTIVE, SEND_TOGGLE } from 'src/StateMachines/toggleMachine';
+
+import { StateMachineContext } from 'src/contexts/StateMachineContext';
 
 export default function Toggle() {
-  const [current, send] = useMachine(toggleMachine);
+  let { toggleMachine1, toggleMachine2 } =
+    React.useContext(StateMachineContext);
+
+  let [current_machine1, sendMachine1] = toggleMachine1;
+  let [current_machine2, sendMachine2] = toggleMachine2;
 
   return (
     <>
-      <pre>{JSON.stringify(current, null, 2)}</pre>
-
-      <button onClick={() => send(SEND_TOGGLE)}>
-        {current.matches(STATE_INACTIVE) ? 'Off' : 'On'}
+      <button onClick={() => sendMachine1(SEND_TOGGLE)}>
+        {current_machine1.matches(STATE_INACTIVE) ? 'inactive' : 'active'}{' '}
+        machine 1
       </button>
-
-      <button onClick={() => send(SEND_SUSPEND)}>suspend</button>
-      <button onClick={() => send(SEND_UNSUSPEND)}>un_suspend</button>
+      <button onClick={() => sendMachine2(SEND_TOGGLE)}>
+        {current_machine2.matches(STATE_INACTIVE) ? 'inactive' : 'active'}{' '}
+        machine 2
+      </button>
     </>
   );
 }
