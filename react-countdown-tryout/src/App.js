@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="App">
       <div>countdown tryout</div>
+      <div>123321</div>
 
-      <div><CountdownByMinutes /></div>
-
+      <div>
+        <CountdownByMinutes />
+      </div>
     </div>
   );
 }
