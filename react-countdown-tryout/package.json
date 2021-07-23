@@ -17,7 +17,7 @@
     "test": "react-scripts test --notify --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "fixLintErrors": "eslint --fix src/*.js",
-    "precommit": "./set_up_hooks.sh",
+    "precommit": "bash ./.hooks/pre-commit",
     "commit": "npx git-cz"
   },
   "eslintConfig": {
