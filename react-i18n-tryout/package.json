@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "history": "^5.0.0",
     "i18next": "^19.4.4",
     "react": "^16.13.1",
@@ -17,9 +14,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --notify --coverage --watchAll=false",
     "eject": "react-scripts eject",
-    "fix-lint-errors": "eslint --fix"
+    "fixLintErrors": "eslint --fix src/*.js"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +56,9 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "eslint-plugin-unused-imports": "^1.1.2",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^17.0.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2"
   }
 }

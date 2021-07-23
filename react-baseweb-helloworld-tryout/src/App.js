@@ -30,6 +30,7 @@ const Centered = styled('div', {
 function App() {
   return (
     <div className="App">
+      Home_en
       <div style={{ height: '100%', width: '100%' }}>
         <StyletronProvider value={engine}>
           <BaseProvider theme={theme}>

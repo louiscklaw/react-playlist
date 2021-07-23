@@ -14,6 +14,7 @@ function App() {
   };
   return (
     <div className="App">
+      Home_en
       <div style={{ height: '100%', width: '100%', backgroundColor: 'gold' }}>
         rc-time-picker
       </div>
@@ -25,7 +26,6 @@ function App() {
           onChange={onChange}
         />
       </div>
-
       <pre>{JSON.stringify(debug, null, 2)}</pre>
     </div>
   );

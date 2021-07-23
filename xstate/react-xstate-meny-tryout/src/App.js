@@ -1,19 +1,19 @@
 import React from 'react';
 // import HelloComponent from 'src/components/HelloComponent';
-import { AppContexts } from 'src/contexts/AppContexts';
+import { AppContextProvider } from 'src/contexts/AppContexts';
 
 function App({ test_branch = false }) {
   let helloanotherworld = '123';
 
   if (test_branch) {
-    console.log('find true');
+    console.debug('find true');
   } else {
-    console.log('find false');
+    console.debug('find false');
   }
 
   return (
     <div className="App">
-      <AppContexts>{helloanotherworld}</AppContexts>
+      <AppContextProvider>{helloanotherworld}</AppContextProvider>
     </div>
   );
 }

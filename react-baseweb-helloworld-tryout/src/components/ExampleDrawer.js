@@ -12,8 +12,8 @@ export default function Example() {
   }
   return (
     <React.Fragment>
-      {Object.keys(ANCHOR).map((eachAnchor) => (
-        <React.Fragment>
+      {Object.keys(ANCHOR).map((eachAnchor, idx) => (
+        <React.Fragment key={idx}>
           <Button
             onClick={() => setIsOpen({ ...isOpen, [eachAnchor]: true })}
             overrides={{

@@ -13,13 +13,7 @@ import App from 'src/App';
 test('test App', () => {
   let render = createRender();
 
-  const wrapper = render(
-    <BrowserRouter>
-      <AppContexts>
-        <App />
-      </AppContexts>
-    </BrowserRouter>
-  );
+  const wrapper = render(<App />);
 
   expect(wrapper.html()).toMatchSnapshot();
 });
@@ -27,13 +21,7 @@ test('test App', () => {
 test('shallow <App />', () => {
   let shallow = createShallow();
 
-  const wrapper = shallow(
-    <BrowserRouter>
-      <AppContexts>
-        <App />
-      </AppContexts>
-    </BrowserRouter>
-  );
+  const wrapper = shallow(<App />);
 
   expect(wrapper.html()).toMatchSnapshot();
 });
