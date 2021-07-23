@@ -1,10 +1,8 @@
-import React, { lazy, Component, Suspense } from "react";
+import React, { Suspense } from 'react';
 
-import "./App.css";
+import Content from 'src/components/Content';
 
-import { importMDX } from "mdx.macro";
-
-const Content = lazy(() => importMDX("./mdxs/Content.mdx"));
+import 'src/App.css';
 
 function App() {
   return (
