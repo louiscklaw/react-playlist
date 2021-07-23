@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "fixLintErrors": "eslint --fix src/*.js",
     "precommit": "./set_up_hooks.sh",
-    "commit": "git-cz"
+    "commit": "npx git-cz"
   },
   "eslintConfig": {
     "extends": "react-app"
