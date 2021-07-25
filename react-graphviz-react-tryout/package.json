@@ -16,6 +16,7 @@
     "predeploy": "react-scripts build",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:dev": "react-scripts test --maxWorkers=1 --notify --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

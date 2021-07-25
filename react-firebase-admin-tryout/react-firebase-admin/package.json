@@ -30,6 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:dev": "react-scripts test --maxWorkers=1 --notify --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "setup-admin-dashboard": "npm install && npm build && npm run deploy",

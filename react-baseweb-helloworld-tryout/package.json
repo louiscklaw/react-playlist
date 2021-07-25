@@ -14,7 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --notify --coverage --watchAll=false",
+    "test": "react-scripts test",
+    "test:dev": "react-scripts test --notify --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "fixLintErrors": "eslint --fix src/*.js"
   },

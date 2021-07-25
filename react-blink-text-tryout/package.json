@@ -17,6 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:dev": "react-scripts test --maxWorkers=1 --notify --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -32,6 +33,22 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-syntax-highlighter)/)"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/DebugPage/",
+      "/TestLayout1/",
+      "/TestLayout2/",
+      "/TestLayout3/",
+      "/TestLayout4/",
+      "/helloworld/",
+      "/draft/",
+      "/.*helloworld.*/i",
+      "/.py/"
     ]
   }
 }
