@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div
+  className="App"
+>
+  helloworld
+  <h1>
+    Sign Up
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="firstName"
+    >
+      First Name
+    </label>
+    <input
+      id="firstName"
+      name="firstName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value=""
+    />
+    <input
+      data-testid="username"
+      id="username"
+      name="username"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value=""
+    />
+    <div />
+    <input
+      data-testid="password"
+      id="password"
+      name="password"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;

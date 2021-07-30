@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering and submitting a basic Formik form 1`] = `
+<div>
+  <h1>
+    Sign Up
+  </h1>
+  <form>
+    <label
+      for="firstName"
+    >
+      First Name
+    </label>
+    <input
+      id="firstName"
+      name="firstName"
+      value="hello john"
+    />
+    <input
+      data-testid="username"
+      id="username"
+      name="username"
+      value="hello_username"
+    />
+    <div />
+    <input
+      data-testid="password"
+      id="password"
+      name="password"
+      value="hello_password"
+    />
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`rendering and submitting a basic Formik form, hello_mary 1`] = `
+<div>
+  <h1>
+    Sign Up
+  </h1>
+  <form>
+    <label
+      for="firstName"
+    >
+      First Name
+    </label>
+    <input
+      id="firstName"
+      name="firstName"
+      value="hello_mary"
+    />
+    <input
+      data-testid="username"
+      id="username"
+      name="username"
+      value=""
+    />
+    <div>
+      username cannot empty
+    </div>
+    <input
+      data-testid="password"
+      id="password"
+      name="password"
+      value="hello_password"
+    />
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
