@@ -1,6 +1,7 @@
 import React from 'react';
 import Schedule from 'react-schedule-job';
 import 'react-schedule-job/dist/index.css';
+import { MyUseFormikForm } from 'src/tests/MyUseFormikForm';
 
 const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
@@ -47,6 +48,7 @@ const App = () => {
         }}
       />
       {open && <HelloMsg />}
+      <MyUseFormikForm />
     </div>
   );
 };
