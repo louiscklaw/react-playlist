@@ -8,7 +8,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --notify --coverage --watchAll=false",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "fixLintErrors": "eslint --fix src/*.js"
   },
@@ -53,6 +53,10 @@
     "yup": "^0.29.3"
   },
   "devDependencies": {
+    "@shopify/jest-dom-mocks": "^3.0.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -61,6 +65,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "fetch-mock": "^9.11.0",
+    "jest-canvas-mock": "^2.3.1",
+    "node-fetch": "^2.6.1",
     "prettier": "^1.19.1"
   }
 }
