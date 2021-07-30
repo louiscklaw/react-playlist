@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/PICKERS/Select helloworld 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-expanded="false"
+        aria-haspopup="true"
+        class=""
+        data-baseweb="select"
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label=""
+                class=""
+                role="combobox"
+                tabindex="0"
+                value=""
+              />
+              <div
+                class=""
+              />
+            </div>
+            <div
+              class=""
+            >
+              Select color
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            <svg
+              class=""
+              data-baseweb="icon"
+              title="open"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                open
+              </title>
+              <path
+                d="M12.7071 15.2929L17.1464 10.8536C17.4614 10.5386 17.2383 10 16.7929 10L7.20711 10C6.76165 10 6.53857 10.5386 6.85355 10.8536L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-expanded="false"
+      aria-haspopup="true"
+      class=""
+      data-baseweb="select"
+    >
+      <div
+        class=""
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <input
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label=""
+              class=""
+              role="combobox"
+              tabindex="0"
+              value=""
+            />
+            <div
+              class=""
+            />
+          </div>
+          <div
+            class=""
+          >
+            Select color
+          </div>
+        </div>
+        <div
+          class=""
+        >
+          <svg
+            class=""
+            data-baseweb="icon"
+            title="open"
+            viewBox="0 0 24 24"
+          >
+            <title>
+              open
+            </title>
+            <path
+              d="M12.7071 15.2929L17.1464 10.8536C17.4614 10.5386 17.2383 10 16.7929 10L7.20711 10C6.76165 10 6.53857 10.5386 6.85355 10.8536L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

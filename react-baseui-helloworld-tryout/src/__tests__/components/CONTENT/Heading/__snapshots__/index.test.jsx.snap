@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/CONTENT/Heading helloworld 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1
+        class=""
+        data-baseweb="heading"
+      >
+        Base Web [L1]
+      </h1>
+      <p
+        class=""
+        data-baseweb="typo-paragraphsmall"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum velit ante, ac fringilla nulla pulvinar in. Aenean ut nisi mattis, lobortis purus vel, aliquet ante. In vel viverra lectus. Vivamus a diam faucibus, rutrum quam a, varius felis. Sed pellentesque sodales libero commodo vestibulum. Phasellus convallis gravida tempor. Sed ut bibendum nisl.
+      </p>
+      <h2
+        class=""
+        data-baseweb="heading"
+      >
+        Introduction [L2]
+      </h2>
+      <p
+        class=""
+        data-baseweb="typo-paragraphsmall"
+      >
+        Vivamus vehicula justo suscipit, vestibulum nibh eu, faucibus nisi. Aenean molestie sapien nibh, sed sagittis turpis iaculis id. Nam mollis pulvinar ex eget gravida. Pellentesque fringilla odio a consequat condimentum. Curabitur ut auctor mi. Nunc blandit, tellus quis fringilla sollicitudin, risus libero scelerisque lorem, ut sagittis risus ipsum in nisl.
+      </p>
+      <h3
+        class=""
+        data-baseweb="heading"
+      >
+        Quotes [L3]
+      </h3>
+      <p
+        class=""
+        data-baseweb="typo-paragraphsmall"
+      >
+        Cras posuere placerat sem sit amet dignissim. Sed pellentesque sagittis sapien at maximus. Ut at gravida lectus. Suspendisse lectus libero, eleifend vestibulum imperdiet ut, rhoncus eu augue. Pellentesque in vulputate lacus, quis molestie lorem. Aenean sit amet blandit nisi. Nullam molestie mi vel quam vehicula, in cursus eros tempus. Sed placerat turpis vestibulum quam suscipit, eget volutpat massa aliquet.
+      </p>
+      <h4
+        class=""
+        data-baseweb="heading"
+      >
+        Subtitle [L4]
+      </h4>
+      <p
+        class=""
+        data-baseweb="typo-paragraphsmall"
+      >
+        Proin et posuere lectus. Curabitur condimentum, mauris in viverra euismod, diam elit porttitor quam, ac dictum diam diam eu mauris. Maecenas viverra, turpis sed commodo hendrerit, quam ipsum finibus mauris, et scelerisque sapien tellus mollis leo. Praesent posuere, felis at sagittis hendrerit, est massa tincidunt risus, eget tempus dolor ligula et odio. Praesent luctus lacus quis tristique semper. Etiam semper lacus non auctor fringilla.
+      </p>
+      <h5
+        class=""
+        data-baseweb="heading"
+      >
+        Subtitle [L5]
+      </h5>
+      <p
+        class=""
+        data-baseweb="typo-paragraphsmall"
+      >
+        Vivamus vehicula justo suscipit, vestibulum nibh eu, faucibus nisi. Aenean molestie sapien nibh, sed sagittis turpis iaculis id. Nam mollis pulvinar ex eget gravida. Pellentesque fringilla odio a consequat condimentum. Curabitur ut auctor mi. Nunc blandit, tellus quis fringilla sollicitudin, risus libero scelerisque lorem, ut sagittis risus ipsum in nisl.
+      </p>
+      <h6
+        class=""
+        data-baseweb="heading"
+      >
+        Subtitle [L6]
+      </h6>
+      <p
+        class=""
+        data-baseweb="typo-paragraphsmall"
+      >
+        Proin et posuere lectus. Curabitur condimentum, mauris in viverra euismod, diam elit porttitor quam, ac dictum diam diam eu mauris. Maecenas viverra, turpis sed commodo hendrerit, quam ipsum finibus mauris, et scelerisque sapien tellus mollis leo. Praesent posuere, felis at sagittis hendrerit, est massa tincidunt risus, eget tempus dolor ligula et odio. Praesent luctus lacus quis tristique semper. Etiam semper lacus non auctor fringilla.
+      </p>
+      <h2
+        class=""
+        data-baseweb="heading"
+      >
+        Motivation [L2]
+      </h2>
+      <p
+        class=""
+        data-baseweb="typo-paragraphsmall"
+      >
+        Vivamus vehicula justo suscipit, vestibulum nibh eu, faucibus nisi. Aenean molestie sapien nibh, sed sagittis turpis iaculis id. Nam mollis pulvinar ex eget gravida. Pellentesque fringilla odio a consequat condimentum. Curabitur ut auctor mi. Nunc blandit, tellus quis fringilla sollicitudin, risus libero scelerisque lorem, ut sagittis risus ipsum in nisl.
+      </p>
+    </div>
+  </body>,
+  "container": <div>
+    <h1
+      class=""
+      data-baseweb="heading"
+    >
+      Base Web [L1]
+    </h1>
+    <p
+      class=""
+      data-baseweb="typo-paragraphsmall"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum velit ante, ac fringilla nulla pulvinar in. Aenean ut nisi mattis, lobortis purus vel, aliquet ante. In vel viverra lectus. Vivamus a diam faucibus, rutrum quam a, varius felis. Sed pellentesque sodales libero commodo vestibulum. Phasellus convallis gravida tempor. Sed ut bibendum nisl.
+    </p>
+    <h2
+      class=""
+      data-baseweb="heading"
+    >
+      Introduction [L2]
+    </h2>
+    <p
+      class=""
+      data-baseweb="typo-paragraphsmall"
+    >
+      Vivamus vehicula justo suscipit, vestibulum nibh eu, faucibus nisi. Aenean molestie sapien nibh, sed sagittis turpis iaculis id. Nam mollis pulvinar ex eget gravida. Pellentesque fringilla odio a consequat condimentum. Curabitur ut auctor mi. Nunc blandit, tellus quis fringilla sollicitudin, risus libero scelerisque lorem, ut sagittis risus ipsum in nisl.
+    </p>
+    <h3
+      class=""
+      data-baseweb="heading"
+    >
+      Quotes [L3]
+    </h3>
+    <p
+      class=""
+      data-baseweb="typo-paragraphsmall"
+    >
+      Cras posuere placerat sem sit amet dignissim. Sed pellentesque sagittis sapien at maximus. Ut at gravida lectus. Suspendisse lectus libero, eleifend vestibulum imperdiet ut, rhoncus eu augue. Pellentesque in vulputate lacus, quis molestie lorem. Aenean sit amet blandit nisi. Nullam molestie mi vel quam vehicula, in cursus eros tempus. Sed placerat turpis vestibulum quam suscipit, eget volutpat massa aliquet.
+    </p>
+    <h4
+      class=""
+      data-baseweb="heading"
+    >
+      Subtitle [L4]
+    </h4>
+    <p
+      class=""
+      data-baseweb="typo-paragraphsmall"
+    >
+      Proin et posuere lectus. Curabitur condimentum, mauris in viverra euismod, diam elit porttitor quam, ac dictum diam diam eu mauris. Maecenas viverra, turpis sed commodo hendrerit, quam ipsum finibus mauris, et scelerisque sapien tellus mollis leo. Praesent posuere, felis at sagittis hendrerit, est massa tincidunt risus, eget tempus dolor ligula et odio. Praesent luctus lacus quis tristique semper. Etiam semper lacus non auctor fringilla.
+    </p>
+    <h5
+      class=""
+      data-baseweb="heading"
+    >
+      Subtitle [L5]
+    </h5>
+    <p
+      class=""
+      data-baseweb="typo-paragraphsmall"
+    >
+      Vivamus vehicula justo suscipit, vestibulum nibh eu, faucibus nisi. Aenean molestie sapien nibh, sed sagittis turpis iaculis id. Nam mollis pulvinar ex eget gravida. Pellentesque fringilla odio a consequat condimentum. Curabitur ut auctor mi. Nunc blandit, tellus quis fringilla sollicitudin, risus libero scelerisque lorem, ut sagittis risus ipsum in nisl.
+    </p>
+    <h6
+      class=""
+      data-baseweb="heading"
+    >
+      Subtitle [L6]
+    </h6>
+    <p
+      class=""
+      data-baseweb="typo-paragraphsmall"
+    >
+      Proin et posuere lectus. Curabitur condimentum, mauris in viverra euismod, diam elit porttitor quam, ac dictum diam diam eu mauris. Maecenas viverra, turpis sed commodo hendrerit, quam ipsum finibus mauris, et scelerisque sapien tellus mollis leo. Praesent posuere, felis at sagittis hendrerit, est massa tincidunt risus, eget tempus dolor ligula et odio. Praesent luctus lacus quis tristique semper. Etiam semper lacus non auctor fringilla.
+    </p>
+    <h2
+      class=""
+      data-baseweb="heading"
+    >
+      Motivation [L2]
+    </h2>
+    <p
+      class=""
+      data-baseweb="typo-paragraphsmall"
+    >
+      Vivamus vehicula justo suscipit, vestibulum nibh eu, faucibus nisi. Aenean molestie sapien nibh, sed sagittis turpis iaculis id. Nam mollis pulvinar ex eget gravida. Pellentesque fringilla odio a consequat condimentum. Curabitur ut auctor mi. Nunc blandit, tellus quis fringilla sollicitudin, risus libero scelerisque lorem, ut sagittis risus ipsum in nisl.
+    </p>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

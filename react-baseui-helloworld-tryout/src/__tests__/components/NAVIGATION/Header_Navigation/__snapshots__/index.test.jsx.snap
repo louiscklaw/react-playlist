@@ -1,0 +1,430 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/NAVIGATION/Header_Navigation helloworld 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class=""
+        data-baseweb="app-nav-bar"
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <div
+                class=""
+              >
+                <button
+                  class=""
+                  data-baseweb="button"
+                >
+                  <svg
+                    class=""
+                    data-baseweb="icon"
+                    title="Menu"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>
+                      Menu
+                    </title>
+                    <rect
+                      height="2"
+                      rx="1"
+                      width="16"
+                      x="4"
+                      y="11"
+                    />
+                    <rect
+                      height="2"
+                      rx="1"
+                      width="16"
+                      x="4"
+                      y="5"
+                    />
+                    <rect
+                      height="2"
+                      rx="1"
+                      width="16"
+                      x="4"
+                      y="17"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class=""
+                >
+                  Title
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <div
+                class=""
+              >
+                <div
+                  class=""
+                >
+                  Title
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                aria-label="Main navigation"
+                class=""
+                role="navigation"
+              >
+                <div
+                  class=""
+                  tabindex="0"
+                >
+                  Main A
+                </div>
+                <div
+                  aria-selected="true"
+                  class=""
+                  tabindex="0"
+                >
+                  Main B
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class=""
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class=""
+                  data-baseweb="button"
+                >
+                  <div
+                    aria-label="Umka Marshmallow"
+                    class=""
+                    data-baseweb="avatar"
+                    role="img"
+                  >
+                    <img
+                      alt="Umka Marshmallow"
+                      class=""
+                    />
+                    <div
+                      class=""
+                    >
+                      UM
+                    </div>
+                  </div>
+                  <svg
+                    class=""
+                    data-baseweb="icon"
+                    title="Down"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>
+                      Down
+                    </title>
+                    <path
+                      clip-rule="evenodd"
+                      d="M9 12C9 12.2652 9.10536 12.5196 9.29289 12.7071L13.2929 16.7071C13.6834 17.0976 14.3166 17.0976 14.7071 16.7071C15.0976 16.3166 15.0976 15.6834 14.7071 15.2929L11.4142 12L14.7071 8.70711C15.0976 8.31658 15.0976 7.68342 14.7071 7.29289C14.3166 6.90237 13.6834 6.90237 13.2929 7.29289L9.29289 11.2929C9.10536 11.4804 9 11.7348 9 12Z"
+                      fill-rule="evenodd"
+                      transform="rotate(270, 12, 12)"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <div
+                class=""
+              >
+                <div
+                  aria-label="Secondary navigation"
+                  class=""
+                  role="navigation"
+                >
+                  <div
+                    class=""
+                    tabindex="0"
+                  >
+                    Secondary A
+                  </div>
+                  <div
+                    class=""
+                    tabindex="0"
+                  >
+                    Secondary B
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class=""
+      data-baseweb="app-nav-bar"
+    >
+      <div
+        class=""
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <button
+                class=""
+                data-baseweb="button"
+              >
+                <svg
+                  class=""
+                  data-baseweb="icon"
+                  title="Menu"
+                  viewBox="0 0 24 24"
+                >
+                  <title>
+                    Menu
+                  </title>
+                  <rect
+                    height="2"
+                    rx="1"
+                    width="16"
+                    x="4"
+                    y="11"
+                  />
+                  <rect
+                    height="2"
+                    rx="1"
+                    width="16"
+                    x="4"
+                    y="5"
+                  />
+                  <rect
+                    height="2"
+                    rx="1"
+                    width="16"
+                    x="4"
+                    y="17"
+                  />
+                </svg>
+              </button>
+              <div
+                class=""
+              >
+                Title
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <div
+                class=""
+              >
+                Title
+              </div>
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            <div
+              aria-label="Main navigation"
+              class=""
+              role="navigation"
+            >
+              <div
+                class=""
+                tabindex="0"
+              >
+                Main A
+              </div>
+              <div
+                aria-selected="true"
+                class=""
+                tabindex="0"
+              >
+                Main B
+              </div>
+            </div>
+          </div>
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                class=""
+                data-baseweb="button"
+              >
+                <div
+                  aria-label="Umka Marshmallow"
+                  class=""
+                  data-baseweb="avatar"
+                  role="img"
+                >
+                  <img
+                    alt="Umka Marshmallow"
+                    class=""
+                  />
+                  <div
+                    class=""
+                  >
+                    UM
+                  </div>
+                </div>
+                <svg
+                  class=""
+                  data-baseweb="icon"
+                  title="Down"
+                  viewBox="0 0 24 24"
+                >
+                  <title>
+                    Down
+                  </title>
+                  <path
+                    clip-rule="evenodd"
+                    d="M9 12C9 12.2652 9.10536 12.5196 9.29289 12.7071L13.2929 16.7071C13.6834 17.0976 14.3166 17.0976 14.7071 16.7071C15.0976 16.3166 15.0976 15.6834 14.7071 15.2929L11.4142 12L14.7071 8.70711C15.0976 8.31658 15.0976 7.68342 14.7071 7.29289C14.3166 6.90237 13.6834 6.90237 13.2929 7.29289L9.29289 11.2929C9.10536 11.4804 9 11.7348 9 12Z"
+                    fill-rule="evenodd"
+                    transform="rotate(270, 12, 12)"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class=""
+            >
+              <div
+                aria-label="Secondary navigation"
+                class=""
+                role="navigation"
+              >
+                <div
+                  class=""
+                  tabindex="0"
+                >
+                  Secondary A
+                </div>
+                <div
+                  class=""
+                  tabindex="0"
+                >
+                  Secondary B
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/CONTENT/Drag_and_Drop_List helloworld 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class=""
+        data-baseweb="dnd-list"
+      >
+        <ul
+          class=""
+        >
+          <li
+            aria-roledescription="You are currently at a draggable item at position 1. Press space bar to lift."
+            class=""
+            style="user-select: none; box-sizing: border-box; position: relative; z-index: 0; display: flex;"
+            tabindex="0"
+          >
+            <div
+              class=""
+            >
+              <svg
+                class=""
+                data-baseweb="icon"
+                title="Grab"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Grab
+                </title>
+                <path
+                  clip-rule="evenodd"
+                  d="M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class=""
+            >
+              Item 1
+            </div>
+          </li>
+          <li
+            aria-roledescription="You are currently at a draggable item at position 2. Press space bar to lift."
+            class=""
+            style="user-select: none; box-sizing: border-box; position: relative; z-index: 0; display: flex;"
+            tabindex="0"
+          >
+            <div
+              class=""
+            >
+              <svg
+                class=""
+                data-baseweb="icon"
+                title="Grab"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Grab
+                </title>
+                <path
+                  clip-rule="evenodd"
+                  d="M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class=""
+            >
+              Item 2
+            </div>
+          </li>
+          <li
+            aria-roledescription="You are currently at a draggable item at position 3. Press space bar to lift."
+            class=""
+            style="user-select: none; box-sizing: border-box; position: relative; z-index: 0; display: flex;"
+            tabindex="0"
+          >
+            <div
+              class=""
+            >
+              <svg
+                class=""
+                data-baseweb="icon"
+                title="Grab"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Grab
+                </title>
+                <path
+                  clip-rule="evenodd"
+                  d="M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class=""
+            >
+              Item 3
+            </div>
+          </li>
+        </ul>
+        <div
+          aria-atomic="true"
+          aria-live="assertive"
+          role="log"
+          style="position: absolute; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%);"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class=""
+      data-baseweb="dnd-list"
+    >
+      <ul
+        class=""
+      >
+        <li
+          aria-roledescription="You are currently at a draggable item at position 1. Press space bar to lift."
+          class=""
+          style="user-select: none; box-sizing: border-box; position: relative; z-index: 0; display: flex;"
+          tabindex="0"
+        >
+          <div
+            class=""
+          >
+            <svg
+              class=""
+              data-baseweb="icon"
+              title="Grab"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Grab
+              </title>
+              <path
+                clip-rule="evenodd"
+                d="M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class=""
+          >
+            Item 1
+          </div>
+        </li>
+        <li
+          aria-roledescription="You are currently at a draggable item at position 2. Press space bar to lift."
+          class=""
+          style="user-select: none; box-sizing: border-box; position: relative; z-index: 0; display: flex;"
+          tabindex="0"
+        >
+          <div
+            class=""
+          >
+            <svg
+              class=""
+              data-baseweb="icon"
+              title="Grab"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Grab
+              </title>
+              <path
+                clip-rule="evenodd"
+                d="M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class=""
+          >
+            Item 2
+          </div>
+        </li>
+        <li
+          aria-roledescription="You are currently at a draggable item at position 3. Press space bar to lift."
+          class=""
+          style="user-select: none; box-sizing: border-box; position: relative; z-index: 0; display: flex;"
+          tabindex="0"
+        >
+          <div
+            class=""
+          >
+            <svg
+              class=""
+              data-baseweb="icon"
+              title="Grab"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Grab
+              </title>
+              <path
+                clip-rule="evenodd"
+                d="M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class=""
+          >
+            Item 3
+          </div>
+        </li>
+      </ul>
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        role="log"
+        style="position: absolute; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%);"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
