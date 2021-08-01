@@ -1,14 +1,42 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  Stack,
+  Center,
+} from '@chakra-ui/react';
+import { Divider } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <Divider />
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function DividerOrientation() {
+  return (
+    <>
+      <Divider orientation="horizontal" />
+      <Center height="50px">
+        <Divider orientation="vertical" />
+      </Center>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function Composition() {
+  return (
+    <>
+      <Stack direction="row" h="100px" p={4}>
+        <Divider orientation="vertical" />
+        <Text>Chakra UI</Text>
+      </Stack>
+    </>
+  );
 }
 function TestHelloworld04() {
   return <>TestHelloworld04</>;
@@ -67,13 +95,13 @@ export function DividerTryout() {
     <div>
       DividerTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        DividerOrientation <DividerOrientation />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        Composition <Composition />
       </div>
       <div>
         TestHelloworld04 <TestHelloworld04 />
