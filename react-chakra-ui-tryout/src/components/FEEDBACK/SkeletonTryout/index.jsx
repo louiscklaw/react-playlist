@@ -1,23 +1,72 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Stack, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Skeleton,
+  SkeletonCircle,
+  SkeletonText,
+  useRemoteData,
+  Heading,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <Stack>
+        <Skeleton height="20px" />
+        <Skeleton height="20px" />
+        <Skeleton height="20px" />
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Usage1() {
+  return (
+    <>
+      <Skeleton>
+        <div>contents wrapped</div>
+        <div>won't be visible</div>
+      </Skeleton>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function Usage2() {
+  let [loading, setLoading] = React.useState(true);
+  let [error, setError] = React.useState(false);
+  let [data, setData] = React.useState({});
+  if (error) return <Box children="error" />;
+  return (
+    <Box>
+      <Skeleton isLoaded={!loading}>
+        <Heading>{data.title}</Heading>
+      </Skeleton>
+    </Box>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function Usage3() {
+  return (
+    <>
+      <Box padding="6" boxShadow="lg" bg="white">
+        <SkeletonCircle size="10" />
+        <SkeletonText mt="4" noOfLines={4} spacing="4" />
+      </Box>
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function SkeletonColor() {
+  return (
+    <>
+      <Skeleton startColor="pink.500" endColor="orange.500" height="20px" />
+    </>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
+function SkippingTheSkeletonWhenContentIsLoaded() {
+  return (
+    <>
+      <Skeleton isLoaded>
+        <span>Chakra ui is cool</span>
+      </Skeleton>
+    </>
+  );
 }
 function TestHelloworld07() {
   return <>TestHelloworld07</>;
@@ -67,22 +116,23 @@ export function SkeletonTryout() {
     <div>
       SkeletonTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        Usage1 <Usage1 />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        Usage2 <Usage2 />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        Usage3 <Usage3 />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        SkeletonColor <SkeletonColor />
       </div>
       <div>
-        TestHelloworld06 <TestHelloworld06 />
+        SkippingTheSkeletonWhenContentIsLoaded{' '}
+        <SkippingTheSkeletonWhenContentIsLoaded />
       </div>
       <div>
         TestHelloworld07 <TestHelloworld07 />

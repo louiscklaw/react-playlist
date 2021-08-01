@@ -1,20 +1,46 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, Code, Grid, Stack } from '@chakra-ui/react';
+import { Progress } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <Progress value={80} />
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function ProgressWithStripe() {
+  return (
+    <>
+      <Progress hasStripe value={64} />
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function ProgressSizes() {
+  return (
+    <>
+      <Stack spacing={5}>
+        <Progress colorScheme="green" size="sm" value={20} />
+        <Progress colorScheme="green" size="md" value={20} />
+        <Progress colorScheme="green" size="lg" value={20} />
+        <Progress colorScheme="green" height="32px" value={20} />
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function ProgressColorScheme() {
+  return (
+    <>
+      <Progress value={20} size="xs" colorScheme="pink" />
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function AnimatedProgress() {
+  return (
+    <>
+      <Progress size="xs" isIndeterminate />
+    </>
+  );
 }
 function TestHelloworld06() {
   return <>TestHelloworld06</>;
@@ -67,19 +93,19 @@ export function ProgressTryout() {
     <div>
       ProgressTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        ProgressWithStripe <ProgressWithStripe />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        ProgressSizes <ProgressSizes />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        ProgressColorScheme <ProgressColorScheme />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        AnimatedProgress <AnimatedProgress />
       </div>
       <div>
         TestHelloworld06 <TestHelloworld06 />
