@@ -18,5 +18,6 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-unescaped-entities': 'off',
     'react/jsx-no-comment-textnodes': 'off',
+    'react/no-children-prop': 'off',
   },
 };

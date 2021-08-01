@@ -12,4 +12,5 @@ yarn add @chakra-ui/react \
   @emotion/styled@^11 \
   framer-motion@^4 \
   @chakra-ui/icons \
-  react-spinners
+  react-spinners \
+  react-lorem-component
