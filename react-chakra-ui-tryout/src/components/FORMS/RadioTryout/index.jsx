@@ -1,27 +1,155 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  Stack,
+  HStack,
+  useRadioGroup,
+} from '@chakra-ui/react';
+import { Radio, RadioGroup, useRadio } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  const [value, setValue] = React.useState('1');
+  return (
+    <RadioGroup onChange={setValue} value={value}>
+      <Stack direction="row">
+        <Radio value="1">First</Radio>
+        <Radio value="2">Second</Radio>
+        <Radio value="3">Third</Radio>
+      </Stack>
+    </RadioGroup>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function RadioWithCustomColor() {
+  return (
+    <>
+      <RadioGroup defaultValue="2">
+        <Stack spacing={5} direction="row">
+          <Radio colorScheme="red" value="1">
+            Radio
+          </Radio>
+          <Radio colorScheme="green" value="2">
+            Radio
+          </Radio>
+        </Stack>
+      </RadioGroup>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function RadioSizes() {
+  return (
+    <>
+      <Stack>
+        <Radio size="sm" name="1" colorScheme="red">
+          Radio
+        </Radio>
+        <Radio size="md" name="1" colorScheme="green">
+          Radio
+        </Radio>
+        <Radio size="lg" name="1" colorScheme="orange" defaultChecked>
+          Radio
+        </Radio>
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function DisabledRadios() {
+  return (
+    <>
+      <RadioGroup defaultValue="1">
+        <Stack>
+          <Radio value="1" isDisabled>
+            Checked
+          </Radio>
+          <Radio value="2">Unchecked</Radio>
+          <Radio value="3">Unchecked</Radio>
+        </Stack>
+      </RadioGroup>
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function HorizontalAlignment() {
+  return (
+    <>
+      <RadioGroup defaultValue="1">
+        <Stack spacing={4} direction="row">
+          <Radio value="1" isDisabled>
+            Radio 1
+          </Radio>
+          <Radio value="2">Radio 2</Radio>
+          <Radio value="3">Radio 3</Radio>
+        </Stack>
+      </RadioGroup>
+    </>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
+function InvalidRadio() {
+  return (
+    <>
+      <Radio isInvalid>Radio</Radio>
+    </>
+  );
 }
-function TestHelloworld07() {
-  return <>TestHelloworld07</>;
+function CustomRadioButtons() {
+  function RadioCard(props) {
+    const { getInputProps, getCheckboxProps } = useRadio(props);
+
+    const input = getInputProps();
+    const checkbox = getCheckboxProps();
+
+    return (
+      <Box as="label">
+        <input {...input} />
+        <Box
+          {...checkbox}
+          cursor="pointer"
+          borderWidth="1px"
+          borderRadius="md"
+          boxShadow="md"
+          _checked={{
+            bg: 'teal.600',
+            color: 'white',
+            borderColor: 'teal.600',
+          }}
+          _focus={{
+            boxShadow: 'outline',
+          }}
+          px={5}
+          py={3}>
+          {props.children}
+        </Box>
+      </Box>
+    );
+  }
+
+  const options = ['react', 'vue', 'svelte'];
+
+  const { getRootProps, getRadioProps } = useRadioGroup({
+    name: 'framework',
+    defaultValue: 'react',
+    onChange: console.log,
+  });
+
+  const group = getRootProps();
+
+  return (
+    <HStack {...group}>
+      {options.map((value) => {
+        const radio = getRadioProps({ value });
+        return (
+          <RadioCard key={value} {...radio}>
+            {value}
+          </RadioCard>
+        );
+      })}
+    </HStack>
+  );
 }
+
 function TestHelloworld08() {
   return <>TestHelloworld08</>;
 }
@@ -67,84 +195,64 @@ export function RadioTryout() {
     <div>
       RadioTryout
       <div>
-        {' '}
-        TestHelloworld01 <TestHelloworld01 />{' '}
+        Usage <Usage />
       </div>
       <div>
-        {' '}
-        TestHelloworld02 <TestHelloworld02 />{' '}
+        RadioWithCustomColor <RadioWithCustomColor />
       </div>
       <div>
-        {' '}
-        TestHelloworld03 <TestHelloworld03 />{' '}
+        RadioSizes <RadioSizes />
       </div>
       <div>
-        {' '}
-        TestHelloworld04 <TestHelloworld04 />{' '}
+        DisabledRadios <DisabledRadios />
       </div>
       <div>
-        {' '}
-        TestHelloworld05 <TestHelloworld05 />{' '}
+        HorizontalAlignment <HorizontalAlignment />
       </div>
       <div>
-        {' '}
-        TestHelloworld06 <TestHelloworld06 />{' '}
+        InvalidRadio <InvalidRadio />
       </div>
       <div>
-        {' '}
-        TestHelloworld07 <TestHelloworld07 />{' '}
+        CustomRadioButtons <CustomRadioButtons />
       </div>
       <div>
-        {' '}
-        TestHelloworld08 <TestHelloworld08 />{' '}
+        TestHelloworld08 <TestHelloworld08 />
       </div>
       <div>
-        {' '}
-        TestHelloworld09 <TestHelloworld09 />{' '}
+        TestHelloworld09 <TestHelloworld09 />
       </div>
       <div>
-        {' '}
-        TestHelloworld10 <TestHelloworld10 />{' '}
+        TestHelloworld10 <TestHelloworld10 />
       </div>
       <div>
-        {' '}
-        TestHelloworld11 <TestHelloworld11 />{' '}
+        TestHelloworld11 <TestHelloworld11 />
       </div>
       <div>
-        {' '}
-        TestHelloworld12 <TestHelloworld12 />{' '}
+        TestHelloworld12 <TestHelloworld12 />
       </div>
       <div>
-        {' '}
-        TestHelloworld13 <TestHelloworld13 />{' '}
+        TestHelloworld13 <TestHelloworld13 />
       </div>
       <div>
-        {' '}
-        TestHelloworld14 <TestHelloworld14 />{' '}
+        TestHelloworld14 <TestHelloworld14 />
       </div>
       <div>
-        {' '}
-        TestHelloworld15 <TestHelloworld15 />{' '}
+        TestHelloworld15 <TestHelloworld15 />
       </div>
       <div>
-        {' '}
-        TestHelloworld16 <TestHelloworld16 />{' '}
+        TestHelloworld16 <TestHelloworld16 />
       </div>
       <div>
-        {' '}
-        TestHelloworld17 <TestHelloworld17 />{' '}
+        TestHelloworld17 <TestHelloworld17 />
       </div>
       <div>
-        {' '}
-        TestHelloworld18 <TestHelloworld18 />{' '}
+        TestHelloworld18 <TestHelloworld18 />
       </div>
       <div>
-        {' '}
-        TestHelloworld19 <TestHelloworld19 />{' '}
+        TestHelloworld19 <TestHelloworld19 />
       </div>
       <div>
-        {' '}
-        TestHelloworld20 <TestHelloworld20 />{' '}
+        TestHelloworld20 <TestHelloworld20 />
       </div>
     </div>
   );

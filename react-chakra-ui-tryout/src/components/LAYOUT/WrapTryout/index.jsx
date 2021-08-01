@@ -1,13 +1,12 @@
-import React from 'react'
-import { Box, Text, Link, VStack, Code, Grid, Center } from '@chakra-ui/react'
-import { Wrap, WrapItem } from '@chakra-ui/react'
+import React from 'react';
+import { Box, Text, Link, VStack, Code, Grid, Center } from '@chakra-ui/react';
+import { Wrap, WrapItem } from '@chakra-ui/react';
 
 export function WrapTryout() {
   return (
     <div>
       WrapTryout
       <div>
-        {' '}
         <Wrap>
           <WrapItem>
             <Center w="180px" h="80px" bg="red.200">
@@ -29,10 +28,9 @@ export function WrapTryout() {
               Box 4
             </Center>
           </WrapItem>
-        </Wrap>{' '}
+        </Wrap>
       </div>
       <div>
-        {' '}
         <Wrap spacing="30px">
           <WrapItem>
             <Center w="180px" h="80px" bg="red.200">
@@ -59,10 +57,9 @@ export function WrapTryout() {
               Box 5
             </Center>
           </WrapItem>
-        </Wrap>{' '}
+        </Wrap>
       </div>
       <div>
-        {' '}
         <Wrap spacing="30px" align="center">
           <WrapItem>
             <Center w="180px" h="80px" bg="red.200">
@@ -89,10 +86,9 @@ export function WrapTryout() {
               Box 5
             </Center>
           </WrapItem>
-        </Wrap>{' '}
+        </Wrap>
       </div>
       <div>
-        {' '}
         <Wrap spacing="30px" justify="center">
           <WrapItem>
             <Center w="180px" h="80px" bg="red.200">
@@ -119,7 +115,7 @@ export function WrapTryout() {
               Box 5
             </Center>
           </WrapItem>
-        </Wrap>{' '}
+        </Wrap>
       </div>
       <div> </div>
       <div> </div>
@@ -128,5 +124,5 @@ export function WrapTryout() {
       <div> </div>
       <div> </div>
     </div>
-  )
+  );
 }

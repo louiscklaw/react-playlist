@@ -147,29 +147,23 @@ export function FormControlTryout() {
     <div>
       FormControlTryout
       <div>
-        {' '}
-        Usage <Usage />{' '}
+        Usage <Usage />
       </div>
       <div>
-        {' '}
-        SampleUsageForARadioOrCheckboxGroup{' '}
-        <SampleUsageForARadioOrCheckboxGroup />{' '}
+        SampleUsageForARadioOrCheckboxGroup
+        <SampleUsageForARadioOrCheckboxGroup />
       </div>
       <div>
-        {' '}
-        MakingAFieldRequired <MakingAFieldRequired />{' '}
+        MakingAFieldRequired <MakingAFieldRequired />
       </div>
       <div>
-        {' '}
-        SelectExample <SelectExample />{' '}
+        SelectExample <SelectExample />
       </div>
       <div>
-        {' '}
-        NumberInputExample <NumberInputExample />{' '}
+        NumberInputExample <NumberInputExample />
       </div>
       <div>
-        {' '}
-        UsageWithFormLibraries <UsageWithFormLibraries />{' '}
+        UsageWithFormLibraries <UsageWithFormLibraries />
       </div>
     </div>
   );

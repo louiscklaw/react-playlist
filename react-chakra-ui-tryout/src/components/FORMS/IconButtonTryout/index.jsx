@@ -112,84 +112,64 @@ export function IconButtonTryout() {
     <div>
       IconButtonTryout
       <div>
-        {' '}
-        Usage <Usage />{' '}
+        Usage <Usage />
       </div>
       <div>
-        {' '}
-        ButtonColors <ButtonColors />{' '}
+        ButtonColors <ButtonColors />
       </div>
       <div>
-        {' '}
-        ButtonSizes <ButtonSizes />{' '}
+        ButtonSizes <ButtonSizes />
       </div>
       <div>
-        {' '}
-        ButtonVariants <ButtonVariants />{' '}
+        ButtonVariants <ButtonVariants />
       </div>
       <div>
-        {' '}
-        WithCustomIcon <WithCustomIcon />{' '}
+        WithCustomIcon <WithCustomIcon />
       </div>
       <div>
-        {' '}
-        TestHelloworld06 <TestHelloworld06 />{' '}
+        TestHelloworld06 <TestHelloworld06 />
       </div>
       <div>
-        {' '}
-        TestHelloworld07 <TestHelloworld07 />{' '}
+        TestHelloworld07 <TestHelloworld07 />
       </div>
       <div>
-        {' '}
-        TestHelloworld08 <TestHelloworld08 />{' '}
+        TestHelloworld08 <TestHelloworld08 />
       </div>
       <div>
-        {' '}
-        TestHelloworld09 <TestHelloworld09 />{' '}
+        TestHelloworld09 <TestHelloworld09 />
       </div>
       <div>
-        {' '}
-        TestHelloworld10 <TestHelloworld10 />{' '}
+        TestHelloworld10 <TestHelloworld10 />
       </div>
       <div>
-        {' '}
-        TestHelloworld11 <TestHelloworld11 />{' '}
+        TestHelloworld11 <TestHelloworld11 />
       </div>
       <div>
-        {' '}
-        TestHelloworld12 <TestHelloworld12 />{' '}
+        TestHelloworld12 <TestHelloworld12 />
       </div>
       <div>
-        {' '}
-        TestHelloworld13 <TestHelloworld13 />{' '}
+        TestHelloworld13 <TestHelloworld13 />
       </div>
       <div>
-        {' '}
-        TestHelloworld14 <TestHelloworld14 />{' '}
+        TestHelloworld14 <TestHelloworld14 />
       </div>
       <div>
-        {' '}
-        TestHelloworld15 <TestHelloworld15 />{' '}
+        TestHelloworld15 <TestHelloworld15 />
       </div>
       <div>
-        {' '}
-        TestHelloworld16 <TestHelloworld16 />{' '}
+        TestHelloworld16 <TestHelloworld16 />
       </div>
       <div>
-        {' '}
-        TestHelloworld17 <TestHelloworld17 />{' '}
+        TestHelloworld17 <TestHelloworld17 />
       </div>
       <div>
-        {' '}
-        TestHelloworld18 <TestHelloworld18 />{' '}
+        TestHelloworld18 <TestHelloworld18 />
       </div>
       <div>
-        {' '}
-        TestHelloworld19 <TestHelloworld19 />{' '}
+        TestHelloworld19 <TestHelloworld19 />
       </div>
       <div>
-        {' '}
-        TestHelloworld20 <TestHelloworld20 />{' '}
+        TestHelloworld20 <TestHelloworld20 />
       </div>
     </div>
   );

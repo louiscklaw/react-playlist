@@ -195,84 +195,40 @@ export function PinInputTryout() {
     <div>
       PinInputTryout
       <div>
-        {' '}
-        Usage <Usage />{' '}
+
+        Usage <Usage />
       </div>
       <div>
-        {' '}
-        AllowingAlphanumericValues <AllowingAlphanumericValues />{' '}
+
+        AllowingAlphanumericValues <AllowingAlphanumericValues />
       </div>
       <div>
-        {' '}
-        UsingFieldsAsAOneTimePassword <UsingFieldsAsAOneTimePassword />{' '}
+
+        UsingFieldsAsAOneTimePassword <UsingFieldsAsAOneTimePassword />
       </div>
       <div>
-        {' '}
-        MaskingThePinInputsValue <MaskingThePinInputsValue />{' '}
+
+        MaskingThePinInputsValue <MaskingThePinInputsValue />
       </div>
       <div>
-        {' '}
-        ChangingTheSizeOfThePinInput <ChangingTheSizeOfThePinInput />{' '}
+
+        ChangingTheSizeOfThePinInput <ChangingTheSizeOfThePinInput />
       </div>
       <div>
-        {' '}
-        AddingADefaultValue <AddingADefaultValue />{' '}
+
+        AddingADefaultValue <AddingADefaultValue />
       </div>
       <div>
-        {' '}
-        ChangingThePlaceholder <ChangingThePlaceholder />{' '}
+
+        ChangingThePlaceholder <ChangingThePlaceholder />
       </div>
       <div>
-        {' '}
-        DisableFocusManagement <DisableFocusManagement />{' '}
+
+        DisableFocusManagement <DisableFocusManagement />
       </div>
       <div>
-        {' '}
-        AutoFillAndCopyPaste <AutoFillAndCopyPaste />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld10 <TestHelloworld10 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld11 <TestHelloworld11 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld12 <TestHelloworld12 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld13 <TestHelloworld13 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld14 <TestHelloworld14 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld15 <TestHelloworld15 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld16 <TestHelloworld16 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld17 <TestHelloworld17 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld18 <TestHelloworld18 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld19 <TestHelloworld19 />{' '}
-      </div>
-      <div>
-        {' '}
-        TestHelloworld20 <TestHelloworld20 />{' '}
+
+        AutoFillAndCopyPaste <AutoFillAndCopyPaste />
       </div>
     </div>
   );

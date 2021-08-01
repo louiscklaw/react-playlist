@@ -141,43 +141,34 @@ export function CheckboxTryout() {
     <div>
       CheckboxTryout
       <div>
-        {' '}
         <Usage />
       </div>
       <div>
-        {' '}
         <DisabledCheckbox />
       </div>
       <div>
-        {' '}
         <CheckboxWithCustomColor />
       </div>
       <div>
-        <CheckBoxSizes />{' '}
+        <CheckBoxSizes />
       </div>
       <div>
-        {' '}
         <InvalidCheckbox />
       </div>
       <div>
-        {' '}
-        <ChangingTheSpacing />{' '}
+        <ChangingTheSpacing />
       </div>
       <div>
-        {' '}
         <ChangingTheIconColorAndSize />
       </div>
       <div>
-        {' '}
-        <IndeterminateExample />{' '}
+        <IndeterminateExample />
       </div>
       <div>
-        {' '}
         CustomCheckbox
         <CustomCheckbox />
       </div>
       <div>
-        {' '}
         <TestCheckboxGroup />
       </div>
       <div> </div>

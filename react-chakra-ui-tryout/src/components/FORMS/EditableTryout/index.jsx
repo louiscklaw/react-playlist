@@ -118,12 +118,10 @@ export function EditableTryout() {
     <div>
       EditableTryout
       <div>
-        {' '}
-        Usage <Usage />{' '}
+        Usage <Usage />
       </div>
       <div>
-        {' '}
-        TestHelloworld02 <CustomControlsExample />{' '}
+        TestHelloworld02 <CustomControlsExample />
       </div>
     </div>
   );

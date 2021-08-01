@@ -21,11 +21,9 @@ export function ButtonTryout() {
     <div>
       ButtonTryout
       <div>
-        {' '}
-        <Button colorScheme="blue">Button</Button>{' '}
+        <Button colorScheme="blue">Button</Button>
       </div>
       <div>
-        {' '}
         <Stack spacing={4} direction="row" align="center">
           <Button colorScheme="teal" size="xs">
             Button
@@ -39,10 +37,9 @@ export function ButtonTryout() {
           <Button colorScheme="teal" size="lg">
             Button
           </Button>
-        </Stack>{' '}
+        </Stack>
       </div>
       <div>
-        {' '}
         <Stack direction="row" spacing={4} align="center">
           <Button colorScheme="teal" variant="solid">
             Button
@@ -56,10 +53,9 @@ export function ButtonTryout() {
           <Button colorScheme="teal" variant="link">
             Button
           </Button>
-        </Stack>{' '}
+        </Stack>
       </div>
       <div>
-        {' '}
         <Stack direction="row" spacing={4}>
           <Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
             Email
@@ -70,7 +66,7 @@ export function ButtonTryout() {
             variant="outline">
             Call us
           </Button>
-        </Stack>{' '}
+        </Stack>
       </div>
       <div>
         <Stack direction="row" spacing={4}>
@@ -80,10 +76,9 @@ export function ButtonTryout() {
           <Button rightIcon={<MdCall />} colorScheme="blue" variant="outline">
             Call us
           </Button>
-        </Stack>{' '}
+        </Stack>
       </div>
       <div>
-        {' '}
         <Stack direction="row" spacing={4}>
           <Button isLoading colorScheme="teal" variant="solid">
             Email
@@ -95,19 +90,17 @@ export function ButtonTryout() {
             variant="outline">
             Submit
           </Button>
-        </Stack>{' '}
+        </Stack>
       </div>
       <div>
-        {' '}
         <Button
           isLoading
           colorScheme="blue"
           spinner={<BeatLoader size={8} color="white" />}>
           Click me
-        </Button>{' '}
+        </Button>
       </div>
       <div>
-        {' '}
         <Stack direction="row" spacing={4} align="center">
           <Button
             isLoading
@@ -125,10 +118,9 @@ export function ButtonTryout() {
             spinnerPlacement="end">
             Continue
           </Button>
-        </Stack>{' '}
+        </Stack>
       </div>
       <div>
-        {' '}
         <HStack>
           <Button colorScheme="facebook" leftIcon={<EmailIcon />}>
             Facebook
@@ -136,24 +128,21 @@ export function ButtonTryout() {
           <Button colorScheme="twitter" leftIcon={<EmailIcon />}>
             Twitter
           </Button>
-        </HStack>{' '}
+        </HStack>
       </div>
       <div>
-        {' '}
         <ButtonGroup variant="outline" spacing="6">
           <Button colorScheme="blue">Save</Button>
           <Button>Cancel</Button>
-        </ButtonGroup>{' '}
+        </ButtonGroup>
       </div>
       <div>
-        {' '}
         <ButtonGroup size="sm" isAttached variant="outline">
           <Button mr="-px">Save</Button>
           <IconButton aria-label="Add to friends" icon={<AddIcon />} />
-        </ButtonGroup>{' '}
+        </ButtonGroup>
       </div>
       <div>
-        {' '}
         <Button
           size="md"
           height="48px"
@@ -161,10 +150,9 @@ export function ButtonTryout() {
           border="2px"
           borderColor="green.500">
           Button
-        </Button>{' '}
+        </Button>
       </div>
       <div>
-        {' '}
         <Box
           as="button"
           height="24px"
@@ -189,7 +177,7 @@ export function ButtonTryout() {
               '0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)',
           }}>
           Join Group
-        </Box>{' '}
+        </Box>
       </div>
       <div> </div>
       <div> </div>

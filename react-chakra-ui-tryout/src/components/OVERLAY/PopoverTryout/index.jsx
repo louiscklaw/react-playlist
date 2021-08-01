@@ -244,24 +244,19 @@ export function PopoverTryout() {
       </div>
       <div> WalkthroughPopover TODO</div>
       <div>
-        {' '}
         Controlled Usage <ControlledUsage />
       </div>
       <div>
-        {' '}
-        Accessing Internal state <InternalStateEx />{' '}
+        Accessing Internal state <InternalStateEx />
       </div>
       <div>
-        {' '}
         Customizing the Popover <CustomizingThePopover />
       </div>
       <div>
-        {' '}
         Popover Placements <PopoverPlacements />
       </div>
       <div>
-        {' '}
-        Lazily mounting Popover <LazilyMountingPopover />{' '}
+        Lazily mounting Popover <LazilyMountingPopover />
       </div>
       <div> </div>
       <div> </div>

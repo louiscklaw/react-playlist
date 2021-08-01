@@ -198,85 +198,65 @@ export function InputTryout() {
     <div>
       InputTryout
       <div>
-        {' '}
-        Usage <Usage />{' '}
+        Usage <Usage />
       </div>
       <div>
-        {' '}
-        ChangingTheSizeOfInput <ChangingTheSizeOfInput />{' '}
+        ChangingTheSizeOfInput <ChangingTheSizeOfInput />
       </div>
       <div>
-        {' '}
-        ChangingTheAppearanceOfTheInput <ChangingTheAppearanceOfTheInput />{' '}
+        ChangingTheAppearanceOfTheInput <ChangingTheAppearanceOfTheInput />
       </div>
       <div>
-        {' '}
-        LeftAndRightAddons <LeftAndRightAddons />{' '}
+        LeftAndRightAddons <LeftAndRightAddons />
       </div>
       <div>
-        {' '}
-        AddElementsInsideInput <AddElementsInsideInput />{' '}
+        AddElementsInsideInput <AddElementsInsideInput />
       </div>
       <div>
-        {' '}
-        PasswordInputExample <PasswordInputExample />{' '}
+        PasswordInputExample <PasswordInputExample />
       </div>
       <div>
-        {' '}
-        ControlledInput <ControlledInput />{' '}
+        ControlledInput <ControlledInput />
       </div>
       <div>
-        {' '}
-        ChangingTheFocusAndErrorBorderColors{' '}
-        <ChangingTheFocusAndErrorBorderColors />{' '}
+        ChangingTheFocusAndErrorBorderColors
+        <ChangingTheFocusAndErrorBorderColors />
       </div>
       <div>
-        {' '}
-        TestHelloworld09 <TestHelloworld09 />{' '}
+        TestHelloworld09 <TestHelloworld09 />
       </div>
       <div>
-        {' '}
-        TestHelloworld10 <TestHelloworld10 />{' '}
+        TestHelloworld10 <TestHelloworld10 />
       </div>
       <div>
-        {' '}
-        TestHelloworld11 <TestHelloworld11 />{' '}
+        TestHelloworld11 <TestHelloworld11 />
       </div>
       <div>
-        {' '}
-        TestHelloworld12 <TestHelloworld12 />{' '}
+        TestHelloworld12 <TestHelloworld12 />
       </div>
       <div>
-        {' '}
-        TestHelloworld13 <TestHelloworld13 />{' '}
+        TestHelloworld13 <TestHelloworld13 />
       </div>
       <div>
-        {' '}
-        TestHelloworld14 <TestHelloworld14 />{' '}
+        TestHelloworld14 <TestHelloworld14 />
       </div>
       <div>
-        {' '}
-        TestHelloworld15 <TestHelloworld15 />{' '}
+        TestHelloworld15 <TestHelloworld15 />
       </div>
       <div>
-        {' '}
-        TestHelloworld16 <TestHelloworld16 />{' '}
+        TestHelloworld16 <TestHelloworld16 />
       </div>
       <div>
-        {' '}
-        TestHelloworld17 <TestHelloworld17 />{' '}
+        TestHelloworld17 <TestHelloworld17 />
       </div>
       <div>
-        {' '}
-        TestHelloworld18 <TestHelloworld18 />{' '}
+        TestHelloworld18 <TestHelloworld18 />
       </div>
       <div>
-        {' '}
-        TestHelloworld19 <TestHelloworld19 />{' '}
+        TestHelloworld19 <TestHelloworld19 />
       </div>
       <div>
-        {' '}
-        TestHelloworld20 <TestHelloworld20 />{' '}
+        TestHelloworld20 <TestHelloworld20 />
       </div>
     </div>
   );

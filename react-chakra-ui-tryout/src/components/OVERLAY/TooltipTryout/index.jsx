@@ -183,31 +183,24 @@ export function TooltipTryout() {
     <div>
       TooltipTryout
       <div>
-        {' '}
-        <Usage />{' '}
+        <Usage />
       </div>
       <div>
-        {' '}
         <WithAnIcon />
       </div>
       <div>
-        {' '}
         <WithArrow />
       </div>
       <div>
-        {' '}
         <TooltipWithFocusableContent />
       </div>
       <div>
-        {' '}
         <DisabledTooltip />
       </div>
       <div>
-        {' '}
         <Placement />
       </div>
       <div>
-        {' '}
         <MoreExamples />
       </div>
       <div> </div>
