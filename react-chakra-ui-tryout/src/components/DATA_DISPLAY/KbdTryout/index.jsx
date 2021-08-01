@@ -1,17 +1,43 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Kbd } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <span>
+        <Kbd>shift</Kbd> + <Kbd>H</Kbd>
+      </span>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Modifier() {
+  return (
+    <>
+      <span>
+        <Kbd>shift</Kbd> + <Kbd>H</Kbd>
+      </span>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function Modifier1() {
+  return (
+    <>
+      {' '}
+      <span>
+        <Kbd>shift</Kbd> then <Kbd>H</Kbd>
+      </span>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function Modifier2() {
+  return (
+    <>
+      <span>
+        <Kbd>alt</Kbd> or <Kbd>option</Kbd>
+      </span>
+    </>
+  );
 }
 function TestHelloworld05() {
   return <>TestHelloworld05</>;
@@ -67,16 +93,16 @@ export function KbdTryout() {
     <div>
       KbdTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        Modifier <Modifier />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        Modifier1 <Modifier1 />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        Modifier2 <Modifier2 />
       </div>
       <div>
         TestHelloworld05 <TestHelloworld05 />
