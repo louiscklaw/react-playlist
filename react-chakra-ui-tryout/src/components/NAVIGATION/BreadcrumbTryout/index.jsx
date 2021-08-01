@@ -1,20 +1,112 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { ChevronRightIcon } from '@chakra-ui/icons';
+
+function Usage() {
+  return (
+    <>
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">Home</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">Docs</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink href="#">Breadcrumb</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Separators() {
+  return (
+    <>
+      <Breadcrumb separator="-">
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">Home</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">About</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink href="#">Contact</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function UsingAnIconAsTheSeparator() {
+  return (
+    <>
+      <Breadcrumb
+        spacing="8px"
+        separator={<ChevronRightIcon color="gray.500" />}>
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">Home</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">About</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink href="#">Contact</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function Composition() {
+  return (
+    <>
+      <Breadcrumb fontWeight="medium" fontSize="sm">
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">Home</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <BreadcrumbLink href="#">About</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink href="#">Current</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function UsageWithRoutingLibrary() {
+  return (
+    <>
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <BreadcrumbLink as={Link} to="#">
+            Home
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink as={Link} to="#">
+            About
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink>Contact</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
+    </>
+  );
 }
 function TestHelloworld06() {
   return <>TestHelloworld06</>;
@@ -67,64 +159,19 @@ export function BreadcrumbTryout() {
     <div>
       BreadcrumbTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        Separators <Separators />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        UsingAnIconAsTheSeparator <UsingAnIconAsTheSeparator />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        Composition <Composition />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        UsageWithRoutingLibrary <UsageWithRoutingLibrary />
       </div>
     </div>
   );
