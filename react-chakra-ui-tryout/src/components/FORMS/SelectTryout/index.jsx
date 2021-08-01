@@ -1,20 +1,70 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  Select,
+  Stack,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { MdArrowDropDown } from 'react-icons/md';
+
+function Usage() {
+  return (
+    <>
+      <Select placeholder="Select option">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </Select>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function ChangingTheSizeOfTheSelect() {
+  return (
+    <>
+      <Stack spacing={3}>
+        <Select placeholder="extra small size" size="xs" />
+        <Select placeholder="small size" size="sm" />
+        <Select placeholder="medium size" size="md" />
+        <Select placeholder="large size" size="lg" />
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function ChangingTheAppearanceOfTheSelect() {
+  return (
+    <>
+      <Stack spacing={3}>
+        <Select variant="outline" placeholder="Outline" />
+        <Select variant="filled" placeholder="Filled" />
+        <Select variant="flushed" placeholder="Flushed" />
+        <Select variant="unstyled" placeholder="Unstyled" />
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function ChangingTheIconInTheSelect() {
+  return (
+    <>
+      <Select icon={<MdArrowDropDown />} placeholder="Woohoo! A new icon" />
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function OverridingTheStylesOfTheSelect() {
+  return (
+    <>
+      <Select
+        bg="tomato"
+        borderColor="tomato"
+        color="white"
+        placeholder="Woohoo! A new background color!"
+      />
+    </>
+  );
 }
 function TestHelloworld06() {
   return <>TestHelloworld06</>;
@@ -67,19 +117,19 @@ export function SelectTryout() {
     <div>
       SelectTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        ChangingTheSizeOfTheSelect <ChangingTheSizeOfTheSelect />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        ChangingTheAppearanceOfTheSelect <ChangingTheAppearanceOfTheSelect />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        ChangingTheIconInTheSelect <ChangingTheIconInTheSelect />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        OverridingTheStylesOfTheSelect <OverridingTheStylesOfTheSelect />
       </div>
       <div>
         TestHelloworld06 <TestHelloworld06 />
