@@ -1,17 +1,76 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  Stack,
+  Flex,
+  Avatar,
+} from '@chakra-ui/react';
+import { Badge } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <Badge>Default</Badge>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function BadgeColor() {
+  return (
+    <>
+      <Stack direction="row">
+        <Badge>Default</Badge>
+        <Badge colorScheme="green">Success</Badge>
+        <Badge colorScheme="red">Removed</Badge>
+        <Badge colorScheme="purple">New</Badge>
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function BadgeVariants() {
+  return (
+    <>
+      <Stack direction="row">
+        <Badge variant="outline" colorScheme="green">
+          Default
+        </Badge>
+        <Badge variant="solid" colorScheme="green">
+          Success
+        </Badge>
+        <Badge variant="subtle" colorScheme="green">
+          Removed
+        </Badge>
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function Composition() {
+  return (
+    <>
+      <Flex>
+        <Avatar src="https://bit.ly/sage-adebayo" />
+        <Box ml="3">
+          <Text fontWeight="bold">
+            Segun Adebayo
+            <Badge ml="1" colorScheme="green">
+              New
+            </Badge>
+          </Text>
+          <Text fontSize="sm">UI Engineer</Text>
+        </Box>
+      </Flex>
+      <Text fontSize="xl" fontWeight="bold">
+        Segun Adebayo
+        <Badge ml="1" fontSize="0.8em" colorScheme="green">
+          New
+        </Badge>
+      </Text>
+    </>
+  );
 }
 function TestHelloworld05() {
   return <>TestHelloworld05</>;
@@ -67,16 +126,16 @@ export function BadgeTryout() {
     <div>
       BadgeTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        BadgeColor <BadgeColor />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        BadgeVariants <BadgeVariants />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        Composition <Composition />
       </div>
       <div>
         TestHelloworld05 <TestHelloworld05 />
