@@ -1,32 +1,160 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  HStack,
+  Stack,
+} from '@chakra-ui/react';
+import { PinInput, PinInputField } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <HStack>
+        <PinInput>
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+        </PinInput>
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function AllowingAlphanumericValues() {
+  return (
+    <>
+      <HStack>
+        <PinInput type="alphanumeric">
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+        </PinInput>
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function UsingFieldsAsAOneTimePassword() {
+  return (
+    <>
+      <PinInput otp>
+        <PinInputField />
+        <PinInputField />
+        <PinInputField />
+        <PinInputField />
+      </PinInput>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function MaskingThePinInputsValue() {
+  return (
+    <>
+      <HStack>
+        <PinInput type="alphanumeric" mask>
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+        </PinInput>
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function ChangingTheSizeOfThePinInput() {
+  return (
+    <>
+      <Stack>
+        <HStack>
+          <PinInput size="xs">
+            <PinInputField />
+            <PinInputField />
+            <PinInputField />
+          </PinInput>
+        </HStack>
+
+        <HStack>
+          <PinInput size="sm">
+            <PinInputField />
+            <PinInputField />
+            <PinInputField />
+          </PinInput>
+        </HStack>
+
+        <HStack>
+          <PinInput size="md">
+            <PinInputField />
+            <PinInputField />
+            <PinInputField />
+          </PinInput>
+        </HStack>
+
+        <HStack>
+          <PinInput size="lg">
+            <PinInputField />
+            <PinInputField />
+            <PinInputField />
+          </PinInput>
+        </HStack>
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
+function AddingADefaultValue() {
+  return (
+    <>
+      <HStack>
+        <PinInput defaultValue="234">
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+        </PinInput>
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld07() {
-  return <>TestHelloworld07</>;
+function ChangingThePlaceholder() {
+  return (
+    <>
+      <HStack>
+        <PinInput placeholder="🥳">
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+        </PinInput>
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld08() {
-  return <>TestHelloworld08</>;
+function DisableFocusManagement() {
+  return (
+    <>
+      <HStack>
+        <PinInput manageFocus={false}>
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+        </PinInput>
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld09() {
-  return <>TestHelloworld09</>;
+function AutoFillAndCopyPaste() {
+  return (
+    <>
+      <HStack>
+        <PinInput>
+          <PinInputField />
+          <PinInputField />
+          <PinInputField />
+        </PinInput>
+      </HStack>
+    </>
+  );
 }
 function TestHelloworld10() {
   return <>TestHelloworld10</>;
@@ -68,39 +196,39 @@ export function PinInputTryout() {
       PinInputTryout
       <div>
         {' '}
-        TestHelloworld01 <TestHelloworld01 />{' '}
+        Usage <Usage />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld02 <TestHelloworld02 />{' '}
+        AllowingAlphanumericValues <AllowingAlphanumericValues />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld03 <TestHelloworld03 />{' '}
+        UsingFieldsAsAOneTimePassword <UsingFieldsAsAOneTimePassword />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld04 <TestHelloworld04 />{' '}
+        MaskingThePinInputsValue <MaskingThePinInputsValue />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld05 <TestHelloworld05 />{' '}
+        ChangingTheSizeOfThePinInput <ChangingTheSizeOfThePinInput />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld06 <TestHelloworld06 />{' '}
+        AddingADefaultValue <AddingADefaultValue />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld07 <TestHelloworld07 />{' '}
+        ChangingThePlaceholder <ChangingThePlaceholder />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld08 <TestHelloworld08 />{' '}
+        DisableFocusManagement <DisableFocusManagement />{' '}
       </div>
       <div>
         {' '}
-        TestHelloworld09 <TestHelloworld09 />{' '}
+        AutoFillAndCopyPaste <AutoFillAndCopyPaste />{' '}
       </div>
       <div>
         {' '}
