@@ -1,26 +1,50 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <CircularProgress value={80} />
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function ChangingTheSize() {
+  return (
+    <>
+      <CircularProgress value={30} size="120px" />
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function ChangingTheThickness() {
+  return (
+    <>
+      <CircularProgress value={59} size="100px" thickness="4px" />
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function ChangingTheColor() {
+  return (
+    <>
+      <CircularProgress value={30} color="orange.400" thickness="12px" />
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function AddingLabel() {
+  return (
+    <>
+      <CircularProgress value={40} color="green.400">
+        <CircularProgressLabel>40%</CircularProgressLabel>
+      </CircularProgress>
+    </>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
-}
-function TestHelloworld07() {
-  return <>TestHelloworld07</>;
+function IndeterminateProgress() {
+  return (
+    <>
+      <CircularProgress isIndeterminate color="green.300" />
+    </>
+  );
 }
 function TestHelloworld08() {
   return <>TestHelloworld08</>;
@@ -67,64 +91,22 @@ export function CircularProgressTryout() {
     <div>
       CircularProgressTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        ChangingTheSize <ChangingTheSize />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        ChangingTheThickness <ChangingTheThickness />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        ChangingTheColor <ChangingTheColor />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        AddingLabel <AddingLabel />
       </div>
       <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        IndeterminateProgress <IndeterminateProgress />
       </div>
     </div>
   );
