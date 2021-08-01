@@ -1,11 +1,23 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, Code, Grid, Stack } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <Code>Hello world</Code>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Colors() {
+  return (
+    <>
+      <Stack direction="row">
+        <Code children="console.log(welcome)" />
+        <Code colorScheme="red" children="var chakra = 'awesome!'" />
+        <Code colorScheme="yellow" children="npm install chakra" />
+      </Stack>
+    </>
+  );
 }
 function TestHelloworld03() {
   return <>TestHelloworld03</>;
@@ -67,10 +79,10 @@ export function CodeTryout() {
     <div>
       CodeTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        Colors <Colors />
       </div>
       <div>
         TestHelloworld03 <TestHelloworld03 />
