@@ -1,23 +1,99 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, Code, Grid, HStack } from '@chakra-ui/react';
+import {
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  TagRightIcon,
+  TagCloseButton,
+  Avatar,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { AddIcon } from '@chakra-ui/icons';
+import { MdSettings } from 'react-icons/md';
+
+function Usage() {
+  return (
+    <>
+      <Tag>Sample Tag</Tag>
+    </>
+  );
 }
 function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+  return (
+    <>
+      <HStack spacing={4}>
+        {['sm', 'md', 'lg'].map((size) => (
+          <Tag size={size} key={size} variant="solid" colorScheme="teal">
+            Teal
+          </Tag>
+        ))}
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function WithLeftIcon() {
+  return (
+    <>
+      <HStack spacing={4}>
+        {['sm', 'md', 'lg'].map((size) => (
+          <Tag size={size} key={size} variant="subtle" colorScheme="cyan">
+            <TagLeftIcon boxSize="12px" as={AddIcon} />
+            <TagLabel>Cyan</TagLabel>
+          </Tag>
+        ))}
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function WithRightIcon() {
+  return (
+    <>
+      <HStack spacing={4}>
+        {['sm', 'md', 'lg'].map((size) => (
+          <Tag size={size} key={size} variant="outline" colorScheme="blue">
+            <TagLabel>Blue</TagLabel>
+            <TagRightIcon as={MdSettings} />
+          </Tag>
+        ))}
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function WithCloseButton() {
+  return (
+    <>
+      <HStack spacing={4}>
+        {['sm', 'md', 'lg'].map((size) => (
+          <Tag
+            size={size}
+            key={size}
+            borderRadius="full"
+            variant="solid"
+            colorScheme="green">
+            <TagLabel>Green</TagLabel>
+            <TagCloseButton />
+          </Tag>
+        ))}
+      </HStack>
+    </>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
+function WithCustomElement() {
+  return (
+    <>
+      <Tag size="lg" colorScheme="red" borderRadius="full">
+        <Avatar
+          src="https://bit.ly/sage-adebayo"
+          size="xs"
+          name="Segun Adebayo"
+          ml={-1}
+          mr={2}
+        />
+        <TagLabel>Segun</TagLabel>
+      </Tag>
+    </>
+  );
 }
 function TestHelloworld07() {
   return <>TestHelloworld07</>;
@@ -67,22 +143,22 @@ export function TagTryout() {
     <div>
       TagTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
         TestHelloworld02 <TestHelloworld02 />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        WithLeftIcon <WithLeftIcon />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        WithRightIcon <WithRightIcon />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        WithCloseButton <WithCloseButton />
       </div>
       <div>
-        TestHelloworld06 <TestHelloworld06 />
+        WithCustomElement <WithCustomElement />
       </div>
       <div>
         TestHelloworld07 <TestHelloworld07 />

@@ -1,50 +1,351 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, Code, Grid, Image } from '@chakra-ui/react';
+import {
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  useColorModeValue,
+  useTab,
+  useStyles,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { chakra } from '@chakra-ui/react';
+
+function Usage() {
+  return (
+    <>
+      <Tabs>
+        <TabList>
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+          <Tab>Three</Tab>
+        </TabList>
+
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>three!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function TabVariantsAndColor() {
+  return (
+    <>
+      <Tabs variant="enclosed">
+        <TabList>
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function TabVariantsAndColor1() {
+  return (
+    <>
+      <Tabs variant="soft-rounded" colorScheme="green">
+        <TabList>
+          <Tab>Tab 1</Tab>
+          <Tab>Tab 2</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function TabSizes() {
+  return (
+    <>
+      <Tabs size="md" variant="enclosed">
+        <TabList>
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function ChangingTheTabsAlignment() {
+  return (
+    <>
+      <Tabs align="end" variant="enclosed">
+        <TabList>
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
+function FittedTabs() {
+  return (
+    <>
+      <Tabs isFitted variant="enclosed">
+        <TabList mb="1em">
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld07() {
-  return <>TestHelloworld07</>;
+function StylingTheTabStatesViaProps() {
+  return (
+    <>
+      <Tabs variant="unstyled">
+        <TabList>
+          <Tab _selected={{ color: 'white', bg: 'blue.500' }}>Tab 1</Tab>
+          <Tab _selected={{ color: 'white', bg: 'green.400' }}>Tab 2</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld08() {
-  return <>TestHelloworld08</>;
+function TestTabsonChange() {
+  const colors = useColorModeValue(
+    ['red.50', 'teal.50', 'blue.50'],
+    ['red.900', 'teal.900', 'blue.900']
+  );
+  const [tabIndex, setTabIndex] = React.useState(0);
+  const bg = colors[tabIndex];
+  return (
+    <Tabs onChange={(index) => setTabIndex(index)} bg={bg}>
+      <TabList>
+        <Tab>Red</Tab>
+        <Tab>Teal</Tab>
+        <Tab>Blue</Tab>
+      </TabList>
+      <TabPanels p="2rem">
+        <TabPanel>The Primary Colors</TabPanel>
+        <TabPanel>Are 1, 2, 3</TabPanel>
+        <TabPanel>Red, yellow and blue.</TabPanel>
+      </TabPanels>
+    </Tabs>
+  );
 }
-function TestHelloworld09() {
-  return <>TestHelloworld09</>;
+function MakeATabInitiallyActive() {
+  return (
+    <>
+      <Tabs defaultIndex={1}>
+        <TabPanels>
+          <TabPanel>
+            <Image
+              boxSize="200px"
+              fit="cover"
+              src="https://resizing.flixster.com/wTgvsiM8vNLhCcCH-6ovV8n5z5U=/300x300/v1.bjsyMDkxMzI5O2o7MTgyMDQ7MTIwMDsxMjAwOzkwMA"
+            />
+          </TabPanel>
+          <TabPanel>
+            <Image
+              boxSize="200px"
+              fit="cover"
+              src="https://vignette.wikia.nocookie.net/naruto/images/2/21/Sasuke_Part_1.png/revision/latest?cb=20170716092103"
+            />
+          </TabPanel>
+        </TabPanels>
+        <TabList>
+          <Tab>Naruto</Tab>
+          <Tab>Sasuke</Tab>
+        </TabList>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld10() {
-  return <>TestHelloworld10</>;
+function MakeATabDisabled() {
+  return (
+    <>
+      {' '}
+      <Tabs>
+        <TabList>
+          <Tab>One</Tab>
+          <Tab isDisabled>Two</Tab>
+          <Tab>Three</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>1</TabPanel>
+          <TabPanel>2</TabPanel>
+          <TabPanel>3</TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld11() {
-  return <>TestHelloworld11</>;
+function TabsWithManualActivation() {
+  return (
+    <>
+      <Tabs isManual variant="enclosed">
+        <TabList>
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld12() {
-  return <>TestHelloworld12</>;
+function LazilyMountingTabPanels() {
+  return (
+    <>
+      <Tabs isLazy>
+        <TabList>
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+        </TabList>
+        <TabPanels>
+          {/* initially mounted */}
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          {/* initially not mounted */}
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </>
+  );
 }
-function TestHelloworld13() {
-  return <>TestHelloworld13</>;
+function ControlledTabs() {
+  const [tabIndex, setTabIndex] = React.useState(0);
+  const handleSliderChange = (event) => {
+    setTabIndex(parseInt(event.target.value, 10));
+  };
+
+  const handleTabsChange = (index) => {
+    setTabIndex(index);
+  };
+  return (
+    <Box>
+      <input
+        type="range"
+        min="0"
+        max="2"
+        value={tabIndex}
+        onChange={handleSliderChange}
+      />
+
+      <Tabs index={tabIndex} onChange={handleTabsChange}>
+        <TabList>
+          <Tab>One</Tab>
+          <Tab>Two</Tab>
+          <Tab>Three</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>Click the tabs or pull the slider around</p>
+          </TabPanel>
+          <TabPanel>
+            <p>Yeah yeah. What's up?</p>
+          </TabPanel>
+          <TabPanel>
+            <p>Oh, hello there.</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </Box>
+  );
 }
-function TestHelloworld14() {
-  return <>TestHelloworld14</>;
-}
-function TestHelloworld15() {
-  return <>TestHelloworld15</>;
+
+function DataTabs() {
+  // 1. Create the component
+  function DataTabs({ data }) {
+    return (
+      <Tabs>
+        <TabList>
+          {data.map((tab, index) => (
+            <Tab key={index}>{tab.label}</Tab>
+          ))}
+        </TabList>
+        <TabPanels>
+          {data.map((tab, index) => (
+            <TabPanel p={4} key={index}>
+              {tab.content}
+            </TabPanel>
+          ))}
+        </TabPanels>
+      </Tabs>
+    );
+  }
+
+  // 2. Create an array of data
+  const tabData = [
+    {
+      label: 'Nigerian Jollof',
+      content: 'Perhaps the greatest dish ever invented.',
+    },
+    {
+      label: 'Pounded Yam & Egusi',
+      content:
+        'Perhaps the surest dish ever invented but fills the stomach more than rice.',
+    },
+  ];
+
+  // 3. Pass the props and chill!
+  return <DataTabs data={tabData} />;
 }
 function TestHelloworld16() {
   return <>TestHelloworld16</>;
@@ -67,49 +368,50 @@ export function TabsTryout() {
     <div>
       TabsTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        TabVariantsAndColor <TabVariantsAndColor />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        TabVariantsAndColor1 <TabVariantsAndColor1 />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        TabSizes <TabSizes />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        ChangingTheTabsAlignment <ChangingTheTabsAlignment />
       </div>
       <div>
-        TestHelloworld06 <TestHelloworld06 />
+        FittedTabs <FittedTabs />
       </div>
       <div>
-        TestHelloworld07 <TestHelloworld07 />
+        StylingTheTabStatesViaProps <StylingTheTabStatesViaProps />
       </div>
       <div>
-        TestHelloworld08 <TestHelloworld08 />
+        TestTabsonChange <TestTabsonChange />
       </div>
       <div>
-        TestHelloworld09 <TestHelloworld09 />
+        MakeATabInitiallyActive <MakeATabInitiallyActive />
       </div>
       <div>
-        TestHelloworld10 <TestHelloworld10 />
+        MakeATabDisabled <MakeATabDisabled />
       </div>
       <div>
-        TestHelloworld11 <TestHelloworld11 />
+        TabsWithManualActivation <TabsWithManualActivation />
       </div>
       <div>
-        TestHelloworld12 <TestHelloworld12 />
+        LazilyMountingTabPanels <LazilyMountingTabPanels />
       </div>
       <div>
-        TestHelloworld13 <TestHelloworld13 />
+        ControlledTabs <ControlledTabs />
       </div>
       <div>
-        TestHelloworld14 <TestHelloworld14 />
+        CreatingCustomTabComponents blocked by forwardRef
+        {/*  <CreatingCustomTabComponents /> */}
       </div>
       <div>
-        TestHelloworld15 <TestHelloworld15 />
+        DataTabs <DataTabs />
       </div>
       <div>
         TestHelloworld16 <TestHelloworld16 />

@@ -1,11 +1,38 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Heading,
+  Button,
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+} from '@chakra-ui/react';
+import { VisuallyHidden } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { CheckIcon } from '@chakra-ui/icons';
+
+function Usage() {
+  return (
+    <>
+      {' '}
+      <Button>
+        <VisuallyHidden>Checkmark</VisuallyHidden>
+        <CheckIcon />
+      </Button>
+    </>
+  );
 }
 function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+  return (
+    <>
+      <Box>
+        <Heading>Title and description</Heading>
+        <VisuallyHidden>This will be hidden</VisuallyHidden>
+      </Box>
+    </>
+  );
 }
 function TestHelloworld03() {
   return <>TestHelloworld03</>;
@@ -67,7 +94,7 @@ export function VisuallyHiddenTryout() {
     <div>
       VisuallyHiddenTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
         TestHelloworld02 <TestHelloworld02 />
