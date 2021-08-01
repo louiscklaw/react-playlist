@@ -1,14 +1,62 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
+} from '@chakra-ui/react';
+import { MdCheckCircle, MdSettings } from 'react-icons/md';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function TestUnorderedList() {
+  return (
+    <>
+      <UnorderedList>
+        <ListItem>Lorem ipsum dolor sit amet</ListItem>
+        <ListItem>Consectetur adipiscing elit</ListItem>
+        <ListItem>Integer molestie lorem at massa</ListItem>
+        <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+      </UnorderedList>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function TestOrderedList() {
+  return (
+    <>
+      <OrderedList>
+        <ListItem>Lorem ipsum dolor sit amet</ListItem>
+        <ListItem>Consectetur adipiscing elit</ListItem>
+        <ListItem>Integer molestie lorem at massa</ListItem>
+        <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+      </OrderedList>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function TestUnstyledListWithIcon() {
+  return (
+    <>
+      <List spacing={3}>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="green.500" />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="green.500" />
+          Assumenda, quia temporibus eveniet a libero incidunt suscipit
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="green.500" />
+          Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+        </ListItem>
+        {/* You can also use custom icons from react-icons */}
+        <ListItem>
+          <ListIcon as={MdSettings} color="green.500" />
+          Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+        </ListItem>
+      </List>
+    </>
+  );
 }
 function TestHelloworld04() {
   return <>TestHelloworld04</>;
@@ -67,64 +115,13 @@ export function ListTryout() {
     <div>
       ListTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        TestUnorderedList <TestUnorderedList />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        TestOrderedList <TestOrderedList />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
-      </div>
-      <div>
-        TestHelloworld04 <TestHelloworld04 />
-      </div>
-      <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        TestUnstyledListWithIcon <TestUnstyledListWithIcon />
       </div>
     </div>
   );

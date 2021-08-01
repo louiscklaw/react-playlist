@@ -1,11 +1,48 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Stat,
+  StatLabel,
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+  StatGroup,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function BasicUsage() {
+  return (
+    <>
+      <Stat>
+        <StatLabel>Collected Fees</StatLabel>
+        <StatNumber>£0.00</StatNumber>
+        <StatHelpText>Feb 12 - Feb 28</StatHelpText>
+      </Stat>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function StatWithIndicator() {
+  return (
+    <>
+      <StatGroup>
+        <Stat>
+          <StatLabel>Sent</StatLabel>
+          <StatNumber>345,670</StatNumber>
+          <StatHelpText>
+            <StatArrow type="increase" />
+            23.36%
+          </StatHelpText>
+        </Stat>
+        <Stat>
+          <StatLabel>Clicked</StatLabel>
+          <StatNumber>45</StatNumber>
+          <StatHelpText>
+            <StatArrow type="decrease" />
+            9.05%
+          </StatHelpText>
+        </Stat>
+      </StatGroup>
+    </>
+  );
 }
 function TestHelloworld03() {
   return <>TestHelloworld03</>;
@@ -67,64 +104,10 @@ export function StatTryout() {
     <div>
       StatTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        BasicUsage <BasicUsage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
-      </div>
-      <div>
-        TestHelloworld03 <TestHelloworld03 />
-      </div>
-      <div>
-        TestHelloworld04 <TestHelloworld04 />
-      </div>
-      <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        StatWithIndicator <StatWithIndicator />
       </div>
     </div>
   );
