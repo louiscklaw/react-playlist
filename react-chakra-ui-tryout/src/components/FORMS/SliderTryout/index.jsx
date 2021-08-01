@@ -1,26 +1,105 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { MdGraphicEq } from 'react-icons/md';
+
+function Usage() {
+  return (
+    <>
+      <Slider aria-label="slider-ex-1" defaultValue={30}>
+        <SliderTrack>
+          <SliderFilledTrack />
+        </SliderTrack>
+        <SliderThumb />
+      </Slider>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function ChangingTheSliderColorScheme() {
+  return (
+    <>
+      <Slider aria-label="slider-ex-2" colorScheme="pink" defaultValue={30}>
+        <SliderTrack>
+          <SliderFilledTrack />
+        </SliderTrack>
+        <SliderThumb />
+      </Slider>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function ChangingTheSliderOrientation() {
+  return (
+    <>
+      <Slider
+        aria-label="slider-ex-3"
+        defaultValue={30}
+        orientation="vertical"
+        minH="32">
+        <SliderTrack>
+          <SliderFilledTrack />
+        </SliderTrack>
+        <SliderThumb />
+      </Slider>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function CustomizingTheSlider() {
+  return (
+    <>
+      <Slider aria-label="slider-ex-4" defaultValue={30}>
+        <SliderTrack bg="red.100">
+          <SliderFilledTrack bg="tomato" />
+        </SliderTrack>
+        <SliderThumb boxSize={6}>
+          <Box color="tomato" as={MdGraphicEq} />
+        </SliderThumb>
+      </Slider>
+    </>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function DiscreteSliders() {
+  return (
+    <>
+      <Slider defaultValue={60} min={0} max={300} step={30}>
+        <SliderTrack bg="red.100">
+          <Box position="relative" right={10} />
+          <SliderFilledTrack bg="tomato" />
+        </SliderTrack>
+        <SliderThumb boxSize={6} />
+      </Slider>
+    </>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
+function GettingTheFinalValueWhenDraggingTheSlider() {
+  return (
+    <>
+      <Slider aria-label="slider-ex-5" onChangeEnd={(val) => console.log(val)}>
+        <SliderTrack>
+          <SliderFilledTrack />
+        </SliderTrack>
+        <SliderThumb />
+      </Slider>
+    </>
+  );
 }
-function TestHelloworld07() {
-  return <>TestHelloworld07</>;
+function ConfigureThumbFocusWithFocusThumbOnChange() {
+  let [value, setValue] = React.useState(1);
+  return (
+    <>
+      <Slider aria-label="slider-ex-5" value={value} focusThumbOnChange={false}>
+        <SliderTrack>
+          <SliderFilledTrack />
+        </SliderTrack>
+        <SliderThumb />
+      </Slider>
+    </>
+  );
 }
 function TestHelloworld08() {
   return <>TestHelloworld08</>;
@@ -67,64 +146,27 @@ export function SliderTryout() {
     <div>
       SliderTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        ChangingTheSliderColorScheme <ChangingTheSliderColorScheme />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        ChangingTheSliderOrientation <ChangingTheSliderOrientation />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        CustomizingTheSlider <CustomizingTheSlider />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        DiscreteSliders <DiscreteSliders />
       </div>
       <div>
-        TestHelloworld06 <TestHelloworld06 />
+        GettingTheFinalValueWhenDraggingTheSlider{' '}
+        <GettingTheFinalValueWhenDraggingTheSlider />
       </div>
       <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        ConfigureThumbFocusWithFocusThumbOnChange{' '}
+        <ConfigureThumbFocusWithFocusThumbOnChange />
       </div>
     </div>
   );
