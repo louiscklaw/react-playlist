@@ -1,20 +1,76 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  RadioGroup,
+  Stack,
+  Radio,
+} from '@chakra-ui/react';
+import { Textarea } from '@chakra-ui/react';
+function Usage() {
+  return (
+    <>
+      <Textarea placeholder="Here is a sample placeholder" />
+    </>
+  );
+}
+function ControlledTextarea() {
+  let [value, setValue] = React.useState('');
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+  let handleInputChange = (e) => {
+    let inputValue = e.target.value;
+    setValue(inputValue);
+  };
+  return (
+    <>
+      <Text mb="8px">Value: {value}</Text>
+      <Textarea
+        value={value}
+        onChange={handleInputChange}
+        placeholder="Here is a sample placeholder"
+        size="sm"
+      />
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function ResizeBehavior() {
+  const [resize, setResize] = React.useState('horizontal');
+
+  return (
+    <>
+      <RadioGroup defaultValue={resize} onChange={setResize} mb={6}>
+        <Stack direction="row" spacing={5}>
+          <Radio value="horizontal">Horizontal</Radio>
+          <Radio value="vertical">Vertical</Radio>
+          <Radio value="none">None</Radio>
+        </Stack>
+      </RadioGroup>
+
+      <Textarea
+        placeholder="Here is a sample placeholder"
+        size="sm"
+        resize={resize}
+      />
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function DisabledTextarea() {
+  return (
+    <>
+      <Textarea isDisabled placeholder="Here is a sample placeholder" />
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
-}
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function InvalidTextarea() {
+  return (
+    <>
+      <Textarea isInvalid placeholder="Here is a sample placeholder" />
+    </>
+  );
 }
 function TestHelloworld06() {
   return <>TestHelloworld06</>;
@@ -67,19 +123,19 @@ export function TextareaTryout() {
     <div>
       TextareaTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        ControlledTextarea <ControlledTextarea />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        ResizeBehavior <ResizeBehavior />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        DisabledTextarea <DisabledTextarea />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        InvalidTextarea <InvalidTextarea />
       </div>
       <div>
         TestHelloworld06 <TestHelloworld06 />

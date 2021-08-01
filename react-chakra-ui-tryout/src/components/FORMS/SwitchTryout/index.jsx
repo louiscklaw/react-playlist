@@ -1,14 +1,48 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
-
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import {
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  FormControl,
+  FormLabel,
+  Stack,
+} from '@chakra-ui/react';
+import { Switch } from '@chakra-ui/react';
+function Usage() {
+  return (
+    <>
+      <FormControl display="flex" alignItems="center">
+        <FormLabel htmlFor="email-alerts" mb="0">
+          Enable email alerts?
+        </FormLabel>
+        <Switch id="email-alerts" />
+      </FormControl>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Sizes() {
+  return (
+    <>
+      <Stack align="center" direction="row">
+        <Switch size="sm" />
+        <Switch size="md" />
+        <Switch size="lg" />
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function SwitchBackgroundColor() {
+  return (
+    <>
+      <Stack direction="row">
+        <Switch colorScheme="red" />
+        <Switch colorScheme="teal" size="lg" />
+      </Stack>
+    </>
+  );
 }
 function TestHelloworld04() {
   return <>TestHelloworld04</>;
@@ -67,64 +101,13 @@ export function SwitchTryout() {
     <div>
       SwitchTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        Sizes <Sizes />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
-      </div>
-      <div>
-        TestHelloworld04 <TestHelloworld04 />
-      </div>
-      <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        SwitchBackgroundColor <SwitchBackgroundColor />
       </div>
     </div>
   );
