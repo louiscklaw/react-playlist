@@ -1,33 +1,226 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Stack,
+  Button,
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  Wrap,
+  WrapItem,
+} from '@chakra-ui/react';
 import { useToast } from '@chakra-ui/react';
+import { createStandaloneToast } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  const toast = useToast();
+  return (
+    <Button
+      onClick={() =>
+        toast({
+          title: 'Account created.',
+          description: "We've created your account for you.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      }>
+      Show Toast
+    </Button>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function CustomComponent() {
+  function HelloworldButton() {
+    return (
+      <>
+        <Box color="white" p={3} bg="blue.500">
+          Hello World
+        </Box>
+      </>
+    );
+  }
+  const toast = useToast();
+  return (
+    <Button
+      onClick={() =>
+        toast({
+          position: 'bottom-left',
+          render: HelloworldButton,
+        })
+      }>
+      Show Toast
+    </Button>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function ClosingToasts() {
+  const toast = useToast();
+  const toastIdRef = React.useRef();
+
+  function close() {
+    if (toastIdRef.current) {
+      toast.close(toastIdRef.current);
+    }
+  }
+
+  function closeAll() {
+    // you may optionally pass an object of positions to exclusively close
+    // keeping other positions opened
+    // e.g. `{ positions: ['bottom'] }`
+    toast.closeAll();
+  }
+
+  function addToast() {
+    toastIdRef.current = toast({ description: 'some text' });
+  }
+
+  return (
+    <Stack isInline spacing={2}>
+      <Button onClick={addToast} type="button">
+        Toast
+      </Button>
+
+      <Button onClick={close} type="button" variant="outline">
+        Close last toast
+      </Button>
+
+      <Button onClick={closeAll} type="button" variant="outline">
+        Close all toasts
+      </Button>
+    </Stack>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function UpdatingToasts() {
+  const toast = useToast();
+  const toastIdRef = React.useRef();
+
+  function update() {
+    if (toastIdRef.current) {
+      toast.update(toastIdRef.current, { description: 'new text' });
+    }
+  }
+
+  function addToast() {
+    toastIdRef.current = toast({ description: 'some text' });
+  }
+
+  return (
+    <Stack isInline spacing={2}>
+      <Button onClick={addToast} type="button">
+        Toast
+      </Button>
+
+      <Button onClick={update} type="button" variant="outline">
+        Update last toast
+      </Button>
+    </Stack>
+  );
 }
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function Status() {
+  const toast = useToast();
+  const statuses = ['success', 'error', 'warning', 'info'];
+
+  return (
+    <Wrap>
+      {statuses.map((status, i) => (
+        <WrapItem key={i}>
+          <Button
+            onClick={() =>
+              toast({
+                title: `${status} toast`,
+                status: status,
+                isClosable: true,
+              })
+            }>
+            Show {status} toast
+          </Button>
+        </WrapItem>
+      ))}
+    </Wrap>
+  );
 }
-function TestHelloworld06() {
-  return <>TestHelloworld06</>;
+function Variants() {
+  const toast = useToast();
+  const variants = ['solid', 'subtle', 'left-accent', 'top-accent'];
+
+  return (
+    <Wrap>
+      {variants.map((variant, i) => (
+        <WrapItem key={i}>
+          <Button
+            onClick={() =>
+              toast({
+                title: `${variant} toast`,
+                variant: variant,
+                isClosable: true,
+              })
+            }>
+            Show {variant} toast
+          </Button>
+        </WrapItem>
+      ))}
+    </Wrap>
+  );
 }
-function TestHelloworld07() {
-  return <>TestHelloworld07</>;
+function ChangingTheToastPosition() {
+  const toast = useToast();
+  const positions = [
+    'top',
+    'top-right',
+    'top-left',
+    'bottom',
+    'bottom-right',
+    'bottom-left',
+  ];
+
+  return (
+    <Wrap>
+      {positions.map((position, i) => (
+        <WrapItem key={i}>
+          <Button
+            onClick={() =>
+              toast({
+                title: `${position} toast`,
+                position: position,
+                isClosable: true,
+              })
+            }>
+            Show {position} toast
+          </Button>
+        </WrapItem>
+      ))}
+    </Wrap>
+  );
 }
-function TestHelloworld08() {
-  return <>TestHelloworld08</>;
+function PreventingDuplicateToast() {
+  const toast = useToast();
+  const id = 'test-toast';
+  return (
+    <Button
+      onClick={() => {
+        if (!toast.isActive(id)) {
+          toast({
+            id,
+            title: 'Hey! You can create a duplicate toast',
+          });
+        }
+      }}>
+      Click me!
+    </Button>
+  );
 }
-function TestHelloworld09() {
-  return <>TestHelloworld09</>;
+function StandaloneToasts() {
+  const toast = createStandaloneToast();
+  toast({
+    title: 'An error occurred. and this is a test from StandaloneToasts',
+    description: 'An error occurred. and this is a test from StandaloneToasts.',
+    status: 'error',
+    duration: 9000,
+    isClosable: true,
+  });
+
+  return <>StandaloneToasts</>;
 }
 function TestHelloworld10() {
   return <>TestHelloworld10</>;
@@ -68,31 +261,31 @@ export function ToastTryout() {
     <div>
       ToastTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        CustomComponent <CustomComponent />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        ClosingToasts <ClosingToasts />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        UpdatingToasts <UpdatingToasts />
       </div>
       <div>
-        TestHelloworld05 <TestHelloworld05 />
+        Status <Status />
       </div>
       <div>
-        TestHelloworld06 <TestHelloworld06 />
+        Variants <Variants />
       </div>
       <div>
-        TestHelloworld07 <TestHelloworld07 />
+        ChangingTheToastPosition <ChangingTheToastPosition />
       </div>
       <div>
-        TestHelloworld08 <TestHelloworld08 />
+        PreventingDuplicateToast <PreventingDuplicateToast />
       </div>
       <div>
-        TestHelloworld09 <TestHelloworld09 />
+        StandaloneToasts <StandaloneToasts />
       </div>
       <div>
         TestHelloworld10 <TestHelloworld10 />
