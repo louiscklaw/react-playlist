@@ -15,3 +15,5 @@ yarn add @chakra-ui/react \
   react-spinners \
   react-lorem-component \
   react-router-dom@6 history@5
+
+yarn add --dev react-test-renderer
