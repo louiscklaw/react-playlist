@@ -1,14 +1,52 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, Code, Grid, Heading } from '@chakra-ui/react';
+import { LinkBox, LinkOverlay } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <LinkBox as="article" maxW="sm" p="5" borderWidth="1px" rounded="md">
+        <Box as="time" dateTime="2021-01-15 15:30:00 +0000 UTC">
+          13 days ago
+        </Box>
+        <Heading size="md" my="2">
+          <LinkOverlay href="#">
+            New Year, New Beginnings: Smashing Workshops & Audits
+          </LinkOverlay>
+        </Heading>
+        <Text>
+          Catch up on what’s been cookin’ at Smashing and explore some of the
+          most popular community resources.
+        </Text>
+      </LinkBox>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function NestedLinks() {
+  return (
+    <>
+      <LinkBox as="article" maxW="sm" p="5" borderWidth="1px" rounded="md">
+        <Box as="time" dateTime="2021-01-15 15:30:00 +0000 UTC">
+          13 days ago
+        </Box>
+        <Heading size="md" my="2">
+          <LinkOverlay href="#">
+            New Year, New Beginnings: Smashing Workshops & Audits
+          </LinkOverlay>
+        </Heading>
+        <Text mb="3">
+          Catch up on what’s been cookin’ at Smashing and explore some of the
+          most popular community resources.
+        </Text>
+        <Box as="a" color="teal.400" href="#" fontWeight="bold">
+          Some inner link
+        </Box>
+      </LinkBox>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function UsageWithRoutingLibrary() {
+  return <>UsageWithRoutingLibrary</>;
 }
 function TestHelloworld04() {
   return <>TestHelloworld04</>;
@@ -67,13 +105,13 @@ export function LinkOverlayTryout() {
     <div>
       LinkOverlayTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        NestedLinks <NestedLinks />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        UsageWithRoutingLibrary <UsageWithRoutingLibrary />
       </div>
       <div>
         TestHelloworld04 <TestHelloworld04 />

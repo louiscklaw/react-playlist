@@ -1,17 +1,59 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, Code, Grid, Stack } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      <Box boxSize="sm">
+        <Image src="https://bit.ly/sage-adebayo" alt="Segun Adebayo" />
+      </Box>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Size() {
+  return (
+    <>
+      <Stack direction="row">
+        <Image
+          boxSize="100px"
+          objectFit="cover"
+          src="https://bit.ly/sage-adebayo"
+          alt="Segun Adebayo"
+        />
+        <Image
+          boxSize="150px"
+          objectFit="cover"
+          src="https://bit.ly/dan-abramov"
+          alt="Dan Abramov"
+        />
+        <Image
+          boxSize="200px"
+          src="https://bit.ly/dan-abramov"
+          alt="Dan Abramov"
+        />
+      </Stack>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function ImageWithBorderRadius() {
+  return (
+    <>
+      <Image
+        borderRadius="full"
+        boxSize="150px"
+        src="https://bit.ly/sage-adebayo"
+        alt="Segun Adebayo"
+      />
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function FallbackSupport() {
+  return (
+    <>
+      <Image src="gibbresh.png" fallbackSrc="https://via.placeholder.com/150" />
+    </>
+  );
 }
 function TestHelloworld05() {
   return <>TestHelloworld05</>;
@@ -67,16 +109,16 @@ export function ImageTryout() {
     <div>
       ImageTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        Size <Size />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        ImageWithBorderRadius <ImageWithBorderRadius />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        FallbackSupport <FallbackSupport />
       </div>
       <div>
         TestHelloworld05 <TestHelloworld05 />

@@ -1,20 +1,97 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Box, Collapse } from '@chakra-ui/react';
+import {
+  Fade,
+  ScaleFade,
+  SlideFade,
+  useDisclosure,
+  Button,
+} from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { Lorem } from 'react-lorem-component';
+
+import TestSlideEx from './SlideEx';
+
+function FadeEx() {
+  const { isOpen, onToggle } = useDisclosure();
+
+  return (
+    <>
+      <Button onClick={onToggle}>Click Me</Button>
+      <Fade in={isOpen}>
+        <Box
+          p="40px"
+          color="white"
+          mt="4"
+          bg="teal.500"
+          rounded="md"
+          shadow="md">
+          Fade
+        </Box>
+      </Fade>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function ScaleFadeTransition() {
+  const { isOpen, onToggle } = useDisclosure();
+
+  return (
+    <>
+      <Button onClick={onToggle}>Click Me</Button>
+      <ScaleFade initialScale={0.9} in={isOpen}>
+        <Box
+          p="40px"
+          color="white"
+          mt="4"
+          bg="teal.500"
+          rounded="md"
+          shadow="md">
+          Fade
+        </Box>
+      </ScaleFade>
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+
+function SlideFadeTransition() {
+  const { isOpen, onToggle } = useDisclosure();
+
+  return (
+    <>
+      <Button onClick={onToggle}>Click Me</Button>
+      <SlideFade in={isOpen} offsetY="20px">
+        <Box
+          p="40px"
+          color="white"
+          mt="4"
+          bg="teal.500"
+          rounded="md"
+          shadow="md">
+          <Lorem count={1} />
+        </Box>
+      </SlideFade>
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
-}
-function TestHelloworld05() {
-  return <>TestHelloworld05</>;
+function CollapseTransition() {
+  const { isOpen, onToggle } = useDisclosure();
+
+  return (
+    <>
+      <Button onClick={onToggle}>Click Me</Button>
+      <Collapse in={isOpen} animateOpacity>
+        <Box
+          p="40px"
+          color="white"
+          mt="4"
+          bg="teal.500"
+          rounded="md"
+          shadow="md">
+          <Lorem count={1} />
+        </Box>
+      </Collapse>
+    </>
+  );
 }
 function TestHelloworld06() {
   return <>TestHelloworld06</>;
@@ -67,65 +144,13 @@ export function TransitionsTryout() {
     <div>
       TransitionsTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        FadeEx
+        <FadeEx />
       </div>
-      <div>
-        TestHelloworld02 <TestHelloworld02 />
-      </div>
-      <div>
-        TestHelloworld03 <TestHelloworld03 />
-      </div>
-      <div>
-        TestHelloworld04 <TestHelloworld04 />
-      </div>
-      <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
-      </div>
+      <div>{/* ScaleFadeTransition <ScaleFadeTransition /> */}</div>
+      <div>SlideEx not done</div>
+      <div> SlideFadeTransition not done </div>
+      <div>CollapseTransition not done</div>
     </div>
   );
 }

@@ -1,17 +1,39 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+import { Icon } from '@chakra-ui/react';
+import { MdSettings } from 'react-icons/md';
+
+function Usage1() {
+  return (
+    <>
+      <PhoneIcon />
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Usage2() {
+  return (
+    <>
+      <AddIcon w={6} h={6} />
+    </>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function Usage3() {
+  return (
+    <>
+      TestHellowo
+      <WarningIcon w={8} h={8} color="red.500" />
+      rld03
+    </>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function UsingAThirdPartyIconLibrary() {
+  return (
+    <>
+      <Icon as={MdSettings} />
+    </>
+  );
 }
 function TestHelloworld05() {
   return <>TestHelloworld05</>;
@@ -67,16 +89,16 @@ export function IconTryout() {
     <div>
       IconTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage1 <Usage1 />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        Usage2 <Usage2 />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        Usage3 <Usage3 />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
+        UsingAThirdPartyIconLibrary <UsingAThirdPartyIconLibrary />
       </div>
       <div>
         TestHelloworld05 <TestHelloworld05 />

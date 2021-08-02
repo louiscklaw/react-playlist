@@ -1,17 +1,61 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Portal } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  return (
+    <>
+      {' '}
+      <Box bg="red.400" color="white">
+        I'm here,
+        <Portal>This text is portaled at the end of document.body!</Portal>
+      </Box>
+    </>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function UsingACustomContainer() {
+  const ref = React.useRef();
+  return (
+    <Box bg="red.400" color="white">
+      I'm here,
+      <Portal containerRef={ref}>
+        Portal: This text is portaled to the yellow box!
+      </Portal>
+      <Box ref={ref} bg="yellow.500">
+        <div>Container: Hey,</div>
+      </Box>
+    </Box>
+  );
 }
-function TestHelloworld03() {
-  return <>TestHelloworld03</>;
+function NestingPortals() {
+  const ref = React.useRef();
+  return (
+    <div>
+      <Portal containerRef={ref}>
+        <Box bg="teal.500" color="white">
+          Parent: Hey welcome,
+          <Portal>Child: I'm attached to my parent portal</Portal>
+        </Box>
+      </Portal>
+      <Box bg="red.400" color="white" ref={ref} />
+    </div>
+  );
 }
-function TestHelloworld04() {
-  return <>TestHelloworld04</>;
+function OptingOutOfPortalNesting() {
+  const ref = React.useRef();
+  return (
+    <div>
+      <Portal containerRef={ref}>
+        <Box bg="teal.500" color="white">
+          Parent: Hey welcome,
+          <Portal appendToParentPortal={false}>
+            Child: I'm going to document.body
+          </Portal>
+        </Box>
+      </Portal>
+      <div style={{ background: 'red' }} ref={ref} />
+    </div>
+  );
 }
 function TestHelloworld05() {
   return <>TestHelloworld05</>;
@@ -67,64 +111,16 @@ export function PortalTryout() {
     <div>
       PortalTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        UsingACustomContainer <UsingACustomContainer />
       </div>
       <div>
-        TestHelloworld03 <TestHelloworld03 />
+        NestingPortals <NestingPortals />
       </div>
       <div>
-        TestHelloworld04 <TestHelloworld04 />
-      </div>
-      <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        OptingOutOfPortalNesting <OptingOutOfPortalNesting />
       </div>
     </div>
   );

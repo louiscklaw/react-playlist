@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
 
 import { BadgeTryout } from 'src/components/DATA_DISPLAY/BadgeTryout';
@@ -75,80 +77,82 @@ import { TextTryout } from 'src/components/TYPOGRAPHY/TextTryout';
 
 function App() {
   return (
-    <Box textAlign="center" fontSize="xl">
-      helloworld
-      <BadgeTryout />
-      <CloseButtonTryout />
-      <CodeTryout />
-      <DividerTryout />
-      <KbdTryout />
-      <ListTryout />
-      <StatTryout />
-      <TableTryout />
-      <TagTryout />
-      <AccordionTryout />
-      <TabsTryout />
-      <VisuallyHiddenTryout />
-      <AlertTryout />
-      <CircularProgressTryout />
-      <ProgressTryout />
-      <SkeletonTryout />
-      <SpinnerTryout />
-      <ToastTryout />
-      <ButtonTryout />
-      <CheckboxTryout />
-      <EditableTryout />
-      <FormControlTryout />
-      <IconButtonTryout />
-      <InputTryout />
-      <NumberInputTryout />
-      <PinInputTryout />
-      <RadioTryout />
-      <SelectTryout />
-      <SliderTryout />
-      <SwitchTryout />
-      <TextareaTryout />
-      <UseBooleanTryout />
-      <UseBreakpointValueTryout />
-      <UseClipboardTryout />
-      <UseControllableTryout />
-      <UseDisclosureTryout />
-      <UseMediaQueryTryout />
-      <UseMergeRefsTryout />
-      <UseOutsideClickTryout />
-      <UsePrefersReducedMotionTryout />
-      <UseThemeTryout />
-      <UseTokenTryout />
-      <AspectRatioTryout />
-      <BoxTryout />
-      <CenterTryout />
-      <ContainerTryout />
-      <FlexTryout />
-      <GridTryout />
-      <SimpleGridTryout />
-      <StackTryout />
-      <WrapTryout />
-      <AvatarTryout />
-      <IconTryout />
-      <ImageTryout />
-      <BreadcrumbTryout />
-      <LinkOverlayTryout />
-      <LinkTryout />
-      <PortalTryout />
-      <TransitionsTryout />
-      <AlertDialogTryout />
-      <DrawerTryout />
-      <MenuTryout />
-      <ModalTryout />
-      <PopoverTryout />
-      <TooltipTryout />
-      <AdvancedTryout />
-      <ComponentStyleTryout />
-      <CustomizeThemeTryout />
-      <DefaultThemeTryout />
-      <HeadingTryout />
-      <TextTryout />
-    </Box>
+    <BrowserRouter>
+      <Box textAlign="center" fontSize="xl">
+        helloworld
+        <BadgeTryout />
+        <CloseButtonTryout />
+        <CodeTryout />
+        <DividerTryout />
+        <KbdTryout />
+        <ListTryout />
+        <StatTryout />
+        <TableTryout />
+        <TagTryout />
+        <AccordionTryout />
+        <TabsTryout />
+        <VisuallyHiddenTryout />
+        <AlertTryout />
+        <CircularProgressTryout />
+        <ProgressTryout />
+        <SkeletonTryout />
+        <SpinnerTryout />
+        <ToastTryout />
+        <ButtonTryout />
+        <CheckboxTryout />
+        <EditableTryout />
+        <FormControlTryout />
+        <IconButtonTryout />
+        <InputTryout />
+        <NumberInputTryout />
+        <PinInputTryout />
+        <RadioTryout />
+        <SelectTryout />
+        <SliderTryout />
+        <SwitchTryout />
+        <TextareaTryout />
+        <UseBooleanTryout />
+        <UseBreakpointValueTryout />
+        <UseClipboardTryout />
+        <UseControllableTryout />
+        <UseDisclosureTryout />
+        <UseMediaQueryTryout />
+        <UseMergeRefsTryout />
+        <UseOutsideClickTryout />
+        <UsePrefersReducedMotionTryout />
+        <UseThemeTryout />
+        <UseTokenTryout />
+        <AspectRatioTryout />
+        <BoxTryout />
+        <CenterTryout />
+        <ContainerTryout />
+        <FlexTryout />
+        <GridTryout />
+        <SimpleGridTryout />
+        <StackTryout />
+        <WrapTryout />
+        <AvatarTryout />
+        <IconTryout />
+        <ImageTryout />
+        <BreadcrumbTryout />
+        <LinkOverlayTryout />
+        <LinkTryout />
+        <PortalTryout />
+        <TransitionsTryout />
+        <AlertDialogTryout />
+        <DrawerTryout />
+        <MenuTryout />
+        <ModalTryout />
+        <PopoverTryout />
+        <TooltipTryout />
+        <AdvancedTryout />
+        <ComponentStyleTryout />
+        <CustomizeThemeTryout />
+        <DefaultThemeTryout />
+        <HeadingTryout />
+        <TextTryout />
+      </Box>
+    </BrowserRouter>
   );
 }
 

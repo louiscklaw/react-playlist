@@ -13,4 +13,5 @@ yarn add @chakra-ui/react \
   framer-motion@^4 \
   @chakra-ui/icons \
   react-spinners \
-  react-lorem-component
+  react-lorem-component \
+  react-router-dom@6 history@5
