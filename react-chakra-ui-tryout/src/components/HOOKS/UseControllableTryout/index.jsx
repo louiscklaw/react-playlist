@@ -1,11 +1,37 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { Button, Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { useControllableProp, useControllableState } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  const [value, setValue] = useControllableState({ defaultValue: 40 });
+  return (
+    <div>
+      <Button onClick={() => setValue(value + 1)}>+</Button>
+      <Box as="span" w="200px" mx="24px">
+        {value}
+      </Box>
+      <Button onClick={() => setValue(value - 1)}>-</Button>
+    </div>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function TestControlledState() {
+  // you need a state and updater to change the value
+  const [value, setValue] = React.useState(40);
+
+  const [internalValue, setInternalValue] = useControllableState({
+    value,
+    onChange: setValue,
+  });
+
+  return (
+    <div>
+      <Button onClick={() => setInternalValue(value + 1)}>+</Button>
+      <Box as="span" w="200px" mx="24px">
+        {internalValue}
+      </Box>
+      <Button onClick={() => setInternalValue(value - 1)}>-</Button>
+    </div>
+  );
 }
 function TestHelloworld03() {
   return <>TestHelloworld03</>;
@@ -67,10 +93,10 @@ export function UseControllableTryout() {
     <div>
       UseControllableTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
+        TestControlledState <TestControlledState />
       </div>
       <div>
         TestHelloworld03 <TestHelloworld03 />

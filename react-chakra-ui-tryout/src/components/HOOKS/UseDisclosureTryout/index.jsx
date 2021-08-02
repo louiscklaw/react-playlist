@@ -1,8 +1,39 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Button,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerHeader,
+  DrawerBody,
+  Drawer,
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+} from '@chakra-ui/react';
+import { useDisclosure } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  return (
+    <>
+      <Button onClick={onOpen}>Open Drawer</Button>
+      <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
+          <DrawerBody>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+    </>
+  );
 }
 function TestHelloworld02() {
   return <>TestHelloworld02</>;
@@ -67,7 +98,7 @@ export function UseDisclosureTryout() {
     <div>
       UseDisclosureTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
         TestHelloworld02 <TestHelloworld02 />

@@ -1,8 +1,38 @@
 import React from 'react';
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import {
+  Flex,
+  Button,
+  Editable,
+  EditablePreview,
+  EditableInput,
+  Input,
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+} from '@chakra-ui/react';
+import { useClipboard } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  const [value, setValue] = React.useState('Hello world');
+  const { hasCopied, onCopy } = useClipboard(value);
+
+  return (
+    <>
+      <Flex mb={2}>
+        <Input value={value} isReadOnly placeholder="Welcome" />
+        <Button onClick={onCopy} ml={2}>
+          {hasCopied ? 'Copied' : 'Copy'}
+        </Button>
+      </Flex>
+      <Editable placeholder="Paste here">
+        <EditablePreview width="100%" />
+        <EditableInput />
+      </Editable>
+    </>
+  );
 }
 function TestHelloworld02() {
   return <>TestHelloworld02</>;
@@ -67,64 +97,7 @@ export function UseClipboardTryout() {
     <div>
       UseClipboardTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
-      </div>
-      <div>
-        TestHelloworld02 <TestHelloworld02 />
-      </div>
-      <div>
-        TestHelloworld03 <TestHelloworld03 />
-      </div>
-      <div>
-        TestHelloworld04 <TestHelloworld04 />
-      </div>
-      <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        Usage <Usage />
       </div>
     </div>
   );
