@@ -42,9 +42,7 @@ import { UseDisclosureTryout } from 'src/components/HOOKS/UseDisclosureTryout';
 import { UseMediaQueryTryout } from 'src/components/HOOKS/UseMediaQueryTryout';
 import { UseMergeRefsTryout } from 'src/components/HOOKS/UseMergeRefsTryout';
 import { UseOutsideClickTryout } from 'src/components/HOOKS/UseOutsideClickTryout';
-import { UsePrefersReducedMotionTryout } from 'src/components/HOOKS/UsePrefersReducedMotionTryout';
-import { UseThemeTryout } from 'src/components/HOOKS/UseThemeTryout';
-import { UseTokenTryout } from 'src/components/HOOKS/UseTokenTryout';
+
 import { AspectRatioTryout } from 'src/components/LAYOUT/AspectRatioTryout';
 import { BoxTryout } from 'src/components/LAYOUT/BoxTryout';
 import { CenterTryout } from 'src/components/LAYOUT/CenterTryout';
@@ -119,9 +117,9 @@ function App() {
         <UseMediaQueryTryout />
         <UseMergeRefsTryout />
         <UseOutsideClickTryout />
-        <UsePrefersReducedMotionTryout />
-        <UseThemeTryout />
-        <UseTokenTryout />
+        {/* <UsePrefersReducedMotionTryout /> */}
+        {/* <UseThemeTryout /> */}
+        {/* <UseTokenTryout /> */}
         <AspectRatioTryout />
         <BoxTryout />
         <CenterTryout />

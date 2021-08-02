@@ -1,11 +1,35 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/react';
 
-function TestHelloworld01() {
-  return <>TestHelloworld01</>;
+function Usage() {
+  const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)');
+
+  return (
+    <Text>
+      {isLargerThan1280 ? 'larger than 1280px' : 'smaller than 1280px'}
+    </Text>
+  );
 }
-function TestHelloworld02() {
-  return <>TestHelloworld02</>;
+function Example() {
+  const [isLargerThanHD, isDisplayingInBrowser] = useMediaQuery([
+    '(min-width: 1920px)',
+    '(display-mode: browser)',
+  ]);
+
+  function determineText() {
+    if (isLargerThanHD) {
+      return `high resolution you got there ${
+        isDisplayingInBrowser ? 'in your browser' : 'on your screen'
+      }`;
+    }
+
+    return isDisplayingInBrowser
+      ? 'rendering in a browser'
+      : 'rendering on something else, e.g. PWA';
+  }
+
+  return <Text>{determineText()}</Text>;
 }
 function TestHelloworld03() {
   return <>TestHelloworld03</>;
@@ -67,64 +91,10 @@ export function UseMediaQueryTryout() {
     <div>
       UseMediaQueryTryout
       <div>
-        TestHelloworld01 <TestHelloworld01 />
+        Usage <Usage />
       </div>
       <div>
-        TestHelloworld02 <TestHelloworld02 />
-      </div>
-      <div>
-        TestHelloworld03 <TestHelloworld03 />
-      </div>
-      <div>
-        TestHelloworld04 <TestHelloworld04 />
-      </div>
-      <div>
-        TestHelloworld05 <TestHelloworld05 />
-      </div>
-      <div>
-        TestHelloworld06 <TestHelloworld06 />
-      </div>
-      <div>
-        TestHelloworld07 <TestHelloworld07 />
-      </div>
-      <div>
-        TestHelloworld08 <TestHelloworld08 />
-      </div>
-      <div>
-        TestHelloworld09 <TestHelloworld09 />
-      </div>
-      <div>
-        TestHelloworld10 <TestHelloworld10 />
-      </div>
-      <div>
-        TestHelloworld11 <TestHelloworld11 />
-      </div>
-      <div>
-        TestHelloworld12 <TestHelloworld12 />
-      </div>
-      <div>
-        TestHelloworld13 <TestHelloworld13 />
-      </div>
-      <div>
-        TestHelloworld14 <TestHelloworld14 />
-      </div>
-      <div>
-        TestHelloworld15 <TestHelloworld15 />
-      </div>
-      <div>
-        TestHelloworld16 <TestHelloworld16 />
-      </div>
-      <div>
-        TestHelloworld17 <TestHelloworld17 />
-      </div>
-      <div>
-        TestHelloworld18 <TestHelloworld18 />
-      </div>
-      <div>
-        TestHelloworld19 <TestHelloworld19 />
-      </div>
-      <div>
-        TestHelloworld20 <TestHelloworld20 />
+        Example <Example />
       </div>
     </div>
   );
