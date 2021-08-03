@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Text, Link, VStack, Code, Grid, Stack } from '@chakra-ui/react';
 import { CloseButton } from '@chakra-ui/react';
+
 function Usage() {
   return (
     <>
@@ -8,6 +9,7 @@ function Usage() {
     </>
   );
 }
+
 function ButtonSize() {
   return (
     <>

@@ -1,0 +1,458 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test badge tryout helloworld 1`] = `
+<div>
+  FormControlTryout
+  <div>
+    Usage 
+    <div
+      className="chakra-form-control css-1kxonj9"
+      role="group"
+    >
+      <label
+        className="chakra-form__label css-uvho5g"
+        htmlFor="email"
+        id="email-label"
+      >
+        Email address
+      </label>
+      <input
+        className="chakra-input css-0"
+        disabled={false}
+        id="email"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        readOnly={false}
+        required={false}
+        type="email"
+      />
+      <div
+        className="chakra-form__helper-text css-0"
+        id="email-helptext"
+      >
+        We'll never share your email.
+      </div>
+    </div>
+  </div>
+  <div>
+    SampleUsageForARadioOrCheckboxGroup
+    <fieldset
+      className="chakra-form-control css-1kxonj9"
+      role="group"
+    >
+      <legend
+        className="chakra-form__label css-uvho5g"
+        htmlFor="field-7723012300-2"
+        id="field-7723012300-2-label"
+      >
+        Favorite Naruto Character
+      </legend>
+      <div
+        className="chakra-radio-group css-0"
+        role="radiogroup"
+      >
+        <div
+          className="chakra-stack css-1y5q8ss"
+        >
+          <label
+            className="chakra-radio css-78joka"
+          >
+            <input
+              checked={false}
+              className="chakra-radio__input"
+              disabled={false}
+              id="radio-7723012300-4"
+              name="radio-7723012300-3"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              readOnly={false}
+              required={false}
+              style={
+                Object {
+                  "border": "0px",
+                  "clip": "rect(0px, 0px, 0px, 0px)",
+                  "height": "1px",
+                  "margin": "-1px",
+                  "overflow": "hidden",
+                  "padding": "0px",
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": "1px",
+                }
+              }
+              type="radio"
+              value="Sasuke"
+            />
+            <span
+              aria-hidden={true}
+              className="chakra-radio__control css-ssalds"
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            />
+            <span
+              className="chakra-radio__label css-1y8kf23"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            >
+              Sasuke
+            </span>
+          </label>
+          <label
+            className="chakra-radio css-78joka"
+          >
+            <input
+              checked={false}
+              className="chakra-radio__input"
+              disabled={false}
+              id="radio-7723012300-5"
+              name="radio-7723012300-3"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              readOnly={false}
+              required={false}
+              style={
+                Object {
+                  "border": "0px",
+                  "clip": "rect(0px, 0px, 0px, 0px)",
+                  "height": "1px",
+                  "margin": "-1px",
+                  "overflow": "hidden",
+                  "padding": "0px",
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": "1px",
+                }
+              }
+              type="radio"
+              value="Nagato"
+            />
+            <span
+              aria-hidden={true}
+              className="chakra-radio__control css-ssalds"
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            />
+            <span
+              className="chakra-radio__label css-1y8kf23"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            >
+              Nagato
+            </span>
+          </label>
+          <label
+            className="chakra-radio css-78joka"
+          >
+            <input
+              checked={true}
+              className="chakra-radio__input"
+              disabled={false}
+              id="radio-7723012300-6"
+              name="radio-7723012300-3"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              readOnly={false}
+              required={false}
+              style={
+                Object {
+                  "border": "0px",
+                  "clip": "rect(0px, 0px, 0px, 0px)",
+                  "height": "1px",
+                  "margin": "-1px",
+                  "overflow": "hidden",
+                  "padding": "0px",
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": "1px",
+                }
+              }
+              type="radio"
+              value="Itachi"
+            />
+            <span
+              aria-hidden={true}
+              className="chakra-radio__control css-ssalds"
+              data-checked=""
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            />
+            <span
+              className="chakra-radio__label css-1y8kf23"
+              data-checked=""
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            >
+              Itachi
+            </span>
+          </label>
+          <label
+            className="chakra-radio css-78joka"
+          >
+            <input
+              checked={false}
+              className="chakra-radio__input"
+              disabled={false}
+              id="radio-7723012300-7"
+              name="radio-7723012300-3"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              readOnly={false}
+              required={false}
+              style={
+                Object {
+                  "border": "0px",
+                  "clip": "rect(0px, 0px, 0px, 0px)",
+                  "height": "1px",
+                  "margin": "-1px",
+                  "overflow": "hidden",
+                  "padding": "0px",
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": "1px",
+                }
+              }
+              type="radio"
+              value="Sage of the six Paths"
+            />
+            <span
+              aria-hidden={true}
+              className="chakra-radio__control css-ssalds"
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            />
+            <span
+              className="chakra-radio__label css-1y8kf23"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            >
+              Sage of the six Paths
+            </span>
+          </label>
+        </div>
+      </div>
+      <div
+        className="chakra-form__helper-text css-0"
+        id="field-7723012300-2-helptext"
+      >
+        Select only if you're a fan.
+      </div>
+    </fieldset>
+  </div>
+  <div>
+    MakingAFieldRequired 
+    <div
+      className="chakra-form-control css-1kxonj9"
+      role="group"
+    >
+      <label
+        className="chakra-form__label css-uvho5g"
+        htmlFor="first-name"
+        id="first-name-label"
+      >
+        First name
+        <span
+          aria-hidden={true}
+          className="chakra-form__required-indicator css-0"
+          role="presentation"
+        >
+          *
+        </span>
+      </label>
+      <input
+        aria-required={true}
+        className="chakra-input css-0"
+        disabled={false}
+        id="first-name"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder="First name"
+        readOnly={false}
+        required={true}
+      />
+    </div>
+  </div>
+  <div>
+    SelectExample 
+    <div
+      className="chakra-form-control css-1kxonj9"
+      role="group"
+    >
+      <label
+        className="chakra-form__label css-uvho5g"
+        htmlFor="country"
+        id="country-label"
+      >
+        Country
+      </label>
+      <div
+        className="chakra-select__wrapper css-42b2qy"
+      >
+        <select
+          className="chakra-select css-1ik61og"
+          disabled={false}
+          id="country"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          readOnly={false}
+          required={false}
+        >
+          <option
+            value=""
+          >
+            Select country
+          </option>
+          <option>
+            United Arab Emirates
+          </option>
+          <option>
+            Nigeria
+          </option>
+        </select>
+        <div
+          className="chakra-select__icon-wrapper css-162mkon"
+        >
+          <svg
+            aria-hidden={true}
+            className="chakra-select__icon"
+            focusable={false}
+            role="presentation"
+            style={
+              Object {
+                "color": "currentColor",
+                "height": "1em",
+                "width": "1em",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    NumberInputExample 
+    <div
+      className="chakra-form-control css-1kxonj9"
+      role="group"
+    >
+      <label
+        className="chakra-form__label css-uvho5g"
+        htmlFor="amount"
+        id="amount-label"
+      >
+        Amount
+      </label>
+      <div
+        className="chakra-numberinput css-e69dqy"
+      >
+        <input
+          aria-readonly={false}
+          aria-required={false}
+          aria-valuemax={50}
+          aria-valuemin={10}
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-8atqhb"
+          disabled={false}
+          id="amount"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          readOnly={false}
+          required={false}
+          role="spinbutton"
+          type="text"
+          value=""
+        />
+        <div
+          aria-hidden={true}
+          className="css-1j80trz"
+        >
+          <div
+            className="css-8bep6f"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-8bep6f"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    UsageWithFormLibraries 
+    <div
+      style={
+        Object {
+          "backgroundColor": "red",
+        }
+      }
+    >
+      formik example not yet tested
+    </div>
+  </div>
+</div>
+`;

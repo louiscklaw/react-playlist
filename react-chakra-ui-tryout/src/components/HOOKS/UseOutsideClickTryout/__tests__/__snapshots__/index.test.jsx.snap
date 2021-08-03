@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test badge tryout helloworld 1`] = `
+<div>
+  UseOutsideClickTryout
+  <div>
+    Usage 
+    <button
+      onClick={[Function]}
+    >
+      Open Modal
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test badge tryout helloworld 1`] = `
+<div>
+  VisuallyHiddenTryout
+  <div>
+    Usage 
+     
+    <button
+      className="chakra-button css-5c2176"
+      type="button"
+    >
+      <span
+        className="css-f8n5zr"
+      >
+        Checkmark
+      </span>
+      <svg
+        className="chakra-icon css-onkibi"
+        focusable={false}
+        viewBox="0 0 14 14"
+      >
+        <g
+          fill="currentColor"
+        >
+          <polygon
+            points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
+  <div>
+    Title and description 
+    <div
+      className="css-0"
+    >
+      <h2
+        className="chakra-heading css-0"
+      >
+        Title and description
+      </h2>
+      <span
+        className="css-f8n5zr"
+      >
+        This will be hidden
+      </span>
+    </div>
+  </div>
+</div>
+`;

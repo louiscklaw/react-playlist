@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test badge tryout helloworld 1`] = `
+<div>
+  PortalTryout
+  <div>
+    Usage 
+     
+    <div
+      className="css-dy6f63"
+    >
+      I'm here,
+      <span />
+    </div>
+  </div>
+  <div>
+    UsingACustomContainer 
+    <div
+      className="css-dy6f63"
+    >
+      I'm here,
+      <div
+        className="css-k34v1j"
+      >
+        <div>
+          Container: Hey,
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    NestingPortals 
+    <div>
+      <div
+        className="css-dy6f63"
+      />
+    </div>
+  </div>
+  <div>
+    OptingOutOfPortalNesting 
+    <div>
+      <div
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
