@@ -22,7 +22,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
     >
       <div
         className="chakra-slider__track css-i6bazn"
-        id="slider-track-7514862354-1"
+        id="slider-track-1687534793-1"
         style={
           Object {
             "position": "absolute",
@@ -52,7 +52,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
         aria-valuemin={0}
         aria-valuenow={30}
         className="chakra-slider__thumb css-1tarhp2"
-        id="slider-thumb-7514862354-1"
+        id="slider-thumb-1687534793-1"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -95,7 +95,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
     >
       <div
         className="chakra-slider__track css-i6bazn"
-        id="slider-track-7514862354-2"
+        id="slider-track-1687534793-2"
         style={
           Object {
             "position": "absolute",
@@ -125,7 +125,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
         aria-valuemin={0}
         aria-valuenow={30}
         className="chakra-slider__thumb css-1tarhp2"
-        id="slider-thumb-7514862354-2"
+        id="slider-thumb-1687534793-2"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -168,7 +168,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
     >
       <div
         className="chakra-slider__track css-i6bazn"
-        id="slider-track-7514862354-3"
+        id="slider-track-1687534793-3"
         style={
           Object {
             "height": "100%",
@@ -198,7 +198,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
         aria-valuemin={0}
         aria-valuenow={30}
         className="chakra-slider__thumb css-1tarhp2"
-        id="slider-thumb-7514862354-3"
+        id="slider-thumb-1687534793-3"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -241,7 +241,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
     >
       <div
         className="chakra-slider__track css-1d8jzoz"
-        id="slider-track-7514862354-4"
+        id="slider-track-1687534793-4"
         style={
           Object {
             "position": "absolute",
@@ -271,7 +271,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
         aria-valuemin={0}
         aria-valuenow={30}
         className="chakra-slider__thumb css-1wrxcqj"
-        id="slider-thumb-7514862354-4"
+        id="slider-thumb-1687534793-4"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -334,7 +334,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
     >
       <div
         className="chakra-slider__track css-1d8jzoz"
-        id="slider-track-7514862354-5"
+        id="slider-track-1687534793-5"
         style={
           Object {
             "position": "absolute",
@@ -366,7 +366,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
         aria-valuemin={0}
         aria-valuenow={60}
         className="chakra-slider__thumb css-1wrxcqj"
-        id="slider-thumb-7514862354-5"
+        id="slider-thumb-1687534793-5"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -410,7 +410,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
     >
       <div
         className="chakra-slider__track css-i6bazn"
-        id="slider-track-7514862354-6"
+        id="slider-track-1687534793-6"
         style={
           Object {
             "position": "absolute",
@@ -440,7 +440,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
         aria-valuemin={0}
         aria-valuenow={50}
         className="chakra-slider__thumb css-1tarhp2"
-        id="slider-thumb-7514862354-6"
+        id="slider-thumb-1687534793-6"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -484,7 +484,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
     >
       <div
         className="chakra-slider__track css-i6bazn"
-        id="slider-track-7514862354-7"
+        id="slider-track-1687534793-7"
         style={
           Object {
             "position": "absolute",
@@ -514,7 +514,7 @@ exports[`test SliderTryout tryout helloworld 1`] = `
         aria-valuemin={0}
         aria-valuenow={1}
         className="chakra-slider__thumb css-1tarhp2"
-        id="slider-thumb-7514862354-7"
+        id="slider-thumb-1687534793-7"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
