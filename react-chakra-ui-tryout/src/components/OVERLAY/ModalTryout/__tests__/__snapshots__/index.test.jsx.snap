@@ -93,8 +93,8 @@ exports[`test ModalTryout tryout helloworld 1`] = `
           <input
             checked={true}
             className="chakra-radio__input"
-            id="radio-871156473-17"
-            name="radio-871156473-16"
+            id="radio-3226398490-17"
+            name="radio-3226398490-16"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -140,8 +140,8 @@ exports[`test ModalTryout tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-871156473-18"
-            name="radio-871156473-16"
+            id="radio-3226398490-18"
+            name="radio-3226398490-16"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}

@@ -12,7 +12,7 @@ exports[`test SwitchTryout tryout helloworld 1`] = `
       <label
         className="chakra-form__label css-1w9kk21"
         htmlFor="email-alerts"
-        id="field-3930570630-1-label"
+        id="field-7414149583-1-label"
       >
         Enable email alerts?
       </label>

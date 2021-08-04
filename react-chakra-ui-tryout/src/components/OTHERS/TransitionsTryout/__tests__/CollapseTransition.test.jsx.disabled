@@ -7,11 +7,13 @@ import { CollapseTransition } from '../';
 
 describe('test CollapseTransition tryout', () => {
   test('helloworld', () => {
-    const tree = renderer.create(
-      <ChakraProvider>
-      <CollapseTransition />
-      </ChakraProvider>
-      ).toJSON();
+    const tree = renderer
+      .create(
+        <ChakraProvider>
+          <CollapseTransition />
+        </ChakraProvider>
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
