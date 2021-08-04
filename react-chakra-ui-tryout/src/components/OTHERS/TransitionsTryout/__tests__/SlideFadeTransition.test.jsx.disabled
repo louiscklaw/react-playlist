@@ -7,11 +7,13 @@ import { SlideFadeTransition } from '../';
 
 describe('test SlideFadeTransition tryout', () => {
   test('helloworld', () => {
-    const tree = renderer.create(
-      <ChakraProvider>
-      <SlideFadeTransition />
-      </ChakraProvider>
-      ).toJSON();
+    const tree = renderer
+      .create(
+        <ChakraProvider>
+          <SlideFadeTransition />
+        </ChakraProvider>
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

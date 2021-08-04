@@ -44,8 +44,8 @@ exports[`test TextareaTryout tryout helloworld 1`] = `
           <input
             checked={true}
             className="chakra-radio__input"
-            id="radio-751054696-2"
-            name="radio-751054696-1"
+            id="radio-7917825736-2"
+            name="radio-7917825736-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -91,8 +91,8 @@ exports[`test TextareaTryout tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-751054696-3"
-            name="radio-751054696-1"
+            id="radio-7917825736-3"
+            name="radio-7917825736-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -136,8 +136,8 @@ exports[`test TextareaTryout tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-751054696-4"
-            name="radio-751054696-1"
+            id="radio-7917825736-4"
+            name="radio-7917825736-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
