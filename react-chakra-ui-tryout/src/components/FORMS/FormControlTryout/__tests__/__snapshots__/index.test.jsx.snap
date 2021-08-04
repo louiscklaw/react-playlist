@@ -42,8 +42,8 @@ exports[`test FormControlTryout tryout helloworld 1`] = `
     >
       <legend
         className="chakra-form__label css-uvho5g"
-        htmlFor="field-2295153378-2"
-        id="field-2295153378-2-label"
+        htmlFor="field-3901992539-2"
+        id="field-3901992539-2-label"
       >
         Favorite Naruto Character
       </legend>
@@ -61,8 +61,8 @@ exports[`test FormControlTryout tryout helloworld 1`] = `
               checked={false}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-2295153378-4"
-              name="radio-2295153378-3"
+              id="radio-3901992539-4"
+              name="radio-3901992539-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -109,8 +109,8 @@ exports[`test FormControlTryout tryout helloworld 1`] = `
               checked={false}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-2295153378-5"
-              name="radio-2295153378-3"
+              id="radio-3901992539-5"
+              name="radio-3901992539-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -157,8 +157,8 @@ exports[`test FormControlTryout tryout helloworld 1`] = `
               checked={true}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-2295153378-6"
-              name="radio-2295153378-3"
+              id="radio-3901992539-6"
+              name="radio-3901992539-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -207,8 +207,8 @@ exports[`test FormControlTryout tryout helloworld 1`] = `
               checked={false}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-2295153378-7"
-              name="radio-2295153378-3"
+              id="radio-3901992539-7"
+              name="radio-3901992539-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -252,7 +252,7 @@ exports[`test FormControlTryout tryout helloworld 1`] = `
       </div>
       <div
         className="chakra-form__helper-text css-0"
-        id="field-2295153378-2-helptext"
+        id="field-3901992539-2-helptext"
       >
         Select only if you're a fan.
       </div>

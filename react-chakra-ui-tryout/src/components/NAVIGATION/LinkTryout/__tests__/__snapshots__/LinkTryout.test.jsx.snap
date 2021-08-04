@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LinkTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    LinkTryout
+    <div>
+      Usage 
+      <a
+        className="chakra-link css-f4h6uy"
+      >
+        Chakra UI
+      </a>
+    </div>
+    <div>
+      ExternalLink 
+      <a
+        className="chakra-link css-f4h6uy"
+        href="https://chakra-ui.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Chakra Design system 
+        <svg
+          className="chakra-icon css-2y6psj"
+          focusable={false}
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeWidth="2"
+          >
+            <path
+              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+            />
+            <path
+              d="M15 3h6v6"
+            />
+            <path
+              d="M10 14L21 3"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div>
+      LinkInlineWithText 
+      <p
+        className="chakra-text css-0"
+      >
+        Did you know that
+         
+        <a
+          className="chakra-link css-14j13e4"
+          href="#"
+        >
+          links can live inline with text
+        </a>
+      </p>
+    </div>
+    <div>
+      UsageWithRoutingLibrary 
+      <a
+        className="chakra-link css-f4h6uy"
+        href="/home"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </div>
+  </div>,
+  <span />,
+]
+`;
