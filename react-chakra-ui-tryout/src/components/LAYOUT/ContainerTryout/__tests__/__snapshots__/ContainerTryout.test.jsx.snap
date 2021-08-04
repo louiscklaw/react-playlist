@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ContainerTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    ContainerTryout
+    <div>
+      <div
+        className="chakra-container css-10gf8jm"
+      >
+        There are many benefits to a joint design and development system. Not only does it bring benefits to the design team, but it also brings benefits to engineering teams. It makes sure that our experiences have a consistent look and feel, not just in our design specs, but in production
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-owjkmg"
+      >
+        <div
+          className="chakra-container css-jf7n8r"
+        >
+          Extra-Large Container
+        </div>
+        <div
+          className="chakra-container css-1xo1xlh"
+        >
+          Large Container
+        </div>
+        <div
+          className="chakra-container css-nm5t63"
+        >
+          Medium Container
+        </div>
+        <div
+          className="chakra-container css-cijz6r"
+        >
+          Small Container
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-container css-62cdn3"
+      >
+        <div
+          className="css-516aj1"
+        >
+          There are many benefits to a joint design and development system. Not only does it bring benefits to the design team.
+        </div>
+      </div>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

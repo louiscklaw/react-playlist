@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SampleUsageForARadioOrCheckboxGroup tryout helloworld 1`] = `
+Array [
+  <fieldset
+    className="chakra-form-control css-1kxonj9"
+    role="group"
+  >
+    <legend
+      className="chakra-form__label css-2gx1h6"
+      htmlFor="field-1"
+      id="field-1-label"
+    >
+      Favorite Naruto Character
+    </legend>
+    <div
+      className="chakra-radio-group css-0"
+      role="radiogroup"
+    >
+      <div
+        className="chakra-stack css-1y5q8ss"
+      >
+        <label
+          className="chakra-radio css-78joka"
+        >
+          <input
+            checked={false}
+            className="chakra-radio__input"
+            disabled={false}
+            id="radio-3"
+            name="radio-2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            readOnly={false}
+            required={false}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="radio"
+            value="Sasuke"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-radio__control css-1rggdzb"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          />
+          <span
+            className="chakra-radio__label css-1i66d7g"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          >
+            Sasuke
+          </span>
+        </label>
+        <label
+          className="chakra-radio css-78joka"
+        >
+          <input
+            checked={false}
+            className="chakra-radio__input"
+            disabled={false}
+            id="radio-4"
+            name="radio-2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            readOnly={false}
+            required={false}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="radio"
+            value="Nagato"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-radio__control css-1rggdzb"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          />
+          <span
+            className="chakra-radio__label css-1i66d7g"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          >
+            Nagato
+          </span>
+        </label>
+        <label
+          className="chakra-radio css-78joka"
+        >
+          <input
+            checked={true}
+            className="chakra-radio__input"
+            disabled={false}
+            id="radio-5"
+            name="radio-2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            readOnly={false}
+            required={false}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="radio"
+            value="Itachi"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-radio__control css-1rggdzb"
+            data-checked=""
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          />
+          <span
+            className="chakra-radio__label css-1i66d7g"
+            data-checked=""
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          >
+            Itachi
+          </span>
+        </label>
+        <label
+          className="chakra-radio css-78joka"
+        >
+          <input
+            checked={false}
+            className="chakra-radio__input"
+            disabled={false}
+            id="radio-6"
+            name="radio-2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            readOnly={false}
+            required={false}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="radio"
+            value="Sage of the six Paths"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-radio__control css-1rggdzb"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          />
+          <span
+            className="chakra-radio__label css-1i66d7g"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          >
+            Sage of the six Paths
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      className="chakra-form__helper-text css-1y1zyf5"
+      id="field-1-helptext"
+    >
+      Select only if you're a fan.
+    </div>
+  </fieldset>,
+  <span />,
+]
+`;

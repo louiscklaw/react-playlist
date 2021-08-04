@@ -33,7 +33,7 @@ import {
 
 import { AddIcon } from '@chakra-ui/icons';
 
-function DrawerExample() {
+export function DrawerExample() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
@@ -68,7 +68,7 @@ function DrawerExample() {
   );
 }
 
-function PlacementExample() {
+export function PlacementExample() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = React.useState();
 
@@ -100,7 +100,7 @@ function PlacementExample() {
   );
 }
 
-function FocusOnSpecificElement() {
+export function FocusOnSpecificElement() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();
 
@@ -172,7 +172,7 @@ function FocusOnSpecificElement() {
   );
 }
 
-function SizeExample() {
+export function SizeExample() {
   const [size, setSize] = React.useState('md');
   const { isOpen, onOpen, onClose } = useDisclosure();
 

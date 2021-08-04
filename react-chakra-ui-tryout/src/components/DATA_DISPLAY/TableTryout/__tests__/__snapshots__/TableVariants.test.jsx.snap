@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TableVariants tryout helloworld 1`] = `
+Array [
+  <table
+    className="chakra-table css-5605sr"
+    role="table"
+  >
+    <caption
+      className="css-7478fk"
+    >
+      Imperial to metric conversion factors
+    </caption>
+    <thead
+      className="css-0"
+    >
+      <tr
+        className="css-0"
+        role="row"
+      >
+        <th
+          className="css-1zts0j"
+        >
+          To convert
+        </th>
+        <th
+          className="css-1zts0j"
+        >
+          into
+        </th>
+        <th
+          className="css-1zts0j"
+          data-is-numeric={true}
+        >
+          multiply by
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="css-0"
+    >
+      <tr
+        className="css-0"
+        role="row"
+      >
+        <td
+          className="css-xumdn4"
+          role="gridcell"
+        >
+          inches
+        </td>
+        <td
+          className="css-xumdn4"
+          role="gridcell"
+        >
+          millimetres (mm)
+        </td>
+        <td
+          className="css-xumdn4"
+          data-is-numeric={true}
+          role="gridcell"
+        >
+          25.4
+        </td>
+      </tr>
+      <tr
+        className="css-0"
+        role="row"
+      >
+        <td
+          className="css-xumdn4"
+          role="gridcell"
+        >
+          feet
+        </td>
+        <td
+          className="css-xumdn4"
+          role="gridcell"
+        >
+          centimetres (cm)
+        </td>
+        <td
+          className="css-xumdn4"
+          data-is-numeric={true}
+          role="gridcell"
+        >
+          30.48
+        </td>
+      </tr>
+      <tr
+        className="css-0"
+        role="row"
+      >
+        <td
+          className="css-xumdn4"
+          role="gridcell"
+        >
+          yards
+        </td>
+        <td
+          className="css-xumdn4"
+          role="gridcell"
+        >
+          metres (m)
+        </td>
+        <td
+          className="css-xumdn4"
+          data-is-numeric={true}
+          role="gridcell"
+        >
+          0.91444
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      className="css-5wov5z"
+    >
+      <tr
+        className="css-0"
+        role="row"
+      >
+        <th
+          className="css-1zts0j"
+        >
+          To convert
+        </th>
+        <th
+          className="css-1zts0j"
+        >
+          into
+        </th>
+        <th
+          className="css-1zts0j"
+          data-is-numeric={true}
+        >
+          multiply by
+        </th>
+      </tr>
+    </tfoot>
+  </table>,
+  <span />,
+]
+`;

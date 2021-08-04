@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test RadioTryout tryout helloworld 1`] = `
 <div>
   RadioTryout
   <div>
@@ -18,8 +18,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={true}
             className="chakra-radio__input"
-            id="radio-9346553076-2"
-            name="radio-9346553076-1"
+            id="radio-3796620676-2"
+            name="radio-3796620676-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -65,8 +65,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-9346553076-3"
-            name="radio-9346553076-1"
+            id="radio-3796620676-3"
+            name="radio-3796620676-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -110,8 +110,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-9346553076-4"
-            name="radio-9346553076-1"
+            id="radio-3796620676-4"
+            name="radio-3796620676-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -167,8 +167,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-9346553076-6"
-            name="radio-9346553076-5"
+            id="radio-3796620676-6"
+            name="radio-3796620676-5"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -212,8 +212,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={true}
             className="chakra-radio__input"
-            id="radio-9346553076-7"
-            name="radio-9346553076-5"
+            id="radio-3796620676-7"
+            name="radio-3796620676-5"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -267,7 +267,7 @@ exports[`test badge tryout helloworld 1`] = `
         <input
           checked={false}
           className="chakra-radio__input"
-          id="radio-9346553076-8"
+          id="radio-3796620676-8"
           name="1"
           onBlur={[Function]}
           onChange={[Function]}
@@ -311,7 +311,7 @@ exports[`test badge tryout helloworld 1`] = `
         <input
           checked={false}
           className="chakra-radio__input"
-          id="radio-9346553076-9"
+          id="radio-3796620676-9"
           name="1"
           onBlur={[Function]}
           onChange={[Function]}
@@ -355,7 +355,7 @@ exports[`test badge tryout helloworld 1`] = `
         <input
           checked={true}
           className="chakra-radio__input"
-          id="radio-9346553076-10"
+          id="radio-3796620676-10"
           name="1"
           onBlur={[Function]}
           onChange={[Function]}
@@ -414,8 +414,8 @@ exports[`test badge tryout helloworld 1`] = `
             checked={true}
             className="chakra-radio__input"
             disabled={true}
-            id="radio-9346553076-12"
-            name="radio-9346553076-11"
+            id="radio-3796620676-12"
+            name="radio-3796620676-11"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -463,8 +463,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-9346553076-13"
-            name="radio-9346553076-11"
+            id="radio-3796620676-13"
+            name="radio-3796620676-11"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -508,8 +508,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-9346553076-14"
-            name="radio-9346553076-11"
+            id="radio-3796620676-14"
+            name="radio-3796620676-11"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -567,8 +567,8 @@ exports[`test badge tryout helloworld 1`] = `
             checked={true}
             className="chakra-radio__input"
             disabled={true}
-            id="radio-9346553076-16"
-            name="radio-9346553076-15"
+            id="radio-3796620676-16"
+            name="radio-3796620676-15"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -616,8 +616,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-9346553076-17"
-            name="radio-9346553076-15"
+            id="radio-3796620676-17"
+            name="radio-3796620676-15"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -661,8 +661,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-9346553076-18"
-            name="radio-9346553076-15"
+            id="radio-3796620676-18"
+            name="radio-3796620676-15"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -712,7 +712,7 @@ exports[`test badge tryout helloworld 1`] = `
         aria-invalid={true}
         checked={false}
         className="chakra-radio__input"
-        id="radio-9346553076-19"
+        id="radio-3796620676-19"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -763,7 +763,7 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <input
           checked={true}
-          id="radio-9346553076-21"
+          id="radio-3796620676-21"
           name="framework"
           onBlur={[Function]}
           onChange={[Function]}
@@ -803,7 +803,7 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <input
           checked={false}
-          id="radio-9346553076-22"
+          id="radio-3796620676-22"
           name="framework"
           onBlur={[Function]}
           onChange={[Function]}
@@ -842,7 +842,7 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <input
           checked={false}
-          id="radio-9346553076-23"
+          id="radio-3796620676-23"
           name="framework"
           onBlur={[Function]}
           onChange={[Function]}

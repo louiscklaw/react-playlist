@@ -1,0 +1,1152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test NumberInputTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    NumberInputTryout
+    <div>
+      Usage 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+      >
+        <input
+          aria-valuemax={9007199254740991}
+          aria-valuemin={-9007199254740991}
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value=""
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      SettingAMinimumAndMaximumValue 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+        defaultValue={15}
+      >
+        <input
+          aria-valuemax={20}
+          aria-valuemin={10}
+          aria-valuenow={15}
+          aria-valuetext="15"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value="15"
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      SettingTheStepSize 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+        defaultValue={15}
+      >
+        <input
+          aria-valuemax={30}
+          aria-valuemin={10}
+          aria-valuenow={15}
+          aria-valuetext="15"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value="15"
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      EDITABLE EXAMPLE
+    </div>
+    <div>
+      AdjustingThePrecisionOfTheValue 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+        defaultValue={15}
+      >
+        <input
+          aria-valuemax={9007199254740991}
+          aria-valuemin={-9007199254740991}
+          aria-valuenow={15}
+          aria-valuetext="15.00"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value="15.00"
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      ClampValueWhenUserBlursTheInput 
+      <div>
+        In this example, try to type a value greater than the max. It won't reset the value on blur.
+      </div>
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+        defaultValue={15}
+      >
+        <input
+          aria-valuemax={30}
+          aria-valuemin={-9007199254740991}
+          aria-valuenow={15}
+          aria-valuetext="15"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value="15"
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      AllowingOutOfRangeValues 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+        defaultValue={15}
+      >
+        <input
+          aria-invalid={true}
+          aria-valuemax={10}
+          aria-valuemin={-9007199254740991}
+          aria-valuenow={15}
+          aria-valuetext="15"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value="15"
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      FormattingAndParsingTheValue 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+        value="$1.53"
+      >
+        <input
+          aria-valuemax={50}
+          aria-valuemin={-9007199254740991}
+          aria-valuenow={1.53}
+          aria-valuetext="$1.53"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value="$1.53"
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      ChangingTheSizeOfTheInput 
+      <div
+        className="chakra-stack css-x9juev"
+      >
+        <div
+          className="chakra-stack__item css-1qy82gu"
+        >
+          <div
+            className="chakra-numberinput css-1691psz"
+            defaultValue={15}
+          >
+            <input
+              aria-valuemax={9007199254740991}
+              aria-valuemin={10}
+              aria-valuenow={15}
+              aria-valuetext="15"
+              autoComplete="off"
+              autoCorrect="off"
+              className="chakra-numberinput__field css-10j4flj"
+              inputMode="decimal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              pattern="[0-9]*(.[0-9]+)?"
+              role="spinbutton"
+              type="text"
+              value="15"
+            />
+            <div
+              aria-hidden={true}
+              className="css-1jj9yua"
+            >
+              <div
+                className="css-1mn3x3e"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-1mn3x3e"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="chakra-stack__item css-1qy82gu"
+        >
+          <div
+            className="chakra-numberinput css-1mjhl3j"
+            defaultValue={15}
+          >
+            <input
+              aria-valuemax={9007199254740991}
+              aria-valuemin={10}
+              aria-valuenow={15}
+              aria-valuetext="15"
+              autoComplete="off"
+              autoCorrect="off"
+              className="chakra-numberinput__field css-1kojd94"
+              inputMode="decimal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              pattern="[0-9]*(.[0-9]+)?"
+              role="spinbutton"
+              type="text"
+              value="15"
+            />
+            <div
+              aria-hidden={true}
+              className="css-1jj9yua"
+            >
+              <div
+                className="css-hwq8lc"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-hwq8lc"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="chakra-stack__item css-1qy82gu"
+        >
+          <div
+            className="chakra-numberinput css-1fm7jcr"
+            defaultValue={15}
+          >
+            <input
+              aria-valuemax={9007199254740991}
+              aria-valuemin={10}
+              aria-valuenow={15}
+              aria-valuetext="15"
+              autoComplete="off"
+              autoCorrect="off"
+              className="chakra-numberinput__field css-qb2xcp"
+              inputMode="decimal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              pattern="[0-9]*(.[0-9]+)?"
+              role="spinbutton"
+              type="text"
+              value="15"
+            />
+            <div
+              aria-hidden={true}
+              className="css-1jj9yua"
+            >
+              <div
+                className="css-mxool3"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-mxool3"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="chakra-stack__item css-1qy82gu"
+        >
+          <div
+            className="chakra-numberinput css-1eoocd6"
+            defaultValue={15}
+          >
+            <input
+              aria-valuemax={9007199254740991}
+              aria-valuemin={10}
+              aria-valuenow={15}
+              aria-valuetext="15"
+              autoComplete="off"
+              autoCorrect="off"
+              className="chakra-numberinput__field css-htadsk"
+              inputMode="decimal"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              pattern="[0-9]*(.[0-9]+)?"
+              role="spinbutton"
+              type="text"
+              value="15"
+            />
+            <div
+              aria-hidden={true}
+              className="css-1jj9yua"
+            >
+              <div
+                className="css-1df4vx0"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-1df4vx0"
+                disabled={false}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+                tabIndex={-1}
+              >
+                <svg
+                  className="chakra-icon css-onkibi"
+                  focusable={false}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      ChangingTheStyles 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+        defaultValue={15}
+      >
+        <input
+          aria-valuemax={9007199254740991}
+          aria-valuemin={10}
+          aria-valuenow={15}
+          aria-valuetext="15"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-1kojd94"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value="15"
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-kyp1oh"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            +
+          </div>
+          <div
+            className="css-1ce309j"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            -
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      CombiningItWithASlider 
+      <div
+        className="css-k008qs"
+      >
+        <div
+          className="chakra-numberinput css-14goai5"
+          value={0}
+        >
+          <input
+            aria-valuemax={9007199254740991}
+            aria-valuemin={-9007199254740991}
+            aria-valuenow={0}
+            aria-valuetext="0"
+            autoComplete="off"
+            autoCorrect="off"
+            className="chakra-numberinput__field css-qb2xcp"
+            inputMode="decimal"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            pattern="[0-9]*(.[0-9]+)?"
+            role="spinbutton"
+            type="text"
+            value={0}
+          />
+          <div
+            aria-hidden={true}
+            className="css-1jj9yua"
+          >
+            <div
+              className="css-mxool3"
+              disabled={false}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <svg
+                className="chakra-icon css-onkibi"
+                focusable={false}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div
+              className="css-mxool3"
+              disabled={false}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <svg
+                className="chakra-icon css-onkibi"
+                focusable={false}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          className="chakra-slider css-1f1et5y"
+          style={
+            Object {
+              "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+              "outline": 0,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+              "position": "relative",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={-1}
+        >
+          <div
+            className="chakra-slider__track css-1jsne3t"
+            id="slider-track-1"
+            style={
+              Object {
+                "position": "absolute",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="chakra-slider__filled-track css-us0ay6"
+              style={
+                Object {
+                  "left": 0,
+                  "position": "absolute",
+                  "top": "50%",
+                  "transform": "translateY(-50%)",
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+          <div
+            aria-orientation="horizontal"
+            aria-valuemax={100}
+            aria-valuemin={0}
+            aria-valuenow={0}
+            className="chakra-slider__thumb css-vmi1ee"
+            id="slider-thumb-1"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="slider"
+            style={
+              Object {
+                "MozUserSelect": "none",
+                "WebkitUserSelect": "none",
+                "left": "calc(0% - 0px)",
+                "msUserSelect": "none",
+                "position": "absolute",
+                "touchAction": "none",
+                "userSelect": "none",
+              }
+            }
+            tabIndex={0}
+          >
+            0
+          </div>
+          <input
+            type="hidden"
+            value={0}
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      CreateAMobileSpinner 
+      <div
+        className="chakra-stack css-13auf9k"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          disabled={false}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          role="button"
+          tabIndex={-1}
+          type="button"
+        >
+          +
+        </button>
+        <input
+          aria-readonly={true}
+          aria-valuemax={6}
+          aria-valuemin={1}
+          aria-valuenow={1.53}
+          aria-valuetext="1.53"
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-input css-1c6j008"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          readOnly={true}
+          role="spinbutton"
+          type="text"
+          value="1.53"
+        />
+        <button
+          className="chakra-button css-taj3dd"
+          disabled={false}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          role="button"
+          tabIndex={-1}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+    </div>
+    <div>
+      IncrementValueUsingMouseWheel 
+      <div
+        className="chakra-numberinput css-1yr7bw8"
+      >
+        <input
+          aria-valuemax={9007199254740991}
+          aria-valuemin={-9007199254740991}
+          autoComplete="off"
+          autoCorrect="off"
+          className="chakra-numberinput__field css-qb2xcp"
+          inputMode="decimal"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          pattern="[0-9]*(.[0-9]+)?"
+          role="spinbutton"
+          type="text"
+          value=""
+        />
+        <div
+          aria-hidden={true}
+          className="css-1jj9yua"
+        >
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            className="css-mxool3"
+            disabled={false}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <svg
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

@@ -17,14 +17,14 @@ import {
 import { Input } from '@chakra-ui/react';
 import { PhoneIcon, CheckIcon } from '@chakra-ui/icons';
 
-function Usage() {
+export function Usage() {
   return (
     <>
       <Input placeholder="Basic usage" />
     </>
   );
 }
-function ChangingTheSizeOfInput() {
+export function ChangingTheSizeOfInput() {
   return (
     <>
       <Stack spacing={3}>
@@ -36,7 +36,7 @@ function ChangingTheSizeOfInput() {
     </>
   );
 }
-function ChangingTheAppearanceOfTheInput() {
+export function ChangingTheAppearanceOfTheInput() {
   return (
     <>
       <Stack spacing={3}>
@@ -48,7 +48,7 @@ function ChangingTheAppearanceOfTheInput() {
     </>
   );
 }
-function LeftAndRightAddons() {
+export function LeftAndRightAddons() {
   return (
     <>
       <Stack spacing={4}>
@@ -67,7 +67,7 @@ function LeftAndRightAddons() {
     </>
   );
 }
-function AddElementsInsideInput() {
+export function AddElementsInsideInput() {
   return (
     <>
       <Stack spacing={4}>
@@ -94,7 +94,7 @@ function AddElementsInsideInput() {
   );
 }
 
-function PasswordInputExample() {
+export function PasswordInputExample() {
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
 
@@ -114,7 +114,7 @@ function PasswordInputExample() {
   );
 }
 
-function ControlledInput() {
+export function ControlledInput() {
   const [value, setValue] = React.useState('');
   const handleChange = (event) => setValue(event.target.value);
 
@@ -130,7 +130,7 @@ function ControlledInput() {
     </>
   );
 }
-function ChangingTheFocusAndErrorBorderColors() {
+export function ChangingTheFocusAndErrorBorderColors() {
   return (
     <>
       <Stack spacing={3}>
@@ -156,40 +156,40 @@ function ChangingTheFocusAndErrorBorderColors() {
     </>
   );
 }
-function TestHelloworld09() {
+export function TestHelloworld09() {
   return <>TestHelloworld09</>;
 }
-function TestHelloworld10() {
+export function TestHelloworld10() {
   return <>TestHelloworld10</>;
 }
-function TestHelloworld11() {
+export function TestHelloworld11() {
   return <>TestHelloworld11</>;
 }
-function TestHelloworld12() {
+export function TestHelloworld12() {
   return <>TestHelloworld12</>;
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

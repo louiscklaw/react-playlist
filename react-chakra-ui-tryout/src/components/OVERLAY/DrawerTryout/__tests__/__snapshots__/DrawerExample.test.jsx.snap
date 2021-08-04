@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test DrawerExample tryout helloworld 1`] = `
+Array [
+  <button
+    className="chakra-button css-f6n2t5"
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>,
+  <span />,
+]
+`;

@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MenuOptionGroups tryout helloworld 1`] = `
+Array [
+  "MenuOptionGroups",
+  <button
+    aria-controls="menu-list-2"
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="chakra-button chakra-menu__menu-button css-8pcd7y"
+    id="menu-button-2"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    type="button"
+  >
+    <span
+      className="css-xl71ch"
+    >
+      MenuItem
+    </span>
+  </button>,
+  <div
+    className="css-r6z5ec"
+    style={
+      Object {
+        "inset": "0 auto auto 0",
+        "minWidth": "max-content",
+        "position": "absolute",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      aria-orientation="vertical"
+      className="chakra-menu__menu-list css-enf65v"
+      id="menu-list-2"
+      onKeyDown={[Function]}
+      role="menu"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "scale(0.8) translateZ(0)",
+          "transformOrigin": "var(--popper-transform-origin)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex={-1}
+    >
+      <div
+        className="chakra-menu__group"
+        role="group"
+      >
+        <p
+          className="chakra-menu__group__title chakra-menu__option-group css-hunt27"
+        >
+          Order
+        </p>
+        <button
+          aria-checked={true}
+          className="chakra-menu__menuitem-option css-13c7rae"
+          id="menu-list-2-menuitem-3"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitemradio"
+          tabIndex={0}
+          type="button"
+          value="asc"
+        >
+          <span
+            className="chakra-menu__icon-wrapper css-usinoq"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-menu__icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 14 14"
+              width="1em"
+            >
+              <polygon
+                fill="currentColor"
+                points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+              />
+            </svg>
+          </span>
+          <span
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            Ascending
+          </span>
+        </button>
+        <button
+          aria-checked={false}
+          className="chakra-menu__menuitem-option css-13c7rae"
+          id="menu-list-2-menuitem-4"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitemradio"
+          tabIndex={0}
+          type="button"
+          value="desc"
+        >
+          <span
+            className="chakra-menu__icon-wrapper css-g5m2dj"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-menu__icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 14 14"
+              width="1em"
+            >
+              <polygon
+                fill="currentColor"
+                points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+              />
+            </svg>
+          </span>
+          <span
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            Descending
+          </span>
+        </button>
+      </div>
+      <hr
+        aria-orientation="horizontal"
+        className="chakra-menu__divider css-vfkdr8"
+        role="separator"
+      />
+      <div
+        className="chakra-menu__group"
+        role="group"
+      >
+        <p
+          className="chakra-menu__group__title chakra-menu__option-group css-hunt27"
+        >
+          Country
+        </p>
+        <button
+          aria-checked={false}
+          className="chakra-menu__menuitem-option css-13c7rae"
+          id="menu-list-2-menuitem-5"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitemcheckbox"
+          tabIndex={0}
+          type="button"
+          value="email"
+        >
+          <span
+            className="chakra-menu__icon-wrapper css-g5m2dj"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-menu__icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 14 14"
+              width="1em"
+            >
+              <polygon
+                fill="currentColor"
+                points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+              />
+            </svg>
+          </span>
+          <span
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            Email
+          </span>
+        </button>
+        <button
+          aria-checked={false}
+          className="chakra-menu__menuitem-option css-13c7rae"
+          id="menu-list-2-menuitem-6"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitemcheckbox"
+          tabIndex={0}
+          type="button"
+          value="phone"
+        >
+          <span
+            className="chakra-menu__icon-wrapper css-g5m2dj"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-menu__icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 14 14"
+              width="1em"
+            >
+              <polygon
+                fill="currentColor"
+                points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+              />
+            </svg>
+          </span>
+          <span
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            Phone
+          </span>
+        </button>
+        <button
+          aria-checked={false}
+          className="chakra-menu__menuitem-option css-13c7rae"
+          id="menu-list-2-menuitem-7"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitemcheckbox"
+          tabIndex={0}
+          type="button"
+          value="country"
+        >
+          <span
+            className="chakra-menu__icon-wrapper css-g5m2dj"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-menu__icon"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 14 14"
+              width="1em"
+            >
+              <polygon
+                fill="currentColor"
+                points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+              />
+            </svg>
+          </span>
+          <span
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            Country
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

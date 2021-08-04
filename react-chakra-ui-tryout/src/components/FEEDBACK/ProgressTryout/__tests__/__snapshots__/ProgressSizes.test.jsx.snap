@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ProgressSizes tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-1au6mu0"
+  >
+    <div
+      className="css-1efflpu"
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={20}
+        className="css-1nsw7s9"
+        role="progressbar"
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="css-quqbuc"
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={20}
+        className="css-1nsw7s9"
+        role="progressbar"
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="css-1jnomzl"
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={20}
+        className="css-1nsw7s9"
+        role="progressbar"
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="css-o5yzug"
+    >
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={20}
+        className="css-1nsw7s9"
+        role="progressbar"
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      />
+    </div>
+  </div>,
+  <span />,
+]
+`;

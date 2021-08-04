@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TestAvatarGroup tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-avatar__group css-1rs5v3u"
+    role="group"
+  >
+    <span
+      className="chakra-avatar__excess css-tm06mh"
+    >
+      +3
+    </span>
+    <span
+      className="chakra-avatar css-65hrvq"
+    >
+      <div
+        aria-label="Segun Adebayo"
+        className="chakra-avatar__initials css-uo84k3"
+        role="img"
+      >
+        SA
+      </div>
+    </span>
+    <span
+      className="chakra-avatar css-xzy5cp"
+    >
+      <div
+        aria-label="Ryan Florence"
+        className="chakra-avatar__initials css-uo84k3"
+        role="img"
+      >
+        RF
+      </div>
+    </span>
+  </div>,
+  <span />,
+]
+`;

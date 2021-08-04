@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { PinInput, PinInputField } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   return (
     <>
       <HStack>
@@ -25,7 +25,7 @@ function Usage() {
     </>
   );
 }
-function AllowingAlphanumericValues() {
+export function AllowingAlphanumericValues() {
   return (
     <>
       <HStack>
@@ -39,7 +39,7 @@ function AllowingAlphanumericValues() {
     </>
   );
 }
-function UsingFieldsAsAOneTimePassword() {
+export function UsingFieldsAsAOneTimePassword() {
   return (
     <>
       <PinInput otp>
@@ -51,7 +51,7 @@ function UsingFieldsAsAOneTimePassword() {
     </>
   );
 }
-function MaskingThePinInputsValue() {
+export function MaskingThePinInputsValue() {
   return (
     <>
       <HStack>
@@ -65,7 +65,7 @@ function MaskingThePinInputsValue() {
     </>
   );
 }
-function ChangingTheSizeOfThePinInput() {
+export function ChangingTheSizeOfThePinInput() {
   return (
     <>
       <Stack>
@@ -104,7 +104,7 @@ function ChangingTheSizeOfThePinInput() {
     </>
   );
 }
-function AddingADefaultValue() {
+export function AddingADefaultValue() {
   return (
     <>
       <HStack>
@@ -117,7 +117,7 @@ function AddingADefaultValue() {
     </>
   );
 }
-function ChangingThePlaceholder() {
+export function ChangingThePlaceholder() {
   return (
     <>
       <HStack>
@@ -130,7 +130,7 @@ function ChangingThePlaceholder() {
     </>
   );
 }
-function DisableFocusManagement() {
+export function DisableFocusManagement() {
   return (
     <>
       <HStack>
@@ -143,7 +143,7 @@ function DisableFocusManagement() {
     </>
   );
 }
-function AutoFillAndCopyPaste() {
+export function AutoFillAndCopyPaste() {
   return (
     <>
       <HStack>
@@ -156,37 +156,37 @@ function AutoFillAndCopyPaste() {
     </>
   );
 }
-function TestHelloworld10() {
+export function TestHelloworld10() {
   return <>TestHelloworld10</>;
 }
-function TestHelloworld11() {
+export function TestHelloworld11() {
   return <>TestHelloworld11</>;
 }
-function TestHelloworld12() {
+export function TestHelloworld12() {
   return <>TestHelloworld12</>;
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

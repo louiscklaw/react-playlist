@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SkippingTheSkeletonWhenContentIsLoaded tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-skeleton css-cdkrf0"
+  >
+    <span>
+      Chakra ui is cool
+    </span>
+  </div>,
+  <span />,
+]
+`;

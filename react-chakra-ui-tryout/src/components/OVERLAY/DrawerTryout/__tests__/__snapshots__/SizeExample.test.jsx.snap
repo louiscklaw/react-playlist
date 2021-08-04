@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SizeExample tryout helloworld 1`] = `
+Array [
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open xs Drawer
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open sm Drawer
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open md Drawer
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open lg Drawer
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open xl Drawer
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open full Drawer
+  </button>,
+  <span />,
+]
+`;

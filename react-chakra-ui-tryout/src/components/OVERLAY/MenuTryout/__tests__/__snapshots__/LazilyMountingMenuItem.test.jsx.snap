@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LazilyMountingMenuItem tryout helloworld 1`] = `
+Array [
+  <button
+    aria-controls="menu-list-2"
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="chakra-menu__menu-button css-kjvu41"
+    id="menu-button-2"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-xl71ch"
+    >
+      Open menu
+    </span>
+  </button>,
+  <div
+    className="css-r6z5ec"
+    style={
+      Object {
+        "inset": "0 auto auto 0",
+        "minWidth": "max-content",
+        "position": "absolute",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      aria-orientation="vertical"
+      className="chakra-menu__menu-list css-1ozmk1d"
+      id="menu-list-2"
+      onKeyDown={[Function]}
+      role="menu"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "scale(0.8) translateZ(0)",
+          "transformOrigin": "var(--popper-transform-origin)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex={-1}
+    />
+  </div>,
+  <span />,
+]
+`;

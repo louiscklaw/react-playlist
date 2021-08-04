@@ -25,7 +25,7 @@ import {
   EditIcon,
 } from '@chakra-ui/icons';
 
-function Usage() {
+export function Usage() {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
@@ -42,7 +42,7 @@ function Usage() {
   );
 }
 
-function AccessingTheInternalState() {
+export function AccessingTheInternalState() {
   return (
     <Menu>
       {({ isOpen }) => (
@@ -65,7 +65,7 @@ function AccessingTheInternalState() {
   );
 }
 
-function LetterNavigation() {
+export function LetterNavigation() {
   return (
     <Menu>
       <MenuButton
@@ -90,7 +90,7 @@ function LetterNavigation() {
   );
 }
 
-function JustAnotherExample() {
+export function JustAnotherExample() {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
@@ -122,7 +122,7 @@ function JustAnotherExample() {
   );
 }
 
-function AddingIconsAndCommands() {
+export function AddingIconsAndCommands() {
   return (
     <Menu>
       <MenuButton
@@ -149,7 +149,7 @@ function AddingIconsAndCommands() {
   );
 }
 
-function LazilyMountingMenuItem() {
+export function LazilyMountingMenuItem() {
   return (
     <Menu isLazy>
       <MenuButton>Open menu</MenuButton>
@@ -163,7 +163,7 @@ function LazilyMountingMenuItem() {
   );
 }
 
-function RenderingMenuInAPortal() {
+export function RenderingMenuInAPortal() {
   return (
     <>
       <div>RenderingMenuInAPortal</div>
@@ -182,7 +182,7 @@ function RenderingMenuInAPortal() {
   );
 }
 
-function MenuGroupExample() {
+export function MenuGroupExample() {
   return (
     <>
       <div>MenuGroupExample</div>
@@ -206,7 +206,7 @@ function MenuGroupExample() {
   );
 }
 
-function MenuOptionGroups() {
+export function MenuOptionGroups() {
   return (
     <>
       MenuOptionGroups

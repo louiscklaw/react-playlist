@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { CheckboxTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test CheckboxTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<CheckboxTryout />).toJSON();
     expect(tree).toMatchSnapshot();

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test BoxTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    BoxTryout
+    <div>
+      <div
+        className="css-1cebrye"
+      >
+        This is the Box
+      </div>
+    </div>
+    <div>
+      <button
+        className="css-ttmilu"
+      >
+        Button
+      </button>
+    </div>
+    <div />
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

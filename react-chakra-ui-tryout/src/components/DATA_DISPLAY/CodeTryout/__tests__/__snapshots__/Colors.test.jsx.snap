@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Colors tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-x9juev"
+  >
+    <code
+      className="chakra-code css-4m8w8z"
+    >
+      console.log(welcome)
+    </code>
+    <code
+      className="chakra-code css-1kl0ldp"
+    >
+      var chakra = 'awesome!'
+    </code>
+    <code
+      className="chakra-code css-t077t1"
+    >
+      npm install chakra
+    </code>
+  </div>,
+  <span />,
+]
+`;

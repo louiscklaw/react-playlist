@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Placement tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-1rsw6tr"
+  >
+    <div
+      className="chakra-stack css-iew95a"
+    >
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Auto-Start
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Auto
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Auto-End
+      </button>
+    </div>
+    <div
+      className="chakra-stack css-iew95a"
+    >
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Top-Start
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Top
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Top-End
+      </button>
+    </div>
+    <div
+      className="chakra-stack css-iew95a"
+    >
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Right-Start
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Right
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Right-End
+      </button>
+    </div>
+    <div
+      className="chakra-stack css-iew95a"
+    >
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Bottom Start
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Bottom
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Bottom End
+      </button>
+    </div>
+    <div
+      className="chakra-stack css-iew95a"
+    >
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Left-Start
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Left
+      </button>
+      <button
+        className="chakra-button css-taj3dd"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        type="button"
+      >
+        Left-End
+      </button>
+    </div>
+  </div>,
+  <span />,
+]
+`;

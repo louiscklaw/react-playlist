@@ -1,119 +1,240 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test ModalTryout tryout helloworld 1`] = `
 <div>
-  BadgeTryout
+  ModalTryout
   <div>
-    Usage 
-    <span
-      className="chakra-badge css-ifsvay"
+    <button
+      className="chakra-button css-5c2176"
+      onClick={[Function]}
+      type="button"
     >
-      Default
-    </span>
+      Open Modal
+    </button>
   </div>
   <div>
-    BadgeColor 
     <div
-      className="chakra-stack css-x9juev"
+      aria-label="Focus moved to this box"
+      className="css-0"
+      tabIndex={-1}
     >
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Default
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Success
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Removed
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        New
-      </span>
+      Some other content that'll receive focus on close.
     </div>
+    <button
+      className="chakra-button css-q1ts0i"
+      onClick={[Function]}
+      type="button"
+    >
+      Open Modal
+    </button>
   </div>
   <div>
-    BadgeVariants 
-    <div
-      className="chakra-stack css-x9juev"
+    <button
+      className="chakra-button css-5c2176"
+      onClick={[Function]}
+      type="button"
     >
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Default
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Success
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Removed
-      </span>
-    </div>
+      Open Modal
+    </button>
   </div>
   <div>
-    Composition 
-    <div
-      className="css-k008qs"
+    <button
+      className="chakra-button css-5c2176"
+      onClick={[Function]}
+      type="button"
     >
-      <span
-        className="chakra-avatar css-1ruhx4w"
-      >
-        <svg
-          aria-label=" avatar"
-          className="chakra-avatar__svg css-16ite8i"
-          role="img"
-          viewBox="0 0 128 128"
-        >
-          <path
-            d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
-            fill="currentColor"
-          />
-          <path
-            d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
-            fill="currentColor"
-          />
-        </svg>
-      </span>
+      Open Modal
+    </button>
+    <button
+      className="chakra-button css-3jb5ny"
+      type="button"
+    >
+      I'll receive focus on close
+    </button>
+  </div>
+  <div>
+    <button
+      className="chakra-button css-5c2176"
+      onClick={[Function]}
+      type="button"
+    >
+      Open Modal
+    </button>
+  </div>
+  <div>
+    <button
+      className="chakra-button css-5c2176"
+      onClick={[Function]}
+      type="button"
+    >
+      Trigger modal
+    </button>
+  </div>
+  <div>
+    <button
+      className="chakra-button css-5c2176"
+      onClick={[Function]}
+      type="button"
+    >
+      Open Modal
+    </button>
+  </div>
+  <div>
+    <div
+      className="chakra-radio-group css-0"
+      role="radiogroup"
+    >
       <div
-        className="css-9n3bbc"
+        className="chakra-stack css-x9juev"
       >
-        <p
-          className="chakra-text css-in3yi3"
+        <label
+          className="chakra-radio css-78joka"
         >
-          Segun Adebayo
+          <input
+            checked={true}
+            className="chakra-radio__input"
+            id="radio-871156473-17"
+            name="radio-871156473-16"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="radio"
+            value="inside"
+          />
           <span
-            className="chakra-badge css-8jwegb"
+            aria-hidden={true}
+            className="chakra-radio__control css-ssalds"
+            data-checked=""
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          />
+          <span
+            className="chakra-radio__label css-1y8kf23"
+            data-checked=""
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
           >
-            New
+            inside
           </span>
-        </p>
-        <p
-          className="chakra-text css-g5hezf"
+        </label>
+        <label
+          className="chakra-radio css-78joka"
         >
-          UI Engineer
-        </p>
+          <input
+            checked={false}
+            className="chakra-radio__input"
+            id="radio-871156473-18"
+            name="radio-871156473-16"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="radio"
+            value="outside"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-radio__control css-ssalds"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          />
+          <span
+            className="chakra-radio__label css-1y8kf23"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          >
+            outside
+          </span>
+        </label>
       </div>
     </div>
-    <p
-      className="chakra-text css-17nnq38"
+    <button
+      className="chakra-button css-1h8u2ox"
+      onClick={[Function]}
+      type="button"
     >
-      Segun Adebayo
-      <span
-        className="chakra-badge css-1yz77up"
-      >
-        New
-      </span>
-    </p>
+      Trigger modal
+    </button>
+  </div>
+  <div>
+    <button
+      className="chakra-button css-6dyxs8"
+      onClick={[Function]}
+      type="button"
+    >
+      Open xs Modal
+    </button>
+    <button
+      className="chakra-button css-6dyxs8"
+      onClick={[Function]}
+      type="button"
+    >
+      Open sm Modal
+    </button>
+    <button
+      className="chakra-button css-6dyxs8"
+      onClick={[Function]}
+      type="button"
+    >
+      Open md Modal
+    </button>
+    <button
+      className="chakra-button css-6dyxs8"
+      onClick={[Function]}
+      type="button"
+    >
+      Open lg Modal
+    </button>
+    <button
+      className="chakra-button css-6dyxs8"
+      onClick={[Function]}
+      type="button"
+    >
+      Open xl Modal
+    </button>
+    <button
+      className="chakra-button css-6dyxs8"
+      onClick={[Function]}
+      type="button"
+    >
+      Open full Modal
+    </button>
+  </div>
+  <div>
+     
   </div>
 </div>
 `;

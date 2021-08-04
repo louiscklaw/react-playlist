@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test CustomRadioButtons tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-84zodg"
+    role="radiogroup"
+  >
+    <label
+      className="css-0"
+    >
+      <input
+        checked={true}
+        id="radio-2"
+        name="framework"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        style={
+          Object {
+            "border": "0px",
+            "clip": "rect(0px, 0px, 0px, 0px)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": "0px",
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+        type="radio"
+        value="react"
+      />
+      <div
+        aria-hidden={true}
+        className="css-1bb1pgq"
+        data-checked=""
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
+        react
+      </div>
+    </label>
+    <label
+      className="css-0"
+    >
+      <input
+        checked={false}
+        id="radio-3"
+        name="framework"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        style={
+          Object {
+            "border": "0px",
+            "clip": "rect(0px, 0px, 0px, 0px)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": "0px",
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+        type="radio"
+        value="vue"
+      />
+      <div
+        aria-hidden={true}
+        className="css-1bb1pgq"
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
+        vue
+      </div>
+    </label>
+    <label
+      className="css-0"
+    >
+      <input
+        checked={false}
+        id="radio-4"
+        name="framework"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        style={
+          Object {
+            "border": "0px",
+            "clip": "rect(0px, 0px, 0px, 0px)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": "0px",
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+        type="radio"
+        value="svelte"
+      />
+      <div
+        aria-hidden={true}
+        className="css-1bb1pgq"
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
+        svelte
+      </div>
+    </label>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test CenterTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    CenterTryout
+    <div>
+      <div
+        className="css-10fi3hq"
+      >
+        This is the Center
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <div
+          className="css-14y3pk2"
+        />
+        <div
+          className="css-14y3pk2"
+        >
+          <span
+            className="css-wjomy9"
+          >
+            1
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <div
+          className="css-a1be9o"
+        />
+        <div
+          className="css-yzql01"
+        />
+      </div>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

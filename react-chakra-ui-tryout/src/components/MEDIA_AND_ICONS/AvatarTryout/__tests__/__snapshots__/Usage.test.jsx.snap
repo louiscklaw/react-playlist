@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-wrap css-0"
+  >
+    <ul
+      className="chakra-wrap__list css-umyqv7"
+    >
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <span
+          className="chakra-avatar css-1ggn14o"
+        >
+          <div
+            aria-label="Dan Abrahmov"
+            className="chakra-avatar__initials css-uo84k3"
+            role="img"
+          >
+            DA
+          </div>
+        </span>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <span
+          className="chakra-avatar css-10ghtty"
+        >
+          <div
+            aria-label="Kola Tioluwani"
+            className="chakra-avatar__initials css-uo84k3"
+            role="img"
+          >
+            KT
+          </div>
+        </span>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <span
+          className="chakra-avatar css-pe4aaj"
+        >
+          <div
+            aria-label="Kent Dodds"
+            className="chakra-avatar__initials css-uo84k3"
+            role="img"
+          >
+            KD
+          </div>
+        </span>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <span
+          className="chakra-avatar css-1k6lq71"
+        >
+          <div
+            aria-label="Ryan Florence"
+            className="chakra-avatar__initials css-uo84k3"
+            role="img"
+          >
+            RF
+          </div>
+        </span>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <span
+          className="chakra-avatar css-1w8t6bc"
+        >
+          <div
+            aria-label="Prosper Otemuyiwa"
+            className="chakra-avatar__initials css-uo84k3"
+            role="img"
+          >
+            PO
+          </div>
+        </span>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <span
+          className="chakra-avatar css-crbjwf"
+        >
+          <div
+            aria-label="Christian Nwamba"
+            className="chakra-avatar__initials css-uo84k3"
+            role="img"
+          >
+            CN
+          </div>
+        </span>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <span
+          className="chakra-avatar css-p0o76y"
+        >
+          <div
+            aria-label="Segun Adebayo"
+            className="chakra-avatar__initials css-uo84k3"
+            role="img"
+          >
+            SA
+          </div>
+        </span>
+      </li>
+    </ul>
+  </div>,
+  <span />,
+]
+`;

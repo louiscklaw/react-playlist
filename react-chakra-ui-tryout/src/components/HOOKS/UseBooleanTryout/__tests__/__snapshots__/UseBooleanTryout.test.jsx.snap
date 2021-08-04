@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UseBooleanTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    UseBooleanTryout
+    <div>
+      UsageOfToggleMethod 
+      <p>
+        Boolean state: 
+        false
+      </p>
+      <button
+        onClick={[Function]}
+      >
+        Click me to toggle the boolean value
+      </button>
+    </div>
+    <div>
+      UsageOfOnAndOffMethods 
+      <div
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        Hover me to turn ON
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

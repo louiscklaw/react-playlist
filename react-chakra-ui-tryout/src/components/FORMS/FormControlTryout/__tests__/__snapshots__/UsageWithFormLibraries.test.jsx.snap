@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UsageWithFormLibraries tryout helloworld 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "backgroundColor": "red",
+      }
+    }
+  >
+    formik example not yet tested
+  </div>,
+  <span />,
+]
+`;

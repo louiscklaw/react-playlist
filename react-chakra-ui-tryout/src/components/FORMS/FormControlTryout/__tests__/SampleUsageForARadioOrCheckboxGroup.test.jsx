@@ -1,0 +1,17 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import renderer from 'react-test-renderer';
+import { ChakraProvider } from '@chakra-ui/react';
+
+import { SampleUsageForARadioOrCheckboxGroup } from '../';
+
+describe('test SampleUsageForARadioOrCheckboxGroup tryout', () => {
+  test('helloworld', () => {
+    const tree = renderer.create(
+      <ChakraProvider>
+      <SampleUsageForARadioOrCheckboxGroup />
+      </ChakraProvider>
+      ).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

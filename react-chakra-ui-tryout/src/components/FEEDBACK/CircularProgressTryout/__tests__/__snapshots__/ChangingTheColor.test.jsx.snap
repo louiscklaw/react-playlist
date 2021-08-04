@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheColor tryout helloworld 1`] = `
+Array [
+  <div
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={30}
+    className="chakra-progress css-120wkjd"
+    role="progressbar"
+  >
+    <svg
+      className="css-kn46u7"
+      viewBox="0 0 100 100"
+    >
+      <circle
+        className="chakra-progress__track css-ol3i12"
+        cx={50}
+        cy={50}
+        r={42}
+        strokeWidth="12px"
+      />
+      <circle
+        className="chakra-progress__indicator css-lpcv5r"
+        cx={50}
+        cy={50}
+        r={42}
+        strokeDasharray="79.2 184.8"
+        strokeDashoffset={66}
+        strokeWidth="12px"
+      />
+    </svg>
+  </div>,
+  <span />,
+]
+`;

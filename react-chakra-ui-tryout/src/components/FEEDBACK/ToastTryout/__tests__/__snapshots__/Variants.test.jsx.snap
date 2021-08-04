@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Variants tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-wrap css-0"
+  >
+    <ul
+      className="chakra-wrap__list css-umyqv7"
+    >
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onClick={[Function]}
+          type="button"
+        >
+          Show 
+          solid
+           toast
+        </button>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onClick={[Function]}
+          type="button"
+        >
+          Show 
+          subtle
+           toast
+        </button>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onClick={[Function]}
+          type="button"
+        >
+          Show 
+          left-accent
+           toast
+        </button>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onClick={[Function]}
+          type="button"
+        >
+          Show 
+          top-accent
+           toast
+        </button>
+      </li>
+    </ul>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Separators tryout helloworld 1`] = `
+Array [
+  <nav
+    aria-label="breadcrumb"
+    className="chakra-breadcrumb css-0"
+  >
+    <ol
+      className="chakra-breadcrumb__list css-0"
+    >
+      <li
+        className="chakra-breadcrumb__list-item css-18biwo"
+      >
+        <a
+          className="chakra-breadcrumb__link css-f4h6uy"
+          href="#"
+        >
+          Home
+        </a>
+        <span
+          className="css-t4q1nq"
+          role="presentation"
+        >
+          -
+        </span>
+      </li>
+      <li
+        className="chakra-breadcrumb__list-item css-18biwo"
+      >
+        <a
+          className="chakra-breadcrumb__link css-f4h6uy"
+          href="#"
+        >
+          About
+        </a>
+        <span
+          className="css-t4q1nq"
+          role="presentation"
+        >
+          -
+        </span>
+      </li>
+      <li
+        className="chakra-breadcrumb__list-item css-18biwo"
+      >
+        <span
+          aria-current="page"
+          className="chakra-breadcrumb__link css-f4h6uy"
+          href="#"
+        >
+          Contact
+        </span>
+      </li>
+    </ol>
+  </nav>,
+  <span />,
+]
+`;

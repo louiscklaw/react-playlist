@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ReturnFocus tryout helloworld 1`] = `
+Array [
+  <div
+    aria-label="Focus moved to this box"
+    className="css-0"
+    tabIndex={-1}
+  >
+    Some other content that'll receive focus on close.
+  </div>,
+  <button
+    className="chakra-button css-1ireiby"
+    onClick={[Function]}
+    type="button"
+  >
+    Open Modal
+  </button>,
+  <span />,
+]
+`;

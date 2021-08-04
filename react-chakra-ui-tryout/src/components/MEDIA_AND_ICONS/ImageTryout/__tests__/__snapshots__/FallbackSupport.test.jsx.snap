@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test FallbackSupport tryout helloworld 1`] = `
+Array [
+  <img
+    className="chakra-image__placeholder css-0"
+    src="https://via.placeholder.com/150"
+  />,
+  <span />,
+]
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-spinner css-1dn0ijt"
+  >
+    <span
+      className="css-f8n5zr"
+    >
+      Loading...
+    </span>
+  </div>,
+  <span />,
+]
+`;

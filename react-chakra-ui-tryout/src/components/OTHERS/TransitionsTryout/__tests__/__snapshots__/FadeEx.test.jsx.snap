@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test FadeEx tryout helloworld 1`] = `
+Array [
+  <button
+    className="chakra-button css-taj3dd"
+    onClick={[Function]}
+    type="button"
+  >
+    Click Me
+  </button>,
+  <div
+    className="chakra-fade"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <div
+      className="css-17yz75s"
+    >
+      Fade
+    </div>
+  </div>,
+  <span />,
+]
+`;

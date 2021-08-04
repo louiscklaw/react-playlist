@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Status tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-gsc7pt"
+  >
+    <div
+      className="chakra-alert css-w5gexa"
+      role="alert"
+    >
+      <span
+        className="chakra-alert__icon css-vjdx0l"
+      >
+        <svg
+          className="chakra-icon css-fi0ww0"
+          focusable={false}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+      There was an error processing your request
+    </div>
+    <div
+      className="chakra-alert css-d2zjbc"
+      role="alert"
+    >
+      <span
+        className="chakra-alert__icon css-1n241mh"
+      >
+        <svg
+          className="chakra-icon css-fi0ww0"
+          focusable={false}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+      Data uploaded to the server. Fire on!
+    </div>
+    <div
+      className="chakra-alert css-1fqctm6"
+      role="alert"
+    >
+      <span
+        className="chakra-alert__icon css-15539z7"
+      >
+        <svg
+          className="chakra-icon css-fi0ww0"
+          focusable={false}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+      Seems your account is about expire, upgrade now
+    </div>
+    <div
+      className="chakra-alert css-1adt752"
+      role="alert"
+    >
+      <span
+        className="chakra-alert__icon css-n0gcl4"
+      >
+        <svg
+          className="chakra-icon css-fi0ww0"
+          focusable={false}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm.25,5a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,12.25,5ZM14.5,18.5h-4a1,1,0,0,1,0-2h.75a.25.25,0,0,0,.25-.25v-4.5a.25.25,0,0,0-.25-.25H10.5a1,1,0,0,1,0-2h1a2,2,0,0,1,2,2v4.75a.25.25,0,0,0,.25.25h.75a1,1,0,1,1,0,2Z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+      Chakra is going live on August 30th. Get ready!
+    </div>
+  </div>,
+  <span />,
+]
+`;

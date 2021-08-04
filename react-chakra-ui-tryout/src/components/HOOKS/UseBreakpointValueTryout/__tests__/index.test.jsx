@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { UseBreakpointValueTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test UseBreakpointValueTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<UseBreakpointValueTryout />).toJSON();
     expect(tree).toMatchSnapshot();

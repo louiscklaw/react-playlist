@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test TabsTryout tryout helloworld 1`] = `
 <div>
   TabsTryout
   <div>
@@ -15,10 +15,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-1--tabpanel--1"
+          aria-controls="tabs-5734307322-1--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-1--tab--1"
+          id="tabs-5734307322-1--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -28,10 +28,10 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-1--tabpanel--1"
+          aria-controls="tabs-5734307322-1--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-1--tab--1"
+          id="tabs-5734307322-1--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -41,10 +41,10 @@ exports[`test badge tryout helloworld 1`] = `
           Two
         </button>
         <button
-          aria-controls="tabs-1288884370-1--tabpanel--1"
+          aria-controls="tabs-5734307322-1--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-1--tab--1"
+          id="tabs-5734307322-1--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -58,10 +58,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-1--tab-0"
+          aria-labelledby="tabs-5734307322-1--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-1--tabpanel-0"
+          id="tabs-5734307322-1--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -70,10 +70,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-1--tab-1"
+          aria-labelledby="tabs-5734307322-1--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-1--tabpanel-1"
+          id="tabs-5734307322-1--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -82,10 +82,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-1--tab-2"
+          aria-labelledby="tabs-5734307322-1--tab-2"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-1--tabpanel-2"
+          id="tabs-5734307322-1--tabpanel-2"
           role="tabpanel"
           tabIndex={0}
         >
@@ -108,10 +108,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-2--tabpanel--1"
+          aria-controls="tabs-5734307322-2--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-2--tab--1"
+          id="tabs-5734307322-2--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -121,10 +121,10 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-2--tabpanel--1"
+          aria-controls="tabs-5734307322-2--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-2--tab--1"
+          id="tabs-5734307322-2--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -138,10 +138,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-2--tab-0"
+          aria-labelledby="tabs-5734307322-2--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-2--tabpanel-0"
+          id="tabs-5734307322-2--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -150,10 +150,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-2--tab-1"
+          aria-labelledby="tabs-5734307322-2--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-2--tabpanel-1"
+          id="tabs-5734307322-2--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -176,10 +176,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-3--tabpanel--1"
+          aria-controls="tabs-5734307322-3--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-3--tab--1"
+          id="tabs-5734307322-3--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -189,10 +189,10 @@ exports[`test badge tryout helloworld 1`] = `
           Tab 1
         </button>
         <button
-          aria-controls="tabs-1288884370-3--tabpanel--1"
+          aria-controls="tabs-5734307322-3--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-3--tab--1"
+          id="tabs-5734307322-3--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -206,10 +206,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-3--tab-0"
+          aria-labelledby="tabs-5734307322-3--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-3--tabpanel-0"
+          id="tabs-5734307322-3--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -218,10 +218,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-3--tab-1"
+          aria-labelledby="tabs-5734307322-3--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-3--tabpanel-1"
+          id="tabs-5734307322-3--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -244,10 +244,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-4--tabpanel--1"
+          aria-controls="tabs-5734307322-4--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-4--tab--1"
+          id="tabs-5734307322-4--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -257,10 +257,10 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-4--tabpanel--1"
+          aria-controls="tabs-5734307322-4--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-4--tab--1"
+          id="tabs-5734307322-4--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -274,10 +274,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-4--tab-0"
+          aria-labelledby="tabs-5734307322-4--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-4--tabpanel-0"
+          id="tabs-5734307322-4--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -286,10 +286,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-4--tab-1"
+          aria-labelledby="tabs-5734307322-4--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-4--tabpanel-1"
+          id="tabs-5734307322-4--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -313,10 +313,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-5--tabpanel--1"
+          aria-controls="tabs-5734307322-5--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-5--tab--1"
+          id="tabs-5734307322-5--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -326,10 +326,10 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-5--tabpanel--1"
+          aria-controls="tabs-5734307322-5--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-5--tab--1"
+          id="tabs-5734307322-5--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -343,10 +343,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-5--tab-0"
+          aria-labelledby="tabs-5734307322-5--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-5--tabpanel-0"
+          id="tabs-5734307322-5--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -355,10 +355,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-5--tab-1"
+          aria-labelledby="tabs-5734307322-5--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-5--tabpanel-1"
+          id="tabs-5734307322-5--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -381,10 +381,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-6--tabpanel--1"
+          aria-controls="tabs-5734307322-6--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-6--tab--1"
+          id="tabs-5734307322-6--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -394,10 +394,10 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-6--tabpanel--1"
+          aria-controls="tabs-5734307322-6--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-6--tab--1"
+          id="tabs-5734307322-6--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -411,10 +411,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-6--tab-0"
+          aria-labelledby="tabs-5734307322-6--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-6--tabpanel-0"
+          id="tabs-5734307322-6--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -423,10 +423,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-6--tab-1"
+          aria-labelledby="tabs-5734307322-6--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-6--tabpanel-1"
+          id="tabs-5734307322-6--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -449,10 +449,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-7--tabpanel--1"
+          aria-controls="tabs-5734307322-7--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-1ux8u39"
-          id="tabs-1288884370-7--tab--1"
+          id="tabs-5734307322-7--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -462,10 +462,10 @@ exports[`test badge tryout helloworld 1`] = `
           Tab 1
         </button>
         <button
-          aria-controls="tabs-1288884370-7--tabpanel--1"
+          aria-controls="tabs-5734307322-7--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-qavev8"
-          id="tabs-1288884370-7--tab--1"
+          id="tabs-5734307322-7--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -479,10 +479,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-7--tab-0"
+          aria-labelledby="tabs-5734307322-7--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-7--tabpanel-0"
+          id="tabs-5734307322-7--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -491,10 +491,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-7--tab-1"
+          aria-labelledby="tabs-5734307322-7--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-7--tabpanel-1"
+          id="tabs-5734307322-7--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -517,10 +517,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-8--tabpanel--1"
+          aria-controls="tabs-5734307322-8--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-8--tab--1"
+          id="tabs-5734307322-8--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -530,10 +530,10 @@ exports[`test badge tryout helloworld 1`] = `
           Red
         </button>
         <button
-          aria-controls="tabs-1288884370-8--tabpanel--1"
+          aria-controls="tabs-5734307322-8--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-8--tab--1"
+          id="tabs-5734307322-8--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -543,10 +543,10 @@ exports[`test badge tryout helloworld 1`] = `
           Teal
         </button>
         <button
-          aria-controls="tabs-1288884370-8--tabpanel--1"
+          aria-controls="tabs-5734307322-8--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-8--tab--1"
+          id="tabs-5734307322-8--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -560,30 +560,30 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-557sov"
       >
         <div
-          aria-labelledby="tabs-1288884370-8--tab-0"
+          aria-labelledby="tabs-5734307322-8--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-8--tabpanel-0"
+          id="tabs-5734307322-8--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
           The Primary Colors
         </div>
         <div
-          aria-labelledby="tabs-1288884370-8--tab-1"
+          aria-labelledby="tabs-5734307322-8--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-8--tabpanel-1"
+          id="tabs-5734307322-8--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
           Are 1, 2, 3
         </div>
         <div
-          aria-labelledby="tabs-1288884370-8--tab-2"
+          aria-labelledby="tabs-5734307322-8--tab-2"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-8--tabpanel-2"
+          id="tabs-5734307322-8--tabpanel-2"
           role="tabpanel"
           tabIndex={0}
         >
@@ -601,10 +601,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-9--tab-0"
+          aria-labelledby="tabs-5734307322-9--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-9--tabpanel-0"
+          id="tabs-5734307322-9--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -613,10 +613,10 @@ exports[`test badge tryout helloworld 1`] = `
           />
         </div>
         <div
-          aria-labelledby="tabs-1288884370-9--tab-1"
+          aria-labelledby="tabs-5734307322-9--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-9--tabpanel-1"
+          id="tabs-5734307322-9--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -632,10 +632,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-9--tabpanel--1"
+          aria-controls="tabs-5734307322-9--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-9--tab--1"
+          id="tabs-5734307322-9--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -645,10 +645,10 @@ exports[`test badge tryout helloworld 1`] = `
           Naruto
         </button>
         <button
-          aria-controls="tabs-1288884370-9--tabpanel--1"
+          aria-controls="tabs-5734307322-9--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-9--tab--1"
+          id="tabs-5734307322-9--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -673,10 +673,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-10--tabpanel--1"
+          aria-controls="tabs-5734307322-10--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-10--tab--1"
+          id="tabs-5734307322-10--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -686,11 +686,11 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-10--tabpanel--1"
+          aria-controls="tabs-5734307322-10--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
           disabled={true}
-          id="tabs-1288884370-10--tab--1"
+          id="tabs-5734307322-10--tab--1"
           onClick={[Function]}
           role="tab"
           tabIndex={-1}
@@ -699,10 +699,10 @@ exports[`test badge tryout helloworld 1`] = `
           Two
         </button>
         <button
-          aria-controls="tabs-1288884370-10--tabpanel--1"
+          aria-controls="tabs-5734307322-10--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-10--tab--1"
+          id="tabs-5734307322-10--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -716,30 +716,30 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-10--tab-0"
+          aria-labelledby="tabs-5734307322-10--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-10--tabpanel-0"
+          id="tabs-5734307322-10--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
           1
         </div>
         <div
-          aria-labelledby="tabs-1288884370-10--tab-1"
+          aria-labelledby="tabs-5734307322-10--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-10--tabpanel-1"
+          id="tabs-5734307322-10--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
           2
         </div>
         <div
-          aria-labelledby="tabs-1288884370-10--tab-2"
+          aria-labelledby="tabs-5734307322-10--tab-2"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-10--tabpanel-2"
+          id="tabs-5734307322-10--tabpanel-2"
           role="tabpanel"
           tabIndex={0}
         >
@@ -760,10 +760,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-11--tabpanel--1"
+          aria-controls="tabs-5734307322-11--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-11--tab--1"
+          id="tabs-5734307322-11--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -773,10 +773,10 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-11--tabpanel--1"
+          aria-controls="tabs-5734307322-11--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-11--tab--1"
+          id="tabs-5734307322-11--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -790,10 +790,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-11--tab-0"
+          aria-labelledby="tabs-5734307322-11--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-11--tabpanel-0"
+          id="tabs-5734307322-11--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -802,10 +802,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-11--tab-1"
+          aria-labelledby="tabs-5734307322-11--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-11--tabpanel-1"
+          id="tabs-5734307322-11--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >
@@ -828,10 +828,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-12--tabpanel--1"
+          aria-controls="tabs-5734307322-12--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-12--tab--1"
+          id="tabs-5734307322-12--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -841,10 +841,10 @@ exports[`test badge tryout helloworld 1`] = `
           One
         </button>
         <button
-          aria-controls="tabs-1288884370-12--tabpanel--1"
+          aria-controls="tabs-5734307322-12--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-12--tab--1"
+          id="tabs-5734307322-12--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -858,10 +858,10 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-12--tab-0"
+          aria-labelledby="tabs-5734307322-12--tab-0"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={false}
-          id="tabs-1288884370-12--tabpanel-0"
+          id="tabs-5734307322-12--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
@@ -870,10 +870,10 @@ exports[`test badge tryout helloworld 1`] = `
           </p>
         </div>
         <div
-          aria-labelledby="tabs-1288884370-12--tab-1"
+          aria-labelledby="tabs-5734307322-12--tab-1"
           className="chakra-tabs__tab-panel css-sjt5nk"
           hidden={true}
-          id="tabs-1288884370-12--tabpanel-1"
+          id="tabs-5734307322-12--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         />
@@ -902,10 +902,10 @@ exports[`test badge tryout helloworld 1`] = `
           role="tablist"
         >
           <button
-            aria-controls="tabs-1288884370-13--tabpanel--1"
+            aria-controls="tabs-5734307322-13--tabpanel--1"
             aria-selected={false}
             className="chakra-tabs__tab css-5wl5ud"
-            id="tabs-1288884370-13--tab--1"
+            id="tabs-5734307322-13--tab--1"
             onClick={[Function]}
             onFocus={[Function]}
             role="tab"
@@ -915,10 +915,10 @@ exports[`test badge tryout helloworld 1`] = `
             One
           </button>
           <button
-            aria-controls="tabs-1288884370-13--tabpanel--1"
+            aria-controls="tabs-5734307322-13--tabpanel--1"
             aria-selected={false}
             className="chakra-tabs__tab css-5wl5ud"
-            id="tabs-1288884370-13--tab--1"
+            id="tabs-5734307322-13--tab--1"
             onClick={[Function]}
             onFocus={[Function]}
             role="tab"
@@ -928,10 +928,10 @@ exports[`test badge tryout helloworld 1`] = `
             Two
           </button>
           <button
-            aria-controls="tabs-1288884370-13--tabpanel--1"
+            aria-controls="tabs-5734307322-13--tabpanel--1"
             aria-selected={false}
             className="chakra-tabs__tab css-5wl5ud"
-            id="tabs-1288884370-13--tab--1"
+            id="tabs-5734307322-13--tab--1"
             onClick={[Function]}
             onFocus={[Function]}
             role="tab"
@@ -945,10 +945,10 @@ exports[`test badge tryout helloworld 1`] = `
           className="chakra-tabs__tab-panels css-8atqhb"
         >
           <div
-            aria-labelledby="tabs-1288884370-13--tab-0"
+            aria-labelledby="tabs-5734307322-13--tab-0"
             className="chakra-tabs__tab-panel css-sjt5nk"
             hidden={false}
-            id="tabs-1288884370-13--tabpanel-0"
+            id="tabs-5734307322-13--tabpanel-0"
             role="tabpanel"
             tabIndex={0}
           >
@@ -957,10 +957,10 @@ exports[`test badge tryout helloworld 1`] = `
             </p>
           </div>
           <div
-            aria-labelledby="tabs-1288884370-13--tab-1"
+            aria-labelledby="tabs-5734307322-13--tab-1"
             className="chakra-tabs__tab-panel css-sjt5nk"
             hidden={true}
-            id="tabs-1288884370-13--tabpanel-1"
+            id="tabs-5734307322-13--tabpanel-1"
             role="tabpanel"
             tabIndex={0}
           >
@@ -969,10 +969,10 @@ exports[`test badge tryout helloworld 1`] = `
             </p>
           </div>
           <div
-            aria-labelledby="tabs-1288884370-13--tab-2"
+            aria-labelledby="tabs-5734307322-13--tab-2"
             className="chakra-tabs__tab-panel css-sjt5nk"
             hidden={true}
-            id="tabs-1288884370-13--tabpanel-2"
+            id="tabs-5734307322-13--tabpanel-2"
             role="tabpanel"
             tabIndex={0}
           >
@@ -999,10 +999,10 @@ exports[`test badge tryout helloworld 1`] = `
         role="tablist"
       >
         <button
-          aria-controls="tabs-1288884370-14--tabpanel--1"
+          aria-controls="tabs-5734307322-14--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-14--tab--1"
+          id="tabs-5734307322-14--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -1012,10 +1012,10 @@ exports[`test badge tryout helloworld 1`] = `
           Nigerian Jollof
         </button>
         <button
-          aria-controls="tabs-1288884370-14--tabpanel--1"
+          aria-controls="tabs-5734307322-14--tabpanel--1"
           aria-selected={false}
           className="chakra-tabs__tab css-5wl5ud"
-          id="tabs-1288884370-14--tab--1"
+          id="tabs-5734307322-14--tab--1"
           onClick={[Function]}
           onFocus={[Function]}
           role="tab"
@@ -1029,20 +1029,20 @@ exports[`test badge tryout helloworld 1`] = `
         className="chakra-tabs__tab-panels css-8atqhb"
       >
         <div
-          aria-labelledby="tabs-1288884370-14--tab-0"
+          aria-labelledby="tabs-5734307322-14--tab-0"
           className="chakra-tabs__tab-panel css-1d2gyc"
           hidden={false}
-          id="tabs-1288884370-14--tabpanel-0"
+          id="tabs-5734307322-14--tabpanel-0"
           role="tabpanel"
           tabIndex={0}
         >
           Perhaps the greatest dish ever invented.
         </div>
         <div
-          aria-labelledby="tabs-1288884370-14--tab-1"
+          aria-labelledby="tabs-5734307322-14--tab-1"
           className="chakra-tabs__tab-panel css-1d2gyc"
           hidden={true}
-          id="tabs-1288884370-14--tabpanel-1"
+          id="tabs-5734307322-14--tabpanel-1"
           role="tabpanel"
           tabIndex={0}
         >

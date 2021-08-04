@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SkeletonTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    SkeletonTryout
+    <div>
+      Usage 
+      <div
+        className="chakra-stack css-n21gh5"
+      >
+        <div
+          className="chakra-skeleton css-wg37dc"
+        />
+        <div
+          className="chakra-skeleton css-wg37dc"
+        />
+        <div
+          className="chakra-skeleton css-wg37dc"
+        />
+      </div>
+    </div>
+    <div>
+      Usage1 
+      <div
+        className="chakra-skeleton css-1mgb0mg"
+      >
+        <div>
+          contents wrapped
+        </div>
+        <div>
+          won't be visible
+        </div>
+      </div>
+    </div>
+    <div>
+      Usage2 
+      <div
+        className="css-0"
+      >
+        <div
+          className="chakra-skeleton css-1mgb0mg"
+        >
+          <h2
+            className="chakra-heading css-1dklj6k"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      Usage3 
+      <div
+        className="css-aei6ph"
+      >
+        <div
+          className="chakra-skeleton css-16a78br"
+        />
+        <div
+          className="chakra-skeleton__group css-1ayfwcb"
+        >
+          <div
+            className="chakra-skeleton css-xvicwg"
+          />
+          <div
+            className="chakra-skeleton css-xvicwg"
+          />
+          <div
+            className="chakra-skeleton css-15zfk5f"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      SkeletonColor 
+      <div
+        className="chakra-skeleton css-y0i0gl"
+      />
+    </div>
+    <div>
+      SkippingTheSkeletonWhenContentIsLoaded
+       
+      <div
+        className="chakra-skeleton css-cdkrf0"
+      >
+        <span>
+          Chakra ui is cool
+        </span>
+      </div>
+    </div>
+    <div>
+      TestHelloworld07 
+      TestHelloworld07
+    </div>
+    <div>
+      TestHelloworld08 
+      TestHelloworld08
+    </div>
+    <div>
+      TestHelloworld09 
+      TestHelloworld09
+    </div>
+    <div>
+      TestHelloworld10 
+      TestHelloworld10
+    </div>
+    <div>
+      TestHelloworld11 
+      TestHelloworld11
+    </div>
+    <div>
+      TestHelloworld12 
+      TestHelloworld12
+    </div>
+    <div>
+      TestHelloworld13 
+      TestHelloworld13
+    </div>
+    <div>
+      TestHelloworld14 
+      TestHelloworld14
+    </div>
+    <div>
+      TestHelloworld15 
+      TestHelloworld15
+    </div>
+    <div>
+      TestHelloworld16 
+      TestHelloworld16
+    </div>
+    <div>
+      TestHelloworld17 
+      TestHelloworld17
+    </div>
+    <div>
+      TestHelloworld18 
+      TestHelloworld18
+    </div>
+    <div>
+      TestHelloworld19 
+      TestHelloworld19
+    </div>
+    <div>
+      TestHelloworld20 
+      TestHelloworld20
+    </div>
+  </div>,
+  <span />,
+]
+`;

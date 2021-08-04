@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <hr
+    aria-orientation="horizontal"
+    className="chakra-divider css-svjswr"
+  />,
+  <span />,
+]
+`;

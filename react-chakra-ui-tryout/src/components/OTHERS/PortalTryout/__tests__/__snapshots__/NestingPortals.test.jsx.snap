@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test NestingPortals tryout helloworld 1`] = `
+Array [
+  <div>
+    <div
+      className="css-8v5jrc"
+    />
+  </div>,
+  <span />,
+]
+`;

@@ -13,7 +13,7 @@ import {
 
 import { chakra } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   return (
     <>
       <Tabs>
@@ -38,7 +38,7 @@ function Usage() {
     </>
   );
 }
-function TabVariantsAndColor() {
+export function TabVariantsAndColor() {
   return (
     <>
       <Tabs variant="enclosed">
@@ -58,7 +58,7 @@ function TabVariantsAndColor() {
     </>
   );
 }
-function TabVariantsAndColor1() {
+export function TabVariantsAndColor1() {
   return (
     <>
       <Tabs variant="soft-rounded" colorScheme="green">
@@ -78,7 +78,7 @@ function TabVariantsAndColor1() {
     </>
   );
 }
-function TabSizes() {
+export function TabSizes() {
   return (
     <>
       <Tabs size="md" variant="enclosed">
@@ -98,7 +98,7 @@ function TabSizes() {
     </>
   );
 }
-function ChangingTheTabsAlignment() {
+export function ChangingTheTabsAlignment() {
   return (
     <>
       <Tabs align="end" variant="enclosed">
@@ -118,7 +118,7 @@ function ChangingTheTabsAlignment() {
     </>
   );
 }
-function FittedTabs() {
+export function FittedTabs() {
   return (
     <>
       <Tabs isFitted variant="enclosed">
@@ -138,7 +138,7 @@ function FittedTabs() {
     </>
   );
 }
-function StylingTheTabStatesViaProps() {
+export function StylingTheTabStatesViaProps() {
   return (
     <>
       <Tabs variant="unstyled">
@@ -158,7 +158,7 @@ function StylingTheTabStatesViaProps() {
     </>
   );
 }
-function TestTabsonChange() {
+export function TestTabsonChange() {
   const colors = useColorModeValue(
     ['red.50', 'teal.50', 'blue.50'],
     ['red.900', 'teal.900', 'blue.900']
@@ -180,7 +180,7 @@ function TestTabsonChange() {
     </Tabs>
   );
 }
-function MakeATabInitiallyActive() {
+export function MakeATabInitiallyActive() {
   return (
     <>
       <Tabs defaultIndex={1}>
@@ -208,7 +208,7 @@ function MakeATabInitiallyActive() {
     </>
   );
 }
-function MakeATabDisabled() {
+export function MakeATabDisabled() {
   return (
     <>
       {' '}
@@ -227,7 +227,7 @@ function MakeATabDisabled() {
     </>
   );
 }
-function TabsWithManualActivation() {
+export function TabsWithManualActivation() {
   return (
     <>
       <Tabs isManual variant="enclosed">
@@ -247,7 +247,7 @@ function TabsWithManualActivation() {
     </>
   );
 }
-function LazilyMountingTabPanels() {
+export function LazilyMountingTabPanels() {
   return (
     <>
       <Tabs isLazy>
@@ -269,7 +269,7 @@ function LazilyMountingTabPanels() {
     </>
   );
 }
-function ControlledTabs() {
+export function ControlledTabs() {
   const [tabIndex, setTabIndex] = React.useState(0);
   const handleSliderChange = (event) => {
     setTabIndex(parseInt(event.target.value, 10));
@@ -310,7 +310,7 @@ function ControlledTabs() {
   );
 }
 
-function DataTabs() {
+export function DataTabs() {
   // 1. Create the component
   function DataTabs({ data }) {
     return (
@@ -347,19 +347,19 @@ function DataTabs() {
   // 3. Pass the props and chill!
   return <DataTabs data={tabData} />;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <input
+    className="chakra-input css-1c6j008"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    placeholder="Basic usage"
+  />,
+  <span />,
+]
+`;

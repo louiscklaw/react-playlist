@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Example tryout helloworld 1`] = `
+Array [
+  <p
+    className="chakra-text css-0"
+  >
+    rendering on something else, e.g. PWA
+  </p>,
+  <span />,
+]
+`;

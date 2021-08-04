@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SwitchBackgroundColor tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-x9juev"
+  >
+    <label
+      className="chakra-switch css-1glqkmk"
+      onClick={[Function]}
+    >
+      <input
+        checked={false}
+        className="chakra-switch__input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        style={
+          Object {
+            "border": "0px",
+            "clip": "rect(0px, 0px, 0px, 0px)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": "0px",
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+        type="checkbox"
+      />
+      <span
+        aria-hidden={true}
+        className="chakra-switch__track css-2leizt"
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
+        <span
+          className="chakra-switch__thumb css-bkp8x1"
+        />
+      </span>
+    </label>
+    <label
+      className="chakra-switch css-yi1c6h"
+      onClick={[Function]}
+    >
+      <input
+        checked={false}
+        className="chakra-switch__input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        style={
+          Object {
+            "border": "0px",
+            "clip": "rect(0px, 0px, 0px, 0px)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": "0px",
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+        type="checkbox"
+      />
+      <span
+        aria-hidden={true}
+        className="chakra-switch__track css-1x37h9o"
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
+        <span
+          className="chakra-switch__thumb css-bkp8x1"
+        />
+      </span>
+    </label>
+  </div>,
+  <span />,
+]
+`;

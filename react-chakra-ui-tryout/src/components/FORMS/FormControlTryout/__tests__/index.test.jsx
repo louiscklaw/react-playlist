@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { FormControlTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test FormControlTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<FormControlTryout />).toJSON();
     expect(tree).toMatchSnapshot();

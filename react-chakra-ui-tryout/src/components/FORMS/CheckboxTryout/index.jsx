@@ -5,11 +5,11 @@ import { Checkbox, CheckboxGroup } from '@chakra-ui/react';
 
 import { EmailIcon, ArrowForwardIcon } from '@chakra-ui/icons';
 
-function Usage() {
+export function Usage() {
   return <Checkbox defaultIsChecked>Checkbox</Checkbox>;
 }
 
-function DisabledCheckbox() {
+export function DisabledCheckbox() {
   return (
     <Stack spacing={10} direction="row">
       <Checkbox isDisabled>Checkbox</Checkbox>
@@ -20,7 +20,7 @@ function DisabledCheckbox() {
   );
 }
 
-function CheckboxWithCustomColor() {
+export function CheckboxWithCustomColor() {
   return (
     <Stack spacing={10} direction="row">
       <Checkbox colorScheme="red" defaultIsChecked>
@@ -33,7 +33,7 @@ function CheckboxWithCustomColor() {
   );
 }
 
-function CheckBoxSizes() {
+export function CheckBoxSizes() {
   return (
     <HStack spacing={10} direction="row">
       <Checkbox size="sm" colorScheme="red">
@@ -49,15 +49,15 @@ function CheckBoxSizes() {
   );
 }
 
-function InvalidCheckbox() {
+export function InvalidCheckbox() {
   return <Checkbox isInvalid>Checkbox</Checkbox>;
 }
 
-function ChangingTheSpacing() {
+export function ChangingTheSpacing() {
   return <Checkbox spacing="1rem">Option</Checkbox>;
 }
 
-function ChangingTheIconColorAndSize() {
+export function ChangingTheIconColorAndSize() {
   return (
     <Checkbox iconColor="blue.400" iconSize="1rem">
       Option
@@ -65,7 +65,7 @@ function ChangingTheIconColorAndSize() {
   );
 }
 
-function IndeterminateExample() {
+export function IndeterminateExample() {
   const [checkedItems, setCheckedItems] = React.useState([false, false]);
 
   const allChecked = checkedItems.every(Boolean);
@@ -102,7 +102,7 @@ function IndeterminateExample() {
 /**
  * 1. Create a custom icon that accepts 2 props: `isIndeterminate` and `isChecked`
  */
-function CustomIcon(props) {
+export function CustomIcon(props) {
   const { isIndeterminate, isChecked, ...rest } = props;
 
   const d = isIndeterminate
@@ -116,7 +116,7 @@ function CustomIcon(props) {
   );
 }
 
-function CustomCheckbox() {
+export function CustomCheckbox() {
   return (
     <Checkbox icon={<CustomIcon />} colorScheme="cyan">
       Hello world
@@ -124,7 +124,7 @@ function CustomCheckbox() {
   );
 }
 
-function TestCheckboxGroup() {
+export function TestCheckboxGroup() {
   return (
     <CheckboxGroup colorScheme="green" defaultValue={['naruto', 'kakashi']}>
       <HStack>

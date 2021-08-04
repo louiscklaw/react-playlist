@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test ProgressTryout tryout helloworld 1`] = `
 <div>
   ProgressTryout
   <div>

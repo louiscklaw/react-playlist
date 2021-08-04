@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ModalSizes tryout helloworld 1`] = `
+Array [
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open xs Modal
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open sm Modal
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open md Modal
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open lg Modal
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open xl Modal
+  </button>,
+  <button
+    className="chakra-button css-1rwlt5g"
+    onClick={[Function]}
+    type="button"
+  >
+    Open full Modal
+  </button>,
+  <span />,
+]
+`;

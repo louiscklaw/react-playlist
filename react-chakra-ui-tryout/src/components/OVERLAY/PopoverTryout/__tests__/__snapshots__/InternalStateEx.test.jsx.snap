@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test InternalStateEx tryout helloworld 1`] = `
+Array [
+  <button
+    aria-controls="popover-content-2"
+    aria-expanded={false}
+    aria-haspopup="dialog"
+    className="chakra-button css-taj3dd"
+    id="popover-trigger-2"
+    onClick={[Function]}
+    type="button"
+  >
+    Click to 
+    open
+  </button>,
+  <span />,
+  <span />,
+]
+`;

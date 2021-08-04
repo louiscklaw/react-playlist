@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheFocusAndErrorBorderColors tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-gsc7pt"
+  >
+    <input
+      className="chakra-input css-1gfmiw3"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Here is a sample placeholder"
+    />
+    <input
+      className="chakra-input css-1hnlvjn"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Here is a sample placeholder"
+    />
+    <input
+      aria-invalid={true}
+      className="chakra-input css-15d0ep"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Here is a sample placeholder"
+    />
+    <input
+      aria-invalid={true}
+      className="chakra-input css-wrhlsi"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Here is a sample placeholder"
+    />
+  </div>,
+  <span />,
+]
+`;

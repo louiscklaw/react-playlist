@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UsageOfOnAndOffMethods tryout helloworld 1`] = `
+Array [
+  <div
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Hover me to turn ON
+  </div>,
+  <span />,
+]
+`;

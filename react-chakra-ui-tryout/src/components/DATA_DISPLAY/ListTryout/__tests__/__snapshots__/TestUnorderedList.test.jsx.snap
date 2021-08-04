@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TestUnorderedList tryout helloworld 1`] = `
+Array [
+  <ul
+    className="css-tu0njr"
+    role="list"
+  >
+    <li
+      className="css-0"
+    >
+      Lorem ipsum dolor sit amet
+    </li>
+    <li
+      className="css-0"
+    >
+      Consectetur adipiscing elit
+    </li>
+    <li
+      className="css-0"
+    >
+      Integer molestie lorem at massa
+    </li>
+    <li
+      className="css-0"
+    >
+      Facilisis in pretium nisl aliquet
+    </li>
+  </ul>,
+  <span />,
+]
+`;

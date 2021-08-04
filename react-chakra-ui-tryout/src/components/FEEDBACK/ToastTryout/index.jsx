@@ -14,7 +14,7 @@ import {
 import { useToast } from '@chakra-ui/react';
 import { createStandaloneToast } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   const toast = useToast();
   return (
     <Button
@@ -31,7 +31,7 @@ function Usage() {
     </Button>
   );
 }
-function CustomComponent() {
+export function CustomComponent() {
   function HelloworldButton() {
     return (
       <>
@@ -54,7 +54,7 @@ function CustomComponent() {
     </Button>
   );
 }
-function ClosingToasts() {
+export function ClosingToasts() {
   const toast = useToast();
   const toastIdRef = React.useRef();
 
@@ -91,7 +91,7 @@ function ClosingToasts() {
     </Stack>
   );
 }
-function UpdatingToasts() {
+export function UpdatingToasts() {
   const toast = useToast();
   const toastIdRef = React.useRef();
 
@@ -117,7 +117,7 @@ function UpdatingToasts() {
     </Stack>
   );
 }
-function Status() {
+export function Status() {
   const toast = useToast();
   const statuses = ['success', 'error', 'warning', 'info'];
 
@@ -140,7 +140,7 @@ function Status() {
     </Wrap>
   );
 }
-function Variants() {
+export function Variants() {
   const toast = useToast();
   const variants = ['solid', 'subtle', 'left-accent', 'top-accent'];
 
@@ -163,7 +163,7 @@ function Variants() {
     </Wrap>
   );
 }
-function ChangingTheToastPosition() {
+export function ChangingTheToastPosition() {
   const toast = useToast();
   const positions = [
     'top',
@@ -193,7 +193,7 @@ function ChangingTheToastPosition() {
     </Wrap>
   );
 }
-function PreventingDuplicateToast() {
+export function PreventingDuplicateToast() {
   const toast = useToast();
   const id = 'test-toast';
   return (
@@ -210,7 +210,7 @@ function PreventingDuplicateToast() {
     </Button>
   );
 }
-function StandaloneToasts() {
+export function StandaloneToasts() {
   const toast = createStandaloneToast();
   toast({
     title: 'An error occurred. and this is a test from StandaloneToasts',
@@ -222,37 +222,37 @@ function StandaloneToasts() {
 
   return <>StandaloneToasts</>;
 }
-function TestHelloworld10() {
+export function TestHelloworld10() {
   return <>TestHelloworld10</>;
 }
-function TestHelloworld11() {
+export function TestHelloworld11() {
   return <>TestHelloworld11</>;
 }
-function TestHelloworld12() {
+export function TestHelloworld12() {
   return <>TestHelloworld12</>;
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

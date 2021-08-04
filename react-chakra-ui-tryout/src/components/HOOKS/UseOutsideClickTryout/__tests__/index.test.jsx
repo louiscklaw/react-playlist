@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { UseOutsideClickTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test UseOutsideClickTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<UseOutsideClickTryout />).toJSON();
     expect(tree).toMatchSnapshot();

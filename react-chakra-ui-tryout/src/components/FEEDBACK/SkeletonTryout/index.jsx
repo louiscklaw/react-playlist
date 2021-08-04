@@ -8,7 +8,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   return (
     <>
       <Stack>
@@ -19,7 +19,7 @@ function Usage() {
     </>
   );
 }
-function Usage1() {
+export function Usage1() {
   return (
     <>
       <Skeleton>
@@ -29,7 +29,7 @@ function Usage1() {
     </>
   );
 }
-function Usage2() {
+export function Usage2() {
   let [loading, setLoading] = React.useState(true);
   let [error, setError] = React.useState(false);
   let [data, setData] = React.useState({});
@@ -42,7 +42,7 @@ function Usage2() {
     </Box>
   );
 }
-function Usage3() {
+export function Usage3() {
   return (
     <>
       <Box padding="6" boxShadow="lg" bg="white">
@@ -52,14 +52,14 @@ function Usage3() {
     </>
   );
 }
-function SkeletonColor() {
+export function SkeletonColor() {
   return (
     <>
       <Skeleton startColor="pink.500" endColor="orange.500" height="20px" />
     </>
   );
 }
-function SkippingTheSkeletonWhenContentIsLoaded() {
+export function SkippingTheSkeletonWhenContentIsLoaded() {
   return (
     <>
       <Skeleton isLoaded>
@@ -68,46 +68,46 @@ function SkippingTheSkeletonWhenContentIsLoaded() {
     </>
   );
 }
-function TestHelloworld07() {
+export function TestHelloworld07() {
   return <>TestHelloworld07</>;
 }
-function TestHelloworld08() {
+export function TestHelloworld08() {
   return <>TestHelloworld08</>;
 }
-function TestHelloworld09() {
+export function TestHelloworld09() {
   return <>TestHelloworld09</>;
 }
-function TestHelloworld10() {
+export function TestHelloworld10() {
   return <>TestHelloworld10</>;
 }
-function TestHelloworld11() {
+export function TestHelloworld11() {
   return <>TestHelloworld11</>;
 }
-function TestHelloworld12() {
+export function TestHelloworld12() {
   return <>TestHelloworld12</>;
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

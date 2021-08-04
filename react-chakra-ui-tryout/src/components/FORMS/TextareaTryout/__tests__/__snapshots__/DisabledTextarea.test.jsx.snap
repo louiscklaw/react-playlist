@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test DisabledTextarea tryout helloworld 1`] = `
+Array [
+  <textarea
+    className="chakra-textarea css-1vbcmny"
+    disabled={true}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    placeholder="Here is a sample placeholder"
+  />,
+  <span />,
+]
+`;

@@ -27,7 +27,7 @@ import {
   ModalCloseButton,
 } from '@chakra-ui/react';
 
-function BasicUsage() {
+export function BasicUsage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -54,7 +54,7 @@ function BasicUsage() {
   );
 }
 
-function ReturnFocus() {
+export function ReturnFocus() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const finalRef = React.useRef();
 
@@ -88,7 +88,7 @@ function ReturnFocus() {
   );
 }
 
-function BlockScrollingWhenModalOpens() {
+export function BlockScrollingWhenModalOpens() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -119,7 +119,7 @@ function BlockScrollingWhenModalOpens() {
   );
 }
 
-function FocusOnSpecificElement() {
+export function FocusOnSpecificElement() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef();
@@ -165,7 +165,7 @@ function FocusOnSpecificElement() {
   );
 }
 
-function CloseModalOnOverlayClick() {
+export function CloseModalOnOverlayClick() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -193,7 +193,7 @@ function CloseModalOnOverlayClick() {
   );
 }
 
-function MakeModalVerticallyCentered() {
+export function MakeModalVerticallyCentered() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -217,7 +217,7 @@ function MakeModalVerticallyCentered() {
   );
 }
 
-function ChangingTheTransition() {
+export function ChangingTheTransition() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -246,7 +246,7 @@ function ChangingTheTransition() {
   );
 }
 
-function ModalOverflowBehavior() {
+export function ModalOverflowBehavior() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [scrollBehavior, setScrollBehavior] = React.useState('inside');
 
@@ -285,7 +285,7 @@ function ModalOverflowBehavior() {
   );
 }
 
-function ModalSizes() {
+export function ModalSizes() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = React.useState('md');
 

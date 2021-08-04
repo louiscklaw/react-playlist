@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MakingAFieldRequired tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-form-control css-1kxonj9"
+    role="group"
+  >
+    <label
+      className="chakra-form__label css-2gx1h6"
+      htmlFor="first-name"
+      id="first-name-label"
+    >
+      First name
+      <span
+        aria-hidden={true}
+        className="chakra-form__required-indicator css-1ssjhh"
+        role="presentation"
+      >
+        *
+      </span>
+    </label>
+    <input
+      aria-required={true}
+      className="chakra-input css-1c6j008"
+      disabled={false}
+      id="first-name"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="First name"
+      readOnly={false}
+      required={true}
+    />
+  </div>,
+  <span />,
+]
+`;

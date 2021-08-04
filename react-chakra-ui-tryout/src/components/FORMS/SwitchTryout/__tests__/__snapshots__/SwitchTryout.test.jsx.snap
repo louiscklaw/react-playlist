@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SwitchTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    SwitchTryout
+    <div>
+      Usage 
+      <div
+        className="chakra-form-control css-12sjb1l"
+        role="group"
+      >
+        <label
+          className="chakra-form__label css-1tkmrsf"
+          htmlFor="email-alerts"
+          id="field-1-label"
+        >
+          Enable email alerts?
+        </label>
+        <label
+          className="chakra-switch css-1glqkmk"
+          onClick={[Function]}
+        >
+          <input
+            checked={false}
+            className="chakra-switch__input"
+            id="email-alerts"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="checkbox"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-switch__track css-1hiqrbl"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <span
+              className="chakra-switch__thumb css-bkp8x1"
+            />
+          </span>
+        </label>
+      </div>
+    </div>
+    <div>
+      Sizes 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <label
+          className="chakra-switch css-dagtjj"
+          onClick={[Function]}
+        >
+          <input
+            checked={false}
+            className="chakra-switch__input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="checkbox"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-switch__track css-1hiqrbl"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <span
+              className="chakra-switch__thumb css-bkp8x1"
+            />
+          </span>
+        </label>
+        <label
+          className="chakra-switch css-1glqkmk"
+          onClick={[Function]}
+        >
+          <input
+            checked={false}
+            className="chakra-switch__input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="checkbox"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-switch__track css-1hiqrbl"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <span
+              className="chakra-switch__thumb css-bkp8x1"
+            />
+          </span>
+        </label>
+        <label
+          className="chakra-switch css-yi1c6h"
+          onClick={[Function]}
+        >
+          <input
+            checked={false}
+            className="chakra-switch__input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="checkbox"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-switch__track css-1hiqrbl"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <span
+              className="chakra-switch__thumb css-bkp8x1"
+            />
+          </span>
+        </label>
+      </div>
+    </div>
+    <div>
+      SwitchBackgroundColor 
+      <div
+        className="chakra-stack css-x9juev"
+      >
+        <label
+          className="chakra-switch css-1glqkmk"
+          onClick={[Function]}
+        >
+          <input
+            checked={false}
+            className="chakra-switch__input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="checkbox"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-switch__track css-2leizt"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <span
+              className="chakra-switch__thumb css-bkp8x1"
+            />
+          </span>
+        </label>
+        <label
+          className="chakra-switch css-yi1c6h"
+          onClick={[Function]}
+        >
+          <input
+            checked={false}
+            className="chakra-switch__input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            style={
+              Object {
+                "border": "0px",
+                "clip": "rect(0px, 0px, 0px, 0px)",
+                "height": "1px",
+                "margin": "-1px",
+                "overflow": "hidden",
+                "padding": "0px",
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": "1px",
+              }
+            }
+            type="checkbox"
+          />
+          <span
+            aria-hidden={true}
+            className="chakra-switch__track css-1x37h9o"
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <span
+              className="chakra-switch__thumb css-bkp8x1"
+            />
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SpinnerTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    SpinnerTryout
+    <div>
+      Usage 
+      <div
+        className="chakra-spinner css-1dn0ijt"
+      >
+        <span
+          className="css-f8n5zr"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+    <div>
+      SpinnerWithColor 
+      <div
+        className="chakra-spinner css-14se406"
+      >
+        <span
+          className="css-f8n5zr"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+    <div>
+      SpinnerWithDifferentSize 
+      <div
+        className="chakra-stack css-nd8846"
+      >
+        <div
+          className="chakra-spinner css-gnxqif"
+        >
+          <span
+            className="css-f8n5zr"
+          >
+            Loading...
+          </span>
+        </div>
+        <div
+          className="chakra-spinner css-19498hs"
+        >
+          <span
+            className="css-f8n5zr"
+          >
+            Loading...
+          </span>
+        </div>
+        <div
+          className="chakra-spinner css-1dn0ijt"
+        >
+          <span
+            className="css-f8n5zr"
+          >
+            Loading...
+          </span>
+        </div>
+        <div
+          className="chakra-spinner css-8f55w4"
+        >
+          <span
+            className="css-f8n5zr"
+          >
+            Loading...
+          </span>
+        </div>
+        <div
+          className="chakra-spinner css-1800ka2"
+        >
+          <span
+            className="css-f8n5zr"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      SpinnerWithEmptyAreaColor 
+      <div
+        className="chakra-spinner css-17lgtxu"
+      >
+        <span
+          className="css-f8n5zr"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

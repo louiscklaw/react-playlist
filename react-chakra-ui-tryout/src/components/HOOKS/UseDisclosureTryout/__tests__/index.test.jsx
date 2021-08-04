@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { UseDisclosureTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test UseDisclosureTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<UseDisclosureTryout />).toJSON();
     expect(tree).toMatchSnapshot();

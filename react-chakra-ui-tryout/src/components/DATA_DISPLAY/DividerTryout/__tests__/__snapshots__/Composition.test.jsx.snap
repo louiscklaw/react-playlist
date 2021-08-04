@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Composition tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-20uxpn"
+  >
+    <hr
+      aria-orientation="vertical"
+      className="chakra-divider css-1aam7vk"
+    />
+    <p
+      className="chakra-text css-0"
+    >
+      Chakra UI
+    </p>
+  </div>,
+  <span />,
+]
+`;

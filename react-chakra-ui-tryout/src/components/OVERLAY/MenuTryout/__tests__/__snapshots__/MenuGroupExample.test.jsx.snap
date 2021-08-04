@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MenuGroupExample tryout helloworld 1`] = `
+Array [
+  <div>
+    MenuGroupExample
+  </div>,
+  <button
+    aria-controls="menu-list-2"
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="chakra-button chakra-menu__menu-button css-dnelfq"
+    id="menu-button-2"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    type="button"
+  >
+    <span
+      className="css-xl71ch"
+    >
+      Profile
+    </span>
+  </button>,
+  <div
+    className="css-r6z5ec"
+    style={
+      Object {
+        "inset": "0 auto auto 0",
+        "minWidth": "max-content",
+        "position": "absolute",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      aria-orientation="vertical"
+      className="chakra-menu__menu-list css-1ozmk1d"
+      id="menu-list-2"
+      onKeyDown={[Function]}
+      role="menu"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "scale(0.8) translateZ(0)",
+          "transformOrigin": "var(--popper-transform-origin)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex={-1}
+    >
+      <div
+        className="chakra-menu__group"
+        role="group"
+      >
+        <p
+          className="chakra-menu__group__title css-hunt27"
+        >
+          Profile
+        </p>
+        <button
+          className="chakra-menu__menuitem css-13c7rae"
+          id="menu-list-2-menuitem-3"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitem"
+          tabIndex={0}
+          type="button"
+        >
+          My Account
+        </button>
+        <button
+          className="chakra-menu__menuitem css-13c7rae"
+          id="menu-list-2-menuitem-4"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitem"
+          tabIndex={0}
+          type="button"
+        >
+          Payments 
+        </button>
+      </div>
+      <hr
+        aria-orientation="horizontal"
+        className="chakra-menu__divider css-vfkdr8"
+        role="separator"
+      />
+      <div
+        className="chakra-menu__group"
+        role="group"
+      >
+        <p
+          className="chakra-menu__group__title css-hunt27"
+        >
+          Help
+        </p>
+        <button
+          className="chakra-menu__menuitem css-13c7rae"
+          id="menu-list-2-menuitem-5"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitem"
+          tabIndex={0}
+          type="button"
+        >
+          Docs
+        </button>
+        <button
+          className="chakra-menu__menuitem css-13c7rae"
+          id="menu-list-2-menuitem-6"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="menuitem"
+          tabIndex={0}
+          type="button"
+        >
+          FAQ
+        </button>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

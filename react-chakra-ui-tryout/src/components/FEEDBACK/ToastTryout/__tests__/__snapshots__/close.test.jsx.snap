@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test close tryout helloworld 1`] = `
+Array [
+  <close />,
+  <span />,
+]
+`;

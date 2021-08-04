@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test CustomCheckbox tryout helloworld 1`] = `
+Array [
+  <label
+    className="chakra-checkbox css-1uiwwan"
+    onClick={[Function]}
+  >
+    <input
+      checked={false}
+      className="chakra-checkbox__input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      style={
+        Object {
+          "border": "0px",
+          "clip": "rect(0px, 0px, 0px, 0px)",
+          "height": "1px",
+          "margin": "-1px",
+          "overflow": "hidden",
+          "padding": "0px",
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": "1px",
+        }
+      }
+      type="checkbox"
+    />
+    <span
+      aria-hidden={true}
+      className="chakra-checkbox__control css-cydf90"
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+    >
+      <svg
+        className="chakra-icon css-1b6jgjy"
+        focusable={false}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
+    <span
+      className="chakra-checkbox__label css-1sgc0qu"
+      onMouseDown={[Function]}
+      onTouchStart={[Function]}
+    >
+      Hello world
+    </span>
+  </label>,
+  <span />,
+]
+`;

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <label
+    className="chakra-checkbox css-1uiwwan"
+    onClick={[Function]}
+  >
+    <input
+      checked={true}
+      className="chakra-checkbox__input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      style={
+        Object {
+          "border": "0px",
+          "clip": "rect(0px, 0px, 0px, 0px)",
+          "height": "1px",
+          "margin": "-1px",
+          "overflow": "hidden",
+          "padding": "0px",
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": "1px",
+        }
+      }
+      type="checkbox"
+    />
+    <span
+      aria-hidden={true}
+      className="chakra-checkbox__control css-xxkadm"
+      data-checked=""
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "transform": "none",
+          }
+        }
+      >
+        <svg
+          className="css-1r69mki"
+          style={
+            Object {
+              "fill": "none",
+              "opacity": 1,
+              "stroke": "currentColor",
+              "strokeDasharray": 16,
+              "strokeDashoffset": 0,
+              "strokeWidth": 2,
+            }
+          }
+          viewBox="0 0 12 10"
+        >
+          <polyline
+            points="1.5 6 4.5 9 10.5 1"
+          />
+        </svg>
+      </div>
+    </span>
+    <span
+      className="chakra-checkbox__label css-1sgc0qu"
+      data-checked=""
+      onMouseDown={[Function]}
+      onTouchStart={[Function]}
+    >
+      Checkbox
+    </span>
+  </label>,
+  <span />,
+]
+`;

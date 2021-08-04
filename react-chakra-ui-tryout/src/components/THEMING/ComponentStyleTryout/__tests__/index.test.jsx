@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { ComponentStyleTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test ComponentStyleTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<ComponentStyleTryout />).toJSON();
     expect(tree).toMatchSnapshot();

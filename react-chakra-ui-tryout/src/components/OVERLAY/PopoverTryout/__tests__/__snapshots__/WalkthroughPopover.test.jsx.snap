@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test WalkthroughPopover tryout helloworld 1`] = `
+Array [
+  <button
+    aria-controls="popover-content-2"
+    aria-expanded={false}
+    aria-haspopup="dialog"
+    className="chakra-button css-taj3dd"
+    id="popover-trigger-2"
+    onClick={[Function]}
+    type="button"
+  >
+    Trigger
+  </button>,
+  <div
+    className="chakra-popover__popper css-1qq679y"
+    style={
+      Object {
+        "inset": "0 auto auto 0",
+        "minWidth": "max-content",
+        "position": "absolute",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <section
+      className="chakra-popover__content css-ut3tfy"
+      id="popover-content-2"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="dialog"
+      style={
+        Object {
+          "--popper-arrow-shadow-color": undefined,
+          "--popper-arrow-size": undefined,
+          "opacity": 0,
+          "transform": "scale(0.95) translateZ(0)",
+          "transformOrigin": "var(--popper-transform-origin)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex={-1}
+    >
+      <header
+        className="chakra-popover__header css-f53cf8"
+        id="popover-header-2"
+      >
+        Manage Your Channels
+      </header>
+      <div
+        className="chakra-popover__arrow-positioner css-0"
+        data-popper-arrow=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
+      >
+        <div
+          className="chakra-popover__arrow css-0"
+          data-popper-arrow-inner=""
+        />
+      </div>
+      <button
+        aria-label="Close"
+        className="css-16wj50u"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="chakra-icon css-onkibi"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <div
+        className="chakra-popover__body css-1ews2c8"
+        id="popover-body-2"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </div>
+      <footer
+        className="chakra-popover__footer css-1m8yntm"
+      >
+        <div
+          className="css-itvw0n"
+        >
+          Step 2 of 4
+        </div>
+        <div
+          className="chakra-button__group css-1ind3v2"
+          role="group"
+        >
+          <button
+            className="chakra-button css-1lui21d"
+            type="button"
+          >
+            Setup Email
+          </button>
+          <button
+            className="chakra-button css-uau6fs"
+            type="button"
+          >
+            Next
+          </button>
+        </div>
+      </footer>
+    </section>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <textarea
+    className="chakra-textarea css-1vbcmny"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    placeholder="Here is a sample placeholder"
+  />,
+  <span />,
+]
+`;

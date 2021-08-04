@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage3 tryout helloworld 1`] = `
+Array [
+  <div
+    className="css-aei6ph"
+  >
+    <div
+      className="chakra-skeleton css-16a78br"
+    />
+    <div
+      className="chakra-skeleton__group css-1ayfwcb"
+    >
+      <div
+        className="chakra-skeleton css-xvicwg"
+      />
+      <div
+        className="chakra-skeleton css-xvicwg"
+      />
+      <div
+        className="chakra-skeleton css-15zfk5f"
+      />
+    </div>
+  </div>,
+  <span />,
+]
+`;

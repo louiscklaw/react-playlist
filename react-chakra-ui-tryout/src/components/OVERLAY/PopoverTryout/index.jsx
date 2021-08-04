@@ -25,7 +25,7 @@ import {
   PopoverCloseButton,
 } from '@chakra-ui/react';
 
-function BasicUsage() {
+export function BasicUsage() {
   return (
     <Popover>
       <PopoverTrigger>
@@ -41,7 +41,7 @@ function BasicUsage() {
   );
 }
 
-function RenderingThePopoverInAPortal() {
+export function RenderingThePopoverInAPortal() {
   return (
     <Popover>
       <PopoverTrigger>
@@ -57,7 +57,7 @@ function RenderingThePopoverInAPortal() {
   );
 }
 
-function WalkthroughPopover() {
+export function WalkthroughPopover() {
   const initialFocusRef = React.useRef();
   return (
     <Popover
@@ -96,7 +96,7 @@ function WalkthroughPopover() {
   );
 }
 
-function ControlledUsage() {
+export function ControlledUsage() {
   const [isOpen, setIsOpen] = React.useState(false);
   const open = () => setIsOpen(!isOpen);
   const close = () => setIsOpen(false);
@@ -133,7 +133,7 @@ function ControlledUsage() {
   );
 }
 
-function InternalStateEx() {
+export function InternalStateEx() {
   const initRef = React.useRef();
   return (
     <Popover closeOnBlur={false} placement="left" initialFocusRef={initRef}>
@@ -167,7 +167,7 @@ function InternalStateEx() {
   );
 }
 
-function CustomizingThePopover() {
+export function CustomizingThePopover() {
   return (
     <Popover>
       <PopoverTrigger>
@@ -194,7 +194,7 @@ function CustomizingThePopover() {
   );
 }
 
-function PopoverPlacements() {
+export function PopoverPlacements() {
   return (
     <Popover placement="top-start">
       <PopoverTrigger>
@@ -213,7 +213,7 @@ function PopoverPlacements() {
   );
 }
 
-function LazilyMountingPopover() {
+export function LazilyMountingPopover() {
   return (
     <Popover isLazy>
       <PopoverTrigger>

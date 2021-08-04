@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test PlacementExample tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-radio-group css-0"
+    role="radiogroup"
+  >
+    <div
+      className="chakra-stack css-23z5rn"
+    >
+      <label
+        className="chakra-radio css-78joka"
+      >
+        <input
+          checked={false}
+          className="chakra-radio__input"
+          id="radio-3"
+          name="radio-2"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          style={
+            Object {
+              "border": "0px",
+              "clip": "rect(0px, 0px, 0px, 0px)",
+              "height": "1px",
+              "margin": "-1px",
+              "overflow": "hidden",
+              "padding": "0px",
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": "1px",
+            }
+          }
+          type="radio"
+          value="top"
+        />
+        <span
+          aria-hidden={true}
+          className="chakra-radio__control css-1rggdzb"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        />
+        <span
+          className="chakra-radio__label css-1i66d7g"
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+        >
+          Top
+        </span>
+      </label>
+      <label
+        className="chakra-radio css-78joka"
+      >
+        <input
+          checked={false}
+          className="chakra-radio__input"
+          id="radio-4"
+          name="radio-2"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          style={
+            Object {
+              "border": "0px",
+              "clip": "rect(0px, 0px, 0px, 0px)",
+              "height": "1px",
+              "margin": "-1px",
+              "overflow": "hidden",
+              "padding": "0px",
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": "1px",
+            }
+          }
+          type="radio"
+          value="right"
+        />
+        <span
+          aria-hidden={true}
+          className="chakra-radio__control css-1rggdzb"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        />
+        <span
+          className="chakra-radio__label css-1i66d7g"
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+        >
+          Right
+        </span>
+      </label>
+      <label
+        className="chakra-radio css-78joka"
+      >
+        <input
+          checked={false}
+          className="chakra-radio__input"
+          id="radio-5"
+          name="radio-2"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          style={
+            Object {
+              "border": "0px",
+              "clip": "rect(0px, 0px, 0px, 0px)",
+              "height": "1px",
+              "margin": "-1px",
+              "overflow": "hidden",
+              "padding": "0px",
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": "1px",
+            }
+          }
+          type="radio"
+          value="bottom"
+        />
+        <span
+          aria-hidden={true}
+          className="chakra-radio__control css-1rggdzb"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        />
+        <span
+          className="chakra-radio__label css-1i66d7g"
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+        >
+          Bottom
+        </span>
+      </label>
+      <label
+        className="chakra-radio css-78joka"
+      >
+        <input
+          checked={false}
+          className="chakra-radio__input"
+          id="radio-6"
+          name="radio-2"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          style={
+            Object {
+              "border": "0px",
+              "clip": "rect(0px, 0px, 0px, 0px)",
+              "height": "1px",
+              "margin": "-1px",
+              "overflow": "hidden",
+              "padding": "0px",
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": "1px",
+            }
+          }
+          type="radio"
+          value="left"
+        />
+        <span
+          aria-hidden={true}
+          className="chakra-radio__control css-1rggdzb"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        />
+        <span
+          className="chakra-radio__label css-1i66d7g"
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+        >
+          Left
+        </span>
+      </label>
+    </div>
+  </div>,
+  <button
+    className="chakra-button css-8pcd7y"
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>,
+  <span />,
+]
+`;

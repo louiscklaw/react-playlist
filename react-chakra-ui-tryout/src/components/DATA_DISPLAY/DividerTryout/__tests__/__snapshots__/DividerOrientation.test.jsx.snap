@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test DividerOrientation tryout helloworld 1`] = `
+Array [
+  <hr
+    aria-orientation="horizontal"
+    className="chakra-divider css-svjswr"
+  />,
+  <div
+    className="css-1yj0ggl"
+  >
+    <hr
+      aria-orientation="vertical"
+      className="chakra-divider css-1aam7vk"
+    />
+  </div>,
+  <span />,
+]
+`;

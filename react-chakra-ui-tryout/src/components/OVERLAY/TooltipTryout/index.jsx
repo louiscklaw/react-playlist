@@ -14,7 +14,7 @@ import {
 import { Tooltip } from '@chakra-ui/react';
 import { PhoneIcon, SearchIcon } from '@chakra-ui/icons';
 
-function Usage() {
+export function Usage() {
   return (
     <Tooltip label="Hey, I'm here!" aria-label="A tooltip">
       Hover me
@@ -22,7 +22,7 @@ function Usage() {
   );
 }
 
-function WithAnIcon() {
+export function WithAnIcon() {
   return (
     <Tooltip label="Phone number" fontSize="md">
       <PhoneIcon />
@@ -30,7 +30,7 @@ function WithAnIcon() {
   );
 }
 
-function WithArrow() {
+export function WithArrow() {
   return (
     <Tooltip hasArrow label="Search places" bg="gray.300" color="black">
       <SearchIcon />
@@ -38,7 +38,7 @@ function WithArrow() {
   );
 }
 
-function TooltipWithFocusableContent() {
+export function TooltipWithFocusableContent() {
   return (
     <Tooltip hasArrow label="Search places" bg="red.600">
       <Button>Button</Button>
@@ -46,7 +46,7 @@ function TooltipWithFocusableContent() {
   );
 }
 
-function DisabledTooltip() {
+export function DisabledTooltip() {
   return (
     <Tooltip isDisabled>
       <SearchIcon />
@@ -54,7 +54,7 @@ function DisabledTooltip() {
   );
 }
 
-function Placement() {
+export function Placement() {
   return (
     <VStack spacing={6}>
       <HStack spacing={6}>
@@ -130,7 +130,7 @@ function Placement() {
   );
 }
 
-function MoreExamples() {
+export function MoreExamples() {
   return (
     <Wrap spacing={6}>
       <WrapItem>

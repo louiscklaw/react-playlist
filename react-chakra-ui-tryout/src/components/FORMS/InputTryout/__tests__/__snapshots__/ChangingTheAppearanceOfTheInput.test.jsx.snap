@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheAppearanceOfTheInput tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-gsc7pt"
+  >
+    <input
+      className="chakra-input css-1c6j008"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Outline"
+    />
+    <input
+      className="chakra-input css-1pwkzcn"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Filled"
+    />
+    <input
+      className="chakra-input css-9d6roe"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Flushed"
+    />
+    <input
+      className="chakra-input css-1bnqsnq"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="Unstyled"
+    />
+  </div>,
+  <span />,
+]
+`;

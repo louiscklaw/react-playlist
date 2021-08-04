@@ -1,0 +1,452 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ButtonTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    ButtonTryout
+    <div>
+      <button
+        className="chakra-button css-8pcd7y"
+        type="button"
+      >
+        Button
+      </button>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-a9v878"
+      >
+        <button
+          className="chakra-button css-10p4gz7"
+          type="button"
+        >
+          Button
+        </button>
+        <button
+          className="chakra-button css-1nb9743"
+          type="button"
+        >
+          Button
+        </button>
+        <button
+          className="chakra-button css-f6n2t5"
+          type="button"
+        >
+          Button
+        </button>
+        <button
+          className="chakra-button css-1mqi46w"
+          type="button"
+        >
+          Button
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-a9v878"
+      >
+        <button
+          className="chakra-button css-f6n2t5"
+          type="button"
+        >
+          Button
+        </button>
+        <button
+          className="chakra-button css-1r1mh8u"
+          type="button"
+        >
+          Button
+        </button>
+        <button
+          className="chakra-button css-1b1shkm"
+          type="button"
+        >
+          Button
+        </button>
+        <button
+          className="chakra-button css-3blogv"
+          type="button"
+        >
+          Button
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-nd8846"
+      >
+        <button
+          className="chakra-button css-f6n2t5"
+          type="button"
+        >
+          <span
+            className="chakra-button__icon css-1wh2kri"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="currentColor"
+              >
+                <path
+                  d="M11.114,14.556a1.252,1.252,0,0,0,1.768,0L22.568,4.87a.5.5,0,0,0-.281-.849A1.966,1.966,0,0,0,22,4H2a1.966,1.966,0,0,0-.289.021.5.5,0,0,0-.281.849Z"
+                />
+                <path
+                  d="M23.888,5.832a.182.182,0,0,0-.2.039l-6.2,6.2a.251.251,0,0,0,0,.354l5.043,5.043a.75.75,0,1,1-1.06,1.061l-5.043-5.043a.25.25,0,0,0-.354,0l-2.129,2.129a2.75,2.75,0,0,1-3.888,0L7.926,13.488a.251.251,0,0,0-.354,0L2.529,18.531a.75.75,0,0,1-1.06-1.061l5.043-5.043a.251.251,0,0,0,0-.354l-6.2-6.2a.18.18,0,0,0-.2-.039A.182.182,0,0,0,0,6V18a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V6A.181.181,0,0,0,23.888,5.832Z"
+                />
+              </g>
+            </svg>
+          </span>
+          Email
+        </button>
+        <button
+          className="chakra-button css-1r1mh8u"
+          type="button"
+        >
+          Call us
+          <span
+            className="chakra-button__icon css-1hzyiq5"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-nd8846"
+      >
+        <button
+          className="chakra-button css-dnelfq"
+          type="button"
+        >
+          <span
+            className="chakra-button__icon css-1wh2kri"
+          >
+            <svg
+              aria-hidden={true}
+              fill="currentColor"
+              focusable={false}
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"
+              />
+            </svg>
+          </span>
+          Settings
+        </button>
+        <button
+          className="chakra-button css-1eifxop"
+          type="button"
+        >
+          Call us
+          <span
+            className="chakra-button__icon css-1hzyiq5"
+          >
+            <svg
+              aria-hidden={true}
+              fill="currentColor"
+              focusable={false}
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-nd8846"
+      >
+        <button
+          className="chakra-button css-f6n2t5"
+          data-loading=""
+          disabled={true}
+          type="button"
+        >
+          <div
+            className="chakra-button__spinner chakra-button__spinner--start css-1aamklj"
+          >
+            <div
+              className="chakra-spinner css-1sqzeiz"
+            >
+              <span
+                className="css-f8n5zr"
+              >
+                Loading...
+              </span>
+            </div>
+          </div>
+          <span
+            className="css-q7lffx"
+          >
+            Email
+          </span>
+        </button>
+        <button
+          className="chakra-button css-1r1mh8u"
+          data-loading=""
+          disabled={true}
+          type="button"
+        >
+          <div
+            className="chakra-button__spinner chakra-button__spinner--start css-149izd1"
+          >
+            <div
+              className="chakra-spinner css-1sqzeiz"
+            >
+              <span
+                className="css-f8n5zr"
+              >
+                Loading...
+              </span>
+            </div>
+          </div>
+          Submitting
+        </button>
+      </div>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-8pcd7y"
+        data-loading=""
+        disabled={true}
+        type="button"
+      >
+        <div
+          className="chakra-button__spinner chakra-button__spinner--start css-1aamklj"
+        >
+          <span
+            className="css-1ajl8jr"
+          />
+        </div>
+        <span
+          className="css-q7lffx"
+        >
+          Click me
+        </span>
+      </button>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-a9v878"
+      >
+        <button
+          className="chakra-button css-1r1mh8u"
+          data-loading=""
+          disabled={true}
+          type="button"
+        >
+          <div
+            className="chakra-button__spinner chakra-button__spinner--start css-149izd1"
+          >
+            <div
+              className="chakra-spinner css-1sqzeiz"
+            >
+              <span
+                className="css-f8n5zr"
+              >
+                Loading...
+              </span>
+            </div>
+          </div>
+          Loading
+        </button>
+        <button
+          className="chakra-button css-1r1mh8u"
+          data-loading=""
+          disabled={true}
+          type="button"
+        >
+          Loading
+          <div
+            className="chakra-button__spinner chakra-button__spinner--end css-1objxcw"
+          >
+            <div
+              className="chakra-spinner css-1sqzeiz"
+            >
+              <span
+                className="css-f8n5zr"
+              >
+                Loading...
+              </span>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <button
+          className="chakra-button css-qwqlj0"
+          type="button"
+        >
+          <span
+            className="chakra-button__icon css-1wh2kri"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="currentColor"
+              >
+                <path
+                  d="M11.114,14.556a1.252,1.252,0,0,0,1.768,0L22.568,4.87a.5.5,0,0,0-.281-.849A1.966,1.966,0,0,0,22,4H2a1.966,1.966,0,0,0-.289.021.5.5,0,0,0-.281.849Z"
+                />
+                <path
+                  d="M23.888,5.832a.182.182,0,0,0-.2.039l-6.2,6.2a.251.251,0,0,0,0,.354l5.043,5.043a.75.75,0,1,1-1.06,1.061l-5.043-5.043a.25.25,0,0,0-.354,0l-2.129,2.129a2.75,2.75,0,0,1-3.888,0L7.926,13.488a.251.251,0,0,0-.354,0L2.529,18.531a.75.75,0,0,1-1.06-1.061l5.043-5.043a.251.251,0,0,0,0-.354l-6.2-6.2a.18.18,0,0,0-.2-.039A.182.182,0,0,0,0,6V18a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V6A.181.181,0,0,0,23.888,5.832Z"
+                />
+              </g>
+            </svg>
+          </span>
+          Facebook
+        </button>
+        <button
+          className="chakra-button css-1i5pcfv"
+          type="button"
+        >
+          <span
+            className="chakra-button__icon css-1wh2kri"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="currentColor"
+              >
+                <path
+                  d="M11.114,14.556a1.252,1.252,0,0,0,1.768,0L22.568,4.87a.5.5,0,0,0-.281-.849A1.966,1.966,0,0,0,22,4H2a1.966,1.966,0,0,0-.289.021.5.5,0,0,0-.281.849Z"
+                />
+                <path
+                  d="M23.888,5.832a.182.182,0,0,0-.2.039l-6.2,6.2a.251.251,0,0,0,0,.354l5.043,5.043a.75.75,0,1,1-1.06,1.061l-5.043-5.043a.25.25,0,0,0-.354,0l-2.129,2.129a2.75,2.75,0,0,1-3.888,0L7.926,13.488a.251.251,0,0,0-.354,0L2.529,18.531a.75.75,0,0,1-1.06-1.061l5.043-5.043a.251.251,0,0,0,0-.354l-6.2-6.2a.18.18,0,0,0-.2-.039A.182.182,0,0,0,0,6V18a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V6A.181.181,0,0,0,23.888,5.832Z"
+                />
+              </g>
+            </svg>
+          </span>
+          Twitter
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-button__group css-8z6n3j"
+        role="group"
+      >
+        <button
+          className="chakra-button css-23whmt"
+          type="button"
+        >
+          Save
+        </button>
+        <button
+          className="chakra-button css-v5xx8v"
+          type="button"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-button__group css-1ayoy1w"
+        role="group"
+      >
+        <button
+          className="chakra-button css-xpj7ih"
+          type="button"
+        >
+          Save
+        </button>
+        <button
+          aria-label="Add to friends"
+          className="chakra-button css-12orcnd"
+          type="button"
+        >
+          <svg
+            aria-hidden={true}
+            className="chakra-icon css-onkibi"
+            focusable={false}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-10baffa"
+        type="button"
+      >
+        Button
+      </button>
+    </div>
+    <div>
+      <button
+        className="css-1smipps"
+      >
+        Join Group
+      </button>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

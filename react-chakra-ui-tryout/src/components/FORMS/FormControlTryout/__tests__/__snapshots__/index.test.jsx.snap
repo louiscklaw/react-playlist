@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test FormControlTryout tryout helloworld 1`] = `
 <div>
   FormControlTryout
   <div>
@@ -42,8 +42,8 @@ exports[`test badge tryout helloworld 1`] = `
     >
       <legend
         className="chakra-form__label css-uvho5g"
-        htmlFor="field-7723012300-2"
-        id="field-7723012300-2-label"
+        htmlFor="field-1374294293-2"
+        id="field-1374294293-2-label"
       >
         Favorite Naruto Character
       </legend>
@@ -61,8 +61,8 @@ exports[`test badge tryout helloworld 1`] = `
               checked={false}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-7723012300-4"
-              name="radio-7723012300-3"
+              id="radio-1374294293-4"
+              name="radio-1374294293-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -109,8 +109,8 @@ exports[`test badge tryout helloworld 1`] = `
               checked={false}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-7723012300-5"
-              name="radio-7723012300-3"
+              id="radio-1374294293-5"
+              name="radio-1374294293-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -157,8 +157,8 @@ exports[`test badge tryout helloworld 1`] = `
               checked={true}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-7723012300-6"
-              name="radio-7723012300-3"
+              id="radio-1374294293-6"
+              name="radio-1374294293-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -207,8 +207,8 @@ exports[`test badge tryout helloworld 1`] = `
               checked={false}
               className="chakra-radio__input"
               disabled={false}
-              id="radio-7723012300-7"
-              name="radio-7723012300-3"
+              id="radio-1374294293-7"
+              name="radio-1374294293-3"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -252,7 +252,7 @@ exports[`test badge tryout helloworld 1`] = `
       </div>
       <div
         className="chakra-form__helper-text css-0"
-        id="field-7723012300-2-helptext"
+        id="field-1374294293-2-helptext"
       >
         Select only if you're a fan.
       </div>

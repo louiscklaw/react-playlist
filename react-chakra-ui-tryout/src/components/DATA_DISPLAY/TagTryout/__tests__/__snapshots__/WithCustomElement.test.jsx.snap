@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test WithCustomElement tryout helloworld 1`] = `
+Array [
+  <span
+    className="css-d6nc3s"
+  >
+    <span
+      className="chakra-avatar css-34zdnh"
+    >
+      <div
+        aria-label="Segun Adebayo"
+        className="chakra-avatar__initials css-zka1nu"
+        role="img"
+      >
+        SA
+      </div>
+    </span>
+    <span
+      className="css-1h8gyx6"
+    >
+      Segun
+    </span>
+  </span>,
+  <span />,
+]
+`;

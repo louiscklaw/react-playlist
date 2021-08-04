@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test FlexTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    FlexTryout
+    <div>
+      <div
+        className="css-x8vryw"
+      >
+        <div
+          className="css-157k5pn"
+        >
+          <p
+            className="chakra-text css-0"
+          >
+            Box 1
+          </p>
+        </div>
+        <div
+          className="css-1i9ntm"
+        >
+          <p
+            className="chakra-text css-0"
+          >
+            Box 2
+          </p>
+        </div>
+        <div
+          className="css-12jih1c"
+        >
+          <p
+            className="chakra-text css-0"
+          >
+            Box 3
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="css-k008qs"
+      >
+        <div
+          className="css-44v0s6"
+        >
+          Box 1
+        </div>
+        <div
+          className="css-17xejub"
+        />
+        <div
+          className="css-1xrtdkj"
+        >
+          Box 2
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="css-0"
+      >
+        <p
+          className="chakra-text css-0"
+        >
+          Flex and Spacer: Full width, equal Spacing
+        </p>
+        <div
+          className="css-k008qs"
+        >
+          <div
+            className="css-17ndws9"
+          />
+          <div
+            className="css-17xejub"
+          />
+          <div
+            className="css-1bej4sa"
+          />
+          <div
+            className="css-17xejub"
+          />
+          <div
+            className="css-flfch8"
+          />
+        </div>
+        <p
+          className="chakra-text css-0"
+        >
+          Grid: The children start at the beginning, the 1/3 mark and 2/3 mark
+        </p>
+        <div
+          className="css-n0a326"
+        >
+          <div
+            className="css-8p6tyz"
+          />
+          <div
+            className="css-1ss6cw0"
+          />
+          <div
+            className="css-1ctdhpo"
+          />
+        </div>
+        <p
+          className="chakra-text css-0"
+        >
+          HStack: The children have equal spacing but don't span the whole container
+        </p>
+        <div
+          className="chakra-stack css-1y5q8ss"
+        >
+          <div
+            className="css-dn2uig"
+          />
+          <div
+            className="css-1xg2mxq"
+          />
+          <div
+            className="css-1pjhwr5"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="css-k008qs"
+      >
+        <div
+          className="css-1syq16t"
+        >
+          <h2
+            className="chakra-heading css-18j379d"
+          >
+            Chakra App
+          </h2>
+        </div>
+        <div
+          className="css-17xejub"
+        />
+        <div
+          className="css-0"
+        >
+          <button
+            className="chakra-button css-1d9o4jc"
+            type="button"
+          >
+            Sign Up
+          </button>
+          <button
+            className="chakra-button css-f6n2t5"
+            type="button"
+          >
+            Log in
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

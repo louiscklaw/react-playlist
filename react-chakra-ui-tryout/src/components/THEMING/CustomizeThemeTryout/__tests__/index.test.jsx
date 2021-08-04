@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { CustomizeThemeTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test CustomizeThemeTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<CustomizeThemeTryout />).toJSON();
     expect(tree).toMatchSnapshot();

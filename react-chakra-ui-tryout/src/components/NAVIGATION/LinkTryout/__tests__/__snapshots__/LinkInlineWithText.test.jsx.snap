@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LinkInlineWithText tryout helloworld 1`] = `
+Array [
+  <p
+    className="chakra-text css-0"
+  >
+    Did you know that
+     
+    <a
+      className="chakra-link css-14j13e4"
+      href="#"
+    >
+      links can live inline with text
+    </a>
+  </p>,
+  <span />,
+]
+`;

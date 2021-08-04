@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ControlledTextarea tryout helloworld 1`] = `
+Array [
+  <p
+    className="chakra-text css-19idom"
+  >
+    Value: 
+    
+  </p>,
+  <textarea
+    className="chakra-textarea css-24htol"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Here is a sample placeholder"
+    value=""
+  />,
+  <span />,
+]
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test NestedLinks tryout helloworld 1`] = `
+Array [
+  <article
+    className="chakra-linkbox css-abip44"
+  >
+    <time
+      className="css-0"
+      dateTime="2021-01-15 15:30:00 +0000 UTC"
+    >
+      13 days ago
+    </time>
+    <h2
+      className="chakra-heading css-1ad04f2"
+    >
+      <a
+        className="chakra-linkbox__overlay css-1hnz6hu"
+        href="#"
+      >
+        New Year, New Beginnings: Smashing Workshops & Audits
+      </a>
+    </h2>
+    <p
+      className="chakra-text css-sfajb0"
+    >
+      Catch up on what’s been cookin’ at Smashing and explore some of the most popular community resources.
+    </p>
+    <a
+      className="css-1jln310"
+      href="#"
+    >
+      Some inner link
+    </a>
+  </article>,
+  <span />,
+]
+`;

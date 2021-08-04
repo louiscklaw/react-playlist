@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MoreExamples tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-wrap css-0"
+  >
+    <ul
+      className="chakra-wrap__list css-1fjny8z"
+    >
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        >
+          Close on Click - true(default)
+        </button>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        >
+          Close on Click - false
+        </button>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          aria-describedby="tooltip-6"
+          className="chakra-button css-taj3dd"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        >
+          Always Open
+        </button>
+        <span />
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          aria-describedby="tooltip-8"
+          className="chakra-button css-taj3dd"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        >
+          Open on startup
+        </button>
+        <span />
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        >
+          Delay Open - 500ms
+        </button>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        >
+          Delay Close - 500ms
+        </button>
+      </li>
+      <li
+        className="chakra-wrap__listitem css-1yp4ln"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        >
+          Arrow size - 15px
+        </button>
+      </li>
+    </ul>
+  </div>,
+  <span />,
+]
+`;

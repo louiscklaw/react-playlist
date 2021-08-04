@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { TextareaTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test TextareaTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<TextareaTryout />).toJSON();
     expect(tree).toMatchSnapshot();

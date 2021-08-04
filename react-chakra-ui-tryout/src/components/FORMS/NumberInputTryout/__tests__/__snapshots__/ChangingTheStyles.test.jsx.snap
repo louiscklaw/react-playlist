@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheStyles tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-numberinput css-1yr7bw8"
+    defaultValue={15}
+  >
+    <input
+      aria-valuemax={9007199254740991}
+      aria-valuemin={10}
+      aria-valuenow={15}
+      aria-valuetext="15"
+      autoComplete="off"
+      autoCorrect="off"
+      className="chakra-numberinput__field css-1kojd94"
+      inputMode="decimal"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      pattern="[0-9]*(.[0-9]+)?"
+      role="spinbutton"
+      type="text"
+      value="15"
+    />
+    <div
+      aria-hidden={true}
+      className="css-1jj9yua"
+    >
+      <div
+        className="css-kyp1oh"
+        disabled={false}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        +
+      </div>
+      <div
+        className="css-1ce309j"
+        disabled={false}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        -
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

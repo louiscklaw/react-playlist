@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react';
 import { useControllableProp, useControllableState } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   const [value, setValue] = useControllableState({ defaultValue: 40 });
   return (
     <div>
@@ -14,7 +14,7 @@ function Usage() {
     </div>
   );
 }
-function TestControlledState() {
+export function TestControlledState() {
   // you need a state and updater to change the value
   const [value, setValue] = React.useState(40);
 
@@ -33,58 +33,58 @@ function TestControlledState() {
     </div>
   );
 }
-function TestHelloworld03() {
+export function TestHelloworld03() {
   return <>TestHelloworld03</>;
 }
-function TestHelloworld04() {
+export function TestHelloworld04() {
   return <>TestHelloworld04</>;
 }
-function TestHelloworld05() {
+export function TestHelloworld05() {
   return <>TestHelloworld05</>;
 }
-function TestHelloworld06() {
+export function TestHelloworld06() {
   return <>TestHelloworld06</>;
 }
-function TestHelloworld07() {
+export function TestHelloworld07() {
   return <>TestHelloworld07</>;
 }
-function TestHelloworld08() {
+export function TestHelloworld08() {
   return <>TestHelloworld08</>;
 }
-function TestHelloworld09() {
+export function TestHelloworld09() {
   return <>TestHelloworld09</>;
 }
-function TestHelloworld10() {
+export function TestHelloworld10() {
   return <>TestHelloworld10</>;
 }
-function TestHelloworld11() {
+export function TestHelloworld11() {
   return <>TestHelloworld11</>;
 }
-function TestHelloworld12() {
+export function TestHelloworld12() {
   return <>TestHelloworld12</>;
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test EditableTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    EditableTryout
+    <div>
+      Usage 
+      Usage
+      <div
+        className="chakra-editable css-0"
+      >
+        <span
+          className="chakra-editable__preview css-1fhyjwj"
+          hidden={false}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          Take some chakra
+        </span>
+        <input
+          className="chakra-editable__input css-xq7e64"
+          hidden={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          value="Take some chakra"
+        />
+      </div>
+    </div>
+    <div>
+      TestHelloworld02 
+      <div
+        className="chakra-editable css-vtl58r"
+      >
+        <span
+          className="chakra-editable__preview css-1fhyjwj"
+          hidden={false}
+          onFocus={[Function]}
+        >
+          Rasengan ⚡️
+        </span>
+        <input
+          className="chakra-editable__input css-xq7e64"
+          hidden={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          value="Rasengan ⚡️"
+        />
+        <div
+          className="css-1l4w6pd"
+        >
+          <button
+            aria-label="Edit"
+            className="chakra-button css-12bcxhr"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden={true}
+              className="chakra-icon css-onkibi"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeWidth="2"
+              >
+                <path
+                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                />
+                <path
+                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

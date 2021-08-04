@@ -1,0 +1,645 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test PinInputTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    PinInputTryout
+    <div>
+      Usage 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-1--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-1--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-1--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-1--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      AllowingAlphanumericValues 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-2--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-2--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-2--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-2--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      UsingFieldsAsAOneTimePassword 
+      <input
+        aria-label="Please enter your pin code"
+        autoComplete="one-time-code"
+        className="chakra-pin-input css-17u1q9k"
+        id="pin-input-3--1"
+        inputMode="numeric"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder=""
+        type="tel"
+        value=""
+      />
+      <input
+        aria-label="Please enter your pin code"
+        autoComplete="one-time-code"
+        className="chakra-pin-input css-17u1q9k"
+        id="pin-input-3--1"
+        inputMode="numeric"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder=""
+        type="tel"
+        value=""
+      />
+      <input
+        aria-label="Please enter your pin code"
+        autoComplete="one-time-code"
+        className="chakra-pin-input css-17u1q9k"
+        id="pin-input-3--1"
+        inputMode="numeric"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder=""
+        type="tel"
+        value=""
+      />
+      <input
+        aria-label="Please enter your pin code"
+        autoComplete="one-time-code"
+        className="chakra-pin-input css-17u1q9k"
+        id="pin-input-3--1"
+        inputMode="numeric"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder=""
+        type="tel"
+        value=""
+      />
+    </div>
+    <div>
+      MaskingThePinInputsValue 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-4--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="password"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-4--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="password"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-4--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="password"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-4--1"
+          inputMode="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      ChangingTheSizeOfThePinInput 
+      <div
+        className="chakra-stack css-n21gh5"
+      >
+        <div
+          className="chakra-stack css-84zodg"
+        >
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-kvmxzd"
+            id="pin-input-5--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-kvmxzd"
+            id="pin-input-5--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-kvmxzd"
+            id="pin-input-5--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+        </div>
+        <div
+          className="chakra-stack css-84zodg"
+        >
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-1pqxzd4"
+            id="pin-input-6--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-1pqxzd4"
+            id="pin-input-6--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-1pqxzd4"
+            id="pin-input-6--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+        </div>
+        <div
+          className="chakra-stack css-84zodg"
+        >
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-17u1q9k"
+            id="pin-input-7--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-17u1q9k"
+            id="pin-input-7--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-17u1q9k"
+            id="pin-input-7--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+        </div>
+        <div
+          className="chakra-stack css-84zodg"
+        >
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-17dn0h8"
+            id="pin-input-8--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-17dn0h8"
+            id="pin-input-8--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+          <input
+            aria-label="Please enter your pin code"
+            autoComplete="off"
+            className="chakra-pin-input css-17dn0h8"
+            id="pin-input-8--1"
+            inputMode="numeric"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder=""
+            type="tel"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      AddingADefaultValue 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-9--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-9--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-9--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      ChangingThePlaceholder 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-10--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-10--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-10--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      DisableFocusManagement 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-11--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-11--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-11--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      AutoFillAndCopyPaste 
+      <div
+        className="chakra-stack css-84zodg"
+      >
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-12--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-12--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+        <input
+          aria-label="Please enter your pin code"
+          autoComplete="off"
+          className="chakra-pin-input css-17u1q9k"
+          id="pin-input-12--1"
+          inputMode="numeric"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="tel"
+          value=""
+        />
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage1 tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-skeleton css-1mgb0mg"
+  >
+    <div>
+      contents wrapped
+    </div>
+    <div>
+      won't be visible
+    </div>
+  </div>,
+  <span />,
+]
+`;

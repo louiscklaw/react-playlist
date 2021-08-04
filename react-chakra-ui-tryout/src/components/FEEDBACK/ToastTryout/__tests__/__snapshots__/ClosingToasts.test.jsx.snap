@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ClosingToasts tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-wta9zy"
+  >
+    <button
+      className="chakra-button css-taj3dd"
+      onClick={[Function]}
+      type="button"
+    >
+      Toast
+    </button>
+    <button
+      className="chakra-button css-exvdkj"
+      onClick={[Function]}
+      type="button"
+    >
+      Close last toast
+    </button>
+    <button
+      className="chakra-button css-exvdkj"
+      onClick={[Function]}
+      type="button"
+    >
+      Close all toasts
+    </button>
+  </div>,
+  <span />,
+]
+`;

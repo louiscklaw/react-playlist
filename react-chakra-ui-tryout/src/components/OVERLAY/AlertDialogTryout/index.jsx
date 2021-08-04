@@ -14,7 +14,7 @@ import {
   AlertDialogOverlay,
 } from '@chakra-ui/react';
 
-function AlertDialogExample() {
+export function AlertDialogExample() {
   const [isOpen, setIsOpen] = React.useState(false);
   const onClose = () => setIsOpen(false);
   const cancelRef = React.useRef(null);
@@ -54,7 +54,7 @@ function AlertDialogExample() {
   );
 }
 
-function TransitionExample() {
+export function TransitionExample() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const cancelRef = React.useRef(null);
 

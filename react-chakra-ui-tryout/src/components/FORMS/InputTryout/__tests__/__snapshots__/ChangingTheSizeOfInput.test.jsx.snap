@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheSizeOfInput tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-gsc7pt"
+  >
+    <input
+      className="chakra-input css-1ok8onh"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="extra small size"
+    />
+    <input
+      className="chakra-input css-13gwzxu"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="small size"
+    />
+    <input
+      className="chakra-input css-1c6j008"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="medium size"
+    />
+    <input
+      className="chakra-input css-1lw1oo1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholder="large size"
+    />
+  </div>,
+  <span />,
+]
+`;

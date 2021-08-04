@@ -17,7 +17,7 @@ import {
   useNumberInput,
 } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   return (
     <>
       <NumberInput>
@@ -30,7 +30,7 @@ function Usage() {
     </>
   );
 }
-function SettingAMinimumAndMaximumValue() {
+export function SettingAMinimumAndMaximumValue() {
   return (
     <>
       <NumberInput defaultValue={15} min={10} max={20}>
@@ -43,7 +43,7 @@ function SettingAMinimumAndMaximumValue() {
     </>
   );
 }
-function SettingTheStepSize() {
+export function SettingTheStepSize() {
   return (
     <>
       <NumberInput step={5} defaultValue={15} min={10} max={30}>
@@ -57,7 +57,7 @@ function SettingTheStepSize() {
     </>
   );
 }
-function AdjustingThePrecisionOfTheValue() {
+export function AdjustingThePrecisionOfTheValue() {
   return (
     <>
       <NumberInput defaultValue={15} precision={2} step={0.2}>
@@ -70,7 +70,7 @@ function AdjustingThePrecisionOfTheValue() {
     </>
   );
 }
-function ClampValueWhenUserBlursTheInput() {
+export function ClampValueWhenUserBlursTheInput() {
   return (
     <>
       <div>
@@ -87,7 +87,7 @@ function ClampValueWhenUserBlursTheInput() {
     </>
   );
 }
-function AllowingOutOfRangeValues() {
+export function AllowingOutOfRangeValues() {
   return (
     <>
       <NumberInput
@@ -104,7 +104,7 @@ function AllowingOutOfRangeValues() {
     </>
   );
 }
-function FormattingAndParsingTheValue() {
+export function FormattingAndParsingTheValue() {
   const format = (val) => `$` + val;
   const parse = (val) => val.replace(/^\$/, '');
 
@@ -123,7 +123,7 @@ function FormattingAndParsingTheValue() {
     </NumberInput>
   );
 }
-function ChangingTheSizeOfTheInput() {
+export function ChangingTheSizeOfTheInput() {
   return (
     <>
       <Stack shouldWrapChildren direction="row">
@@ -162,7 +162,7 @@ function ChangingTheSizeOfTheInput() {
     </>
   );
 }
-function ChangingTheStyles() {
+export function ChangingTheStyles() {
   return (
     <>
       <NumberInput size="sm" defaultValue={15} min={10}>
@@ -183,7 +183,7 @@ function ChangingTheStyles() {
     </>
   );
 }
-function CombiningItWithASlider() {
+export function CombiningItWithASlider() {
   const [value, setValue] = React.useState(0);
   const handleChange = (value) => setValue(value);
 
@@ -209,7 +209,7 @@ function CombiningItWithASlider() {
     </Flex>
   );
 }
-function CreateAMobileSpinner() {
+export function CreateAMobileSpinner() {
   const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
     useNumberInput({
       step: 0.01,
@@ -231,7 +231,7 @@ function CreateAMobileSpinner() {
     </HStack>
   );
 }
-function IncrementValueUsingMouseWheel() {
+export function IncrementValueUsingMouseWheel() {
   return (
     <>
       <NumberInput allowMouseWheel>
@@ -244,28 +244,28 @@ function IncrementValueUsingMouseWheel() {
     </>
   );
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

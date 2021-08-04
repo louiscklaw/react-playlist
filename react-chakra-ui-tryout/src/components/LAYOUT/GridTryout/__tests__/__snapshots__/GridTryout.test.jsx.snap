@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test GridTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    GridTryout
+    <div>
+      <div
+        className="css-13joyuj"
+      >
+        <div
+          className="css-1sp1oc3"
+        />
+        <div
+          className="css-1sp1oc3"
+        />
+        <div
+          className="css-1sp1oc3"
+        />
+        <div
+          className="css-1sp1oc3"
+        />
+        <div
+          className="css-1sp1oc3"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="css-r6ided"
+      >
+        <div
+          className="css-1q1m6d7"
+        />
+        <div
+          className="css-1qvc0pb"
+        />
+        <div
+          className="css-1qvc0pb"
+        />
+        <div
+          className="css-1anmq07"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="css-1auuqwc"
+      >
+        <div
+          className="css-3h9r0"
+        />
+        <div
+          className="css-v6dmji"
+        />
+      </div>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

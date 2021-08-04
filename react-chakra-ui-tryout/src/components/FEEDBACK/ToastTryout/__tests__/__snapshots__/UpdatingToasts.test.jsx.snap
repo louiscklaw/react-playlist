@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UpdatingToasts tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-wta9zy"
+  >
+    <button
+      className="chakra-button css-taj3dd"
+      onClick={[Function]}
+      type="button"
+    >
+      Toast
+    </button>
+    <button
+      className="chakra-button css-exvdkj"
+      onClick={[Function]}
+      type="button"
+    >
+      Update last toast
+    </button>
+  </div>,
+  <span />,
+]
+`;

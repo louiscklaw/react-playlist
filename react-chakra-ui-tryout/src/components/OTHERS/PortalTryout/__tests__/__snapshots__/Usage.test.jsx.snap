@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  " ",
+  <div
+    className="css-8v5jrc"
+  >
+    I'm here,
+    <span />
+  </div>,
+  <span />,
+]
+`;

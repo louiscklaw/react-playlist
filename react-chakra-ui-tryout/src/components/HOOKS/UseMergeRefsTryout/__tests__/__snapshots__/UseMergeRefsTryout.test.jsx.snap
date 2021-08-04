@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UseMergeRefsTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    UseMergeRefsTryout
+    <div>
+      Usage 
+      <button
+        onClick={[Function]}
+      >
+        Click me to see the popover
+      </button>
+    </div>
+  </div>,
+  <span />,
+]
+`;

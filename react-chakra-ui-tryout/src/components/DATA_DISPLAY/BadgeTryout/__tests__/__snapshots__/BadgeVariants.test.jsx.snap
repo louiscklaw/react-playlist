@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test BadgeVariants tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-x9juev"
+  >
+    <span
+      className="chakra-badge css-192wa0b"
+    >
+      Default
+    </span>
+    <span
+      className="chakra-badge css-k1ilb5"
+    >
+      Success
+    </span>
+    <span
+      className="chakra-badge css-eywthe"
+    >
+      Removed
+    </span>
+  </div>,
+  <span />,
+]
+`;

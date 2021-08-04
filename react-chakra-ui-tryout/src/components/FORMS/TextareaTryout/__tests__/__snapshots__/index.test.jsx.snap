@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test TextareaTryout tryout helloworld 1`] = `
 <div>
   TextareaTryout
   <div>
@@ -44,8 +44,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={true}
             className="chakra-radio__input"
-            id="radio-1423185302-2"
-            name="radio-1423185302-1"
+            id="radio-751054696-2"
+            name="radio-751054696-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -91,8 +91,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-1423185302-3"
-            name="radio-1423185302-1"
+            id="radio-751054696-3"
+            name="radio-751054696-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -136,8 +136,8 @@ exports[`test badge tryout helloworld 1`] = `
           <input
             checked={false}
             className="chakra-radio__input"
-            id="radio-1423185302-4"
-            name="radio-1423185302-1"
+            id="radio-751054696-4"
+            name="radio-751054696-1"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}

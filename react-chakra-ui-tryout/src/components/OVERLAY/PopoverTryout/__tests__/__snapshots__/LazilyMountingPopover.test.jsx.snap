@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LazilyMountingPopover tryout helloworld 1`] = `
+Array [
+  <button
+    aria-controls="popover-content-2"
+    aria-expanded={false}
+    aria-haspopup="dialog"
+    className="chakra-button css-taj3dd"
+    id="popover-trigger-2"
+    onClick={[Function]}
+    type="button"
+  >
+    Click me
+  </button>,
+  <div
+    className="chakra-popover__popper css-1qq679y"
+    style={
+      Object {
+        "inset": "0 auto auto 0",
+        "minWidth": "max-content",
+        "position": "absolute",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <section
+      className="chakra-popover__content css-wdh6r4"
+      id="popover-content-2"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      role="dialog"
+      style={
+        Object {
+          "--popper-arrow-shadow-color": undefined,
+          "--popper-arrow-size": undefined,
+          "opacity": 0,
+          "transform": "scale(0.95) translateZ(0)",
+          "transformOrigin": "var(--popper-transform-origin)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex={-1}
+    />
+  </div>,
+  <span />,
+]
+`;

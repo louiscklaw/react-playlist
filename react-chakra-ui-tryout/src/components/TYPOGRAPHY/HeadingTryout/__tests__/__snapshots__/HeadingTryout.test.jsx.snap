@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test HeadingTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    HeadingTryout
+    <div>
+      <h2
+        className="chakra-heading css-1dklj6k"
+      >
+        I'm a Heading
+      </h2>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-b5leqj"
+      >
+        <h1
+          className="chakra-heading css-1dvk272"
+        >
+          (4xl) In love with React & Next
+        </h1>
+        <h2
+          className="chakra-heading css-1d52fev"
+        >
+          (3xl) In love with React & Next
+        </h2>
+        <h2
+          className="chakra-heading css-1jkx6l7"
+        >
+          (2xl) In love with React & Next
+        </h2>
+        <h2
+          className="chakra-heading css-1dklj6k"
+        >
+          (xl) In love with React & Next
+        </h2>
+        <h3
+          className="chakra-heading css-1jb3vzl"
+        >
+          (lg) In love with React & Next
+        </h3>
+        <h4
+          className="chakra-heading css-18j379d"
+        >
+          (md) In love with React & Next
+        </h4>
+        <h5
+          className="chakra-heading css-9f6g39"
+        >
+          (sm) In love with React & Next
+        </h5>
+        <h6
+          className="chakra-heading css-479vt2"
+        >
+          (xs) In love with React & Next
+        </h6>
+      </div>
+    </div>
+    <div>
+      <h2
+        className="chakra-heading css-1vuqxjt"
+      >
+        Basic text writing, including headings, body text, lists, and more.
+      </h2>
+    </div>
+    <div>
+      <h2
+        className="chakra-heading css-1ssik6v"
+      >
+        I'm overriding this heading
+      </h2>
+    </div>
+    <div>
+      <div
+        className="css-19t51sz"
+      >
+        <h2
+          className="chakra-heading css-1y3q2fc"
+        >
+          Modern online and offline payments for Africa
+        </h2>
+        <p
+          className="chakra-text css-mcpu91"
+        >
+          Paystack helps businesses in Africa get paid by anyone, anywhere in the world
+        </p>
+        <button
+          className="chakra-button css-1q21exi"
+          type="button"
+        >
+          Create a free account
+        </button>
+      </div>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-1h4ws66"
+  >
+    <p
+      className="chakra-text css-0"
+    >
+      Resize your window to see the button variant change
+    </p>
+    <button
+      className="chakra-button css-f6n2t5"
+      type="button"
+    >
+      Button
+    </button>
+  </div>,
+  <span />,
+]
+`;

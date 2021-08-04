@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ModalTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    ModalTryout
+    <div>
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Open Modal
+      </button>
+    </div>
+    <div>
+      <div
+        aria-label="Focus moved to this box"
+        className="css-0"
+        tabIndex={-1}
+      >
+        Some other content that'll receive focus on close.
+      </div>
+      <button
+        className="chakra-button css-1ireiby"
+        onClick={[Function]}
+        type="button"
+      >
+        Open Modal
+      </button>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Open Modal
+      </button>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Open Modal
+      </button>
+      <button
+        className="chakra-button css-pl35ay"
+        type="button"
+      >
+        I'll receive focus on close
+      </button>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Open Modal
+      </button>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Trigger modal
+      </button>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Open Modal
+      </button>
+    </div>
+    <div>
+      <div
+        className="chakra-radio-group css-0"
+        role="radiogroup"
+      >
+        <div
+          className="chakra-stack css-x9juev"
+        >
+          <label
+            className="chakra-radio css-78joka"
+          >
+            <input
+              checked={true}
+              className="chakra-radio__input"
+              id="radio-17"
+              name="radio-16"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              style={
+                Object {
+                  "border": "0px",
+                  "clip": "rect(0px, 0px, 0px, 0px)",
+                  "height": "1px",
+                  "margin": "-1px",
+                  "overflow": "hidden",
+                  "padding": "0px",
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": "1px",
+                }
+              }
+              type="radio"
+              value="inside"
+            />
+            <span
+              aria-hidden={true}
+              className="chakra-radio__control css-1rggdzb"
+              data-checked=""
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            />
+            <span
+              className="chakra-radio__label css-1i66d7g"
+              data-checked=""
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            >
+              inside
+            </span>
+          </label>
+          <label
+            className="chakra-radio css-78joka"
+          >
+            <input
+              checked={false}
+              className="chakra-radio__input"
+              id="radio-18"
+              name="radio-16"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              style={
+                Object {
+                  "border": "0px",
+                  "clip": "rect(0px, 0px, 0px, 0px)",
+                  "height": "1px",
+                  "margin": "-1px",
+                  "overflow": "hidden",
+                  "padding": "0px",
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": "1px",
+                }
+              }
+              type="radio"
+              value="outside"
+            />
+            <span
+              aria-hidden={true}
+              className="chakra-radio__control css-1rggdzb"
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            />
+            <span
+              className="chakra-radio__label css-1i66d7g"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            >
+              outside
+            </span>
+          </label>
+        </div>
+      </div>
+      <button
+        className="chakra-button css-1yu7zxz"
+        onClick={[Function]}
+        type="button"
+      >
+        Trigger modal
+      </button>
+    </div>
+    <div>
+      <button
+        className="chakra-button css-1rwlt5g"
+        onClick={[Function]}
+        type="button"
+      >
+        Open xs Modal
+      </button>
+      <button
+        className="chakra-button css-1rwlt5g"
+        onClick={[Function]}
+        type="button"
+      >
+        Open sm Modal
+      </button>
+      <button
+        className="chakra-button css-1rwlt5g"
+        onClick={[Function]}
+        type="button"
+      >
+        Open md Modal
+      </button>
+      <button
+        className="chakra-button css-1rwlt5g"
+        onClick={[Function]}
+        type="button"
+      >
+        Open lg Modal
+      </button>
+      <button
+        className="chakra-button css-1rwlt5g"
+        onClick={[Function]}
+        type="button"
+      >
+        Open xl Modal
+      </button>
+      <button
+        className="chakra-button css-1rwlt5g"
+        onClick={[Function]}
+        type="button"
+      >
+        Open full Modal
+      </button>
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

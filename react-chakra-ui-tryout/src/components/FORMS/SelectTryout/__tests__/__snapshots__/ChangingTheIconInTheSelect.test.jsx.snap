@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheIconInTheSelect tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-select__wrapper css-42b2qy"
+  >
+    <select
+      className="chakra-select css-173b75c"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <option
+        value=""
+      >
+        Woohoo! A new icon
+      </option>
+    </select>
+    <div
+      className="chakra-select__icon-wrapper css-zj2dqk"
+    >
+      <svg
+        aria-hidden={true}
+        className="chakra-select__icon"
+        fill="currentColor"
+        focusable={false}
+        height="1em"
+        role="presentation"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "currentColor",
+            "height": "1em",
+            "width": "1em",
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>,
+  <span />,
+]
+`;

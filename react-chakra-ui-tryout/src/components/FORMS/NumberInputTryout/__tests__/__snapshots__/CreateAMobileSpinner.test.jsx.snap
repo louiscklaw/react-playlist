@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test CreateAMobileSpinner tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-13auf9k"
+  >
+    <button
+      className="chakra-button css-taj3dd"
+      disabled={false}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      role="button"
+      tabIndex={-1}
+      type="button"
+    >
+      +
+    </button>
+    <input
+      aria-readonly={true}
+      aria-valuemax={6}
+      aria-valuemin={1}
+      aria-valuenow={1.53}
+      aria-valuetext="1.53"
+      autoComplete="off"
+      autoCorrect="off"
+      className="chakra-input css-1c6j008"
+      inputMode="decimal"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      pattern="[0-9]*(.[0-9]+)?"
+      readOnly={true}
+      role="spinbutton"
+      type="text"
+      value="1.53"
+    />
+    <button
+      className="chakra-button css-taj3dd"
+      disabled={false}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      role="button"
+      tabIndex={-1}
+      type="button"
+    >
+      -
+    </button>
+  </div>,
+  <span />,
+]
+`;

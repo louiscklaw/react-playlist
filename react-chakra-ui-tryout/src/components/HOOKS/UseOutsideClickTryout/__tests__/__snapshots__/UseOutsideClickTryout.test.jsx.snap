@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UseOutsideClickTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    UseOutsideClickTryout
+    <div>
+      Usage 
+      <button
+        onClick={[Function]}
+      >
+        Open Modal
+      </button>
+    </div>
+  </div>,
+  <span />,
+]
+`;

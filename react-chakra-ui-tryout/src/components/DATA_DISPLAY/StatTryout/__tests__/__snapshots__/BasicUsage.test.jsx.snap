@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test BasicUsage tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stat css-1mbo1ls"
+  >
+    <dl>
+      <dt
+        className="chakra-stat__label css-14go5ty"
+      >
+        Collected Fees
+      </dt>
+      <dd
+        className="chakra-stat__number css-1axeus7"
+      >
+        £0.00
+      </dd>
+      <dd
+        className="chakra-stat__help-text css-1phhsu0"
+      >
+        Feb 12 - Feb 28
+      </dd>
+    </dl>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TooltipWithFocusableContent tryout helloworld 1`] = `
+Array [
+  <button
+    className="chakra-button css-taj3dd"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    type="button"
+  >
+    Button
+  </button>,
+  <span />,
+]
+`;

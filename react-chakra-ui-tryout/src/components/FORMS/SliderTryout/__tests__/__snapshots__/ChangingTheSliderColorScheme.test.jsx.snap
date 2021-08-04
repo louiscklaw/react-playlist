@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheSliderColorScheme tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-slider css-17m87zz"
+    style={
+      Object {
+        "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+        "outline": 0,
+        "paddingBottom": 0,
+        "paddingTop": 0,
+        "position": "relative",
+        "touchAction": "none",
+        "userSelect": "none",
+      }
+    }
+    tabIndex={-1}
+  >
+    <div
+      className="chakra-slider__track css-1jsne3t"
+      id="slider-track-1"
+      style={
+        Object {
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translateY(-50%)",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="chakra-slider__filled-track css-10jwwt3"
+        style={
+          Object {
+            "left": 0,
+            "position": "absolute",
+            "top": "50%",
+            "transform": "translateY(-50%)",
+            "width": "30%",
+          }
+        }
+      />
+    </div>
+    <div
+      aria-label="slider-ex-2"
+      aria-orientation="horizontal"
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={30}
+      className="chakra-slider__thumb css-1sth7vg"
+      id="slider-thumb-1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      role="slider"
+      style={
+        Object {
+          "MozUserSelect": "none",
+          "WebkitUserSelect": "none",
+          "left": "calc(30% - 0px)",
+          "msUserSelect": "none",
+          "position": "absolute",
+          "touchAction": "none",
+          "userSelect": "none",
+        }
+      }
+      tabIndex={0}
+    />
+    <input
+      type="hidden"
+      value={30}
+    />
+  </div>,
+  <span />,
+]
+`;

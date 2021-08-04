@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { AspectRatioTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test AspectRatioTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<AspectRatioTryout />).toJSON();
     expect(tree).toMatchSnapshot();

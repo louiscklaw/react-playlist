@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UseClipboardTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    UseClipboardTryout
+    <div>
+      Usage 
+      <div
+        className="css-ryjapq"
+      >
+        <input
+          aria-readonly={true}
+          className="chakra-input css-1c6j008"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Welcome"
+          readOnly={true}
+          value="Hello world"
+        />
+        <button
+          className="chakra-button css-u0dg94"
+          onClick={[Function]}
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+      <div
+        className="chakra-editable css-0"
+      >
+        <span
+          className="chakra-editable__preview css-7xtq19"
+          hidden={false}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          Paste here
+        </span>
+        <input
+          className="chakra-editable__input css-xq7e64"
+          hidden={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Paste here"
+          value=""
+        />
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-84zodg"
+  >
+    <input
+      aria-label="Please enter your pin code"
+      autoComplete="off"
+      className="chakra-pin-input css-17u1q9k"
+      id="pin-input-1--1"
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      type="tel"
+      value=""
+    />
+    <input
+      aria-label="Please enter your pin code"
+      autoComplete="off"
+      className="chakra-pin-input css-17u1q9k"
+      id="pin-input-1--1"
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      type="tel"
+      value=""
+    />
+    <input
+      aria-label="Please enter your pin code"
+      autoComplete="off"
+      className="chakra-pin-input css-17u1q9k"
+      id="pin-input-1--1"
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      type="tel"
+      value=""
+    />
+    <input
+      aria-label="Please enter your pin code"
+      autoComplete="off"
+      className="chakra-pin-input css-17u1q9k"
+      id="pin-input-1--1"
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      type="tel"
+      value=""
+    />
+  </div>,
+  <span />,
+]
+`;

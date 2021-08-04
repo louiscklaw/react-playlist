@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ToggleEachAccordionItem tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-accordion css-0"
+  >
+    <div
+      className="chakra-accordion__item css-17mg6aq"
+    >
+      <h2>
+        <button
+          aria-controls="accordion-panel-1"
+          aria-expanded={false}
+          className="chakra-accordion__button css-1ygl3x"
+          disabled={false}
+          id="accordion-button-1"
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="button"
+        >
+          <div
+            className="css-1eziwv"
+          >
+            Section 1 title
+          </div>
+          <svg
+            aria-hidden={true}
+            className="chakra-icon chakra-accordion__icon css-186l2rg"
+            focusable={false}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </h2>
+      <div
+        className="chakra-collapse"
+        style={
+          Object {
+            "display": "none",
+            "height": "0px",
+            "opacity": 0,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          aria-labelledby="accordion-button-1"
+          className="chakra-accordion__panel css-1hb5ode"
+          id="accordion-panel-1"
+          role="region"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div
+      className="chakra-accordion__item css-17mg6aq"
+    >
+      <h2>
+        <button
+          aria-controls="accordion-panel-2"
+          aria-expanded={false}
+          className="chakra-accordion__button css-1ygl3x"
+          disabled={false}
+          id="accordion-button-2"
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="button"
+        >
+          <div
+            className="css-1eziwv"
+          >
+            Section 2 title
+          </div>
+          <svg
+            aria-hidden={true}
+            className="chakra-icon chakra-accordion__icon css-186l2rg"
+            focusable={false}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </h2>
+      <div
+        className="chakra-collapse"
+        style={
+          Object {
+            "display": "none",
+            "height": "0px",
+            "opacity": 0,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          aria-labelledby="accordion-button-2"
+          className="chakra-accordion__panel css-1hb5ode"
+          id="accordion-panel-2"
+          role="region"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

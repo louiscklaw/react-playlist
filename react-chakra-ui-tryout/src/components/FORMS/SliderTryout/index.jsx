@@ -9,7 +9,7 @@ import {
 
 import { MdGraphicEq } from 'react-icons/md';
 
-function Usage() {
+export function Usage() {
   return (
     <>
       <Slider aria-label="slider-ex-1" defaultValue={30}>
@@ -21,7 +21,7 @@ function Usage() {
     </>
   );
 }
-function ChangingTheSliderColorScheme() {
+export function ChangingTheSliderColorScheme() {
   return (
     <>
       <Slider aria-label="slider-ex-2" colorScheme="pink" defaultValue={30}>
@@ -33,7 +33,7 @@ function ChangingTheSliderColorScheme() {
     </>
   );
 }
-function ChangingTheSliderOrientation() {
+export function ChangingTheSliderOrientation() {
   return (
     <>
       <Slider
@@ -49,7 +49,7 @@ function ChangingTheSliderOrientation() {
     </>
   );
 }
-function CustomizingTheSlider() {
+export function CustomizingTheSlider() {
   return (
     <>
       <Slider aria-label="slider-ex-4" defaultValue={30}>
@@ -63,7 +63,7 @@ function CustomizingTheSlider() {
     </>
   );
 }
-function DiscreteSliders() {
+export function DiscreteSliders() {
   return (
     <>
       <Slider defaultValue={60} min={0} max={300} step={30}>
@@ -76,7 +76,7 @@ function DiscreteSliders() {
     </>
   );
 }
-function GettingTheFinalValueWhenDraggingTheSlider() {
+export function GettingTheFinalValueWhenDraggingTheSlider() {
   return (
     <>
       <Slider aria-label="slider-ex-5" onChangeEnd={(val) => console.log(val)}>
@@ -88,7 +88,7 @@ function GettingTheFinalValueWhenDraggingTheSlider() {
     </>
   );
 }
-function ConfigureThumbFocusWithFocusThumbOnChange() {
+export function ConfigureThumbFocusWithFocusThumbOnChange() {
   let [value, setValue] = React.useState(1);
   return (
     <>
@@ -101,43 +101,43 @@ function ConfigureThumbFocusWithFocusThumbOnChange() {
     </>
   );
 }
-function TestHelloworld08() {
+export function TestHelloworld08() {
   return <>TestHelloworld08</>;
 }
-function TestHelloworld09() {
+export function TestHelloworld09() {
   return <>TestHelloworld09</>;
 }
-function TestHelloworld10() {
+export function TestHelloworld10() {
   return <>TestHelloworld10</>;
 }
-function TestHelloworld11() {
+export function TestHelloworld11() {
   return <>TestHelloworld11</>;
 }
-function TestHelloworld12() {
+export function TestHelloworld12() {
   return <>TestHelloworld12</>;
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

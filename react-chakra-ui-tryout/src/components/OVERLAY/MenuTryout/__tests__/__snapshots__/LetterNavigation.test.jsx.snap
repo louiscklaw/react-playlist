@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LetterNavigation tryout helloworld 1`] = `
+Array [
+  <button
+    aria-controls="menu-list-2"
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="chakra-menu__menu-button css-az9q02"
+    id="menu-button-2"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-xl71ch"
+    >
+      File 
+      <svg
+        className="chakra-icon css-onkibi"
+        focusable={false}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
+  </button>,
+  <div
+    className="css-r6z5ec"
+    style={
+      Object {
+        "inset": "0 auto auto 0",
+        "minWidth": "max-content",
+        "position": "absolute",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      aria-orientation="vertical"
+      className="chakra-menu__menu-list css-1ozmk1d"
+      id="menu-list-2"
+      onKeyDown={[Function]}
+      role="menu"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "scale(0.8) translateZ(0)",
+          "transformOrigin": "var(--popper-transform-origin)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex={-1}
+    >
+      <button
+        className="chakra-menu__menuitem css-13c7rae"
+        id="menu-list-2-menuitem-3"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+        tabIndex={0}
+        type="button"
+      >
+        New File
+      </button>
+      <button
+        className="chakra-menu__menuitem css-13c7rae"
+        id="menu-list-2-menuitem-4"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+        tabIndex={0}
+        type="button"
+      >
+        New Window
+      </button>
+      <hr
+        aria-orientation="horizontal"
+        className="chakra-menu__divider css-vfkdr8"
+        role="separator"
+      />
+      <button
+        className="chakra-menu__menuitem css-13c7rae"
+        id="menu-list-2-menuitem-5"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+        tabIndex={0}
+        type="button"
+      >
+        Open...
+      </button>
+      <button
+        className="chakra-menu__menuitem css-13c7rae"
+        id="menu-list-2-menuitem-6"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+        tabIndex={0}
+        type="button"
+      >
+        Save File
+      </button>
+    </div>
+  </div>,
+  <span />,
+]
+`;

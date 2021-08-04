@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SliderTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    SliderTryout
+    <div>
+      Usage 
+      <div
+        className="chakra-slider css-17m87zz"
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "outline": 0,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "position": "relative",
+            "touchAction": "none",
+            "userSelect": "none",
+          }
+        }
+        tabIndex={-1}
+      >
+        <div
+          className="chakra-slider__track css-1jsne3t"
+          id="slider-track-1"
+          style={
+            Object {
+              "position": "absolute",
+              "top": "50%",
+              "transform": "translateY(-50%)",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="chakra-slider__filled-track css-us0ay6"
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "30%",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-label="slider-ex-1"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={30}
+          className="chakra-slider__thumb css-1sth7vg"
+          id="slider-thumb-1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="slider"
+          style={
+            Object {
+              "MozUserSelect": "none",
+              "WebkitUserSelect": "none",
+              "left": "calc(30% - 0px)",
+              "msUserSelect": "none",
+              "position": "absolute",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={0}
+        />
+        <input
+          type="hidden"
+          value={30}
+        />
+      </div>
+    </div>
+    <div>
+      ChangingTheSliderColorScheme 
+      <div
+        className="chakra-slider css-17m87zz"
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "outline": 0,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "position": "relative",
+            "touchAction": "none",
+            "userSelect": "none",
+          }
+        }
+        tabIndex={-1}
+      >
+        <div
+          className="chakra-slider__track css-1jsne3t"
+          id="slider-track-2"
+          style={
+            Object {
+              "position": "absolute",
+              "top": "50%",
+              "transform": "translateY(-50%)",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="chakra-slider__filled-track css-10jwwt3"
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "30%",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-label="slider-ex-2"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={30}
+          className="chakra-slider__thumb css-1sth7vg"
+          id="slider-thumb-2"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="slider"
+          style={
+            Object {
+              "MozUserSelect": "none",
+              "WebkitUserSelect": "none",
+              "left": "calc(30% - 0px)",
+              "msUserSelect": "none",
+              "position": "absolute",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={0}
+        />
+        <input
+          type="hidden"
+          value={30}
+        />
+      </div>
+    </div>
+    <div>
+      ChangingTheSliderOrientation 
+      <div
+        className="chakra-slider css-10kupoh"
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "outline": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "position": "relative",
+            "touchAction": "none",
+            "userSelect": "none",
+          }
+        }
+        tabIndex={-1}
+      >
+        <div
+          className="chakra-slider__track css-cnejs9"
+          id="slider-track-3"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "position": "absolute",
+              "transform": "translateX(-50%)",
+            }
+          }
+        >
+          <div
+            className="chakra-slider__filled-track css-us0ay6"
+            style={
+              Object {
+                "bottom": 0,
+                "height": "30%",
+                "left": "50%",
+                "position": "absolute",
+                "transform": "translateX(-50%)",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-label="slider-ex-3"
+          aria-orientation="vertical"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={30}
+          className="chakra-slider__thumb css-16rghvv"
+          id="slider-thumb-3"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="slider"
+          style={
+            Object {
+              "MozUserSelect": "none",
+              "WebkitUserSelect": "none",
+              "bottom": "calc(30% - 0px)",
+              "msUserSelect": "none",
+              "position": "absolute",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={0}
+        />
+        <input
+          type="hidden"
+          value={30}
+        />
+      </div>
+    </div>
+    <div>
+      CustomizingTheSlider 
+      <div
+        className="chakra-slider css-17m87zz"
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "outline": 0,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "position": "relative",
+            "touchAction": "none",
+            "userSelect": "none",
+          }
+        }
+        tabIndex={-1}
+      >
+        <div
+          className="chakra-slider__track css-1wqen40"
+          id="slider-track-4"
+          style={
+            Object {
+              "position": "absolute",
+              "top": "50%",
+              "transform": "translateY(-50%)",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="chakra-slider__filled-track css-lbpcfc"
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "30%",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-label="slider-ex-4"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={30}
+          className="chakra-slider__thumb css-x2kc4e"
+          id="slider-thumb-4"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="slider"
+          style={
+            Object {
+              "MozUserSelect": "none",
+              "WebkitUserSelect": "none",
+              "left": "calc(30% - 0px)",
+              "msUserSelect": "none",
+              "position": "absolute",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={0}
+        >
+          <svg
+            className="css-tq928n"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 18h2V6H7v12zm4 4h2V2h-2v20zm-8-8h2v-4H3v4zm12 4h2V6h-2v12zm4-8v4h2v-4h-2z"
+            />
+          </svg>
+        </div>
+        <input
+          type="hidden"
+          value={30}
+        />
+      </div>
+    </div>
+    <div>
+      DiscreteSliders 
+      <div
+        className="chakra-slider css-17m87zz"
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "outline": 0,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "position": "relative",
+            "touchAction": "none",
+            "userSelect": "none",
+          }
+        }
+        tabIndex={-1}
+      >
+        <div
+          className="chakra-slider__track css-1wqen40"
+          id="slider-track-5"
+          style={
+            Object {
+              "position": "absolute",
+              "top": "50%",
+              "transform": "translateY(-50%)",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="css-11z5obk"
+          />
+          <div
+            className="chakra-slider__filled-track css-lbpcfc"
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "20%",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-orientation="horizontal"
+          aria-valuemax={300}
+          aria-valuemin={0}
+          aria-valuenow={60}
+          className="chakra-slider__thumb css-x2kc4e"
+          id="slider-thumb-5"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="slider"
+          style={
+            Object {
+              "MozUserSelect": "none",
+              "WebkitUserSelect": "none",
+              "left": "calc(20% - 0px)",
+              "msUserSelect": "none",
+              "position": "absolute",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={0}
+        />
+        <input
+          type="hidden"
+          value={60}
+        />
+      </div>
+    </div>
+    <div>
+      GettingTheFinalValueWhenDraggingTheSlider
+       
+      <div
+        className="chakra-slider css-17m87zz"
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "outline": 0,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "position": "relative",
+            "touchAction": "none",
+            "userSelect": "none",
+          }
+        }
+        tabIndex={-1}
+      >
+        <div
+          className="chakra-slider__track css-1jsne3t"
+          id="slider-track-6"
+          style={
+            Object {
+              "position": "absolute",
+              "top": "50%",
+              "transform": "translateY(-50%)",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="chakra-slider__filled-track css-us0ay6"
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "50%",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-label="slider-ex-5"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={50}
+          className="chakra-slider__thumb css-1sth7vg"
+          id="slider-thumb-6"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="slider"
+          style={
+            Object {
+              "MozUserSelect": "none",
+              "WebkitUserSelect": "none",
+              "left": "calc(50% - 0px)",
+              "msUserSelect": "none",
+              "position": "absolute",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={0}
+        />
+        <input
+          type="hidden"
+          value={50}
+        />
+      </div>
+    </div>
+    <div>
+      ConfigureThumbFocusWithFocusThumbOnChange
+       
+      <div
+        className="chakra-slider css-17m87zz"
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "outline": 0,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "position": "relative",
+            "touchAction": "none",
+            "userSelect": "none",
+          }
+        }
+        tabIndex={-1}
+      >
+        <div
+          className="chakra-slider__track css-1jsne3t"
+          id="slider-track-7"
+          style={
+            Object {
+              "position": "absolute",
+              "top": "50%",
+              "transform": "translateY(-50%)",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="chakra-slider__filled-track css-us0ay6"
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "1%",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-label="slider-ex-5"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={1}
+          className="chakra-slider__thumb css-1sth7vg"
+          id="slider-thumb-7"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          role="slider"
+          style={
+            Object {
+              "MozUserSelect": "none",
+              "WebkitUserSelect": "none",
+              "left": "calc(1% - 0px)",
+              "msUserSelect": "none",
+              "position": "absolute",
+              "touchAction": "none",
+              "userSelect": "none",
+            }
+          }
+          tabIndex={0}
+        />
+        <input
+          type="hidden"
+          value={1}
+        />
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

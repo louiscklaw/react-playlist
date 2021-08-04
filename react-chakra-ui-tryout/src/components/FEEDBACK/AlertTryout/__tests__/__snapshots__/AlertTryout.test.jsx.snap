@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test AlertTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    AlertTryout
+    <div>
+      Usage 
+      <div
+        className="chakra-alert css-w5gexa"
+        role="alert"
+      >
+        <span
+          className="chakra-alert__icon css-vjdx0l"
+        >
+          <svg
+            className="chakra-icon css-fi0ww0"
+            focusable={false}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div
+          className="chakra-alert__title css-56f15j"
+        >
+          Your browser is outdated!
+        </div>
+        <div
+          className="chakra-alert__desc css-zzks76"
+        >
+          Your Chakra experience may be degraded.
+        </div>
+        <button
+          aria-label="Close"
+          className="css-1ixwzs"
+          type="button"
+        >
+          <svg
+            aria-hidden={true}
+            className="chakra-icon css-onkibi"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div>
+      Status 
+      <div
+        className="chakra-stack css-gsc7pt"
+      >
+        <div
+          className="chakra-alert css-w5gexa"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-vjdx0l"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          There was an error processing your request
+        </div>
+        <div
+          className="chakra-alert css-d2zjbc"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-1n241mh"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          Data uploaded to the server. Fire on!
+        </div>
+        <div
+          className="chakra-alert css-1fqctm6"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-15539z7"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          Seems your account is about expire, upgrade now
+        </div>
+        <div
+          className="chakra-alert css-1adt752"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-n0gcl4"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm.25,5a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,12.25,5ZM14.5,18.5h-4a1,1,0,0,1,0-2h.75a.25.25,0,0,0,.25-.25v-4.5a.25.25,0,0,0-.25-.25H10.5a1,1,0,0,1,0-2h1a2,2,0,0,1,2,2v4.75a.25.25,0,0,0,.25.25h.75a1,1,0,1,1,0,2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          Chakra is going live on August 30th. Get ready!
+        </div>
+      </div>
+    </div>
+    <div>
+      Variant 
+      <div
+        className="chakra-stack css-gsc7pt"
+      >
+        <div
+          className="chakra-alert css-d2zjbc"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-1n241mh"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          Data uploaded to the server. Fire on!
+        </div>
+        <div
+          className="chakra-alert css-4pucqo"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-4hbvqh"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          Data uploaded to the server. Fire on!
+        </div>
+        <div
+          className="chakra-alert css-f5xeo3"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-1n241mh"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          Data uploaded to the server. Fire on!
+        </div>
+        <div
+          className="chakra-alert css-1ekpam9"
+          role="alert"
+        >
+          <span
+            className="chakra-alert__icon css-1n241mh"
+          >
+            <svg
+              className="chakra-icon css-fi0ww0"
+              focusable={false}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          Data uploaded to the server. Fire on!
+        </div>
+      </div>
+    </div>
+    <div>
+      Composition 
+      <div
+        className="chakra-alert css-1wezyrt"
+        role="alert"
+      >
+        <span
+          className="chakra-alert__icon css-roekqd"
+        >
+          <svg
+            className="chakra-icon css-fi0ww0"
+            focusable={false}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div
+          className="chakra-alert__title css-1vkxl5k"
+        >
+          Application submitted!
+        </div>
+        <div
+          className="chakra-alert__desc css-1oa6yzk"
+        >
+          Thanks for submitting your application. Our team will get back to you soon.
+        </div>
+      </div>
+    </div>
+    <div>
+      Alert1 
+      <div
+        className="chakra-alert css-d2zjbc"
+        role="alert"
+      >
+        <span
+          className="chakra-alert__icon css-1n241mh"
+        >
+          <svg
+            className="chakra-icon css-fi0ww0"
+            focusable={false}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div
+          className="css-1rr4qq7"
+        >
+          <div
+            className="chakra-alert__title css-tidvy5"
+          >
+            Success!
+          </div>
+          <div
+            className="chakra-alert__desc css-zycdy9"
+          >
+            Your application has been received. We will review your application and respond within the next 48 hours.
+          </div>
+        </div>
+        <button
+          aria-label="Close"
+          className="css-1ixwzs"
+          type="button"
+        >
+          <svg
+            aria-hidden={true}
+            className="chakra-icon css-onkibi"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { CircularProgressTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test CircularProgressTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<CircularProgressTryout />).toJSON();
     expect(tree).toMatchSnapshot();

@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test CircularProgressTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    CircularProgressTryout
+    <div>
+      Usage 
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={80}
+        className="chakra-progress css-120wkjd"
+        role="progressbar"
+      >
+        <svg
+          className="css-kn46u7"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            className="chakra-progress__track css-ol3i12"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeWidth="10px"
+          />
+          <circle
+            className="chakra-progress__indicator css-hvagwd"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeDasharray="211.20000000000002 52.79999999999998"
+            strokeDashoffset={66}
+            strokeWidth="10px"
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      ChangingTheSize 
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={30}
+        className="chakra-progress css-2sdpfm"
+        role="progressbar"
+      >
+        <svg
+          className="css-14uf48"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            className="chakra-progress__track css-ol3i12"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeWidth="10px"
+          />
+          <circle
+            className="chakra-progress__indicator css-hvagwd"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeDasharray="79.2 184.8"
+            strokeDashoffset={66}
+            strokeWidth="10px"
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      ChangingTheThickness 
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={59}
+        className="chakra-progress css-lui11p"
+        role="progressbar"
+      >
+        <svg
+          className="css-1mf35eq"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            className="chakra-progress__track css-ol3i12"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeWidth="4px"
+          />
+          <circle
+            className="chakra-progress__indicator css-hvagwd"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeDasharray="155.76000000000002 108.23999999999998"
+            strokeDashoffset={66}
+            strokeWidth="4px"
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      ChangingTheColor 
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={30}
+        className="chakra-progress css-120wkjd"
+        role="progressbar"
+      >
+        <svg
+          className="css-kn46u7"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            className="chakra-progress__track css-ol3i12"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeWidth="12px"
+          />
+          <circle
+            className="chakra-progress__indicator css-lpcv5r"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeDasharray="79.2 184.8"
+            strokeDashoffset={66}
+            strokeWidth="12px"
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      AddingLabel 
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={40}
+        className="chakra-progress css-120wkjd"
+        role="progressbar"
+      >
+        <svg
+          className="css-kn46u7"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            className="chakra-progress__track css-ol3i12"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeWidth="10px"
+          />
+          <circle
+            className="chakra-progress__indicator css-clwkh4"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeDasharray="105.60000000000001 158.39999999999998"
+            strokeDashoffset={66}
+            strokeWidth="10px"
+          />
+        </svg>
+        <div
+          className="css-f1j64i"
+        >
+          40%
+        </div>
+      </div>
+    </div>
+    <div>
+      IndeterminateProgress 
+      <div
+        aria-valuemax={100}
+        aria-valuemin={0}
+        className="chakra-progress css-120wkjd"
+        data-indeterminate=""
+        role="progressbar"
+      >
+        <svg
+          className="css-jf70f3"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            className="chakra-progress__track css-ol3i12"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeWidth="10px"
+          />
+          <circle
+            className="chakra-progress__indicator css-1o7wxoj"
+            cx={50}
+            cy={50}
+            r={42}
+            strokeWidth="10px"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

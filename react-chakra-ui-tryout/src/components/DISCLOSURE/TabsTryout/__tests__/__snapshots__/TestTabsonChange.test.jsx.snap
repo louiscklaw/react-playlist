@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TestTabsonChange tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-tabs css-11bj680"
+  >
+    <div
+      aria-orientation="horizontal"
+      className="chakra-tabs__tablist css-1xhq01z"
+      onKeyDown={[Function]}
+      role="tablist"
+    >
+      <button
+        aria-controls="tabs-1--tabpanel--1"
+        aria-selected={false}
+        className="chakra-tabs__tab css-1ltezim"
+        id="tabs-1--tab--1"
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Red
+      </button>
+      <button
+        aria-controls="tabs-1--tabpanel--1"
+        aria-selected={false}
+        className="chakra-tabs__tab css-1ltezim"
+        id="tabs-1--tab--1"
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Teal
+      </button>
+      <button
+        aria-controls="tabs-1--tabpanel--1"
+        aria-selected={false}
+        className="chakra-tabs__tab css-1ltezim"
+        id="tabs-1--tab--1"
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Blue
+      </button>
+    </div>
+    <div
+      className="chakra-tabs__tab-panels css-557sov"
+    >
+      <div
+        aria-labelledby="tabs-1--tab-0"
+        className="chakra-tabs__tab-panel css-a5mhaz"
+        hidden={false}
+        id="tabs-1--tabpanel-0"
+        role="tabpanel"
+        tabIndex={0}
+      >
+        The Primary Colors
+      </div>
+      <div
+        aria-labelledby="tabs-1--tab-1"
+        className="chakra-tabs__tab-panel css-a5mhaz"
+        hidden={true}
+        id="tabs-1--tabpanel-1"
+        role="tabpanel"
+        tabIndex={0}
+      >
+        Are 1, 2, 3
+      </div>
+      <div
+        aria-labelledby="tabs-1--tab-2"
+        className="chakra-tabs__tab-panel css-a5mhaz"
+        hidden={true}
+        id="tabs-1--tabpanel-2"
+        role="tabpanel"
+        tabIndex={0}
+      >
+        Red, yellow and blue.
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

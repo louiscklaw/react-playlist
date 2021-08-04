@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ImageWithBorderRadius tryout helloworld 1`] = `
+Array [
+  <img
+    alt="Segun Adebayo"
+    className="chakra-image__placeholder css-1djemb4"
+  />,
+  <span />,
+]
+`;

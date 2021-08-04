@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test JustAnotherExample tryout helloworld 1`] = `
+Array [
+  <button
+    aria-controls="menu-list-2"
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="chakra-button chakra-menu__menu-button css-taj3dd"
+    id="menu-button-2"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    type="button"
+  >
+    <span
+      className="css-xl71ch"
+    >
+      Your Cats
+    </span>
+    <span
+      className="chakra-button__icon css-1hzyiq5"
+    >
+      <svg
+        aria-hidden={true}
+        className="chakra-icon css-onkibi"
+        focusable={false}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
+  </button>,
+  <div
+    className="css-r6z5ec"
+    style={
+      Object {
+        "inset": "0 auto auto 0",
+        "minWidth": "max-content",
+        "position": "absolute",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      aria-orientation="vertical"
+      className="chakra-menu__menu-list css-1ozmk1d"
+      id="menu-list-2"
+      onKeyDown={[Function]}
+      role="menu"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "scale(0.8) translateZ(0)",
+          "transformOrigin": "var(--popper-transform-origin)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex={-1}
+    >
+      <button
+        className="chakra-menu__menuitem css-e5ke40"
+        id="menu-list-2-menuitem-3"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+        tabIndex={0}
+        type="button"
+      >
+        <img
+          alt="Fluffybuns the destroyer"
+          className="chakra-image__placeholder css-cmmiq2"
+        />
+        <span>
+          Fluffybuns the Destroyer
+        </span>
+      </button>
+      <button
+        className="chakra-menu__menuitem css-1e1hdn9"
+        id="menu-list-2-menuitem-4"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+        tabIndex={0}
+        type="button"
+      >
+        <img
+          alt="Simon the pensive"
+          className="chakra-image__placeholder css-cmmiq2"
+        />
+        <span>
+          Simon the pensive
+        </span>
+      </button>
+    </div>
+  </div>,
+  <span />,
+]
+`;

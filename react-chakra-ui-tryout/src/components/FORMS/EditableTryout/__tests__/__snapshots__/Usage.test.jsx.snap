@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  "Usage",
+  <div
+    className="chakra-editable css-0"
+  >
+    <span
+      className="chakra-editable__preview css-1fhyjwj"
+      hidden={false}
+      onFocus={[Function]}
+      tabIndex={0}
+    >
+      Take some chakra
+    </span>
+    <input
+      className="chakra-editable__input css-xq7e64"
+      hidden={true}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      value="Take some chakra"
+    />
+  </div>,
+  <span />,
+]
+`;

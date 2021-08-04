@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { StatTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test StatTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<StatTryout />).toJSON();
     expect(tree).toMatchSnapshot();

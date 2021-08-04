@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { EditableTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test EditableTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<EditableTryout />).toJSON();
     expect(tree).toMatchSnapshot();

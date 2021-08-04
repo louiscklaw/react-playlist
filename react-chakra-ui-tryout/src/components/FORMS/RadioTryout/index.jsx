@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { Radio, RadioGroup, useRadio } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   const [value, setValue] = React.useState('1');
   return (
     <RadioGroup onChange={setValue} value={value}>
@@ -24,7 +24,7 @@ function Usage() {
     </RadioGroup>
   );
 }
-function RadioWithCustomColor() {
+export function RadioWithCustomColor() {
   return (
     <>
       <RadioGroup defaultValue="2">
@@ -40,7 +40,7 @@ function RadioWithCustomColor() {
     </>
   );
 }
-function RadioSizes() {
+export function RadioSizes() {
   return (
     <>
       <Stack>
@@ -57,7 +57,7 @@ function RadioSizes() {
     </>
   );
 }
-function DisabledRadios() {
+export function DisabledRadios() {
   return (
     <>
       <RadioGroup defaultValue="1">
@@ -72,7 +72,7 @@ function DisabledRadios() {
     </>
   );
 }
-function HorizontalAlignment() {
+export function HorizontalAlignment() {
   return (
     <>
       <RadioGroup defaultValue="1">
@@ -87,14 +87,14 @@ function HorizontalAlignment() {
     </>
   );
 }
-function InvalidRadio() {
+export function InvalidRadio() {
   return (
     <>
       <Radio isInvalid>Radio</Radio>
     </>
   );
 }
-function CustomRadioButtons() {
+export function CustomRadioButtons() {
   function RadioCard(props) {
     const { getInputProps, getCheckboxProps } = useRadio(props);
 
@@ -150,43 +150,43 @@ function CustomRadioButtons() {
   );
 }
 
-function TestHelloworld08() {
+export function TestHelloworld08() {
   return <>TestHelloworld08</>;
 }
-function TestHelloworld09() {
+export function TestHelloworld09() {
   return <>TestHelloworld09</>;
 }
-function TestHelloworld10() {
+export function TestHelloworld10() {
   return <>TestHelloworld10</>;
 }
-function TestHelloworld11() {
+export function TestHelloworld11() {
   return <>TestHelloworld11</>;
 }
-function TestHelloworld12() {
+export function TestHelloworld12() {
   return <>TestHelloworld12</>;
 }
-function TestHelloworld13() {
+export function TestHelloworld13() {
   return <>TestHelloworld13</>;
 }
-function TestHelloworld14() {
+export function TestHelloworld14() {
   return <>TestHelloworld14</>;
 }
-function TestHelloworld15() {
+export function TestHelloworld15() {
   return <>TestHelloworld15</>;
 }
-function TestHelloworld16() {
+export function TestHelloworld16() {
   return <>TestHelloworld16</>;
 }
-function TestHelloworld17() {
+export function TestHelloworld17() {
   return <>TestHelloworld17</>;
 }
-function TestHelloworld18() {
+export function TestHelloworld18() {
   return <>TestHelloworld18</>;
 }
-function TestHelloworld19() {
+export function TestHelloworld19() {
   return <>TestHelloworld19</>;
 }
-function TestHelloworld20() {
+export function TestHelloworld20() {
   return <>TestHelloworld20</>;
 }
 

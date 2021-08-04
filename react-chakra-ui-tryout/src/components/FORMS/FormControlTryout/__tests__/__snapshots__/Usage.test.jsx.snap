@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-form-control css-1kxonj9"
+    role="group"
+  >
+    <label
+      className="chakra-form__label css-2gx1h6"
+      htmlFor="email"
+      id="email-label"
+    >
+      Email address
+    </label>
+    <input
+      className="chakra-input css-1c6j008"
+      disabled={false}
+      id="email"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      required={false}
+      type="email"
+    />
+    <div
+      className="chakra-form__helper-text css-1y1zyf5"
+      id="email-helptext"
+    >
+      We'll never share your email.
+    </div>
+  </div>,
+  <span />,
+]
+`;

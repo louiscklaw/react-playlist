@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test InvalidCheckbox tryout helloworld 1`] = `
+Array [
+  <label
+    className="chakra-checkbox css-1uiwwan"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={true}
+      checked={false}
+      className="chakra-checkbox__input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      style={
+        Object {
+          "border": "0px",
+          "clip": "rect(0px, 0px, 0px, 0px)",
+          "height": "1px",
+          "margin": "-1px",
+          "overflow": "hidden",
+          "padding": "0px",
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": "1px",
+        }
+      }
+      type="checkbox"
+    />
+    <span
+      aria-hidden={true}
+      className="chakra-checkbox__control css-xxkadm"
+      data-invalid=""
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+    />
+    <span
+      className="chakra-checkbox__label css-1sgc0qu"
+      data-invalid=""
+      onMouseDown={[Function]}
+      onTouchStart={[Function]}
+    >
+      Checkbox
+    </span>
+  </label>,
+  <span />,
+]
+`;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test PortalTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    PortalTryout
+    <div>
+      Usage 
+       
+      <div
+        className="css-8v5jrc"
+      >
+        I'm here,
+        <span />
+      </div>
+    </div>
+    <div>
+      UsingACustomContainer 
+      <div
+        className="css-8v5jrc"
+      >
+        I'm here,
+        <div
+          className="css-bo28g4"
+        >
+          <div>
+            Container: Hey,
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      NestingPortals 
+      <div>
+        <div
+          className="css-8v5jrc"
+        />
+      </div>
+    </div>
+    <div>
+      OptingOutOfPortalNesting 
+      <div>
+        <div
+          style={
+            Object {
+              "background": "red",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

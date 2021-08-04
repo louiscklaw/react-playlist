@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Usage tryout helloworld 1`] = `
+Array [
+  <span>
+    <kbd
+      className="chakra-kbd css-b5a7vm"
+    >
+      shift
+    </kbd>
+     + 
+    <kbd
+      className="chakra-kbd css-b5a7vm"
+    >
+      H
+    </kbd>
+  </span>,
+  <span />,
+]
+`;

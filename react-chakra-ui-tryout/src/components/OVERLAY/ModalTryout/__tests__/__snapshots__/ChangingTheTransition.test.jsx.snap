@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheTransition tryout helloworld 1`] = `
+Array [
+  <button
+    className="chakra-button css-taj3dd"
+    onClick={[Function]}
+    type="button"
+  >
+    Open Modal
+  </button>,
+  <span />,
+]
+`;

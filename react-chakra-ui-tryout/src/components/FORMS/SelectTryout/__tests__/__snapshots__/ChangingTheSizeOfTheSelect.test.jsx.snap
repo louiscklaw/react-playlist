@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ChangingTheSizeOfTheSelect tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-gsc7pt"
+  >
+    <div
+      className="chakra-select__wrapper css-42b2qy"
+    >
+      <select
+        className="chakra-select css-8cd0eu"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <option
+          value=""
+        >
+          extra small size
+        </option>
+      </select>
+      <div
+        className="chakra-select__icon-wrapper css-3tm5pe"
+      >
+        <svg
+          aria-hidden={true}
+          className="chakra-select__icon"
+          focusable={false}
+          role="presentation"
+          style={
+            Object {
+              "color": "currentColor",
+              "height": "1em",
+              "width": "1em",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="chakra-select__wrapper css-42b2qy"
+    >
+      <select
+        className="chakra-select css-1h64gvi"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <option
+          value=""
+        >
+          small size
+        </option>
+      </select>
+      <div
+        className="chakra-select__icon-wrapper css-zj2dqk"
+      >
+        <svg
+          aria-hidden={true}
+          className="chakra-select__icon"
+          focusable={false}
+          role="presentation"
+          style={
+            Object {
+              "color": "currentColor",
+              "height": "1em",
+              "width": "1em",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="chakra-select__wrapper css-42b2qy"
+    >
+      <select
+        className="chakra-select css-173b75c"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <option
+          value=""
+        >
+          medium size
+        </option>
+      </select>
+      <div
+        className="chakra-select__icon-wrapper css-zj2dqk"
+      >
+        <svg
+          aria-hidden={true}
+          className="chakra-select__icon"
+          focusable={false}
+          role="presentation"
+          style={
+            Object {
+              "color": "currentColor",
+              "height": "1em",
+              "width": "1em",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="chakra-select__wrapper css-42b2qy"
+    >
+      <select
+        className="chakra-select css-4kr5x4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <option
+          value=""
+        >
+          large size
+        </option>
+      </select>
+      <div
+        className="chakra-select__icon-wrapper css-zj2dqk"
+      >
+        <svg
+          aria-hidden={true}
+          className="chakra-select__icon"
+          focusable={false}
+          role="presentation"
+          style={
+            Object {
+              "color": "currentColor",
+              "height": "1em",
+              "width": "1em",
+            }
+          }
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

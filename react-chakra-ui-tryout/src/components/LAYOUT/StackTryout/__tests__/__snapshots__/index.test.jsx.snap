@@ -1,119 +1,128 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test StackTryout tryout helloworld 1`] = `
 <div>
-  BadgeTryout
+  StackTryout
   <div>
-    Usage 
-    <span
-      className="chakra-badge css-ifsvay"
-    >
-      Default
-    </span>
-  </div>
-  <div>
-    BadgeColor 
     <div
-      className="chakra-stack css-x9juev"
+      className="chakra-stack css-1y5q8ss"
     >
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Default
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Success
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Removed
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        New
-      </span>
-    </div>
-  </div>
-  <div>
-    BadgeVariants 
-    <div
-      className="chakra-stack css-x9juev"
-    >
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Default
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Success
-      </span>
-      <span
-        className="chakra-badge css-ifsvay"
-      >
-        Removed
-      </span>
-    </div>
-  </div>
-  <div>
-    Composition 
-    <div
-      className="css-k008qs"
-    >
-      <span
-        className="chakra-avatar css-1ruhx4w"
-      >
-        <svg
-          aria-label=" avatar"
-          className="chakra-avatar__svg css-16ite8i"
-          role="img"
-          viewBox="0 0 128 128"
-        >
-          <path
-            d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
-            fill="currentColor"
-          />
-          <path
-            d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
-            fill="currentColor"
-          />
-        </svg>
-      </span>
       <div
-        className="css-9n3bbc"
+        className="css-1fi7ndm"
       >
-        <p
-          className="chakra-text css-in3yi3"
+        1
+      </div>
+      <div
+        className="css-heh9fa"
+      >
+        2
+      </div>
+      <div
+        className="css-13xgoat"
+      >
+        3
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="chakra-stack css-gw7h1"
+    >
+      <div
+        className="css-1fi7ndm"
+      >
+        1
+      </div>
+      <div
+        className="css-heh9fa"
+      >
+        2
+      </div>
+      <div
+        className="css-13xgoat"
+      >
+        3
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="chakra-stack css-zsoya5"
+    >
+      <div
+        className="css-it9pqr"
+      >
+        1
+      </div>
+      <div
+        className="chakra-stack__divider css-jutndq"
+      />
+      <div
+        className="css-pfat6z"
+      >
+        2
+      </div>
+      <div
+        className="chakra-stack__divider css-jutndq"
+      />
+      <div
+        className="css-1v1y8x1"
+      >
+        3
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="chakra-stack css-1clhiew"
+    >
+      <div
+        className="css-1hmx26h"
+      >
+        <h2
+          className="chakra-heading css-6dvxm2"
         >
-          Segun Adebayo
-          <span
-            className="chakra-badge css-8jwegb"
-          >
-            New
-          </span>
+          Plan Money
+        </h2>
+        <p
+          className="chakra-text css-1fhgjcy"
+        >
+          The future can be even brighter but a goal without a plan is just a wish
         </p>
-        <p
-          className="chakra-text css-g5hezf"
+      </div>
+      <div
+        className="css-1hmx26h"
+      >
+        <h2
+          className="chakra-heading css-6dvxm2"
         >
-          UI Engineer
+          Save Money
+        </h2>
+        <p
+          className="chakra-text css-1fhgjcy"
+        >
+          You deserve good things. With a whooping 10-15% interest rate per annum, grow your savings on your own terms with our completely automated process
         </p>
       </div>
     </div>
-    <p
-      className="chakra-text css-17nnq38"
-    >
-      Segun Adebayo
-      <span
-        className="chakra-badge css-1yz77up"
-      >
-        New
-      </span>
-    </p>
+  </div>
+  <div>
+     
+  </div>
+  <div>
+     
+  </div>
+  <div>
+     
+  </div>
+  <div>
+     
+  </div>
+  <div>
+     
+  </div>
+  <div>
+     
   </div>
 </div>
 `;

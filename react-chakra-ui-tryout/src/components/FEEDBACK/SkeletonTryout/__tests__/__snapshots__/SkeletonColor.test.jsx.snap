@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SkeletonColor tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-skeleton css-y0i0gl"
+  />,
+  <span />,
+]
+`;

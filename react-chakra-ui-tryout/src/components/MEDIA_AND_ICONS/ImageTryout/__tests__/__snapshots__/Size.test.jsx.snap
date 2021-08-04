@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Size tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-x9juev"
+  >
+    <img
+      alt="Segun Adebayo"
+      className="chakra-image__placeholder css-b471h5"
+    />
+    <img
+      alt="Dan Abramov"
+      className="chakra-image__placeholder css-82vs3h"
+    />
+    <img
+      alt="Dan Abramov"
+      className="chakra-image__placeholder css-cl5oj8"
+    />
+  </div>,
+  <span />,
+]
+`;

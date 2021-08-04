@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LeftAndRightAddons tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-stack css-egoftb"
+  >
+    <div
+      className="chakra-input__group css-4302v8"
+    >
+      <div
+        className="chakra-input__left-addon css-qfq9qr"
+      >
+        +234
+      </div>
+      <input
+        className="chakra-input css-wd5i6n"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder="phone number"
+        type="tel"
+      />
+    </div>
+    <div
+      className="chakra-input__group css-4302v8"
+    >
+      <div
+        className="chakra-input__left-addon css-1traxw7"
+        size="sm"
+      >
+        https://
+      </div>
+      <input
+        className="chakra-input css-10pejdg"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder="mysite"
+      />
+      <div
+        className="chakra-input__right-addon css-1q2zg3m"
+        size="sm"
+      >
+        .com
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;

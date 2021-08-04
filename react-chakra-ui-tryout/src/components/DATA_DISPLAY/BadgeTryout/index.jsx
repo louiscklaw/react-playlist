@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Text, Stack, Flex, Avatar } from '@chakra-ui/react';
 import { Badge } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   return (
     <>
       <Badge>Default</Badge>
@@ -10,7 +10,7 @@ function Usage() {
   );
 }
 
-function BadgeColor() {
+export function BadgeColor() {
   return (
     <>
       <Stack direction="row">
@@ -22,7 +22,7 @@ function BadgeColor() {
     </>
   );
 }
-function BadgeVariants() {
+export function BadgeVariants() {
   return (
     <>
       <Stack direction="row">
@@ -40,7 +40,7 @@ function BadgeVariants() {
   );
 }
 
-function Composition() {
+export function Composition() {
   return (
     <>
       <Flex>

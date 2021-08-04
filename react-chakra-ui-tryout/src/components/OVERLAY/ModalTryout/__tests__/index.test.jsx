@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { ModalTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test ModalTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<ModalTryout />).toJSON();
     expect(tree).toMatchSnapshot();

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ControlledInput tryout helloworld 1`] = `
+Array [
+  <p
+    className="chakra-text css-19idom"
+  >
+    Value: 
+    
+  </p>,
+  <input
+    className="chakra-input css-13gwzxu"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Here is a sample placeholder"
+    value=""
+  />,
+  <span />,
+]
+`;

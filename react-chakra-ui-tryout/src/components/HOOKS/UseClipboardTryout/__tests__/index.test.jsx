@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { UseClipboardTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test UseClipboardTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<UseClipboardTryout />).toJSON();
     expect(tree).toMatchSnapshot();

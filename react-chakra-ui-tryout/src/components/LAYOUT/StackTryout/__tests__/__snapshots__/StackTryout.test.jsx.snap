@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test StackTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    StackTryout
+    <div>
+      <div
+        className="chakra-stack css-1y5q8ss"
+      >
+        <div
+          className="css-1wktoih"
+        >
+          1
+        </div>
+        <div
+          className="css-heh9fa"
+        >
+          2
+        </div>
+        <div
+          className="css-rfo3wb"
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-evyug7"
+      >
+        <div
+          className="css-1wktoih"
+        >
+          1
+        </div>
+        <div
+          className="css-heh9fa"
+        >
+          2
+        </div>
+        <div
+          className="css-rfo3wb"
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-zsoya5"
+      >
+        <div
+          className="css-1ikisku"
+        >
+          1
+        </div>
+        <div
+          className="chakra-stack__divider css-vhtjkn"
+        />
+        <div
+          className="css-pfat6z"
+        >
+          2
+        </div>
+        <div
+          className="chakra-stack__divider css-vhtjkn"
+        />
+        <div
+          className="css-1pquccw"
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-stack css-aajx3r"
+      >
+        <div
+          className="css-112lthr"
+        >
+          <h2
+            className="chakra-heading css-pvm5ii"
+          >
+            Plan Money
+          </h2>
+          <p
+            className="chakra-text css-1ayfwcb"
+          >
+            The future can be even brighter but a goal without a plan is just a wish
+          </p>
+        </div>
+        <div
+          className="css-112lthr"
+        >
+          <h2
+            className="chakra-heading css-pvm5ii"
+          >
+            Save Money
+          </h2>
+          <p
+            className="chakra-text css-1ayfwcb"
+          >
+            You deserve good things. With a whooping 10-15% interest rate per annum, grow your savings on your own terms with our completely automated process
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

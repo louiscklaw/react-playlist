@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test AlertDialogExample tryout helloworld 1`] = `
+Array [
+  <button
+    className="chakra-button css-pu8osu"
+    onClick={[Function]}
+    type="button"
+  >
+    Delete Customer
+  </button>,
+  <span />,
+]
+`;

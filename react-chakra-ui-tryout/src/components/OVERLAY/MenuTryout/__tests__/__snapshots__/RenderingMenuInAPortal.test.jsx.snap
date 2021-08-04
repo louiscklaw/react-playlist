@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test RenderingMenuInAPortal tryout helloworld 1`] = `
+Array [
+  <div>
+    RenderingMenuInAPortal
+  </div>,
+  <button
+    aria-controls="menu-list-2"
+    aria-expanded={false}
+    aria-haspopup="menu"
+    className="chakra-menu__menu-button css-kjvu41"
+    id="menu-button-2"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-xl71ch"
+    >
+      Open menu
+    </span>
+  </button>,
+  <span />,
+  <span />,
+]
+`;

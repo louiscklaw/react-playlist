@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test badge tryout helloworld 1`] = `
+exports[`test AccordionTryout tryout helloworld 1`] = `
 <div>
   AccordionTryout
   <div>
@@ -13,11 +13,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-1"
+            aria-controls="accordion-panel-6444928817-1"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-1"
+            id="accordion-button-6444928817-1"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -53,9 +53,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-1"
+            aria-labelledby="accordion-button-6444928817-1"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-1"
+            id="accordion-panel-6444928817-1"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -67,11 +67,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-2"
+            aria-controls="accordion-panel-6444928817-2"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-2"
+            id="accordion-button-6444928817-2"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -107,9 +107,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-2"
+            aria-labelledby="accordion-button-6444928817-2"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-2"
+            id="accordion-panel-6444928817-2"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -128,11 +128,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-3"
+            aria-controls="accordion-panel-6444928817-3"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-3"
+            id="accordion-button-6444928817-3"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -168,9 +168,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-3"
+            aria-labelledby="accordion-button-6444928817-3"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-3"
+            id="accordion-panel-6444928817-3"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -182,11 +182,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-4"
+            aria-controls="accordion-panel-6444928817-4"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-4"
+            id="accordion-button-6444928817-4"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -222,9 +222,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-4"
+            aria-labelledby="accordion-button-6444928817-4"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-4"
+            id="accordion-panel-6444928817-4"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -243,11 +243,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-5"
+            aria-controls="accordion-panel-6444928817-5"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-5"
+            id="accordion-button-6444928817-5"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -283,9 +283,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-5"
+            aria-labelledby="accordion-button-6444928817-5"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-5"
+            id="accordion-panel-6444928817-5"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -297,11 +297,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-6"
+            aria-controls="accordion-panel-6444928817-6"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-6"
+            id="accordion-button-6444928817-6"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -337,9 +337,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-6"
+            aria-labelledby="accordion-button-6444928817-6"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-6"
+            id="accordion-panel-6444928817-6"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -358,11 +358,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-7"
+            aria-controls="accordion-panel-6444928817-7"
             aria-expanded={false}
             className="chakra-accordion__button css-1am6p00"
             disabled={false}
-            id="accordion-button-5962608639-7"
+            id="accordion-button-6444928817-7"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -398,9 +398,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-7"
+            aria-labelledby="accordion-button-6444928817-7"
             className="chakra-accordion__panel css-0"
-            id="accordion-panel-5962608639-7"
+            id="accordion-panel-6444928817-7"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -419,11 +419,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-8"
+            aria-controls="accordion-panel-6444928817-8"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-8"
+            id="accordion-button-6444928817-8"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -459,9 +459,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-8"
+            aria-labelledby="accordion-button-6444928817-8"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-8"
+            id="accordion-panel-6444928817-8"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -473,11 +473,11 @@ exports[`test badge tryout helloworld 1`] = `
       >
         <h2>
           <button
-            aria-controls="accordion-panel-5962608639-9"
+            aria-controls="accordion-panel-6444928817-9"
             aria-expanded={false}
             className="chakra-accordion__button css-ubg1nw"
             disabled={false}
-            id="accordion-button-5962608639-9"
+            id="accordion-button-6444928817-9"
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -512,9 +512,9 @@ exports[`test badge tryout helloworld 1`] = `
           }
         >
           <div
-            aria-labelledby="accordion-button-5962608639-9"
+            aria-labelledby="accordion-button-6444928817-9"
             className="chakra-accordion__panel css-b0qdn7"
-            id="accordion-panel-5962608639-9"
+            id="accordion-panel-6444928817-9"
             role="region"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

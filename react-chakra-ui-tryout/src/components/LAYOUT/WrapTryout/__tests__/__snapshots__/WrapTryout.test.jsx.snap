@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test WrapTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    WrapTryout
+    <div>
+      <div
+        className="chakra-wrap css-0"
+      >
+        <ul
+          className="chakra-wrap__list css-umyqv7"
+        >
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-14egjg7"
+            >
+              Box 1
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1b31nwk"
+            >
+              Box 2
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1un2hvj"
+            >
+              Box 3
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1hgcv8f"
+            >
+              Box 4
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-wrap css-0"
+      >
+        <ul
+          className="chakra-wrap__list css-ncyfy7"
+        >
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-14egjg7"
+            >
+              Box 1
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1b31nwk"
+            >
+              Box 2
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1un2hvj"
+            >
+              Box 3
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1hgcv8f"
+            >
+              Box 4
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-f44mxp"
+            >
+              Box 5
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-wrap css-0"
+      >
+        <ul
+          className="chakra-wrap__list css-6qk4wh"
+        >
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-14egjg7"
+            >
+              Box 1
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-13d0oik"
+            >
+              Box 2
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-r6rsic"
+            >
+              Box 3
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-6rawx1"
+            >
+              Box 4
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-f44mxp"
+            >
+              Box 5
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div
+        className="chakra-wrap css-0"
+      >
+        <ul
+          className="chakra-wrap__list css-krk3di"
+        >
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-14egjg7"
+            >
+              Box 1
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1b31nwk"
+            >
+              Box 2
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-r6rsic"
+            >
+              Box 3
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-1hgcv8f"
+            >
+              Box 4
+            </div>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <div
+              className="css-f44mxp"
+            >
+              Box 5
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+    <div>
+       
+    </div>
+  </div>,
+  <span />,
+]
+`;

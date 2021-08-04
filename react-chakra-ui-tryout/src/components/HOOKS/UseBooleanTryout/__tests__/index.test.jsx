@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { UseBooleanTryout } from '../';
 
-describe('test badge tryout', () => {
+describe('test UseBooleanTryout tryout', () => {
   test('helloworld', () => {
     const tree = renderer.create(<UseBooleanTryout />).toJSON();
     expect(tree).toMatchSnapshot();

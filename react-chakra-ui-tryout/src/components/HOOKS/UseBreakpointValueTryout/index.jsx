@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, VStack, Button } from '@chakra-ui/react';
 import { useBreakpointValue } from '@chakra-ui/react';
 
-function Usage() {
+export function Usage() {
   const variant = useBreakpointValue({ base: 'outline', md: 'solid' });
 
   return (

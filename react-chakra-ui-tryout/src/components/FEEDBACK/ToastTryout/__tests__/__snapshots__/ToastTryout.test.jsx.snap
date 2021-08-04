@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ToastTryout tryout helloworld 1`] = `
+Array [
+  <div>
+    ToastTryout
+    <div>
+      Usage 
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Show Toast
+      </button>
+    </div>
+    <div>
+      CustomComponent 
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Show Toast
+      </button>
+    </div>
+    <div>
+      ClosingToasts 
+      <div
+        className="chakra-stack css-wta9zy"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onClick={[Function]}
+          type="button"
+        >
+          Toast
+        </button>
+        <button
+          className="chakra-button css-exvdkj"
+          onClick={[Function]}
+          type="button"
+        >
+          Close last toast
+        </button>
+        <button
+          className="chakra-button css-exvdkj"
+          onClick={[Function]}
+          type="button"
+        >
+          Close all toasts
+        </button>
+      </div>
+    </div>
+    <div>
+      UpdatingToasts 
+      <div
+        className="chakra-stack css-wta9zy"
+      >
+        <button
+          className="chakra-button css-taj3dd"
+          onClick={[Function]}
+          type="button"
+        >
+          Toast
+        </button>
+        <button
+          className="chakra-button css-exvdkj"
+          onClick={[Function]}
+          type="button"
+        >
+          Update last toast
+        </button>
+      </div>
+    </div>
+    <div>
+      Status 
+      <div
+        className="chakra-wrap css-0"
+      >
+        <ul
+          className="chakra-wrap__list css-umyqv7"
+        >
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              success
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              error
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              warning
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              info
+               toast
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      Variants 
+      <div
+        className="chakra-wrap css-0"
+      >
+        <ul
+          className="chakra-wrap__list css-umyqv7"
+        >
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              solid
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              subtle
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              left-accent
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              top-accent
+               toast
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      ChangingTheToastPosition 
+      <div
+        className="chakra-wrap css-0"
+      >
+        <ul
+          className="chakra-wrap__list css-umyqv7"
+        >
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              top
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              top-right
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              top-left
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              bottom
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              bottom-right
+               toast
+            </button>
+          </li>
+          <li
+            className="chakra-wrap__listitem css-1yp4ln"
+          >
+            <button
+              className="chakra-button css-taj3dd"
+              onClick={[Function]}
+              type="button"
+            >
+              Show 
+              bottom-left
+               toast
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      PreventingDuplicateToast 
+      <button
+        className="chakra-button css-taj3dd"
+        onClick={[Function]}
+        type="button"
+      >
+        Click me!
+      </button>
+    </div>
+    <div>
+      StandaloneToasts 
+      StandaloneToasts
+    </div>
+    <div>
+      TestHelloworld10 
+      TestHelloworld10
+    </div>
+    <div>
+      TestHelloworld11 
+      TestHelloworld11
+    </div>
+    <div>
+      TestHelloworld12 
+      TestHelloworld12
+    </div>
+    <div>
+      TestHelloworld13 
+      TestHelloworld13
+    </div>
+    <div>
+      TestHelloworld14 
+      TestHelloworld14
+    </div>
+    <div>
+      TestHelloworld15 
+      TestHelloworld15
+    </div>
+    <div>
+      TestHelloworld16 
+      TestHelloworld16
+    </div>
+    <div>
+      TestHelloworld17 
+      TestHelloworld17
+    </div>
+    <div>
+      TestHelloworld18 
+      TestHelloworld18
+    </div>
+    <div>
+      TestHelloworld19 
+      TestHelloworld19
+    </div>
+    <div>
+      TestHelloworld20 
+      TestHelloworld20
+    </div>
+  </div>,
+  <span />,
+]
+`;

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TabVariantsAndColor1 tryout helloworld 1`] = `
+Array [
+  <div
+    className="chakra-tabs css-13o7eu2"
+  >
+    <div
+      aria-orientation="horizontal"
+      className="chakra-tabs__tablist css-1uw5bnh"
+      onKeyDown={[Function]}
+      role="tablist"
+    >
+      <button
+        aria-controls="tabs-1--tabpanel--1"
+        aria-selected={false}
+        className="chakra-tabs__tab css-5nopcy"
+        id="tabs-1--tab--1"
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Tab 1
+      </button>
+      <button
+        aria-controls="tabs-1--tabpanel--1"
+        aria-selected={false}
+        className="chakra-tabs__tab css-5nopcy"
+        id="tabs-1--tab--1"
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Tab 2
+      </button>
+    </div>
+    <div
+      className="chakra-tabs__tab-panels css-8atqhb"
+    >
+      <div
+        aria-labelledby="tabs-1--tab-0"
+        className="chakra-tabs__tab-panel css-a5mhaz"
+        hidden={false}
+        id="tabs-1--tabpanel-0"
+        role="tabpanel"
+        tabIndex={0}
+      >
+        <p>
+          one!
+        </p>
+      </div>
+      <div
+        aria-labelledby="tabs-1--tab-1"
+        className="chakra-tabs__tab-panel css-a5mhaz"
+        hidden={true}
+        id="tabs-1--tabpanel-1"
+        role="tabpanel"
+        tabIndex={0}
+      >
+        <p>
+          two!
+        </p>
+      </div>
+    </div>
+  </div>,
+  <span />,
+]
+`;
