@@ -7,11 +7,13 @@ import { LinkInlineWithText } from '../';
 
 describe('test LinkInlineWithText tryout', () => {
   test('helloworld', () => {
-    const tree = renderer.create(
-      <ChakraProvider>
-      <LinkInlineWithText />
-      </ChakraProvider>
-      ).toJSON();
+    const tree = renderer
+      .create(
+        <ChakraProvider>
+          <LinkInlineWithText />
+        </ChakraProvider>
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test UsageWithRoutingLibrary tryout helloworld 1`] = `
+Array [
+  <a
+    className="chakra-link css-f4h6uy"
+    href="/home"
+    onClick={[Function]}
+  >
+    Home
+  </a>,
+  <span />,
+]
+`;
