@@ -158,8 +158,6 @@ import SimpleTooltips from "src/components/tooltips/SimpleTooltips/index.jsx"
 import TransitionsTooltips from "src/components/tooltips/TransitionsTooltips/index.jsx"
 import TriggersTooltips from "src/components/tooltips/TriggersTooltips/index.jsx"
 import VariableWidth from "src/components/tooltips/VariableWidth/index.jsx"
-import Types from "src/components/typography/Types/index.jsx"
-import TypographyTheme from "src/components/typography/TypographyTheme/index.jsx"
 
 export default function HelloworldMaterialUiComponents() {
 
@@ -324,8 +322,6 @@ export default function HelloworldMaterialUiComponents() {
 <TransitionsTooltips />
 <TriggersTooltips />
 <VariableWidth />
-<Types />
-<TypographyTheme />
       </div>
     </>
   );

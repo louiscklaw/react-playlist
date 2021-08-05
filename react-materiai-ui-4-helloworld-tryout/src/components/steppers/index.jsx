@@ -140,26 +140,6 @@ import ProgressMobileStepper from "src/components/steppers/ProgressMobileStepper
 import SwipeableTextMobileStepper from "src/components/steppers/SwipeableTextMobileStepper/index.jsx"
 import TextMobileStepper from "src/components/steppers/TextMobileStepper/index.jsx"
 import VerticalLinearStepper from "src/components/steppers/VerticalLinearStepper/index.jsx"
-import AlternateTimeline from "src/components/timeline/AlternateTimeline/index.jsx"
-import BasicTimeline from "src/components/timeline/BasicTimeline/index.jsx"
-import ColorsTimeline from "src/components/timeline/ColorsTimeline/index.jsx"
-import CustomizedTimeline from "src/components/timeline/CustomizedTimeline/index.jsx"
-import OppositeContentTimeline from "src/components/timeline/OppositeContentTimeline/index.jsx"
-import OutlinedTimeline from "src/components/timeline/OutlinedTimeline/index.jsx"
-import RightAlignedTimeline from "src/components/timeline/RightAlignedTimeline/index.jsx"
-import ArrowTooltips from "src/components/tooltips/ArrowTooltips/index.jsx"
-import ControlledTooltips from "src/components/tooltips/ControlledTooltips/index.jsx"
-import CustomizedTooltips from "src/components/tooltips/CustomizedTooltips/index.jsx"
-import DelayTooltips from "src/components/tooltips/DelayTooltips/index.jsx"
-import DisabledTooltips from "src/components/tooltips/DisabledTooltips/index.jsx"
-import InteractiveTooltips from "src/components/tooltips/InteractiveTooltips/index.jsx"
-import PositionedTooltips from "src/components/tooltips/PositionedTooltips/index.jsx"
-import SimpleTooltips from "src/components/tooltips/SimpleTooltips/index.jsx"
-import TransitionsTooltips from "src/components/tooltips/TransitionsTooltips/index.jsx"
-import TriggersTooltips from "src/components/tooltips/TriggersTooltips/index.jsx"
-import VariableWidth from "src/components/tooltips/VariableWidth/index.jsx"
-import Types from "src/components/typography/Types/index.jsx"
-import TypographyTheme from "src/components/typography/TypographyTheme/index.jsx"
 
 export default function HelloworldMaterialUiComponents() {
 
@@ -306,26 +286,6 @@ export default function HelloworldMaterialUiComponents() {
 <SwipeableTextMobileStepper />
 <TextMobileStepper />
 <VerticalLinearStepper />
-<AlternateTimeline />
-<BasicTimeline />
-<ColorsTimeline />
-<CustomizedTimeline />
-<OppositeContentTimeline />
-<OutlinedTimeline />
-<RightAlignedTimeline />
-<ArrowTooltips />
-<ControlledTooltips />
-<CustomizedTooltips />
-<DelayTooltips />
-<DisabledTooltips />
-<InteractiveTooltips />
-<PositionedTooltips />
-<SimpleTooltips />
-<TransitionsTooltips />
-<TriggersTooltips />
-<VariableWidth />
-<Types />
-<TypographyTheme />
       </div>
     </>
   );

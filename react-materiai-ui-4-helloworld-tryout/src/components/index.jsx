@@ -19,8 +19,11 @@ import Hidden from "src/components/hidden"
 import Icons from "src/components/icons"
 import Links from "src/components/links"
 import Paper from "src/components/paper"
-import Typography from "src/components/typography"
+import Rating from "src/components/rating"
+import Steppers from "src/components/steppers"
 import Timeline from "src/components/timeline"
+import Tooltips from "src/components/tooltips"
+import Typography from "src/components/typography"
 
 export default function Helloworld$component_name$() {
   return (
@@ -126,14 +129,29 @@ export default function Helloworld$component_name$() {
 <Paper />
 </div>
 <div>
-{/* <Typography /> */}
-<div>Typography /</div>
-<Typography />
+{/* <Rating /> */}
+<div>Rating /</div>
+<Rating />
+</div>
+<div>
+{/* <Steppers /> */}
+<div>Steppers /</div>
+<Steppers />
 </div>
 <div>
 {/* <Timeline /> */}
 <div>Timeline /</div>
 <Timeline />
+</div>
+<div>
+{/* <Tooltips /> */}
+<div>Tooltips /</div>
+<Tooltips />
+</div>
+<div>
+{/* <Typography /> */}
+<div>Typography /</div>
+<Typography />
 </div>
     </>
   );

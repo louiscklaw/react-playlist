@@ -124,22 +124,8 @@ import ButtonLink from "src/components/links/ButtonLink/index.jsx"
 import Links from "src/components/links/Links/index.jsx"
 import SimplePaper from "src/components/paper/SimplePaper/index.jsx"
 import Variants from "src/components/paper/Variants/index.jsx"
-import CustomizedRatings from "src/components/rating/CustomizedRatings/index.jsx"
-import HalfRating from "src/components/rating/HalfRating/index.jsx"
-import HoverRating from "src/components/rating/HoverRating/index.jsx"
-import RatingSize from "src/components/rating/RatingSize/index.jsx"
-import SimpleRating from "src/components/rating/SimpleRating/index.jsx"
-import CustomizedSteppers from "src/components/steppers/CustomizedSteppers/index.jsx"
-import DotsMobileStepper from "src/components/steppers/DotsMobileStepper/index.jsx"
-import HorizontalLinearAlternativeLabelStepper from "src/components/steppers/HorizontalLinearAlternativeLabelStepper/index.jsx"
-import HorizontalLinearStepper from "src/components/steppers/HorizontalLinearStepper/index.jsx"
-import HorizontalNonLinearAlternativeLabelStepper from "src/components/steppers/HorizontalNonLinearAlternativeLabelStepper/index.jsx"
-import HorizontalNonLinearStepper from "src/components/steppers/HorizontalNonLinearStepper/index.jsx"
-import HorizontalNonLinearStepperWithError from "src/components/steppers/HorizontalNonLinearStepperWithError/index.jsx"
-import ProgressMobileStepper from "src/components/steppers/ProgressMobileStepper/index.jsx"
-import SwipeableTextMobileStepper from "src/components/steppers/SwipeableTextMobileStepper/index.jsx"
-import TextMobileStepper from "src/components/steppers/TextMobileStepper/index.jsx"
-import VerticalLinearStepper from "src/components/steppers/VerticalLinearStepper/index.jsx"
+import Types from "src/components/typography/Types/index.jsx"
+import TypographyTheme from "src/components/typography/TypographyTheme/index.jsx"
 import AlternateTimeline from "src/components/timeline/AlternateTimeline/index.jsx"
 import BasicTimeline from "src/components/timeline/BasicTimeline/index.jsx"
 import ColorsTimeline from "src/components/timeline/ColorsTimeline/index.jsx"
@@ -147,19 +133,12 @@ import CustomizedTimeline from "src/components/timeline/CustomizedTimeline/index
 import OppositeContentTimeline from "src/components/timeline/OppositeContentTimeline/index.jsx"
 import OutlinedTimeline from "src/components/timeline/OutlinedTimeline/index.jsx"
 import RightAlignedTimeline from "src/components/timeline/RightAlignedTimeline/index.jsx"
-import ArrowTooltips from "src/components/tooltips/ArrowTooltips/index.jsx"
-import ControlledTooltips from "src/components/tooltips/ControlledTooltips/index.jsx"
-import CustomizedTooltips from "src/components/tooltips/CustomizedTooltips/index.jsx"
-import DelayTooltips from "src/components/tooltips/DelayTooltips/index.jsx"
-import DisabledTooltips from "src/components/tooltips/DisabledTooltips/index.jsx"
-import InteractiveTooltips from "src/components/tooltips/InteractiveTooltips/index.jsx"
-import PositionedTooltips from "src/components/tooltips/PositionedTooltips/index.jsx"
-import SimpleTooltips from "src/components/tooltips/SimpleTooltips/index.jsx"
-import TransitionsTooltips from "src/components/tooltips/TransitionsTooltips/index.jsx"
-import TriggersTooltips from "src/components/tooltips/TriggersTooltips/index.jsx"
-import VariableWidth from "src/components/tooltips/VariableWidth/index.jsx"
-import Types from "src/components/typography/Types/index.jsx"
-import TypographyTheme from "src/components/typography/TypographyTheme/index.jsx"
+import ControlledTreeView from "src/components/tree-view/ControlledTreeView/index.jsx"
+import CustomizedTreeView from "src/components/tree-view/CustomizedTreeView/index.jsx"
+import FileSystemNavigator from "src/components/tree-view/FileSystemNavigator/index.jsx"
+import GmailTreeView from "src/components/tree-view/GmailTreeView/index.jsx"
+import MultiSelectTreeView from "src/components/tree-view/MultiSelectTreeView/index.jsx"
+import RecursiveTreeView from "src/components/tree-view/RecursiveTreeView/index.jsx"
 
 export default function HelloworldMaterialUiComponents() {
 
@@ -290,22 +269,8 @@ export default function HelloworldMaterialUiComponents() {
 <Links />
 <SimplePaper />
 <Variants />
-<CustomizedRatings />
-<HalfRating />
-<HoverRating />
-<RatingSize />
-<SimpleRating />
-<CustomizedSteppers />
-<DotsMobileStepper />
-<HorizontalLinearAlternativeLabelStepper />
-<HorizontalLinearStepper />
-<HorizontalNonLinearAlternativeLabelStepper />
-<HorizontalNonLinearStepper />
-<HorizontalNonLinearStepperWithError />
-<ProgressMobileStepper />
-<SwipeableTextMobileStepper />
-<TextMobileStepper />
-<VerticalLinearStepper />
+<Types />
+<TypographyTheme />
 <AlternateTimeline />
 <BasicTimeline />
 <ColorsTimeline />
@@ -313,19 +278,12 @@ export default function HelloworldMaterialUiComponents() {
 <OppositeContentTimeline />
 <OutlinedTimeline />
 <RightAlignedTimeline />
-<ArrowTooltips />
-<ControlledTooltips />
-<CustomizedTooltips />
-<DelayTooltips />
-<DisabledTooltips />
-<InteractiveTooltips />
-<PositionedTooltips />
-<SimpleTooltips />
-<TransitionsTooltips />
-<TriggersTooltips />
-<VariableWidth />
-<Types />
-<TypographyTheme />
+<ControlledTreeView />
+<CustomizedTreeView />
+<FileSystemNavigator />
+<GmailTreeView />
+<MultiSelectTreeView />
+<RecursiveTreeView />
       </div>
     </>
   );
