@@ -2,6 +2,7 @@
 
 set -ex
 
+yarn add notistack
 yarn add @date-io/date-fns date-fns
 # yarn add @material-ui/pickers
 # yarn add material-ui-popup-state

@@ -1,0 +1,63 @@
+import { createShallow, createRender, createMount } from '@material-ui/core/test-utils';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { MockedTheme } from 'src/tests/MockedTheme';
+import LongTextSnackbar from 'src/components/snackbars/LongTextSnackbar/index.jsx';
+
+describe('<LongTextSnackbar> helloworld', () => {
+  describe('<LongTextSnackbar /> mount helloworld', () => {
+    let mount;
+
+    beforeEach(() => {
+      mount = createMount();
+    });
+
+    afterEach(() => {
+      mount.cleanUp();
+    });
+
+    test('should work', () => {
+      const wrapper = mount(
+        <MockedTheme>
+          <LongTextSnackbar>LongTextSnackbar</LongTextSnackbar>
+        </MockedTheme>
+      );
+
+      expect(wrapper.html).toMatchSnapshot();
+    });
+  });
+
+  describe('<LongTextSnackbar /> render helloworld', () => {
+    let render;
+
+    beforeEach(() => {
+      render = createRender();
+    });
+
+    afterEach(() => {});
+
+    test('should work', () => {
+      const wrapper = render(
+        <MockedTheme>
+          <LongTextSnackbar>LongTextSnackbar</LongTextSnackbar>
+        </MockedTheme>
+      );
+
+      expect(wrapper.html).toMatchSnapshot();
+    });
+  });
+
+  describe('<LongTextSnackbar /> shallow helloworld', () => {
+    let shallow;
+
+    beforeEach(() => {
+      // This is Mocha; in Jest, use beforeAll
+      shallow = createShallow();
+    });
+
+    test('should work', () => {
+      const wrapper = shallow(<LongTextSnackbar>LongTextSnackbar</LongTextSnackbar>);
+
+      expect(wrapper.html).toMatchSnapshot();
+    });
+  });
+})

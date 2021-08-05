@@ -18,6 +18,7 @@
     "enzyme-adapter-react-16": "^1.15.6",
     "fg-loadcss": "^3.1.0",
     "material-ui-popup-state": "^1.9.0",
+    "notistack": "^1.0.10",
     "react": "16",
     "react-dom": "16",
     "react-draggable": "^4.4.3",

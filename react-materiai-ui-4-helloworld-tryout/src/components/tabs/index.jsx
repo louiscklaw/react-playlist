@@ -158,6 +158,8 @@ import SimpleTooltips from "src/components/tooltips/SimpleTooltips/index.jsx"
 import TransitionsTooltips from "src/components/tooltips/TransitionsTooltips/index.jsx"
 import TriggersTooltips from "src/components/tooltips/TriggersTooltips/index.jsx"
 import VariableWidth from "src/components/tooltips/VariableWidth/index.jsx"
+import Types from "src/components/typography/Types/index.jsx"
+import TypographyTheme from "src/components/typography/TypographyTheme/index.jsx"
 import ControlledOpenSelect from "src/components/selects/ControlledOpenSelect/index.jsx"
 import CustomizedSelects from "src/components/selects/CustomizedSelects/index.jsx"
 import DialogSelect from "src/components/selects/DialogSelect/index.jsx"
@@ -165,6 +167,30 @@ import GroupedSelect from "src/components/selects/GroupedSelect/index.jsx"
 import MultipleSelect from "src/components/selects/MultipleSelect/index.jsx"
 import NativeSelects from "src/components/selects/NativeSelects/index.jsx"
 import SimpleSelect from "src/components/selects/SimpleSelect/index.jsx"
+import ConsecutiveSnackbars from "src/components/snackbars/ConsecutiveSnackbars/index.jsx"
+import CustomizedSnackbars from "src/components/snackbars/CustomizedSnackbars/index.jsx"
+import DirectionSnackbar from "src/components/snackbars/DirectionSnackbar/index.jsx"
+import FabIntegrationSnackbar from "src/components/snackbars/FabIntegrationSnackbar/index.jsx"
+import IntegrationNotistack from "src/components/snackbars/IntegrationNotistack/index.jsx"
+import LongTextSnackbar from "src/components/snackbars/LongTextSnackbar/index.jsx"
+import PositionedSnackbar from "src/components/snackbars/PositionedSnackbar/index.jsx"
+import SimpleSnackbar from "src/components/snackbars/SimpleSnackbar/index.jsx"
+import TransitionsSnackbar from "src/components/snackbars/TransitionsSnackbar/index.jsx"
+import AccessibleTabs from "src/components/tabs/AccessibleTabs/index.jsx"
+import CenteredTabs from "src/components/tabs/CenteredTabs/index.jsx"
+import CustomizedTabs from "src/components/tabs/CustomizedTabs/index.jsx"
+import DisabledTabs from "src/components/tabs/DisabledTabs/index.jsx"
+import FullWidthTabs from "src/components/tabs/FullWidthTabs/index.jsx"
+import IconLabelTabs from "src/components/tabs/IconLabelTabs/index.jsx"
+import IconTabs from "src/components/tabs/IconTabs/index.jsx"
+import LabTabs from "src/components/tabs/LabTabs/index.jsx"
+import NavTabs from "src/components/tabs/NavTabs/index.jsx"
+import ScrollableTabsButtonAuto from "src/components/tabs/ScrollableTabsButtonAuto/index.jsx"
+import ScrollableTabsButtonForce from "src/components/tabs/ScrollableTabsButtonForce/index.jsx"
+import ScrollableTabsButtonPrevent from "src/components/tabs/ScrollableTabsButtonPrevent/index.jsx"
+import SimpleTabs from "src/components/tabs/SimpleTabs/index.jsx"
+import TabsWrappedLabel from "src/components/tabs/TabsWrappedLabel/index.jsx"
+import VerticalTabs from "src/components/tabs/VerticalTabs/index.jsx"
 
 export default function HelloworldMaterialUiComponents() {
 
@@ -329,6 +355,8 @@ export default function HelloworldMaterialUiComponents() {
 <TransitionsTooltips />
 <TriggersTooltips />
 <VariableWidth />
+<Types />
+<TypographyTheme />
 <ControlledOpenSelect />
 <CustomizedSelects />
 <DialogSelect />
@@ -336,6 +364,30 @@ export default function HelloworldMaterialUiComponents() {
 <MultipleSelect />
 <NativeSelects />
 <SimpleSelect />
+<ConsecutiveSnackbars />
+<CustomizedSnackbars />
+<DirectionSnackbar />
+<FabIntegrationSnackbar />
+<IntegrationNotistack />
+<LongTextSnackbar />
+<PositionedSnackbar />
+<SimpleSnackbar />
+<TransitionsSnackbar />
+<AccessibleTabs />
+<CenteredTabs />
+<CustomizedTabs />
+<DisabledTabs />
+<FullWidthTabs />
+<IconLabelTabs />
+<IconTabs />
+<LabTabs />
+<NavTabs />
+<ScrollableTabsButtonAuto />
+<ScrollableTabsButtonForce />
+<ScrollableTabsButtonPrevent />
+<SimpleTabs />
+<TabsWrappedLabel />
+<VerticalTabs />
       </div>
     </>
   );

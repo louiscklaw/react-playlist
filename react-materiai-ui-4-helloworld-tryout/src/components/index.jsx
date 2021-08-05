@@ -24,6 +24,9 @@ import Steppers from "src/components/steppers"
 import Timeline from "src/components/timeline"
 import Tooltips from "src/components/tooltips"
 import Typography from "src/components/typography"
+import Selects from "src/components/selects"
+import Snackbars from "src/components/snackbars"
+import Tabs from "src/components/tabs"
 
 export default function Helloworld$component_name$() {
   return (
@@ -152,6 +155,21 @@ export default function Helloworld$component_name$() {
 {/* <Typography /> */}
 <div>Typography /</div>
 <Typography />
+</div>
+<div>
+{/* <Selects /> */}
+<div>Selects /</div>
+<Selects />
+</div>
+<div>
+{/* <Snackbars /> */}
+<div>Snackbars /</div>
+<Snackbars />
+</div>
+<div>
+{/* <Tabs /> */}
+<div>Tabs /</div>
+<Tabs />
 </div>
     </>
   );
