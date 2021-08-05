@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SvgMaterialIcons> helloworld <SvgMaterialIcons /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<SvgMaterialIcons> helloworld <SvgMaterialIcons /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<SvgMaterialIcons> helloworld <SvgMaterialIcons /> shallow helloworld should work 1`] = `[Function]`;

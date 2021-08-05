@@ -2,7 +2,8 @@
 
 set -ex
 
-yarn add react-swipeable-views
+yarn add fg-loadcss
+# yarn add react-swipeable-views
 # yarn add react-draggable
 # yarn add styled-components
 

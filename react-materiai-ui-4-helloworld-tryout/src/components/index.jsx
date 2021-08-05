@@ -15,6 +15,10 @@ import Dialogs from "src/components/dialogs"
 import Dividers from "src/components/dividers"
 import Drawers from "src/components/drawers"
 import Floatinctioutton from "src/components/floating-action-button"
+import Hidden from "src/components/hidden"
+import Icons from "src/components/icons"
+import Paper from "src/components/paper"
+import Selects from "src/components/selects"
 
 export default function Helloworld$component_name$() {
   return (
@@ -98,6 +102,26 @@ export default function Helloworld$component_name$() {
 {/* <Floatinctioutton /> */}
 <div>Floatinctioutton /</div>
 <Floatinctioutton />
+</div>
+<div>
+{/* <Hidden /> */}
+<div>Hidden /</div>
+<Hidden />
+</div>
+<div>
+{/* <Icons /> */}
+<div>Icons /</div>
+<Icons />
+</div>
+<div>
+{/* <Paper /> */}
+<div>Paper /</div>
+<Paper />
+</div>
+<div>
+{/* <Selects /> */}
+<div>Selects /</div>
+<Selects />
 </div>
     </>
   );

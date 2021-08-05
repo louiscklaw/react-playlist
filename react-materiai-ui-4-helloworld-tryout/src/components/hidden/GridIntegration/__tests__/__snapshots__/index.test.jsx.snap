@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GridIntegration> helloworld <GridIntegration /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<GridIntegration> helloworld <GridIntegration /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<GridIntegration> helloworld <GridIntegration /> shallow helloworld should work 1`] = `[Function]`;
