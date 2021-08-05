@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GoogleMaps> helloworld <GoogleMaps /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<GoogleMaps> helloworld <GoogleMaps /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<GoogleMaps> helloworld <GoogleMaps /> shallow helloworld should work 1`] = `[Function]`;

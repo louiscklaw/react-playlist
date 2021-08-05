@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grouped> helloworld <Grouped /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<Grouped> helloworld <Grouped /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<Grouped> helloworld <Grouped /> shallow helloworld should work 1`] = `[Function]`;
