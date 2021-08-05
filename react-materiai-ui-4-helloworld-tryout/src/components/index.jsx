@@ -17,8 +17,9 @@ import Drawers from "src/components/drawers"
 import Floatinctioutton from "src/components/floating-action-button"
 import Hidden from "src/components/hidden"
 import Icons from "src/components/icons"
+import Links from "src/components/links"
 import Paper from "src/components/paper"
-import Selects from "src/components/selects"
+import Typography from "src/components/typography"
 
 export default function Helloworld$component_name$() {
   return (
@@ -114,14 +115,19 @@ export default function Helloworld$component_name$() {
 <Icons />
 </div>
 <div>
+{/* <Links /> */}
+<div>Links /</div>
+<Links />
+</div>
+<div>
 {/* <Paper /> */}
 <div>Paper /</div>
 <Paper />
 </div>
 <div>
-{/* <Selects /> */}
-<div>Selects /</div>
-<Selects />
+{/* <Typography /> */}
+<div>Typography /</div>
+<Typography />
 </div>
     </>
   );

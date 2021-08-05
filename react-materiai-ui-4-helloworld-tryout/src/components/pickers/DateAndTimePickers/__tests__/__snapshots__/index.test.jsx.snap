@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DateAndTimePickers> helloworld <DateAndTimePickers /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<DateAndTimePickers> helloworld <DateAndTimePickers /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<DateAndTimePickers> helloworld <DateAndTimePickers /> shallow helloworld should work 1`] = `[Function]`;

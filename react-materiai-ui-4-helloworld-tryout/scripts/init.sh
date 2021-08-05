@@ -2,7 +2,10 @@
 
 set -ex
 
-yarn add fg-loadcss
+yarn add @date-io/date-fns date-fns
+# yarn add @material-ui/pickers
+# yarn add material-ui-popup-state
+# yarn add fg-loadcss
 # yarn add react-swipeable-views
 # yarn add react-draggable
 # yarn add styled-components

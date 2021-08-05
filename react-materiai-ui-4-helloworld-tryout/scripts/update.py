@@ -39,7 +39,7 @@ component_group_names=[
   'hidden',
   'icons',
   # 'image-list',
-  # 'links',
+  'links',
   # 'lists',
   # 'material-icons',
   # 'menus',
@@ -71,7 +71,7 @@ component_group_names=[
   # 'transfer-list',
   # 'transitions',
   # 'tree-view',
-  # 'typography',
+  'typography',
   # 'use-media-query'
   ]
 

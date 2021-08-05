@@ -120,6 +120,8 @@ import Icons from "src/components/icons/Icons/index.jsx"
 import SvgIconsColor from "src/components/icons/SvgIconsColor/index.jsx"
 import SvgIconsSize from "src/components/icons/SvgIconsSize/index.jsx"
 import SvgMaterialIcons from "src/components/icons/SvgMaterialIcons/index.jsx"
+import ButtonLink from "src/components/links/ButtonLink/index.jsx"
+import Links from "src/components/links/Links/index.jsx"
 import SimplePaper from "src/components/paper/SimplePaper/index.jsx"
 import Variants from "src/components/paper/Variants/index.jsx"
 
@@ -248,6 +250,8 @@ export default function HelloworldMaterialUiComponents() {
 <SvgIconsColor />
 <SvgIconsSize />
 <SvgMaterialIcons />
+<ButtonLink />
+<Links />
 <SimplePaper />
 <Variants />
       </div>

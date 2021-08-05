@@ -124,8 +124,13 @@ import ButtonLink from "src/components/links/ButtonLink/index.jsx"
 import Links from "src/components/links/Links/index.jsx"
 import SimplePaper from "src/components/paper/SimplePaper/index.jsx"
 import Variants from "src/components/paper/Variants/index.jsx"
-import Types from "src/components/typography/Types/index.jsx"
-import TypographyTheme from "src/components/typography/TypographyTheme/index.jsx"
+import FakedReferencePopper from "src/components/popper/FakedReferencePopper/index.jsx"
+import PopperPopupState from "src/components/popper/PopperPopupState/index.jsx"
+import PositionedPopper from "src/components/popper/PositionedPopper/index.jsx"
+import ScrollPlayground from "src/components/popper/ScrollPlayground/index.jsx"
+import SimplePopper from "src/components/popper/SimplePopper/index.jsx"
+import SpringPopper from "src/components/popper/SpringPopper/index.jsx"
+import TransitionsPopper from "src/components/popper/TransitionsPopper/index.jsx"
 
 export default function HelloworldMaterialUiComponents() {
 
@@ -256,8 +261,13 @@ export default function HelloworldMaterialUiComponents() {
 <Links />
 <SimplePaper />
 <Variants />
-<Types />
-<TypographyTheme />
+<FakedReferencePopper />
+<PopperPopupState />
+<PositionedPopper />
+<ScrollPlayground />
+<SimplePopper />
+<SpringPopper />
+<TransitionsPopper />
       </div>
     </>
   );
