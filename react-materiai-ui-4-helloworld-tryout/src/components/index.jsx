@@ -12,6 +12,9 @@ import Checkboxes from "src/components/checkboxes"
 import Clicwaistener from "src/components/click-away-listener"
 import Container from "src/components/container"
 import Dialogs from "src/components/dialogs"
+import Dividers from "src/components/dividers"
+import Drawers from "src/components/drawers"
+import Floatinctioutton from "src/components/floating-action-button"
 
 export default function Helloworld$component_name$() {
   return (
@@ -80,6 +83,21 @@ export default function Helloworld$component_name$() {
 {/* <Dialogs /> */}
 <div>Dialogs /</div>
 <Dialogs />
+</div>
+<div>
+{/* <Dividers /> */}
+<div>Dividers /</div>
+<Dividers />
+</div>
+<div>
+{/* <Drawers /> */}
+<div>Drawers /</div>
+<Drawers />
+</div>
+<div>
+{/* <Floatinctioutton /> */}
+<div>Floatinctioutton /</div>
+<Floatinctioutton />
 </div>
     </>
   );

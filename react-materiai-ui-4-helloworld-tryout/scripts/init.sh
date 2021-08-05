@@ -2,7 +2,8 @@
 
 set -ex
 
-yarn add react-draggable
+yarn add react-swipeable-views
+# yarn add react-draggable
 # yarn add styled-components
 
 # yarn add react@16 react-dom@16
