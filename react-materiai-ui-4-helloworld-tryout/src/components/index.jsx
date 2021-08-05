@@ -20,6 +20,7 @@ import Icons from "src/components/icons"
 import Links from "src/components/links"
 import Paper from "src/components/paper"
 import Typography from "src/components/typography"
+import Timeline from "src/components/timeline"
 
 export default function Helloworld$component_name$() {
   return (
@@ -128,6 +129,11 @@ export default function Helloworld$component_name$() {
 {/* <Typography /> */}
 <div>Typography /</div>
 <Typography />
+</div>
+<div>
+{/* <Timeline /> */}
+<div>Timeline /</div>
+<Timeline />
 </div>
     </>
   );
