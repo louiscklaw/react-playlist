@@ -18,15 +18,17 @@ import Floatinctioutton from "src/components/floating-action-button"
 import Hidden from "src/components/hidden"
 import Icons from "src/components/icons"
 import Links from "src/components/links"
+import Lists from "src/components/lists"
 import Paper from "src/components/paper"
 import Rating from "src/components/rating"
+import Selects from "src/components/selects"
+import Snackbars from "src/components/snackbars"
 import Steppers from "src/components/steppers"
+import Tabs from "src/components/tabs"
+import Texields from "src/components/text-fields"
 import Timeline from "src/components/timeline"
 import Tooltips from "src/components/tooltips"
 import Typography from "src/components/typography"
-import Selects from "src/components/selects"
-import Snackbars from "src/components/snackbars"
-import Tabs from "src/components/tabs"
 
 export default function Helloworld$component_name$() {
   return (
@@ -127,6 +129,11 @@ export default function Helloworld$component_name$() {
 <Links />
 </div>
 <div>
+{/* <Lists /> */}
+<div>Lists /</div>
+<Lists />
+</div>
+<div>
 {/* <Paper /> */}
 <div>Paper /</div>
 <Paper />
@@ -137,9 +144,29 @@ export default function Helloworld$component_name$() {
 <Rating />
 </div>
 <div>
+{/* <Selects /> */}
+<div>Selects /</div>
+<Selects />
+</div>
+<div>
+{/* <Snackbars /> */}
+<div>Snackbars /</div>
+<Snackbars />
+</div>
+<div>
 {/* <Steppers /> */}
 <div>Steppers /</div>
 <Steppers />
+</div>
+<div>
+{/* <Tabs /> */}
+<div>Tabs /</div>
+<Tabs />
+</div>
+<div>
+{/* <Texields /> */}
+<div>Texields /</div>
+<Texields />
 </div>
 <div>
 {/* <Timeline /> */}
@@ -155,21 +182,6 @@ export default function Helloworld$component_name$() {
 {/* <Typography /> */}
 <div>Typography /</div>
 <Typography />
-</div>
-<div>
-{/* <Selects /> */}
-<div>Selects /</div>
-<Selects />
-</div>
-<div>
-{/* <Snackbars /> */}
-<div>Snackbars /</div>
-<Snackbars />
-</div>
-<div>
-{/* <Tabs /> */}
-<div>Tabs /</div>
-<Tabs />
 </div>
     </>
   );

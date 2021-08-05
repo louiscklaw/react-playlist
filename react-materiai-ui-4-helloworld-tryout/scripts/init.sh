@@ -2,8 +2,10 @@
 
 set -ex
 
-yarn add notistack
-yarn add @date-io/date-fns date-fns
+yarn add react-text-mask
+# yarn add react-number-format
+# yarn add notistack
+# yarn add @date-io/date-fns date-fns
 # yarn add @material-ui/pickers
 # yarn add material-ui-popup-state
 # yarn add fg-loadcss

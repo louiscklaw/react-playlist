@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InsetList> helloworld <InsetList /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<InsetList> helloworld <InsetList /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<InsetList> helloworld <InsetList /> shallow helloworld should work 1`] = `[Function]`;
