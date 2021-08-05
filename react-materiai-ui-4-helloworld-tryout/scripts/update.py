@@ -26,12 +26,12 @@ component_group_names=[
   # 'button-group',
   'buttons',
   'cards',
-  # 'checkboxes',
+  'checkboxes',
   # 'chips',
-  # 'click-away-listener',
-  # 'container',
+  'click-away-listener',
+  'container',
   # 'css-baseline',
-  # 'dialogs',
+  'dialogs',
   # 'dividers',
   # 'drawers',
   # 'floating-action-button',
@@ -223,6 +223,12 @@ for [jsx_path, dst_jsx_path, cg_name] in zip(src_jsx_list, dst_jsx_list, compone
     os.system(cmd1)
     os.system(cmd2)
     os.system(f'cp {src_js_file} {dst_js_file}')
+    with open(dst_js_file, 'r+') as f:
+      temp = f.readlines()
+      out = map(lambda x: x.replace('docs/src/modules/components','src/components/utils'), temp)
+      f.seek(0)
+      f.truncate(0)
+      f.write(''.join(out))
     pass
 
 

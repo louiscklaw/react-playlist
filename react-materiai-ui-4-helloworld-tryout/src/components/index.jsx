@@ -8,6 +8,10 @@ import Backdrop from "src/components/backdrop"
 import Bottoavigation from "src/components/bottom-navigation"
 import Buttons from "src/components/buttons"
 import Cards from "src/components/cards"
+import Checkboxes from "src/components/checkboxes"
+import Clicwaistener from "src/components/click-away-listener"
+import Container from "src/components/container"
+import Dialogs from "src/components/dialogs"
 
 export default function Helloworld$component_name$() {
   return (
@@ -56,6 +60,26 @@ export default function Helloworld$component_name$() {
 {/* <Cards /> */}
 <div>Cards /</div>
 <Cards />
+</div>
+<div>
+{/* <Checkboxes /> */}
+<div>Checkboxes /</div>
+<Checkboxes />
+</div>
+<div>
+{/* <Clicwaistener /> */}
+<div>Clicwaistener /</div>
+<Clicwaistener />
+</div>
+<div>
+{/* <Container /> */}
+<div>Container /</div>
+<Container />
+</div>
+<div>
+{/* <Dialogs /> */}
+<div>Dialogs /</div>
+<Dialogs />
 </div>
     </>
   );
