@@ -7,7 +7,7 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import { makeStyles } from '@material-ui/core/styles';
 import MailIcon from '@material-ui/icons/Mail';
-import HighlightedCode from 'docs/src/modules/components/HighlightedCode';
+import HighlightedCode from 'src/components/utils/HighlightedCode';
 
 const useStyles = makeStyles((theme) => ({
   root: {
