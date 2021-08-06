@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import Animations from "src/components/skeleton/Animations/index.jsx"

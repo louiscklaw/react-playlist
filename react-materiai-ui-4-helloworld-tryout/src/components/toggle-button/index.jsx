@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import CustomizedDividers from "src/components/toggle-button/CustomizedDividers/index.jsx"

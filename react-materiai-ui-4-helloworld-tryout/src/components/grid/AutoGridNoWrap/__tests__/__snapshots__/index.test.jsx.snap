@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AutoGridNoWrap> helloworld <AutoGridNoWrap /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<AutoGridNoWrap> helloworld <AutoGridNoWrap /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<AutoGridNoWrap> helloworld <AutoGridNoWrap /> shallow helloworld should work 1`] = `[Function]`;

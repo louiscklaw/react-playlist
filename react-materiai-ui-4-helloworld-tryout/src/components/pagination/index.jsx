@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import BasicPagination from "src/components/pagination/BasicPagination/index.jsx"

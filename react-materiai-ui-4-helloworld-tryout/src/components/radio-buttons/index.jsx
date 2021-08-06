@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import CustomizedRadios from "src/components/radio-buttons/CustomizedRadios/index.jsx"

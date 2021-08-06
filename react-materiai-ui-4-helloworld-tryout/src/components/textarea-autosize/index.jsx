@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import EmptyTextarea from "src/components/textarea-autosize/EmptyTextarea/index.jsx"

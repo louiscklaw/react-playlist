@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import FakedReferencePopper from "src/components/popper/FakedReferencePopper/index.jsx"

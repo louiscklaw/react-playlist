@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RightAlignedTimeline> helloworld <RightAlignedTimeline /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<RightAlignedTimeline> helloworld <RightAlignedTimeline /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<RightAlignedTimeline> helloworld <RightAlignedTimeline /> shallow helloworld should work 1`] = `[Function]`;

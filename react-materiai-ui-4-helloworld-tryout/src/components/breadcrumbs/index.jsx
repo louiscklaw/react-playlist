@@ -1,7 +1,6 @@
+// by index_file_template
 import React from 'react';
 
-import Types from "src/components/typography/Types/index.jsx"
-import TypographyTheme from "src/components/typography/TypographyTheme/index.jsx"
 import ActiveLastBreadcrumb from "src/components/breadcrumbs/ActiveLastBreadcrumb/index.jsx"
 import CollapsedBreadcrumbs from "src/components/breadcrumbs/CollapsedBreadcrumbs/index.jsx"
 import CustomSeparator from "src/components/breadcrumbs/CustomSeparator/index.jsx"
@@ -15,9 +14,7 @@ export default function HelloworldMaterialUiComponents() {
   return (
     <>
       <div>
-        <Types />
-<TypographyTheme />
-<ActiveLastBreadcrumb />
+        <ActiveLastBreadcrumb />
 <CollapsedBreadcrumbs />
 <CustomSeparator />
 <CustomizedBreadcrumbs />

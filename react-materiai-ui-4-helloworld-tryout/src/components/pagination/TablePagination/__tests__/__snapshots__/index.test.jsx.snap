@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TablePagination> helloworld <TablePagination /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<TablePagination> helloworld <TablePagination /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<TablePagination> helloworld <TablePagination /> shallow helloworld should work 1`] = `[Function]`;

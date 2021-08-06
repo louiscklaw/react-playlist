@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import AutoGrid from "src/components/grid/AutoGrid/index.jsx"

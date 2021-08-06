@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import CircularDeterminate from "src/components/progress/CircularDeterminate/index.jsx"

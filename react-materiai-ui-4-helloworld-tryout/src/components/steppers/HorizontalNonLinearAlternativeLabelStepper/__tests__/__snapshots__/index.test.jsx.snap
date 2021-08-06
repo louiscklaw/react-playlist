@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HorizontalNonLinearAlternativeLabelStepper> helloworld <HorizontalNonLinearAlternativeLabelStepper /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<HorizontalNonLinearAlternativeLabelStepper> helloworld <HorizontalNonLinearAlternativeLabelStepper /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<HorizontalNonLinearAlternativeLabelStepper> helloworld <HorizontalNonLinearAlternativeLabelStepper /> shallow helloworld should work 1`] = `[Function]`;

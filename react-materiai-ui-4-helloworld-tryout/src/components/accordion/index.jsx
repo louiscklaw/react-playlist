@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import ActionsInAccordionSummary from "src/components/accordion/ActionsInAccordionSummary/index.jsx"

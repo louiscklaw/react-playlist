@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioButtonsGroup> helloworld <RadioButtonsGroup /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<RadioButtonsGroup> helloworld <RadioButtonsGroup /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<RadioButtonsGroup> helloworld <RadioButtonsGroup /> shallow helloworld should work 1`] = `[Function]`;

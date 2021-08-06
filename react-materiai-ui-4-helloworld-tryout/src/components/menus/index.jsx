@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import ContextMenu from "src/components/menus/ContextMenu/index.jsx"

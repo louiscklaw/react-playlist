@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import ContinuousSlider from "src/components/slider/ContinuousSlider/index.jsx"

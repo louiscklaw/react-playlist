@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import AcccessibleTable from "src/components/tables/AcccessibleTable/index.jsx"

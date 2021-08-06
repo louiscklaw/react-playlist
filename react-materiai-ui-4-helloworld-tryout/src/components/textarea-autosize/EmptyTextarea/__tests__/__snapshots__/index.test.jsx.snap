@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EmptyTextarea> helloworld <EmptyTextarea /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<EmptyTextarea> helloworld <EmptyTextarea /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<EmptyTextarea> helloworld <EmptyTextarea /> shallow helloworld should work 1`] = `[Function]`;

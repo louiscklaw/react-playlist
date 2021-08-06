@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import SimpleCollapse from "src/components/transitions/SimpleCollapse/index.jsx"

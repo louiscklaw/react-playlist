@@ -14,69 +14,71 @@ import stringcase
 component_group_names=[
   'accordion',
   'alert',
-  # 'app-bar',
-  # 'autocomplete',
-  # 'avatars',
-  # 'backdrop',
-  # 'bottom-navigation',
-  # 'buttons',
-  # 'cards',
-  # 'checkboxes',
-  # 'click-away-listener',
-  # 'container',
-  # 'css-baseline',
-  # 'dialogs',
-  # 'dividers',
-  # 'drawers',
-  # 'floating-action-button',
-  # 'hidden',
-  # 'icons',
-  # 'links',
-  # 'lists',
-  # 'paper',
-  # 'rating',
-  # 'selects',
-  # 'snackbars',
-  # 'speed-dial',
-  # 'steppers',
-  # 'tabs',
-  # 'text-fields',
-  # 'timeline',
-  # 'tooltips',
-  # 'typography',
-  # 'breadcrumbs',
+  'autocomplete',
+  'avatars',
+  'backdrop',
+  'badges',
+  'box',
+  'breadcrumbs',
+  'breakpoints',
+  'buttons',
+  'cards',
+  'checkboxes',
+  'chips',
+  'click-away-listener',
+  'container',
+  'css-baseline',
+  'dialogs',
+  'dividers',
+  'drawers',
+  'floating-action-button',
+  'grid',
+  'hidden',
+  'icons',
+  'image-list',
+  'links',
+  'lists',
+  'menus',
+  'modal',
+  'no-ssr',
+  'pagination',
+  'paper',
+  'pickers',
+  'popover',
+  'popper',
+  'portal',
+  'progress',
+  'radio-buttons',
+  'rating',
+  'selects',
+  'skeleton',
+  'slider',
+  'snackbars',
+  'speed-dial',
+  'steppers',
+  'switches',
+  'tables',
+  'tabs',
+  'text-fields',
+  'textarea-autosize',
+  'timeline',
+  'toggle-button',
+  'tooltips',
+  'transfer-list',
+  'transitions',
+  'tree-view',
+  'typography',
+  'use-media-query'
   # 'button-group',
-# 'menus',
-# 'no-ssr',
-# 'pagination',
-# 'portal',
-# 'progress',
-# 'radio-buttons',
-# 'skeleton',
-# 'slider',
-# 'switches',
-# 'tables',
-  # 'textarea-autosize',
-# 'toggle-button',
-# 'transfer-list',
-# 'transitions',
-# 'use-media-query'
-  # 'box',
-# 'breakpoints',
-  # 'badges',
-  # 'chips',
-  # 'grid',
-  # 'popover',
-  # 'image-list',
-  # 'modal',
-  # 'popper',
-  # 'tree-view',
-  # 'pickers',
 
+
+  # 'bottom-navigation',
+  # 'app-bar',
   ]
 
 
-index_file_template = '''import React from 'react';
+index_file_template = '''// by index_file_template
+import React from 'react';
 
 $import_lines$
 
@@ -92,7 +94,8 @@ export default function HelloworldMaterialUiComponents() {
 }
 '''
 
-components_index_file_template='''import React from 'react';
+components_index_file_template='''// components_index_file_template
+import React from 'react';
 $cg_imports$
 
 export default function HelloworldMaterialUi4Components() {
@@ -104,7 +107,8 @@ export default function HelloworldMaterialUi4Components() {
 }
 '''
 
-component_template = '''import React from 'react';
+component_template = '''// component_template
+import React from 'react';
 import { Button } from '@material-ui/core';
 
 export default function Helloworld$component_name$() {
@@ -118,7 +122,8 @@ export default function Helloworld$component_name$() {
 '''
 
 
-component_test_template = '''import { createShallow, createRender, createMount } from '@material-ui/core/test-utils';
+component_test_template = '''// component_test_template
+import { createShallow, createRender, createMount } from '@material-ui/core/test-utils';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { MockedTheme } from 'src/tests/MockedTheme';
 import $component_name$ from '$component_path$';
@@ -190,9 +195,6 @@ dst_jsx_list = list(map(lambda x: x.replace('/tmp/material-ui/docs/src/pages/com
 print('dst_jsx_list1', list(dst_jsx_list))
 
 
-import_lines = []
-component_lines = []
-
 for [jsx_path, dst_jsx_path, cg_name] in zip(src_jsx_list, dst_jsx_list, component_group_names):
   result = check_output(f'find {jsx_path}'.split(' '))
   temp = result.decode('utf-8').split('\n')
@@ -239,6 +241,9 @@ for [jsx_path, dst_jsx_path, cg_name] in zip(src_jsx_list, dst_jsx_list, compone
       f_component.truncate(0)
       f_component.write(component_test_template.replace('$component_name$',c_name).replace('$component_path$', comp_file_path))
 
+
+  import_lines = []
+  component_lines = []
 
   for [name, dst_js_file] in  zip(component_name , component_index_file_path):
     import_lines.append(f'import {name} from "{dst_js_file}"')

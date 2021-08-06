@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import JavaScriptMedia from "src/components/use-media-query/JavaScriptMedia/index.jsx"

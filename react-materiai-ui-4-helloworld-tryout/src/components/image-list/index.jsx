@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import AdvancedImageList from "src/components/image-list/AdvancedImageList/index.jsx"

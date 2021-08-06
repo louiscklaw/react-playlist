@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import FrameDeferring from "src/components/no-ssr/FrameDeferring/index.jsx"

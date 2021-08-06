@@ -1,3 +1,4 @@
+// by index_file_template
 import React from 'react';
 
 import CustomizedSwitches from "src/components/switches/CustomizedSwitches/index.jsx"
