@@ -17,6 +17,8 @@ import ExampleDrawer from 'src/components/ExampleDrawer';
 import ExamplePopover from 'src/components/ExamplePopover';
 
 import { theme } from 'src/themes/index';
+import Button from 'src/components/INPUTS/Button';
+import HelloworldInput from 'src/components/INPUTS';
 
 const engine = new Styletron();
 
@@ -34,6 +36,8 @@ function App() {
       <div style={{ height: '100%', width: '100%' }}>
         <StyletronProvider value={engine}>
           <BaseProvider theme={theme}>
+            <HelloworldInput />
+
             <Centered>
               <div style={{ margin: '3rem' }}>
                 <StatefulInput placeholder="StatefulInput" />
