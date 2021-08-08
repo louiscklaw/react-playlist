@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OutlinedTimeline> helloworld <OutlinedTimeline /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<OutlinedTimeline> helloworld <OutlinedTimeline /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<OutlinedTimeline> helloworld <OutlinedTimeline /> shallow helloworld should work 1`] = `[Function]`;

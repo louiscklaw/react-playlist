@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProminentAppBar> helloworld <ProminentAppBar /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ProminentAppBar> helloworld <ProminentAppBar /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ProminentAppBar> helloworld <ProminentAppBar /> shallow helloworld should work 1`] = `[Function]`;

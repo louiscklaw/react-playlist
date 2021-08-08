@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SplitButton> helloworld <SplitButton /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<SplitButton> helloworld <SplitButton /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<SplitButton> helloworld <SplitButton /> shallow helloworld should work 1`] = `[Function]`;

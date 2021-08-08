@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ValidationTextFields> helloworld <ValidationTextFields /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ValidationTextFields> helloworld <ValidationTextFields /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ValidationTextFields> helloworld <ValidationTextFields /> shallow helloworld should work 1`] = `[Function]`;

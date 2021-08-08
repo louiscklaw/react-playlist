@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FullWidthGrid> helloworld <FullWidthGrid /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<FullWidthGrid> helloworld <FullWidthGrid /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<FullWidthGrid> helloworld <FullWidthGrid /> shallow helloworld should work 1`] = `[Function]`;

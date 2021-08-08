@@ -1,5 +1,7 @@
 import React from 'react';
 
+const PATH_TO_TEST = 'test/helloworld';
+
 function App() {
   // SET
   const storeToLocalStorage = (k, data_o) => {
@@ -14,16 +16,16 @@ function App() {
     return JSON.parse(localStorage.getItem(k));
   };
 
-  const removeLocalStorage = (k) => {
-    localStorage.removeItem(k);
-  };
+  const removeLocalStorage = (k) => localStorage.removeItem(k);
 
-  const removeAllLocalStorage = () => {
-    localStorage.clear();
-  };
+  const removeAllLocalStorage = () => localStorage.clear();
 
   // setter
   sessionStorage.setItem('myData', JSON.stringify({ hello: 'sessionStorage' }));
+  sessionStorage.setItem(
+    PATH_TO_TEST,
+    JSON.stringify({ hello: 'sessionStorage' })
+  );
 
   // getter
   sessionStorage.getItem('myData');
@@ -35,9 +37,11 @@ function App() {
   // localStorage.clear()
 
   storeToLocalStorage('myData', { hello: 'world' });
+  storeToLocalStorage(PATH_TO_TEST, { hello: 'world' });
 
-  alert(loadFromLocalStorage('1'));
-  alert(loadFromLocalStorage('myData'));
+  alert(JSON.stringify(loadFromLocalStorage(PATH_TO_TEST)));
+  alert(JSON.stringify(loadFromLocalStorage('not-existing')));
+  alert(JSON.stringify(loadFromLocalStorage('myData')));
 
   return <div className="App">react helloworld</div>;
 }

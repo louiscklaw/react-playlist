@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccessibleTabs> helloworld <AccessibleTabs /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<AccessibleTabs> helloworld <AccessibleTabs /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<AccessibleTabs> helloworld <AccessibleTabs /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PersistentDrawerLeft> helloworld <PersistentDrawerLeft /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<PersistentDrawerLeft> helloworld <PersistentDrawerLeft /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<PersistentDrawerLeft> helloworld <PersistentDrawerLeft /> shallow helloworld should work 1`] = `[Function]`;

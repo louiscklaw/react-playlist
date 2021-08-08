@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BreakpointOnly> helloworld <BreakpointOnly /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<BreakpointOnly> helloworld <BreakpointOnly /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<BreakpointOnly> helloworld <BreakpointOnly /> shallow helloworld should work 1`] = `[Function]`;

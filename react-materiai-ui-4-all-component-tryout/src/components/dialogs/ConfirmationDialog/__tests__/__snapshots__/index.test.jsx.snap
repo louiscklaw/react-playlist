@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConfirmationDialog> helloworld <ConfirmationDialog /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ConfirmationDialog> helloworld <ConfirmationDialog /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ConfirmationDialog> helloworld <ConfirmationDialog /> shallow helloworld should work 1`] = `[Function]`;

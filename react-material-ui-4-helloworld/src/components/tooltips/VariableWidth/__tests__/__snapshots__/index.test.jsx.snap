@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VariableWidth> helloworld <VariableWidth /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<VariableWidth> helloworld <VariableWidth /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<VariableWidth> helloworld <VariableWidth /> shallow helloworld should work 1`] = `[Function]`;

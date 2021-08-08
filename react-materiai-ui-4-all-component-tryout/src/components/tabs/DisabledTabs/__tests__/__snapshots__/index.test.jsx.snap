@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DisabledTabs> helloworld <DisabledTabs /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<DisabledTabs> helloworld <DisabledTabs /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<DisabledTabs> helloworld <DisabledTabs /> shallow helloworld should work 1`] = `[Function]`;

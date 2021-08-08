@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputAdornments> helloworld <InputAdornments /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<InputAdornments> helloworld <InputAdornments /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<InputAdornments> helloworld <InputAdornments /> shallow helloworld should work 1`] = `[Function]`;

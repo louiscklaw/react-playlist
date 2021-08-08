@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OutlinedCard> helloworld <OutlinedCard /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<OutlinedCard> helloworld <OutlinedCard /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<OutlinedCard> helloworld <OutlinedCard /> shallow helloworld should work 1`] = `[Function]`;

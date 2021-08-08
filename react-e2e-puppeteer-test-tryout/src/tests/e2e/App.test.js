@@ -44,7 +44,7 @@ describe('puppeteer-helloworld', function () {
   });
 
   it('puppeteer rendering test', async () => {
-    await page.goto('http://localhost:12345');
+    await page.goto('http://www.example.com');
 
     const image = await page.screenshot();
     expect(image).toMatchImageSnapshot();

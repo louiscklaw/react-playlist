@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormDialog> helloworld <FormDialog /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<FormDialog> helloworld <FormDialog /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<FormDialog> helloworld <FormDialog /> shallow helloworld should work 1`] = `[Function]`;

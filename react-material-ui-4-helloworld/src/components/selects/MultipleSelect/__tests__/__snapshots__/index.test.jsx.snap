@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MultipleSelect> helloworld <MultipleSelect /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<MultipleSelect> helloworld <MultipleSelect /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<MultipleSelect> helloworld <MultipleSelect /> shallow helloworld should work 1`] = `[Function]`;

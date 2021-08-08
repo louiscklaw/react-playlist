@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuListComposition> helloworld <MenuListComposition /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<MenuListComposition> helloworld <MenuListComposition /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<MenuListComposition> helloworld <MenuListComposition /> shallow helloworld should work 1`] = `[Function]`;

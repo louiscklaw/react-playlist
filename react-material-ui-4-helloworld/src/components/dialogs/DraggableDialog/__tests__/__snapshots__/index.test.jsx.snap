@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DraggableDialog> helloworld <DraggableDialog /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<DraggableDialog> helloworld <DraggableDialog /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<DraggableDialog> helloworld <DraggableDialog /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MediaControlCard> helloworld <MediaControlCard /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<MediaControlCard> helloworld <MediaControlCard /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<MediaControlCard> helloworld <MediaControlCard /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MaxWidthDialog> helloworld <MaxWidthDialog /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<MaxWidthDialog> helloworld <MaxWidthDialog /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<MaxWidthDialog> helloworld <MaxWidthDialog /> shallow helloworld should work 1`] = `[Function]`;

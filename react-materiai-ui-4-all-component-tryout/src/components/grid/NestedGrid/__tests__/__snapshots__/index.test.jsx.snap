@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NestedGrid> helloworld <NestedGrid /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<NestedGrid> helloworld <NestedGrid /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<NestedGrid> helloworld <NestedGrid /> shallow helloworld should work 1`] = `[Function]`;

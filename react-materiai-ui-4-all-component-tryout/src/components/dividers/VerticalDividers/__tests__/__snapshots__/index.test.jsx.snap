@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerticalDividers> helloworld <VerticalDividers /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<VerticalDividers> helloworld <VerticalDividers /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<VerticalDividers> helloworld <VerticalDividers /> shallow helloworld should work 1`] = `[Function]`;

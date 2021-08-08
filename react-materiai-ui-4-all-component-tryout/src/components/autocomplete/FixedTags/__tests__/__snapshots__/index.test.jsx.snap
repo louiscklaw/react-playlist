@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FixedTags> helloworld <FixedTags /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<FixedTags> helloworld <FixedTags /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<FixedTags> helloworld <FixedTags /> shallow helloworld should work 1`] = `[Function]`;

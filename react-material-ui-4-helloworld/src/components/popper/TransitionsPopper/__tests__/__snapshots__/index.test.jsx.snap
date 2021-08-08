@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TransitionsPopper> helloworld <TransitionsPopper /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<TransitionsPopper> helloworld <TransitionsPopper /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<TransitionsPopper> helloworld <TransitionsPopper /> shallow helloworld should work 1`] = `[Function]`;
