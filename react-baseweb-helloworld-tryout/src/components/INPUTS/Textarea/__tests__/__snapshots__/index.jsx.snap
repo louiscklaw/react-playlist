@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<div data-baseweb=\\"textarea\\" class=\\"\\"><div data-baseweb=\\"base-input\\" class=\\"\\"><textarea aria-invalid=\\"false\\" aria-required=\\"false\\" autocomplete=\\"on\\" inputmode=\\"text\\" name=\\"\\" placeholder=\\"Controlled Input\\" type=\\"textarea\\" rows=\\"3\\" class=\\"\\">Hello</textarea></div></div>"`;

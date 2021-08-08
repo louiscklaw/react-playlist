@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<nav role=\\"navigation\\" data-baseweb=\\"side-navigation\\" class=\\"\\"><ul role=\\"list\\" class=\\"\\"><li class=\\"\\"><a href=\\"#colors\\" class=\\"\\"><div class=\\"\\">Colors</div></a><ul role=\\"list\\" class=\\"\\"><li class=\\"\\"><a href=\\"#primary\\" class=\\"\\"><div class=\\"\\">Primary</div></a></li><li class=\\"\\"><a href=\\"#shades\\" class=\\"\\"><div class=\\"\\">Shades</div></a><ul role=\\"list\\" class=\\"\\"><li class=\\"\\"><a href=\\"#dark\\" class=\\"\\"><div class=\\"\\">Dark</div></a></li><li class=\\"\\"><span tabindex=\\"-1\\" class=\\"\\"><div class=\\"\\">Disabled</div></span></li></ul></li></ul></li></ul></nav>"`;

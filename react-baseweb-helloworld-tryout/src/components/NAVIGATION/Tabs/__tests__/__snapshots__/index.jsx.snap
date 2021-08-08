@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<div data-baseweb=\\"tabs\\" class=\\"\\"><div role=\\"tablist\\" class=\\"\\"><div tabindex=\\"0\\" role=\\"tab\\" id=\\"0\\" aria-selected=\\"true\\" class=\\"\\">Tab Link 1</div><div tabindex=\\"0\\" role=\\"tab\\" id=\\"1\\" aria-selected=\\"false\\" class=\\"\\">Tab Link 2</div><div tabindex=\\"0\\" role=\\"tab\\" id=\\"2\\" aria-selected=\\"false\\" class=\\"\\">Tab Link 3</div></div><div role=\\"tabpanel\\" aria-labelledby=\\"0\\" class=\\"\\">Content 1</div><div role=\\"tabpanel\\" aria-labelledby=\\"1\\" class=\\"\\"></div><div role=\\"tabpanel\\" aria-labelledby=\\"2\\" class=\\"\\"></div></div>"`;

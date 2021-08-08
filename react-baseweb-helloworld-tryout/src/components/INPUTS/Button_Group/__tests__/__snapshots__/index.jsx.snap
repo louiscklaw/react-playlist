@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<div aria-label=\\"button group\\" data-baseweb=\\"button-group\\" role=\\"group\\" class=\\"\\"><button data-baseweb=\\"button\\" tabindex=\\"0\\" aria-checked=\\"false\\" role=\\"checkbox\\" class=\\"\\">One</button><button data-baseweb=\\"button\\" tabindex=\\"0\\" aria-checked=\\"false\\" role=\\"checkbox\\" class=\\"\\">Two</button><button data-baseweb=\\"button\\" tabindex=\\"0\\" aria-checked=\\"false\\" role=\\"checkbox\\" class=\\"\\">Three</button></div>"`;

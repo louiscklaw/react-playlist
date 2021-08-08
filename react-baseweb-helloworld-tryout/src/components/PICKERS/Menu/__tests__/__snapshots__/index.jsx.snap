@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<ul role=\\"listbox\\" tabindex=\\"0\\" data-baseweb=\\"menu\\" class=\\"\\"><li role=\\"option\\" aria-disabled=\\"false\\" aria-selected=\\"false\\" id=\\"bui-1\\" class=\\"\\">Item One</li><li role=\\"option\\" aria-disabled=\\"false\\" aria-selected=\\"false\\" id=\\"bui-2\\" class=\\"\\">Item Two</li><li role=\\"option\\" aria-disabled=\\"false\\" aria-selected=\\"false\\" id=\\"bui-3\\" class=\\"\\">Item Three</li><li role=\\"option\\" aria-disabled=\\"false\\" aria-selected=\\"false\\" id=\\"bui-4\\" class=\\"\\">Item Four</li></ul>"`;

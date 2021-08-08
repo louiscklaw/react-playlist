@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<div data-baseweb=\\"avatar\\" class=\\"\\"><img alt=\\"Jane Doe\\" src=\\"https://avatars.dicebear.com/api/human/yard.svg?width=285&amp;mood=happy\\" class=\\"\\"></div>"`;

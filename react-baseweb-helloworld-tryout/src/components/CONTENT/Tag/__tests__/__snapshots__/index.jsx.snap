@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<span data-baseweb=\\"tag\\" aria-label=\\"this is a tag, close by backspace\\" role=\\"button\\" tabindex=\\"0\\" class=\\"\\"><span title=\\"this is a tag\\" class=\\"\\">this is a tag</span><span aria-hidden=\\"true\\" role=\\"presentation\\" class=\\"\\"><svg width=\\"12\\" height=\\"12\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"\\"><path fill=\\"currentColor\\" d=\\"M21.0999 5.09998L18.8999 2.90002L11.9999 9.90002L5.09985 2.90002L2.8999 5.09998L9.8999 12L2.8999 18.9L5.09985 21.1L11.9999 14.1L18.8999 21.1L21.0999 18.9L14.0999 12L21.0999 5.09998Z\\"></path></svg></span></span>"`;

@@ -17,8 +17,13 @@ import ExampleDrawer from 'src/components/ExampleDrawer';
 import ExamplePopover from 'src/components/ExamplePopover';
 
 import { theme } from 'src/themes/index';
-import Button from 'src/components/INPUTS/Button';
 import HelloworldInput from 'src/components/INPUTS';
+import HelloworldNavigation from 'src/components/NAVIGATION';
+import HelloworldPickers from 'src/components/PICKERS';
+import HelloworldProgressValidation from 'src/components/PROGRESS_VALIDATION';
+import HelloworldSurfaces from 'src/components/SURFACES';
+import HelloworldTables from 'src/components/TABLES';
+import HelloworldContent from 'src/components/CONTENT';
 
 const engine = new Styletron();
 
@@ -37,6 +42,12 @@ function App() {
         <StyletronProvider value={engine}>
           <BaseProvider theme={theme}>
             <HelloworldInput />
+            <HelloworldNavigation />
+            <HelloworldPickers />
+            <HelloworldProgressValidation />
+            <HelloworldSurfaces />
+            <HelloworldTables />
+            <HelloworldContent />
 
             <Centered>
               <div style={{ margin: '3rem' }}>

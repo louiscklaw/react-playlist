@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<a data-baseweb=\\"link\\" href=\\"https://baseweb.design\\" class=\\"\\">Link to Base Web</a>"`;

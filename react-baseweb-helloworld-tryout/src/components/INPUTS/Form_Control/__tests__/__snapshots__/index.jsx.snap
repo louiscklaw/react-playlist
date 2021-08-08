@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<label data-baseweb=\\"form-control-label\\" class=\\"\\">label</label><div data-baseweb=\\"form-control-container\\" class=\\"\\"><div data-baseweb=\\"input\\" class=\\"\\"><div data-baseweb=\\"base-input\\" class=\\"\\"><input aria-describedby=\\"bui-1\\" aria-invalid=\\"false\\" aria-required=\\"false\\" autocomplete=\\"on\\" inputmode=\\"text\\" name=\\"\\" placeholder=\\"\\" type=\\"text\\" class=\\"\\" value=\\"\\"></div></div><div data-baseweb=\\"form-control-caption\\" id=\\"bui-1\\" class=\\"\\">caption</div></div>"`;

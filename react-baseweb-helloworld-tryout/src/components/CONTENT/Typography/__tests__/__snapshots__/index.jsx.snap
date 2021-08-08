@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<h1 data-baseweb=\\"typo-headingxxlarge\\" class=\\"\\">We ignite opportunity by setting the world in motion.</h1><h2 data-baseweb=\\"typo-headingxlarge\\" class=\\"\\">We ignite opportunity by setting the world in motion.</h2><h3 data-baseweb=\\"typo-headinglarge\\" class=\\"\\">We ignite opportunity by setting the world in motion.</h3><h4 data-baseweb=\\"typo-headingmedium\\" class=\\"\\">We ignite opportunity by setting the world in motion.</h4><h5 data-baseweb=\\"typo-headingsmall\\" class=\\"\\">We ignite opportunity by setting the world in motion.</h5><h6 data-baseweb=\\"typo-headingxsmall\\" class=\\"\\">We ignite opportunity by setting the world in motion.</h6>"`;

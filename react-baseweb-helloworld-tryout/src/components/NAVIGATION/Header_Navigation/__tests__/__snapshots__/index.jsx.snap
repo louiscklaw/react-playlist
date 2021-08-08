@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<nav data-baseweb=\\"header-navigation\\" role=\\"navigation\\" class=\\"\\"><ul class=\\"\\"><li class=\\"\\">Uber</li></ul><ul class=\\"\\"></ul><ul class=\\"\\"><li class=\\"\\"><a data-baseweb=\\"link\\" href=\\"#basic-link1\\" class=\\"\\">Tab Link One</a></li><li class=\\"\\"><a data-baseweb=\\"link\\" href=\\"#basic-link2\\" class=\\"\\">Tab Link Two</a></li></ul><ul class=\\"\\"><li class=\\"\\"><button data-baseweb=\\"button\\" class=\\"\\">Get started</button></li></ul></nav>"`;

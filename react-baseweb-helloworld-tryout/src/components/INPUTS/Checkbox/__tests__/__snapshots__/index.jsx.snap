@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<label data-baseweb=\\"checkbox\\" class=\\"\\"><span role=\\"checkbox\\" aria-checked=\\"false\\" class=\\"\\"></span><input aria-checked=\\"false\\" type=\\"checkbox\\" class=\\"\\" value=\\"\\"><div class=\\"\\">Sign up for the newsletter</div></label>"`;

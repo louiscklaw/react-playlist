@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<div data-baseweb=\\"file-uploader\\" class=\\"\\"><div tabindex=\\"-1\\" class=\\"\\"><div class=\\"\\">Drop files here to upload...</div><div class=\\"\\"></div><button data-baseweb=\\"button\\" role=\\"button\\" class=\\"\\">Browse files</button></div><input type=\\"file\\" style=\\"display: none;\\" multiple=\\"\\" autocomplete=\\"off\\" tabindex=\\"-1\\" class=\\"\\"></div>"`;

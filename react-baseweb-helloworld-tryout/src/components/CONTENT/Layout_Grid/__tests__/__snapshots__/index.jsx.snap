@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<div class=\\"\\"><div class=\\"\\"><div class=\\"\\"><div class=\\"\\">1</div></div><div class=\\"\\"><div class=\\"\\">2</div></div><div class=\\"\\"><div class=\\"\\">3</div></div><div class=\\"\\"><div class=\\"\\">4</div></div><div class=\\"\\"><div class=\\"\\">5</div></div><div class=\\"\\"><div class=\\"\\">6</div></div><div class=\\"\\"><div class=\\"\\">7</div></div><div class=\\"\\"><div class=\\"\\">8</div></div><div class=\\"\\"><div class=\\"\\">9</div></div><div class=\\"\\"><div class=\\"\\">10</div></div><div class=\\"\\"><div class=\\"\\">11</div></div><div class=\\"\\"><div class=\\"\\">12</div></div></div></div>"`;

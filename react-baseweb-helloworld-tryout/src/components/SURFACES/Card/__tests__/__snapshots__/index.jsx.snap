@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `"<section data-baseweb=\\"card\\" class=\\"\\"><div class=\\"\\"><div class=\\"\\"><div class=\\"\\">Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non facilisis nisl. Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non facilisis nisl.</div><div class=\\"\\"><button data-baseweb=\\"button\\" class=\\"\\">Button Label</button></div></div></div></section>"`;
