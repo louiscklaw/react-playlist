@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Do flaky work 1`] = `
+Array [
+  "helloworld",
+  "1",
+]
+`;
+
+exports[`renders correctly 1`] = `
+Array [
+  "helloworld",
+  "1",
+]
+`;
