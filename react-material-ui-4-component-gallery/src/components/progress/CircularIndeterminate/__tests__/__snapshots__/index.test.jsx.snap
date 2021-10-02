@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CircularIndeterminate> helloworld <CircularIndeterminate /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CircularIndeterminate> helloworld <CircularIndeterminate /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CircularIndeterminate> helloworld <CircularIndeterminate /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SmallChips> helloworld <SmallChips /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<SmallChips> helloworld <SmallChips /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<SmallChips> helloworld <SmallChips /> shallow helloworld should work 1`] = `[Function]`;

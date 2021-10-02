@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LimitTags> helloworld <LimitTags /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<LimitTags> helloworld <LimitTags /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<LimitTags> helloworld <LimitTags /> shallow helloworld should work 1`] = `[Function]`;

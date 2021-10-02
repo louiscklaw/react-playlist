@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingleLineImageList> helloworld <SingleLineImageList /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<SingleLineImageList> helloworld <SingleLineImageList /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<SingleLineImageList> helloworld <SingleLineImageList /> shallow helloworld should work 1`] = `[Function]`;

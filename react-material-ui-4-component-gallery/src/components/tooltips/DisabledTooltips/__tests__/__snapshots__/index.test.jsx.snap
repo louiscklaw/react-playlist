@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DisabledTooltips> helloworld <DisabledTooltips /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<DisabledTooltips> helloworld <DisabledTooltips /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<DisabledTooltips> helloworld <DisabledTooltips /> shallow helloworld should work 1`] = `[Function]`;

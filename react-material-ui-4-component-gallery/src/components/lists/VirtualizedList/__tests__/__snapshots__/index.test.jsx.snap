@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VirtualizedList> helloworld <VirtualizedList /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<VirtualizedList> helloworld <VirtualizedList /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<VirtualizedList> helloworld <VirtualizedList /> shallow helloworld should work 1`] = `[Function]`;

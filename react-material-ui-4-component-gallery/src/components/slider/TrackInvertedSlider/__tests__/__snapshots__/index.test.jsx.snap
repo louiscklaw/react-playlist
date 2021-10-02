@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TrackInvertedSlider> helloworld <TrackInvertedSlider /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<TrackInvertedSlider> helloworld <TrackInvertedSlider /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<TrackInvertedSlider> helloworld <TrackInvertedSlider /> shallow helloworld should work 1`] = `[Function]`;

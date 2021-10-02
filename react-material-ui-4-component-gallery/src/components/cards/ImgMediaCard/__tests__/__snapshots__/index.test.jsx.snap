@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImgMediaCard> helloworld <ImgMediaCard /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ImgMediaCard> helloworld <ImgMediaCard /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ImgMediaCard> helloworld <ImgMediaCard /> shallow helloworld should work 1`] = `[Function]`;

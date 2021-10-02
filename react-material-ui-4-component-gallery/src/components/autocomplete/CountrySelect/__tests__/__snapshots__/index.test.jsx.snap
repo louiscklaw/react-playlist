@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CountrySelect> helloworld <CountrySelect /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CountrySelect> helloworld <CountrySelect /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CountrySelect> helloworld <CountrySelect /> shallow helloworld should work 1`] = `[Function]`;

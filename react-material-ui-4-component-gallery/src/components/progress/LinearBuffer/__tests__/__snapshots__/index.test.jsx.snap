@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinearBuffer> helloworld <LinearBuffer /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<LinearBuffer> helloworld <LinearBuffer /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<LinearBuffer> helloworld <LinearBuffer /> shallow helloworld should work 1`] = `[Function]`;

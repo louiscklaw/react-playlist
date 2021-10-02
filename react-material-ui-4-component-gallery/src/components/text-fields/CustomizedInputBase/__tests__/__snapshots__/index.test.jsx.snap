@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomizedInputBase> helloworld <CustomizedInputBase /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedInputBase> helloworld <CustomizedInputBase /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedInputBase> helloworld <CustomizedInputBase /> shallow helloworld should work 1`] = `[Function]`;

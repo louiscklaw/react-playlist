@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReactVirtualizedTable> helloworld <ReactVirtualizedTable /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ReactVirtualizedTable> helloworld <ReactVirtualizedTable /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ReactVirtualizedTable> helloworld <ReactVirtualizedTable /> shallow helloworld should work 1`] = `[Function]`;

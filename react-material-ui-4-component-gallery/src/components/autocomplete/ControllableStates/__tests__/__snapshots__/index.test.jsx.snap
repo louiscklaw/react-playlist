@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ControllableStates> helloworld <ControllableStates /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ControllableStates> helloworld <ControllableStates /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ControllableStates> helloworld <ControllableStates /> shallow helloworld should work 1`] = `[Function]`;

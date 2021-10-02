@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CollapsedBreadcrumbs> helloworld <CollapsedBreadcrumbs /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CollapsedBreadcrumbs> helloworld <CollapsedBreadcrumbs /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CollapsedBreadcrumbs> helloworld <CollapsedBreadcrumbs /> shallow helloworld should work 1`] = `[Function]`;

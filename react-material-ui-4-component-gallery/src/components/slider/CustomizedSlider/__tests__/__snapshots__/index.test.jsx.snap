@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomizedSlider> helloworld <CustomizedSlider /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedSlider> helloworld <CustomizedSlider /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedSlider> helloworld <CustomizedSlider /> shallow helloworld should work 1`] = `[Function]`;

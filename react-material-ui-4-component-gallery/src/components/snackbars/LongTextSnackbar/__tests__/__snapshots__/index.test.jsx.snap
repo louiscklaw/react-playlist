@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LongTextSnackbar> helloworld <LongTextSnackbar /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<LongTextSnackbar> helloworld <LongTextSnackbar /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<LongTextSnackbar> helloworld <LongTextSnackbar /> shallow helloworld should work 1`] = `[Function]`;

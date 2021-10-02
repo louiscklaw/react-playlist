@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AlignItemsList> helloworld <AlignItemsList /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<AlignItemsList> helloworld <AlignItemsList /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<AlignItemsList> helloworld <AlignItemsList /> shallow helloworld should work 1`] = `[Function]`;

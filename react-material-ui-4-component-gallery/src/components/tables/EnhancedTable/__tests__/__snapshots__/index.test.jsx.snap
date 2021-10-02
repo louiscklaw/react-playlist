@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EnhancedTable> helloworld <EnhancedTable /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<EnhancedTable> helloworld <EnhancedTable /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<EnhancedTable> helloworld <EnhancedTable /> shallow helloworld should work 1`] = `[Function]`;
