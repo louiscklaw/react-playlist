@@ -2,6 +2,6 @@
 
 set -ex
 
-yarn
+yarn --dev
 
-npx eslint --init
+yarn start
