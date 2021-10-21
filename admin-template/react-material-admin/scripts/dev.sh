@@ -2,5 +2,6 @@
 
 set -ex
 
+
 yarn --dev
 yarn start
