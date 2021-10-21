@@ -26,6 +26,11 @@ function App({ test_branch = false }) {
     window.location.reload();
   };
 
+  const changeLangToZhTw = () => {
+    localStorage.setItem(LANGUAGE_PREF_KEY, 'zh_TW');
+    window.location.reload();
+  };
+
   return (
     <div className="App">
       <GlobalContextProvider>
@@ -35,6 +40,7 @@ function App({ test_branch = false }) {
         {helloanotherworld}
         <button onClick={changeLangToEn}> change lang to En</button>
         <button onClick={changeLangToFr}> change lang to Fr</button>
+        <button onClick={changeLangToZhTw}> change lang to zh_TW</button>
       </GlobalContextProvider>
     </div>
   );

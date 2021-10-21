@@ -4,8 +4,9 @@ import { LANGUAGE_PREF_KEY } from 'src/constants';
 
 import en from './en';
 import fr from './fr';
+import zh_TW from 'src/i18n/zh_TW';
 
-const resources = { en, fr };
+const resources = { en, fr, zh_TW };
 
 const stored_language_pref = localStorage.getItem(LANGUAGE_PREF_KEY);
 
