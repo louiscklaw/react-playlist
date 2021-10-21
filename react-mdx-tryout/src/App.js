@@ -7,11 +7,9 @@ import 'src/App.css';
 function App() {
   return (
     <div className="App">
-      <div>
-        <Suspense fallback={<div>Loading ...</div>}>
-          <Content />
-        </Suspense>
-      </div>
+      <Suspense fallback={<div>Loading ...</div>}>
+        <Content />
+      </Suspense>
     </div>
   );
 }
