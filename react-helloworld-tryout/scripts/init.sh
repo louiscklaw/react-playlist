@@ -2,6 +2,6 @@
 
 set -ex
 
-yarn
+rm -rf node_modules
 
-npx eslint --init
+yarn --dev
