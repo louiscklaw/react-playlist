@@ -1,6 +1,7 @@
 import React from 'react';
-
 import { observer } from 'mobx-react-lite';
+
+import { store } from 'src/class/TodoList';
 
 const TodoView = observer(({ todo }) => (
   <li>
@@ -13,7 +14,7 @@ const TodoView = observer(({ todo }) => (
   </li>
 ));
 
-const TodoListView = observer(({ todoList }) => (
+const TodoListView = observer(({ todoList = store }) => (
   <div>
     <ul>
       {todoList.todos.map((todo) => (
@@ -21,6 +22,7 @@ const TodoListView = observer(({ todoList }) => (
       ))}
     </ul>
     Tasks left: {todoList.unfinishedTodoCount}
+    <pre>{JSON.stringify(todoList.show_value, null, 2)}</pre>
   </div>
 ));
 
