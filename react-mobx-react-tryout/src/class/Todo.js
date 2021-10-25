@@ -5,7 +5,10 @@ class Todo {
   title = '';
   finished = false;
 
-  constructor(title) {
+  constructor({ id, title }) {
+    if (id) {
+      this.id = id;
+    }
     this.title = title;
 
     makeObservable(this, {
@@ -17,6 +20,13 @@ class Todo {
 
   toggle() {
     this.finished = !this.finished;
+    let temp = JSON.parse(localStorage.getItem('temp'));
+    temp.forEach((x) => {
+      if (x.id === this.id) {
+        x.finished = this.finished;
+      }
+    });
+    localStorage.setItem('temp', JSON.stringify(temp));
   }
 }
 

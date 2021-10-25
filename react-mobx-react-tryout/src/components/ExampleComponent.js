@@ -11,7 +11,7 @@ export default function ExampleComponent() {
       <TodoListView todoList={store} />
       <button
         onClick={() => {
-          store.add(new Todo('Get Coffee'));
+          store.add(new Todo({ title: 'Get Coffee' }));
         }}>
         add
       </button>
