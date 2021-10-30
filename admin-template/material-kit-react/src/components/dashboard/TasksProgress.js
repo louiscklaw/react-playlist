@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import {
   Avatar,
   Box,
@@ -10,52 +12,34 @@ import {
 import { orange } from '@material-ui/core/colors';
 import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
 
-const TasksProgress = (props) => (
-  <Card
-    sx={{ height: '100%' }}
-    {...props}
-  >
-    <CardContent>
-      <Grid
-        container
-        spacing={3}
-        sx={{ justifyContent: 'space-between' }}
-      >
-        <Grid item>
-          <Typography
-            color="textSecondary"
-            gutterBottom
-            variant="h6"
-          >
-            TASKS PROGRESS
-          </Typography>
-          <Typography
-            color="textPrimary"
-            variant="h3"
-          >
-            75.5%
-          </Typography>
+const TasksProgress = (props) => {
+  const { t } = useTranslation();
+  return (
+    <Card sx={{ height: '100%' }} {...props}>
+      <CardContent>
+        <Grid container spacing={3} sx={{ justifyContent: 'space-between' }}>
+          <Grid item>
+            <Typography color="textSecondary" gutterBottom variant="h6">
+              {t('TasksProgress')}
+            </Typography>
+            <Typography color="textPrimary" variant="h3">
+              75.5%
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Avatar
+              sx={{ backgroundColor: orange[600], height: 56, width: 56 }}
+            >
+              <InsertChartIcon />
+            </Avatar>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Avatar
-            sx={{
-              backgroundColor: orange[600],
-              height: 56,
-              width: 56
-            }}
-          >
-            <InsertChartIcon />
-          </Avatar>
-        </Grid>
-      </Grid>
-      <Box sx={{ pt: 3 }}>
-        <LinearProgress
-          value={75.5}
-          variant="determinate"
-        />
-      </Box>
-    </CardContent>
-  </Card>
-);
+        <Box sx={{ pt: 3 }}>
+          <LinearProgress value={75.5} variant="determinate" />
+        </Box>
+      </CardContent>
+    </Card>
+  );
+};
 
 export default TasksProgress;

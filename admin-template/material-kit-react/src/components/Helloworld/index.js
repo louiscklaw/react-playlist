@@ -1,5 +1,3 @@
-const Helloworld = () => {
-  return <>Helloworld</>;
-};
+const Helloworld = () => <>Helloworld</>;
 
 export default Helloworld;

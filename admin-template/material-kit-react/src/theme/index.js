@@ -1,19 +1,17 @@
 import { createTheme } from '@material-ui/core';
 
+const LYNKED_RED = '#800000';
+// const LYNKED_SECONDARY = '#0079A5';
+// const LYNKED_INFO = '#0079A5';
+// const LYNKED_SUCCESS = '#74AA08';
+// const LYNKED_WARNING = '#8C4201';
+// const LYNKED_ERROR = '#BA1A3F';
+
 const theme = createTheme({
   palette: {
-    background: {
-      default: '#f4f6f8',
-      paper: '#ffffff'
-    },
-    primary: {
-      contrastText: '#ffffff',
-      main: '#5664d2'
-    },
-    text: {
-      primary: '#172b4d',
-      secondary: '#6b778c'
-    }
+    background: { default: '#f4f6f8', paper: '#ffffff' },
+    primary: { contrastText: '#ffffff', main: LYNKED_RED },
+    text: { primary: '#172b4d', secondary: '#6b778c' }
   },
   shadows: [
     'none',
@@ -43,39 +41,13 @@ const theme = createTheme({
     '0 0 1px 0 rgba(0,0,0,0.31), 0 24px 36px -8px rgba(0,0,0,0.25)'
   ],
   typography: {
-    h1: {
-      fontWeight: 500,
-      fontSize: 35,
-      letterSpacing: '-0.24px'
-    },
-    h2: {
-      fontWeight: 500,
-      fontSize: 29,
-      letterSpacing: '-0.24px'
-    },
-    h3: {
-      fontWeight: 500,
-      fontSize: 24,
-      letterSpacing: '-0.06px'
-    },
-    h4: {
-      fontWeight: 500,
-      fontSize: 20,
-      letterSpacing: '-0.06px'
-    },
-    h5: {
-      fontWeight: 500,
-      fontSize: 16,
-      letterSpacing: '-0.05px'
-    },
-    h6: {
-      fontWeight: 500,
-      fontSize: 14,
-      letterSpacing: '-0.05px'
-    },
-    overline: {
-      fontWeight: 500
-    }
+    h1: { fontWeight: 500, fontSize: 35, letterSpacing: '-0.24px' },
+    h2: { fontWeight: 500, fontSize: 29, letterSpacing: '-0.24px' },
+    h3: { fontWeight: 500, fontSize: 24, letterSpacing: '-0.06px' },
+    h4: { fontWeight: 500, fontSize: 20, letterSpacing: '-0.06px' },
+    h5: { fontWeight: 500, fontSize: 16, letterSpacing: '-0.05px' },
+    h6: { fontWeight: 500, fontSize: 14, letterSpacing: '-0.05px' },
+    overline: { fontWeight: 500 }
   }
 });
 
