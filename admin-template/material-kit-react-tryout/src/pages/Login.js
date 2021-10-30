@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
 // material
 import { styled } from '@mui/material/styles';
@@ -40,19 +41,21 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function Login() {
+  const { t } = useTranslation();
+
   return (
     <RootStyle title="Login | Minimal-UI">
       <AuthLayout>
-        Don’t have an account? &nbsp;
+        {t('auth.login.DontHaveAnAccount')} &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to="/register">
-          Get started
+          {t('auth.login.GetStarted')}
         </Link>
       </AuthLayout>
 
       <MHidden width="mdDown">
         <SectionStyle>
           <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-            Hi, Welcome Back
+            {t('auth.login.HiWelcomeBack')}
           </Typography>
           <img src="/static/illustrations/illustration_login.png" alt="login" />
         </SectionStyle>
@@ -62,9 +65,11 @@ export default function Login() {
         <ContentStyle>
           <Stack sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
-              Sign in to Minimal
+              {t('auth.login.SignIn')}
             </Typography>
-            <Typography sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>
+            <Typography sx={{ color: 'text.secondary' }}>
+              {t('auth.login.EnterYourDetailsBelow')}
+            </Typography>
           </Stack>
           <AuthSocial />
 
@@ -72,9 +77,9 @@ export default function Login() {
 
           <MHidden width="smUp">
             <Typography variant="body2" align="center" sx={{ mt: 3 }}>
-              Don’t have an account?&nbsp;
+              {t('auth.login.DontHaveAnAccount')}?&nbsp;
               <Link variant="subtitle2" component={RouterLink} to="register">
-                Get started
+                {t('auth.login.GetStarted')}
               </Link>
             </Typography>
           </MHidden>

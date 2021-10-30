@@ -1,3 +1,5 @@
+import React from 'react';
+
 // routes
 import Router from './routes';
 // theme
@@ -9,13 +11,19 @@ import { BaseOptionChartStyle } from './components/charts/BaseOptionChart';
 
 // ----------------------------------------------------------------------
 
+function Loader() {
+  return <>Loader</>;
+}
+
 export default function App() {
   return (
-    <ThemeConfig>
-      <ScrollToTop />
-      <GlobalStyles />
-      <BaseOptionChartStyle />
-      <Router />
-    </ThemeConfig>
+    <React.Suspense fallback={<Loader />}>
+      <ThemeConfig>
+        <ScrollToTop />
+        <GlobalStyles />
+        <BaseOptionChartStyle />
+        <Router />
+      </ThemeConfig>
+    </React.Suspense>
   );
 }

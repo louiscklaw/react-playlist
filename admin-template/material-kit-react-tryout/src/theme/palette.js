@@ -1,6 +1,15 @@
 import { alpha } from '@mui/material/styles';
 
+import { ColorLuminance } from '../utils/ColorLuminance';
+
 // ----------------------------------------------------------------------
+
+const LYNKED_RED = '#800000';
+const LYNKED_SECONDARY = '#0079A5';
+const LYNKED_INFO = '#0079A5';
+const LYNKED_SUCCESS = '#74AA08';
+const LYNKED_WARNING = '#8C4201';
+const LYNKED_ERROR = '#BA1A3F';
 
 function createGradient(color1, color2) {
   return `linear-gradient(to bottom, ${color1}, ${color2})`;
@@ -29,51 +38,51 @@ const GREY = {
 };
 
 const PRIMARY = {
-  lighter: '#C8FACD',
-  light: '#5BE584',
-  main: '#00AB55',
-  dark: '#007B55',
-  darker: '#005249',
+  lighter: ColorLuminance(LYNKED_RED, 0.4),
+  light: ColorLuminance(LYNKED_RED, 0.2),
+  main: LYNKED_RED,
+  dark: ColorLuminance(LYNKED_RED, -0.2),
+  darker: ColorLuminance(LYNKED_RED, -0.4),
   contrastText: '#fff'
 };
 const SECONDARY = {
-  lighter: '#D6E4FF',
-  light: '#84A9FF',
-  main: '#3366FF',
-  dark: '#1939B7',
-  darker: '#091A7A',
+  lighter: ColorLuminance(LYNKED_SECONDARY, 0.4),
+  light: ColorLuminance(LYNKED_SECONDARY, 0.2),
+  main: LYNKED_SECONDARY,
+  dark: ColorLuminance(LYNKED_SECONDARY, -0.2),
+  darker: ColorLuminance(LYNKED_SECONDARY, -0.4),
   contrastText: '#fff'
 };
 const INFO = {
-  lighter: '#D0F2FF',
-  light: '#74CAFF',
-  main: '#1890FF',
-  dark: '#0C53B7',
-  darker: '#04297A',
+  lighter: ColorLuminance(LYNKED_INFO, 0.4),
+  light: ColorLuminance(LYNKED_INFO, 0.2),
+  main: LYNKED_INFO,
+  dark: ColorLuminance(LYNKED_INFO, -0.2),
+  darker: ColorLuminance(LYNKED_INFO, -0.4),
   contrastText: '#fff'
 };
 const SUCCESS = {
-  lighter: '#E9FCD4',
-  light: '#AAF27F',
-  main: '#54D62C',
-  dark: '#229A16',
-  darker: '#08660D',
+  lighter: ColorLuminance(LYNKED_SUCCESS, 0.4),
+  light: ColorLuminance(LYNKED_SUCCESS, 0.2),
+  main: LYNKED_SUCCESS,
+  dark: ColorLuminance(LYNKED_SUCCESS, -0.2),
+  darker: ColorLuminance(LYNKED_SUCCESS, -0.4),
   contrastText: GREY[800]
 };
 const WARNING = {
-  lighter: '#FFF7CD',
-  light: '#FFE16A',
-  main: '#FFC107',
-  dark: '#B78103',
-  darker: '#7A4F01',
+  lighter: ColorLuminance(LYNKED_WARNING, 0.4),
+  light: ColorLuminance(LYNKED_WARNING, 0.2),
+  main: LYNKED_WARNING,
+  dark: ColorLuminance(LYNKED_WARNING, -0.2),
+  darker: ColorLuminance(LYNKED_WARNING, -0.4),
   contrastText: GREY[800]
 };
 const ERROR = {
-  lighter: '#FFE7D9',
-  light: '#FFA48D',
-  main: '#FF4842',
-  dark: '#B72136',
-  darker: '#7A0C2E',
+  lighter: ColorLuminance(LYNKED_ERROR, 0.4),
+  light: ColorLuminance(LYNKED_ERROR, 0.2),
+  main: LYNKED_ERROR,
+  dark: ColorLuminance(LYNKED_ERROR, -0.2),
+  darker: ColorLuminance(LYNKED_ERROR, -0.4),
   contrastText: '#fff'
 };
 

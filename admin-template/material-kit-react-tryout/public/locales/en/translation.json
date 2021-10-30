@@ -127,7 +127,20 @@
       "title_original": "Change your password"
     },
     "login": {
-      "forgotPasswordLink": "都無名差",
+      "DontHaveAnAccount": "都無名差",
+      "GetStarted": "素差巣都区いららんひ",
+      "SignIn": "夜区阿津ンカヌ魔擢のお",
+      "HiWelcomeBack": "のゆち等素ねらぬほゃつほ等名魔尾",
+      "EnterYourDetailsBelow": "のゆち等素ねらぬほゃつほ等名魔尾",
+      "EmailAddress": "のゆち等素",
+      "Password": "ゅいす",
+      "ForgotPassword": "魔擢のお",
+      "RememberMe": "区阿津ンカヌ魔擢の",
+      "Login": "区阿津",
+      "EmailMustBeAValidEmailAddress": "素差巣都区いららんひ",
+      "EmailIsRequired": "ゃつほ等名魔尾",
+      "PasswordIsRequired": "のゆち等素ねらぬ",
+      "Or": "或",
       "form": {
         "email": {
           "label": "留夜屋よね",

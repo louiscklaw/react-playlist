@@ -2,6 +2,8 @@ import * as Yup from 'yup';
 import { useState } from 'react';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { useFormik, Form, FormikProvider } from 'formik';
+import { useTranslation } from 'react-i18next';
+
 import { Icon } from '@iconify/react';
 import eyeFill from '@iconify/icons-eva/eye-fill';
 import eyeOffFill from '@iconify/icons-eva/eye-off-fill';
@@ -21,11 +23,15 @@ import { LoadingButton } from '@mui/lab';
 
 export default function LoginForm() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
   const [showPassword, setShowPassword] = useState(false);
 
   const LoginSchema = Yup.object().shape({
-    email: Yup.string().email('Email must be a valid email address').required('Email is required'),
-    password: Yup.string().required('Password is required')
+    email: Yup.string()
+      .email(t('auth.login.EmailMustBeAValidEmailAddress'))
+      .required(t('auth.login.EmailIsRequired')),
+    password: Yup.string().required(t('auth.login.PasswordIsRequired'))
   });
 
   const formik = useFormik({
@@ -54,7 +60,7 @@ export default function LoginForm() {
             fullWidth
             autoComplete="username"
             type="email"
-            label="Email address"
+            label={t('auth.login.EmailAddress')}
             {...getFieldProps('email')}
             error={Boolean(touched.email && errors.email)}
             helperText={touched.email && errors.email}
@@ -64,7 +70,7 @@ export default function LoginForm() {
             fullWidth
             autoComplete="current-password"
             type={showPassword ? 'text' : 'password'}
-            label="Password"
+            label={t('auth.login.Password')}
             {...getFieldProps('password')}
             InputProps={{
               endAdornment: (
@@ -83,11 +89,11 @@ export default function LoginForm() {
         <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 2 }}>
           <FormControlLabel
             control={<Checkbox {...getFieldProps('remember')} checked={values.remember} />}
-            label="Remember me"
+            label={t('auth.login.RememberMe')}
           />
 
           <Link component={RouterLink} variant="subtitle2" to="#">
-            Forgot password?
+            {t('auth.login.ForgotPassword')}?
           </Link>
         </Stack>
 
@@ -98,7 +104,7 @@ export default function LoginForm() {
           variant="contained"
           loading={isSubmitting}
         >
-          Login
+          {t('auth.login.Login')}
         </LoadingButton>
       </Form>
     </FormikProvider>
