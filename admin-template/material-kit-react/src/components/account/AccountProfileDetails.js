@@ -1,31 +1,17 @@
 import { useState } from 'react';
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  Grid,
-  TextField
-} from '@material-ui/core';
+import { useTranslation } from 'react-i18next';
+
+import { Box, Button, Card, CardContent, CardHeader, Divider, Grid, TextField } from '@material-ui/core';
 
 const states = [
-  {
-    value: 'alabama',
-    label: 'Alabama'
-  },
-  {
-    value: 'new-york',
-    label: 'New York'
-  },
-  {
-    value: 'san-francisco',
-    label: 'San Francisco'
-  }
+  { value: 'alabama', label: 'Alabama' },
+  { value: 'new-york', label: 'New York' },
+  { value: 'san-francisco', label: 'San Francisco' }
 ];
 
 const AccountProfileDetails = (props) => {
+  const { t } = useTranslation();
+
   const [values, setValues] = useState({
     firstName: 'Katarina',
     lastName: 'Smith',
@@ -43,31 +29,17 @@ const AccountProfileDetails = (props) => {
   };
 
   return (
-    <form
-      autoComplete="off"
-      noValidate
-      {...props}
-    >
+    <form autoComplete="off" noValidate {...props}>
       <Card>
-        <CardHeader
-          subheader="The information can be edited"
-          title="Profile"
-        />
+        <CardHeader subheader={t('PleaseSpecifyTheFirstName')} title={t('Profile')} />
         <Divider />
         <CardContent>
-          <Grid
-            container
-            spacing={3}
-          >
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
+          <Grid container spacing={3}>
+            <Grid item md={6} xs={12}>
               <TextField
                 fullWidth
-                helperText="Please specify the first name"
-                label="First name"
+                helperText={t('PleaseSpecifyTheFirstName')}
+                label={t('FirstName')}
                 name="firstName"
                 onChange={handleChange}
                 required
@@ -75,14 +47,10 @@ const AccountProfileDetails = (props) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
+            <Grid item md={6} xs={12}>
               <TextField
                 fullWidth
-                label="Last name"
+                label={t('LastName')}
                 name="lastName"
                 onChange={handleChange}
                 required
@@ -90,14 +58,10 @@ const AccountProfileDetails = (props) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
+            <Grid item md={6} xs={12}>
               <TextField
                 fullWidth
-                label="Email Address"
+                label={t('EmailAddress')}
                 name="email"
                 onChange={handleChange}
                 required
@@ -105,14 +69,10 @@ const AccountProfileDetails = (props) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
+            <Grid item md={6} xs={12}>
               <TextField
                 fullWidth
-                label="Phone Number"
+                label={t('PhoneNumber')}
                 name="phone"
                 onChange={handleChange}
                 type="number"
@@ -120,14 +80,10 @@ const AccountProfileDetails = (props) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
+            <Grid item md={6} xs={12}>
               <TextField
                 fullWidth
-                label="Country"
+                label={t('Country')}
                 name="country"
                 onChange={handleChange}
                 required
@@ -135,14 +91,10 @@ const AccountProfileDetails = (props) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
+            <Grid item md={6} xs={12}>
               <TextField
                 fullWidth
-                label="Select State"
+                label={t('SelectState')}
                 name="state"
                 onChange={handleChange}
                 required
@@ -152,10 +104,7 @@ const AccountProfileDetails = (props) => {
                 variant="outlined"
               >
                 {states.map((option) => (
-                  <option
-                    key={option.value}
-                    value={option.value}
-                  >
+                  <option key={option.value} value={option.value}>
                     {option.label}
                   </option>
                 ))}
@@ -164,18 +113,9 @@ const AccountProfileDetails = (props) => {
           </Grid>
         </CardContent>
         <Divider />
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'flex-end',
-            p: 2
-          }}
-        >
-          <Button
-            color="primary"
-            variant="contained"
-          >
-            Save details
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2 }}>
+          <Button color="primary" variant="contained">
+            {t('SaveDetails')}
           </Button>
         </Box>
       </Card>

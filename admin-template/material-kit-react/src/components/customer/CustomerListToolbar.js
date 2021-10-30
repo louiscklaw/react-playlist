@@ -8,12 +8,7 @@ const CustomerListToolbar = (props) => {
 
   return (
     <Box {...props}>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'flex-end'
-        }}
-      >
+      <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
         <Button>{t('Import')}</Button>
         <Button sx={{ mx: 1 }}>{t('Export')}</Button>
         <Button color="primary" variant="contained">

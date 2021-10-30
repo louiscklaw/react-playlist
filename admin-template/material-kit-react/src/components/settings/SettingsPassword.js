@@ -1,39 +1,26 @@
 import { useState } from 'react';
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  TextField
-} from '@material-ui/core';
+import { useTranslation } from 'react-i18next';
+
+import { Box, Button, Card, CardContent, CardHeader, Divider, TextField } from '@material-ui/core';
 
 const SettingsPassword = (props) => {
-  const [values, setValues] = useState({
-    password: '',
-    confirm: ''
-  });
+  const { t } = useTranslation();
+
+  const [values, setValues] = useState({ password: '', confirm: '' });
 
   const handleChange = (event) => {
-    setValues({
-      ...values,
-      [event.target.name]: event.target.value
-    });
+    setValues({ ...values, [event.target.name]: event.target.value });
   };
 
   return (
     <form {...props}>
       <Card>
-        <CardHeader
-          subheader="Update password"
-          title="Password"
-        />
+        <CardHeader subheader={t('UpdatePassword')} title={t('Password')} />
         <Divider />
         <CardContent>
           <TextField
             fullWidth
-            label="Password"
+            label={t('Password')}
             margin="normal"
             name="password"
             onChange={handleChange}
@@ -43,7 +30,7 @@ const SettingsPassword = (props) => {
           />
           <TextField
             fullWidth
-            label="Confirm password"
+            label={t('ConfirmPassword')}
             margin="normal"
             name="confirm"
             onChange={handleChange}
@@ -53,18 +40,9 @@ const SettingsPassword = (props) => {
           />
         </CardContent>
         <Divider />
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'flex-end',
-            p: 2
-          }}
-        >
-          <Button
-            color="primary"
-            variant="contained"
-          >
-            Update
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2 }}>
+          <Button color="primary" variant="contained">
+            {t('Update')}
           </Button>
         </Box>
       </Card>
