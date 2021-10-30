@@ -1,0 +1,667 @@
+{
+  "admin": {
+    "drawer": {
+      "menu": {
+        "calendar": "目根尾",
+        "dashboard": "アオオヨ",
+        "help": "樹日名",
+        "home": "ゅ",
+        "projects": "御御",
+        "settings": "イマ",
+        "userManagement": "やも",
+        "calendar_original": "Calendar",
+        "dashboard_original": "Dashboard",
+        "help_original": "Help",
+        "home_original": "Home",
+        "projects_original": "Projects",
+        "settings_original": "Settings",
+        "userManagement_original": "Users"
+      }
+    },
+    "header": {
+      "notifications": {
+        "empty": {
+          "title": "んまはそんか目二絵",
+          "title_original": "Your notification list is empty"
+        },
+        "seeAll": "ゃゆ遊保魔鵜御",
+        "seeAll_original": "See all notifications"
+      }
+    },
+    "home": {
+      "achievement": {
+        "action": "まんお日留二",
+        "description": "保差等やヒツヤ留御他あてそゃめゆ派氏く氏知巣",
+        "title": "目御列素遊",
+        "action_original": "View Profile",
+        "description_original": "You have completed {{progress}}% of your profile. Your current progress is great.",
+        "title_original": "Congratulations {{name}}"
+      },
+      "followers": {
+        "units": {
+          "likes": "遊個",
+          "love": "タノヤ",
+          "smiles": "トクイ",
+          "likes_original": "Likes",
+          "love_original": "Love",
+          "smiles_original": "Smiles"
+        }
+      },
+      "meeting": {
+        "title": "まあう",
+        "title_original": "Meetings"
+      },
+      "targets": {
+        "income": "個派",
+        "followers": "つ",
+        "title": "かう",
+        "views": "き",
+        "income_original": "Income",
+        "followers_original": "Followers",
+        "title_original": "Targets",
+        "views_original": "Views"
+      },
+      "views": {
+        "action": "んきふ屋手",
+        "unit": "御",
+        "action_original": "View Dashboard",
+        "unit_original": "Views"
+      },
+      "welcome": {
+        "message": "のるテレサレヒレーキナレナムョマ露等野る都差巣舳えめぬむか離露保御ふろめれはくも離模",
+        "subTitle": "とも巣",
+        "title": "みり",
+        "message_original": "This page is designed to give some important information about the application. Let's make someting together!",
+        "subTitle_original": "Welcome back!",
+        "title_original": "Hi {{name}},"
+      }
+    }
+  },
+  "auth": {
+    "forgotPassword": {
+      "form": {
+        "action": "日舳けとね",
+        "back": "ろせかよリロコヤスょろよ",
+        "email": {
+          "label": "氏留魔保こねす",
+          "label_original": "E-mail Address"
+        },
+        "action_original": "Send Confirmation",
+        "back_original": "Back to login"
+      },
+      "notifications": {
+        "success": "樹留鵜区せお瀬瀬",
+        "success_original": "Email has been sent!"
+      },
+      "subTitle": "め魔素るゆやき名阿等露以雲もちててエリコょてなぬけ野手",
+      "title": "はるか素差",
+      "subTitle_original": "To get a validation code, enter the e-mail address associated to your account.",
+      "title_original": "Get validation code"
+    },
+    "forgotPasswordSubmit": {
+      "form": {
+        "action": "まふなめ",
+        "back": "都夜無素留手ナョキュモ",
+        "code": {
+          "label": "よめ",
+          "label_original": "Code"
+        },
+        "confirmPassword": {
+          "label": "御ん",
+          "label_original": "Confirm Password"
+        },
+        "newPassword": {
+          "label": "とてんも",
+          "label_original": "New Password"
+        },
+        "action_original": "Reset Password",
+        "back_original": "Back to login"
+      },
+      "notifications": {
+        "success": "素差巣都区いららんひ",
+        "success_original": "Your password has been changed!"
+      },
+      "subTitle": "トンヒニエチし魔瀬擢樹知夜区阿津ンカヌ魔擢のおゅのせろ",
+      "title": "派樹二以差",
+      "subTitle_original": "Enter the code you received by mail and choose a new password.",
+      "title_original": "Change your password"
+    },
+    "login": {
+      "forgotPasswordLink": "都無名差",
+      "form": {
+        "email": {
+          "label": "留夜屋よね",
+          "label_original": "E-mail Address"
+        },
+        "password": {
+          "label": "ふ",
+          "label_original": "Password"
+        }
+      },
+      "newAccountLink": "のゆち等素ねらぬほゃつほ等名魔尾",
+      "submit": "ゅいす",
+      "title": "ッエミけあゃ",
+      "forgotPasswordLink_original": "Forgot password?",
+      "newAccountLink_original": "Don't have an account? Sign Up!",
+      "submit_original": "Sign in",
+      "title_original": "Sign in"
+    },
+    "register": {
+      "back": "みほは樹模日露",
+      "form": {
+        "email": {
+          "label": "しち",
+          "label_original": "E-mail Address"
+        },
+        "firstName": {
+          "label": "あもれにへ",
+          "label_original": "First Name"
+        },
+        "gender": {
+          "label": "みっく",
+          "options": {
+            "f": "みゅ",
+            "m": "他",
+            "n": "離模",
+            "f_original": "F",
+            "m_original": "M",
+            "n_original": "NC"
+          },
+          "label_original": "Gender"
+        },
+        "lastName": {
+          "label": "二かゃ",
+          "label_original": "Last Name"
+        }
+      },
+      "notifications": {
+        "success": "くるらおてみふむさ",
+        "success_original": "Your account has been created successfully!"
+      },
+      "submit": "きむ",
+      "title": "アチョ",
+      "back_original": "Back to login",
+      "submit_original": "Register",
+      "title_original": "Register"
+    }
+  },
+  "calendar": {
+    "confirmations": {
+      "delete": "らむさゅ手保野めか津津毛き",
+      "delete_original": "Are you sure you want to delete this event?"
+    },
+    "form": {
+      "color": {
+        "label": "ち",
+        "label_original": "Color"
+      },
+      "description": {
+        "label": "あ",
+        "label_original": "Description"
+      },
+      "end": {
+        "label": "無擢素他によ",
+        "label_original": "End Date"
+      },
+      "start": {
+        "label": "瀬鵜つあ",
+        "label_original": "Start Date"
+      },
+      "title": {
+        "label": "課尾",
+        "label_original": "Title"
+      }
+    },
+    "modal": {
+      "add": {
+        "action": "日",
+        "title": "ほせむ",
+        "action_original": "Add",
+        "title_original": "Add Event"
+      },
+      "edit": {
+        "action": "お",
+        "title": "都以差手",
+        "action_original": "Edit",
+        "title_original": "Edit Event"
+      }
+    },
+    "notifications": {
+      "addSuccess": "氏ねやす個",
+      "deleteSuccess": "離他他列譜区露りれ個離阿等",
+      "updateSuccess": "けたみ等えほか",
+      "addSuccess_original": "{{event}} has been added!",
+      "deleteSuccess_original": "Event has been deleted!",
+      "updateSuccess_original": "{{event}} has been updated!"
+    },
+    "title": "夜絵",
+    "title_original": "Calendar"
+  },
+  "common": {
+    "backHome": "差日巣魔魔",
+    "cancel": "遊",
+    "confirm": "尾津魔",
+    "confirmation": "むか",
+    "delete": "屋個",
+    "edit": "お",
+    "errors": {
+      "forbidden": {
+        "subTitle": "れ課樹きねやにねゆおさほか",
+        "subTitle_original": "You don't have access to view this page"
+      },
+      "notFound": {
+        "subTitle": "うし都なりおほけのたつもちむ野以る目鵜おふゆ夜ぬかく列課課夜都めけかる",
+        "title": "っ",
+        "subTitle_original": "Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be sure to check your spelling.",
+        "title_original": "Oops!"
+      },
+      "unexpected": {
+        "subTitle": "絵名うおえ鵜素夜雲区ちよ阿絵阿屋魔等すふさ個",
+        "title": "ら",
+        "subTitle_original": "Something went wrong! If the problem persists, contact us!",
+        "title_original": "Oops!"
+      },
+      "underConstructions": {
+        "subTitle": "ろえてて離保たうひんントチウエノキ露都模日課",
+        "title": "区以か",
+        "subTitle_original": "We are actively working on this page.",
+        "title_original": "Under constructions!"
+      }
+    },
+    "reset": "つし",
+    "retry": "うそのへうはなく",
+    "selected": "魔",
+    "snackbar": {
+      "error": "トソト",
+      "success": "アシメヤ",
+      "error_original": "Error",
+      "success_original": "Success"
+    },
+    "today": "根絵",
+    "update": "さゅ",
+    "validations": {
+      "email": "ふもゆ保離野尾日等",
+      "max": "列保御魔毛夜区てつさねいコレアア",
+      "min": "うむ等ういねし名留",
+      "passwordMatch": "瀬無っカノサぬにも",
+      "required": "むゅもて",
+      "email_original": "Invalid email address",
+      "max_original": "Must be {{size}} characters or less",
+      "min_original": "Must be {{size}} characters or more",
+      "passwordMatch_original": "Password does not match",
+      "required_original": "Required"
+    },
+    "backHome_original": "Back to Home",
+    "cancel_original": "Cancel",
+    "confirm_original": "Confirm",
+    "confirmation_original": "Confirmation",
+    "delete_original": "Delete",
+    "edit_original": "Edit",
+    "reset_original": "Reset",
+    "retry_original": "Try Again",
+    "selected_original": "Selected",
+    "today_original": "Today",
+    "update_original": "Update"
+  },
+  "dashboard": {
+    "Welcome": "this is a hello world",
+    "activity": {
+      "title": "スウルーッ",
+      "title_original": "Activity"
+    },
+    "budget": {
+      "legend": {
+        "unit": "ちねり",
+        "unit_original": "Budget ($K)"
+      },
+      "title": "ソキ",
+      "title_original": "Budget"
+    },
+    "orderProgress": {
+      "title": "ち",
+      "title_original": "Orders"
+    },
+    "overview": {
+      "orders": "ひつね",
+      "sales": "へけほ",
+      "users": "とくへひ",
+      "visits": "阿巣",
+      "orders_original": "Orders",
+      "sales_original": "Sales",
+      "users_original": "Users",
+      "visits_original": "Visits"
+    },
+    "progress": {
+      "title": "区",
+      "title_original": "Progress"
+    },
+    "salesByAge": {
+      "title": "野都くゃゃ都",
+      "title_original": "Sales by Age"
+    },
+    "salesByCategory": {
+      "legend": {
+        "books": "巣津",
+        "movies": "いくみロトトコ",
+        "software": "きさふ",
+        "books_original": "Books",
+        "movies_original": "Movies & TV",
+        "software_original": "Software"
+      },
+      "title": "二列無よゃ",
+      "title_original": "Sales by Category"
+    },
+    "salesHistory": {
+      "title": "以やんにほ",
+      "unit": "ねエヒミ",
+      "title_original": "Sales History",
+      "unit_original": "$ today"
+    },
+    "salesProgress": {
+      "title": "雲模毛離",
+      "title_original": "Sales"
+    },
+    "teams": {
+      "columns": {
+        "progress": "ん",
+        "team": "以野",
+        "value": "とに",
+        "progress_original": "Progress",
+        "team_original": "Team",
+        "value_original": "Value"
+      },
+      "title": "へいねあ",
+      "title_original": "Teams Progress"
+    },
+    "users": {
+      "title": "こう以根知",
+      "title_original": "Recent Users"
+    },
+    "visitProgress": {
+      "title": "もおし",
+      "title_original": "Visits"
+    },
+    "title": "等御個",
+    "title_original": "Dashboard"
+  },
+  "faq": {
+    "noAnswerLink": "列以へた派夜根えそ遊知素くぬん露ってゃよ",
+    "questions": {
+      "title1": "巣手津二そくよく",
+      "answer1": "りっろ差絵のうんあもそほちみん個名ま巣舳模課樹うかほめま差模毛魔",
+      "title2": "にしっ差氏ち",
+      "answer2": "毛ニリりゅほめなにへけエシケヌナコヤさえも鵜素屋ひさよ区手他によひま離留",
+      "title3": "されそへねつゃたエネムチヨセメ",
+      "answer3": "個派ユフヤヨロヌす御氏差都およ御素やひゃき日ナケオモヘカんあら毛そ派尾離よひ模野舳瀬",
+      "title4": "てれ尾氏えよきくて",
+      "answer4": "夜素へ野離留譜むたす課擢名他阿魔雲阿ちる樹ちょ野つなゃすせキエアュ",
+      "title5": "課ゅえゅ瀬列露ホヨョサオロフ手譜らむ他模日",
+      "answer5": "鵜らといき目夜留列以素都氏保目阿派瀬そつほるゃけにそるるらかまろ阿舳樹保",
+      "title6": "っろやちラルン遊擢お尾譜んぬ二雲",
+      "answer6": "やゅ夜模譜ね以他野野舳かイエアチムミチウハめる御根知雲素鵜てぬね",
+      "title1_original": "What is React Admin?",
+      "answer1_original": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title2_original": "How does it work?",
+      "answer2_original": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title3_original": "What are the features available?",
+      "answer3_original": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title4_original": "Who is maintaining the project?",
+      "answer4_original": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title5_original": "What is the license of the project?",
+      "answer5_original": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title6_original": "How can I contribute to the project?",
+      "answer6_original": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget."
+    },
+    "title": "派素課保個模課鵜",
+    "noAnswerLink_original": "Can't find it here? Check out our Help Center.",
+    "title_original": "Frequently Asked Questions"
+  },
+  "help": {
+    "menu": {
+      "contact": "は",
+      "faq": "つ",
+      "guide": "サッアセフョラ",
+      "support": "根列",
+      "contact_original": "Contact",
+      "faq_original": "FAQ",
+      "guide_original": "Guide",
+      "support_original": "Support"
+    },
+    "title": "以御日模毛",
+    "title_original": "Help Center"
+  },
+  "landing": {
+    "cta": {
+      "main": "そらか御阿氏",
+      "mainAuth": "そへかまねさ",
+      "secondary": "メケノへ",
+      "main_original": "Sign in",
+      "mainAuth_original": "Continue as {{name}}",
+      "secondary_original": "Source code"
+    },
+    "features": {
+      "more": "野らく氏手露日",
+      "title": "氏夜ぬ",
+      "more_original": "More on Github",
+      "title_original": "Main Features"
+    },
+    "title": "ぬやしきろめ等等個さきっ樹ょ課鵜ャマアセクヘリホュ",
+    "title_original": "Free and open-source admin application made with React and Material-UI"
+  },
+  "notifications": {
+    "newComment": "はけ列雲根のくれて手素屋舳めく目遊魔鵜",
+    "unreadMessages": "日以魔露知素ャヒヒ根名ぬ",
+    "newComment_original": "<bold>{{user}}</bold> has written a new comment on your profile",
+    "unreadMessages_original": "You have <bold>{{quantity}}</bold> unread messages"
+  },
+  "profile": {
+    "activity": {
+      "empty": "雲列譜らゅあみしふゆ根瀬名津魔差他個鵜",
+      "logs": {
+        "eventAdded": "二二あきゅやょん名個津ほす",
+        "eventUpdated": "えらすさえかに",
+        "userAdded": "舳日氏瀬個露ラトマ都氏ょろらょ",
+        "userDeleted": "りこて模な素個",
+        "userUpdated": "ぬ他毛ゆよたとか",
+        "eventAdded_original": "<bold>You</bold> added a new event: <bold>{{resource}}</bold>",
+        "eventUpdated_original": "<bold>You</bold> updated event: <bold>{{resource}}</bold>",
+        "userAdded_original": "<bold>You</bold> added a new user: <bold>{{resource}}</bold>",
+        "userDeleted_original": "<bold>You</bold> deleted user: <bold>{{resource}}</bold>",
+        "userUpdated_original": "<bold>You</bold> updated user: <bold>{{resource}}</bold>"
+      },
+      "empty_original": "Logs of your activity will show up here!"
+    },
+    "completion": {
+      "title": "あけな等",
+      "title_original": "Profile Completion"
+    },
+    "info": {
+      "form": {
+        "email": {
+          "label": "さありゅにんむ",
+          "label_original": "Email Address"
+        },
+        "firstName": {
+          "label": "擢知魔",
+          "label_original": "First Name"
+        },
+        "gender": {
+          "label": "露鵜譜",
+          "options": {
+            "f": "尾",
+            "m": "目",
+            "n": "ょ",
+            "f_original": "Female",
+            "m_original": "Male",
+            "n_original": "NC"
+          },
+          "label_original": "Gender"
+        },
+        "lastName": {
+          "label": "ムチーユく",
+          "label_original": "Last Name"
+        }
+      },
+      "title": "遊屋以",
+      "title_original": "Update profile"
+    },
+    "menu": {
+      "activity": "はし",
+      "info": "けょ",
+      "password": "ヤルヤミ",
+      "activity_original": "Activity",
+      "info_original": "Information",
+      "password_original": "Password"
+    },
+    "notifications": {
+      "informationUpdated": "し課目",
+      "passwordChanged": "さる留無保巣",
+      "informationUpdated_original": "Information updated!",
+      "passwordChanged_original": "Password changed!"
+    },
+    "password": {
+      "form": {
+        "current": {
+          "label": "りし",
+          "label_original": "Current Password"
+        },
+        "confirm": {
+          "label": "擢模き",
+          "label_original": "Confirm Password"
+        },
+        "new": {
+          "label": "以津個阿",
+          "label_original": "New Password"
+        }
+      },
+      "title": "てら遊保け",
+      "title_original": "Change your password"
+    }
+  },
+  "settings": {
+    "drawer": {
+      "direction": {
+        "label": "ふ",
+        "options": {
+          "ltr": "日",
+          "rtl": "列個",
+          "ltr_original": "LTR",
+          "rtl_original": "RTL"
+        },
+        "label_original": "Direction"
+      },
+      "language": {
+        "label": "毛個",
+        "options": {
+          "en": "ーセクマウ",
+          "fr": "こ",
+          "en_original": "English",
+          "fr_original": "Français"
+        },
+        "label_original": "Language"
+      },
+      "mode": {
+        "label": "ルケツイユ",
+        "options": {
+          "dark": "コイヨニエンモ",
+          "light": "つけい",
+          "dark_original": "Dark",
+          "light_original": "Light"
+        },
+        "label_original": "Mode"
+      },
+      "sidebar": {
+        "label": "ね",
+        "options": {
+          "collapsed": "は",
+          "full": "以",
+          "collapsed_original": "Collapsed",
+          "full_original": "Full"
+        },
+        "label_original": "Sidebar"
+      },
+      "title": "へゆそら",
+      "title_original": "Settings"
+    }
+  },
+  "userManagement": {
+    "confirmations": {
+      "delete": "素絵巣名くねにすっ留他目名名以よにむんゅ名日",
+      "delete_original": "Are you sure you want to delete this user?"
+    },
+    "form": {
+      "disabled": {
+        "label": "な",
+        "label_original": "Disabled"
+      },
+      "email": {
+        "label": "御も",
+        "label_original": "Email Address"
+      },
+      "firstName": {
+        "label": "尾魔すみ",
+        "label_original": "First Name"
+      },
+      "gender": {
+        "label": "くね",
+        "options": {
+          "f": "列名",
+          "m": "露",
+          "n": "ちか",
+          "f_original": "Female",
+          "m_original": "Male",
+          "n_original": "NC"
+        },
+        "label_original": "Gender"
+      },
+      "lastName": {
+        "label": "鵜ょ",
+        "label_original": "Last Name"
+      },
+      "role": {
+        "label": "ょ",
+        "label_original": "Role"
+      }
+    },
+    "modal": {
+      "add": {
+        "action": "個手",
+        "title": "モケろす",
+        "action_original": "Add",
+        "title_original": "Add User"
+      },
+      "edit": {
+        "action": "保",
+        "title": "メヤフ鵜氏日",
+        "action_original": "Edit",
+        "title_original": "Edit User"
+      }
+    },
+    "notifications": {
+      "addSuccess": "ょきむぬゃッンモツろ",
+      "deleteSuccess": "他以つや目根るみ",
+      "updateSuccess": "ぬまら絵擢絵ッンテ",
+      "addSuccess_original": "{{user}} has been added!",
+      "deleteSuccess_original": "User(s) have been deleted!",
+      "updateSuccess_original": "{{user}} has been updated!"
+    },
+    "table": {
+      "headers": {
+        "actions": "屋留",
+        "gender": "根擢",
+        "role": "夜",
+        "status": "目遊",
+        "user": "い",
+        "actions_original": "Actions",
+        "gender_original": "Gender",
+        "role_original": "Role",
+        "status_original": "Status",
+        "user_original": "User"
+      }
+    },
+    "toolbar": {
+      "title": "またす",
+      "title_original": "Users"
+    }
+  }
+}
