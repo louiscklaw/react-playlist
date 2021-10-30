@@ -1,20 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-import {
-  Box,
-  Button,
-  Checkbox,
-  Container,
-  FormHelperText,
-  Link,
-  TextField,
-  Typography
-} from '@material-ui/core';
+import { Box, Button, Checkbox, Container, FormHelperText, Link, TextField, Typography } from '@material-ui/core';
 
 const Register = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -32,56 +25,33 @@ const Register = () => {
       >
         <Container maxWidth="sm">
           <Formik
-            initialValues={{
-              email: '',
-              firstName: '',
-              lastName: '',
-              password: '',
-              policy: false
-            }}
-            validationSchema={
-            Yup.object().shape({
+            initialValues={{ email: '', firstName: '', lastName: '', password: '', policy: false }}
+            validationSchema={Yup.object().shape({
               email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
               firstName: Yup.string().max(255).required('First name is required'),
               lastName: Yup.string().max(255).required('Last name is required'),
               password: Yup.string().max(255).required('password is required'),
               policy: Yup.boolean().oneOf([true], 'This field must be checked')
-            })
-          }
+            })}
             onSubmit={() => {
               navigate('/app/dashboard', { replace: true });
             }}
           >
-            {({
-              errors,
-              handleBlur,
-              handleChange,
-              handleSubmit,
-              isSubmitting,
-              touched,
-              values
-            }) => (
+            {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
               <form onSubmit={handleSubmit}>
                 <Box sx={{ mb: 3 }}>
-                  <Typography
-                    color="textPrimary"
-                    variant="h2"
-                  >
-                    Create new account
+                  <Typography color="textPrimary" variant="h2">
+                    {t('CreateNewAccount')}
                   </Typography>
-                  <Typography
-                    color="textSecondary"
-                    gutterBottom
-                    variant="body2"
-                  >
-                    Use your email to create new account
+                  <Typography color="textSecondary" gutterBottom variant="body2">
+                    {t('UseYourEmailToCreateNewAccount')}
                   </Typography>
                 </Box>
                 <TextField
                   error={Boolean(touched.firstName && errors.firstName)}
                   fullWidth
                   helperText={touched.firstName && errors.firstName}
-                  label="First name"
+                  label={t('FirstName')}
                   margin="normal"
                   name="firstName"
                   onBlur={handleBlur}
@@ -93,7 +63,7 @@ const Register = () => {
                   error={Boolean(touched.lastName && errors.lastName)}
                   fullWidth
                   helperText={touched.lastName && errors.lastName}
-                  label="Last name"
+                  label={t('LastName')}
                   margin="normal"
                   name="lastName"
                   onBlur={handleBlur}
@@ -105,7 +75,7 @@ const Register = () => {
                   error={Boolean(touched.email && errors.email)}
                   fullWidth
                   helperText={touched.email && errors.email}
-                  label="Email Address"
+                  label={t('EmailAddress')}
                   margin="normal"
                   name="email"
                   onBlur={handleBlur}
@@ -118,7 +88,7 @@ const Register = () => {
                   error={Boolean(touched.password && errors.password)}
                   fullWidth
                   helperText={touched.password && errors.password}
-                  label="Password"
+                  label={t('Password')}
                   margin="normal"
                   name="password"
                   onBlur={handleBlur}
@@ -127,40 +97,16 @@ const Register = () => {
                   value={values.password}
                   variant="outlined"
                 />
-                <Box
-                  sx={{
-                    alignItems: 'center',
-                    display: 'flex',
-                    ml: -1
-                  }}
-                >
-                  <Checkbox
-                    checked={values.policy}
-                    name="policy"
-                    onChange={handleChange}
-                  />
-                  <Typography
-                    color="textSecondary"
-                    variant="body1"
-                  >
-                    I have read the
-                    {' '}
-                    <Link
-                      color="primary"
-                      component={RouterLink}
-                      to="#"
-                      underline="always"
-                      variant="h6"
-                    >
-                      Terms and Conditions
+                <Box sx={{ alignItems: 'center', display: 'flex', ml: -1 }}>
+                  <Checkbox checked={values.policy} name="policy" onChange={handleChange} />
+                  <Typography color="textSecondary" variant="body1">
+                    {t('IHaveReadThe')}
+                    <Link color="primary" component={RouterLink} to="#" underline="always" variant="h6">
+                      {t('TermsAndConditions')}
                     </Link>
                   </Typography>
                 </Box>
-                {Boolean(touched.policy && errors.policy) && (
-                <FormHelperText error>
-                  {errors.policy}
-                </FormHelperText>
-                )}
+                {Boolean(touched.policy && errors.policy) && <FormHelperText error>{errors.policy}</FormHelperText>}
                 <Box sx={{ py: 2 }}>
                   <Button
                     color="primary"
@@ -170,17 +116,13 @@ const Register = () => {
                     type="submit"
                     variant="contained"
                   >
-                    Sign up now
+                    {t('SignUpNow')}
                   </Button>
                 </Box>
-                <Typography
-                  color="textSecondary"
-                  variant="body1"
-                >
-                  Have an account?
-                  {' '}
+                <Typography color="textSecondary" variant="body1">
+                  {t('HaveAnAccount')}
                   <Link component={RouterLink} to="/login" variant="h6" underline="hover">
-                    Sign in
+                    {t('SignIn')}
                   </Link>
                 </Typography>
               </form>

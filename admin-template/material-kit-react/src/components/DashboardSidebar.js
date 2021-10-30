@@ -3,16 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import {
-  Avatar,
-  Box,
-  Button,
-  Divider,
-  Drawer,
-  Hidden,
-  List,
-  Typography
-} from '@material-ui/core';
+import { Avatar, Box, Button, Divider, Drawer, Hidden, List, Typography } from '@material-ui/core';
 
 import {
   AlertCircle as AlertCircleIcon,
@@ -109,12 +100,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
       <Box sx={{ p: 2 }}>
         <List>
           {items.map((item) => (
-            <NavItem
-              href={item.href}
-              key={item.title}
-              title={item.title}
-              icon={item.icon}
-            />
+            <NavItem href={item.href} key={item.title} title={item.title} icon={item.icon} />
           ))}
         </List>
       </Box>
@@ -139,12 +125,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
             pt: 2
           }}
         >
-          <Button
-            color="primary"
-            component="a"
-            href="https://react-material-kit.devias.io"
-            variant="contained"
-          >
+          <Button color="primary" component="a" href="https://react-material-kit.devias.io" variant="contained">
             See PRO version
           </Button>
         </Box>
@@ -160,11 +141,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
           onClose={onMobileClose}
           open={openMobile}
           variant="temporary"
-          PaperProps={{
-            sx: {
-              width: 256
-            }
-          }}
+          PaperProps={{ sx: { width: 256 } }}
         >
           {content}
         </Drawer>
@@ -175,11 +152,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
           open
           variant="persistent"
           PaperProps={{
-            sx: {
-              width: 256,
-              top: 64,
-              height: 'calc(100% - 64px)'
-            }
+            sx: { width: 256, top: 64, height: 'calc(100% - 64px)' }
           }}
         >
           {content}
