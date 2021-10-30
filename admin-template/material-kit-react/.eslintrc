@@ -25,6 +25,8 @@
     "react/jsx-props-no-spreading": "off",
     "react/jsx-wrap-multilines": "off",
     "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off"
   }
 }
