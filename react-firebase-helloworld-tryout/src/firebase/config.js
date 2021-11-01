@@ -1,6 +1,6 @@
 // https://firebase.google.com/docs/firestore/quotas
 // https://firebase.google.com/docs/firestore/quickstart
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBZ5IkKyebNRzt8dwlt8JY_41BENdakzxA',

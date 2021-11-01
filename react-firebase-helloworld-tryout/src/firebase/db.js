@@ -1,5 +1,7 @@
-import firebase from 'firebase/app';
+import firebase from 'firebase';
 import firebase_app from './config';
+
+import 'firebase/firestore';
 
 const db = firebase_app.firestore();
 const emulator_host = 'localhost';
@@ -12,9 +14,5 @@ if (process.env.NODE_ENV == 'development') {
   console.log('into develop firebase_auth');
   firebase.auth().useEmulator(`http://${emulator_host}/`);
 }
-
-// db.settings({
-//   timestampsInSnapshots: true,
-// });
 
 export default db;

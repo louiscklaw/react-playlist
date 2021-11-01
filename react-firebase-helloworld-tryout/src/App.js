@@ -1,6 +1,6 @@
 import React from 'react';
 
-import User from './components/User';
+import UserFunctionalComponent from './components/UserFunctionalComponent';
 
 import './App.css';
 
@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <User />
+      <UserFunctionalComponent />
       helloworld
     </div>
   );
