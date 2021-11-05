@@ -10,40 +10,51 @@ function App() {
 
   // GET
   const loadFromLocalStorage = (k) => {
-    if (localStorage.getItem(k) === null) {
+    let result = localStorage.getItem(k);
+    if (result) {
+      return result;
+    } else {
       return null;
     }
-    return JSON.parse(localStorage.getItem(k));
   };
 
   const removeLocalStorage = (k) => localStorage.removeItem(k);
 
   const removeAllLocalStorage = () => localStorage.clear();
 
+  const tryLoad = (k) => {
+    setDebug(loadFromLocalStorage(k));
+  };
+
   // setter
-  sessionStorage.setItem('myData', JSON.stringify({ hello: 'sessionStorage' }));
-  sessionStorage.setItem(
-    PATH_TO_TEST,
-    JSON.stringify({ hello: 'sessionStorage' })
-  );
+  // sessionStorage.setItem('myData', { hello: 'sessionStorage' });
 
   // getter
-  sessionStorage.getItem('myData');
+  // sessionStorage.getItem('myData');
 
-  // remove
-  // localStorage.removeItem('myData')
+  // storeToLocalStorage('myData', { hello: 'world' });
+  // storeToLocalStorage(PATH_TO_TEST, { hello: 'world' });
 
-  // remove all
-  // localStorage.clear()
+  let [debug, setDebug] = React.useState('');
+  React.useEffect(() => {
+    setDebug(loadFromLocalStorage('storageKey'));
+  }, []);
 
-  storeToLocalStorage('myData', { hello: 'world' });
-  storeToLocalStorage(PATH_TO_TEST, { hello: 'world' });
+  return (
+    <div className="App">
+      <div>react helloworld</div>
+      <div>debug</div>
+      <pre>{debug}</pre>
 
-  alert(JSON.stringify(loadFromLocalStorage(PATH_TO_TEST)));
-  alert(JSON.stringify(loadFromLocalStorage('not-existing')));
-  alert(JSON.stringify(loadFromLocalStorage('myData')));
-
-  return <div className="App">react helloworld</div>;
+      <button>test</button>
+      <button>clear</button>
+      <button onClick={(e) => tryLoad('hello', e)}>get</button>
+      <button
+        onClick={(e) => storeToLocalStorage('hello', { hello: Date.now() }, e)}>
+        set
+      </button>
+    </div>
+  );
 }
 
 export default App;
