@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import { v4 as uuid } from 'uuid';
 import moment from 'moment';
 import {
@@ -48,43 +50,33 @@ const products = [
   }
 ];
 
-const LatestProducts = (props) => (
-  <Card {...props}>
-    <CardHeader subtitle={`${products.length} in total`} title="Latest Products" />
-    <Divider />
-    <List>
-      {products.map((product, i) => (
-        <ListItem divider={i < products.length - 1} key={product.id}>
-          <ListItemAvatar>
-            <img
-              alt={product.name}
-              src={product.imageUrl}
-              style={{
-                height: 48,
-                width: 48
-              }}
-            />
-          </ListItemAvatar>
-          <ListItemText primary={product.name} secondary={`Updated ${product.updatedAt.fromNow()}`} />
-          <IconButton edge="end" size="small">
-            <MoreVertIcon />
-          </IconButton>
-        </ListItem>
-      ))}
-    </List>
-    <Divider />
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        p: 2
-      }}
-    >
-      <Button color="primary" endIcon={<ArrowRightIcon />} size="small" variant="text">
-        View all
-      </Button>
-    </Box>
-  </Card>
-);
+const LatestProducts = (props) => {
+  const { t } = useTranslation();
+  return (
+    <Card {...props}>
+      <CardHeader subtitle={`${products.length} t('InTotal')`} title={t('LatestProducts')} />
+      <Divider />
+      <List>
+        {products.map((product, i) => (
+          <ListItem divider={i < products.length - 1} key={product.id}>
+            <ListItemAvatar>
+              <img alt={product.name} src={product.imageUrl} style={{ height: 48, width: 48 }} />
+            </ListItemAvatar>
+            <ListItemText primary={product.name} secondary={`Updated ${product.updatedAt.fromNow()}`} />
+            <IconButton edge="end" size="small">
+              <MoreVertIcon />
+            </IconButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2 }}>
+        <Button color="primary" endIcon={<ArrowRightIcon />} size="small" variant="text">
+          {t('ViewAll')}
+        </Button>
+      </Box>
+    </Card>
+  );
+};
 
 export default LatestProducts;

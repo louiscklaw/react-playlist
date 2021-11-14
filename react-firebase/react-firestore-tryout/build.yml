@@ -1,0 +1,9 @@
+react-firebase-helloworld-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - run: |
+        pushd react-firebase-helloworld-tryout
+          yarn
+          yarn build
+        popd

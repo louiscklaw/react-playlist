@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 function Example() {
   let [debug, setDebug] = React.useState(null);
   const { isLoading, error, data, isFetching } = useQuery('repoData', () =>
-    fetch('http://127.0.0.1:3002/test-get-json').then((res) => res.json())
+    fetch('/test-get-json').then((res) => res.json())
   );
 
   React.useEffect(() => {
@@ -17,9 +17,9 @@ function Example() {
     console.log('data', { ...data });
   }, [data]);
 
-  if (isLoading) return 'Loading...';
+  if (isLoading) return <>Loading...</>;
 
-  if (error) return 'An error has occurred: ' + error.message;
+  if (error) return <>'An error has occurred: ' {error.message}</>;
 
   return (
     <div>
