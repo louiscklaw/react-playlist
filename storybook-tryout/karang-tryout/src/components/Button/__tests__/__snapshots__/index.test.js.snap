@@ -1,0 +1,840 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button-block 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-disabled 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  disabled=""
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-isLoading 1`] = `
+.c2 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c3 .c1 {
+  color: #535353;
+}
+
+.c4 .c1 {
+  color: #535353;
+}
+
+.c5 .c1 {
+  color: #535353;
+}
+
+.c6 .c1 {
+  color: #535353;
+}
+
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #B4B4B4;
+  color: #535353;
+  color: rgba(0,0,0,0) !important;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <div
+    class="c1 c2"
+  >
+    <svg
+      height="16"
+      space="preserve"
+      viewBox="0 0 50 50"
+      width="16"
+    >
+      <path
+        d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"
+        fill="currentColor"
+      >
+        <animateTransform
+          attributeName="transform"
+          attributeType="xml"
+          dur="0.6s"
+          from="0 25 25"
+          repeatCount="indefinite"
+          to="360 25 25"
+          type="rotate"
+        />
+      </path>
+    </svg>
+  </div>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-size-large 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.75em 1em;
+  font-size: 16px;
+  font-weight: 700;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-size-small 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.25em 1em;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-size-xlarge 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.9em 1em;
+  font-size: 18px;
+  font-weight: 700;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-solid 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-variant-danger 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: initial;
+  border-color: #D8534F;
+  color: #D8534F;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #D8534F;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #D8534F;
+  border-color: #D8534F;
+  color: rgba(255,255,255,1);
+}
+
+.c0:hover:enabled .c1,
+.c0:active:enabled .c1 {
+  color: rgba(255,255,255,1);
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(216,83,79,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-variant-default 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #535353;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-variant-link 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: transparent;
+  color: #F16622;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #F16622;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F9EAE7;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(249,234,231,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-variant-primary 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: initial;
+  border-color: #F16622;
+  color: #F16622;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #F16622;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #F16622;
+  border-color: #F16622;
+  color: rgba(255,255,255,1);
+}
+
+.c0:hover:enabled .c1,
+.c0:active:enabled .c1 {
+  color: rgba(255,255,255,1);
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(241,102,34,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;
+
+exports[`Button-variant-secondary 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: initial;
+  border-color: #FEA000;
+  color: #FEA000;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  color: #FEA000;
+}
+
+.c0:hover:enabled,
+.c0:active:enabled {
+  background-color: #FEA000;
+  border-color: #FEA000;
+  color: rgba(255,255,255,1);
+}
+
+.c0:hover:enabled .c1,
+.c0:active:enabled .c1 {
+  color: rgba(255,255,255,1);
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(254,160,0,0.2);
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  <span>
+    hello
+  </span>
+</button>
+`;

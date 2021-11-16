@@ -1,0 +1,10 @@
+export { default as amex } from './amex';
+export { default as android } from './android';
+export { default as apple } from './apple';
+export { default as facebook } from './facebook';
+export { default as google } from './google';
+export { default as googleColored } from './googleColored';
+export { default as lalamove } from './lalamove';
+export { default as lalamoveFilled } from './lalamoveFilled';
+export { default as master } from './master';
+export { default as visa } from './visa';

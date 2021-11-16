@@ -1,0 +1,133 @@
+{
+  "name": "@lalamove/karang",
+  "version": "3.0.0",
+  "description": "React components library that implement Lalamove Design.",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "jsnext:main": "dist/esm/index.js",
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:esm && yarn build:info",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --out-dir ./dist --ignore \"**/*.test.js\",\"**/_story.js\" ",
+    "build:esm": "NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --out-dir ./dist/esm --ignore \"**/*.test.js\",\"**/_story.js\"",
+    "build:info": "node scripts/packBundleInfo.js",
+    "test": "jest ./src",
+    "test-coverage": "jest ./src --coverage",
+    "prepare": "yarn build",
+    "lint": "yarn lint:css",
+    "lint:js": "eslint \"src/**/*.js\"",
+    "lint:css": "stylelint \"src/**/*.{css|js}\"",
+    "lint:js:fix": "eslint --fix",
+    "storybook": "start-storybook -p 9002 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o .out",
+    "doc": "npx styleguidist server",
+    "doc:build": "npx styleguidist build",
+    "precommit": "yarn lint-staged"
+  },
+  "dependencies": {
+    "warning": "^4.0.3"
+  },
+  "peerDependencies": {
+    "downshift": "^3.3.1",
+    "moment": "^2.24.0",
+    "polished": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dates": "^21.5.0",
+    "react-dom": "^16.9.0",
+    "react-tooltip": "^3.11.1",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@storybook/addon-actions": "^5.3.0",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-knobs": "^5.3.0",
+    "@storybook/react": "^5.3.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "cross-env": "^6.0.0",
+    "css-loader": "^3.2.0",
+    "date-fns": "^2.2.1",
+    "downshift": "^3.3.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.4.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.14.3",
+    "glob": "^7.1.4",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "jest-enzyme": "^7.1.1",
+    "jest-styled-components": "^6.3.3",
+    "lint-staged": "^9.3.0",
+    "npx": "^10.2.2",
+    "polished": "^3.4.1",
+    "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-dates": "^21.5.0",
+    "react-dom": "^16.9.0",
+    "react-styleguidist": "^9.1.16",
+    "react-tooltip": "^3.11.1",
+    "style-loader": "^1.0.0",
+    "styled-components": "^4.3.2",
+    "stylelint": "^11.0.0",
+    "stylelint-config-idiomatic-css": "^1.0.6",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "modulePaths": [
+      "src"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/_story.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/utils/setupTests"
+    ]
+  }
+}

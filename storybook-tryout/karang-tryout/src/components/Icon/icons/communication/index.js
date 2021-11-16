@@ -1,0 +1,11 @@
+export { default as addressBook } from './addressBook';
+export { default as contactBook } from './contactBook';
+export { default as conversation } from './conversation';
+export { default as email } from './email';
+export { default as message } from './message';
+export { default as notification } from './notification';
+export { default as phoneVibrate } from './phoneVibrate';
+export { default as remark } from './remark';
+export { default as send } from './send';
+export { default as tel } from './tel';
+export { default as voice } from './voice';

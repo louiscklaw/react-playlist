@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Snapshots render 1`] = `
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c1:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 .c5 {
+  color: #535353;
+}
+
+.c1:hover:enabled,
+.c1:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c1:active:enabled,
+.c1:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 80px;
+  padding: 0.5em 1em;
+  background-color: rgba(255,255,255,1);
+  white-space: nowrap;
+}
+
+.c2 > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-right: 0.5em;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.c4 {
+  margin-right: -5px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+<div
+  aria-expanded="false"
+  aria-haspopup="listbox"
+  aria-labelledby="downshift-0-label"
+  class="c0"
+  role="combobox"
+>
+  <button
+    aria-autocomplete="list"
+    aria-haspopup="true"
+    aria-label="open menu"
+    aria-labelledby="downshift-0-label"
+    autocomplete="off"
+    class="c1 c2"
+    data-toggle="true"
+    id="downshift-0-input"
+    role="button"
+    type="button"
+    value=""
+  >
+    <span>
+      <span
+        class="c3"
+      >
+        Options
+      </span>
+      <span
+        class="c4"
+      >
+        <svg
+          aria-hidden="false"
+          aria-labelledby="title"
+          focusable="false"
+          role="img"
+          style="vertical-align:middle;fill:#B4B4B4;width:24px;height:24px"
+          viewBox="0 0 217 217"
+        >
+          <title>
+            DropDown
+          </title>
+          <g
+            transform="matrix(1,0,0,1,108.55,108.721)"
+          >
+            <g
+              transform="matrix(6.12323e-17,-1,1,6.12323e-17,0,0)"
+            >
+              <path
+                d="M138.141,158.426c-0.650773,0.080458 -1.30311,-0.136988 -1.77545,-0.591818l-59.1818,-46.7536c-0.731607,-0.570007 -1.16659,-1.43998 -1.18364,-2.36727c0.147609,-0.890133 0.560095,-1.71511 1.18364,-2.36727l59.1818,-46.7536c1.30741,-0.980556 3.16217,-0.71559 4.14273,0.591818c0.980556,1.30741 0.71559,3.16217 -0.591818,4.14273l-56.2227,44.3864l56.2227,44.3864c1.0494,1.11878 1.28598,2.77487 0.591818,4.14273c-0.652167,0.623542 -1.47714,1.03603 -2.36727,1.18364v0Z"
+                transform="matrix(1,0,0,1,-108.55,-108.721)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Dropdown Snapshots render 2`] = `
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px currentColor solid;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: Noto Sans,"Noto Sans TC",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #B4B4B4;
+  color: #535353;
+}
+
+.c1:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c1 .c5 {
+  color: #535353;
+}
+
+.c1:hover:enabled,
+.c1:active:enabled {
+  background-color: #F1F1F1;
+}
+
+.c1:active:enabled,
+.c1:focus:enabled {
+  box-shadow: 0 0 0 4px rgba(180,180,180,0.2);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 80px;
+  padding: 0.5em 1em;
+  background-color: rgba(255,255,255,1);
+  white-space: nowrap;
+}
+
+.c2 > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-right: 0.5em;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.c4 {
+  margin-right: -5px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+<div
+  aria-expanded="false"
+  aria-haspopup="listbox"
+  aria-labelledby="downshift-1-label"
+  class="c0"
+  role="combobox"
+>
+  <button
+    aria-autocomplete="list"
+    aria-haspopup="true"
+    aria-label="open menu"
+    aria-labelledby="downshift-1-label"
+    autocomplete="off"
+    class="c1 c2"
+    data-toggle="true"
+    id="downshift-1-input"
+    role="button"
+    type="button"
+    value=""
+  >
+    <span>
+      <span
+        class="c3"
+      >
+        Options
+      </span>
+      <span
+        class="c4"
+      >
+        <svg
+          aria-hidden="false"
+          aria-labelledby="title"
+          focusable="false"
+          role="img"
+          style="vertical-align:middle;fill:#B4B4B4;width:24px;height:24px"
+          viewBox="0 0 217 217"
+        >
+          <title>
+            DropDown
+          </title>
+          <g
+            transform="matrix(1,0,0,1,108.55,108.721)"
+          >
+            <g
+              transform="matrix(6.12323e-17,-1,1,6.12323e-17,0,0)"
+            >
+              <path
+                d="M138.141,158.426c-0.650773,0.080458 -1.30311,-0.136988 -1.77545,-0.591818l-59.1818,-46.7536c-0.731607,-0.570007 -1.16659,-1.43998 -1.18364,-2.36727c0.147609,-0.890133 0.560095,-1.71511 1.18364,-2.36727l59.1818,-46.7536c1.30741,-0.980556 3.16217,-0.71559 4.14273,0.591818c0.980556,1.30741 0.71559,3.16217 -0.591818,4.14273l-56.2227,44.3864l56.2227,44.3864c1.0494,1.11878 1.28598,2.77487 0.591818,4.14273c-0.652167,0.623542 -1.47714,1.03603 -2.36727,1.18364v0Z"
+                transform="matrix(1,0,0,1,-108.55,-108.721)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
+    </span>
+  </button>
+</div>
+`;
