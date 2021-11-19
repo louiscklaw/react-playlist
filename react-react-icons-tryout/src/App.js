@@ -16,7 +16,7 @@ function App({ test_branch = false }) {
   return (
     <div className="App">
       <GlobalContextProvider>
-        https://react-icons.github.io/react-icons/icons?name=go
+        <div>https://react-icons.github.io/react-icons/icons?name=go</div>
         <GoCircuitBoard />
       </GlobalContextProvider>
     </div>
