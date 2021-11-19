@@ -1,9 +1,0 @@
-react-draft-js-tryout:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - run: |
-        pushd react-draft-js-tryout
-          yarn
-          yarn build
-        popd
