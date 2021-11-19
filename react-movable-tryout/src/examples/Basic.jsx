@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { List, arrayMove } from '../src/index';
+import { List, arrayMove } from 'react-movable';
 
 const Basic = () => {
   const [items, setItems] = React.useState([
