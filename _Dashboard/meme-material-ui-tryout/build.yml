@@ -1,0 +1,9 @@
+meme-material-ui-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - run: |
+        pushd meme-material-ui-tryout
+          yarn
+          yarn build
+        popd
