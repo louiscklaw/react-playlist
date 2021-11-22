@@ -1,1 +1,0 @@
-http://localhost:3000/react-playlist/meme-material-ui-tryout/register
