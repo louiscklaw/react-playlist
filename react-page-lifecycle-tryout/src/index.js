@@ -3,13 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import AppContexts from './AppContexts';
-
 ReactDOM.render(
   <React.StrictMode>
-    <AppContexts>
-      <App />
-    </AppContexts>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

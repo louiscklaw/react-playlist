@@ -1,28 +1,44 @@
 import React from 'react';
-// import HelloComponent from 'src/components/HelloComponent';
+import HelloComponent from 'src/components/HelloComponent';
+import HelloComponent2 from 'src/components/HelloComponent2';
 import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
 function App({ test_branch = false }) {
-  let helloworld = 'helloworld';
-  let helloanotherworld = '123';
+  let [is_loading, setIsLoading] = React.useState(true);
+  let [is_quitting, setIsQuitting] = React.useState(false);
+  let [show_hello_component, setShowHelloComponent] = React.useState(true);
 
-  let helloEmpty;
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
 
-  if (test_branch) {
-    console.log('find true');
-  } else {
-    console.log('find false');
-  }
+    return () => {
+      alert('quitting App?');
+      setIsQuitting(true);
+    };
+  }, []);
 
-  console.log('helloEmpty', helloEmpty);
+  if (is_loading) return <div>isLoading App</div>;
 
   return (
     <div className="App">
       <GlobalContextProvider>
-        {/* <HelloComponent /> */}
-        hellocomponents
-        {helloanotherworld}
-        {JSON.stringify(helloEmpty, null, 2)}
+        {show_hello_component ? (
+          <>
+            <HelloComponent />
+          </>
+        ) : (
+          <>
+            <HelloComponent2 />
+          </>
+        )}
+        <button
+          onClick={() => {
+            setShowHelloComponent(!show_hello_component);
+          }}>
+          toggle
+        </button>
       </GlobalContextProvider>
     </div>
   );
