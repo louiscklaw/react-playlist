@@ -3,5 +3,5 @@
 set -ex
 
 
-cp -r helloworld-tryout materialui-helloworld-tryout
+cp -r helloworld-tryout lynked-helloworld-tryout
 
