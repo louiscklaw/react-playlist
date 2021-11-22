@@ -2,11 +2,20 @@
 
 set -ex
 
-TEST_DIR=react-page-lifecycle-tryout
+TEST_DIR=react-medium-image-zoom-tryout
+HELLOWORLD_DIR=react-helloworld-tryout
 
 rm -rf $TEST_DIR || true
 
-cp -r react-helloworld-tryout $TEST_DIR
+pushd $HELLOWORLD_DIR
+  rm -rf **/*.log &
+  rm -rf build node_modules &
+  rm -rf build &
+
+  wait
+popd
+
+cp -r $HELLOWORLD_DIR $TEST_DIR
 
 pushd $TEST_DIR
   rm -rf **/*.log
