@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ArrowTooltips> helloworld <ArrowTooltips /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ArrowTooltips> helloworld <ArrowTooltips /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ArrowTooltips> helloworld <ArrowTooltips /> shallow helloworld should work 1`] = `[Function]`;

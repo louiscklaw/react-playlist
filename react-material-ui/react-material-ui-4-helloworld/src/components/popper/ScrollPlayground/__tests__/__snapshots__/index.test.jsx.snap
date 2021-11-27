@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ScrollPlayground> helloworld <ScrollPlayground /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ScrollPlayground> helloworld <ScrollPlayground /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ScrollPlayground> helloworld <ScrollPlayground /> shallow helloworld should work 1`] = `[Function]`;

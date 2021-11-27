@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<LongMenu> helloworld <LongMenu /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<LongMenu> helloworld <LongMenu /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<LongMenu> helloworld <LongMenu /> shallow helloworld should work 1`] = `[Function]`;

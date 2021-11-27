@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<PaginationControlled> helloworld <PaginationControlled /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<PaginationControlled> helloworld <PaginationControlled /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<PaginationControlled> helloworld <PaginationControlled /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ErrorRadios> helloworld <ErrorRadios /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ErrorRadios> helloworld <ErrorRadios /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ErrorRadios> helloworld <ErrorRadios /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ButtonBase> helloworld <ButtonBase /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ButtonBase> helloworld <ButtonBase /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ButtonBase> helloworld <ButtonBase /> shallow helloworld should work 1`] = `[Function]`;

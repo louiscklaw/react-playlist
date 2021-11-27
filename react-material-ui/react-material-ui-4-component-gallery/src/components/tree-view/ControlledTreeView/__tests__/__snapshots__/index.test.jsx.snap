@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ControlledTreeView> helloworld <ControlledTreeView /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ControlledTreeView> helloworld <ControlledTreeView /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ControlledTreeView> helloworld <ControlledTreeView /> shallow helloworld should work 1`] = `[Function]`;

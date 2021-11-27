@@ -1,9 +1,0 @@
-react-material-ui-autocomplete-multiple-values-tryout:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - run: |
-        pushd react-material-ui-autocomplete-multiple-values-tryout
-          yarn
-          yarn build
-        popd

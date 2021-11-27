@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ThemeHelper> helloworld <ThemeHelper /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ThemeHelper> helloworld <ThemeHelper /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ThemeHelper> helloworld <ThemeHelper /> shallow helloworld should work 1`] = `[Function]`;

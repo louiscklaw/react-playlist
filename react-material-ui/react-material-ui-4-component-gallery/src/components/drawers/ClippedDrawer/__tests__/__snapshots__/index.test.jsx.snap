@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ClippedDrawer> helloworld <ClippedDrawer /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ClippedDrawer> helloworld <ClippedDrawer /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ClippedDrawer> helloworld <ClippedDrawer /> shallow helloworld should work 1`] = `[Function]`;

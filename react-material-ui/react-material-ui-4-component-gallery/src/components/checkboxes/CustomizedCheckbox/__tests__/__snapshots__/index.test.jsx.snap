@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<CustomizedCheckbox> helloworld <CustomizedCheckbox /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<CustomizedCheckbox> helloworld <CustomizedCheckbox /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<CustomizedCheckbox> helloworld <CustomizedCheckbox /> shallow helloworld should work 1`] = `[Function]`;

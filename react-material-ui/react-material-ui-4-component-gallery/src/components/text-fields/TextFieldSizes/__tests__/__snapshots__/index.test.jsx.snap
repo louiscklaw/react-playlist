@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<TextFieldSizes> helloworld <TextFieldSizes /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<TextFieldSizes> helloworld <TextFieldSizes /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<TextFieldSizes> helloworld <TextFieldSizes /> shallow helloworld should work 1`] = `[Function]`;

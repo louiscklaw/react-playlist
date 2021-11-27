@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FallbackAvatars> helloworld <FallbackAvatars /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FallbackAvatars> helloworld <FallbackAvatars /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FallbackAvatars> helloworld <FallbackAvatars /> shallow helloworld should work 1`] = `[Function]`;

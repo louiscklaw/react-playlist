@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<IntegrationNotistack> helloworld <IntegrationNotistack /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<IntegrationNotistack> helloworld <IntegrationNotistack /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<IntegrationNotistack> helloworld <IntegrationNotistack /> shallow helloworld should work 1`] = `[Function]`;

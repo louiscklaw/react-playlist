@@ -1,9 +1,0 @@
-react-material-ui-bottomNavigation-tryout:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - run: |
-        pushd react-material-ui-bottomNavigation-tryout
-          yarn
-          yarn build
-        popd

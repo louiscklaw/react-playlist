@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SimpleBadge> helloworld <SimpleBadge /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SimpleBadge> helloworld <SimpleBadge /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SimpleBadge> helloworld <SimpleBadge /> shallow helloworld should work 1`] = `[Function]`;

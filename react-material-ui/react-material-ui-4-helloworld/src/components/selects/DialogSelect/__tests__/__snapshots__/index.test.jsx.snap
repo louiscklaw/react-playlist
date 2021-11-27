@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<DialogSelect> helloworld <DialogSelect /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<DialogSelect> helloworld <DialogSelect /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<DialogSelect> helloworld <DialogSelect /> shallow helloworld should work 1`] = `[Function]`;

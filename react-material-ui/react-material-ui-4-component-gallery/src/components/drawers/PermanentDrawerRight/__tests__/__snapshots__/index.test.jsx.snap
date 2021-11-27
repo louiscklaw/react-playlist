@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<PermanentDrawerRight> helloworld <PermanentDrawerRight /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<PermanentDrawerRight> helloworld <PermanentDrawerRight /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<PermanentDrawerRight> helloworld <PermanentDrawerRight /> shallow helloworld should work 1`] = `[Function]`;

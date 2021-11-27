@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SimplePortal> helloworld <SimplePortal /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SimplePortal> helloworld <SimplePortal /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SimplePortal> helloworld <SimplePortal /> shallow helloworld should work 1`] = `[Function]`;

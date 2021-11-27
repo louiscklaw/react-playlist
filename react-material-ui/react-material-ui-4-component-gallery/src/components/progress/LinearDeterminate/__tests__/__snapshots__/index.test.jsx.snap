@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<LinearDeterminate> helloworld <LinearDeterminate /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<LinearDeterminate> helloworld <LinearDeterminate /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<LinearDeterminate> helloworld <LinearDeterminate /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SimpleCard> helloworld <SimpleCard /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SimpleCard> helloworld <SimpleCard /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SimpleCard> helloworld <SimpleCard /> shallow helloworld should work 1`] = `[Function]`;

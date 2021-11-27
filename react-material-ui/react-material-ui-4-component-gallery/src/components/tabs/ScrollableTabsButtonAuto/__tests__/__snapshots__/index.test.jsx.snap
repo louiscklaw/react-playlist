@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ScrollableTabsButtonAuto> helloworld <ScrollableTabsButtonAuto /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ScrollableTabsButtonAuto> helloworld <ScrollableTabsButtonAuto /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ScrollableTabsButtonAuto> helloworld <ScrollableTabsButtonAuto /> shallow helloworld should work 1`] = `[Function]`;

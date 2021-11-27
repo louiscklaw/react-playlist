@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ElevateAppBar> helloworld <ElevateAppBar /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ElevateAppBar> helloworld <ElevateAppBar /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ElevateAppBar> helloworld <ElevateAppBar /> shallow helloworld should work 1`] = `[Function]`;

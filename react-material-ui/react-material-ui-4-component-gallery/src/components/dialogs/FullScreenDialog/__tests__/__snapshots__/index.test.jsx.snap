@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FullScreenDialog> helloworld <FullScreenDialog /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FullScreenDialog> helloworld <FullScreenDialog /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FullScreenDialog> helloworld <FullScreenDialog /> shallow helloworld should work 1`] = `[Function]`;

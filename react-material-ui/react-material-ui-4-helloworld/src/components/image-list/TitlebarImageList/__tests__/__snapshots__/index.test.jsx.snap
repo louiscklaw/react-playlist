@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<TitlebarImageList> helloworld <TitlebarImageList /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<TitlebarImageList> helloworld <TitlebarImageList /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<TitlebarImageList> helloworld <TitlebarImageList /> shallow helloworld should work 1`] = `[Function]`;

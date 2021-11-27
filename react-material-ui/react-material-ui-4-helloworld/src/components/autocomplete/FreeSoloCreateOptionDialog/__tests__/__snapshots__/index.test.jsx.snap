@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FreeSoloCreateOptionDialog> helloworld <FreeSoloCreateOptionDialog /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FreeSoloCreateOptionDialog> helloworld <FreeSoloCreateOptionDialog /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FreeSoloCreateOptionDialog> helloworld <FreeSoloCreateOptionDialog /> shallow helloworld should work 1`] = `[Function]`;

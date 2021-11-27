@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<UseAutocomplete> helloworld <UseAutocomplete /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<UseAutocomplete> helloworld <UseAutocomplete /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<UseAutocomplete> helloworld <UseAutocomplete /> shallow helloworld should work 1`] = `[Function]`;

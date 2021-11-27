@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SpanningTable> helloworld <SpanningTable /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SpanningTable> helloworld <SpanningTable /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SpanningTable> helloworld <SpanningTable /> shallow helloworld should work 1`] = `[Function]`;

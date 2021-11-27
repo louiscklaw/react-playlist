@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Filter> helloworld <Filter /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<Filter> helloworld <Filter /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<Filter> helloworld <Filter /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FabIntegrationSnackbar> helloworld <FabIntegrationSnackbar /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FabIntegrationSnackbar> helloworld <FabIntegrationSnackbar /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FabIntegrationSnackbar> helloworld <FabIntegrationSnackbar /> shallow helloworld should work 1`] = `[Function]`;

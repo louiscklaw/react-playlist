@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FontAwesome> helloworld <FontAwesome /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FontAwesome> helloworld <FontAwesome /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FontAwesome> helloworld <FontAwesome /> shallow helloworld should work 1`] = `[Function]`;

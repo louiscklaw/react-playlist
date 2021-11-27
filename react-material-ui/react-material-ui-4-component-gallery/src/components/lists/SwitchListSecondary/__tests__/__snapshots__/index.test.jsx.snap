@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SwitchListSecondary> helloworld <SwitchListSecondary /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SwitchListSecondary> helloworld <SwitchListSecondary /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SwitchListSecondary> helloworld <SwitchListSecondary /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ScrollDialog> helloworld <ScrollDialog /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ScrollDialog> helloworld <ScrollDialog /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ScrollDialog> helloworld <ScrollDialog /> shallow helloworld should work 1`] = `[Function]`;

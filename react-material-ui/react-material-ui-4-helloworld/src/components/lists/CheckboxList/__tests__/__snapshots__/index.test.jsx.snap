@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<CheckboxList> helloworld <CheckboxList /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<CheckboxList> helloworld <CheckboxList /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<CheckboxList> helloworld <CheckboxList /> shallow helloworld should work 1`] = `[Function]`;

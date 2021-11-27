@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<CircularUnderLoad> helloworld <CircularUnderLoad /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<CircularUnderLoad> helloworld <CircularUnderLoad /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<CircularUnderLoad> helloworld <CircularUnderLoad /> shallow helloworld should work 1`] = `[Function]`;

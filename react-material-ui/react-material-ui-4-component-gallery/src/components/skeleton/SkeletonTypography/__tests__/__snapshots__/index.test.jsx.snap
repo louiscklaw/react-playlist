@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SkeletonTypography> helloworld <SkeletonTypography /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SkeletonTypography> helloworld <SkeletonTypography /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SkeletonTypography> helloworld <SkeletonTypography /> shallow helloworld should work 1`] = `[Function]`;

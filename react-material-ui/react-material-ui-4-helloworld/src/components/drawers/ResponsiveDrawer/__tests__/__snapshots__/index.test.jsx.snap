@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ResponsiveDrawer> helloworld <ResponsiveDrawer /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ResponsiveDrawer> helloworld <ResponsiveDrawer /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ResponsiveDrawer> helloworld <ResponsiveDrawer /> shallow helloworld should work 1`] = `[Function]`;

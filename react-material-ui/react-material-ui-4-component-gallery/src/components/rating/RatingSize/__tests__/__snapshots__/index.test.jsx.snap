@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<RatingSize> helloworld <RatingSize /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<RatingSize> helloworld <RatingSize /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<RatingSize> helloworld <RatingSize /> shallow helloworld should work 1`] = `[Function]`;

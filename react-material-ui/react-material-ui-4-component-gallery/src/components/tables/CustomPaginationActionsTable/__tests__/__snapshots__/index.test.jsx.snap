@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<CustomPaginationActionsTable> helloworld <CustomPaginationActionsTable /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<CustomPaginationActionsTable> helloworld <CustomPaginationActionsTable /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<CustomPaginationActionsTable> helloworld <CustomPaginationActionsTable /> shallow helloworld should work 1`] = `[Function]`;

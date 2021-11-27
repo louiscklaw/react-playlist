@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ShowZeroBadge> helloworld <ShowZeroBadge /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ShowZeroBadge> helloworld <ShowZeroBadge /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ShowZeroBadge> helloworld <ShowZeroBadge /> shallow helloworld should work 1`] = `[Function]`;

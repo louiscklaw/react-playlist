@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Asynchronous> helloworld <Asynchronous /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<Asynchronous> helloworld <Asynchronous /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<Asynchronous> helloworld <Asynchronous /> shallow helloworld should work 1`] = `[Function]`;

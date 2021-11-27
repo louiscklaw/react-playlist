@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<YouTube> helloworld <YouTube /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<YouTube> helloworld <YouTube /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<YouTube> helloworld <YouTube /> shallow helloworld should work 1`] = `[Function]`;

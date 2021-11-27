@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<PositionedPopper> helloworld <PositionedPopper /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<PositionedPopper> helloworld <PositionedPopper /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<PositionedPopper> helloworld <PositionedPopper /> shallow helloworld should work 1`] = `[Function]`;

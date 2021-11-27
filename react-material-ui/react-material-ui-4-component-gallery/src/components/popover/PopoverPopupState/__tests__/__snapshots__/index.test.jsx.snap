@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<PopoverPopupState> helloworld <PopoverPopupState /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<PopoverPopupState> helloworld <PopoverPopupState /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<PopoverPopupState> helloworld <PopoverPopupState /> shallow helloworld should work 1`] = `[Function]`;

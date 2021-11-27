@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ComboBox> helloworld <ComboBox /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ComboBox> helloworld <ComboBox /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ComboBox> helloworld <ComboBox /> shallow helloworld should work 1`] = `[Function]`;

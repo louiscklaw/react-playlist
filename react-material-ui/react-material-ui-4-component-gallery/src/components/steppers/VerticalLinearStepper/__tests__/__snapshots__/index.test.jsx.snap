@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<VerticalLinearStepper> helloworld <VerticalLinearStepper /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<VerticalLinearStepper> helloworld <VerticalLinearStepper /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<VerticalLinearStepper> helloworld <VerticalLinearStepper /> shallow helloworld should work 1`] = `[Function]`;

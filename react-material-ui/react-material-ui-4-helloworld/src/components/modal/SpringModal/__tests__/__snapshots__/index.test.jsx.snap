@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SpringModal> helloworld <SpringModal /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SpringModal> helloworld <SpringModal /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SpringModal> helloworld <SpringModal /> shallow helloworld should work 1`] = `[Function]`;

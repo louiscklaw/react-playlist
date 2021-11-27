@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SelectTextFields> helloworld <SelectTextFields /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SelectTextFields> helloworld <SelectTextFields /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SelectTextFields> helloworld <SelectTextFields /> shallow helloworld should work 1`] = `[Function]`;

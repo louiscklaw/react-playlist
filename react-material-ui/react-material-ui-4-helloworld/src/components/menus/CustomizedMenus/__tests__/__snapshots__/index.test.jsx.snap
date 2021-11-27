@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<CustomizedMenus> helloworld <CustomizedMenus /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<CustomizedMenus> helloworld <CustomizedMenus /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<CustomizedMenus> helloworld <CustomizedMenus /> shallow helloworld should work 1`] = `[Function]`;

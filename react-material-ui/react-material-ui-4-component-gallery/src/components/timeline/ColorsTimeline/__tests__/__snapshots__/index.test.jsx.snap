@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ColorsTimeline> helloworld <ColorsTimeline /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ColorsTimeline> helloworld <ColorsTimeline /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ColorsTimeline> helloworld <ColorsTimeline /> shallow helloworld should work 1`] = `[Function]`;

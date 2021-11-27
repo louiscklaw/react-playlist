@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ActiveLastBreadcrumb> helloworld <ActiveLastBreadcrumb /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ActiveLastBreadcrumb> helloworld <ActiveLastBreadcrumb /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ActiveLastBreadcrumb> helloworld <ActiveLastBreadcrumb /> shallow helloworld should work 1`] = `[Function]`;

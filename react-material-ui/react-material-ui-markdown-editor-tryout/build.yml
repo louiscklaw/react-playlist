@@ -1,9 +1,0 @@
-react-material-ui-markdown-editor-tryout:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - run: |
-        pushd react-material-ui-markdown-editor-tryout
-          yarn
-          yarn build
-        popd

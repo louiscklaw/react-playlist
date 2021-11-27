@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<InteractiveList> helloworld <InteractiveList /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<InteractiveList> helloworld <InteractiveList /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<InteractiveList> helloworld <InteractiveList /> shallow helloworld should work 1`] = `[Function]`;

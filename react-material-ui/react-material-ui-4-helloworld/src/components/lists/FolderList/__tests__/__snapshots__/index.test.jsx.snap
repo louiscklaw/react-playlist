@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FolderList> helloworld <FolderList /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FolderList> helloworld <FolderList /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FolderList> helloworld <FolderList /> shallow helloworld should work 1`] = `[Function]`;

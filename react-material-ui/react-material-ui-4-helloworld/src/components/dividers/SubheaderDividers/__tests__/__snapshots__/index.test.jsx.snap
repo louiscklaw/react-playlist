@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SubheaderDividers> helloworld <SubheaderDividers /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SubheaderDividers> helloworld <SubheaderDividers /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SubheaderDividers> helloworld <SubheaderDividers /> shallow helloworld should work 1`] = `[Function]`;

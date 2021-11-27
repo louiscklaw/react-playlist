@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<CenteredTabs> helloworld <CenteredTabs /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<CenteredTabs> helloworld <CenteredTabs /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<CenteredTabs> helloworld <CenteredTabs /> shallow helloworld should work 1`] = `[Function]`;

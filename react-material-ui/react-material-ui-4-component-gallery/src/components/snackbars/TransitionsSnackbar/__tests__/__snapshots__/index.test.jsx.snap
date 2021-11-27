@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<TransitionsSnackbar> helloworld <TransitionsSnackbar /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<TransitionsSnackbar> helloworld <TransitionsSnackbar /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<TransitionsSnackbar> helloworld <TransitionsSnackbar /> shallow helloworld should work 1`] = `[Function]`;

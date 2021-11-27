@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ToggleButtonSizes> helloworld <ToggleButtonSizes /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ToggleButtonSizes> helloworld <ToggleButtonSizes /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ToggleButtonSizes> helloworld <ToggleButtonSizes /> shallow helloworld should work 1`] = `[Function]`;

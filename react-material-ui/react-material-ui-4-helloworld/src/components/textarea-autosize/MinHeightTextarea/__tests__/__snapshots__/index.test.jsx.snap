@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<MinHeightTextarea> helloworld <MinHeightTextarea /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<MinHeightTextarea> helloworld <MinHeightTextarea /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<MinHeightTextarea> helloworld <MinHeightTextarea /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<MiniDrawer> helloworld <MiniDrawer /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<MiniDrawer> helloworld <MiniDrawer /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<MiniDrawer> helloworld <MiniDrawer /> shallow helloworld should work 1`] = `[Function]`;

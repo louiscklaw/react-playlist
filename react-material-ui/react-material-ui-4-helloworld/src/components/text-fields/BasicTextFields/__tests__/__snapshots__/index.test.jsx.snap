@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<BasicTextFields> helloworld <BasicTextFields /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<BasicTextFields> helloworld <BasicTextFields /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<BasicTextFields> helloworld <BasicTextFields /> shallow helloworld should work 1`] = `[Function]`;

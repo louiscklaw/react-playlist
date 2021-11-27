@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<OpenIconSpeedDial> helloworld <OpenIconSpeedDial /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<OpenIconSpeedDial> helloworld <OpenIconSpeedDial /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<OpenIconSpeedDial> helloworld <OpenIconSpeedDial /> shallow helloworld should work 1`] = `[Function]`;

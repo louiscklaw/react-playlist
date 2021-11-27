@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<BadgeOverlap> helloworld <BadgeOverlap /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<BadgeOverlap> helloworld <BadgeOverlap /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<BadgeOverlap> helloworld <BadgeOverlap /> shallow helloworld should work 1`] = `[Function]`;

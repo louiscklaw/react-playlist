@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<DelayTooltips> helloworld <DelayTooltips /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<DelayTooltips> helloworld <DelayTooltips /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<DelayTooltips> helloworld <DelayTooltips /> shallow helloworld should work 1`] = `[Function]`;

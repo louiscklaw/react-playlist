@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<TransitionAlerts> helloworld <TransitionAlerts /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<TransitionAlerts> helloworld <TransitionAlerts /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<TransitionAlerts> helloworld <TransitionAlerts /> shallow helloworld should work 1`] = `[Function]`;

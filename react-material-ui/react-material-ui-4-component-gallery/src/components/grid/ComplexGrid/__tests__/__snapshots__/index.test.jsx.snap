@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ComplexGrid> helloworld <ComplexGrid /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<ComplexGrid> helloworld <ComplexGrid /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<ComplexGrid> helloworld <ComplexGrid /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<StickyHeadTable> helloworld <StickyHeadTable /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<StickyHeadTable> helloworld <StickyHeadTable /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<StickyHeadTable> helloworld <StickyHeadTable /> shallow helloworld should work 1`] = `[Function]`;

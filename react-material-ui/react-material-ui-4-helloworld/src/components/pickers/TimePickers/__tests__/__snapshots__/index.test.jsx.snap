@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<TimePickers> helloworld <TimePickers /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<TimePickers> helloworld <TimePickers /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<TimePickers> helloworld <TimePickers /> shallow helloworld should work 1`] = `[Function]`;

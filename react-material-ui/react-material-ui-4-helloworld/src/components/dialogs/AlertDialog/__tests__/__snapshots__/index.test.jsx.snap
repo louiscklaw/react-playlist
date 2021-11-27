@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<AlertDialog> helloworld <AlertDialog /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<AlertDialog> helloworld <AlertDialog /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<AlertDialog> helloworld <AlertDialog /> shallow helloworld should work 1`] = `[Function]`;

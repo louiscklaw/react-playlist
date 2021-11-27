@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FormattedInputs> helloworld <FormattedInputs /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FormattedInputs> helloworld <FormattedInputs /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FormattedInputs> helloworld <FormattedInputs /> shallow helloworld should work 1`] = `[Function]`;

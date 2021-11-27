@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<OutlinedChips> helloworld <OutlinedChips /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<OutlinedChips> helloworld <OutlinedChips /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<OutlinedChips> helloworld <OutlinedChips /> shallow helloworld should work 1`] = `[Function]`;

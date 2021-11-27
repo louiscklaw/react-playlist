@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FrameDeferring> helloworld <FrameDeferring /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FrameDeferring> helloworld <FrameDeferring /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FrameDeferring> helloworld <FrameDeferring /> shallow helloworld should work 1`] = `[Function]`;

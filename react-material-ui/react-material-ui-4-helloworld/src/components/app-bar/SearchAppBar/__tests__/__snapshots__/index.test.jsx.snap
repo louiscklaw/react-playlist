@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<SearchAppBar> helloworld <SearchAppBar /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<SearchAppBar> helloworld <SearchAppBar /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<SearchAppBar> helloworld <SearchAppBar /> shallow helloworld should work 1`] = `[Function]`;

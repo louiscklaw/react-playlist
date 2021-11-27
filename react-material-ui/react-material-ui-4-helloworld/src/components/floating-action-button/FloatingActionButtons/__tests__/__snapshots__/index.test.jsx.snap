@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<FloatingActionButtons> helloworld <FloatingActionButtons /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<FloatingActionButtons> helloworld <FloatingActionButtons /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<FloatingActionButtons> helloworld <FloatingActionButtons /> shallow helloworld should work 1`] = `[Function]`;

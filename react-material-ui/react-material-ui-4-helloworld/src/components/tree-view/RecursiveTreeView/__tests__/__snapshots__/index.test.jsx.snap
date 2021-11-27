@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<RecursiveTreeView> helloworld <RecursiveTreeView /> mount helloworld should work 1`] = `[Function]`;
-
-exports[`<RecursiveTreeView> helloworld <RecursiveTreeView /> render helloworld should work 1`] = `[Function]`;
-
-exports[`<RecursiveTreeView> helloworld <RecursiveTreeView /> shallow helloworld should work 1`] = `[Function]`;
