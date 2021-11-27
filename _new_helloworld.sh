@@ -2,7 +2,7 @@
 
 set -ex
 
-TEST_DIR=_design_system/semi-design-tryout/sd-helloworld-tryout
+TEST_DIR=react-window-tryout
 HELLOWORLD_DIR=react-helloworld-tryout
 
 rm -rf $TEST_DIR || true
