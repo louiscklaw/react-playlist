@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FreeSoloCreateOption> helloworld <FreeSoloCreateOption /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<FreeSoloCreateOption> helloworld <FreeSoloCreateOption /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<FreeSoloCreateOption> helloworld <FreeSoloCreateOption /> shallow helloworld should work 1`] = `[Function]`;

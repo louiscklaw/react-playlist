@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomizedProgressBars> helloworld <CustomizedProgressBars /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedProgressBars> helloworld <CustomizedProgressBars /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedProgressBars> helloworld <CustomizedProgressBars /> shallow helloworld should work 1`] = `[Function]`;

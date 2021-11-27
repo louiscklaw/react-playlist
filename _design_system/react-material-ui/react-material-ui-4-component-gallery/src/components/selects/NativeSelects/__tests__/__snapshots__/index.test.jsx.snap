@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NativeSelects> helloworld <NativeSelects /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<NativeSelects> helloworld <NativeSelects /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<NativeSelects> helloworld <NativeSelects /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomizedAccordions> helloworld <CustomizedAccordions /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedAccordions> helloworld <CustomizedAccordions /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedAccordions> helloworld <CustomizedAccordions /> shallow helloworld should work 1`] = `[Function]`;

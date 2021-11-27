@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ComposedTextField> helloworld <ComposedTextField /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ComposedTextField> helloworld <ComposedTextField /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ComposedTextField> helloworld <ComposedTextField /> shallow helloworld should work 1`] = `[Function]`;

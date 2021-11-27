@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipeReviewCard> helloworld <RecipeReviewCard /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<RecipeReviewCard> helloworld <RecipeReviewCard /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<RecipeReviewCard> helloworld <RecipeReviewCard /> shallow helloworld should work 1`] = `[Function]`;

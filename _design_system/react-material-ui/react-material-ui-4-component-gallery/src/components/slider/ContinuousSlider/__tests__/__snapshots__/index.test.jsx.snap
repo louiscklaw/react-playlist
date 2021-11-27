@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContinuousSlider> helloworld <ContinuousSlider /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ContinuousSlider> helloworld <ContinuousSlider /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ContinuousSlider> helloworld <ContinuousSlider /> shallow helloworld should work 1`] = `[Function]`;

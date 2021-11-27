@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LeadingClickAway> helloworld <LeadingClickAway /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<LeadingClickAway> helloworld <LeadingClickAway /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<LeadingClickAway> helloworld <LeadingClickAway /> shallow helloworld should work 1`] = `[Function]`;

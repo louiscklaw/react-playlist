@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DotsMobileStepper> helloworld <DotsMobileStepper /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<DotsMobileStepper> helloworld <DotsMobileStepper /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<DotsMobileStepper> helloworld <DotsMobileStepper /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,0 +1,9 @@
+react-materialui-daterange-picker-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - run: |
+        pushd react-materialui-daterange-picker-tryout
+          yarn
+          yarn build
+        popd

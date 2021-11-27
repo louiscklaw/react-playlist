@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomizedTooltips> helloworld <CustomizedTooltips /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedTooltips> helloworld <CustomizedTooltips /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<CustomizedTooltips> helloworld <CustomizedTooltips /> shallow helloworld should work 1`] = `[Function]`;

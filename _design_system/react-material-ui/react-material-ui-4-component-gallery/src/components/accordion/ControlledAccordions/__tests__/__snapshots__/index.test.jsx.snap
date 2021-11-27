@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ControlledAccordions> helloworld <ControlledAccordions /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<ControlledAccordions> helloworld <ControlledAccordions /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<ControlledAccordions> helloworld <ControlledAccordions /> shallow helloworld should work 1`] = `[Function]`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SimpleList> helloworld <SimpleList /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<SimpleList> helloworld <SimpleList /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<SimpleList> helloworld <SimpleList /> shallow helloworld should work 1`] = `[Function]`;

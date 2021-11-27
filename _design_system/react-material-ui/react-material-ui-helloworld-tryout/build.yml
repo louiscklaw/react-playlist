@@ -1,0 +1,9 @@
+react-material-ui-helloworld-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - run: |
+        pushd react-material-ui-helloworld-tryout
+          yarn
+          yarn build
+        popd

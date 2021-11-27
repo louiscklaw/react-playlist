@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DiscreteSliderMarks> helloworld <DiscreteSliderMarks /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<DiscreteSliderMarks> helloworld <DiscreteSliderMarks /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<DiscreteSliderMarks> helloworld <DiscreteSliderMarks /> shallow helloworld should work 1`] = `[Function]`;

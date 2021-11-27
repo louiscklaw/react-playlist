@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MouseOverPopover> helloworld <MouseOverPopover /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<MouseOverPopover> helloworld <MouseOverPopover /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<MouseOverPopover> helloworld <MouseOverPopover /> shallow helloworld should work 1`] = `[Function]`;

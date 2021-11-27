@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GitHubLabel> helloworld <GitHubLabel /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<GitHubLabel> helloworld <GitHubLabel /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<GitHubLabel> helloworld <GitHubLabel /> shallow helloworld should work 1`] = `[Function]`;

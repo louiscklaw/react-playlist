@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinearWithValueLabel> helloworld <LinearWithValueLabel /> mount helloworld should work 1`] = `[Function]`;
+
+exports[`<LinearWithValueLabel> helloworld <LinearWithValueLabel /> render helloworld should work 1`] = `[Function]`;
+
+exports[`<LinearWithValueLabel> helloworld <LinearWithValueLabel /> shallow helloworld should work 1`] = `[Function]`;
