@@ -3,10 +3,14 @@ import HelloComponent from 'src/components/HelloComponent';
 import HelloComponent2 from 'src/components/HelloComponent2';
 import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
-function App({ test_branch = false }) {
+console.log('app.js 3');
+
+function App() {
   let [is_loading, setIsLoading] = React.useState(true);
   let [is_quitting, setIsQuitting] = React.useState(false);
   let [show_hello_component, setShowHelloComponent] = React.useState(true);
+
+  console.log('app.js 4');
 
   React.useEffect(() => {
     setTimeout(() => {

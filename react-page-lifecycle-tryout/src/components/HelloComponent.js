@@ -1,8 +1,12 @@
 import React from 'react';
 
+console.log('HelloComponent 1');
+
 function HelloComponent() {
   let [is_loading, setIsLoading] = React.useState(true);
   let [is_quitting, setIsQuitting] = React.useState(false);
+
+  console.log('HelloComponent 2');
 
   const gotoGoogle = () => {
     window.location.href = 'https://www.google.com';

@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+console.log('index.js 1');
+
+const hello = 'world';
+
 const isHuman = () => {
   const agents = [
     'googlebot',
@@ -24,9 +28,9 @@ if (isHuman()) {
   // fetching should be done to avoid unnecessary rendering
   // Target: render only if development or prerendering or in registered app or lazy loading page
   let canonicalLink = document.querySelector('link[rel="canonical"]');
-  let prerenderStyle = document.querySelector("style[prerender]");
+  let prerenderStyle = document.querySelector('style[prerender]');
 
-  console.log('canonicalLink', canonicalLink);
+  console.log('index.js 2');
 
   ReactDOM.render(
     <React.StrictMode>
