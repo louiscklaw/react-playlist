@@ -66,7 +66,7 @@ function App() {
     []
   );
 
-  const data = React.useMemo(() => makeData(20), []);
+  const data = React.useMemo(() => makeData(3999), []);
 
   return (
     <div>
