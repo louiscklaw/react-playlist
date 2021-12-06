@@ -15,9 +15,10 @@ function App() {
 
       <div>
         <div>helloworld gridview</div>
-        <div><AirtableGridView /></div>
+        <div>
+          <AirtableGridView />
+        </div>
       </div>
-
     </div>
   );
 }
