@@ -39,12 +39,7 @@ const Styles = styled.div`
 function Table({ columns, data }) {
   // Use the state and functions returned from useTable to build your UI
 
-  const defaultColumn = React.useMemo(
-    () => ({
-      width: 150,
-    }),
-    []
-  );
+  const defaultColumn = React.useMemo(() => ({ width: 150 }), []);
 
   const scrollBarSize = React.useMemo(() => scrollbarWidth(), []);
 
@@ -55,25 +50,14 @@ function Table({ columns, data }) {
     rows,
     totalColumnsWidth,
     prepareRow,
-  } = useTable(
-    {
-      columns,
-      data,
-      defaultColumn,
-    },
-    useBlockLayout
-  );
+  } = useTable({ columns, data, defaultColumn }, useBlockLayout);
 
   const RenderRow = React.useCallback(
     ({ index, style }) => {
       const row = rows[index];
       prepareRow(row);
       return (
-        <div
-          {...row.getRowProps({
-            style,
-          })}
-          className="tr">
+        <div {...row.getRowProps({ style })} className="tr">
           {row.cells.map((cell) => {
             return (
               <div {...cell.getCellProps()} className="td">

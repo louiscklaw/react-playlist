@@ -97,37 +97,17 @@ function App() {
       {
         Header: 'Name',
         columns: [
-          {
-            Header: 'First Name',
-            accessor: 'firstName',
-          },
-          {
-            Header: 'Last Name',
-            accessor: 'lastName',
-          },
+          { Header: 'First Name', accessor: 'firstName' },
+          { Header: 'Last Name', accessor: 'lastName' },
         ],
       },
       {
         Header: 'Info',
         columns: [
-          {
-            Header: 'Age',
-            accessor: 'age',
-            width: 50,
-          },
-          {
-            Header: 'Visits',
-            accessor: 'visits',
-            width: 60,
-          },
-          {
-            Header: 'Status',
-            accessor: 'status',
-          },
-          {
-            Header: 'Profile Progress',
-            accessor: 'progress',
-          },
+          { Header: 'Age', accessor: 'age', width: 50 },
+          { Header: 'Visits', accessor: 'visits', width: 60 },
+          { Header: 'Status', accessor: 'status' },
+          { Header: 'Profile Progress', accessor: 'progress' },
         ],
       },
     ],
