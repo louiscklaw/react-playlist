@@ -2,7 +2,7 @@
 
 set -ex
 
-TEST_DIR=react-window-tryout
+TEST_DIR=react-use-error-boundary-tryout
 HELLOWORLD_DIR=react-helloworld-tryout
 
 rm -rf $TEST_DIR || true

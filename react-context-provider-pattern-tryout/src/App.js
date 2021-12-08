@@ -1,41 +1,20 @@
 import React from 'react';
 // import HelloComponent from 'src/components/HelloComponent';
-import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
-// import UserProvider from 'src/components/user/provider';
-// import ShowName from 'src/components/user/show';
-// import EditName from 'src/components/user/edit';
+import { Context2 } from 'src/contexts/context2';
+import { Context3 } from 'src/contexts/context3';
 
-import SharedVarProvider from 'src/components/shared_var/provider';
-import ShowName from 'src/components/shared_var/show';
-import EditName from 'src/components/shared_var/edit';
-
-function App({ test_branch = false }) {
-  let helloworld = 'helloworld';
-  let helloanotherworld = '123';
-
-  let helloEmpty;
-
-  if (test_branch) {
-    console.log('find true');
-  } else {
-    console.log('find false');
-  }
-
-  console.log('helloEmpty', helloEmpty);
+function App() {
+  let { hello2, setHello2, sampleHelloworld2 } = React.useContext(Context2);
+  let { sampleHelloworld3 } = React.useContext(Context3);
 
   return (
     <div className="App">
-      {/* <UserProvider>
-        <h1>Welcome</h1>
-        <ShowName />
-        <EditName />
-      </UserProvider> */}
-      <SharedVarProvider>
-        <h1>Welcome</h1>
-        <ShowName />
-        <EditName />
-      </SharedVarProvider>
+      helloworld {hello2}{' '}
+      <button onClick={(e) => sampleHelloworld2()}>sampleHelloworld2</button>;
+      <button onClick={(e) => sampleHelloworld3()}>sampleHelloworld3</button>;
+      <button onClick={(e) => setHello2('test')}>test</button>
+      hellp App
     </div>
   );
 }

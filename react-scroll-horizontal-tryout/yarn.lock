@@ -1507,9 +1507,9 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   integrity sha1-NaSyMlqNRVOka1FtvCM785HXVVU=
 
 caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000792:
-  version "1.0.30000864"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000864.tgz#7a08c78da670f23c06f11aa918831b8f2dd60ddc"
-  integrity sha512-8fuGh8n3MIQ7oBkO/ck7J4LXhV5Sz5aLyFmfpChWpK+rJhqYrOsGDdbBVDdyKIRBWamZpy6iM4OmLCFVudOOhg==
+  version "1.0.30001285"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001285.tgz"
+  integrity sha512-KAOkuUtcQ901MtmvxfKD+ODHH9YVDYnBt+TGYSz2KIfnq22CiArbUxXPN9067gNbgMlnNYRSwho8OPXZPALB9Q==
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
