@@ -2,6 +2,7 @@ _pending
 _del
 **/node_modules
 **/build
+**/.env
 
 # Logs
 logs
