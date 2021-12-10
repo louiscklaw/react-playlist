@@ -1,10 +1,16 @@
 import React from 'react';
-import ThirdParyLibProvider from './ThirdParyLibProvider';
+import BusContextProvider from './BusContext';
+import DeviceInfo from './DeviceInfo';
+
+import ThirdPartyLibProvider from './ThirdPartyLibProvider';
 
 export default ({ children }) => {
   return (
     <>
-      <ThirdParyLibProvider>{children}</ThirdParyLibProvider>
+      <BusContextProvider>
+        <DeviceInfo />
+        <ThirdPartyLibProvider>{children}</ThirdPartyLibProvider>
+      </BusContextProvider>
     </>
   );
 };

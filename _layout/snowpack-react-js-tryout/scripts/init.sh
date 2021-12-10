@@ -2,5 +2,5 @@
 
 set -ex
 
-yarn add react-feather
+yarn add react-feather react-device-detect
 
