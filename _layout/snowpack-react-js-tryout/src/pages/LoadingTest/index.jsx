@@ -6,8 +6,11 @@ import { Client as Styletron } from 'styletron-engine-atomic';
 import { Provider as StyletronProvider } from 'styletron-react';
 import { LightTheme, BaseProvider, styled } from 'baseui';
 
-import { Button } from 'baseui/button';
+import { Button, SHAPE } from 'baseui/button';
 import { Input } from 'baseui/input';
+import { Block } from 'baseui/block';
+
+import { User, Key, Facebook, GitHub, Chrome } from 'react-feather';
 
 import { logo1 } from '../../assets';
 
@@ -53,6 +56,7 @@ export default ({ children }) => {
             </Inner>
           </Cell>
         </Grid>
+        <Block paddingTop="3rem"></Block>
         <Grid
           gridColumns={12}
           gridGaps={[2, 6, 12]}
@@ -60,22 +64,35 @@ export default ({ children }) => {
           gridMargins={[8, 16, 32]}
           gridMaxWidth={1440}>
           <Cell span={[12, 4]}>
-            <Inner>facebook</Inner>
+            <Inner>
+              <Button onClick={() => alert('click')} shape={SHAPE.pill}>
+                <Facebook /> Facebook
+              </Button>
+            </Inner>
           </Cell>
           <Cell span={[12, 4]}>
-            <Inner>google</Inner>
+            <Inner>
+              <Button onClick={() => alert('click')} shape={SHAPE.pill}>
+                <GitHub /> github
+              </Button>
+            </Inner>
           </Cell>
           <Cell span={[12, 4]}>
-            <Inner>apple</Inner>
+            <Inner>
+              <Button onClick={() => alert('click')} shape={SHAPE.pill}>
+                <Chrome /> Chrome
+              </Button>
+            </Inner>
           </Cell>
         </Grid>
+        <Block paddingTop="3rem"></Block>
         <Grid
           gridColumns={12}
           gridGaps={[2, 6, 12]}
           gridGutters={[2, 6, 12]}
           gridMargins={[8, 16, 32]}
           gridMaxWidth={1440}>
-          <Cell span={[12, 4]}>
+          <Cell skip={[1, 3]} span={[10, 6]}>
             <Inner>
               <Input
                 value={value}
@@ -83,17 +100,8 @@ export default ({ children }) => {
                 placeholder="Controlled Input"
                 clearOnEscape
                 startEnhancer={() => {
-                  return <>helloworld</>;
+                  return <User />;
                 }}
-              />
-            </Inner>
-          </Cell>
-          <Cell span={[12, 4]}>
-            <Inner>
-              <Input
-                onChange={(event) => setValue(event.currentTarget.value)}
-                type="password"
-                value={value}
               />
             </Inner>
           </Cell>
@@ -104,7 +112,27 @@ export default ({ children }) => {
           gridGutters={[2, 6, 12]}
           gridMargins={[8, 16, 32]}
           gridMaxWidth={1440}>
-          <Cell span={[12, 4]}>
+          <Cell skip={[1, 3]} span={[10, 6]}>
+            <Inner>
+              <Input
+                onChange={(event) => setValue(event.currentTarget.value)}
+                type="password"
+                value={value}
+                startEnhancer={() => {
+                  return <Key />;
+                }}
+              />
+            </Inner>
+          </Cell>
+        </Grid>
+        <Block paddingTop="3rem"></Block>
+        <Grid
+          gridColumns={12}
+          gridGaps={[2, 6, 12]}
+          gridGutters={[2, 6, 12]}
+          gridMargins={[8, 16, 32]}
+          gridMaxWidth={1440}>
+          <Cell skip={[1, 3]} span={[10, 6]}>
             <Inner>
               <Button>Login</Button>
             </Inner>
