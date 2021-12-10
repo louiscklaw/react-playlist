@@ -3,6 +3,17 @@ import React from 'react';
 const PATH_TO_TEST = 'test/helloworld';
 
 function App() {
+  const dumpLocalStorage = () => {
+    var archive = {};
+    Object.keys(localStorage).forEach((ls_key) => {
+      let temp_json = JSON.parse(localStorage.getItem(ls_key));
+      archive = { ...archive, ...temp_json };
+    });
+
+    console.log('dumpLocalStorage:', archive);
+    return archive;
+  };
+
   // SET
   const storeToLocalStorage = (k, data_o) => {
     localStorage.setItem(k, JSON.stringify(data_o));
@@ -50,9 +61,16 @@ function App() {
       <button>clear</button>
       <button onClick={(e) => tryLoad('hello', e)}>get</button>
       <button
-        onClick={(e) => storeToLocalStorage('hello', { hello: Date.now() }, e)}>
+        onClick={(e) =>
+          storeToLocalStorage(
+            'hello',
+            { hello: Date.now(), apple: 'orange' },
+            e
+          )
+        }>
         set
       </button>
+      <button onClick={(e) => dumpLocalStorage(e)}>dumpLocalStorage</button>
     </div>
   );
 }

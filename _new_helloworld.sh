@@ -2,7 +2,7 @@
 
 set -ex
 
-TEST_DIR=react-use-error-boundary-tryout
+TEST_DIR=/tmp/_del/_llaw_del/react-flip-toolkit-tryout
 HELLOWORLD_DIR=react-helloworld-tryout
 
 rm -rf $TEST_DIR || true

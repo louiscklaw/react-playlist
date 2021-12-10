@@ -13,10 +13,22 @@ Sentry.init({
   dsn: REACT_APP_SENTRY_IO,
   integrations: [new Integrations.BrowserTracing()],
   tracesSampleRate: 1.0,
+  debug: true,
+  initialScope: {
+    tags: { category: 'meny-client/meny', url: window.location.href },
+    user: { id: 42, email: 'john.doe@example.com' },
+  },
+});
+
+Sentry.setContext('LYNKED_META', {
+  category: 'meny-client/meny',
+  class: 'meny',
+  url: window.location.href,
 });
 
 ReactDOM.render(
   <React.StrictMode>
+    <h1>{JSON.stringify({ REACT_APP_SENTRY_IO }, null, 2)}</h1>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
