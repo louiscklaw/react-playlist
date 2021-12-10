@@ -162,8 +162,7 @@ export default () => {
     height: device_type === 'mobile' ? '3rem' : '0rem',
   });
   const bottom_spacer = css({
-    height: device_type === 'mobile' ? '3rem' : '3rem',
-    backgroundColor: 'gold',
+    height: device_type === 'mobile' ? '1rem' : '3rem',
   });
 
   const test = css({});
@@ -303,13 +302,18 @@ export default () => {
             </Grid>
           </div>
 
-          <Grid gridColumns={12}>
-            <Cell span={[12]}>
-              <Inner>
-                <StyledLink href="https://baseweb.design">copyright</StyledLink>
-              </Inner>
-            </Cell>
-          </Grid>
+          <div
+            style={{
+              width: '100vw',
+              display: 'flex',
+              justifyContent: 'center',
+              alignContent: 'center',
+            }}>
+            <StyledLink href="https://baseweb.design">
+              copyright string 2021, press to back
+            </StyledLink>
+          </div>
+
           <div className={bottom_spacer} />
         </div>
       </div>
