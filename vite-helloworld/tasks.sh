@@ -2,6 +2,5 @@
 
 set -ex
 
-yarn --dev
+yarn create vite
 
-yarn dev
