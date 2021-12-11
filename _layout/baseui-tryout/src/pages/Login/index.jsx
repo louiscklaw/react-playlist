@@ -82,10 +82,23 @@ export default () => {
             backgroundRepeat: 'no-repeat',
           }}></div>
         <div className={styles.login_panel_container}>
-          <div style={{ flex: 1 }}>&nbsp;</div>
+          <div className={styles.first_spacer}>&nbsp;</div>
           {/* login_panel */}
           <div className={styles.login_panel}>
             <div style={{ flex: 3 }}>
+              <Cell span={12}>
+                <div
+                  className={styles.login_panel_restaurant_logo}
+                  style={{
+                    width: '100%',
+                    minHeight: '200px',
+                    backgroundImage: `url(${logo1})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                  }}></div>
+              </Cell>
+
               <Cell span={12}>
                 <div style={{ width: '100%', textAlign: 'center' }}>
                   login&nbsp;by
@@ -186,7 +199,7 @@ export default () => {
           </div>
 
           {/* login_panel */}
-          <div style={{ flex: 1 }}>&nbsp;</div>
+          <div className={styles.first_spacer}>&nbsp;</div>
 
           <div className={styles.link}>
             <StyledLink href="https://baseweb.design">

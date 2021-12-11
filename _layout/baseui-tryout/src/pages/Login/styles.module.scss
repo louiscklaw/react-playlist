@@ -4,6 +4,10 @@ $md: 960px;
 $lg: 1280px;
 $xl: 1920px;
 
+.login_panel_restaurant_logo {
+  display: none;
+}
+
 .login_button {
   padding-top: 1rem;
 }
@@ -48,14 +52,25 @@ $xl: 1920px;
   align-items: center;
 }
 
+.first_spacer {
+  flex: 1;
+}
+
 @media screen and (min-width: $xs) {
   // phone
 
+  .first_spacer {
+    flex: unset;
+  }
+
   .restaurant_logo {
-    height: 25vh;
+    height: 15vh;
   }
   .restaurant_image {
     display: none;
+  }
+  .container {
+    height: 85vh;
   }
 }
 @media screen and (min-width: $sm) {
@@ -81,6 +96,10 @@ $xl: 1920px;
   .restaurant_image {
     height: 100vh;
     width: 50vw;
+  }
+
+  .login_panel_restaurant_logo {
+    display: block;
   }
 }
 @media screen and (min-width: $xl) {
