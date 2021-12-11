@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './App.module.scss';
-import Login from './layouts/Login';
+import Login from './pages/Login';
 
 function App() {
   // Create the count state.
@@ -13,11 +13,6 @@ function App() {
   // Return the App component.
   return (
     <div className={styles.App}>
-      {/* 
-      <header className={styles.helloworld}>
-        <p>helloworld</p>
-      </header> 
-      */}
       <Login />
     </div>
   );

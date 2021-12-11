@@ -4,6 +4,25 @@ $md: 960px;
 $lg: 1280px;
 $xl: 1920px;
 
+.login_button {
+  padding-top: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.copyright_link {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
