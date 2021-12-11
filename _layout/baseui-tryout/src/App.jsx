@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './App.module.scss';
 import Login from './pages/Login';
+import { Outlet, Link } from 'react-router-dom';
 
 function App() {
   // Create the count state.
@@ -13,7 +14,7 @@ function App() {
   // Return the App component.
   return (
     <div className={styles.App}>
-      <Login />
+      <Outlet />
     </div>
   );
 }
