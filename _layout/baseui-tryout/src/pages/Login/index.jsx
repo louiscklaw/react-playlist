@@ -5,9 +5,15 @@ import { Button, SHAPE } from 'baseui/button';
 import { StyledLink } from 'baseui/link';
 import { Block } from 'baseui/block';
 import { Grid, Cell, BEHAVIOR } from 'baseui/layout-grid';
-import { Facebook } from 'react-feather';
-import { GitHub } from 'react-feather';
-import { Twitch } from 'react-feather';
+import {
+  Facebook,
+  GitHub,
+  Twitch,
+  User,
+  Key,
+  LogIn,
+  UserPlus,
+} from 'react-feather';
 import { useStyletron } from 'baseui';
 
 import Upload from 'baseui/icon/upload';
@@ -18,11 +24,8 @@ const LoginButton = () => {
   return (
     <Button
       onClick={() => alert('click')}
-      overrides={{
-        BaseButton: {
-          style: ({ $theme }) => ({ width: '100%' }),
-        },
-      }}>
+      overrides={{ BaseButton: { style: () => ({ width: '100%' }) } }}
+      endEnhancer={() => <LogIn />}>
       Login
     </Button>
   );
@@ -32,9 +35,8 @@ const RegisterButton = () => {
   return (
     <Button
       onClick={() => alert('click')}
-      overrides={{
-        BaseButton: { style: ({ $theme }) => ({ width: '100%' }) },
-      }}>
+      overrides={{ BaseButton: { style: () => ({ width: '100%' }) } }}
+      endEnhancer={() => <UserPlus />}>
       Register
     </Button>
   );
@@ -81,16 +83,17 @@ export default () => {
           }}></div>
         <div className={styles.login_panel_container}>
           <div style={{ flex: 1 }}>&nbsp;</div>
+          {/* login_panel */}
           <div className={styles.login_panel}>
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 3 }}>
               <Cell span={12}>
                 <div style={{ width: '100%', textAlign: 'center' }}>
                   login&nbsp;by
                 </div>
               </Cell>
             </div>
-            <div style={{ flex: 1 }}>&nbsp;</div>
-            <div style={{ flex: 1, width: '100%' }}>
+            <div style={{ flex: 3 }}>&nbsp;</div>
+            <div style={{ flex: 3, width: '100%' }}>
               <Grid gridColumns={12} gridMaxWidth={1440}>
                 <Cell skip={[2]} span={[8]}>
                   <Grid gridColumns={12} gridMaxWidth={1440}>
@@ -119,8 +122,8 @@ export default () => {
                 </Cell>
               </Grid>
             </div>
-            <div style={{ flex: 1 }}>&nbsp;</div>
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 3 }}>&nbsp;</div>
+            <div style={{ flex: 3 }}>
               <Grid gridColumns={12} gridMaxWidth={1440}>
                 <Cell skip={[2]} span={[8]}>
                   <Input
@@ -128,6 +131,7 @@ export default () => {
                     onChange={(e) => setValue(e.target.value)}
                     placeholder="Controlled Input"
                     clearOnEscape
+                    startEnhancer={() => <User />}
                   />
                 </Cell>
                 <Cell span={12}>
@@ -138,22 +142,25 @@ export default () => {
                     onChange={(event) => setValue(event.currentTarget.value)}
                     type="password"
                     value={value}
+                    startEnhancer={() => <Key />}
                   />
                 </Cell>
               </Grid>
             </div>
-            <div style={{ flex: 1 }}>&nbsp;</div>
+            {/* <div style={{ flex: 3 }}>&nbsp;</div> */}
             <div
               style={{
-                flex: 1,
+                flex: 3,
                 width: '100%',
                 textAlign: 'center',
-                marginTop: '10px',
+                marginTop: '0.5rem',
               }}>
-              forgot password ?
+              <StyledLink href="https://baseweb.design">
+                forgot password ?
+              </StyledLink>
             </div>
-            <div style={{ flex: 1 }}></div>
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 3 }}>&nbsp;</div>
+            <div style={{ flex: 3 }}>
               <Grid gridColumns={12} gridMaxWidth={1440}>
                 <Cell skip={[2]} span={[8]}>
                   <Grid gridColumns={12}>
@@ -162,7 +169,7 @@ export default () => {
                     </Cell>
 
                     <Cell span={12}>
-                      <RegisterButton />
+                      <LoginButton />
                     </Cell>
 
                     <Cell span={12}>
@@ -170,7 +177,7 @@ export default () => {
                     </Cell>
 
                     <Cell span={12}>
-                      <LoginButton />
+                      <RegisterButton />
                     </Cell>
                   </Grid>
                 </Cell>
@@ -178,6 +185,7 @@ export default () => {
             </div>
           </div>
 
+          {/* login_panel */}
           <div style={{ flex: 1 }}>&nbsp;</div>
 
           <div className={styles.link}>
