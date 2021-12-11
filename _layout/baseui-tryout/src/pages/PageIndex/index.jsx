@@ -1,5 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default () => {
-  return <>page index helloworld</>;
+  return (
+    <>
+      <Link to="/login">login page</Link>
+    </>
+  );
 };

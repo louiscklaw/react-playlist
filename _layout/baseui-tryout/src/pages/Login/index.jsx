@@ -20,6 +20,8 @@ import Upload from 'baseui/icon/upload';
 
 import { logo1 } from '../../assets';
 
+import { Link } from 'react-router-dom';
+
 const LoginButton = () => {
   return (
     <Button
@@ -53,6 +55,14 @@ const Inner = ({ children }) => {
       })}>
       {children}
     </div>
+  );
+};
+
+const RRLink = ({ text, to, ...rest }) => {
+  return (
+    <>
+      <StyledLink href={to}>{text}</StyledLink>
+    </>
   );
 };
 
@@ -202,9 +212,7 @@ export default () => {
           <div className={styles.first_spacer}>&nbsp;</div>
 
           <div className={styles.link}>
-            <StyledLink href="https://baseweb.design">
-              copyright test string, click to back
-            </StyledLink>
+            <RRLink text="click to back" to={'/'} />
           </div>
 
           <div style={{ flex: 1 }}>&nbsp;</div>
