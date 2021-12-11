@@ -8,6 +8,7 @@ import { Grid, Cell, BEHAVIOR } from 'baseui/layout-grid';
 import { Facebook } from 'react-feather';
 import { GitHub } from 'react-feather';
 import { Twitch } from 'react-feather';
+import { useStyletron } from 'baseui';
 
 import Upload from 'baseui/icon/upload';
 
@@ -32,12 +33,24 @@ const RegisterButton = () => {
     <Button
       onClick={() => alert('click')}
       overrides={{
-        BaseButton: {
-          style: ({ $theme }) => ({ width: '100%' }),
-        },
+        BaseButton: { style: ({ $theme }) => ({ width: '100%' }) },
       }}>
       Register
     </Button>
+  );
+};
+
+const Inner = ({ children }) => {
+  const [css, theme] = useStyletron();
+  return (
+    <div
+      className={css({
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      })}>
+      {children}
+    </div>
   );
 };
 
@@ -46,9 +59,9 @@ export default () => {
 
   return (
     <>
-      <div className={styles.helloworld} style={{ position: 'absolute' }}>
+      {/* <div className={styles.helloworld} style={{ position: 'absolute' }}>
         Login layout helloworld
-      </div>
+      </div> */}
       <div className={styles.container}>
         <div
           className={styles.restaurant_logo}
@@ -66,143 +79,114 @@ export default () => {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}></div>
-        <div className={styles.login_panel}>
-          <Grid gridColumns={12} gridMaxWidth={1440}>
-            <Cell>
-              <div>1</div>
-            </Cell>
-            <Cell>
-              <div>2</div>
-            </Cell>
-            <Cell>
-              <div>3</div>
-            </Cell>
-            <Cell>
-              <div>4</div>
-            </Cell>
-            <Cell>
-              <div>5</div>
-            </Cell>
-            <Cell>
-              <div>6</div>
-            </Cell>
-            <Cell>
-              <div>7</div>
-            </Cell>
-            <Cell>
-              <div>8</div>
-            </Cell>
-            <Cell>
-              <div>9</div>
-            </Cell>
-            <Cell>
-              <div>10</div>
-            </Cell>
-            <Cell>
-              <div>11</div>
-            </Cell>
-            <Cell>
-              <div>12</div>
-            </Cell>
-          </Grid>
-          <Grid gridColumns={12} gridMaxWidth={1440}>
-            <Cell skip={2} span={8}>
+        <div className={styles.login_panel_container}>
+          <div style={{ flex: 1 }}>&nbsp;</div>
+          <div className={styles.login_panel}>
+            <div style={{ flex: 1 }}>
+              <Cell span={12}>
+                <div style={{ width: '100%', textAlign: 'center' }}>
+                  login&nbsp;by
+                </div>
+              </Cell>
+            </div>
+            <div style={{ flex: 1 }}>&nbsp;</div>
+            <div style={{ flex: 1, width: '100%' }}>
               <Grid gridColumns={12} gridMaxWidth={1440}>
-                <Cell span={4}>
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}>
-                    <Button shape={SHAPE.circle}>
-                      <Facebook />
-                    </Button>
-                  </div>
-                </Cell>
-                <Cell span={4}>
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}>
-                    <Button shape={SHAPE.circle}>
-                      <GitHub />
-                    </Button>
-                  </div>
-                </Cell>
-                <Cell span={4}>
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}>
-                    <Button shape={SHAPE.circle}>
-                      <Twitch />
-                    </Button>
-                  </div>
+                <Cell skip={[2]} span={[8]}>
+                  <Grid gridColumns={12} gridMaxWidth={1440}>
+                    <Cell span={4}>
+                      <Inner>
+                        <Button shape={SHAPE.circle}>
+                          <Facebook />
+                        </Button>
+                      </Inner>
+                    </Cell>
+                    <Cell span={4}>
+                      <Inner>
+                        <Button shape={SHAPE.circle}>
+                          <GitHub />
+                        </Button>
+                      </Inner>
+                    </Cell>
+                    <Cell span={4}>
+                      <Inner>
+                        <Button shape={SHAPE.circle}>
+                          <Twitch />
+                        </Button>
+                      </Inner>
+                    </Cell>
+                  </Grid>
                 </Cell>
               </Grid>
-            </Cell>
-          </Grid>
-
-          <Grid gridColumns={12} gridMaxWidth={1440}>
-            <Cell skip={[2]} span={[8]}>
-              <Block height={'5rem'} />
-              <Input
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-                placeholder="Controlled Input"
-                clearOnEscape
-              />
-            </Cell>
-
-            <Cell skip={[2]} span={[8]}>
-              <Block height={'1rem'} />
-              <Input
-                onChange={(event) => setValue(event.currentTarget.value)}
-                type="password"
-                value={value}
-              />
-              <div className={styles.link}>
-                <StyledLink href="https://baseweb.design">
-                  forgot password?
-                </StyledLink>
-              </div>
-            </Cell>
-
-            <Cell skip={[2]} span={[8]}>
-              <Grid gridColumns={12}>
+            </div>
+            <div style={{ flex: 1 }}>&nbsp;</div>
+            <div style={{ flex: 1 }}>
+              <Grid gridColumns={12} gridMaxWidth={1440}>
+                <Cell skip={[2]} span={[8]}>
+                  <Input
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                    placeholder="Controlled Input"
+                    clearOnEscape
+                  />
+                </Cell>
                 <Cell span={12}>
                   <div style={{ height: '1rem' }}></div>
                 </Cell>
-
-                <Cell span={12}>
-                  <RegisterButton />
-                </Cell>
-
-                <Cell span={12}>
-                  <div style={{ height: '1rem' }}></div>
-                </Cell>
-
-                <Cell span={12}>
-                  <LoginButton />
+                <Cell skip={[2]} span={[8]}>
+                  <Input
+                    onChange={(event) => setValue(event.currentTarget.value)}
+                    type="password"
+                    value={value}
+                  />
                 </Cell>
               </Grid>
-            </Cell>
-          </Grid>
+            </div>
+            <div style={{ flex: 1 }}>&nbsp;</div>
+            <div
+              style={{
+                flex: 1,
+                width: '100%',
+                textAlign: 'center',
+                marginTop: '10px',
+              }}>
+              forgot password ?
+            </div>
+            <div style={{ flex: 1 }}></div>
+            <div style={{ flex: 1 }}>
+              <Grid gridColumns={12} gridMaxWidth={1440}>
+                <Cell skip={[2]} span={[8]}>
+                  <Grid gridColumns={12}>
+                    <Cell span={12}>
+                      <div style={{ height: '1rem' }}></div>
+                    </Cell>
 
-          <Grid behavior={BEHAVIOR.fluid}>
-            <Cell span={12}>
-              <div className={styles.link}>
-                <StyledLink href="https://baseweb.design">
-                  copyright test string
-                </StyledLink>
-              </div>
-            </Cell>
-          </Grid>
+                    <Cell span={12}>
+                      <RegisterButton />
+                    </Cell>
+
+                    <Cell span={12}>
+                      <div style={{ height: '1rem' }}></div>
+                    </Cell>
+
+                    <Cell span={12}>
+                      <LoginButton />
+                    </Cell>
+                  </Grid>
+                </Cell>
+              </Grid>
+            </div>
+          </div>
+
+          <div style={{ flex: 1 }}>&nbsp;</div>
+
+          <div className={styles.link}>
+            <StyledLink href="https://baseweb.design">
+              copyright test string, click to back
+            </StyledLink>
+          </div>
+
+          <div style={{ flex: 1 }}>&nbsp;</div>
         </div>
       </div>
     </>
