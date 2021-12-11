@@ -56,6 +56,10 @@ $xl: 1920px;
   flex: 1;
 }
 
+.container {
+  height: 85vh;
+}
+
 @media screen and (min-width: $xs) {
   // phone
 
@@ -68,9 +72,6 @@ $xl: 1920px;
   }
   .restaurant_image {
     display: none;
-  }
-  .container {
-    height: 85vh;
   }
 }
 @media screen and (min-width: $sm) {
@@ -100,6 +101,10 @@ $xl: 1920px;
 
   .login_panel_restaurant_logo {
     display: block;
+  }
+
+  .container {
+    height: 100vh;
   }
 }
 @media screen and (min-width: $xl) {
