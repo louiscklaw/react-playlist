@@ -1,0 +1,33 @@
+$xs: 0px;
+$sm: 600px;
+$md: 960px;
+$lg: 1280px;
+$xl: 1920px;
+
+.helloworld_nav_list {
+  display: none;
+}
+
+.helloworld {
+  position: absolute;
+  //some CSS
+  @media screen and (min-width: $xs) {
+    // phone
+    background-color: red;
+  }
+  @media screen and (min-width: $sm) {
+    // pad
+    background-color: gold;
+  }
+  @media screen and (min-width: $md) {
+    background-color: cyan;
+  }
+  @media screen and (min-width: $lg) {
+    // laptop
+    background-color: silver;
+  }
+  @media screen and (min-width: $xl) {
+    // desktop
+    background-color: tomato;
+  }
+}

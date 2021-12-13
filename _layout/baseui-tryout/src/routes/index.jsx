@@ -6,6 +6,7 @@ import FullScreenLayout from '../layouts/FullScreenLayout';
 import AppContext from '../contexts/AppContext';
 
 import Login from '../pages/Login';
+import Dashboard from '../pages/Dashboard';
 import PageIndex from '../pages/PageIndex';
 
 export default () => {
@@ -16,6 +17,7 @@ export default () => {
           <Routes>
             <Route element={<FullScreenLayout />}>
               <Route path="login" element={<Login />} />
+              <Route path="dashboard" element={<Dashboard />} />
               <Route path="/" element={<PageIndex />} />
               <Route path="*" element={<PageIndex />} />
             </Route>

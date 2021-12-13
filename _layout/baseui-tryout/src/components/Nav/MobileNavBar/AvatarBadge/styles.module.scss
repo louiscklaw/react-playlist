@@ -1,0 +1,39 @@
+$xs: 0px;
+$sm: 600px;
+$md: 960px;
+$lg: 1280px;
+$xl: 1920px;
+
+.navbar_container {
+  background-color: pink;
+}
+
+.name_plate_container {
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar_container {
+  flex: 2;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar_badge_container {
+  min-height: 150px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid #e5e5e5;
+}

@@ -1,0 +1,117 @@
+$xs: 0px;
+$sm: 600px;
+$md: 960px;
+$lg: 1280px;
+$xl: 1920px;
+
+.right {
+  flex: 1;
+  background-color: grey;
+}
+
+.left_nav_menu {
+  width: 245px;
+}
+
+.mobile_nav_menu_container {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100%;
+}
+
+.mobile_nav_menu {
+  width: 245px;
+  height: 100%;
+
+  display: none;
+
+  background-color: white;
+}
+
+.top {
+  width: 100vw;
+}
+
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.main {
+  flex: 1;
+
+  display: flex;
+  flex-flow: row;
+
+  @media screen and (min-width: $xs) {
+    // phone
+    // background-color: red;
+    .left_nav_menu {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $sm) {
+    // pad
+    // background-color: gold;
+    .left_nav_menu {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $md) {
+    // background-color: cyan;
+    .left_nav_menu {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $lg) {
+    // laptop
+    // background-color: silver;
+    .left_nav_menu {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $xl) {
+    // desktop
+    // background-color: tomato;
+    .left_nav_menu {
+      display: block;
+    }
+  }
+}
+
+.helloworld {
+  position: absolute;
+  //some CSS
+  @media screen and (min-width: $xs) {
+    // phone
+    background-color: red;
+  }
+  @media screen and (min-width: $sm) {
+    // pad
+    background-color: gold;
+  }
+  @media screen and (min-width: $md) {
+    background-color: cyan;
+  }
+  @media screen and (min-width: $lg) {
+    // laptop
+    background-color: silver;
+  }
+  @media screen and (min-width: $xl) {
+    // desktop
+    background-color: tomato;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

@@ -1,3 +1,3 @@
-import logo1 from './logo1.svg';
+import company_logo from './company_logo.svg';
 
-export { logo1 };
+export { company_logo };

@@ -18,7 +18,7 @@ import { useStyletron } from 'baseui';
 
 import Upload from 'baseui/icon/upload';
 
-import { logo1 } from '../../assets';
+import { company_logo } from '../../assets';
 
 import { Link } from 'react-router-dom';
 
@@ -78,7 +78,7 @@ export default () => {
         <div
           className={styles.restaurant_logo}
           style={{
-            backgroundImage: `url(${logo1})`,
+            backgroundImage: `url(${company_logo})`,
             backgroundPosition: 'center',
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
@@ -102,7 +102,7 @@ export default () => {
                   style={{
                     width: '100%',
                     minHeight: '200px',
-                    backgroundImage: `url(${logo1})`,
+                    backgroundImage: `url(${company_logo})`,
                     backgroundPosition: 'center',
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
