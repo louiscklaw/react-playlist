@@ -7,6 +7,7 @@ import { BusContext } from '../../contexts/BusContext';
 import NavBar from '../../components/Nav/NavBar';
 import MobileNavBar from '../../components/Nav/MobileNavBar';
 import TopBar from '../../components/TopBar';
+import Body from './Body';
 
 export default () => {
   let { viewport_height } = useContext(BusContext);
@@ -64,7 +65,9 @@ export default () => {
               />
             </div>
           </div>
-          <div className={styles.right}>right</div>
+          <div className={styles.right}>
+            <Body />
+          </div>
         </div>
       </div>
     </>
