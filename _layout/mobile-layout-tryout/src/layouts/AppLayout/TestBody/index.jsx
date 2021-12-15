@@ -6,12 +6,16 @@ import Typography from '@mui/material/Typography';
 import { visuallyHidden } from '@mui/utils';
 import { useTranslation } from 'react-i18next';
 
+import AnimatedList from './AnimatedList';
+
 export default ({}) => {
+  let scroll_ref = useRef();
   const { t, i18n } = useTranslation();
 
   return (
     <>
-      <Root className={classes.root} square elevation={0}>
+      <Root className={classes.root} square elevation={0} ref={scroll_ref}>
+        {JSON.stringify(scroll_ref.current)}
         <Typography component="h1" style={visuallyHidden}>{`${t(
           'Dashboard'
         )} - ${t('AppTitle')}`}</Typography>
@@ -19,7 +23,7 @@ export default ({}) => {
           {t('home-page-description')}
         </Typography>
         <List disablePadding></List>
-        Home
+        <AnimatedList scroll_ref={scroll_ref} />
       </Root>
     </>
   );
