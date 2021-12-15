@@ -62,12 +62,12 @@ const getThemeTokens = (mode) => ({
     ...(mode === 'light'
       ? {
           // light mode
-          background: { default: '#e67e22' },
-          primary: { main: '#e67e22' },
+          background: { default: '#f1c40f' },
+          primary: { main: '#f1c40f' },
         }
       : {
           //dark mode
-          primary: { main: '#e67e22' },
+          primary: { main: '#f1c40f' },
           background: { default: '#000' },
         }),
   },

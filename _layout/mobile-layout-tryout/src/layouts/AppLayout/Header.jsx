@@ -46,9 +46,7 @@ const AppToolbar = styled(Toolbar)(({ theme }) => ({
   },
   [`& .${classes.searchRouteInput}`]: {
     maxWidth: '50px',
-    '& input': {
-      textAlign: 'center',
-    },
+    '& input': { textAlign: 'center' },
     '& input::before': {
       borderBottom: `1px ${theme.palette.text.primary} solid`,
     },
