@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Flipper, Flipped } from 'react-flip-toolkit';
 
-import './styles.css';
+import styles from './styles.module.css';
 
 const Square = ({ toggleFullScreen }) => (
   <Flipped flipId="square">
-    <div className="square" onClick={toggleFullScreen}>
+    <div className={styles.square} onClick={toggleFullScreen}>
       Square
     </div>
   </Flipped>
@@ -13,8 +13,8 @@ const Square = ({ toggleFullScreen }) => (
 
 const FullScreenSquare = ({ toggleFullScreen }) => (
   <Flipped flipId="square">
-    <div className="full-screen-square_a" onClick={toggleFullScreen}>
-      Fullscreen
+    <div className={styles.full_screen_square_a} onClick={toggleFullScreen}>
+      FlipUp
     </div>
   </Flipped>
 );

@@ -1,18 +1,18 @@
-import ReactDOM from "react-dom";
-import React, { Component } from "react";
-import { Flipper, Flipped } from "react-flip-toolkit";
-import Card from "./Card";
-import data from "./data";
-import "./styles.css";
-import "sanitize.css";
+import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
+import { Flipper, Flipped } from 'react-flip-toolkit';
+import Card from './Card';
+import data from './data';
+import './styles.css';
+import 'sanitize.css';
 
 class ListExample extends Component {
   state = {
-    type: "list",
-    sort: "asc",
+    type: 'list',
+    sort: 'asc',
     filteredIds: [],
-    stagger: "forward",
-    spring: "noWobble",
+    stagger: 'forward',
+    spring: 'noWobble',
   };
 
   addToFilteredIds = (id) => {
@@ -33,40 +33,35 @@ class ListExample extends Component {
           spring={this.state.spring}
           staggerConfig={{
             default: {
-              reverse: this.state.stagger !== "forward",
+              reverse: this.state.stagger !== 'forward',
               speed: 1,
             },
           }}
-          decisionData={this.state}
-        >
+          decisionData={this.state}>
           <div className="fm-flex-container">
             <fieldset>
               <legend>Sort</legend>
               <label
                 onClick={() => {
-                  this.setState({
-                    sort: "asc",
-                  });
-                }}
-              >
+                  this.setState({ sort: 'asc' });
+                }}>
                 <input
                   type="radio"
                   name="sort"
-                  checked={this.state.sort === "asc"}
+                  checked={this.state.sort === 'asc'}
                 />
                 asc
               </label>
               <label
                 onClick={() => {
                   this.setState({
-                    sort: "desc",
+                    sort: 'desc',
                   });
-                }}
-              >
+                }}>
                 <input
                   type="radio"
                   name="sort"
-                  checked={this.state.sort === "desc"}
+                  checked={this.state.sort === 'desc'}
                 />
                 desc
               </label>
@@ -77,28 +72,26 @@ class ListExample extends Component {
               <label
                 onClick={() => {
                   this.setState({
-                    type: "grid",
+                    type: 'grid',
                   });
-                }}
-              >
+                }}>
                 <input
                   type="radio"
                   name="type"
-                  checked={this.state.type === "grid"}
+                  checked={this.state.type === 'grid'}
                 />
                 grid
               </label>
               <label
                 onClick={() => {
                   this.setState({
-                    type: "list",
+                    type: 'list',
                   });
-                }}
-              >
+                }}>
                 <input
                   type="radio"
                   name="type"
-                  checked={this.state.type === "list"}
+                  checked={this.state.type === 'list'}
                 />
                 list
               </label>
@@ -107,7 +100,7 @@ class ListExample extends Component {
             <fieldset>
               <legend>Stagger</legend>
               <div className="fm-flex-container">
-                {["forward", "reverse", "none"].map((type) => {
+                {['forward', 'reverse', 'none'].map((type) => {
                   return (
                     <label>
                       <input
@@ -117,7 +110,7 @@ class ListExample extends Component {
                         onChange={() => {
                           this.setState({
                             stagger: type,
-                            sort: this.state.sort === "asc" ? "desc" : "asc",
+                            sort: this.state.sort === 'asc' ? 'desc' : 'asc',
                           });
                         }}
                       />
@@ -129,7 +122,7 @@ class ListExample extends Component {
             </fieldset>
             <fieldset>
               <legend>Spring</legend>
-              {["stiff", "noWobble", "veryGentle", "gentle", "wobbly"].map(
+              {['stiff', 'noWobble', 'veryGentle', 'gentle', 'wobbly'].map(
                 (type) => {
                   return (
                     <label>
@@ -140,7 +133,7 @@ class ListExample extends Component {
                         onChange={() => {
                           this.setState({
                             spring: type,
-                            sort: this.state.sort === "asc" ? "desc" : "asc",
+                            sort: this.state.sort === 'asc' ? 'desc' : 'asc',
                           });
                         }}
                       />
@@ -159,21 +152,20 @@ class ListExample extends Component {
                   this.setState({
                     filteredIds: [],
                   });
-                }}
-              >
+                }}>
                 show all cards
               </button>
             )}
           </div>
 
           <Flipped flipId="list">
-            <div className={this.state.type === "grid" ? "fm-grid" : "fm-list"}>
+            <div className={this.state.type === 'grid' ? 'fm-grid' : 'fm-list'}>
               <Flipped inverseFlipId="list">
                 <ul className="list-contents">
                   {[...data]
                     .filter((d) => !this.state.filteredIds.includes(d.id))
                     .sort((a, b) => {
-                      if (this.state.sort === "asc") {
+                      if (this.state.sort === 'asc') {
                         return a.id - b.id;
                       } else {
                         return b.id - a.id;
@@ -183,7 +175,7 @@ class ListExample extends Component {
                       <Card
                         id={id}
                         title={title}
-                        stagger={["forward", "reverse"].includes(
+                        stagger={['forward', 'reverse'].includes(
                           this.state.stagger
                         )}
                         type={this.state.type}

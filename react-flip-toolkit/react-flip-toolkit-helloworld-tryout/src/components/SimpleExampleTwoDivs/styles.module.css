@@ -20,7 +20,7 @@ body {
   );
 }
 
-.full-screen-square {
+.full_screen_square {
   position: fixed;
   top: 0;
   left: 0;

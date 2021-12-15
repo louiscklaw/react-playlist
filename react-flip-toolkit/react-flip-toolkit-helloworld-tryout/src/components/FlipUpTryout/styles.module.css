@@ -10,6 +10,10 @@ body {
 }
 
 .square {
+  border: solid;
+  transform-origin: 0 0;
+  transform: rotateX(0);
+  opacity: 1;
   width: 5rem;
   height: 5rem;
   cursor: pointer;
@@ -20,12 +24,13 @@ body {
   );
 }
 
-.full-screen-square1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.full_screen_square_a {
+  border: solid;
+  transform-origin: left;
+  transform: rotateY(-30deg);
+  opacity: 0.8;
+  width: 5rem;
+  height: 5rem;
   cursor: pointer;
   background-image: linear-gradient(
     45deg,

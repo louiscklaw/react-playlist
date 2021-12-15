@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Flipper, Flipped } from "react-flip-toolkit";
+import React, { useState } from 'react';
+import { Flipper, Flipped } from 'react-flip-toolkit';
 
-import "./styles.css";
+import style from './styles.module.css';
 
 export default () => {
   const [fullScreen, setFullScreen] = useState(false);
@@ -12,7 +12,7 @@ export default () => {
       <Flipper flipKey={fullScreen}>
         <Flipped flipId="square">
           <div
-            className={fullScreen ? "full-screen-square1" : "square"}
+            className={fullScreen ? style.full_screen_square1 : style.square}
             onClick={toggleFullScreen}
           />
         </Flipped>

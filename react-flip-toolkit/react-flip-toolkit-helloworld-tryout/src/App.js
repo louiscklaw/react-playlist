@@ -8,11 +8,19 @@ import ListTransitions from './components/ListTransitions';
 import StaggerEffects from './components/StaggerEffects';
 import SpringCustomizations from './components/SpringCustomizations';
 import FlipTryout from './components/FlipTryout';
+import FlipDownTryout from './components/FlipDownTryout';
+import FlipUpTryout from './components/FlipUpTryout';
 
 function App({ test_branch = false }) {
   return (
     <div className="App">
       <GlobalContextProvider>
+        <h3>FlipUpTryout</h3>
+        <FlipUpTryout />
+
+        <h3>FlipDownTryout</h3>
+        <FlipDownTryout />
+
         <h3>FlipTryout</h3>
         <FlipTryout />
 
