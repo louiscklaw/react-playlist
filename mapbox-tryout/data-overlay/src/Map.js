@@ -23,8 +23,8 @@ const Map = () => {
         [100000000, '#dd5ca8'],
         [250000000, '#c44cc0'],
         [500000000, '#9f43d7'],
-        [1000000000, '#6e40e6']
-      ]
+        [1000000000, '#6e40e6'],
+      ],
     },
     {
       name: 'GDP',
@@ -39,9 +39,9 @@ const Map = () => {
         [100000, '#dd5ca8'],
         [250000, '#c44cc0'],
         [5000000, '#9f43d7'],
-        [10000000, '#6e40e6']
-      ]
-    }
+        [10000000, '#6e40e6'],
+      ],
+    },
   ];
   const mapContainerRef = useRef(null);
   const [active, setActive] = useState(options[0]);
@@ -53,13 +53,13 @@ const Map = () => {
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [5, 34],
-      zoom: 1.5
+      zoom: 1.5,
     });
 
     map.on('load', () => {
       map.addSource('countries', {
         type: 'geojson',
-        data
+        data,
       });
 
       map.setLayoutProperty('country-label', 'text-field', [
@@ -73,23 +73,23 @@ const Map = () => {
           'font-scale': 0.8,
           'text-font': [
             'literal',
-            ['DIN Offc Pro Italic', 'Arial Unicode MS Regular']
-          ]
-        }
+            ['DIN Offc Pro Italic', 'Arial Unicode MS Regular'],
+          ],
+        },
       ]);
 
       map.addLayer(
         {
           id: 'countries',
           type: 'fill',
-          source: 'countries'
+          source: 'countries',
         },
         'country-label'
       );
 
       map.setPaintProperty('countries', 'fill-color', {
         property: active.property,
-        stops: active.stops
+        stops: active.stops,
       });
 
       setMap(map);
@@ -107,22 +107,22 @@ const Map = () => {
     if (map) {
       map.setPaintProperty('countries', 'fill-color', {
         property: active.property,
-        stops: active.stops
+        stops: active.stops,
       });
     }
   };
 
-  const changeState = i => {
+  const changeState = (i) => {
     setActive(options[i]);
     map.setPaintProperty('countries', 'fill-color', {
       property: active.property,
-      stops: active.stops
+      stops: active.stops,
     });
   };
 
   return (
     <div>
-      <div ref={mapContainerRef} className='map-container' />
+      <div ref={mapContainerRef} className="map-container" />
       <Legend active={active} stops={active.stops} />
       <Optionsfield
         options={options}
