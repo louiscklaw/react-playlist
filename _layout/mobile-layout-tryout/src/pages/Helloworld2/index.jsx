@@ -6,7 +6,7 @@ import { styled, createTheme } from '@mui/material/styles';
 import Header from './Header';
 import Footer from './Footer';
 // import Home from './Home';
-import TestBody from './TestBody';
+// import TestBody from './TestBody';
 
 export default ({ children }) => {
   let colorMode = 'light';
@@ -19,9 +19,7 @@ export default ({ children }) => {
     <>
       <AppContainer maxWidth="xs" disableGutters className={classes.container}>
         <Header />
-        {/* <Home /> */}
-        {/* <TestBody /> */}
-        {/* <Outlet /> */}
+        helloworld 2
         <Footer />
       </AppContainer>
     </>
