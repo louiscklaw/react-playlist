@@ -36,31 +36,31 @@ export default ({}) => {
         Footer
         <BottomNavigationAction
           component={Link}
-          to={`/helloworld1`}
+          to={`/zh/helloworld1`}
           label={'常用1'}
           icon={<HomeIcon />}
-          onClick={(e) => handleClick(`/helloworld1`, e)}
+          onClick={(e) => handleClick(`/zh/helloworld1`, e)}
         />
         <BottomNavigationAction
           component={Link}
-          to={`/helloworld2`}
+          to={`/zh/helloworld2`}
           label={'常用2'}
           icon={<SearchIcon />}
-          onClick={(e) => handleClick(`/helloworld2`, e)}
+          onClick={(e) => handleClick(`/zh/helloworld2`, e)}
         />
         <BottomNavigationAction
           component={Link}
-          to={`/helloworld3`}
+          to={`/zh/search`}
           label={'常用3'}
           icon={<NearMeIcon />}
-          onClick={(e) => handleClick(`/helloworld3`, e)}
+          onClick={(e) => handleClick(`/zh/search`, e)}
         />
         <BottomNavigationAction
           component={Link}
-          to={`/helloworld4`}
+          to={`/zh/settings`}
           label={'設定'}
           icon={<SettingsIcon />}
-          onClick={(e) => handleClick(`/helloworld4`, e)}
+          onClick={(e) => handleClick(`/zh/settings`, e)}
         />
       </Root>
     </>

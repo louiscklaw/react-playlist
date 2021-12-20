@@ -12,14 +12,53 @@ import {
 } from '@mui/material/styles';
 
 // import HelloComponent from 'src/components/HelloComponent';
-import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
-import HelloworldPage from './pages/Helloworld';
 import HelloworldPage1 from './pages/Helloworld1';
 import HelloworldPage2 from './pages/Helloworld2';
-import AppLayout from './layouts/AppLayout';
+import Settings from './pages/Settings';
+import Search from './pages/Search';
 
-import setSeoHeader from './utils/setSeoHeader';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import AppContextProvider from './AppContext';
+
+const PageSwitch = () => {
+  const { path } = useRouteMatch();
+
+  return (
+    <Switch>
+      {/* <Route path={`${path}/helloworld4`} component={HelloworldPage} /> */}
+      {/* <Route path={`${path}/helloworld3`} component={HelloworldPage1} /> */}
+      <Route path={`${path}/settings`} component={Settings} />
+      <Route path={`${path}/search`} component={Search} />
+      <Route path={`${path}/helloworld2`} component={HelloworldPage2} />
+      <Route
+        path={`${path}/helloworld1/:init_expand`}
+        component={HelloworldPage1}
+      />
+      <Route path={`${path}/helloworld1`} component={HelloworldPage1} />
+      {/* <Route path={`/`} component={HelloworldPage1} /> */}
+    </Switch>
+  );
+};
+
+const AppLayout = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <div
+        style={{
+          flex: 1,
+          backgroundColor: 'white',
+          overflowY: 'scroll',
+        }}>
+        {children}
+      </div>
+      <Footer />
+    </>
+  );
+};
 
 function App({ test_branch = false }) {
   let colorMode = 'light';
@@ -27,31 +66,23 @@ function App({ test_branch = false }) {
     return createTheme(getThemeTokens(colorMode), [colorMode]);
   }, [colorMode]);
 
-  const { path } = useRouteMatch();
-
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppContainer
-          maxWidth="xs"
-          disableGutters
-          className={classes.container}>
-          {/* <AppLayout> */}
-          {/* <HelloworldPage /> */}
-          <Switch>
-            {/* <Route path={`${path}/helloworld4`} component={HelloworldPage} /> */}
-            {/* <Route path={`${path}/helloworld3`} component={HelloworldPage1} /> */}
-            <Route path={`/helloworld2`} component={HelloworldPage2} />
-            <Route
-              path={`/helloworld1/:init_expand`}
-              component={HelloworldPage1}
-            />
-            <Route path={`/helloworld1`} component={HelloworldPage1} />
-            {/* <Route path={`/`} component={HelloworldPage1} /> */}
-          </Switch>
-          {/* </AppLayout> */}
-        </AppContainer>
+        <AppContextProvider>
+          <AppContainer
+            maxWidth="xs"
+            disableGutters
+            className={classes.container}>
+            <AppLayout>
+              {/* <HelloworldPage /> */}
+              <Route path="/:lang">
+                <PageSwitch />
+              </Route>
+            </AppLayout>
+          </AppContainer>
+        </AppContextProvider>
       </ThemeProvider>
     </StyledEngineProvider>
   );

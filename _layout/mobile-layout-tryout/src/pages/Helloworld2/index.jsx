@@ -1,12 +1,7 @@
 import React, { useMemo } from 'react';
-import { Outlet } from 'react-router-dom';
 
 import Container from '@mui/material/Container';
 import { styled, createTheme } from '@mui/material/styles';
-import Header from './Header';
-import Footer from './Footer';
-// import Home from './Home';
-// import TestBody from './TestBody';
 
 export default ({ children }) => {
   let colorMode = 'light';
@@ -18,9 +13,7 @@ export default ({ children }) => {
   return (
     <>
       <AppContainer maxWidth="xs" disableGutters className={classes.container}>
-        <Header />
         helloworld 2
-        <Footer />
       </AppContainer>
     </>
   );

@@ -7,14 +7,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Container from '@mui/material/Container';
 import { styled, createTheme } from '@mui/material/styles';
-import Header from './Header';
-import Footer from './Footer';
 
 import { useParams } from 'react-router-dom';
 import setSeoHeader from 'src/utils/setSeoHeader';
-
-// import Home from './Home';
-// import TestBody from './TestBody';
 
 export default ({ children }) => {
   let colorMode = 'light';
@@ -39,7 +34,6 @@ export default ({ children }) => {
   return (
     <>
       <AppContainer maxWidth="xs" disableGutters className={classes.container}>
-        <Header />
         <div
           style={{
             flex: 1,
@@ -134,7 +128,6 @@ export default ({ children }) => {
             </AccordionDetails>
           </Accordion>
         </div>
-        <Footer />
       </AppContainer>
     </>
   );
