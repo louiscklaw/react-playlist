@@ -10,10 +10,6 @@ export default function useTestNetworkSpeed() {
     'https://cdn.jsdelivr.net/gh/louiscklaw/test-resources@master/1kb.png';
   var downloadSize_B = 1 * 1024;
 
-  const ShowProgressMessage = (msg) => {
-    console.log(PREFIX, msg);
-  };
-
   function MeasureConnectionSpeed() {
     var startTime, endTime;
     var download = new Image();
@@ -23,8 +19,7 @@ export default function useTestNetworkSpeed() {
       showResults();
     };
 
-    download.onerror = function (err, msg) {
-      // ShowProgressMessage("Invalid image, or error downloading");
+    download.onerror = function (err) {
       console.error(PREFIX, { err });
       setErr(err);
     };
@@ -39,11 +34,17 @@ export default function useTestNetworkSpeed() {
       var bitsLoaded = downloadSize_B * 8;
       var speedBps = (bitsLoaded / duration).toFixed(2);
       var speedKbps = (speedBps / 1024).toFixed(2);
-      var speedMbps = (speedKbps / 1024).toFixed(2);
 
       let isTesting = false;
 
-      setNetworkSpeed({ isTesting, duration, bitsLoaded, speedBps, err });
+      setNetworkSpeed({
+        isTesting,
+        duration,
+        bitsLoaded,
+        speedBps,
+        speedKbps,
+        err,
+      });
     }
   }
 
