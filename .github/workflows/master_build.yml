@@ -14,7 +14,11 @@ jobs:
           pushd react-github-ci-helloworld-tryout
             yarn --dev
             
+            yarn start &
+            scripts/wait-for-it.sh -p 3000
             yarn test
+            fuser -k -n tcp 3000
+            sleep 1
 
             yarn build
           popd
