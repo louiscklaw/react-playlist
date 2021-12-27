@@ -3,15 +3,30 @@ on: [push, pull_request]
 
 jobs:
 
-  # 
-  # /home/logic/_workspace/react-playlist/react-github-ci-helloworld-tryout/build.yml
-  # 
   react-github-ci-helloworld-tryout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: |
           pushd react-github-ci-helloworld-tryout
+            yarn --dev
+            
+            yarn start &
+            scripts/wait-for-it.sh localhost:3000
+            yarn test
+            sudo fuser -k -n tcp 3000
+            sleep 1
+
+            yarn build
+          popd
+
+
+  react-firebase-ci-tryouy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          pushd react-firebase-ci-tryouy
             yarn --dev
             
             yarn start &
