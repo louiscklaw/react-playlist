@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          pushd react-github-ci-helloworld-tryout
+          pushd react-github-ci-helloworld-tryout/App
             yarn --dev
             
             yarn start &
