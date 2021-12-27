@@ -12,7 +12,7 @@ describe(``, () => {
       headless,
       args: [
         '--no-sandbox',
-        '--disable-setuid-sandbox',
+        '--disable-setuid-sandbox',"--disabled-setupid-sandbox",
         '--disable-dev-shm-usage',
         '--disable-font-subpixel-positioning',
       ],
