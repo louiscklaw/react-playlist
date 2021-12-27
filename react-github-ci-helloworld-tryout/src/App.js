@@ -13,8 +13,6 @@ function App({ test_branch = false }) {
     console.log('find false');
   }
 
-  console.log('helloEmpty', helloEmpty);
-
   return (
     <div className="App">
       <GlobalContextProvider>

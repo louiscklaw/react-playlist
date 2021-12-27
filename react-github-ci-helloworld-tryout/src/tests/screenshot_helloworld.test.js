@@ -1,22 +1,11 @@
 const puppeteer = require('puppeteer');
 
-const headless = false;
-const ignoreHTTPSErrors = true;
+const {desktop_browser} = require('./puppeteer_browser')
 
 describe(``, () => {
   let manage_browser, manage_page;
   beforeAll(async () => {
-    manage_browser = await puppeteer.launch({
-      defaultViewport: { width: 1920, height: 1080 },
-      ignoreHTTPSErrors,
-      headless: true,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',"--disabled-setupid-sandbox",
-        '--disable-dev-shm-usage',
-        '--disable-font-subpixel-positioning',
-      ],
-    });
+    manage_browser = await desktop_browser()
     manage_page = await manage_browser.newPage();
   });
 
