@@ -3,7 +3,6 @@ import React from 'react';
 import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
 function App({ test_branch = false }) {
-  let helloworld = 'helloworld';
   let helloanotherworld = '123';
 
   let helloEmpty;
