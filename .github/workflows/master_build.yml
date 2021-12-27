@@ -21,12 +21,12 @@ jobs:
           popd
 
 
-  react-firebase-ci-tryouy:
+  react-firebase-ci-tryout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: |
-          pushd react-firebase-ci-tryouy
+          pushd react-firebase-ci-tryout
             yarn --dev
             
             yarn start &
