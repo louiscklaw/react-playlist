@@ -17,7 +17,7 @@ jobs:
             yarn start &
             scripts/wait-for-it.sh localhost:3000
             yarn test
-            fuser -k -n tcp 3000
+            sudo fuser -k -n tcp 3000
             sleep 1
 
             yarn build
