@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          apt-get install chromium-browser
+
           pushd react-github-ci-helloworld-tryout
             yarn --dev
             
