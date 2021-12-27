@@ -9,7 +9,7 @@ describe(``, () => {
     manage_browser = await puppeteer.launch({
       defaultViewport: { width: 1920, height: 1080 },
       ignoreHTTPSErrors,
-      headless,
+      headless: true,
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',"--disabled-setupid-sandbox",
