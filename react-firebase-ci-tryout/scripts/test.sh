@@ -49,6 +49,7 @@ wait_all_ports () {
 
 prepare_test () {
   pushd App
+    yarn --dev
     yarn start &
   popd
 
