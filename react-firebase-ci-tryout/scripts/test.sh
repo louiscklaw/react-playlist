@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-BROWSER=none
-CI=1
+export BROWSER=none
 
 set -e
 
@@ -62,7 +61,6 @@ wait_all_ports () {
 
 start_react_client () {
   export PORT=8002
-  export BROWSER=none
 
   pushd client
     yarn --dev
@@ -73,7 +71,6 @@ start_react_client () {
 
 start_react_CMS () {
   export PORT=8003
-  export BROWSER=none
 
   pushd CMS
     yarn --dev
@@ -84,7 +81,6 @@ start_react_CMS () {
 
 start_react_admin () {
   export PORT=8004
-  export BROWSER=none
 
   pushd admin
     yarn --dev
