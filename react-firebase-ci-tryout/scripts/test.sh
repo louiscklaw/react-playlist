@@ -34,6 +34,7 @@ kill_all_ports () {
   kill_ports 8080
   kill_ports 5001
   kill_ports 5000
+  kill_ports 4400
   kill_ports 4000
 
   sleep 3
@@ -52,6 +53,7 @@ wait_all_ports () {
   wait_ports localhost:8080
   wait_ports localhost:5001
   wait_ports localhost:5000
+  wait_ports localhost:4400
   wait_ports localhost:4000
   
   echo 'ports are up, wait 10 secs to settle...'
