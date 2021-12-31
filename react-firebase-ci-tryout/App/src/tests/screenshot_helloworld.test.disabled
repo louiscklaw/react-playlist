@@ -3,6 +3,8 @@ const puppeteer = require('puppeteer');
 const {desktop_browser} = require('./puppeteer_browser')
 const {INIT_CWD} = process.env
 
+const { assertScreenShotPct } = require(`${UTILS_HOME}/assertScreenShot`);
+
 describe(``, () => {
   let manage_browser, manage_page;
   beforeAll(async () => {
@@ -17,6 +19,8 @@ describe(``, () => {
   test('', async () => {
     await manage_page.goto('http://localhost:3000');
     await manage_page.screenshot({path: `${INIT_CWD}/docs/screenshot.png`,fullPage: true,});
+
+    await assertScreenShotPct(manage_page, 0.1);
   });
 });
 
@@ -40,12 +44,14 @@ describe(`multiple browser helloworld`, () => {
 
   test('', async () => {
     await manage_page.goto('http://localhost:3000');
-    await manage_page.screenshot({path: `${INIT_CWD}/docs/screenshot.png`,fullPage: true,});
+    await assertScreenShotPct(manage_page, 0.1);
 
     await client_page.goto('http://localhost:3000');
     await client_page.screenshot({path: `${INIT_CWD}/docs/client_screenshot.png`,fullPage: true,});
 
     await admin_page.goto('http://localhost:3000');
     await admin_page.screenshot({path: `${INIT_CWD}/docs/admin_screenshot.png`,fullPage: true,});
+
+    
   });
 });
