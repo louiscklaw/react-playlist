@@ -133,7 +133,7 @@ test_CMS (){
 
 unit_test () {
   test_client
-  # test_admin
+  test_admin
   # test_CMS
 }
 
