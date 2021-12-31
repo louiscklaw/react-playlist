@@ -106,7 +106,6 @@ prepare_test () {
 }
 
 test_client (){
-  echo 'test here ?'
   pushd client
     yarn --dev
     yarn test
@@ -115,7 +114,6 @@ test_client (){
 }
 
 test_admin (){
-  echo 'test here ?'
   pushd admin
     yarn --dev
     yarn test
@@ -124,7 +122,6 @@ test_admin (){
 }
 
 test_CMS (){
-  echo 'test here ?'
   pushd CMS
     yarn --dev
     yarn test
