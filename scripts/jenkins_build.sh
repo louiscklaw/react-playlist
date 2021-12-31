@@ -5,6 +5,5 @@ set -ex
 echo 'helloworld'
 
 pushd react-helloworld-tryout
-  yarn --dev
-  yarn build
+  scripts/build.sh
 popd
