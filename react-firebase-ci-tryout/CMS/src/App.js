@@ -1,26 +1,23 @@
-import React from 'react';
-// import HelloComponent from 'src/components/HelloComponent';
-import { GlobalContextProvider } from 'src/contexts/GlobalContext';
+import logo from './logo.svg';
+import './App.css';
 
-function App({ test_branch = false }) {
-  let helloanotherworld = '123';
-
-  let helloEmpty;
-
-  if (test_branch) {
-    console.log('find true');
-  } else {
-    console.log('find false');
-  }
-
+function App() {
   return (
     <div className="App">
-      <GlobalContextProvider>
-        {/* <HelloComponent /> */}
-        hellocomponents
-        {helloanotherworld}
-        {JSON.stringify(helloEmpty, null, 2)}
-      </GlobalContextProvider>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
