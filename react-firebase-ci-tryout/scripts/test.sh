@@ -7,10 +7,10 @@ set -e
 
 
 installFirebaseTools(){
-  sudo killall java
-  sudo killall firebase
+  killall java
+  killall firebase
   
-  curl -sL https://firebase.tools | sudo upgrade=true bash
+  curl -sL https://firebase.tools | upgrade=true bash
   curl -sL firebase.tools | upgrade=true bash
 }
 
