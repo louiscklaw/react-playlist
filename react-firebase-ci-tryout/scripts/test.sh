@@ -146,11 +146,7 @@ e2e_test () {
 main () {
   installFirebaseTools
 
-  kill_all_ports
-  prepare_test
-  wait_all_ports
   unit_test
-  kill_all_ports
 
   # e2e
   kill_all_ports
