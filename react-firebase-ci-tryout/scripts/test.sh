@@ -146,6 +146,11 @@ main () {
   test_admin
   test_CMS
 
+  # e2e
+  pushd tests/e2e
+    scripts/test.sh
+  popd
+
   kill_all_ports
 }
 
