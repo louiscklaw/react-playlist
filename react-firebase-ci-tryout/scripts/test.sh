@@ -133,8 +133,8 @@ test_CMS (){
 
 unit_test () {
   test_client
-  test_admin
-  test_CMS
+  # test_admin
+  # test_CMS
 }
 
 e2e_test () {
@@ -152,12 +152,12 @@ main () {
   unit_test
   kill_all_ports
 
-  # e2e
-  kill_all_ports
-  prepare_test
-  wait_all_ports
-  e2e_test
-  kill_all_ports
+  # # e2e
+  # kill_all_ports
+  # prepare_test
+  # wait_all_ports
+  # e2e_test
+  # kill_all_ports
 
   
 }
