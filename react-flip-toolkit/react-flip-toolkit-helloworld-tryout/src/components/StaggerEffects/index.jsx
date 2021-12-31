@@ -2,15 +2,26 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Flipper, Flipped } from 'react-flip-toolkit';
 
+import helloworld_base64 from './HelloworldSVG';
+
 import './styles.css';
 
-const listData = [...Array(20).keys()];
+const listData = [...Array(20).keys()].map((i) => {
+  return {
+    hello: 'world',
+    food_img: 'https://source.unsplash.com/random',
+    food_name: `Food name ${i}`,
+    food_description: `food description ${i}`,
+  };
+});
+
 const createCardFlipId = (index) => `listItem-${index}`;
 
 const shouldFlip = (index) => (prev, current) =>
   index === prev || index === current;
 
-const ListItem = ({ index, onClick }) => {
+const ListItem = ({ index, onClick, food_detail }) => {
+  let { food_img } = food_detail;
   return (
     <Flipped
       flipId={createCardFlipId(index)}
@@ -24,18 +35,25 @@ const ListItem = ({ index, onClick }) => {
               stagger="card-content"
               shouldFlip={shouldFlip(index)}
               delayUntil={createCardFlipId(index)}>
-              <div className="avatar" />
+              <div
+                className="avatar"
+                style={{
+                  backgroundImage: `url('${helloworld_base64}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}></div>
             </Flipped>
             <div className="description">
-              {listData.slice(0, 3).map((i) => (
-                <Flipped
-                  flipId={`description-${index}-${i}`}
-                  stagger="card-content"
-                  shouldFlip={shouldFlip(index)}
-                  delayUntil={createCardFlipId(index)}>
-                  <div />
-                </Flipped>
-              ))}
+              <Flipped
+                flipId={`description-${index}`}
+                stagger="card-content"
+                shouldFlip={shouldFlip(index)}
+                delayUntil={createCardFlipId(index)}>
+                <div>
+                  위하여 국민경제자문회의를 둘 수 있다, 누구든지 법률에 의하
+                </div>
+              </Flipped>
             </div>
           </div>
         </Flipped>
@@ -44,16 +62,19 @@ const ListItem = ({ index, onClick }) => {
   );
 };
 
-const ExpandedListItem = ({ index, onClick }) => {
+const ExpandedListItem = ({ index, onClick, food_detail }) => {
+  let { food_img } = food_detail;
+
   return (
     <Flipped
       flipId={createCardFlipId(index)}
       stagger="card"
-      onStart={(el) => {
-        setTimeout(() => {
-          el.classList.add('animated-in');
-        }, 400);
-      }}>
+      // onStart={(el) => {
+      //   setTimeout(() => {
+      //     el.classList.add('animated-in');
+      //   }, 4000);
+      // }}
+    >
       <div className="expandedListItem" onClick={() => onClick(index)}>
         <Flipped inverseFlipId={createCardFlipId(index)}>
           <div className="expandedListItemContent">
@@ -61,22 +82,32 @@ const ExpandedListItem = ({ index, onClick }) => {
               flipId={`avatar-${index}`}
               stagger="card-content"
               delayUntil={createCardFlipId(index)}>
-              <div className="avatar avatarExpanded" />
+              <div
+                className="avatar avatarExpanded"
+                style={{
+                  backgroundImage: `url('${helloworld_base64}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}></div>
             </Flipped>
             <div className="description">
-              {listData.slice(0, 3).map((i) => (
-                <Flipped
-                  flipId={`description-${index}-${i}`}
-                  stagger="card-content"
-                  delayUntil={createCardFlipId(index)}>
-                  <div />
-                </Flipped>
-              ))}
+              <Flipped
+                flipId={`description-${index}`}
+                stagger="card-content"
+                delayUntil={createCardFlipId(index)}>
+                <div>
+                  위하여 국민경제자문회의를 둘 수 있다, 누구든지 법률에 의하
+                </div>
+              </Flipped>
             </div>
             <div className="additional-content">
-              {listData.slice(0, 3).map((i) => (
-                <div />
-              ))}
+              <div>
+                阪ハウワ応92勤常勉旋72依過らつ。門むば隊就メツヘ突長山テ碁人ゆッ
+                歳両ら止都トカハキ締素ぎぜつ索能経初臣こ党求ぼ担効カタハネ文会ヲツレ端作67神フ測相りち挑坂ぶ。
+                応ハシカ向2捜せぽけリ覧郷ユヤワサ準助7子群メソマ直林無ノヱク総九るね法
+                右み料生レソヱ犯2属スタリチ海新志合のみル。落国がどゅト備初
+              </div>
             </div>
           </div>
         </Flipped>
@@ -92,9 +123,7 @@ export default () => {
 
   const onClick = (index) => {
     setClickFocus(index);
-    setState({
-      focused: state.focused === index ? null : index,
-    });
+    setState({ focused: state.focused === index ? null : index });
   };
 
   const scrollList = () => {
@@ -115,19 +144,26 @@ export default () => {
           flipKey={state.focused}
           className="staggered-list-content"
           spring="gentle"
-          staggerConfig={{
-            card: { reverse: state.focused !== null },
-          }}
+          staggerConfig={{ card: { reverse: state.focused !== null } }}
           decisionData={state.focused}
           onStart={scrollList}>
           <ul className="list">
-            {listData.map((index) => {
+            {listData.map((o, index) => {
               return (
                 <li key={index}>
                   {index === state.focused ? (
-                    <ExpandedListItem index={state.focused} onClick={onClick} />
+                    <ExpandedListItem
+                      index={state.focused}
+                      onClick={onClick}
+                      food_detail={o}
+                    />
                   ) : (
-                    <ListItem index={index} key={index} onClick={onClick} />
+                    <ListItem
+                      index={index}
+                      key={index}
+                      onClick={onClick}
+                      food_detail={o}
+                    />
                   )}
                 </li>
               );

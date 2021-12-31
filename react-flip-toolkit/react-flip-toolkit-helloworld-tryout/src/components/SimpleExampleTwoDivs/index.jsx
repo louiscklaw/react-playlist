@@ -3,9 +3,19 @@ import { Flipper, Flipped } from 'react-flip-toolkit';
 
 import style from './styles.module.css';
 
+import helloworld_base64 from './HelloworldSVG';
+
 const Square = ({ toggleFullScreen }) => (
   <Flipped flipId="square">
-    <div className={style.square} onClick={toggleFullScreen}>
+    <div
+      className={style.square}
+      onClick={toggleFullScreen}
+      style={{
+        backgroundImage: `url('${helloworld_base64}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}>
       Square
     </div>
   </Flipped>
@@ -13,8 +23,16 @@ const Square = ({ toggleFullScreen }) => (
 
 const FullScreenSquare = ({ toggleFullScreen }) => (
   <Flipped flipId="square">
-    <div className={style.full_screen_square} onClick={toggleFullScreen}>
-      Fullscreen{' '}
+    <div
+      className={style.full_screen_square}
+      onClick={toggleFullScreen}
+      style={{
+        backgroundImage: `url('${helloworld_base64}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}>
+      Fullscreen
     </div>
   </Flipped>
 );
