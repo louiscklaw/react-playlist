@@ -10,7 +10,6 @@ installFirebaseTools(){
   killall firebase | true
   
   curl -sL https://firebase.tools | upgrade=true bash
-  curl -sL firebase.tools | upgrade=true bash
 }
 
 
