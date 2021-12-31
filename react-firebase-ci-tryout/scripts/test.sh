@@ -89,7 +89,7 @@ start_react_admin () {
 
 }
 
-prepare_test () {
+start_firebase () {
   pushd firebase
     pushd functions
       npm install
@@ -98,11 +98,13 @@ prepare_test () {
     npm install
     nice firebase emulators:start &
   popd
+}
 
+prepare_test () {
+  start_firebase
   start_react_client
   start_react_admin
   start_react_CMS
-
 }
 
 test_client (){
