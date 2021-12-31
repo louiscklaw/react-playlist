@@ -7,8 +7,8 @@ set -e
 
 kill_ports () {
     echo "Clearing ports... $1"
-    sudo fuser -k -n tcp $1/tcp | true 
-    sudo fuser -k -n udp $1/udp | true 
+    fuser -k -n tcp $1/tcp | true 
+    fuser -k -n udp $1/udp | true 
 }
 
 wait_ports () {
