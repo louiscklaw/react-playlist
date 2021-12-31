@@ -25,7 +25,10 @@ wait_ports () {
 }
 
 kill_all_ports () {
-  kill_ports 3000
+  kill_ports 8002
+  kill_ports 8003
+  kill_ports 8004
+
   kill_ports 9199
   kill_ports 9099
   kill_ports 9000
@@ -40,7 +43,10 @@ kill_all_ports () {
 }
 
 wait_all_ports () {
-  wait_ports localhost:3000
+  wait_ports localhost:8002
+  wait_ports localhost:8003
+  wait_ports localhost:8004
+
   wait_ports localhost:9199
   wait_ports localhost:9099
   wait_ports localhost:9000
@@ -54,12 +60,43 @@ wait_all_ports () {
   echo 'ports are up'
 }
 
+start_react_client () {
+  export PORT=8002
+  export BROWSER=none
 
-prepare_test () {
   pushd client
     yarn --dev
     yarn start &
   popd
+
+}
+
+start_react_CMS () {
+  export PORT=8003
+  export BROWSER=none
+
+  pushd CMS
+    yarn --dev
+    yarn start &
+  popd
+
+}
+
+start_react_admin () {
+  export PORT=8004
+  export BROWSER=none
+
+  pushd admin
+    yarn --dev
+    yarn start &
+  popd
+
+}
+
+prepare_test () {
+  start_react_client
+  start_react_admin
+  start_react_CMS
 
   pushd firebase
     pushd functions
@@ -80,6 +117,24 @@ test_client (){
   echo 'test done'
 }
 
+test_admin (){
+  echo 'test here ?'
+  pushd admin
+    yarn --dev
+    yarn test
+  popd
+  echo 'test done'
+}
+
+test_CMS (){
+  echo 'test here ?'
+  pushd CMS
+    yarn --dev
+    yarn test
+  popd
+  echo 'test done'
+}
+
 main () {
   installFirebaseTools
 
@@ -88,6 +143,8 @@ main () {
   wait_all_ports
 
   test_client
+  test_admin
+  test_CMS
 
   kill_all_ports
 }
