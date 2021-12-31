@@ -53,7 +53,7 @@ prepare_test () {
   popd
 
   pushd firebase
-    pushd scripts
+    pushd functions
       npm install
     popd
 
