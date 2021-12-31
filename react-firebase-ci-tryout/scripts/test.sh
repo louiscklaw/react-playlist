@@ -7,7 +7,6 @@ set -e
 
 
 installFirebaseTools(){
-  killall java
   killall firebase
   
   curl -sL https://firebase.tools | upgrade=true bash
