@@ -5,6 +5,16 @@ CI=1
 
 set -e
 
+
+installFirebaseTools(){
+  sudo killall java
+  sudo killall firebase
+  
+  curl -sL https://firebase.tools | sudo upgrade=true bash
+  curl -sL firebase.tools | upgrade=true bash
+}
+
+
 kill_ports () {
     echo "Clearing ports... $1"
     fuser -k -n tcp $1/tcp | true 
@@ -73,6 +83,8 @@ test_body (){
 }
 
 main () {
+  installFirebaseTools
+
   kill_all_ports
   prepare_test
   wait_all_ports
