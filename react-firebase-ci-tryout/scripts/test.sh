@@ -53,6 +53,11 @@ prepare_test () {
   popd
 
   pushd firebase
+    pushd scripts
+      npm install
+    popd
+
+    npm install
     nice firebase emulators:start &
   popd
 }
