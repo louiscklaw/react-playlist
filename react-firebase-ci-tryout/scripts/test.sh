@@ -56,7 +56,7 @@ wait_all_ports () {
 
 
 prepare_test () {
-  pushd App
+  pushd client
     yarn --dev
     yarn start &
   popd
@@ -71,9 +71,9 @@ prepare_test () {
   popd
 }
 
-test_body (){
+test_client (){
   echo 'test here ?'
-  pushd App
+  pushd client
     yarn --dev
     yarn test
   popd
@@ -87,7 +87,7 @@ main () {
   prepare_test
   wait_all_ports
 
-  test_body
+  test_client
 
   kill_all_ports
 }
