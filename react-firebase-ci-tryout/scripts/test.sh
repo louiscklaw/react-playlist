@@ -135,23 +135,35 @@ test_CMS (){
   echo 'test done'
 }
 
+unit_test () {
+  test_client
+  test_admin
+  test_CMS
+}
+
+e2e_test () {
+  pushd tests/e2e
+    scripts/test.sh
+  popd
+}
+
 main () {
   installFirebaseTools
 
   kill_all_ports
   prepare_test
   wait_all_ports
-
-  test_client
-  test_admin
-  test_CMS
+  unit_test
+  kill_all_ports
 
   # e2e
-  pushd tests/e2e
-    scripts/test.sh
-  popd
-
   kill_all_ports
+  prepare_test
+  wait_all_ports
+  e2e_test
+  kill_all_ports
+
+  
 }
 
 # main flow here
