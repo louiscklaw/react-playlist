@@ -9,3 +9,9 @@ https://my-json-server.typicode.com/louiscklaw/react-playlist/posts/1
 https://my-json-server.typicode.com/louiscklaw/react-playlist/profile
 
 1
+<<<<<<< HEAD
+=======
+2
+3
+4
+>>>>>>> test/2/helloworld
