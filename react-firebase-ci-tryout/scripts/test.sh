@@ -146,7 +146,7 @@ unit_test () {
 }
 
 e2e_test (){
-  # kill_all_ports
+  kill_all_ports
   # prepare_test
   # wait_all_ports
   # pushd tests/e2e
@@ -160,7 +160,7 @@ main () {
   installFirebaseTools
 
   unit_test
-  # e2e_test
+  e2e_test
 
   echo 'done'
 }
