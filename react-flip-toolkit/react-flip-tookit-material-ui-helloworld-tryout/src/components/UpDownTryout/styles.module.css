@@ -1,0 +1,25 @@
+.down {
+  height: 100px;
+}
+
+.up {
+  height: 0px;
+}
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  position: 'absolute';
+  background-color: cyan;
+}
+
+.full_screen_square1 {
+  position: fixed;
+  bottom: 10px;
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  position: 'absolute';
+  background-color: tomato;
+}

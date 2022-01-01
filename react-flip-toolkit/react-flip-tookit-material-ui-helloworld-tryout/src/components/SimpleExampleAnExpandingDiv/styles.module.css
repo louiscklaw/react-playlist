@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.square {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  background-color: cyan;
+}
+
+.full_screen_square1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: tomato;
+}

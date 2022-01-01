@@ -1,0 +1,128 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.fm-example {
+  padding: 2rem;
+  min-height: 150vh;
+}
+
+.fm-example > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fm-grid > ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-auto-rows: 8rem;
+  grid-gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.fm-list {
+  grid-gap: 1rem;
+  margin: 2rem 0;
+}
+
+.fm-grid,
+.fm-list {
+  border-radius: 5px;
+  background-color: #ececec;
+  margin-top: 2.5rem;
+  max-width: 900px;
+}
+
+.fm-list > ul,
+.fm-grid > ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.fm-list .fm-item {
+  margin-bottom: 1rem;
+}
+
+.fm-list .fm-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.fm-item {
+  overflow: hidden;
+  display: block;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.fm-item h3 {
+  font-size: 1.1rem;
+}
+
+.fm-item > div {
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fm-item h3 {
+  margin-bottom: 0;
+}
+
+.fm-item p {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.fm-remove {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2.2rem;
+  color: #ff4057;
+  position: relative;
+  left: 0.5rem;
+  width: 1.5rem;
+}
+
+.fm-show-all {
+  padding: 0.5rem 1rem;
+  background-color: #ff4057;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: 3px;
+}
+
+.fm-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fm-flex-container > label {
+  min-width: 4.5rem;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.fm-example fieldset {
+  border: 0;
+  padding: 1rem;
+}
+
+.fm-example label {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.fm-example input {
+  position: relative;
+  margin-right: 0.5rem;
+}

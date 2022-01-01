@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.square {
+  transform-origin: 0 0;
+  transform: rotateX(0);
+  opacity: 1;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  background-image: linear-gradient(
+    45deg,
+    rgb(121, 113, 234),
+    rgb(97, 71, 182)
+  );
+}
+
+.full_screen_square_a {
+  transform-origin: 0 0;
+  transform: rotateX(-30deg);
+  opacity: 0.5;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  background-color: gold;
+}
