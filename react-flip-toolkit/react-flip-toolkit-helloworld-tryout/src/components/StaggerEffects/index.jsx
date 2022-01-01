@@ -34,7 +34,8 @@ const ListItem = ({ index, onClick, food_detail }) => {
               flipId={`avatar-${index}`}
               stagger="card-content"
               shouldFlip={shouldFlip(index)}
-              delayUntil={createCardFlipId(index)}>
+              // delayUntil={createCardFlipId(index)}
+            >
               <div
                 className="avatar"
                 style={{
@@ -49,7 +50,8 @@ const ListItem = ({ index, onClick, food_detail }) => {
                 flipId={`description-${index}`}
                 stagger="card-content"
                 shouldFlip={shouldFlip(index)}
-                delayUntil={createCardFlipId(index)}>
+                // delayUntil={createCardFlipId(index)}
+              >
                 <div>
                   위하여 국민경제자문회의를 둘 수 있다, 누구든지 법률에 의하
                 </div>
@@ -143,7 +145,7 @@ export default () => {
         <Flipper
           flipKey={state.focused}
           className="staggered-list-content"
-          spring="gentle"
+          spring="noWobble"
           staggerConfig={{ card: { reverse: state.focused !== null } }}
           decisionData={state.focused}
           onStart={scrollList}>
