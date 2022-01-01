@@ -5,17 +5,11 @@ export BROWSER=none
 set -e
 
 
-installFirebaseTools(){
-  killall firebase | true
-  
-  curl -sL https://firebase.tools | upgrade=true bash
-}
-
 
 kill_ports () {
     echo "Clearing ports... $1"
-    fuser -k -n tcp $1/tcp | true 
-    fuser -k -n udp $1/udp | true 
+    fuser -k -n tcp $1/tcp || true 
+    fuser -k -n udp $1/udp || true 
 }
 
 wait_ports () {
@@ -40,6 +34,12 @@ kill_all_ports () {
   sleep 3
 
   echo 'port cleared'
+}
+
+installFirebaseTools(){
+  kill_all_ports || true
+  
+  curl -sL https://firebase.tools | upgrade=true bash
 }
 
 wait_all_ports () {
@@ -134,34 +134,35 @@ test_CMS (){
 }
 
 unit_test () {
+  kill_all_ports
+  prepare_test
+  wait_all_ports
+
   test_client
   test_admin
   test_CMS
+
+  kill_all_ports
 }
 
-e2e_test () {
-  pushd tests/e2e
-    scripts/test.sh
-  popd
+e2e_test (){
+  # kill_all_ports
+  # prepare_test
+  # wait_all_ports
+  # pushd tests/e2e
+  #   scripts/test.sh
+  # popd
+  # kill_all_ports
+  echo 'skip'
 }
 
 main () {
   installFirebaseTools
 
-  kill_all_ports
-  prepare_test
-  wait_all_ports
   unit_test
-  kill_all_ports
+  # e2e_test
 
-  # e2e
-  kill_all_ports
-  prepare_test
-  wait_all_ports
-  e2e_test
-  kill_all_ports
-
-  
+  echo 'done'
 }
 
 # main flow here
