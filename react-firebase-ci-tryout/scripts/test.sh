@@ -148,10 +148,10 @@ unit_test () {
 e2e_test (){
   kill_all_ports
   prepare_test
-  # wait_all_ports
-  # pushd tests/e2e
-  #   scripts/test.sh
-  # popd
+  wait_all_ports
+  pushd tests/e2e
+    scripts/test.sh
+  popd
   kill_all_ports
   echo 'skip'
 }
