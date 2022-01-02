@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import { useRouteMatch, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, useRouteMatch, Switch, Route } from 'react-router-dom';
 
 import {
   ThemeProvider,
@@ -17,6 +17,7 @@ import HelloworldPage1 from './pages/Helloworld1';
 import HelloworldPage2 from './pages/Helloworld2';
 import Settings from './pages/Settings';
 import Search from './pages/Search';
+import MapSearch from './pages/MapSearch';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -38,6 +39,7 @@ const PageSwitch = () => {
         component={HelloworldPage1}
       />
       <Route path={`${path}/helloworld1`} component={HelloworldPage1} />
+      <Route path={`${path}/MapSearch`} component={MapSearch} />
       {/* <Route path={`/`} component={HelloworldPage1} /> */}
     </Switch>
   );
@@ -67,24 +69,26 @@ function App({ test_branch = false }) {
   }, [colorMode]);
 
   return (
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <AppContextProvider>
-          <AppContainer
-            maxWidth="xs"
-            disableGutters
-            className={classes.container}>
-            <AppLayout>
-              {/* <HelloworldPage /> */}
-              <Route path="/:lang">
-                <PageSwitch />
-              </Route>
-            </AppLayout>
-          </AppContainer>
-        </AppContextProvider>
-      </ThemeProvider>
-    </StyledEngineProvider>
+    <BrowserRouter>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <AppContextProvider>
+            <AppContainer
+              maxWidth="xs"
+              disableGutters
+              className={classes.container}>
+              <AppLayout>
+                {/* <HelloworldPage /> */}
+                <Route path="/:lang">
+                  <PageSwitch />
+                </Route>
+              </AppLayout>
+            </AppContainer>
+          </AppContextProvider>
+        </ThemeProvider>
+      </StyledEngineProvider>
+    </BrowserRouter>
   );
 }
 
