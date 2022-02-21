@@ -1,5 +1,5 @@
 set BROWSER=none
 
-yarn 
+call yarn 
 
 yarn start
