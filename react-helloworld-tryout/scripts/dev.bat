@@ -1,5 +1,5 @@
 set BROWSER=none
 
-call yarn 
+call yarn install 
 
 yarn start
