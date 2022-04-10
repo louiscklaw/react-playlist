@@ -21,22 +21,18 @@ export default function ShareContextProvider({ children }) {
     let new_column_order = state.columnOrder.filter((co) => co !== column_id);
 
     setState({ ...state, columns: new_columns, columnOrder: new_column_order });
-
-    handleRefreshJson();
   };
+
   const handleItemEditClick = (e, item_id) => {
     alert(`handleItemEditClick ${item_id}`);
-    handleRefreshJson();
   };
   const handleItemDeleteClick = (e, item_id) => {
     alert(`handleItemDeleteClick ${item_id}`);
-    handleRefreshJson();
   };
 
   return (
     <ShareContext.Provider
       value={{
-        handleHelloworld,
         handleColumnEditClick,
         handleColumnDeleteClick,
         handleItemEditClick,
