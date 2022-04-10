@@ -9,66 +9,49 @@ export default function Helloworld() {
 
   const onDragEnd = (result) => {
     const { destination, source, draggableId, type } = result;
-    if (!destination) {
-      return;
-    }
+    if (!destination) return;
 
-    if (destination.droppableId === source.droppableId && destination.index === source.index) {
-      return;
-    }
+    // same place dragging, not changed
+    if (destination.droppableId === source.droppableId && destination.index === source.index) return;
 
+    // dragging on column, swap column
     if (type === 'column') {
       const newColumnOrder = Array.from(state.columnOrder);
       newColumnOrder.splice(source.index, 1);
       newColumnOrder.splice(destination.index, 0, draggableId);
 
-      const newState = { ...state, columnOrder: newColumnOrder };
-
-      setState(newState);
+      setState({ ...state, columnOrder: newColumnOrder });
       return;
     }
 
     const start = state.columns[source.droppableId];
     const finish = state.columns[destination.droppableId];
 
+    // moving within same column ?
     if (start === finish) {
       let newTaskIds = Array.from(start.taskIds);
       newTaskIds.splice(source.index, 1);
       newTaskIds.splice(destination.index, 0, draggableId);
 
-      let newColumn = {
-        ...start,
-        taskIds: newTaskIds,
-      };
+      let newColumn = { ...start, taskIds: newTaskIds };
 
       let newState = {
         ...state,
-        columns: {
-          ...state.columns,
-          [newColumn.id]: newColumn,
-        },
+        columns: { ...state.columns, [newColumn.id]: newColumn },
       };
-
-      console.log(newState);
 
       setState(newState);
       return;
     }
 
-    // Moving from one list to another
+    // Moving from one column to another
     const startTaskIds = Array.from(start.taskIds);
     startTaskIds.splice(source.index, 1);
-    const newStart = {
-      ...start,
-      taskIds: startTaskIds,
-    };
+    const newStart = { ...start, taskIds: startTaskIds };
 
     const finishTaskIds = Array.from(finish.taskIds);
     finishTaskIds.splice(destination.index, 0, draggableId);
-    const newFinish = {
-      ...finish,
-      taskIds: finishTaskIds,
-    };
+    const newFinish = { ...finish, taskIds: finishTaskIds };
 
     const newState = {
       ...state,
