@@ -1,55 +1,39 @@
 import { Draggable, Droppable } from 'react-beautiful-dnd';
 
 import React from 'react';
-import { ShareContext } from 'src/context/Share';
 import Task from './Task';
 
-const container = {
-  margin: '8px',
-  border: '1px solid lightgrey',
-  borderRadius: '2px',
-  width: '420px',
-
-  display: 'flex',
-  flexDirection: 'column',
-};
-
-const title = { padding: '8px' };
-const task_list = {
-  padding: '8px',
-  backgroundColor: 'gold',
-  minHeight: '100px',
-};
-
 function Column({ column, tasks, index }) {
-  let { handleColumnEditClick, handleColumnDeleteClick } = React.useContext(ShareContext);
-
   return (
     <Draggable draggableId={column.id} index={index}>
       {(provided) => (
-        <div ref={provided.innerRef} style={container} {...provided.draggableProps}>
+        <div
+          {...provided.draggableProps}
+          style={{
+            margin: '8px',
+            border: '1px solid lightgrey',
+            backgroundColor: 'white',
+            borderRadius: '2px',
+            display: 'flex',
+            flexDirection: 'column',
+          }}
+          ariaDetails="helloworld"
+          ref={provided.innerRef}>
           <div style={{ display: 'flex', flexFlow: 'row' }}>
-            <div style={title} {...provided.dragHandleProps}>
+            <div style={{ padding: '8px' }} {...provided.dragHandleProps}>
               {column.title}
-            </div>
-            <div>
-              <button
-                onClick={(e) => {
-                  handleColumnEditClick(e, column.id);
-                }}>
-                edit
-              </button>
-              <button
-                onClick={(e) => {
-                  handleColumnDeleteClick(e, column.id);
-                }}>
-                delete
-              </button>
             </div>
           </div>
           <Droppable droppableId={column.id}>
-            {(provided) => (
-              <div ref={provided.innerRef} style={task_list} {...provided.droppableProps}>
+            {(provided, snapshot) => (
+              <div
+                ref={provided.innerRef}
+                style={{
+                  padding: '8px',
+                  backgroundColor: snapshot.isDraggingOver ? 'skyblue' : 'inherit',
+                  minHeight: '100px',
+                }}
+                {...provided.droppableProps}>
                 {tasks.map((task, index) => (
                   <Task key={task.id} task={task} index={index}></Task>
                 ))}
