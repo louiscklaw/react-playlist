@@ -4,12 +4,6 @@ import Column from './Column';
 import React from 'react';
 import { ShareContext } from 'src/context/Share';
 
-const container = {
-  width: '420px',
-  display: 'flex',
-  flexFlow: 'column',
-};
-
 export default function Helloworld() {
   let { state, setState } = React.useContext(ShareContext);
 
@@ -95,7 +89,14 @@ export default function Helloworld() {
           // direction="horizontal"
           type="column">
           {(provided) => (
-            <div ref={provided.innerRef} style={container} {...provided.droppableProps}>
+            <div
+              ref={provided.innerRef}
+              style={{
+                width: '420px',
+                display: 'flex',
+                flexFlow: 'column',
+              }}
+              {...provided.droppableProps}>
               {state.columnOrder.map((columnId, index) => {
                 const column = state.columns[columnId];
                 const tasks = column.taskIds.map((taskId) => state.tasks[taskId]);

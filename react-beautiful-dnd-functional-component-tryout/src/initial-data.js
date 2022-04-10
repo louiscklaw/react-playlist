@@ -6,57 +6,28 @@ let initialData = {
     'task-4': { id: 'task-4', content: 'Cook dinner' },
   },
   columns: {
-    'column-1': {
-      id: 'column-1',
-      title: 'column-1',
-      taskIds: ['task-1', 'task-2', 'task-3', 'task-4'],
-    },
-    'column-2': {
-      id: 'column-2',
-      title: 'column-2',
-      taskIds: [],
-    },
-    'column-3': {
-      id: 'column-3',
-      title: 'column-3',
-      taskIds: [],
-    },
-    'column-4': {
-      id: 'column-4',
-      title: 'column-4',
-      taskIds: [],
-    },
-    'column-5': {
-      id: 'column-5',
-      title: 'column-5',
-      taskIds: [],
-    },
+    'column-1': { id: 'column-1', title: 'column-1', taskIds: ['task-1', 'task-2', 'task-3', 'task-4'] },
+    'column-2': { id: 'column-2', title: 'column-2', taskIds: [] },
+    'column-3': { id: 'column-3', title: 'column-3', taskIds: [] },
+    'column-4': { id: 'column-4', title: 'column-4', taskIds: [] },
+    'column-5': { id: 'column-5', title: 'column-5', taskIds: [] },
   },
   // Facilitate reordering of the columns
   columnOrder: ['column-1', 'column-2', 'column-3', 'column-4', 'column-5'],
 };
 
-let array_length = Array(99).fill(null);
+let array_length = Array(5).fill(null);
 
 array_length.forEach((_, idx) => {
-  initialData.tasks[`task-${idx}`] = {
-    id: `task-${idx}`,
-    content: `task-${idx}-content`,
-  };
+  initialData.tasks[`task-${idx}`] = { id: `task-${idx}`, content: `task-${idx}-content` };
 });
 
 array_length.forEach((_, idx) => {
-  initialData.tasks[`task-2-${idx}`] = {
-    id: `task-2-${idx}`,
-    content: `task-2-${idx}-content`,
-  };
+  initialData.tasks[`task-2-${idx}`] = { id: `task-2-${idx}`, content: `task-2-${idx}-content` };
 });
 
 array_length.forEach((_, idx) => {
-  initialData.tasks[`task-3-${idx}`] = {
-    id: `task-3-${idx}`,
-    content: `task-3-${idx}-content`,
-  };
+  initialData.tasks[`task-3-${idx}`] = { id: `task-3-${idx}`, content: `task-3-${idx}-content` };
 });
 
 initialData.columns['column-1'].taskIds = array_length.map((_, idx) => `task-${idx}`);
