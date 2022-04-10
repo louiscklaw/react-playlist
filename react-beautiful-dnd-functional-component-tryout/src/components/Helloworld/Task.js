@@ -7,7 +7,7 @@ function Task({ task, index }) {
       <Draggable draggableId={task.id} index={index}>
         {(provided, snapshot) => {
           return (
-            <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+            <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
               <div
                 style={{
                   border: '1px solid lightgrey',

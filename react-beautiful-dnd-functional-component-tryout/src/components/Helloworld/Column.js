@@ -9,6 +9,7 @@ function Column({ column, tasks, index }) {
       {(provided) => (
         <div
           {...provided.draggableProps}
+          ref={provided.innerRef}
           style={{
             margin: '8px',
             border: '1px solid lightgrey',
@@ -16,8 +17,7 @@ function Column({ column, tasks, index }) {
             borderRadius: '2px',
             display: 'flex',
             flexDirection: 'column',
-          }}
-          ref={provided.innerRef}>
+          }}>
           <div style={{ display: 'flex', flexFlow: 'row' }}>
             <div style={{ padding: '8px' }} {...provided.dragHandleProps}>
               {column.title}
@@ -27,12 +27,12 @@ function Column({ column, tasks, index }) {
             {(provided, snapshot) => (
               <div
                 ref={provided.innerRef}
+                {...provided.droppableProps}
                 style={{
                   padding: '8px',
                   backgroundColor: snapshot.isDraggingOver ? 'skyblue' : 'inherit',
                   minHeight: '100px',
-                }}
-                {...provided.droppableProps}>
+                }}>
                 {tasks.map((task, index) => (
                   <Task key={task.id} task={task} index={index}></Task>
                 ))}
