@@ -16,9 +16,10 @@ function Column({ column, tasks, index }) {
               borderRadius: '2px',
               display: 'flex',
               flexDirection: 'column',
+              width: '100px',
             }}>
-            <div style={{ display: 'flex', flexFlow: 'row' }}>
-              <div {...provided.dragHandleProps}>
+            <div {...provided.dragHandleProps}>
+              <div style={{ display: 'flex', flexFlow: 'row' }}>
                 <div style={{ padding: '8px' }}>{column.title}</div>
               </div>
             </div>
