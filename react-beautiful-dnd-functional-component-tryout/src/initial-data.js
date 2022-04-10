@@ -16,7 +16,7 @@ let initialData = {
   columnOrder: ['column-1', 'column-2', 'column-3', 'column-4', 'column-5'],
 };
 
-let array_length = Array(5).fill(null);
+let array_length = Array(3).fill(null);
 
 array_length.forEach((_, idx) => {
   initialData.tasks[`task-${idx}`] = { id: `task-${idx}`, content: `task-${idx}-content` };

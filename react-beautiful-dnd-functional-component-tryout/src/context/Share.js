@@ -6,18 +6,8 @@ let ShareContext = React.createContext();
 export default function ShareContextProvider({ children }) {
   let [state, setState] = React.useState(initialData);
 
-  let handleHelloworld = () => {
-    alert('helloworld');
-  };
-
-  const handleRefreshJson = () => {
-    // saveJson();
-    // reloadJson();
-  };
-
   const handleColumnEditClick = (e, column_id) => {
     alert(`handleColumnEditClick ${column_id}`);
-    handleRefreshJson();
   };
   const handleColumnDeleteClick = (e, column_id) => {
     alert(`handleColumnDeleteClick ${column_id}`);
