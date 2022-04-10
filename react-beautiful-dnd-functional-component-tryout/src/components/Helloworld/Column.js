@@ -17,7 +17,6 @@ function Column({ column, tasks, index }) {
             display: 'flex',
             flexDirection: 'column',
           }}
-          ariaDetails="helloworld"
           ref={provided.innerRef}>
           <div style={{ display: 'flex', flexFlow: 'row' }}>
             <div style={{ padding: '8px' }} {...provided.dragHandleProps}>
