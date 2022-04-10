@@ -9,7 +9,6 @@ function Column({ column, tasks, index }) {
       {(provided) => (
         <div
           {...provided.draggableProps}
-          ref={provided.innerRef}
           style={{
             margin: '8px',
             border: '1px solid lightgrey',
@@ -17,9 +16,10 @@ function Column({ column, tasks, index }) {
             borderRadius: '2px',
             display: 'flex',
             flexDirection: 'column',
-          }}>
+          }}
+          ref={provided.innerRef}>
           <div style={{ display: 'flex', flexFlow: 'row' }}>
-            <div style={{ padding: '8px' }} {...provided.dragHandleProps}>
+            <div {...provided.dragHandleProps} style={{ padding: '8px' }}>
               {column.title}
             </div>
           </div>

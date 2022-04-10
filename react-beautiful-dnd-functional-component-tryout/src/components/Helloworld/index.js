@@ -84,10 +84,7 @@ export default function Helloworld() {
   return (
     <>
       <DragDropContext onDragEnd={onDragEnd}>
-        <Droppable
-          droppableId="all-columns"
-          // direction="horizontal"
-          type="column">
+        <Droppable droppableId="all-columns" direction="horizontal" type="column">
           {(provided) => (
             <div
               ref={provided.innerRef}
