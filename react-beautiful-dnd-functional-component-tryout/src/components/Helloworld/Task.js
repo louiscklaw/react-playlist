@@ -14,8 +14,7 @@ function Task({ task, index }) {
                   borderRadius: '10px',
                   padding: '8px',
                   marginBottom: '8px',
-                  width: '300px',
-                  backgroundColor: snapshot.isDragging ? 'lightgrey' : 'white',
+                  backgroundColor: snapshot.isDragging ? 'gold' : 'inherit',
                 }}>
                 {task.content}
               </div>
