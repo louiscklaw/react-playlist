@@ -1,8 +1,6 @@
-import React from 'react'
-
-import { Draggable } from 'react-beautiful-dnd'
-
-import { ShareContext } from './context/Share'
+import { Draggable } from 'react-beautiful-dnd';
+import React from 'react';
+import { ShareContext } from 'src/context/Share';
 
 const container = {
   border: '1px solid lightgrey',
@@ -11,49 +9,41 @@ const container = {
   marginBottom: '8px',
   backgroundColor: 'white',
   width: '300px',
-}
+};
 
 function Task({ task, index }) {
-  let { handleItemEditClick, handleItemDeleteClick } = React.useContext(
-    ShareContext,
-  )
+  let { handleItemEditClick, handleItemDeleteClick } = React.useContext(ShareContext);
   return (
     <>
       <Draggable draggableId={task.id} index={index}>
         {(provided) => {
           return (
-            <div
-              ref={provided.innerRef}
-              {...provided.draggableProps}
-              {...provided.dragHandleProps}
-            >
+            <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
               <div>
                 <div style={container}>
                   <div>
                     {task.content}
                     <button
                       onClick={(e) => {
-                        handleItemEditClick(e, task.id)
-                      }}
-                    >
+                        handleItemEditClick(e, task.id);
+                      }}>
                       edit
                     </button>
                     <button
                       onClick={(e) => {
-                        handleItemDeleteClick(e, task.id)
-                      }}
-                    >
+                        handleItemDeleteClick(e, task.id);
+                      }}>
                       delete
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-          )
+          );
         }}
       </Draggable>
     </>
-  )
+  );
 }
 
-export default React.memo(Task)
+export default React.memo(Task);
