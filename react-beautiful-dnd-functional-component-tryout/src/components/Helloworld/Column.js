@@ -7,39 +7,39 @@ function Column({ column, tasks, index }) {
   return (
     <Draggable draggableId={column.id} index={index}>
       {(provided) => (
-        <div
-          {...provided.draggableProps}
-          style={{
-            margin: '8px',
-            border: '1px solid lightgrey',
-            backgroundColor: 'white',
-            borderRadius: '2px',
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-          ref={provided.innerRef}>
-          <div style={{ display: 'flex', flexFlow: 'row' }}>
-            <div {...provided.dragHandleProps} style={{ padding: '8px' }}>
-              {column.title}
-            </div>
-          </div>
-          <Droppable droppableId={column.id}>
-            {(provided, snapshot) => (
-              <div
-                ref={provided.innerRef}
-                {...provided.droppableProps}
-                style={{
-                  padding: '8px',
-                  backgroundColor: snapshot.isDraggingOver ? 'skyblue' : 'inherit',
-                  minHeight: '100px',
-                }}>
-                {tasks.map((task, index) => (
-                  <Task key={task.id} task={task} index={index}></Task>
-                ))}
-                {provided.placeholder}
+        <div {...provided.draggableProps} ref={provided.innerRef}>
+          <div
+            style={{
+              margin: '8px',
+              border: '1px solid lightgrey',
+              backgroundColor: 'white',
+              borderRadius: '2px',
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
+            <div style={{ display: 'flex', flexFlow: 'row' }}>
+              <div {...provided.dragHandleProps}>
+                <div style={{ padding: '8px' }}>{column.title}</div>
               </div>
-            )}
-          </Droppable>
+            </div>
+            <Droppable droppableId={column.id}>
+              {(provided, snapshot) => (
+                <div {...provided.droppableProps} ref={provided.innerRef}>
+                  <div
+                    style={{
+                      padding: '8px',
+                      backgroundColor: snapshot.isDraggingOver ? 'skyblue' : 'inherit',
+                      minHeight: '100px',
+                    }}>
+                    {tasks.map((task, index) => (
+                      <Task key={task.id} task={task} index={index}></Task>
+                    ))}
+                    {provided.placeholder}
+                  </div>
+                </div>
+              )}
+            </Droppable>
+          </div>
         </div>
       )}
     </Draggable>

@@ -84,16 +84,12 @@ export default function Helloworld() {
   return (
     <>
       <DragDropContext onDragEnd={onDragEnd}>
-        <Droppable droppableId="all-columns" direction="horizontal" type="column">
+        <Droppable
+          droppableId="all-columns"
+          // direction="horizontal"
+          type="column">
           {(provided) => (
-            <div
-              ref={provided.innerRef}
-              style={{
-                width: '420px',
-                display: 'flex',
-                flexFlow: 'column',
-              }}
-              {...provided.droppableProps}>
+            <div ref={provided.innerRef} style={{ display: 'flex', flexFlow: 'column' }} {...provided.droppableProps}>
               {state.columnOrder.map((columnId, index) => {
                 const column = state.columns[columnId];
                 const tasks = column.taskIds.map((taskId) => state.tasks[taskId]);
