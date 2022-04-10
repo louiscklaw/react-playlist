@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import styled from "styled-components";
+import '@atlaskit/css-reset';
 
-import "@atlaskit/css-reset";
-import { DragDropContext, Droppable } from "react-beautiful-dnd";
-import initialData from "./initial-data";
+import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 
-import Column from "./column";
+import Column from './column';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import initialData from './initial-data';
+import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
@@ -35,18 +35,16 @@ class InnerList extends React.PureComponent {
 class App extends React.Component {
   state = initialData;
   onDragStart = () => {
-    document.body.style.color = "orange";
+    document.body.style.color = 'orange';
   };
   onDragUpdate = (update) => {
     const { destination } = update;
-    const opacity = destination
-      ? destination.index / Object.keys(this.state.tasks).length
-      : 0;
+    const opacity = destination ? destination.index / Object.keys(this.state.tasks).length : 0;
     document.body.style.backgroundColor = `rgba(153, 141, 217, ${opacity})`;
   };
 
   onDragEnd = (result) => {
-    document.body.style.color = "inherit";
+    document.body.style.color = 'inherit';
 
     const { destination, source, draggableId, type } = result;
 
@@ -55,16 +53,13 @@ class App extends React.Component {
     }
 
     // NOTE: check if the position changed
-    if (
-      destination.droppableId === source.droppableId &&
-      destination.index === source.index
-    ) {
+    if (destination.droppableId === source.droppableId && destination.index === source.index) {
       return;
     }
 
-    console.log("type", type);
+    console.log('type', type);
 
-    if (type === "column") {
+    if (type === 'column') {
       const newColumnOrder = Array.from(this.state.columnOrder);
       newColumnOrder.splice(source.index, 1);
       newColumnOrder.splice(destination.index, 0, draggableId);
@@ -74,7 +69,7 @@ class App extends React.Component {
         columnOrder: newColumnOrder,
       };
       this.setState(newState);
-      console.log("newState", newState);
+      console.log('newState', newState);
       return;
     }
 
@@ -143,24 +138,13 @@ class App extends React.Component {
   render() {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-        <Droppable
-          droppableId="all-columns"
-          direction="horizontal"
-          type="column"
-        >
+        <Droppable droppableId="all-columns" direction="horizontal" type="column">
           {(provided) => (
             <Container {...provided.droppableProps} ref={provided.innerRef}>
               {this.state.columnOrder.map((columnId, index) => {
                 const column = this.state.columns[columnId];
 
-                return (
-                  <InnerList
-                    key={column.id}
-                    column={column}
-                    taskMap={this.state.tasks}
-                    index={index}
-                  />
-                );
+                return <InnerList key={column.id} column={column} taskMap={this.state.tasks} index={index} />;
               })}
               {provided.placeholder}
             </Container>
@@ -171,4 +155,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
