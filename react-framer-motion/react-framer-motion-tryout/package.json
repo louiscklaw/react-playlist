@@ -23,7 +23,7 @@
     "clear-all": "rm -rf build node_modules",
     "re-build": "rm -rf build node_modules && yarn install && yarn build",
     "eject": "react-scripts eject",
-    "gitUpdate": "yarn prettier_file && powershell scripts/gitUpdate.ps1"
+    "gitUpdate": "yarn prettier_file && scripts/gitUpdate.sh"
   },
   "eslintConfig": {
     "extends": [
