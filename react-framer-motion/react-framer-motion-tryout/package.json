@@ -22,7 +22,8 @@
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
     "clear-all": "rm -rf build node_modules",
     "re-build": "rm -rf build node_modules && yarn install && yarn build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "gitUpdate": "yarn prettier_file && powershell scripts/gitUpdate.ps1"
   },
   "eslintConfig": {
     "extends": [
