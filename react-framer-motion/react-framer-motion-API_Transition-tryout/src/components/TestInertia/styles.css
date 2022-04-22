@@ -1,0 +1,14 @@
+.TestInertia div {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 3rem;
+}
+
+.TestInertia circle {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 3rem;
+  border-radius: 50%;
+}
