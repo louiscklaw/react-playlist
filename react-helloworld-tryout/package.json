@@ -16,7 +16,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:dev": "react-scripts test --maxWorkers=1 --notify --coverage --watchAll=false",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
+    "clear-all": "rm -rf build node_modules",
+    "re-build": "rm -rf build node_modules && yarn install && yarn build",
+    "gitUpdate": "yarn prettier_file && scripts/gitUpdate.sh"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "^2.6.2",
     "puppeteer": "^11.0.0"
   }
 }
