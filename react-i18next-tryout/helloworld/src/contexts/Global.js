@@ -10,9 +10,7 @@ export function GlobalContextProvider({ children }) {
   };
   return (
     <>
-      <GlobalContext.Provider value={{ helloworld, helloFunc }}>
-        {children}
-      </GlobalContext.Provider>
+      <GlobalContext.Provider value={{ helloworld, helloFunc }}>{children}</GlobalContext.Provider>
     </>
   );
 }
