@@ -9,14 +9,19 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "react-toastify": "^6.0.6"
+    "react-toastify": "^8.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:dev": "react-scripts test --maxWorkers=1 --notify --coverage --watchAll=false",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
+    "clear-all": "rm -rf build node_modules",
+    "re-build": "rm -rf build node_modules && yarn install && yarn build",
+    "gitUpdate": "git add . && git commit -m\"update react-toastify-tryout,\" && git pull && git push",
+    "dev": "yarn --dev && yarn start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +40,7 @@
   },
   "devDependencies": {
     "husky": "^4.2.5",
-    "prettier": "^2.0.5"
+    "prettier": "2.3.2",
+    "puppeteer": "^13.5.2"
   }
 }
