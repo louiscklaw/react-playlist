@@ -1,0 +1,32 @@
+.rsc {
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+}
+
+.rsc-header {
+  background-color: black;
+}
+
+.rsc-header-title {
+  text-align: center;
+  width: 100%;
+}
+
+.rsc-ts-bubble {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.rsc-os-option-element {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.rsc-os-option-element:hover {
+  cursor: pointer;
+}
+
+/* User */
+.rsc-ts-user .rsc-ts-bubble {
+  background-color: lightblue;
+  color: var(--almost-black);
+}
