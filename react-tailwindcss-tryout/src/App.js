@@ -19,7 +19,7 @@ function App({ test_branch = false }) {
   return (
     <div className="App">
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-8 gap-4">
         <div>01</div>
         <div>01</div>
         <div>01</div>
