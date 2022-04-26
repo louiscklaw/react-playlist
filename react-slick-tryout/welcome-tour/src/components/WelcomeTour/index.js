@@ -1,15 +1,15 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import './index.css';
+import "./index.css";
 
-import Step1Svg from './undraw_creation_process_re_wuo6.svg';
-import Step2Svg from './undraw_working_out_re_nhkg.svg';
-import Step3Svg from './undraw_cookie_love_re_lsjh.svg';
-import Step4Svg from './undraw_solution_mindset_re_57bf.svg';
+import Step1Svg from "./undraw_creation_process_re_wuo6.svg";
+import Step2Svg from "./undraw_working_out_re_nhkg.svg";
+import Step3Svg from "./undraw_cookie_love_re_lsjh.svg";
+import Step4Svg from "./undraw_solution_mindset_re_57bf.svg";
 
 const tour_steps = [
   {
@@ -104,13 +104,13 @@ export default function WelcomeTour() {
                 <div
                   dangerouslySetInnerHTML={createMarkup(step)}
                   style={{
-                    padding: '2rem',
-                    paddingBottom: '5rem',
-                    height: 'calc(100vh - 200px)',
-                    display: 'flex',
-                    flexFlow: 'column',
-                    justifyContent: 'space-evenly',
-                    alignItems: 'center',
+                    padding: "2rem",
+                    paddingBottom: "5rem",
+                    height: "calc(100vh - 200px)",
+                    display: "flex",
+                    flexFlow: "column",
+                    justifyContent: "space-evenly",
+                    alignItems: "center",
                   }}
                 ></div>
               </div>
@@ -119,21 +119,15 @@ export default function WelcomeTour() {
         </Slider>
         <div
           style={{
-            position: 'fixed',
-            height: '150px',
-            bottom: '0px',
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'space-evenly',
+            position: "fixed",
+            height: "150px",
+            bottom: "0px",
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-evenly",
           }}
         >
-          <div>
-            {current_slide === tour_steps.length - 1 ? (
-              <button>done</button>
-            ) : (
-              <button>next</button>
-            )}
-          </div>
+          <div>{current_slide === tour_steps.length - 1 ? <button>done</button> : <button>next</button>}</div>
         </div>
       </div>
     </>

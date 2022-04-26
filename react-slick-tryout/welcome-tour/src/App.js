@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import WelcomeTour from './components/WelcomeTour';
+import WelcomeTour from "./components/WelcomeTour";
 
 function App() {
   return (
