@@ -1,9 +1,0 @@
-react-slick-tryout:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - run: |
-        pushd react-slick-tryout
-          yarn
-          yarn build
-        popd
