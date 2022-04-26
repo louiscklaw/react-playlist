@@ -1,0 +1,16 @@
+.slick-dots {
+  height: 100px;
+  /* background-color: gold; */
+  position: fixed;
+  bottom: 0;
+}
+
+.slick-slide div {
+  /* height: calc(100vh - 100px); */
+  /* background-color: gold; */
+}
+
+.slick-slide {
+  height: calc(100vh - 100px);
+  /* background-color: gold; */
+}
