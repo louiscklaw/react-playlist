@@ -13,23 +13,16 @@ const styles = {
     color: '#fff',
     overflow: 'hidden',
   },
-  slide1: {
-    backgroundColor: '#FEA900',
-  },
-  slide2: {
-    backgroundColor: '#B3DC4A',
-  },
-  slide3: {
-    backgroundColor: '#6AC0FF',
-  },
+  slide1: { backgroundColor: '#FEA900' },
+  slide2: { backgroundColor: '#B3DC4A' },
+  slide3: { backgroundColor: '#6AC0FF' },
 }
 
 function App({ test_branch = false }) {
   let [index, setIndex] = useState(0)
 
-  const handleChangeIndex = index => {
-    setIndex(index)
-  }
+  const handleChangeIndex = index => setIndex(index)
+
   return (
     <div className="App">
       <SwipeableViews index={index} onChangeIndex={handleChangeIndex}>
