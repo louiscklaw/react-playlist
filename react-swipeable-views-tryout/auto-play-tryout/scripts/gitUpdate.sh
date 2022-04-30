@@ -1,5 +1,5 @@
 git add .
-git commit -m"update react-swipeable-views-tryout,"
+git commit -m"update auto-play-tryout,"
 
 git fetch --all
 git pull
