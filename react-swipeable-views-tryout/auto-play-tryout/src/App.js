@@ -4,7 +4,7 @@ import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
 import Pagination from 'src/components/Pagination'
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
+// const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
 const styles = {
   slide: {
