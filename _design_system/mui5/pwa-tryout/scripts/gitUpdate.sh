@@ -1,5 +1,5 @@
 git add .
-git commit -m"update,"
+git commit -m"update pwa-tryout,"
 
 git fetch --all
 git pull
