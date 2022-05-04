@@ -100,6 +100,54 @@ gulp.task('add_package_scripts', async (done) => {
   });
 });
 
+gulp.task('sync_prettier_json', async (done) => {
+  getDirectories('.').then((dirs) => {
+    // let dirs = ['react-form-tryout'];
+    for (let el of dirs) {
+      if (el !== 'node_modules' && el !== '.git' && el !== '.vscode') {
+        let prettierrc_json_file = `${el}/.prettierrc.json`;
+        let package_json_file = `${el}/package.json`;
+        // if (fs.existsSync(package_json_file)) {
+        if (true) {
+          try {
+            // let package_json_content = fs.readFileSync(prettierrc_json_file);
+            // let prettierrc_json = JSON.parse(package_json_content);
+            fs.writeFileSync(
+              prettierrc_json_file,
+              JSON.stringify(
+                {
+                  // ...prettierrc_json,
+                  arrowParens: 'avoid',
+                  bracketSpacing: true,
+                  htmlWhitespaceSensitivity: 'css',
+                  insertPragma: false,
+                  jsxBracketSameLine: false,
+                  jsxSingleQuote: false,
+                  printWidth: 100,
+                  proseWrap: 'preserve',
+                  quoteProps: 'as-needed',
+                  requirePragma: false,
+                  semi: false,
+                  singleQuote: true,
+                  tabWidth: 2,
+                  trailingComma: 'all',
+                  useTabs: false,
+                },
+                null,
+                2
+              )
+            );
+          } catch (error) {
+            console.log(prettierrc_json_file);
+            console.error(error);
+          }
+        }
+      }
+    }
+    console.log('done');
+  });
+});
+
 gulp.task(
   'default',
   gulp.series('yarn_all', (done) => {
