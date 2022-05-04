@@ -11,7 +11,14 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "eject": "react-scripts eject",
+    "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
+    "clear-all": "rm -rf build node_modules",
+    "re-build": "rm -rf build node_modules && yarn install && yarn build",
+    "gitUpdate": "yarn prettier_file && scripts/gitUpdate.sh",
+    "dev": "yarn --dev && set HTTPS=true&&yarn start",
+    "http": "serve -s build"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.73",

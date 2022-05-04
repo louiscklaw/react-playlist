@@ -14,7 +14,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
+    "clear-all": "rm -rf build node_modules",
+    "re-build": "rm -rf build node_modules && yarn install && yarn build",
+    "gitUpdate": "yarn prettier_file && scripts/gitUpdate.sh",
+    "dev": "yarn --dev && set HTTPS=true&&yarn start",
+    "http": "serve -s build"
   },
   "eslintConfig": {
     "extends": [

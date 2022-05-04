@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gitUpdate": "git add . && git commit -m'update' && git fetch --all && git pull && git push",
-    "gitSync": "git fetch --all && git pull && git push"
+    "gitSync": "git fetch --all && git pull && git push",
+    "clean-all": "rm -rf **/node_modues"
   },
   "repository": {
     "type": "git",
