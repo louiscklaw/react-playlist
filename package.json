@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gitUpdate": "git add . && git commit -m'update' && git push",
+    "gitUpdate": "git add . && git commit -m'update' && git fetch --all && git pull && git push",
     "gitSync": "git fetch --all && git pull && git push"
   },
   "repository": {
