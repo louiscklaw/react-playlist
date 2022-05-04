@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-playlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gitUpdate": "git add . && git commit -m'update' && git push",
+    "gitSync": "git fetch --all && git pull && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louiscklaw/nextjs-playlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louiscklaw/nextjs-playlist/issues"
+  },
+  "homepage": "https://github.com/louiscklaw/nextjs-playlist#readme",
+  "dependencies": {
+    "gulp": "*"
+  }
+}
