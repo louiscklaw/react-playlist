@@ -1,35 +1,35 @@
-const puppeteer = require('puppeteer')
+const puppeteer = require("puppeteer");
 
-const headless = false
-const ignoreHTTPSErrors = true
+const headless = false;
+const ignoreHTTPSErrors = true;
 
 describe(``, () => {
-  let manage_browser, manage_page
+  let manage_browser, manage_page;
   beforeAll(async () => {
     manage_browser = await puppeteer.launch({
       defaultViewport: { width: 1920, height: 1080 },
       ignoreHTTPSErrors,
       headless,
       args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-font-subpixel-positioning',
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-font-subpixel-positioning",
       ],
-    })
-    manage_page = await manage_browser.newPage()
-  })
+    });
+    manage_page = await manage_browser.newPage();
+  });
 
   afterAll(async () => {
-    await manage_browser.close()
-  })
+    await manage_browser.close();
+  });
 
-  test('', async () => {
-    await manage_page.goto('http://localhost:3000')
+  test("", async () => {
+    await manage_page.goto("http://localhost:3000");
 
     await manage_page.screenshot({
-      path: './docs/screenshot.png',
+      path: "./docs/screenshot.png",
       fullPage: true,
-    })
-  })
-})
+    });
+  });
+});
