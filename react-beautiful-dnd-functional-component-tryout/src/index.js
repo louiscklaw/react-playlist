@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker'
 import App from './App'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ShareContextProvider from './context/Share'
+import ShareContextProvider from 'src/components/HelloworldBeautifulDND/Share'
 
 const saveJson = () => {
   alert('save json')

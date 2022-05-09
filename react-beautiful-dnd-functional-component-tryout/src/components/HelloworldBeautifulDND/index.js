@@ -2,7 +2,7 @@ import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
 import Column from './Column'
 import React from 'react'
-import { ShareContext } from 'src/context/Share'
+import { ShareContext } from './Share'
 
 export default function Helloworld() {
   let { state, setState } = React.useContext(ShareContext)
