@@ -1,5 +1,5 @@
 import React from 'react'
-import initialData from 'src/initial-data'
+import initialData from 'src/components/HelloworldBeautifulDND/initial-data'
 
 let ShareContext = React.createContext()
 
