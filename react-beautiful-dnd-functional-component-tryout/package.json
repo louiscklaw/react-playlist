@@ -25,7 +25,7 @@
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
     "clear-all": "rm -rf build node_modules",
     "re-build": "rm -rf build node_modules && yarn install && yarn build",
-    "gitUpdate": "yarn prettier_file && scripts/gitUpdate.sh",
+    "gitUpdate": "yarn prettier_file && git add . && git commit -m'update,' && git pull && git push",
     "dev": "yarn --dev && set HTTPS=true&&yarn start",
     "http": "serve -s build"
   },
@@ -43,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
   }
 }

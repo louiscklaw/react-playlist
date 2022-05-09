@@ -1,5 +1,5 @@
-import { Draggable } from 'react-beautiful-dnd';
-import React from 'react';
+import { Draggable } from 'react-beautiful-dnd'
+import React from 'react'
 
 function TaskContent({ task, snapshot }) {
   return (
@@ -10,11 +10,12 @@ function TaskContent({ task, snapshot }) {
         padding: '8px',
         marginBottom: '8px',
         backgroundColor: snapshot.isDragging ? 'gold' : 'inherit',
-      }}>
+      }}
+    >
       <div>handle</div>
       <div>{task.content}</div>
     </div>
-  );
+  )
 }
 
 function Task({ task, index }) {
@@ -26,11 +27,11 @@ function Task({ task, index }) {
             <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
               <TaskContent task={task} snapshot={snapshot} />
             </div>
-          );
+          )
         }}
       </Draggable>
     </>
-  );
+  )
 }
 
-export default React.memo(Task);
+export default React.memo(Task)

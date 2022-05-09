@@ -1,14 +1,14 @@
-import { Draggable, Droppable } from 'react-beautiful-dnd';
+import { Draggable, Droppable } from 'react-beautiful-dnd'
 
-import React from 'react';
-import Task from './Task';
+import React from 'react'
+import Task from './Task'
 
 function ColumnTitle({ title }) {
   return (
     <div style={{ display: 'flex', flexFlow: 'row' }}>
       <div style={{ padding: '8px' }}>{title}</div>
     </div>
-  );
+  )
 }
 
 function Column({ column, tasks, index }) {
@@ -25,7 +25,8 @@ function Column({ column, tasks, index }) {
                 borderRadius: '2px',
                 display: 'flex',
                 flexDirection: 'column',
-              }}>
+              }}
+            >
               <ColumnTitle title={column.title} />
 
               <Droppable droppableId={column.id}>
@@ -36,7 +37,8 @@ function Column({ column, tasks, index }) {
                         padding: '8px',
                         backgroundColor: snapshot.isDraggingOver ? 'lightgrey' : 'inherit',
                         minHeight: '100px',
-                      }}>
+                      }}
+                    >
                       {tasks.map((task, index) => (
                         <Task key={task.id} task={task} index={index}></Task>
                       ))}
@@ -50,7 +52,7 @@ function Column({ column, tasks, index }) {
         </div>
       )}
     </Draggable>
-  );
+  )
 }
 
-export default React.memo(Column);
+export default React.memo(Column)
