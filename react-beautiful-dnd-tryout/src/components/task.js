@@ -27,7 +27,8 @@ export default class Task extends React.Component {
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
-            isDragging={snapshot.isDragging}>
+            isDragging={snapshot.isDragging}
+          >
             <Handle {...provided.dragHandleProps} />
 
             {this.props.task.content}
