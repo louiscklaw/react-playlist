@@ -1,22 +1,22 @@
-import React from 'react'
+import React from 'react';
 // import HelloComponent from 'src/components/HelloComponent';
-import { GlobalContextProvider } from 'src/contexts/GlobalContext'
+import { GlobalContextProvider } from 'src/contexts/GlobalContext';
 
-import './style.css'
+import './style.css';
 
 function App({ test_branch = false }) {
-  let helloworld = 'helloworld'
-  let helloanotherworld = '123'
+  let helloworld = 'helloworld';
+  let helloanotherworld = '123';
 
-  let helloEmpty
+  let helloEmpty;
 
   if (test_branch) {
-    console.log('find true')
+    console.log('find true');
   } else {
-    console.log('find false')
+    console.log('find false');
   }
 
-  console.log('helloEmpty', helloEmpty)
+  console.log('helloEmpty', helloEmpty);
 
   return (
     <div className="App">
@@ -47,7 +47,7 @@ function App({ test_branch = false }) {
         </div>
       </GlobalContextProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
