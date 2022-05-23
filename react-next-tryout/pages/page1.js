@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
+import React, { Component } from 'react'
+import Link from 'next/link'
 
-function Page1(){
-  return(
+function Page1() {
+  return (
     <>
       Page1
       <Link href="/">
