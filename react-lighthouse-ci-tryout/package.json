@@ -1,12 +1,5 @@
 {
   "name": "react-lighthouse-ci-tryout",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -25,22 +18,8 @@
     "test_coverage": "yarn test -- --coverage",
     "screenshot": "yarn test"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
-    "@lhci/cli": "0.8.0"
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
   }
 }

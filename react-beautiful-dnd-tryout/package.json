@@ -1,19 +1,5 @@
 {
   "name": "react-beautiful-dnd-tryout",
-  "homepage": "https://aboutme.louislabs.com",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@atlaskit/css-reset": "^6.0.5",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-beautiful-dnd": "^13.0.0",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "styled-components": "^5.2.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -31,22 +17,8 @@
     "test_coverage": "yarn test -- --coverage",
     "screenshot": "yarn test"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
   }
 }

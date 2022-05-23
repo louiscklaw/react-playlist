@@ -1,17 +1,5 @@
 {
   "name": "react-scroll-horizontal-tryout",
-  "homepage": "https://hew.github.io/react-scroll-horizontal",
-  "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
-  "dependencies": {
-    "normalize.css": "^8.0.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "^1.1.1",
-    "react-scroll-horizontal": "^1.6.6"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -31,6 +19,7 @@
     "screenshot": "yarn test"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
   }
 }

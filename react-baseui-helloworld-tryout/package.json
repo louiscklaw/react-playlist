@@ -1,21 +1,5 @@
 {
   "name": "react-baseui-helloworld-tryout",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@shopify/jest-dom-mocks": "^3.0.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "baseui": "^9.116.3",
-    "node-fetch": "^2.6.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "styletron-engine-atomic": "^1.4.8",
-    "styletron-react": "^6.0.1",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -33,28 +17,8 @@
     "test_coverage": "yarn test -- --coverage",
     "screenshot": "yarn test"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "eqeqeq": "off"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
-    "eslint-plugin-baseui": "^9.116.3"
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
   }
 }

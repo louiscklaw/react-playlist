@@ -1,8 +1,5 @@
 {
   "name": "react-next-tryout",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "yarn --dev && npx kill-port 3000 && set HTTPS=true&&yarn start",
     "build": "next build",
@@ -19,16 +16,8 @@
     "test_coverage": "yarn test -- --coverage",
     "screenshot": "yarn test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.4.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
   "devDependencies": {
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
   }
 }

@@ -1,16 +1,5 @@
 {
   "name": "react-baseweb-helloworld-tryout",
-  "homepage": "https://aboutme.louislabs.com",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "baseui": "^9.116.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "styletron-engine-atomic": "^1.4.8",
-    "styletron-react": "^6.0.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -29,45 +18,8 @@
     "test_coverage": "yarn test -- --coverage",
     "screenshot": "yarn test"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ],
-    "plugins": [
-      "unused-imports"
-    ],
-    "rules": {
-      "react-hooks/exhaustive-deps": "off",
-      "no-unused-vars": "off",
-      "unused-imports/no-unused-imports": "error",
-      "unused-imports/no-unused-vars": [
-        "warn",
-        {
-          "vars": "all",
-          "varsIgnorePattern": "^_",
-          "args": "after-used",
-          "argsIgnorePattern": "^_"
-        }
-      ]
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.0",
-    "eslint-plugin-baseui": "^9.116.0",
-    "eslint-plugin-unused-imports": "^1.1.2"
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
   }
 }
