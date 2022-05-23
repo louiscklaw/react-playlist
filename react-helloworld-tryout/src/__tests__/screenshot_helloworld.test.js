@@ -25,7 +25,7 @@ describe(``, () => {
   });
 
   test("", async () => {
-    await manage_page.goto("http://localhost:3000");
+    await manage_page.goto("https://localhost:3000");
 
     await manage_page.screenshot({
       path: "./docs/screenshot.png",
