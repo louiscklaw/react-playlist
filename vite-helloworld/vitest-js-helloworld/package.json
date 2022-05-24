@@ -12,7 +12,7 @@
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
     "clear-all": "rm -rf build node_modules dist",
     "re-build": "rm -rf build node_modules dist && yarn install && yarn build",
-    "gitUpdate": "yarn --dev && yarn prettier_file && git pull && git add . && git commit -m\"update vite-js-helloworld,\" && git push",
+    "gitUpdate": "yarn --dev && yarn prettier_file && git pull && git add . && git commit -m\"update vitest-js-helloworld,\" && git push",
     "http": "serve -s dist",
     "lint": "eslint -c ./.eslintrc.js src/**/*.jsx --ignore-pattern src/tests --ignore-pattern *.test.js --max-warnings 5 --fix",
     "start_dev": "yarn --dev && yarn dev --host"
