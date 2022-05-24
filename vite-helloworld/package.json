@@ -1,0 +1,13 @@
+{
+  "name": "vite-helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clone_helloworld": "rm -rf vitest-js-helloworld/node_modules && cp -r vitest-js-helloworld "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
