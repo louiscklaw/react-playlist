@@ -1,9 +1,8 @@
-import { afterAll, beforeAll, describe, expect, test } from 'vitest'
-import { preview } from 'vite'
-import vite from 'vite'
 import puppeteer from 'puppeteer'
+import { preview } from 'vite'
+import { afterAll, beforeAll, describe, expect, test } from 'vitest'
 
-describe('basic', async () => {
+describe('puppeteer_helloworld', async () => {
   let server
   let browser
   let page
