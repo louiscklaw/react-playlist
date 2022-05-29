@@ -1,12 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-
-function App(props) {
-  const markdown = `
+const markdown = `
 # This is a header
 ## This is a header
 ### This is a header
@@ -110,12 +107,11 @@ hello code
 </custom>
 `;
 
-  const markdown1 = `Just a link: https://reactjs.com.`;
-
+function App({ test_branch = false }) {
   return (
-    <>
-      <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />
-    </>
+    <div className="App">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+    </div>
   );
 }
 
