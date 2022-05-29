@@ -16,7 +16,7 @@ function App({ test_branch = false }) {
           </StickyBox>
           <div style={{ height: "900px", backgroundColor: "gold" }}>Main Content</div>
         </div>
-        <div style={{ height: "400px", backgroundColor: "tomato" }}>footer</div>
+        <div style={{ height: "800px", backgroundColor: "tomato" }}>footer</div>
       </body>
     </div>
   );
