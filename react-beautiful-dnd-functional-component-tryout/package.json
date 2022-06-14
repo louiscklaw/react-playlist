@@ -10,9 +10,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-beautiful-dnd": "^13.0.0",
-    "react-dom": "^16.13.1",
+    "react": "^18.1.0",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "^18.1.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.2.1"
   },
@@ -25,7 +25,7 @@
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
     "clear-all": "rm -rf build node_modules",
     "re-build": "rm -rf build node_modules && yarn install && yarn build",
-    "gitUpdate": "yarn prettier_file && git add . && git commit -m'update,' && git pull && git push",
+    "gitUpdate": "git add . && git commit -m'update react-beautiful-dnd-functional-component-tryout,' && git pull && git push",
     "dev": "yarn --dev && set HTTPS=true&&yarn start",
     "http": "serve -s build"
   },
