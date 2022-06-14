@@ -1,5 +1,5 @@
 {
-  "name": "react-helloworld-tryout",
+  "name": "react-tailwindcss-tryout",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,9 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.14.0",
+    "react-div-100vh": "^0.7.0",
     "react-dom": "^16.14.0",
+    "react-feather": "^2.0.9",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
@@ -20,7 +22,7 @@
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
     "clear-all": "rm -rf build node_modules",
     "re-build": "rm -rf build node_modules && yarn install && yarn build",
-    "gitUpdate": "yarn prettier_file && scripts/gitUpdate.sh",
+    "gitUpdate": "git add . && git commit -m\"update react-tailwindcss-tryout,\" && git pull && git push",
     "dev": "yarn --dev && set HTTPS=true&&yarn start",
     "http": "serve -s build"
   },
@@ -47,6 +49,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.5",
+    "gulp": "^4.0.2",
+    "gulp-run-command": "^0.0.10",
     "postcss": "^8.4.12",
     "prettier": "2.3.2",
     "puppeteer": "^13.5.2",
