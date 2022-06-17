@@ -1,0 +1,9 @@
+react-joyride-helloworld-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - run: |
+        pushd react-joyride-helloworld-tryout
+          yarn
+          yarn build
+        popd
