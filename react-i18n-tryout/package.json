@@ -10,7 +10,7 @@
     "clear-all": "rm -rf build node_modules",
     "re-build": "rm -rf build node_modules && yarn install && yarn build",
     "gitSync": "git fetch --all && git pull",
-    "gitUpdate": "yarn gitSync && git add . && git commit -m\"update react-helloworld-tryout,\" && git push",
+    "gitUpdate": "yarn gitSync && git add . && git commit -m\"update react-i18n-tryout,\" && git push",
     "dev": "yarn --dev && npx kill-port 3000 && set HTTPS=true&&yarn start",
     "http": "serve -s build",
     "lint": "eslint -c ./.eslintrc.js src --ignore-pattern src/tests --ignore-pattern *.test.js --max-warnings 5 --fix",
