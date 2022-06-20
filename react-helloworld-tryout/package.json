@@ -20,7 +20,7 @@
     "test:dev": "react-scripts test --maxWorkers=1 --notify --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "prettier_file": "prettier --write \"./src/**/*.{js,jsx}\"",
-    "trim": "rm -rf build node_modules",
+    "trim": "rm -rf build node_modules *lock*",
     "re-build": "rm -rf build node_modules && yarn install && yarn build",
     "gitUpdate": "git pull && git add . && git commit -m\"update react-helloworld-tryout,\" && git push",
     "dev": "yarn --dev && npx kill-port 3000 && set HTTPS=true&&yarn start",
