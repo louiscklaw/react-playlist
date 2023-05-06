@@ -1,0 +1,19 @@
+{
+  "name": "express-static-helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "trim": "rm -rf node_modules ",
+    "gitUpdate": "git add . && git commit -m\"update express-static-helloworld,\"",
+    "dev": "nodemon ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "nodemon": "^2.0.16"
+  }
+}
