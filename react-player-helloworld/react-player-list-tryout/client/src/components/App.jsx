@@ -19,18 +19,24 @@ function getRandomInt(max) {
 }
 
 const ReceiveJsonMessge = () =>{
-  const {lastJsonMessage} = useWebSocket(WS_URL, {
-    share: true,
-    filter: isDocumentEvent
-  });
+  try {
+    const {lastJsonMessage} = useWebSocket(WS_URL, {
+      share: true,
+      filter: isDocumentEvent
+    });
 
+    return(
+      <div>
+        {JSON.stringify(lastJsonMessage)}
+      </div>
+    )
+  } catch (error) {
+    throw(error);
+    return (
+      <>sorry some error occured</>
+    )
+  }
 
-
-  return(
-    <div>
-      {JSON.stringify(lastJsonMessage)}
-    </div>
-  )
 }
 
 const App = () =>{

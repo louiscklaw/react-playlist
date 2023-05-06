@@ -6,6 +6,12 @@ const app = express();
 app.use(express.json());
 
 app.use(express.static('client/dist'));
+app.use('/test', express.static('test'))
+
+app.post('/helloworld', (req, res) =>{
+  console.log(req)
+  res.send({hello: 'helloworld from server'})
+})
 
 app.listen(express_port, () => {
   console.log('Server is running at http://localhost:' + express_port);
