@@ -1,0 +1,16 @@
+{
+  "name": "react-node-websockets-tryout",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gitUpdate":"git add . && git commit -m \"update react-node-websockets-tryout\""
+  },
+  "author": "Avanthika",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.0",
+    "ws": "^8.11.0"
+  }
+}
