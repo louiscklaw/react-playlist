@@ -13,6 +13,16 @@ app.post('/helloworld', (req, res) =>{
   res.send({hello: 'helloworld from server'})
 })
 
+app.post('/helloworld', (req, res) => {
+  console.log(req);
+  res.send({ hello: 'helloworld from server' });
+});
+
+app.post('/helloworld', (req, res) => {
+  console.log(req);
+  res.send({ hello: 'helloworld from server' });
+});
+
 app.listen(express_port, () => {
   console.log('Server is running at http://localhost:' + express_port);
 });

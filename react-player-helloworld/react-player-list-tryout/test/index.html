@@ -10,7 +10,9 @@
   this is test page
 
   <button id="hello_post_button">hello post button</button>
-
+  <button id="add_youtube_1">add_youtube_1</button>
+  <button id="add_youtube_2">add_youtube_2</button>
+  <button id="add_youtube_3">add_youtube_3</button>
   <script>
 
     // Example POST method implementation:
@@ -33,6 +35,23 @@
     }
 
     document.addEventListener("DOMContentLoaded",()=>{
+
+      document.getElementById('add_youtube_1').addEventListener('click',() =>{
+        postData("//localhost:3000/add_youtube_1", { hello: "world" })
+        .then((data) => {
+          console.log(data); // JSON data parsed by `data.json()` call
+        });
+      })
+
+      document.getElementById('hello_post_button').addEventListener('click',() =>{
+        postData("//localhost:3000/add_youtube_2", { hello: "world" })
+        .then((data) => {
+          console.log(data); // JSON data parsed by `data.json()` call
+        });
+      })
+
+
+
       document.getElementById('hello_post_button').addEventListener('click',() =>{
         postData("//localhost:3000/helloworld", { hello: "world" })
         .then((data) => {

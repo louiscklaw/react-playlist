@@ -43,6 +43,69 @@ const ReceiveJsonMessge = () => {
   }
 };
 
+const PlayerContent = () => {
+  try {
+    const { lastJsonMessage } = useWebSocket(WS_URL, {
+      share: true,
+      filter: isPlayListUpdated,
+    });
+
+    const [url_list, setUrlList] = useState([]);
+
+    var [playing, setPlaying] = React.useState(true);
+    var [video_url, setVideoUrl] = React.useState('');
+    var [video_idx, setVideoIdx] = React.useState(0);
+
+    useEffect(() => {
+      if (lastJsonMessage?.data?.url_list) {
+        var { url_list } = lastJsonMessage.data;
+        setUrlList(url_list);
+
+        if (video_url == '') {
+          setVideoUrl(url_list[0]);
+        }
+      }
+    }, [lastJsonMessage]);
+
+    const helloEnded = () => {
+      setPlaying(false);
+
+      if (url_list.length > 0) {
+        var url = url_list.pop();
+        setVideoUrl(url);
+      } else {
+      }
+
+      setTimeout(() => {
+        setPlaying(true);
+      }, 100);
+    };
+
+    if (url_list.length == 0) {
+      return <>list is empty</>;
+    }
+
+    return (
+      <>
+        <div>hello</div>
+        <pre>{JSON.stringify(url_list, null, 2)}</pre>
+        <div>world</div>
+
+        <ReactPlayer
+          url={video_url}
+          playing={playing}
+          width={'100vw'}
+          height={'66vw'}
+          onEnded={helloEnded}
+        />
+      </>
+    );
+  } catch (error) {
+    console.error(error);
+    return <>PlayerContent error</>;
+  }
+};
+
 const App = () => {
   try {
     const [username, setUsername] = useState('');
@@ -65,9 +128,6 @@ const App = () => {
       }
     }, [username, sendJsonMessage, readyState]);
 
-    var [playing, setPlaying] = React.useState(true);
-    var [video_url, setVideoUrl] = React.useState(url_list[0]);
-    var [video_idx, setVideoIdx] = React.useState(0);
     // useEffect(()=>{
     //   console.log({lastJsonMessage})
     // },[lastJsonMessage])
@@ -76,6 +136,7 @@ const App = () => {
       <div>
         helloworld app
         <ReceiveJsonMessge />
+        <PlayerContent />
       </div>
     );
   } catch (error) {
