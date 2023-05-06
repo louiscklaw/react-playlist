@@ -1,17 +1,72 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
+import useWebSocket, { ReadyState } from 'react-use-websocket';
 import ReactPlayer from "react-player";
+
+const WS_URL = 'ws://127.0.0.1:8000';
+
+function isUserEvent(message) {
+  let evt = JSON.parse(message.data);
+  return evt.type === 'userevent';
+}
+
+function isDocumentEvent(message) {
+  let evt = JSON.parse(message.data);
+  return evt.type === 'contentchange';
+}
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-const App1 = () =>{
+const ReceiveJsonMessge = () =>{
+  const {lastJsonMessage} = useWebSocket(WS_URL, {
+    share: true,
+    filter: isDocumentEvent
+  });
+
+
+
   return(
-    <>helloworld app</>
+    <div>
+      {JSON.stringify(lastJsonMessage)}
+    </div>
   )
 }
 
-function App() {
+const App = () =>{
+  const [username, setUsername] = useState('');
+  const {  sendJsonMessage, readyState } = useWebSocket(WS_URL, {
+    onOpen: () => {
+      console.log('WebSocket connection established.');
+    },
+    share: true,
+    filter: () => false,
+    retryOnError: true,
+    shouldReconnect: () => true
+  });
+
+  useEffect(() => {
+    if(username && readyState === ReadyState.OPEN) {
+      sendJsonMessage({
+        username,
+        type: 'userevent'
+      });
+    }
+  }, [username, sendJsonMessage, readyState]);
+
+  // useEffect(()=>{
+  //   console.log({lastJsonMessage})
+  // },[lastJsonMessage])
+
+  return(
+    <div>
+      helloworld app
+      <ReceiveJsonMessge />
+    </div>
+  )
+}
+
+function App1() {
   const url_list = [
     'https://www.youtube.com/watch?v=cBkNtO86_mY',
     'https://www.youtube.com/watch?v=icPHcK_cCF4',
@@ -50,7 +105,7 @@ function App() {
         height={'66vw'}
         onEnded={helloEnded}
       />
-      
+
       <div>
         <pre>{JSON.stringify(video_url)}</pre>
         <pre>{JSON.stringify(video_idx)}</pre>
