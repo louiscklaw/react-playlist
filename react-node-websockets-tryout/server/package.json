@@ -5,7 +5,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gitUpdate":"git add . && git commit -m \"update react-node-websockets-tryout\""
     "start": "node index.js"
   },
   "author": "Avanthika",
