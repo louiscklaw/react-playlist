@@ -26,6 +26,11 @@ function isPlayListUpdated(message) {
   return evt.type === typesDef.PLAYLIST_CHANGE;
 }
 
+function isAddYoutubeUrl(message) {
+  let evt = JSON.parse(message.data);
+  return evt.type === typesDef.ADD_YOUTUBE_URL;
+}
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }

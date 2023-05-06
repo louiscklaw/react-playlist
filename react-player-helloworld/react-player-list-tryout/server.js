@@ -17,7 +17,7 @@ app.post('/add_youtube_1', (req, res) => {
   try {
     console.log(req);
     broadcastMessage({
-      type: typesDef.ADD_YOUTUBE_URL,
+      type: typesDef.PLAYLIST_CHANGE,
       data: { youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY' },
     });
     res.send({ hello: 'add_youtube_1 from server' });
@@ -32,7 +32,7 @@ app.post('/add_youtube_2', (req, res) => {
   try {
     console.log(req);
     broadcastMessage({
-      type: typesDef.ADD_YOUTUBE_URL,
+      type: typesDef.PLAYLIST_CHANGE,
       data: { youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4' },
     });
     res.send({ hello: 'add_youtube_2 from server' });
@@ -47,7 +47,7 @@ app.post('/add_youtube_3', (req, res) => {
   try {
     console.log(req);
     broadcastMessage({
-      type: typesDef.ADD_YOUTUBE_URL,
+      type: typesDef.PLAYLIST_CHANGE,
       data: { youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos' },
     });
     res.send({ hello: 'add_youtube_2 from server' });
