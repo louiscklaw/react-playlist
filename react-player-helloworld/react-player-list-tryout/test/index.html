@@ -32,7 +32,6 @@
       return response.json(); // parses JSON response into native JavaScript objects
     }
 
-
     document.addEventListener("DOMContentLoaded",()=>{
       document.getElementById('hello_post_button').addEventListener('click',() =>{
         postData("//localhost:3000/helloworld", { hello: "world" })
