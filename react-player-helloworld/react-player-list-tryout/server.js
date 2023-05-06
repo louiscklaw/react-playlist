@@ -13,14 +13,49 @@ app.post('/helloworld', (req, res) =>{
   res.send({hello: 'helloworld from server'})
 })
 
-app.post('/helloworld', (req, res) => {
-  console.log(req);
-  res.send({ hello: 'helloworld from server' });
+app.post('/add_youtube_1', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.ADD_YOUTUBE_URL,
+      data: { youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY' },
+    });
+    res.send({ hello: 'add_youtube_1 from server' });
+  } catch (error) {
+    console.log('add_youtube_1 error found');
+    res.send({ result: 'add_youtube_1 error' });
+    throw error;
+  }
 });
 
-app.post('/helloworld', (req, res) => {
-  console.log(req);
-  res.send({ hello: 'helloworld from server' });
+app.post('/add_youtube_2', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.ADD_YOUTUBE_URL,
+      data: { youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4' },
+    });
+    res.send({ hello: 'add_youtube_2 from server' });
+  } catch (error) {
+    console.log('add_youtube_2 error found');
+    res.send({ result: 'add_youtube_2 error' });
+    throw error;
+  }
+});
+
+app.post('/add_youtube_3', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.ADD_YOUTUBE_URL,
+      data: { youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos' },
+    });
+    res.send({ hello: 'add_youtube_2 from server' });
+  } catch (error) {
+    console.log('add_youtube_2 error found');
+    res.send({ result: 'add_youtube_2 error' });
+    throw error;
+  }
 });
 
 app.listen(express_port, () => {
@@ -61,6 +96,7 @@ const typesDef = {
   USER_EVENT: 'userevent',
   CONTENT_CHANGE: 'contentchange',
   PLAYLIST_CHANGE: 'playlistchange',
+  ADD_YOUTUBE_URL: 'addYoutubeUrl',
 };
 
 function broadcastMessage(json) {

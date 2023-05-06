@@ -43,7 +43,7 @@
         });
       })
 
-      document.getElementById('hello_post_button').addEventListener('click',() =>{
+      document.getElementById('add_youtube_2').addEventListener('click',() =>{
         postData("//localhost:3000/add_youtube_2", { hello: "world" })
         .then((data) => {
           console.log(data); // JSON data parsed by `data.json()` call
@@ -52,8 +52,8 @@
 
 
 
-      document.getElementById('hello_post_button').addEventListener('click',() =>{
-        postData("//localhost:3000/helloworld", { hello: "world" })
+      document.getElementById('add_youtube_3').addEventListener('click',() =>{
+        postData("//localhost:3000/add_youtube_3", { hello: "world" })
         .then((data) => {
           console.log(data); // JSON data parsed by `data.json()` call
         });

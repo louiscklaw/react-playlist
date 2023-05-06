@@ -8,6 +8,7 @@ const typesDef = {
   USER_EVENT: 'userevent',
   CONTENT_CHANGE: 'contentchange',
   PLAYLIST_CHANGE: 'playlistchange',
+  ADD_YOUTUBE_URL: 'addYoutubeUrl',
 };
 
 function isUserEvent(message) {
