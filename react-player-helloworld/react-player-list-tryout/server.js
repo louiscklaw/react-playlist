@@ -129,7 +129,7 @@ function handleHelloworldMessage() {
   try {
     broadcastMessage({
       type: typesDef.PLAYLIST_CHANGE,
-      data: { url_list },
+      data: { youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos' },
     });
   } catch (error) {
     console.log('handleHelloworldMessage error found');

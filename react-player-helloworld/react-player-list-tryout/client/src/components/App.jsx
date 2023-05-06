@@ -56,54 +56,53 @@ const PlayerContent = () => {
       filter: isPlayListUpdated,
     });
 
-    const [url_list, setUrlList] = useState([]);
-
-    var [playing, setPlaying] = React.useState(true);
-    var [video_url, setVideoUrl] = React.useState('');
-    var [video_idx, setVideoIdx] = React.useState(0);
+    var [url_list, setUrlList] = useState({ urls: [] });
+    var [playing, setPlaying] = useState(true);
+    var [video_url, setVideoUrl] = useState('');
 
     useEffect(() => {
-      if (lastJsonMessage?.data?.url_list) {
-        var { url_list } = lastJsonMessage.data;
-        setUrlList(url_list);
+      if (url_list.urls.length > 0) {
+        setVideoUrl(url_list.urls[0]);
+      } else {
+        console.log('url_list is empty');
+      }
+    }, [url_list]);
 
-        if (video_url == '') {
-          setVideoUrl(url_list[0]);
-        }
+    useEffect(() => {
+      if (lastJsonMessage?.data?.youtube_url) {
+        var { youtube_url } = lastJsonMessage.data;
+        setUrlList({ urls: [...url_list.urls, youtube_url] });
       }
     }, [lastJsonMessage]);
 
-    const helloEnded = () => {
-      setPlaying(false);
-
-      if (url_list.length > 0) {
-        var url = url_list.pop();
-        setVideoUrl(url);
-      } else {
-      }
-
-      setTimeout(() => {
-        setPlaying(true);
-      }, 100);
-    };
-
-    if (url_list.length == 0) {
+    if (url_list?.urls && url_list?.urls?.length == 0 && video_url == '') {
       return <>list is empty</>;
     }
 
     return (
       <>
-        <div>hello</div>
-        <pre>{JSON.stringify(url_list, null, 2)}</pre>
-        <div>world</div>
-
         <ReactPlayer
           url={video_url}
           playing={playing}
           width={'100vw'}
           height={'66vw'}
-          onEnded={helloEnded}
+          onEnded={() => {
+            setPlaying(false);
+            setVideoUrl('');
+
+            if (url_list.urls.length > 1) {
+              var temp = url_list.urls.slice(1, 9999);
+              setUrlList({ urls: temp });
+            } else {
+              setUrlList({ urls: [] });
+            }
+            setTimeout(() => {
+              setPlaying(true);
+            }, 100);
+          }}
         />
+
+        <pre>{JSON.stringify({ video_url, url_list, playing }, null, 2)}</pre>
       </>
     );
   } catch (error) {
@@ -140,9 +139,8 @@ const App = () => {
 
     return (
       <div>
-        helloworld app
-        <ReceiveJsonMessge />
         <PlayerContent />
+        <ReceiveJsonMessge />
       </div>
     );
   } catch (error) {
