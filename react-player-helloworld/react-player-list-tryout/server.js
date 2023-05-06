@@ -17,6 +17,12 @@ app.listen(express_port, () => {
   console.log('Server is running at http://localhost:' + express_port);
 });
 
+const url_list = [
+  'https://www.youtube.com/watch?v=cBkNtO86_mY',
+  'https://www.youtube.com/watch?v=icPHcK_cCF4',
+  'https://www.youtube.com/watch?v=s-MsZo02dos',
+];
+
 const http = require('http');
 const uuidv4 = require('uuid').v4;
 const { WebSocket, WebSocketServer } = require('ws');
@@ -43,19 +49,20 @@ let userActivity = [];
 // Event types
 const typesDef = {
   USER_EVENT: 'userevent',
-  CONTENT_CHANGE: 'contentchange'
-}
+  CONTENT_CHANGE: 'contentchange',
+  PLAYLIST_CHANGE: 'playlistchange',
+};
 
 function broadcastMessage(json) {
   // We are sending the current data to all connected clients
   const data = JSON.stringify(json);
-  for(let userId in clients) {
+  for (let userId in clients) {
     let client = clients[userId];
-    if(client.readyState === WebSocket.OPEN) {
+    if (client.readyState === WebSocket.OPEN) {
       client.send(data);
       // console.log(`broadcastMessage done ${userId}`)
     }
-  };
+  }
 }
 
 function handleMessage(message, userId) {
@@ -72,23 +79,17 @@ function handleMessage(message, userId) {
   broadcastMessage(json);
 }
 
-function handleHelloworldMessage(){
+function handleHelloworldMessage() {
   try {
-    broadcastMessage(
-      {
-        type: 'contentchange',
-        data: {
-          editorContent: 'aaaa',
-          userActivity: [ 'aaa joined to edit the document' ]
-        }
-      },
-    )
+    broadcastMessage({
+      type: typesDef.PLAYLIST_CHANGE,
+      data: { url_list },
+    });
   } catch (error) {
-    console.log('handleHelloworldMessage error found')
-    throw(error)
+    console.log('handleHelloworldMessage error found');
+    throw error;
   }
 }
-
 
 function handleDisconnect(userId) {
     console.log(`${userId} disconnected.`);

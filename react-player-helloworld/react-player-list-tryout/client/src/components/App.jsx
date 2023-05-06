@@ -1,8 +1,14 @@
 import React, { Component, useState, useEffect } from 'react';
 import useWebSocket, { ReadyState } from 'react-use-websocket';
-import ReactPlayer from "react-player";
+import ReactPlayer from 'react-player';
 
 const WS_URL = 'ws://127.0.0.1:8000';
+
+const typesDef = {
+  USER_EVENT: 'userevent',
+  CONTENT_CHANGE: 'contentchange',
+  PLAYLIST_CHANGE: 'playlistchange',
+};
 
 function isUserEvent(message) {
   let evt = JSON.parse(message.data);
@@ -14,103 +20,103 @@ function isDocumentEvent(message) {
   return evt.type === 'contentchange';
 }
 
+function isPlayListUpdated(message) {
+  let evt = JSON.parse(message.data);
+  return evt.type === typesDef.PLAYLIST_CHANGE;
+}
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-const ReceiveJsonMessge = () =>{
+const ReceiveJsonMessge = () => {
   try {
-    const {lastJsonMessage} = useWebSocket(WS_URL, {
+    const { lastJsonMessage } = useWebSocket(WS_URL, {
       share: true,
-      filter: isDocumentEvent
+      filter: isPlayListUpdated,
     });
 
-    return(
-      <div>
-        {JSON.stringify(lastJsonMessage)}
-      </div>
-    )
+    return <div>{JSON.stringify(lastJsonMessage)}</div>;
   } catch (error) {
-    throw(error);
-    return (
-      <>sorry some error occured</>
-    )
+    console.error(error);
+    return <>sorry some error occured</>;
   }
+};
 
-}
+const App = () => {
+  try {
+    const [username, setUsername] = useState('');
+    const { sendJsonMessage, readyState } = useWebSocket(WS_URL, {
+      onOpen: () => {
+        console.log('WebSocket connection established.');
+      },
+      share: true,
+      filter: () => false,
+      retryOnError: true,
+      shouldReconnect: () => true,
+    });
 
-const App = () =>{
-  const [username, setUsername] = useState('');
-  const {  sendJsonMessage, readyState } = useWebSocket(WS_URL, {
-    onOpen: () => {
-      console.log('WebSocket connection established.');
-    },
-    share: true,
-    filter: () => false,
-    retryOnError: true,
-    shouldReconnect: () => true
-  });
+    useEffect(() => {
+      if (username && readyState === ReadyState.OPEN) {
+        sendJsonMessage({
+          username,
+          type: 'userevent',
+        });
+      }
+    }, [username, sendJsonMessage, readyState]);
 
-  useEffect(() => {
-    if(username && readyState === ReadyState.OPEN) {
-      sendJsonMessage({
-        username,
-        type: 'userevent'
-      });
-    }
-  }, [username, sendJsonMessage, readyState]);
+    var [playing, setPlaying] = React.useState(true);
+    var [video_url, setVideoUrl] = React.useState(url_list[0]);
+    var [video_idx, setVideoIdx] = React.useState(0);
+    // useEffect(()=>{
+    //   console.log({lastJsonMessage})
+    // },[lastJsonMessage])
 
-  // useEffect(()=>{
-  //   console.log({lastJsonMessage})
-  // },[lastJsonMessage])
-
-  return(
-    <div>
-      helloworld app
-      <ReceiveJsonMessge />
-    </div>
-  )
-}
+    return (
+      <div>
+        helloworld app
+        <ReceiveJsonMessge />
+      </div>
+    );
+  } catch (error) {
+    // throw error
+    console.error(error);
+    return <>sorry but error occured</>;
+  }
+};
 
 function App1() {
   const url_list = [
     'https://www.youtube.com/watch?v=cBkNtO86_mY',
     'https://www.youtube.com/watch?v=icPHcK_cCF4',
     'https://www.youtube.com/watch?v=s-MsZo02dos',
-  ]
+  ];
 
-  var [playing, setPlaying] = React.useState(true)
-  var [video_url, setVideoUrl] = React.useState(url_list[0])
-  var [video_idx, setVideoIdx] = React.useState(0)
+  var [playing, setPlaying] = React.useState(true);
+  var [video_url, setVideoUrl] = React.useState(url_list[0]);
+  var [video_idx, setVideoIdx] = React.useState(0);
 
-  const helloEnded = () =>{
+  const helloEnded = () => {
     console.log('hello ended');
 
     setPlaying(false);
 
-    if (video_idx < url_list.length-1 ) {
-      setVideoIdx(video_idx+1)
-    }else{
-      setVideoIdx(0)
+    if (video_idx < url_list.length - 1) {
+      setVideoIdx(video_idx + 1);
+    } else {
+      setVideoIdx(0);
     }
 
-    setVideoUrl(url_list[video_idx])
+    setVideoUrl(url_list[video_idx]);
 
     setTimeout(() => {
-      setPlaying(true)
+      setPlaying(true);
     }, 100);
-
-  }
+  };
 
   return (
     <div className="App">
-      <ReactPlayer
-        url={video_url}
-        playing={playing}
-        width={'100vw'}
-        height={'66vw'}
-        onEnded={helloEnded}
-      />
+      <ReactPlayer url={video_url} playing={playing} width={'100vw'} height={'66vw'} onEnded={helloEnded} />
 
       <div>
         <pre>{JSON.stringify(video_url)}</pre>
