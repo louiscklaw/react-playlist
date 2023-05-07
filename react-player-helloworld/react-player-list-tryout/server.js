@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.use(express.static('client/dist'));
-app.use('/test', express.static('test'))
+app.use('/endpoint_test', express.static('test/endpoint_test'));
 
 app.post('/helloworld', (req, res) =>{
   console.log(req)
