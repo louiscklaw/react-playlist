@@ -1,6 +1,6 @@
 const express_port = 3000;
 
-const express = require("express");
+const express = require('express');
 const app = express();
 
 app.use(express.json());
@@ -8,10 +8,23 @@ app.use(express.json());
 app.use(express.static('client/dist'));
 app.use('/endpoint_test', express.static('test/endpoint_test'));
 
-app.post('/helloworld', (req, res) =>{
-  console.log(req)
-  res.send({hello: 'helloworld from server'})
-})
+app.post('/helloworld', (req, res) => {
+  console.log(req);
+  res.send({ hello: 'helloworld from server' });
+});
+
+app.post('/add_youtube_video_id', (req, res) => {
+  var temp = req.body;
+  console.log(req.body);
+  var { youtube_video_id } = temp;
+  broadcastMessage({
+    type: typesDef.PLAYLIST_CHANGE,
+    data: {
+      youtube_url: `https://www.youtube.com/watch?v=${youtube_video_id}`,
+    },
+  });
+  res.send({ result: `added ${youtube_video_id}` });
+});
 
 app.post('/add_youtube_1', (req, res) => {
   try {
@@ -138,18 +151,18 @@ function handleHelloworldMessage() {
 }
 
 function handleDisconnect(userId) {
-    console.log(`${userId} disconnected.`);
-    const json = { type: typesDef.USER_EVENT };
-    const username = users[userId]?.username || userId;
-    userActivity.push(`${username} left the document`);
-    json.data = { users, userActivity };
-    delete clients[userId];
-    delete users[userId];
-    broadcastMessage(json);
+  console.log(`${userId} disconnected.`);
+  const json = { type: typesDef.USER_EVENT };
+  const username = users[userId]?.username || userId;
+  userActivity.push(`${username} left the document`);
+  json.data = { users, userActivity };
+  delete clients[userId];
+  delete users[userId];
+  broadcastMessage(json);
 }
 
 // A new client connection request received
-wsServer.on('connection', function(connection) {
+wsServer.on('connection', function (connection) {
   // Generate a unique code for every user
   const userId = uuidv4();
   console.log('Recieved a new connection');
@@ -157,12 +170,11 @@ wsServer.on('connection', function(connection) {
   // Store the new connection and handle messages
   clients[userId] = connection;
   console.log(`${userId} connected.`);
-  connection.on('message', (message) => handleMessage(message, userId));
+  connection.on('message', message => handleMessage(message, userId));
   // User disconnected
   connection.on('close', () => handleDisconnect(userId));
 
   setTimeout(() => {
-    handleHelloworldMessage()
+    handleHelloworldMessage();
   }, 3000);
-
 });

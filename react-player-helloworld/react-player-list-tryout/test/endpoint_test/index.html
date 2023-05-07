@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  this is test page
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    this is test page
 
-  <button id="hello_post_button">hello post button</button>
-  <button id="add_youtube_1">add_youtube_1</button>
-  <button id="add_youtube_2">add_youtube_2</button>
-  <button id="add_youtube_3">add_youtube_3</button>
-  <script>
+    <button id="hello_post_button">hello post button</button>
+    <button id="add_youtube_1">add_youtube_1</button>
+    <button id="add_youtube_2">add_youtube_2</button>
+    <button id="add_youtube_3">add_youtube_3</button>
 
-    // Example POST method implementation:
-    async function postData(url = "", data = {}) {
-      // Default options are marked with *
-      const response = await fetch(url, {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(data), // body data type must match "Content-Type" header
+    <form onsubmit="return false;">
+      <div>
+        <label for="example">Let's submit some text</label>
+        <input
+          id="youtube_video_id"
+          type="text"
+          placeholder="youtube-video-id-here"
+          value="cBkNtO86_mY"
+        />
+      </div>
+      <div>
+        <button onclick="post_link()">post link</button>
+      </div>
+    </form>
+
+    <script>
+      // Example POST method implementation:
+      async function postData(url = '', data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          mode: 'cors', // no-cors, *cors, same-origin
+          cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: 'same-origin', // include, *same-origin, omit
+          headers: {
+            'Content-Type': 'application/json',
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: 'follow', // manual, *follow, error
+          referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify(data), // body data type must match "Content-Type" header
+        });
+        return response.json(); // parses JSON response into native JavaScript objects
+      }
+
+      function post_link() {
+        var youtube_video_id = document.getElementById('youtube_video_id').value
+        postData('//localhost:3000/add_youtube_video_id', { youtube_video_id }).then(
+          data => {
+            console.log(data); // JSON data parsed by `data.json()` call
+          },
+        );
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document
+          .getElementById('add_youtube_1')
+          .addEventListener('click', () => {
+            postData('//localhost:3000/add_youtube_1', { hello: 'world' }).then(
+              data => {
+                console.log(data); // JSON data parsed by `data.json()` call
+              },
+            );
+          });
+
+        document
+          .getElementById('add_youtube_2')
+          .addEventListener('click', () => {
+            postData('//localhost:3000/add_youtube_2', { hello: 'world' }).then(
+              data => {
+                console.log(data); // JSON data parsed by `data.json()` call
+              },
+            );
+          });
+
+        document
+          .getElementById('add_youtube_3')
+          .addEventListener('click', () => {
+            postData('//localhost:3000/add_youtube_3', { hello: 'world' }).then(
+              data => {
+                console.log(data); // JSON data parsed by `data.json()` call
+              },
+            );
+          });
       });
-      return response.json(); // parses JSON response into native JavaScript objects
-    }
-
-    document.addEventListener("DOMContentLoaded",()=>{
-
-      document.getElementById('add_youtube_1').addEventListener('click',() =>{
-        postData("//localhost:3000/add_youtube_1", { hello: "world" })
-        .then((data) => {
-          console.log(data); // JSON data parsed by `data.json()` call
-        });
-      })
-
-      document.getElementById('add_youtube_2').addEventListener('click',() =>{
-        postData("//localhost:3000/add_youtube_2", { hello: "world" })
-        .then((data) => {
-          console.log(data); // JSON data parsed by `data.json()` call
-        });
-      })
-
-
-
-      document.getElementById('add_youtube_3').addEventListener('click',() =>{
-        postData("//localhost:3000/add_youtube_3", { hello: "world" })
-        .then((data) => {
-          console.log(data); // JSON data parsed by `data.json()` call
-        });
-      })
-    })
-
-  </script>
-</body>
+    </script>
+  </body>
 </html>
