@@ -130,7 +130,16 @@ const PlayerContent = ({ stored_list }) => {
           }}
         />
 
-        {/* <pre>{JSON.stringify({ video_url, url_list, playing }, null, 2)}</pre> */}
+        <div>
+          <div>current playlist</div>
+          <div>
+            {url_list.urls.map((u, idx) => (
+              <div>
+                {idx} - {u}
+              </div>
+            ))}
+          </div>
+        </div>
       </>
     );
   } catch (error) {

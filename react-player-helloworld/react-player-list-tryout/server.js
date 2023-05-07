@@ -36,7 +36,7 @@ server.listen(port, () => {
 // web socket
 //
 
-function broadcastMessage(json) {
+function broadcastMessage1(json) {
   // We are sending the current data to all connected clients
   const data = JSON.stringify(json);
   for (let userId in clients) {
@@ -48,7 +48,7 @@ function broadcastMessage(json) {
   }
 }
 
-// const { broadcastMessage } = require('./server/broadcastMessage');
+const { broadcastMessage } = require('./server/broadcastMessage');
 
 function handleMessage(message, userId) {
   const dataFromClient = JSON.parse(message.toString());
@@ -61,7 +61,7 @@ function handleMessage(message, userId) {
     editorContent = dataFromClient.content;
     json.data = { editorContent, userActivity };
   }
-  broadcastMessage(json);
+  broadcastMessage(json, clients);
 }
 
 function handleDisconnect(userId) {
@@ -72,7 +72,7 @@ function handleDisconnect(userId) {
   json.data = { users, userActivity };
   delete clients[userId];
   delete users[userId];
-  broadcastMessage(json);
+  broadcastMessage(json, clients);
 }
 
 // A new client connection request received
