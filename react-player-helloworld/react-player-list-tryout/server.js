@@ -32,10 +32,6 @@ server.listen(port, () => {
   console.log(`WebSocket server is running on port ${port}`);
 });
 
-//
-// web socket
-//
-
 
 const { broadcastMessage } = require('./server/broadcastMessage');
 
