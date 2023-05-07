@@ -2,9 +2,11 @@ import React, { Component, useState, useEffect } from 'react';
 import useWebSocket, { ReadyState } from 'react-use-websocket';
 import ReactPlayer from 'react-player';
 
+import { typesDef } from './typesDef';
+
 const WS_URL = 'ws://127.0.0.1:8000';
 
-const typesDef = {
+const typesDef_obsolete = {
   USER_EVENT: 'userevent',
   CONTENT_CHANGE: 'contentchange',
   PLAYLIST_CHANGE: 'playlistchange',
