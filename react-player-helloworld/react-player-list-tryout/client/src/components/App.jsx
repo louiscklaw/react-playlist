@@ -62,18 +62,38 @@ const PlayerContent = () => {
     useEffect(() => {
       console.log('lastJsonMessageUpdated');
 
-      if (lastJsonMessage?.data?.action == typesDef.ADD_URL) {
-        var { youtube_url } = lastJsonMessage.data;
-        setUrlList({ urls: [...url_list.urls, youtube_url] });
-      } else if (lastJsonMessage?.data?.action == typesDef.STOP_CURRENT_VIDEO) {
-        setPlaying(false);
-      } else if (
-        lastJsonMessage?.data?.action == typesDef.RESUME_CURRENT_VIDEO
-      ) {
-        setPlaying(true);
+      if (lastJsonMessage?.data?.action) {
+        let { action } = lastJsonMessage.data;
+
+        if (action == typesDef.ADD_URL) {
+          var { youtube_url } = lastJsonMessage.data;
+          setUrlList({ urls: [...url_list.urls, youtube_url] });
+        } else if (action == typesDef.STOP_CURRENT_VIDEO) {
+          setPlaying(false);
+        } else if (action == typesDef.RESUME_CURRENT_VIDEO) {
+          setPlaying(true);
+        } else if (action == typesDef.SKIP_CURRENT_VIDEO) {
+          setPlaying(false);
+
+          setVideoUrl('');
+
+          if (url_list.urls.length > 1) {
+            var temp = url_list.urls.slice(1, 9999);
+            setUrlList({ urls: temp });
+          } else {
+            setUrlList({ urls: [] });
+          }
+
+          setTimeout(() => {
+            setPlaying(true);
+          }, 100);
+        } else {
+          console.log(`no match action ${action}`);
+        }
       } else {
-        console.log('no match action');
+        console.log('action not found');
       }
+
     }, [lastJsonMessage]);
 
     if (url_list?.urls && url_list?.urls?.length == 0 && video_url == '') {

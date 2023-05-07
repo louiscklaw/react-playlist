@@ -8,6 +8,7 @@ const typesDef = {
   STOP_CURRENT_VIDEO: 'stop_current_video',
   RESUME_CURRENT_VIDEO: 'resume_current_video',
   SKIP_CURRENT_VIDEO: 'skip_current_video',
+  SKIP_VIDEO_WITH_ID: 'skip_video_with_id',
 };
 
 export { typesDef };

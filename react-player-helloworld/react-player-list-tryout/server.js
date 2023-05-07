@@ -23,13 +23,6 @@ app.post('/helloworld', (req, res) => {
   res.send({ hello: 'helloworld from server' });
 });
 
-const { addYoutubeVideoId } = require('./server/addYoutubeVideoId');
-app.post('/add_youtube_video_id', (req, res) => {
-  try {
-    addYoutubeVideoId(req, res, clients);
-    res.send({ result: `added ${youtube_video_id}` });
-  } catch (error) {}
-});
 
 app.post('/add_youtube_1', (req, res) => {
   try {
@@ -199,6 +192,20 @@ wsServer.on('connection', function (connection) {
 const { stopCurrentPlay } = require('./server/stopCurrentPlay');
 const { skipCurrentPlay } = require('./server/skipCurrentPlay');
 const { resumeCurrentPlay } = require('./server/resumeCurrentPlay');
+const { addYoutubeVideoId } = require('./server/addYoutubeVideoId');
+
+app.post('/add_youtube_video_id', (req, res) => {
+  try {
+    var temp = req.body;
+    console.log(req.body);
+    var { youtube_video_id } = temp;
+    addYoutubeVideoId(youtube_video_id, clients);
+    res.send({ result: `added ${youtube_video_id}` });
+  } catch (error) {
+    console.log(error);
+    res.send({ result: 'error' });
+  }
+});
 
 app.get('/stopCurrentPlay', (req, res) => {
   try {

@@ -40,16 +40,25 @@
 
     <form onsubmit="return false;">
       <div>
-        <label for="example">Let's submit some text</label>
-        <input
-          id="youtube_video_id"
-          type="text"
-          placeholder="youtube-video-id-here"
-          value="cBkNtO86_mY"
-        />
+          <input
+            id="youtube_video_id_to_add"
+            type="text"
+            placeholder="youtube-video-id-here"
+            value="cBkNtO86_mY"
+          />
+          <button onclick="add_link()">add_link()</button>
       </div>
+    </form>
+
+    <form onsubmit="return false;">
       <div>
-        <button onclick="post_link()">post link</button>
+          <input
+            id="youtube_video_id_to_delete"
+            type="text"
+            placeholder="youtube-video-id-here"
+            value="cBkNtO86_mY"
+          />
+          <button onclick="delete_link()">delete_link()</button>
       </div>
     </form>
 
@@ -91,11 +100,11 @@
         return response.json(); // parses JSON response into native JavaScript objects
       }
 
-      function post_link() {
-        var youtube_video_id =
-          document.getElementById('youtube_video_id').value;
+      function add_link() {
+        var youtube_video_id_to_add =
+          document.getElementById('youtube_video_id_to_add').value;
         postData('//localhost:3000/add_youtube_video_id', {
-          youtube_video_id,
+          youtube_video_id:youtube_video_id_to_add,
         }).then(data => {
           console.log(data); // JSON data parsed by `data.json()` call
         });

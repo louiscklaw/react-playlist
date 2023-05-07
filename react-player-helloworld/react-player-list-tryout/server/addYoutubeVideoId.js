@@ -1,15 +1,13 @@
 const { broadcastMessage } = require('./broadcastMessage');
 const { typesDef } = require('./typesDef');
 
-const addYoutubeVideoId = (req, res, clients) => {
+const addYoutubeVideoId = (youtube_video_id, clients) => {
   try {
-    var temp = req.body;
-    console.log(req.body);
-    var { youtube_video_id } = temp;
     broadcastMessage(
       {
         type: typesDef.PLAYLIST_CHANGE,
         data: {
+          action: typesDef.ADD_URL,
           youtube_url: `https://www.youtube.com/watch?v=${youtube_video_id}`,
         },
       },

@@ -6,7 +6,7 @@ const skipCurrentPlay = (req, clients) => {
     broadcastMessage(
       {
         type: typesDef.PLAYLIST_CHANGE,
-        data: { action: typesDef.STOP_CURRENT_VIDEO },
+        data: { action: typesDef.SKIP_CURRENT_VIDEO },
       },
       clients,
     );
