@@ -151,23 +151,6 @@ app.get('/resumeCurrentPlay', (req, res) => {
   }
 });
 
-// overflow handler
-app.get('/*', (req, res) => {
-  try {
-    console.log('request fallen to overflow handler');
-    console.log(req.url);
-    res.send({ result: 'done' });
-  } catch (error) {}
-});
-
-app.post('/*', (req, res) => {
-  try {
-    console.log('request fallen to overflow handler');
-    console.log(req.url);
-    res.send({ result: 'done' });
-  } catch (error) {}
-});
-
 app.post('/add_youtube_1', (req, res) => {
   try {
     console.log(req);
@@ -243,4 +226,21 @@ app.post('/add_youtube_long_video', (req, res) => {
 app.post('/helloworld', (req, res) => {
   console.log(req);
   res.send({ hello: 'helloworld from server' });
+});
+
+// overflow handler
+app.get('/*', (req, res) => {
+  try {
+    console.log('request fallen to overflow handler');
+    console.log(req.url);
+    res.send({ result: 'done' });
+  } catch (error) {}
+});
+
+app.post('/*', (req, res) => {
+  try {
+    console.log('request fallen to overflow handler');
+    console.log(req.url);
+    res.send({ result: 'done' });
+  } catch (error) {}
 });
