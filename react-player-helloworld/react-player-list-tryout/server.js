@@ -64,18 +64,6 @@ function handleMessage(message, userId) {
   broadcastMessage(json);
 }
 
-function handleHelloworldMessage() {
-  try {
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: { youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos' },
-    });
-  } catch (error) {
-    console.log('handleHelloworldMessage error found');
-    throw error;
-  }
-}
-
 function handleDisconnect(userId) {
   console.log(`${userId} disconnected.`);
   const json = { type: typesDef.USER_EVENT };
