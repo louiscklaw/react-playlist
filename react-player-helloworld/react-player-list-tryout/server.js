@@ -36,17 +36,6 @@ server.listen(port, () => {
 // web socket
 //
 
-function broadcastMessage1(json) {
-  // We are sending the current data to all connected clients
-  const data = JSON.stringify(json);
-  for (let userId in clients) {
-    let client = clients[userId];
-    if (client.readyState === WebSocket.OPEN) {
-      client.send(data);
-      // console.log(`broadcastMessage done ${userId}`)
-    }
-  }
-}
 
 const { broadcastMessage } = require('./server/broadcastMessage');
 
