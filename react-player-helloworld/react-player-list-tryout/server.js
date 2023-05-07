@@ -1,4 +1,5 @@
 const express_port = 3000;
+const { typesDef } = require('./server/typesDef');
 
 const express = require('express');
 const app = express();
@@ -105,12 +106,12 @@ let editorContent = null;
 let userActivity = [];
 
 // Event types
-const typesDef = {
-  USER_EVENT: 'userevent',
-  CONTENT_CHANGE: 'contentchange',
-  PLAYLIST_CHANGE: 'playlistchange',
-  ADD_YOUTUBE_URL: 'addYoutubeUrl',
-};
+// const typesDef = {
+//   USER_EVENT: 'userevent',
+//   CONTENT_CHANGE: 'contentchange',
+//   PLAYLIST_CHANGE: 'playlistchange',
+//   ADD_YOUTUBE_URL: 'addYoutubeUrl',
+// };
 
 function broadcastMessage(json) {
   // We are sending the current data to all connected clients
@@ -177,4 +178,16 @@ wsServer.on('connection', function (connection) {
   setTimeout(() => {
     handleHelloworldMessage();
   }, 3000);
+});
+
+const { stopCurrentPlay } = require('./server/stopCurrentPlay');
+
+app.get('/stopCurrentPlay', (req, res) => {
+  try {
+    stopCurrentPlay();
+    res.send({ result: 'done' });
+  } catch (error) {
+    console.log(error);
+    res.send({ result: 'error' });
+  }
 });
