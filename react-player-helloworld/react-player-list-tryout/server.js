@@ -139,13 +139,16 @@ app.get('/resumeCurrentPlay', (req, res) => {
 app.post('/add_youtube_1', (req, res) => {
   try {
     console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY',
+    broadcastMessage(
+      {
+        type: typesDef.PLAYLIST_CHANGE,
+        data: {
+          action: typesDef.ADD_URL,
+          youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY',
+        },
       },
-    });
+      clients,
+    );
     res.send({ hello: 'add_youtube_1 from server' });
   } catch (error) {
     console.log('add_youtube_1 error found');
@@ -157,13 +160,16 @@ app.post('/add_youtube_1', (req, res) => {
 app.post('/add_youtube_2', (req, res) => {
   try {
     console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4',
+    broadcastMessage(
+      {
+        type: typesDef.PLAYLIST_CHANGE,
+        data: {
+          action: typesDef.ADD_URL,
+          youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4',
+        },
       },
-    });
+      clients,
+    );
     res.send({ hello: 'add_youtube_2 from server' });
   } catch (error) {
     console.log('add_youtube_2 error found');
@@ -175,13 +181,16 @@ app.post('/add_youtube_2', (req, res) => {
 app.post('/add_youtube_3', (req, res) => {
   try {
     console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos',
+    broadcastMessage(
+      {
+        type: typesDef.PLAYLIST_CHANGE,
+        data: {
+          action: typesDef.ADD_URL,
+          youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos',
+        },
       },
-    });
+      clients,
+    );
     res.send({ hello: 'add_youtube_2 from server' });
   } catch (error) {
     console.log('add_youtube_2 error found');
@@ -193,13 +202,16 @@ app.post('/add_youtube_3', (req, res) => {
 app.post('/add_youtube_long_video', (req, res) => {
   try {
     console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg',
+    broadcastMessage(
+      {
+        type: typesDef.PLAYLIST_CHANGE,
+        data: {
+          action: typesDef.ADD_URL,
+          youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg',
+        },
       },
-    });
+      clients,
+    );
     res.send({ hello: 'add_youtube_2 from server' });
   } catch (error) {
     console.log('add_youtube_2 error found');
