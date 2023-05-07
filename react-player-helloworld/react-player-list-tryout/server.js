@@ -79,6 +79,7 @@ const { skipCurrentPlay } = require('./server/skipCurrentPlay');
 const { resumeCurrentPlay } = require('./server/resumeCurrentPlay');
 const { addYoutubeVideoId } = require('./server/addYoutubeVideoId');
 const { delYoutubeVideoId } = require('./server/delYoutubeVideoId');
+const routes = require('./server/routes');
 
 app.post('/add_youtube_video_id', (req, res) => {
   try {
@@ -178,52 +179,7 @@ app.post('/add_youtube_2', (req, res) => {
   }
 });
 
-app.post('/add_youtube_3', (req, res) => {
-  try {
-    console.log(req);
-    broadcastMessage(
-      {
-        type: typesDef.PLAYLIST_CHANGE,
-        data: {
-          action: typesDef.ADD_URL,
-          youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos',
-        },
-      },
-      clients,
-    );
-    res.send({ hello: 'add_youtube_2 from server' });
-  } catch (error) {
-    console.log('add_youtube_2 error found');
-    res.send({ result: 'add_youtube_2 error' });
-    throw error;
-  }
-});
-
-app.post('/add_youtube_long_video', (req, res) => {
-  try {
-    console.log(req);
-    broadcastMessage(
-      {
-        type: typesDef.PLAYLIST_CHANGE,
-        data: {
-          action: typesDef.ADD_URL,
-          youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg',
-        },
-      },
-      clients,
-    );
-    res.send({ hello: 'add_youtube_2 from server' });
-  } catch (error) {
-    console.log('add_youtube_2 error found');
-    res.send({ result: 'add_youtube_2 error' });
-    throw error;
-  }
-});
-
-app.post('/helloworld', (req, res) => {
-  console.log(req);
-  res.send({ hello: 'helloworld from server' });
-});
+routes(app, clients);
 
 // overflow handler
 app.get('/*', (req, res) => {
