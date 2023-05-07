@@ -198,7 +198,6 @@ wsServer.on('connection', function (connection) {
 
 const { stopCurrentPlay } = require('./server/stopCurrentPlay');
 const { skipCurrentPlay } = require('./server/skipCurrentPlay');
-const { resumeCurrentPlay } = require('./server/resumeCurrentPlay');
 
 app.get('/stopCurrentPlay', (req, res) => {
   try {

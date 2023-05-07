@@ -26,6 +26,18 @@
       ></div
     >
 
+    <div
+      ><button id="resume_current_play" onclick="resumeCurrentPlay()"
+        >resume_current_play</button
+      ></div
+    >
+
+    <div
+      ><button id="skip_current_play" onclick="skipCurrentPlay()"
+        >skip_current_play</button
+      ></div
+    >
+
     <form onsubmit="return false;">
       <div>
         <label for="example">Let's submit some text</label>
@@ -44,6 +56,18 @@
     <script>
       function stopCurrentPlay() {
         fetch('//localhost:3000/stopCurrentPlay')
+          .then(res => res.json())
+          .then(res_json => console.log(res_json));
+      }
+
+      function resumeCurrentPlay() {
+        fetch('//localhost:3000/resumeCurrentPlay')
+          .then(res => res.json())
+          .then(res_json => console.log(res_json));
+      }
+
+      function skipCurrentPlay() {
+        fetch('//localhost:3000/skipCurrentPlay')
           .then(res => res.json())
           .then(res_json => console.log(res_json));
       }
