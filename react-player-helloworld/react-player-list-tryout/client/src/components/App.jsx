@@ -141,7 +141,11 @@ const PlayerContent = ({ stored_list }) => {
 
 const App = () => {
   try {
-    const [username, setUsername] = useState('');
+    const [stored_list] = useState(loadPlaylist());
+    const [username, setUsername] = useState('player');
+    const [debug, setDebug] = useState({});
+    const [connection_status, setConnectionStatus] = useState();
+
     const { sendJsonMessage, readyState } = useWebSocket(WS_URL, {
       onOpen: () => {
         console.log('WebSocket connection established.');
@@ -151,7 +155,6 @@ const App = () => {
       retryOnError: true,
       shouldReconnect: () => true,
     });
-    const [stored_list] = useState(loadPlaylist());
 
     useEffect(() => {
       if (username && readyState === ReadyState.OPEN) {
@@ -159,13 +162,18 @@ const App = () => {
           username,
           type: 'userevent',
         });
+        setConnectionStatus('connected');
+      } else if (readyState === ReadyState.CLOSED) {
+        setConnectionStatus('disconnected');
       }
+      setDebug({ connection_status });
     }, [username, sendJsonMessage, readyState]);
 
     return (
       <div>
         <PlayerContent stored_list={stored_list} />
-        <ReceiveJsonMessge />
+        {/* <ReceiveJsonMessge /> */}
+        <pre>{JSON.stringify({ connection_status }, null, 2)}</pre>
       </div>
     );
   } catch (error) {
