@@ -9,6 +9,10 @@ const typesDef = {
   CONTENT_CHANGE: 'contentchange',
   PLAYLIST_CHANGE: 'playlistchange',
   ADD_YOUTUBE_URL: 'addYoutubeUrl',
+  PLAYER_CONTROL: 'player_control',
+  ADD_URL: 'add_url',
+  STOP_CURRENT_VIDEO: 'stop_current_video',
+  RESUME_CURRENT_VIDEO: 'resume_current_video',
 };
 
 function isUserEvent(message) {
@@ -29,10 +33,6 @@ function isPlayListUpdated(message) {
 function isAddYoutubeUrl(message) {
   let evt = JSON.parse(message.data);
   return evt.type === typesDef.ADD_YOUTUBE_URL;
-}
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
 }
 
 const ReceiveJsonMessge = () => {
@@ -69,9 +69,19 @@ const PlayerContent = () => {
     }, [url_list]);
 
     useEffect(() => {
-      if (lastJsonMessage?.data?.youtube_url) {
+      console.log('lastJsonMessageUpdated');
+
+      if (lastJsonMessage?.data?.action == typesDef.ADD_URL) {
         var { youtube_url } = lastJsonMessage.data;
         setUrlList({ urls: [...url_list.urls, youtube_url] });
+      } else if (lastJsonMessage?.data?.action == typesDef.STOP_CURRENT_VIDEO) {
+        setPlaying(false);
+      } else if (
+        lastJsonMessage?.data?.action == typesDef.RESUME_CURRENT_VIDEO
+      ) {
+        setPlaying(true);
+      } else {
+        console.log('no match action');
       }
     }, [lastJsonMessage]);
 

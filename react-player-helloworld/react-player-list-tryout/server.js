@@ -36,7 +36,10 @@ app.post('/add_youtube_1', (req, res) => {
     console.log(req);
     broadcastMessage({
       type: typesDef.PLAYLIST_CHANGE,
-      data: { youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY' },
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY',
+      },
     });
     res.send({ hello: 'add_youtube_1 from server' });
   } catch (error) {
@@ -51,7 +54,10 @@ app.post('/add_youtube_2', (req, res) => {
     console.log(req);
     broadcastMessage({
       type: typesDef.PLAYLIST_CHANGE,
-      data: { youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4' },
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4',
+      },
     });
     res.send({ hello: 'add_youtube_2 from server' });
   } catch (error) {
@@ -66,7 +72,10 @@ app.post('/add_youtube_3', (req, res) => {
     console.log(req);
     broadcastMessage({
       type: typesDef.PLAYLIST_CHANGE,
-      data: { youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos' },
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos',
+      },
     });
     res.send({ hello: 'add_youtube_2 from server' });
   } catch (error) {
@@ -81,7 +90,10 @@ app.post('/add_youtube_long_video', (req, res) => {
     console.log(req);
     broadcastMessage({
       type: typesDef.PLAYLIST_CHANGE,
-      data: { youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg' },
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg',
+      },
     });
     res.send({ hello: 'add_youtube_2 from server' });
   } catch (error) {
@@ -188,7 +200,7 @@ const { stopCurrentPlay } = require('./server/stopCurrentPlay');
 
 app.get('/stopCurrentPlay', (req, res) => {
   try {
-    stopCurrentPlay();
+    stopCurrentPlay(req, clients);
     res.send({ result: 'done' });
   } catch (error) {
     console.log(error);

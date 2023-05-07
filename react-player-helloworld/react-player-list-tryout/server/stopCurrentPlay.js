@@ -1,11 +1,17 @@
+const { broadcastMessage } = require('./broadcastMessage');
 const { typesDef } = require('./typesDef');
 
-const stopCurrentPlay = () => {
+const stopCurrentPlay = (req, clients) => {
   try {
-    console.log(typesDef);
-    console.log('stop current play');
+    broadcastMessage(
+      {
+        type: typesDef.PLAYLIST_CHANGE,
+        data: { action: typesDef.STOP_CURRENT_VIDEO },
+      },
+      clients,
+    );
   } catch (error) {
-    console.log('error during calling stop player');
+    throw error;
   }
 };
 
