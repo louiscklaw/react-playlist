@@ -3,6 +3,7 @@ import useWebSocket, { ReadyState } from 'react-use-websocket';
 import ReactPlayer from 'react-player';
 
 import { typesDef } from './typesDef';
+import { storePlaylist, loadPlaylist } from '../localStore';
 
 const WS_URL = 'ws://127.0.0.1:8000';
 
@@ -40,14 +41,14 @@ const ReceiveJsonMessge = () => {
   }
 };
 
-const PlayerContent = () => {
+const PlayerContent = ({ stored_list }) => {
   try {
     const { lastJsonMessage } = useWebSocket(WS_URL, {
       share: true,
       filter: isPlayListUpdated,
     });
 
-    var [url_list, setUrlList] = useState({ urls: [] });
+    var [url_list, setUrlList] = useState({ urls: stored_list });
     var [playing, setPlaying] = useState(true);
     var [video_url, setVideoUrl] = useState('');
 
@@ -57,6 +58,8 @@ const PlayerContent = () => {
       } else {
         console.log('url_list is empty');
       }
+
+      storePlaylist(url_list.urls);
     }, [url_list]);
 
     useEffect(() => {
@@ -70,7 +73,9 @@ const PlayerContent = () => {
           setUrlList({ urls: [...url_list.urls, youtube_url] });
         } else if (action == typesDef.DEL_URL) {
           var { youtube_url } = lastJsonMessage.data;
-          setUrlList({ urls: [...url_list.urls.filter(u => u != youtube_url)] });
+          setUrlList({
+            urls: [...url_list.urls.filter(u => u != youtube_url)],
+          });
         } else if (action == typesDef.STOP_CURRENT_VIDEO) {
           setPlaying(false);
         } else if (action == typesDef.RESUME_CURRENT_VIDEO) {
@@ -96,7 +101,6 @@ const PlayerContent = () => {
       } else {
         console.log('action not found');
       }
-
     }, [lastJsonMessage]);
 
     if (url_list?.urls && url_list?.urls?.length == 0 && video_url == '') {
@@ -147,6 +151,7 @@ const App = () => {
       retryOnError: true,
       shouldReconnect: () => true,
     });
+    const [stored_list] = useState(loadPlaylist());
 
     useEffect(() => {
       if (username && readyState === ReadyState.OPEN) {
@@ -157,13 +162,9 @@ const App = () => {
       }
     }, [username, sendJsonMessage, readyState]);
 
-    // useEffect(()=>{
-    //   console.log({lastJsonMessage})
-    // },[lastJsonMessage])
-
     return (
       <div>
-        <PlayerContent />
+        <PlayerContent stored_list={stored_list} />
         <ReceiveJsonMessge />
       </div>
     );
