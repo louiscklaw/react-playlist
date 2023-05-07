@@ -1,3 +1,12 @@
+// I'm maintaining all active connections in this object
+const clients = {};
+// I'm maintaining all active users in this object
+const users = {};
+// The current editor content is maintained here.
+let editorContent = null;
+// User activity history.
+let userActivity = [];
+
 const express_port = 3000;
 const { typesDef } = require('./server/typesDef');
 
@@ -14,17 +23,12 @@ app.post('/helloworld', (req, res) => {
   res.send({ hello: 'helloworld from server' });
 });
 
+const { addYoutubeVideoId } = require('./server/addYoutubeVideoId');
 app.post('/add_youtube_video_id', (req, res) => {
-  var temp = req.body;
-  console.log(req.body);
-  var { youtube_video_id } = temp;
-  broadcastMessage({
-    type: typesDef.PLAYLIST_CHANGE,
-    data: {
-      youtube_url: `https://www.youtube.com/watch?v=${youtube_video_id}`,
-    },
-  });
-  res.send({ result: `added ${youtube_video_id}` });
+  try {
+    addYoutubeVideoId(req, res, clients);
+    res.send({ result: `added ${youtube_video_id}` });
+  } catch (error) {}
 });
 
 app.post('/add_youtube_1', (req, res) => {
@@ -72,6 +76,21 @@ app.post('/add_youtube_3', (req, res) => {
   }
 });
 
+app.post('/add_youtube_long_video', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.PLAYLIST_CHANGE,
+      data: { youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg' },
+    });
+    res.send({ hello: 'add_youtube_2 from server' });
+  } catch (error) {
+    console.log('add_youtube_2 error found');
+    res.send({ result: 'add_youtube_2 error' });
+    throw error;
+  }
+});
+
 app.listen(express_port, () => {
   console.log('Server is running at http://localhost:' + express_port);
 });
@@ -96,23 +115,6 @@ server.listen(port, () => {
 // web socket
 //
 
-// I'm maintaining all active connections in this object
-const clients = {};
-// I'm maintaining all active users in this object
-const users = {};
-// The current editor content is maintained here.
-let editorContent = null;
-// User activity history.
-let userActivity = [];
-
-// Event types
-// const typesDef = {
-//   USER_EVENT: 'userevent',
-//   CONTENT_CHANGE: 'contentchange',
-//   PLAYLIST_CHANGE: 'playlistchange',
-//   ADD_YOUTUBE_URL: 'addYoutubeUrl',
-// };
-
 function broadcastMessage(json) {
   // We are sending the current data to all connected clients
   const data = JSON.stringify(json);
@@ -124,6 +126,8 @@ function broadcastMessage(json) {
     }
   }
 }
+
+// const { broadcastMessage } = require('./server/broadcastMessage');
 
 function handleMessage(message, userId) {
   const dataFromClient = JSON.parse(message.toString());

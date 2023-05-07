@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      div {margin-top: 10px;}
+    </style>
   </head>
   <body>
     this is test page
 
-    <button id="hello_post_button">hello post button</button>
-    <button id="add_youtube_1">add_youtube_1</button>
-    <button id="add_youtube_2">add_youtube_2</button>
-    <button id="add_youtube_3">add_youtube_3</button>
+    <div><button id="hello_post_button">hello post button</button></div>
+    <div><button id="add_youtube_1">add_youtube_1</button></div>
+    <div><button id="add_youtube_2">add_youtube_2</button></div>
+    <div><button id="add_youtube_3">add_youtube_3</button></div>
+    <div
+      ><button id="add_youtube_long_video">add_youtube_long_video</button></div
+    >
 
-    <button id="stop_current_play" onclick="stopCurrentPlay()"
-      >stop_current_play</button
+    <div
+      ><button id="stop_current_play" onclick="stopCurrentPlay()"
+        >stop_current_play</button
+      ></div
     >
 
     <form onsubmit="return false;">
@@ -98,6 +106,16 @@
                 console.log(data); // JSON data parsed by `data.json()` call
               },
             );
+          });
+
+        document
+          .getElementById('add_youtube_long_video')
+          .addEventListener('click', () => {
+            postData('//localhost:3000/add_youtube_long_video', {
+              hello: 'world',
+            }).then(data => {
+              console.log(data); // JSON data parsed by `data.json()` call
+            });
           });
       });
     </script>
