@@ -7,7 +7,7 @@ const delYoutubeVideoId = (youtube_video_id, clients) => {
       {
         type: typesDef.PLAYLIST_CHANGE,
         data: {
-          action: typesDef.ADD_URL,
+          action: typesDef.DEL_URL,
           youtube_url: `https://www.youtube.com/watch?v=${youtube_video_id}`,
         },
       },

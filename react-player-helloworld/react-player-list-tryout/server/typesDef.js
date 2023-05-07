@@ -5,6 +5,7 @@ const typesDef = {
   ADD_YOUTUBE_URL: 'addYoutubeUrl',
   PLAYER_CONTROL: 'player_control',
   ADD_URL: 'add_url',
+  DEL_URL: 'del_url',
   STOP_CURRENT_VIDEO: 'stop_current_video',
   RESUME_CURRENT_VIDEO: 'resume_current_video',
   SKIP_CURRENT_VIDEO: 'skip_current_video',

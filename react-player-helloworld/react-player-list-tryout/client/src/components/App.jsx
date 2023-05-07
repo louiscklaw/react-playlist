@@ -68,6 +68,9 @@ const PlayerContent = () => {
         if (action == typesDef.ADD_URL) {
           var { youtube_url } = lastJsonMessage.data;
           setUrlList({ urls: [...url_list.urls, youtube_url] });
+        } else if (action == typesDef.DEL_URL) {
+          var { youtube_url } = lastJsonMessage.data;
+          setUrlList({ urls: [...url_list.urls.filter(u => u != youtube_url)] });
         } else if (action == typesDef.STOP_CURRENT_VIDEO) {
           setPlaying(false);
         } else if (action == typesDef.RESUME_CURRENT_VIDEO) {
