@@ -193,6 +193,7 @@ const { stopCurrentPlay } = require('./server/stopCurrentPlay');
 const { skipCurrentPlay } = require('./server/skipCurrentPlay');
 const { resumeCurrentPlay } = require('./server/resumeCurrentPlay');
 const { addYoutubeVideoId } = require('./server/addYoutubeVideoId');
+const { delYoutubeVideoId } = require('./server/delYoutubeVideoId');
 
 app.post('/add_youtube_video_id', (req, res) => {
   try {
@@ -201,6 +202,19 @@ app.post('/add_youtube_video_id', (req, res) => {
     var { youtube_video_id } = temp;
     addYoutubeVideoId(youtube_video_id, clients);
     res.send({ result: `added ${youtube_video_id}` });
+  } catch (error) {
+    console.log(error);
+    res.send({ result: 'error' });
+  }
+});
+
+app.post('/del_youtube_video_id', (req, res) => {
+  try {
+    var temp = req.body;
+    console.log(req.body);
+    var { youtube_video_id } = temp;
+    delYoutubeVideoId(youtube_video_id, clients);
+    res.send({ result: `delete ${youtube_video_id}` });
   } catch (error) {
     console.log(error);
     res.send({ result: 'error' });

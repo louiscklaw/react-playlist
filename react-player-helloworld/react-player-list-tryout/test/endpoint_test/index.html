@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {margin-top: 10px;}
+      div {
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
     this is test page
 
     <div><button id="hello_post_button">hello post button</button></div>
-    <div><button id="add_youtube_1">add_youtube_1</button></div>
-    <div><button id="add_youtube_2">add_youtube_2</button></div>
-    <div><button id="add_youtube_3">add_youtube_3</button></div>
+    <div><button onclick="add_youtube_1()">add_youtube_1</button></div>
+    <div><button onclick="add_youtube_2()">add_youtube_2</button></div>
+    <div><button onclick="add_youtube_3()">add_youtube_3</button></div>
     <div
-      ><button id="add_youtube_long_video">add_youtube_long_video</button></div
+      ><button onclick="add_youtube_long_video()"
+        >add_youtube_long_video</button
+      ></div
     >
+
+    <div><button onclick="add_many_video()">add_many_video</button></div>
 
     <div
       ><button id="stop_current_play" onclick="stopCurrentPlay()"
@@ -40,25 +46,25 @@
 
     <form onsubmit="return false;">
       <div>
-          <input
-            id="youtube_video_id_to_add"
-            type="text"
-            placeholder="youtube-video-id-here"
-            value="cBkNtO86_mY"
-          />
-          <button onclick="add_link()">add_link()</button>
+        <input
+          id="youtube_video_id_to_add"
+          type="text"
+          placeholder="youtube-video-id-here"
+          value="cBkNtO86_mY"
+        />
+        <button onclick="add_link()">add_link()</button>
       </div>
     </form>
 
     <form onsubmit="return false;">
       <div>
-          <input
-            id="youtube_video_id_to_delete"
-            type="text"
-            placeholder="youtube-video-id-here"
-            value="cBkNtO86_mY"
-          />
-          <button onclick="delete_link()">delete_link()</button>
+        <input
+          id="youtube_video_id_to_delete"
+          type="text"
+          placeholder="youtube-video-id-here"
+          value="cBkNtO86_mY"
+        />
+        <button onclick="delete_link()">delete_link()</button>
       </div>
     </form>
 
@@ -100,57 +106,65 @@
         return response.json(); // parses JSON response into native JavaScript objects
       }
 
-      function add_link() {
-        var youtube_video_id_to_add =
-          document.getElementById('youtube_video_id_to_add').value;
-        postData('//localhost:3000/add_youtube_video_id', {
-          youtube_video_id:youtube_video_id_to_add,
+      function delete_link() {
+        var youtube_video_id_to_delete = document.getElementById(
+          'youtube_video_id_to_delete',
+        ).value;
+        postData('//localhost:3000/del_youtube_video_id', {
+          youtube_video_id: youtube_video_id_to_delete,
         }).then(data => {
           console.log(data); // JSON data parsed by `data.json()` call
         });
       }
 
-      document.addEventListener('DOMContentLoaded', () => {
-        document
-          .getElementById('add_youtube_1')
-          .addEventListener('click', () => {
-            postData('//localhost:3000/add_youtube_1', { hello: 'world' }).then(
-              data => {
-                console.log(data); // JSON data parsed by `data.json()` call
-              },
-            );
-          });
+      function add_link() {
+        var youtube_video_id_to_add = document.getElementById(
+          'youtube_video_id_to_add',
+        ).value;
+        postData('//localhost:3000/add_youtube_video_id', {
+          youtube_video_id: youtube_video_id_to_add,
+        }).then(data => {
+          console.log(data); // JSON data parsed by `data.json()` call
+        });
+      }
 
-        document
-          .getElementById('add_youtube_2')
-          .addEventListener('click', () => {
-            postData('//localhost:3000/add_youtube_2', { hello: 'world' }).then(
-              data => {
-                console.log(data); // JSON data parsed by `data.json()` call
-              },
-            );
-          });
+      function add_youtube_1() {
+        postData('//localhost:3000/add_youtube_1', { hello: 'world' }).then(
+          data => {
+            console.log(data); // JSON data parsed by `data.json()` call
+          },
+        );
+      }
 
-        document
-          .getElementById('add_youtube_3')
-          .addEventListener('click', () => {
-            postData('//localhost:3000/add_youtube_3', { hello: 'world' }).then(
-              data => {
-                console.log(data); // JSON data parsed by `data.json()` call
-              },
-            );
-          });
+      function add_youtube_2() {
+        postData('//localhost:3000/add_youtube_2', { hello: 'world' }).then(
+          data => {
+            console.log(data); // JSON data parsed by `data.json()` call
+          },
+        );
+      }
 
-        document
-          .getElementById('add_youtube_long_video')
-          .addEventListener('click', () => {
-            postData('//localhost:3000/add_youtube_long_video', {
-              hello: 'world',
-            }).then(data => {
-              console.log(data); // JSON data parsed by `data.json()` call
-            });
-          });
-      });
+      function add_youtube_3() {
+        postData('//localhost:3000/add_youtube_3', { hello: 'world' }).then(
+          data => {
+            console.log(data); // JSON data parsed by `data.json()` call
+          },
+        );
+      }
+
+      function add_youtube_long_video() {
+        postData('//localhost:3000/add_youtube_long_video', {
+          hello: 'world',
+        }).then(data => {
+          console.log(data); // JSON data parsed by `data.json()` call
+        });
+      }
+
+      function add_many_video() {
+        for (var i = 0; i < 10; i++) {
+          add_youtube_long_video();
+        }
+      }
     </script>
   </body>
 </html>
