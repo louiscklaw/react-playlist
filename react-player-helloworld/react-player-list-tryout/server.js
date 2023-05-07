@@ -18,93 +18,9 @@ app.use(express.json());
 app.use(express.static('client/dist'));
 app.use('/endpoint_test', express.static('test/endpoint_test'));
 
-app.post('/helloworld', (req, res) => {
-  console.log(req);
-  res.send({ hello: 'helloworld from server' });
-});
-
-
-app.post('/add_youtube_1', (req, res) => {
-  try {
-    console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY',
-      },
-    });
-    res.send({ hello: 'add_youtube_1 from server' });
-  } catch (error) {
-    console.log('add_youtube_1 error found');
-    res.send({ result: 'add_youtube_1 error' });
-    throw error;
-  }
-});
-
-app.post('/add_youtube_2', (req, res) => {
-  try {
-    console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4',
-      },
-    });
-    res.send({ hello: 'add_youtube_2 from server' });
-  } catch (error) {
-    console.log('add_youtube_2 error found');
-    res.send({ result: 'add_youtube_2 error' });
-    throw error;
-  }
-});
-
-app.post('/add_youtube_3', (req, res) => {
-  try {
-    console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos',
-      },
-    });
-    res.send({ hello: 'add_youtube_2 from server' });
-  } catch (error) {
-    console.log('add_youtube_2 error found');
-    res.send({ result: 'add_youtube_2 error' });
-    throw error;
-  }
-});
-
-app.post('/add_youtube_long_video', (req, res) => {
-  try {
-    console.log(req);
-    broadcastMessage({
-      type: typesDef.PLAYLIST_CHANGE,
-      data: {
-        action: typesDef.ADD_URL,
-        youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg',
-      },
-    });
-    res.send({ hello: 'add_youtube_2 from server' });
-  } catch (error) {
-    console.log('add_youtube_2 error found');
-    res.send({ result: 'add_youtube_2 error' });
-    throw error;
-  }
-});
-
 app.listen(express_port, () => {
   console.log('Server is running at http://localhost:' + express_port);
 });
-
-const url_list = [
-  'https://www.youtube.com/watch?v=cBkNtO86_mY',
-  'https://www.youtube.com/watch?v=icPHcK_cCF4',
-  'https://www.youtube.com/watch?v=s-MsZo02dos',
-];
 
 const http = require('http');
 const uuidv4 = require('uuid').v4;
@@ -183,10 +99,6 @@ wsServer.on('connection', function (connection) {
   connection.on('message', message => handleMessage(message, userId));
   // User disconnected
   connection.on('close', () => handleDisconnect(userId));
-
-  setTimeout(() => {
-    handleHelloworldMessage();
-  }, 3000);
 });
 
 const { stopCurrentPlay } = require('./server/stopCurrentPlay');
@@ -266,4 +178,81 @@ app.post('/*', (req, res) => {
     console.log(req.url);
     res.send({ result: 'done' });
   } catch (error) {}
+});
+
+app.post('/add_youtube_1', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.PLAYLIST_CHANGE,
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY',
+      },
+    });
+    res.send({ hello: 'add_youtube_1 from server' });
+  } catch (error) {
+    console.log('add_youtube_1 error found');
+    res.send({ result: 'add_youtube_1 error' });
+    throw error;
+  }
+});
+
+app.post('/add_youtube_2', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.PLAYLIST_CHANGE,
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4',
+      },
+    });
+    res.send({ hello: 'add_youtube_2 from server' });
+  } catch (error) {
+    console.log('add_youtube_2 error found');
+    res.send({ result: 'add_youtube_2 error' });
+    throw error;
+  }
+});
+
+app.post('/add_youtube_3', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.PLAYLIST_CHANGE,
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=s-MsZo02dos',
+      },
+    });
+    res.send({ hello: 'add_youtube_2 from server' });
+  } catch (error) {
+    console.log('add_youtube_2 error found');
+    res.send({ result: 'add_youtube_2 error' });
+    throw error;
+  }
+});
+
+app.post('/add_youtube_long_video', (req, res) => {
+  try {
+    console.log(req);
+    broadcastMessage({
+      type: typesDef.PLAYLIST_CHANGE,
+      data: {
+        action: typesDef.ADD_URL,
+        youtube_url: 'https://www.youtube.com/watch?v=RceMwkBu-Pg',
+      },
+    });
+    res.send({ hello: 'add_youtube_2 from server' });
+  } catch (error) {
+    console.log('add_youtube_2 error found');
+    res.send({ result: 'add_youtube_2 error' });
+    throw error;
+  }
+});
+
+app.post('/helloworld', (req, res) => {
+  console.log(req);
+  res.send({ hello: 'helloworld from server' });
 });
