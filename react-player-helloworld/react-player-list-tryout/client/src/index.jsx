@@ -6,19 +6,10 @@ import { createBrowserHistory } from 'history';
 const history = createBrowserHistory();
 
 import App from './components/App.jsx';
-
-let Home = () => {
-  return <div> hello Home </div>;
-};
-let About = () => {
-  return <div> hello About </div>;
-};
-let User = () => {
-  return <div> hello User </div>;
-};
-let NoMatch = () => {
-  return <div> hello NoMatch </div>;
-};
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import User from './pages/User.jsx';
+import NoMatch from './pages/NoMatch.jsx';
 
 let routes = (
   <Switch>

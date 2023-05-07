@@ -130,7 +130,7 @@ const PlayerContent = ({ stored_list }) => {
           }}
         />
 
-        <pre>{JSON.stringify({ video_url, url_list, playing }, null, 2)}</pre>
+        {/* <pre>{JSON.stringify({ video_url, url_list, playing }, null, 2)}</pre> */}
       </>
     );
   } catch (error) {
@@ -173,7 +173,7 @@ const App = () => {
       <div>
         <PlayerContent stored_list={stored_list} />
         {/* <ReceiveJsonMessge /> */}
-        <pre>{JSON.stringify({ connection_status }, null, 2)}</pre>
+        {/* <pre>{JSON.stringify({ connection_status }, null, 2)}</pre> */}
       </div>
     );
   } catch (error) {
