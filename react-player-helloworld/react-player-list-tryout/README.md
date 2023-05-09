@@ -1,6 +1,6 @@
 ### development environment
 
-start development environment
+#### start development
 
 ```bash
 # start react auto-refreshing
@@ -16,3 +16,11 @@ $ ./start_browser.sh
 # browse video player -> http://localhost:3000/
 # browse testing page -> http://localhost:3000/test
 ```
+
+### demo
+
+![./gifs/helloworld.gif](./gifs/helloworld.gif)
+[source](./gifs/screen1.webm)
+
+### references
+- https://github.com/ConSol/docker-headless-vnc-container

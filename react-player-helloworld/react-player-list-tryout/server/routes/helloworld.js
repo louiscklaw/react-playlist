@@ -2,6 +2,49 @@ const { broadcastMessage } = require('../broadcastMessage');
 const { typesDef } = require('../typesDef');
 
 const helloworldRoute = (app, clients) => {
+  app.post('/add_youtube_1', (req, res) => {
+    try {
+      console.log(req);
+      broadcastMessage(
+        {
+          type: typesDef.PLAYLIST_CHANGE,
+          data: {
+            action: typesDef.ADD_URL,
+            youtube_url: 'https://www.youtube.com/watch?v=cBkNtO86_mY',
+          },
+        },
+        clients,
+      );
+      res.send({ hello: 'add_youtube_1 from server' });
+    } catch (error) {
+      console.log('add_youtube_1 error found');
+      res.send({ result: 'add_youtube_1 error' });
+      throw error;
+    }
+  });
+
+  app.post('/add_youtube_2', (req, res) => {
+    try {
+      console.log(req);
+      broadcastMessage(
+        {
+          type: typesDef.PLAYLIST_CHANGE,
+          data: {
+            action: typesDef.ADD_URL,
+            youtube_url: 'https://www.youtube.com/watch?v=icPHcK_cCF4',
+          },
+        },
+        clients,
+      );
+      res.send({ hello: 'add_youtube_2 from server' });
+    } catch (error) {
+      console.log('add_youtube_2 error found');
+      res.send({ result: 'add_youtube_2 error' });
+      throw error;
+    }
+  });
+
+
   app.post('/add_youtube_3', (req, res) => {
     try {
       console.log(req);
