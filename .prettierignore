@@ -1,2 +1,6 @@
 *.min.*
 docker-compose.yml
+dist
+node_modules
+coverage
+build
