@@ -21,5 +21,27 @@
   "devDependencies": {
     "prettier": "^2.6.2",
     "puppeteer": "^11.0.0"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^2.7.3",
+    "@stripe/stripe-js": "^4.1.0",
+    "axios": "^1.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "5",
+    "react-router-dom": "5",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
